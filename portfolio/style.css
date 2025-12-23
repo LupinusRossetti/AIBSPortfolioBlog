@@ -412,7 +412,7 @@ a:hover {
 /* Lace Border Base Style */
 .lace-border {
   position: absolute;
-  background: url('images/image/Decorations/セクション区切り線 (レース)1.png') center/contain repeat-x;
+  background: url('images/image/Decorations/divider_lace_1.png') center/contain repeat-x;
   z-index: 15;
   pointer-events: none;
 }
@@ -462,7 +462,7 @@ a:hover {
   height: 50px;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: left center;
-  background: url('images/image/Decorations/セクション区切り線 (レース)1.png') center/contain repeat-x;
+  background: url('images/image/Decorations/divider_lace_1.png') center/contain repeat-x;
 }
 
 /* Right Lace Border */
@@ -474,7 +474,7 @@ a:hover {
   height: 50px;
   transform: rotate(-90deg) translateX(50%);
   transform-origin: right center;
-  background: url('images/image/Decorations/セクション区切り線 (レース)1.png') center/contain repeat-x;
+  background: url('images/image/Decorations/divider_lace_1.png') center/contain repeat-x;
 }
 
 /* Top-Left Flower Corner */
@@ -485,7 +485,7 @@ a:hover {
   height: 300px;
   top: -120px;
   left: -60px;
-  background: url('images/image/Frames/花のコーナーフレーム2.png') center/contain no-repeat;
+  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
   z-index: 20;
   pointer-events: none;
 }
@@ -498,7 +498,7 @@ a:hover {
   height: 300px;
   top: -120px;
   right: -60px;
-  background: url('images/image/Frames/花のコーナーフレーム2.png') center/contain no-repeat;
+  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
   transform: scaleX(-1);
   z-index: 20;
   pointer-events: none;
@@ -517,7 +517,7 @@ a:hover {
   height: 300px;
   bottom: -180px;
   left: -110px;
-  background: url('images/image/Frames/花のコーナーフレーム2.png') center/contain no-repeat;
+  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
   transform: scaleY(-1);
   z-index: 20;
   pointer-events: none;
@@ -531,7 +531,7 @@ a:hover {
   height: 300px;
   bottom: -180px;
   right: -110px;
-  background: url('images/image/Frames/花のコーナーフレーム2.png') center/contain no-repeat;
+  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
   transform: scale(-1, -1);
   z-index: 20;
   pointer-events: none;
@@ -719,22 +719,22 @@ a:hover {
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  background: url('images/image/Decorations/リボン1.png') center/contain no-repeat;
+  background: url('images/image/Decorations/deco_ribbon_1.png') center/contain no-repeat;
   z-index: 10;
   pointer-events: none;
 }
 
 /* Vary ribbon images using nth-child */
 .bubble-card:nth-child(3n+1)::before {
-  background-image: url('images/image/Decorations/リボン1.png');
+  background-image: url('images/image/Decorations/deco_ribbon_1.png');
 }
 
 .bubble-card:nth-child(3n+2)::before {
-  background-image: url('images/image/Decorations/リボン2.png');
+  background-image: url('images/image/Decorations/deco_ribbon_2.png');
 }
 
 .bubble-card:nth-child(3n)::before {
-  background-image: url('images/image/Decorations/リボン3.png');
+  background-image: url('images/image/Decorations/deco_ribbon_3.png');
 }
 
 /* Desktop: Flexbox Layout - 4 bubbles in a row (Min-width 768px) */
@@ -904,7 +904,7 @@ a:hover {
   left: -40px;
   right: -40px;
   bottom: -30px;
-  background: url('images/image/Frames/花のコーナーフレーム1.png') center/contain no-repeat;
+  background: url('images/image/Frames/frame_flower_corner_1.png') center/contain no-repeat;
   z-index: 100;
   pointer-events: none;
 }
@@ -926,7 +926,7 @@ a:hover {
   left: 5px;
   right: 5px;
   height: 40px;
-  background: url('images/image/Decorations/セクション区切り線 (レース)2.png') center/contain repeat-x;
+  background: url('images/image/Decorations/divider_lace_2.png') center/contain repeat-x;
   z-index: 50;
   pointer-events: none;
 }
@@ -1041,7 +1041,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: url('images/image/Buttons/メインボタン (角丸ストロベリー).png') center/cover no-repeat;
+  background: url('images/image/Buttons/btn_main_strawberry.png') center/cover no-repeat;
   color: white;
   box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
   padding: 18px 45px;

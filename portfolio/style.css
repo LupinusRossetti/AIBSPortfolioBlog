@@ -72,7 +72,8 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 240, 245, 0.95);
+  /* Pastel Lavender Blush */
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(255, 105, 180, 0.1);
   padding: 10px 0;
@@ -397,7 +398,8 @@ a:hover {
 .content-frame {
   background: rgba(255, 255, 255, 0.97);
   border-radius: 20px;
-  padding: 80px 50px 80px 50px;
+  /* Increased bottom padding (User Request) */
+  padding: 80px 50px 120px 50px;
   position: relative;
   box-shadow:
     0 8px 32px rgba(255, 105, 180, 0.2),
@@ -407,6 +409,8 @@ a:hover {
   /* Left and right borders only */
   border: none;
   overflow: visible;
+  /* Increase margin to push next section away */
+  margin-bottom: 120px;
 }
 
 /* Lace Border Base Style */
@@ -437,8 +441,9 @@ a:hover {
 /* Wrapper for side lace borders - clips overflow */
 .lace-side-wrapper {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  /* Extend top/bottom to meet horizontal lace (overlap) */
+  top: -25px;
+  bottom: -25px;
   width: 50px;
   overflow: hidden;
   z-index: 15;
@@ -458,7 +463,8 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 25px;
-  width: 1000px;
+  /* Increased from 1000px to ensure full coverage of long content */
+  width: 3000px;
   height: 50px;
   transform: rotate(90deg) translateX(-50%);
   transform-origin: left center;
@@ -470,38 +476,55 @@ a:hover {
   position: absolute;
   top: 50%;
   right: 25px;
-  width: 1000px;
+  /* Increased from 1000px to ensure full coverage of long content */
+  width: 3000px;
   height: 50px;
   transform: rotate(-90deg) translateX(50%);
   transform-origin: right center;
   background: url('images/image/Decorations/divider_lace_1.png') center/contain repeat-x;
 }
 
-/* Top-Left Flower Corner */
-.content-frame::before {
-  content: '';
+/* Flower Corner Base Style (Explicit Divs) */
+.flower-corner {
   position: absolute;
   width: 300px;
   height: 300px;
-  top: -120px;
-  left: -60px;
   background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
   z-index: 20;
   pointer-events: none;
 }
 
-/* Top-Right Flower Corner (mirrored horizontally) */
-.content-frame::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
+/* Top-Left */
+.fc-tl {
+  top: -120px;
+  left: -60px;
+}
+
+/* Top-Right */
+.fc-tr {
   top: -120px;
   right: -60px;
-  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
   transform: scaleX(-1);
-  z-index: 20;
-  pointer-events: none;
+}
+
+/* Bottom-Left */
+.fc-bl {
+  bottom: -120px;
+  left: -60px;
+  transform: scaleY(-1);
+}
+
+/* Bottom-Right */
+.fc-br {
+  bottom: -120px;
+  right: -60px;
+  transform: scale(-1, -1);
+}
+
+/* Remove Pseudo-element flowers to prevent duplication */
+.content-frame::before,
+.content-frame::after {
+  display: none;
 }
 
 /* Inner container for bottom corners */
@@ -509,32 +532,10 @@ a:hover {
   position: relative;
 }
 
-/* Bottom-Left Flower Corner (rotated 180deg and mirrored) */
-.content-frame-inner::before {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  bottom: -180px;
-  left: -110px;
-  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
-  transform: scaleY(-1);
-  z-index: 20;
-  pointer-events: none;
-}
-
-/* Bottom-Right Flower Corner (rotated 180deg) */
+/* Deprecated internal flower pseudo-elements */
+.content-frame-inner::before,
 .content-frame-inner::after {
-  content: '';
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  bottom: -180px;
-  right: -110px;
-  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
-  transform: scale(-1, -1);
-  z-index: 20;
-  pointer-events: none;
+  display: none;
 }
 
 /* Small frame variant for sub-sections */
@@ -1156,6 +1157,8 @@ a:hover {
   gap: 40px;
   align-items: center;
   text-align: left;
+  /* Add top padding to increase space from title */
+  padding-top: 20px;
 }
 
 /* Desktop: Text Left (1), Image Right (2) */
@@ -1163,22 +1166,102 @@ a:hover {
   order: 1;
 }
 
+/* Cute Styling for Text Content */
+.intro-text-content p {
+  /* Warm brownish gray text */
+  color: #5d4c55;
+  line-height: 2.0;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+/* Badge Style for Tags */
+.intro-badges {
+  /* Changed to block/fit-content to force greeting to next line */
+  display: block;
+  width: fit-content;
+  background: #FFF0F5;
+  /* Lavender Blush */
+  color: #FF69B4;
+  /* Hot Pink */
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(255, 182, 193, 0.3);
+  margin-bottom: 15px !important;
+}
+
+/* Clickable Text Link Style */
+.text-link {
+  color: #FF1493;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.text-link:hover {
+  color: #FF69B4;
+  background: rgba(255, 105, 180, 0.1);
+  border-radius: 4px;
+}
+
+/* Greeting Style */
+/* Greeting Style */
+.intro-greeting {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FF1493;
+  /* Deep Pink */
+  margin-bottom: 15px !important;
+  /* Marker style underline */
+  background: linear-gradient(transparent 60%, #FFB6C1 60%);
+  display: inline;
+  /* Improve decoration break */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Self Intro Sub-section Spacing */
+.intro-self-intro {
+  margin-top: 50px;
+  /* Increase spacing above "Self Introduction" */
+  border-top: 2px dashed #FFE4E1;
+  /* Optional divider line */
+  padding-top: 30px;
+}
+
 .intro-visual {
   order: 2;
   text-align: center;
   position: relative;
+  /* Ensure height for absolute positioning of signature */
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Align items to bottom */
 }
 
 .intro-signature {
   font-family: var(--font-cursive);
   font-size: 3.5rem;
   color: #FF1493;
-  margin-top: -30px;
-  display: inline-block;
-  transform: rotate(-10deg) translateX(20px);
+  /* Absolute positioning relative to intro-visual */
+  position: absolute;
+  bottom: 0px;
+  /* Align bottom */
+  left: 50%;
+  transform: translateX(-50%) rotate(-4deg);
+  /* Center and slight tilt */
   text-shadow: 3px 3px 0 #fff, 0 0 10px rgba(255, 105, 180, 0.3);
   z-index: 10;
-  position: relative;
+  white-space: nowrap;
+  /* Ensure L aligns visually with bottom of image if image has whitespace */
+  margin-bottom: 10px;
 }
 
 .intro-char-img {
@@ -1188,6 +1271,11 @@ a:hover {
   object-fit: contain;
   filter: drop-shadow(0 5px 15px rgba(255, 182, 193, 0.5));
   transition: transform 0.3s;
+  /* Ensure image sits above signature if needed, or signature overlays */
+  position: relative;
+  z-index: 5;
+  margin-bottom: 20px;
+  /* Make space for signature */
 }
 
 /* Mobile: Image Top (1), Text Bottom (2) */
@@ -1201,6 +1289,8 @@ a:hover {
   .intro-visual {
     order: 1;
     margin-bottom: 20px;
+    min-height: auto;
+    display: block;
   }
 
   .intro-text-content {
@@ -1208,11 +1298,383 @@ a:hover {
   }
 
   .intro-signature {
+    position: relative;
     font-size: 2.5rem;
-    margin-top: -20px;
+    margin-top: -30px;
+    transform: rotate(-4deg);
+    bottom: auto;
+    left: auto;
+    margin-bottom: 20px;
   }
 
   .intro-text-content p {
     text-align: center;
   }
+}
+
+/* === Main Title Frame (Added) === */
+.main-title-frame {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  min-height: 250px;
+  margin: 0 auto -40px auto;
+  background: url('images/image/Frames/frame_ribbon_title_2.png') center/contain no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px 60px 80px;
+  z-index: 20;
+}
+
+.main-title-text {
+  font-family: var(--font-cursive);
+  font-size: 4.5rem;
+  color: var(--color-primary-dark);
+  text-shadow:
+    3px 3px 0 #FFF,
+    0 0 10px rgba(255, 105, 180, 0.5);
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .main-title-frame {
+    min-height: 150px;
+    padding: 20px 40px 30px 40px;
+  }
+
+  .main-title-text {
+    font-size: 2.2rem;
+  }
+}
+
+/* === Main Title Frame (Refactored Phase 2 - Force Override) === */
+.main-title-frame {
+  /* Reset previous styles if any */
+  background: rgba(255, 255, 255, 0.97) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 50px 100px !important;
+  min-width: 300px !important;
+  min-height: auto !important;
+  /* Override min-height from ribbon */
+  margin-bottom: 40px !important;
+  margin-top: 20px !important;
+  position: relative !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 30px rgba(255, 105, 180, 0.25) !important;
+  overflow: visible !important;
+  z-index: 20 !important;
+}
+
+/* Flower decoration */
+.main-title-frame::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -40px !important;
+  left: -50px !important;
+  right: -50px !important;
+  bottom: -40px !important;
+  background: url('images/image/Frames/frame_flower_corner_1.png') center/100% 100% no-repeat !important;
+  z-index: 100 !important;
+  pointer-events: none !important;
+}
+
+.main-title-text {
+  font-family: var(--font-cursive) !important;
+  font-size: 4.5rem !important;
+  color: var(--color-primary-dark) !important;
+  text-shadow: 3px 3px 0 #FFF, 0 0 10px rgba(255, 105, 180, 0.5) !important;
+  margin: 0 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  position: relative !important;
+  z-index: 60 !important;
+}
+
+/* Reuse existing heading lace classes in HTML, but if we need specific sizing: */
+.main-title-frame .heading-lace {
+  left: 10px !important;
+  right: 10px !important;
+  height: 50px !important;
+  /* Larger lace */
+}
+
+.main-title-frame .heading-lace-top {
+  top: -25px !important;
+}
+
+.main-title-frame .heading-lace-bottom {
+  bottom: -25px !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .main-title-frame {
+    padding: 30px 20px !important;
+    display: flex !important;
+  }
+
+  .main-title-text {
+    font-size: 2.5rem !important;
+  }
+
+  .main-title-frame::before {
+    top: -20px !important;
+    bottom: -20px !important;
+    left: -20px !important;
+    right: -20px !important;
+  }
+}
+
+
+/* === Main Title Frame (Correction Phase 3) === */
+.main-title-frame {
+  /* Fix Alignment & Size */
+  display: inline-flex !important;
+  flex-direction: column !important;
+  /* Stack title and subtitle */
+  align-items: center !important;
+  justify-content: center !important;
+
+  /* Reduce size */
+  padding: 30px 60px !important;
+  /* Reduced from 50px 100px */
+  min-width: auto !important;
+  /* Allow fit content */
+  max-width: 90% !important;
+  /* Prevent overflow on small screens */
+  margin: 0 auto 40px auto !important;
+  /* Center horizontally */
+
+  /* Inherit other frame styles but ensure no fixed width/height forces stretching */
+  width: auto !important;
+  height: auto !important;
+}
+
+.main-title-frame::before {
+  /* Fix Distortion: Prohibition of stretching */
+  background-size: contain !important;
+  /* Preserves aspect ratio */
+  background-position: center !important;
+  /* Adjust bounds to fit the content tightly without huge gaps */
+  top: -20px !important;
+  bottom: -20px !important;
+  left: -30px !important;
+  right: -30px !important;
+}
+
+.title-text-container {
+  text-align: center;
+  z-index: 60;
+}
+
+.main-title-text {
+  /* Adjust font size if frame reduced */
+  font-size: 3.5rem !important;
+  /* Slightly smaller to fit better */
+  margin-bottom: 5px !important;
+}
+
+.main-title-subtitle {
+  font-family: var(--font-base) !important;
+  /* Readable font */
+  font-size: 1.2rem !important;
+  color: var(--color-primary-dark) !important;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 0 #FFF;
+  margin: 0 !important;
+}
+
+/* Ensure Parent Centers this inline-flex element */
+.block-content {
+  text-align: center;
+}
+
+
+/* === Main Title Frame (Visual Volume Match Phase) === */
+.main-title-frame {
+  position: relative;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  /* Size matches 'Doing' frame but larger for title */
+  padding: 60px 100px !important;
+  /* Large padding for volume */
+  min-width: 350px !important;
+  /* Increased spacing below Main Title Frame (User Req) */
+  margin: 0 auto 80px auto !important;
+  width: auto !important;
+  max-width: 95% !important;
+
+  /* White Box Base */
+  background: rgba(255, 255, 255, 0.97) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 30px rgba(255, 105, 180, 0.25) !important;
+  z-index: 20 !important;
+}
+
+/* Lush Flower Overlay - REMOVED, using individual corners now */
+.main-title-frame::before {
+  display: none !important;
+}
+
+/* === Corner Flowers (Main Title Specific) === */
+.flower-corner-title {
+  position: absolute;
+  width: 200px;
+  /* Smaller than content-frame's 300px */
+  height: 200px;
+  background: url('images/image/Frames/frame_flower_corner_2.png') center/contain no-repeat;
+  z-index: 120;
+  pointer-events: none;
+}
+
+/* Scaled from .content-frame (300px) values -> 200px (2/3 scale) */
+/* Top: -120px -> -80px, Left: -60px -> -40px */
+.fc-title-tl {
+  top: -80px;
+  left: -40px;
+}
+
+.fc-title-tr {
+  top: -80px;
+  right: -40px;
+  transform: scaleX(-1);
+}
+
+/* Bottom: Adjusted to match Top (-80px) to prevent disappearing */
+.fc-title-bl {
+  bottom: -80px;
+  left: -40px;
+  transform: scaleY(-1);
+}
+
+.fc-title-br {
+  bottom: -80px;
+  right: -40px;
+  transform: scale(-1, -1);
+}
+
+.title-text-container {
+  z-index: 100 !important;
+  position: relative;
+  text-align: center;
+}
+
+/* Remove separate corner divs actions if they exist in HTML, 
+   but CSS will ignore them if I don't style them. 
+   I will clear their styles just in case via the specific class overrides or 
+   rely on HTML update next. */
+
+/* --- Lace Borders (Strict Match) --- */
+/* Top/Bottom Horizontal Lace */
+.heading-lace-new {
+  position: absolute;
+  height: 40px;
+  background: url('images/image/Decorations/divider_lace_2.png') center/contain repeat-x;
+  background-size: auto 100%;
+  z-index: 105;
+  /* Behind flowers, above box */
+  pointer-events: none;
+  left: 30px;
+  right: 30px;
+}
+
+.heading-lace-top {
+  top: -20px;
+  transform: rotate(180deg);
+}
+
+.heading-lace-bottom {
+  bottom: -20px;
+}
+
+/* Vertical Lace (The New Requirement) */
+.heading-lace-vert {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  width: 40px;
+  /* Visual width of lace */
+  overflow: hidden;
+  z-index: 105;
+  pointer-events: none;
+}
+
+.heading-lace-left {
+  left: -20px;
+  /* Position on the edge */
+}
+
+.heading-lace-right {
+  right: -20px;
+}
+
+/* Inner rotated lace strip */
+.heading-lace-vert::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Center anchor */
+  width: 200vh;
+  /* Long strip */
+  height: 40px;
+  /* Lace height */
+  background: url('images/image/Decorations/divider_lace_2.png') center/contain repeat-x;
+  background-size: auto 100%;
+}
+
+.heading-lace-left::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.heading-lace-right::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+/* Mobile adjustments for Main Title Frame */
+@media (max-width: 767px) {
+  .main-title-frame {
+    padding: 40px 30px !important;
+    min-width: unset !important;
+  }
+}
+
+/* === Updated Footer Style === */
+.footer {
+  background: #FFF0F5;
+  /* Pastel Lavender Blush */
+  color: #5d4c55;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -5px 20px rgba(255, 182, 193, 0.1);
+}
+
+/* === Dashed Heading Frame === */
+.heading-frame.dashed-frame {
+  background: url('images/image/Frames/frame_dashed_1.png') center/contain no-repeat !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 15px 50px !important;
+  min-width: 300px;
+  min-height: 80px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-frame.dashed-frame::before,
+.heading-frame.dashed-frame::after {
+  content: none !important;
+  display: none !important;
 }

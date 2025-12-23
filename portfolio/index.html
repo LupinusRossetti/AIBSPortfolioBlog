@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ルピナス・ロゼッティ | スタンプ制作</title>
+  <meta name="description" content="AIを活用してLINEスタンプ・Discord絵文字・YouTubeスタンプを安く速く制作します。">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/image/logo/Lupinus Rossetti.png" alt="Lupinus Rossetti" class="logo-image">
+      </a>
+      <button class="menu-toggle" onclick="toggleMenu()">≡</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">ホーム</a>
+        <a href="gallery.html">ギャラリー</a>
+        <a href="pricing.html">料金表</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Block 1: 自己紹介 -->
+  <section class="block-section block-first diagonal-lr" id="intro">
+    <div class="block-base" style="background-color: #FFFFFF;"></div>
+    <div class="block-bg slide-up-left">
+      <div class="slide active" style="background: url('images/image/backgrounds/天使の羽と雲の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/星とハートの背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/きらめく星空の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/桜と花びらの背景.png') center/cover;"></div>
+    </div>
+    <div class="block-content">
+      <div class="content-frame">
+        <div class="lace-border lace-border-top"></div>
+        <div class="lace-border lace-border-bottom"></div>
+        <div class="lace-side-wrapper lace-side-left">
+          <div class="lace-border lace-border-left"></div>
+        </div>
+        <div class="lace-side-wrapper lace-side-right">
+          <div class="lace-border lace-border-right"></div>
+        </div>
+        <div class="content-frame-inner">
+          <h1 class="hero-title cursive">Lupinus Rossetti</h1>
+          <p class="frame-desc">VTuber ♡ プログラマー ♡ AIクリエイター</p>
+
+          <p style="font-size: 1.1rem; line-height: 2; text-align: center;">
+            はじめまして！ルピナス・ロゼッティです♪<br><br>
+            YouTubeでゲーム配信をしているVTuberで、<br>
+            プログラマーとしても1年以上お仕事しています<br><br>
+            AIが大好きで、スタンプ制作を便利にするツールも<br>
+            自分で作って使っています♡
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 2: できること -->
+  <section class="block-section diagonal-rl" id="services">
+    <div class="block-base" style="background-color: #FFFFFF;"></div>
+    <div class="block-bg slide-up-right">
+      <div class="slide active" style="background: url('images/image/backgrounds/星とハートの背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/シャボン玉の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/スイーツとマカロンの背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/ギンガムチェックの背景.png') center/cover;"></div>
+    </div>
+    <div class="block-content">
+      <div style="text-align: center;">
+        <div class="heading-frame">
+          <div class="heading-lace heading-lace-top"></div>
+          <div class="heading-lace heading-lace-bottom"></div>
+          <span class="heading-text">できること</span>
+        </div>
+      </div>
+
+      <div class="scatter-container">
+        <div class="bubble-card pos-1">
+          <img src="images/image/Service Icons/LINEスタンプ (吹き出し).png" alt="LINE" class="icon">
+          <h3>LINEスタンプ</h3>
+          <p>あなただけの<br>オリジナルスタンプ</p>
+        </div>
+        <div class="bubble-card pos-4">
+          <img src="images/image/Service Icons/Discord (ゲームコントローラー).png" alt="Discord" class="icon">
+          <h3>Discord絵文字</h3>
+          <p>サーバーを彩る<br>かわいい絵文字</p>
+        </div>
+        <div class="bubble-card pos-6">
+          <img src="images/image/Service Icons/YouTube (再生ボタン).png" alt="YouTube" class="icon">
+          <h3>YouTubeスタンプ</h3>
+          <p>メンバーシップ用<br>バッジ＆スタンプ</p>
+        </div>
+        <div class="bubble-card pos-7">
+          <img src="images/image/Service Icons/イラスト・キャラ (パレット).png" alt="イラスト" class="icon">
+          <h3>キャラ生成</h3>
+          <p>一貫性のある<br>キャラクター素材</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 3: YouTubeライブ配信 -->
+  <section class="block-section diagonal-lr-2" id="youtube-section">
+    <div class="block-base" style="background-color: #FFFFFF;"></div>
+    <div class="block-bg slide-up-left" id="youtube-bg">
+      <div class="slide active"
+        style="background: url('https://img.youtube.com/vi/npT0TlZ7un0/maxresdefault.jpg') center/cover;"></div>
+      <div class="slide"
+        style="background: url('https://img.youtube.com/vi/gvyivk7BEqk/maxresdefault.jpg') center/cover;"></div>
+      <div class="slide"
+        style="background: url('https://img.youtube.com/vi/qnlq3SvaJGg/maxresdefault.jpg') center/cover;"></div>
+      <div class="slide"
+        style="background: url('https://img.youtube.com/vi/ixIXkW56mX8/maxresdefault.jpg') center/cover;"></div>
+    </div>
+    <div class="block-content">
+      <div class="content-frame">
+        <div class="lace-border lace-border-top"></div>
+        <div class="lace-border lace-border-bottom"></div>
+        <div class="lace-side-wrapper lace-side-left">
+          <div class="lace-border lace-border-left"></div>
+        </div>
+        <div class="lace-side-wrapper lace-side-right">
+          <div class="lace-border lace-border-right"></div>
+        </div>
+        <div class="content-frame-inner">
+          <h3 class="frame-title"><img src="images/image/Service Icons/YouTube (再生ボタン).png" alt="YouTube"
+              style="width: 40px; height: 40px; vertical-align: middle; margin-right: 10px;">YouTubeライブ配信</h3>
+          <p class="frame-desc">
+            ドラクエ10やモンハン、格ゲーなどいろんなゲームで遊んでいます♪<br>
+            よかったら遊びに来てね
+          </p>
+
+          <div class="youtube-grid" id="youtube-grid">
+            <div class="youtube-item">
+              <div class="youtube-player">
+                <iframe src="https://www.youtube.com/embed/npT0TlZ7un0" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="youtube-info">
+                <div class="title">AIでLINEスタンプ作るよ</div>
+                <div class="date">2024年12月21日</div>
+              </div>
+            </div>
+            <div class="youtube-item">
+              <div class="youtube-player">
+                <iframe src="https://www.youtube.com/embed/gvyivk7BEqk" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="youtube-info">
+                <div class="title">Switchでゆる～く遊ぶよ</div>
+                <div class="date">2024年12月20日</div>
+              </div>
+            </div>
+            <div class="youtube-item">
+              <div class="youtube-player">
+                <iframe src="https://www.youtube.com/embed/qnlq3SvaJGg" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="youtube-info">
+                <div class="title">アプデ後ドラクエ10配信！</div>
+                <div class="date">2024年12月19日</div>
+              </div>
+            </div>
+            <div class="youtube-item">
+              <div class="youtube-player">
+                <iframe src="https://www.youtube.com/embed/0GdDg-yNlGQ" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="youtube-info">
+                <div class="title">リニューアル ミルドラース</div>
+                <div class="date">2024年12月18日</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 30px;">
+            <a href="https://www.youtube.com/@AIBloomSisters" target="_blank" class="btn btn-primary">チャンネルを見る</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 4: アプリ開発 -->
+  <section class="block-section diagonal-rl-2" id="app-dev-section">
+    <div class="block-base" style="background-color: #FFFFFF;"></div>
+    <div class="block-bg slide-up-right">
+      <div class="slide active" style="background: url('images/image/backgrounds/レースとリボンの背景1.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/レースとリボンの背景2.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/レースとリボンの背景3.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/音符とメロディの背景.png') center/cover;"></div>
+    </div>
+    <div class="block-content">
+      <div style="text-align: center;">
+        <div class="heading-frame">
+          <div class="heading-lace heading-lace-top"></div>
+          <div class="heading-lace heading-lace-bottom"></div>
+          <span class="heading-text">アプリ開発</span>
+        </div>
+      </div>
+      <p style="text-align: center; margin-bottom: 20px; color: #666;">
+        活動を支援する便利ツールも開発中♪
+      </p>
+
+      <div class="scatter-container" style="height: 400px;">
+        <div class="bubble-card pos-2">
+          <img src="images/image/Service Icons/開発ツール (魔法の杖とPC).png" alt="ARIA" class="icon">
+          <h4>ARIA</h4>
+          <p>スタンプ制作<br>支援ツール</p>
+          <a href="https://github.com/LupinusRossetti/ARIA" target="_blank"
+            style="font-size: 0.7rem; color: hotpink; margin-top: 5px;">GitHub</a>
+        </div>
+        <div class="bubble-card pos-8">
+          <img src="images/image/Service Icons/開発ツール (魔法の杖とPC).png" alt="LUNA-AI" class="icon">
+          <h4>LUNA-AI</h4>
+          <p>AItuber<br>配信システム</p>
+          <a href="https://github.com/LupinusRossetti/LUNA-AI" target="_blank"
+            style="font-size: 0.7rem; color: hotpink; margin-top: 5px;">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 5: AIを使ったお仕事 -->
+  <section class="block-section diagonal-lr-3" id="ai-work-section">
+    <div class="block-base" style="background-color: #FFFFFF;"></div>
+    <div class="block-bg slide-up-left">
+      <div class="slide active" style="background: url('images/image/backgrounds/シャボン玉の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/きらめく星空の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/天使の羽と雲の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/桜と花びらの背景.png') center/cover;"></div>
+    </div>
+    <div class="block-content">
+      <div style="text-align: center;">
+        <div class="heading-frame">
+          <div class="heading-lace heading-lace-top"></div>
+          <div class="heading-lace heading-lace-bottom"></div>
+          <span class="heading-text">AIお仕事</span>
+        </div>
+      </div>
+      <p style="text-align: center; margin-bottom: 20px; color: #666;">
+        「安く」「速く」クオリティ高く♪
+      </p>
+
+      <div class="scatter-container" style="height: 400px;">
+        <div class="bubble-card pos-3">
+          <img src="images/image/Decorations/キラキラ1.png" alt="スピード" class="icon">
+          <h4>スピード制作</h4>
+          <p>短納期でも<br>かわいい！</p>
+        </div>
+        <div class="bubble-card pos-5">
+          <img src="images/image/Decorations/ハート1.png" alt="価格" class="icon">
+          <h4>お手頃価格</h4>
+          <p>相場より<br>お得に制作</p>
+        </div>
+
+        <div style="position: absolute; bottom: 20px; left: 0; right: 0; text-align: center; z-index: 10;">
+          <a href="contact.html" class="btn btn-primary">依頼する</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 6: CTA -->
+  <section class="block-section block-last" id="cta-section">
+    <div class="block-base" style="background-color: #FFFFFF;"></div>
+    <div class="block-bg slide-up-right" id="cta-bg">
+      <div class="slide active" style="background: url('images/image/backgrounds/星とハートの背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/桜と花びらの背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/天使の羽と雲の背景.png') center/cover;"></div>
+      <div class="slide" style="background: url('images/image/backgrounds/レースとリボンの背景1.png') center/cover;"></div>
+    </div>
+    <div class="block-content">
+      <div class="content-frame" style="max-width: 700px;">
+        <div class="lace-border lace-border-top"></div>
+        <div class="lace-border lace-border-bottom"></div>
+        <div class="lace-side-wrapper lace-side-left">
+          <div class="lace-border lace-border-left"></div>
+        </div>
+        <div class="lace-side-wrapper lace-side-right">
+          <div class="lace-border lace-border-right"></div>
+        </div>
+        <div class="content-frame-inner">
+          <h2 class="frame-title" style="color: #FF1493;">一緒にスタンプを作りませんか？</h2>
+          <p class="frame-desc">ご質問やご相談だけでも大歓迎です♪</p>
+          <div style="text-align: center;">
+            <a href="contact.html" class="btn btn-primary">お問い合わせはこちら</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 <span class="cursive" style="font-size: 1.2em;">Lupinus Rossetti</span>. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const YOUTUBE_API_KEY = 'AIzaSyAldm1MSxkXlBA6CRzaLak-hkHK56mS58s';
+    const CHANNEL_ID = 'UCvGMD5W5Op-04LQylqFdNLQ';
+
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('active');
+    }
+
+    class DiagonalSlideshow {
+      constructor(container) {
+        this.container = container;
+        this.slides = Array.from(container.querySelectorAll('.slide'));
+        this.currentSlide = 0;
+        this.isAnimating = false;
+
+        if (this.slides.length > 1) {
+          this.init();
+        }
+      }
+
+      init() {
+        // Update every 60 seconds (1 minute)
+        setInterval(() => this.nextSlide(), 60000);
+
+        // Also trigger on mouse enter (hover)
+        this.container.parentElement.addEventListener('mouseenter', () => {
+          if (!this.isAnimating) this.nextSlide();
+        });
+      }
+
+      nextSlide() {
+        if (this.isAnimating) return;
+        this.isAnimating = true;
+
+        const current = this.slides[this.currentSlide];
+        const nextIndex = (this.currentSlide + 1) % this.slides.length;
+        const next = this.slides[nextIndex];
+
+        current.classList.add('exiting');
+        next.classList.add('entering');
+
+        setTimeout(() => {
+          current.classList.remove('active', 'exiting');
+          next.classList.remove('entering');
+          next.classList.add('active');
+          this.currentSlide = nextIndex;
+          this.isAnimating = false;
+        }, 500);
+      }
+    }
+
+    async function loadYouTubeVideos() {
+      if (window.location.protocol === 'file:') {
+        console.log('Skipping YouTube API on local file');
+        return;
+      }
+
+      const grid = document.getElementById('youtube-grid');
+      const bgContainer = document.getElementById('youtube-bg');
+
+      try {
+        const searchUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&type=video&eventType=completed&maxResults=4&key=${YOUTUBE_API_KEY}`;
+        const response = await fetch(searchUrl);
+        const data = await response.json();
+
+        if (data.error) throw new Error(data.error.message);
+
+        if (data.items && data.items.length > 0) {
+          grid.innerHTML = data.items.map(item => {
+            const videoId = item.id.videoId;
+            const title = item.snippet.title;
+            const publishedAt = new Date(item.snippet.publishedAt);
+            const dateStr = `${publishedAt.getFullYear()}年${publishedAt.getMonth() + 1}月${publishedAt.getDate()}日`;
+
+            return `
+              <div class="youtube-item">
+                <div class="youtube-player">
+                  <iframe src="https://www.youtube.com/embed/${videoId}" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div class="youtube-info">
+                  <div class="title">${title}</div>
+                  <div class="date">${dateStr}</div>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          const thumbnails = data.items.map(item =>
+            `https://img.youtube.com/vi/${item.id.videoId}/maxresdefault.jpg`
+          );
+
+          bgContainer.innerHTML = thumbnails.map((url, i) =>
+            `<div class="slide ${i === 0 ? 'active' : ''}" style="background: url('${url}') center/cover;"></div>`
+          ).join('');
+
+          new DiagonalSlideshow(bgContainer);
+        }
+      } catch (error) {
+        console.error('YouTube API Error:', error);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.block-bg').forEach(bg => {
+        new DiagonalSlideshow(bg);
+      });
+      loadYouTubeVideos();
+    });
+  </script>
+
+</body>
+
+</html>

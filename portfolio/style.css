@@ -1988,3 +1988,234 @@ a:hover {
 #youtube-section .block-content {
   margin-top: 25px !important;
 }
+
+/* === Creation/Works Section === */
+
+/* Gallery Sub-heading - Cuter & Wider */
+.gallery-sub-heading {
+  display: inline-block;
+  background: #FFF0F5;
+  color: #FF1493;
+  font-family: var(--font-cursive);
+  font-size: 2.5rem;
+  /* Larger text */
+  padding: 10px 80px;
+  /* Much wider */
+  border-radius: 50px;
+  box-shadow:
+    0 5px 15px rgba(255, 105, 180, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+  position: relative;
+  margin: 30px auto 40px auto;
+  border: 3px solid #FFB6C1;
+  /* Solid pink border */
+  outline: 5px dotted #FFF;
+  /* Dotted white outer */
+  outline-offset: -8px;
+  /* Inner dotted effect */
+  text-shadow: 2px 2px 0 #FFF;
+  min-width: 400px;
+}
+
+.gallery-sub-heading::before,
+.gallery-sub-heading::after {
+  content: '♥';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #FF69B4;
+}
+
+.gallery-sub-heading::before {
+  left: 25px;
+}
+
+.gallery-sub-heading::after {
+  right: 25px;
+}
+
+.star-deco {
+  color: #FFD700;
+  font-size: 1.2em;
+  vertical-align: middle;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Creation List Mobile */
+@media (max-width: 767px) {
+  .gallery-sub-heading {
+    font-size: 1.8rem;
+    padding: 10px 40px;
+    min-width: auto;
+    width: 80%;
+  }
+
+  .creation-title {
+    font-size: 1.4rem;
+    border-bottom: none;
+    text-decoration: underline 3px dotted #FFB6C1;
+    margin-bottom: 10px;
+  }
+
+  .creation-desc {
+    font-size: 0.95rem;
+  }
+}
+
+.creation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.creation-card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(255, 182, 193, 0.4);
+  padding: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  /* Cuter Border */
+  border: 3px dotted #FFB6C1;
+  position: relative;
+  overflow: visible;
+  /* Allow corner decorations outside */
+}
+
+/* Cute Corner Decorations (Ribbons/Hearts) */
+.creation-card::before {
+  content: '♥';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.2rem;
+  color: #FFB6C1;
+  opacity: 0.6;
+}
+
+.creation-card::after {
+  content: '♥';
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #FFB6C1;
+  opacity: 0.6;
+}
+
+/* Reverse layout for even cards (PC only) */
+.creation-card.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+.creation-text {
+  flex: 1;
+  text-align: left;
+  z-index: 2;
+}
+
+.creation-title {
+  font-family: var(--font-round);
+  font-size: 1.7rem;
+  color: #FF1493;
+  margin-bottom: 20px;
+  border-bottom: 3px dotted #FFB6C1;
+  display: inline-block;
+  padding-bottom: 5px;
+  letter-spacing: 0.05em;
+}
+
+.creation-desc {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5d4c55;
+  font-family: var(--font-base);
+}
+
+.creation-visual {
+  flex: 0 0 500px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  background: #FFF0F5;
+  box-shadow: inset 0 0 10px rgba(255, 182, 193, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images */
+.static-img,
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Slideshow Logic */
+.content-slideshow {
+  position: relative;
+}
+
+.content-slideshow .slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.content-slideshow .slide-img.active {
+  opacity: 1;
+}
+
+/* === Mobile Layout === */
+@media (max-width: 900px) {
+  .creation-card {
+    flex-direction: column !important;
+    /* Force column on mobile/tablet */
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .creation-visual {
+    order: 1;
+    /* Image Top */
+    width: 100%;
+    flex: none;
+    height: 250px;
+  }
+
+  .creation-text {
+    order: 2;
+    /* Text Bottom */
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-sub-heading {
+    font-size: 1.5rem;
+    padding: 8px 30px;
+  }
+
+  .creation-title {
+    font-size: 1.4rem;
+    border-bottom: none;
+    text-decoration: underline 3px dotted #FFB6C1;
+    margin-bottom: 10px;
+  }
+
+  .creation-desc {
+    font-size: 0.95rem;
+  }
+}

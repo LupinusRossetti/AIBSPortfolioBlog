@@ -25,7 +25,7 @@
   --shadow-hover: 0 12px 40px rgba(255, 105, 180, 0.35);
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Height of diagonal edge - 3° angle (tan(3°) ≈ 0.0524)
+  /* Height of diagonal edge - 3° angle (tan(3°) ≁E0.0524)
      Using vw units ensures consistent angle on all screen sizes */
   --diagonal-height: 5.24vw;
 }
@@ -1740,6 +1740,15 @@ a:hover {
   display: block;
 }
 
+.service-character-image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto 40px auto;
+  /* Adjust specific margins as needed */
+}
+
 /* === Scatter Layout (PC: W-Shape) === */
 @media (min-width: 768px) {
   .scatter-container {
@@ -1749,11 +1758,15 @@ a:hover {
     align-items: center;
     gap: 15px;
     /* Reduced gap for wider bubbles */
-    padding: 130px 20px;
+    padding: 90px 20px;
     /* Vertical space for offsets */
     min-height: 500px;
     max-width: 1400px;
     margin: 0 auto;
+  }
+
+  .service-character-image {
+    margin: 20px auto 0px auto;
   }
 
   .bubble-card .icon {
@@ -1894,4 +1907,84 @@ a:hover {
     /* Ensure it takes almost full width */
     max-width: none !important;
   }
+}
+
+
+/* === Ribbon Title for YouTube Section (FIXED) === */
+.ribbon-title-container {
+  text-align: center;
+  margin-top: -40px;
+  /* Reduce top space */
+  margin-bottom: -40px;
+  /* Reduce bottom space */
+}
+
+.ribbon-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: url('images/image/Frames/frame_ribbon_title_1.png') center/100% 100% no-repeat;
+  width: 700px;
+  height: 297px;
+  /* Correct aspect ratio for 700px width */
+  font-family: var(--font-round);
+  color: var(--color-primary-dark);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #fff, 0 0 5px rgba(255, 182, 193, 0.5);
+  padding-top: 0;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+.character-decoration {
+  margin: 0 auto 50px auto;
+}
+
+.decorated-text {
+  color: #5d4c55;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  font-family: var(--font-base);
+}
+
+.divider-container {
+  text-align: center;
+  margin: -10px 0 10px 0;
+}
+
+.section-divider {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.divider-container.narrow-margin {
+  margin: -100px 0 -50px 0 !important;
+}
+
+/* Mobile Spacing Adjustment */
+@media (max-width: 767px) {
+  .divider-container.narrow-margin {
+    margin: -65px 0 -40px 0 !important;
+  }
+
+  .character-decoration {
+    margin: 0 auto 30px auto;
+  }
+
+  .ribbon-title {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 700 / 297;
+    font-size: 3.6vw;
+    /* Reduced to ~13.5px on 375px width to match PC ratio */
+    padding-bottom: 0;
+  }
+}
+
+#youtube-section .block-content {
+  margin-top: 25px !important;
 }

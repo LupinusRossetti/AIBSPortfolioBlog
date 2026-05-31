@@ -30,7 +30,7 @@ import markdown as md
 import make_thumb
 
 # === パス設定 ===
-SITE_DIR = Path(__file__).resolve().parent          # portfolio/
+SITE_DIR = Path(__file__).resolve().parent          # リポジトリ直下
 DIARY_DIR = Path(r"C:\ClaudeCode\note-diary")
 DIARY_ICONS = DIARY_DIR / "icons"
 BLOG_DIR = SITE_DIR / "blog"

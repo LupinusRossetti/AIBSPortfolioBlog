@@ -13,3 +13,8 @@ __pycache__/
 
 # Claude Code ローカル設定
 .claude/
+
+# 内部メモ・社内資料（公開リポから除外）
+Doc/
+persona_rules.md
+REFACTOR_PLAN.md

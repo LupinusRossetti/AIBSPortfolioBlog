@@ -145,6 +145,20 @@ def parse_body(lines: list[str], icon_prefix: str) -> str:
     return "\n".join(parts)
 
 
+def insert_body_hero(body_html: str, src: str, title: str) -> str:
+    """本文中に hero イラストを <figure> として差し込む。
+    最初の <h2> 見出しの直前に置き、無ければ本文先頭に置く。"""
+    fig = (
+        f'<figure class="article-figure">'
+        f'<img src="{src}" alt="{html_lib.escape(title)}" loading="lazy">'
+        f'</figure>'
+    )
+    m = re.search(r"<h2[ >]", body_html)
+    if m:
+        return body_html[:m.start()] + fig + body_html[m.start():]
+    return fig + body_html
+
+
 def first_paragraph(lines: list[str]) -> str:
     """一覧用の抜粋（最初の通常段落のプレーンテキスト）。"""
     for line in lines:
@@ -365,10 +379,13 @@ def build():
     n = len(posts)
     for idx, post in enumerate(posts):
         body_html = parse_body(post["lines"], icon_prefix="../")
-        # 記事ヘッダーの大判画像は hero（Gemini生成イラスト）を最優先。
-        # hero が無い記事だけ thumb（三姉妹アイコン並び）を使い、画像の重複を避ける。
-        header_img_src = (f'../heroes/{post["hero"]}' if post.get("hero")
-                          else f'../thumbs/{post["thumb"]}')
+        # ヘッダーは三姉妹アイコン並びの thumb で統一。
+        # hero（Gemini生成イラスト）がある記事は、それを本文の途中に大きく差し込む
+        # （ヘッダーと本文で別画像になり、重複せず“読み物としての絵”が増える）。
+        header_img_src = f'../thumbs/{post["thumb"]}'
+        if post.get("hero"):
+            body_html = insert_body_hero(
+                body_html, f'../heroes/{post["hero"]}', post["title"])
         tags_html = ""
         if post.get("tags"):
             chips = "".join(

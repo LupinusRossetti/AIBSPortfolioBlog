@@ -1157,9 +1157,92 @@ a:hover {
   .menu-toggle { display: block; }
 }
 
+/* === SNS page === */
+.sns-timelines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 8px;
+}
+.sns-feed {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(110, 92, 168, 0.06);
+}
+.sns-feed-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.sns-feed-head .sns-mark {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: grid; place-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.sns-feed-head h3 { margin: 0; font-size: 1.05rem; }
+.sns-feed-head .handle { font-size: .82rem; color: var(--ink-soft); }
+.sns-embed { min-height: 360px; }
+.sns-embed .twitter-timeline { border-radius: 12px; }
+.sns-fallback {
+  margin-top: 14px;
+  text-align: center;
+  font-size: .85rem;
+  color: var(--ink-soft);
+}
+
+.sns-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 8px;
+}
+.sns-card {
+  display: block;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 26px 22px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.sns-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(110, 92, 168, 0.12);
+  border-color: var(--line-strong);
+}
+.sns-card .sns-mark {
+  width: 56px; height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 16px;
+  display: grid; place-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #fff;
+}
+.sns-card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+.sns-card .handle { font-size: .82rem; color: var(--ink-faint); }
+.sns-card p { margin: 12px 0 16px; font-size: .9rem; color: var(--ink-soft); }
+.sns-card .visit {
+  display: inline-block;
+  font-size: .85rem;
+  letter-spacing: .04em;
+  color: var(--accent-deep);
+}
+
+@media (max-width: 860px) {
+  .sns-cards { grid-template-columns: 1fr 1fr; }
+}
 @media (max-width: 680px) {
-  .sisters { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
-  .works { grid-template-columns: 1fr; }
-  .chat .stack { max-width: 82%; }
-  .stamp-strip img { width: 76px; height: 76px; }
+  .sns-timelines { grid-template-columns: 1fr; }
+  .sns-cards { grid-template-columns: 1fr; }
 }

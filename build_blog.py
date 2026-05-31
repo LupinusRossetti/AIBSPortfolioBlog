@@ -180,7 +180,7 @@ def header(prefix: str, active: str) -> str:
         f'<a href="{prefix}index.html"{cls("home")}>Home</a>'
         f'<a href="{prefix}portfolio.html"{cls("portfolio")}>Portfolio</a>'
         f'<a href="{prefix}blog/index.html"{cls("blog")}>Blog</a>'
-        f'<a href="{prefix}archive.html"{cls("archive")}>Archive</a>'
+        f'<a href="{prefix}sns.html"{cls("sns")}>SNS</a>'
         '</nav></div></header>'
     )
 
@@ -360,7 +360,7 @@ def build():
     (BLOG_DIR / "index.html").write_text(out, encoding="utf-8")
 
     inject_latest_into_home(posts)
-    build_archive()
+    build_sns()
 
     heroes = sum(1 for p in posts if p.get("hero"))
     print(f"[build] 記事 {len(posts)} 件 / アイコン {copied} 枚 / "
@@ -398,14 +398,114 @@ def _generic_card(item):
     )
 
 
-def build_archive():
+# SNSプラットフォームのブランド表現（マーク文字＋背景グラデ）
+SNS_BRAND = {
+    "x":         {"mark": "X",  "grad": "linear-gradient(135deg,#2c2c34,#55525e)"},
+    "threads":   {"mark": "@",  "grad": "linear-gradient(135deg,#2c2c34,#55525e)"},
+    "tiktok":    {"mark": "T",  "grad": "linear-gradient(135deg,#8e7cc3,#e0809a)"},
+    "instagram": {"mark": "ig", "grad": "linear-gradient(135deg,#c9a85c,#e0809a)"},
+    "twitch":    {"mark": "tv", "grad": "linear-gradient(135deg,#8e7cc3,#6f5ca8)"},
+}
+
+
+def _sns_mark(plat, size_cls=""):
+    b = SNS_BRAND.get(plat, {"mark": "•", "grad": "linear-gradient(135deg,var(--lupinus),var(--fiona))"})
+    return f'<span class="sns-mark{size_cls}" style="background:{b["grad"]}">{html_lib.escape(b["mark"])}</span>'
+
+
+def _x_timeline(sec):
+    """X公式 widgets.js を用いたタイムライン埋め込み。読み込めない場合はリンクで代替。"""
+    url = sec.get("profile_url", "")
+    handle = sec.get("handle", "")
+    return (
+        '<div class="sns-feed">'
+        '<div class="sns-feed-head">'
+        + _sns_mark("x")
+        + f'<div><h3>{html_lib.escape(sec.get("label", ""))}</h3>'
+        f'<div class="handle">{html_lib.escape(handle)}</div></div></div>'
+        '<div class="sns-embed">'
+        f'<a class="twitter-timeline" data-height="420" data-theme="light" data-chrome="noheader nofooter transparent" '
+        f'href="{html_lib.escape(url)}?ref_src=twsrc%5Etfw">{html_lib.escape(handle)} のポスト</a>'
+        '</div>'
+        f'<p class="sns-fallback"><a href="{html_lib.escape(url)}" target="_blank" rel="noopener">'
+        '読み込めないときはこちらから →</a></p>'
+        '</div>'
+    )
+
+
+def _sns_card_feed(sec):
+    """タイムライン埋め込みができないSNS（Threads等）を紹介カード風フィードで表示。"""
+    url = sec.get("profile_url", "")
+    return (
+        '<div class="sns-feed">'
+        '<div class="sns-feed-head">'
+        + _sns_mark(sec.get("platform", ""))
+        + f'<div><h3>{html_lib.escape(sec.get("label", ""))}</h3>'
+        f'<div class="handle">{html_lib.escape(sec.get("handle", ""))}</div></div></div>'
+        f'<p style="color:var(--ink-soft);font-size:.9rem;margin:0 0 16px">{html_lib.escape(sec.get("desc", ""))}</p>'
+        f'<p class="sns-fallback"><a class="btn" href="{html_lib.escape(url)}" target="_blank" rel="noopener">'
+        '最新の投稿を見る →</a></p>'
+        '</div>'
+    )
+
+
+def _sns_card(sec):
+    url = sec.get("profile_url", "")
+    return (
+        f'<a class="sns-card" href="{html_lib.escape(url)}" target="_blank" rel="noopener">'
+        + _sns_mark(sec.get("platform", ""))
+        + f'<h3>{html_lib.escape(sec.get("label", ""))}</h3>'
+        f'<div class="handle">{html_lib.escape(sec.get("handle", ""))}</div>'
+        f'<p>{html_lib.escape(sec.get("desc", ""))}</p>'
+        '<span class="visit">プロフィールへ →</span>'
+        '</a>'
+    )
+
+
+def build_sns():
     data_path = SITE_DIR / "data" / "archive.json"
     if not data_path.exists():
         return
     data = json.loads(data_path.read_text(encoding="utf-8"))
-    max_cards = data.get("max_cards", 10)
-    sections_html = []
-    for i, sec in enumerate(data.get("sections", [])):
+    max_cards = data.get("max_cards", 4)
+
+    # --- SNS紹介ブロック ---
+    sns = data.get("sns", [])
+    by_key = {s.get("key"): s for s in sns}
+    # X→Threads の順でタイムライン枠（Xを上＝左、Threadsを右）
+    timeline_keys = ["x", "threads"]
+    feeds = []
+    for k in timeline_keys:
+        s = by_key.get(k)
+        if not s:
+            continue
+        if s.get("embed") == "timeline" and k == "x":
+            feeds.append(_x_timeline(s))
+        else:
+            feeds.append(_sns_card_feed(s))
+    timelines_html = f'<div class="sns-timelines">{"".join(feeds)}</div>' if feeds else ""
+
+    card_keys = ["tiktok", "instagram", "twitch"]
+    cards = "".join(_sns_card(by_key[k]) for k in card_keys if k in by_key)
+    cards_html = f'<div class="sns-cards">{cards}</div>' if cards else ""
+
+    sns_section = (
+        '<section class="section"><div class="container">'
+        '<div class="section-head">'
+        '<span class="eyebrow">Follow Us</span>'
+        '<h2 class="section-title">SNS</h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '<p style="color:var(--ink-soft);margin-top:14px">'
+        '最新の活動や告知は各SNSでお届けしています。気になるところからのぞいてみてください。</p>'
+        '</div>'
+        + timelines_html
+        + (f'<div style="margin-top:34px">{cards_html}</div>' if cards_html else "")
+        + '</div></section>'
+    )
+
+    sections_html = [sns_section]
+    yt_sections = data.get("sections", [])
+    for j, sec in enumerate(yt_sections):
         plat = sec.get("platform", "")
         items = sec.get("items", [])
         # 最新順（date降順）に並べ、最大 max_cards 件まで実カード表示
@@ -436,7 +536,7 @@ def build_archive():
         else:
             grid = '<p class="center" style="color:var(--ink-soft)">準備中です。</p>'
 
-        veil = " veil" if i % 2 == 1 else ""
+        veil = " veil" if j % 2 == 0 else ""
         sections_html.append(
             f'<section class="section{veil}"><div class="container">'
             '<div class="section-head">'
@@ -448,17 +548,23 @@ def build_archive():
             f'{grid}</div></section>'
         )
 
+    # X widgets.js（公式埋め込み）。body末尾に置けばタイムラインを描画する。
+    x_widget = ('<script async src="https://platform.twitter.com/widgets.js" '
+                'charset="utf-8"></script>')
+
     body = (
         '<section class="blog-hero"><div class="container">'
-        '<span class="eyebrow">Archive</span>'
-        '<h1>動画・配信アーカイブ</h1>'
-        '<p class="lead">ショートアニメ作品とゲーム配信のアーカイブ、各SNSのショート動画をまとめてご覧いただけます。</p>'
+        '<span class="eyebrow">SNS</span>'
+        '<h1>SNS</h1>'
+        '<p class="lead">AI Bloom Sisters の活動はいろいろなSNSで発信しています。'
+        'タイムラインや最新動画をまとめてご覧いただけます。</p>'
         '</div></section>'
         + "".join(sections_html)
+        + x_widget
     )
-    out = page("Archive | Lupinus Rossetti", prefix="", active="archive", body=body,
-               desc="AI Bloom Sisters の動画・配信アーカイブ（YouTube / TikTok / Instagram）。")
-    (SITE_DIR / "archive.html").write_text(out, encoding="utf-8")
+    out = page("SNS | Lupinus Rossetti", prefix="", active="sns", body=body,
+               desc="AI Bloom Sisters の各SNS（X / Threads / TikTok / Instagram / Twitch）と動画・配信まとめ。")
+    (SITE_DIR / "sns.html").write_text(out, encoding="utf-8")
 
 
 def inject_latest_into_home(posts, count=3):

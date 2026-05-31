@@ -1,39 +1,65 @@
 {
-  "_comment": "アーカイブ一覧の元データ。プラットフォーム別に items を追記すると archive.html に反映されます（python build_blog.py で再ビルド）。youtube は id だけでサムネ自動表示。tiktok/instagram/threads/twitch は profile_url と、各 item に url ＋任意の thumb（画像パス or URL）。YouTube動画は RSS フィード（channel_id=UC7dZB73rrcg7btiAXO78bdw）から取得し、最新/ショート/ライブ/アニメに分類。各 youtube セクションは最新から最大10件まで実カード表示し、超過分は channel_tab_url（各タブ）へのリンクボタンで誘導。RSSは最新15件しか返さないため、取得確実な動画のみ掲載（存在しないIDは推測で書かない）。",
-  "max_cards": 10,
-  "sections": [
+  "_comment": "SNSページ(sns.html)の元データ。python build_blog.py で再ビルド。youtube は id だけでサムネ自動表示。最新の動画=横長(本編)、AIショートアニメ=縦長(ショート)、ライブ配信=配信VOD。各youtubeセクションは最新から最大 max_cards 件まで実カード表示し、超過分は channel_tab_url(各タブ)へのリンクボタンで誘導。RSSは最新15件しか返さないため取得確実な動画のみ掲載(存在しないIDは推測で書かない)。sns配列はタイムライン埋め込み(x/threads)と紹介カード(tiktok/instagram/twitch)の表示元データ。",
+  "max_cards": 4,
+  "sns": [
     {
-      "key": "youtube_anime",
-      "platform": "youtube",
-      "label": "AIショートアニメ",
-      "eyebrow": "YouTube Video",
-      "desc": "三姉妹のAIショートアニメ作品。",
-      "profile_url": "https://www.youtube.com/@AIBloomSisters",
-      "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/videos",
-      "items": [
-        {
-          "id": "HJvXuZ6m3y8",
-          "title": "【祝！初動画！】AIBS三姉妹 ドタバタカオスな自己紹介！【アニメ】【AIBS】",
-          "date": "2026-05-24"
-        },
-        {
-          "id": "sSWLEZLbmDI",
-          "title": "【IQテスト】三姉妹で農夫の川渡り問題！【アニメ】【AIBS】",
-          "date": "2026-05-28"
-        },
-        {
-          "id": "4KtBwW9gdkc",
-          "title": "【これヤバイやつ】新作スイーツで沈黙の三姉妹【アニメ】【AIBS】",
-          "date": "2026-05-28"
-        }
-      ]
+      "key": "x",
+      "platform": "x",
+      "label": "X (Twitter)",
+      "eyebrow": "Timeline",
+      "handle": "@irisfionaAIBS",
+      "desc": "日々の活動や告知をいちばん早くお届け。",
+      "profile_url": "https://x.com/irisfionaAIBS",
+      "embed": "timeline"
     },
+    {
+      "key": "threads",
+      "platform": "threads",
+      "label": "Threads",
+      "eyebrow": "Timeline",
+      "handle": "@rupi.airupi",
+      "desc": "ゆるい近況やおしゃべりはこちらで。",
+      "profile_url": "https://www.threads.com/@rupi.airupi",
+      "embed": "card"
+    },
+    {
+      "key": "tiktok",
+      "platform": "tiktok",
+      "label": "TikTok",
+      "eyebrow": "Social",
+      "handle": "@lupinus_rossetti",
+      "desc": "ショート動画はこちらでも楽しめます。",
+      "profile_url": "https://www.tiktok.com/@lupinus_rossetti",
+      "embed": "card"
+    },
+    {
+      "key": "instagram",
+      "platform": "instagram",
+      "label": "Instagram",
+      "eyebrow": "Social",
+      "handle": "@rupi.airupi",
+      "desc": "イラストや活動の様子を投稿しています。",
+      "profile_url": "https://www.instagram.com/rupi.airupi/",
+      "embed": "card"
+    },
+    {
+      "key": "twitch",
+      "platform": "twitch",
+      "label": "Twitch",
+      "eyebrow": "Live",
+      "handle": "lupinus_rossetti",
+      "desc": "Twitchでのライブ配信・過去配信(VOD)はこちら。",
+      "profile_url": "https://www.twitch.tv/lupinus_rossetti",
+      "embed": "card"
+    }
+  ],
+  "sections": [
     {
       "key": "youtube_latest",
       "platform": "youtube",
       "label": "最新の動画",
-      "eyebrow": "YouTube Latest",
-      "desc": "AI Bloom Sisters の新着動画。",
+      "eyebrow": "YouTube Video",
+      "desc": "AI Bloom Sisters の新着動画（本編）。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
       "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/videos",
       "items": [
@@ -45,11 +71,11 @@
       ]
     },
     {
-      "key": "youtube_shorts",
+      "key": "youtube_anime",
       "platform": "youtube",
-      "label": "ショート動画",
+      "label": "AIショートアニメ",
       "eyebrow": "YouTube Shorts",
-      "desc": "サッと楽しめる三姉妹のショート動画。",
+      "desc": "三姉妹のAIショートアニメ（縦長ショート）。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
       "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/shorts",
       "items": [
@@ -135,42 +161,6 @@
           "date": "2026-04-11"
         }
       ]
-    },
-    {
-      "key": "twitch",
-      "platform": "twitch",
-      "label": "配信アーカイブ（Twitch）",
-      "eyebrow": "Twitch",
-      "desc": "Twitchでのライブ配信・過去配信（VOD）はこちら。",
-      "profile_url": "https://www.twitch.tv/lupinus_rossetti",
-      "items": []
-    },
-    {
-      "key": "tiktok",
-      "platform": "tiktok",
-      "label": "TikTok",
-      "eyebrow": "TikTok",
-      "desc": "ショート動画はこちらでも。",
-      "profile_url": "https://www.tiktok.com/@lupinus_rossetti",
-      "items": []
-    },
-    {
-      "key": "instagram",
-      "platform": "instagram",
-      "label": "Instagram",
-      "eyebrow": "Instagram",
-      "desc": "イラストや活動の様子を投稿。",
-      "profile_url": "https://www.instagram.com/rupi.airupi/",
-      "items": []
-    },
-    {
-      "key": "threads",
-      "platform": "threads",
-      "label": "Threads",
-      "eyebrow": "Threads",
-      "desc": "ゆるい近況や告知はこちらで。",
-      "profile_url": "https://www.threads.com/@rupi.airupi?hl=ja",
-      "items": []
     }
   ]
 }

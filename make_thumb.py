@@ -180,28 +180,45 @@ def _aa_circle_mask(size: int) -> Image.Image:
 
 
 def _circle_avatar(src: Path, size: int, ring: tuple, ring_w: int = 8) -> Image.Image:
-    # 高解像度で顔をクロップ → なめらかな円マスクで抜く → 縮小（縁のアンチエイリアス）
-    im = _face_crop(src, size * SS).convert("RGBA")
+    """円形アバター。リング外周＝アバターの最外周として、リングと顔画像を
+    同一中心(cx,cy)・同一外半径Rで完全一致させる。
+      - 共通: 中心(cx,cy)=画像中央, 外半径 R = big/2
+      - リング: 外周が R にぴったり収まるよう、線幅rwのストロークを
+        半径 R-rw/2 のパス上に描く（→ 外縁がちょうど R）
+      - 顔画像: 半径 R-rw の円でクロップ（リングの内側にぴったり収まる）
+    こうすると顔画像の縁がリング内側に一致し、はみ出しゼロになる。
+    """
     big = size * SS
+    cx = cy = big / 2.0
+    R = big / 2.0
+    rw = ring_w * SS
+    inner_r = R - rw  # 顔画像を収める半径（リングの内側）
+
+    im = _face_crop(src, big).convert("RGBA")
+    # 顔画像用マスク（中心(cx,cy)・半径inner_rの円）
     mask = Image.new("L", (big, big), 0)
-    ImageDraw.Draw(mask).ellipse((0, 0, big - 1, big - 1), fill=255)
+    ImageDraw.Draw(mask).ellipse(
+        (cx - inner_r, cy - inner_r, cx + inner_r, cy + inner_r), fill=255)
     out = Image.new("RGBA", (big, big), (0, 0, 0, 0))
     out.paste(im, (0, 0), mask)
-    # リング（高解像度で描いてから一緒に縮小＝なめらか）
+    # リング（外縁が R に一致するよう、半径 R-rw/2 のパス上に幅rwで描く）
     if ring_w > 0:
-        rw = ring_w * SS
+        path_r = R - rw / 2.0
         ImageDraw.Draw(out).ellipse(
-            (rw / 2, rw / 2, big - 1 - rw / 2, big - 1 - rw / 2),
-            outline=ring + (255,), width=rw)
+            (cx - path_r, cy - path_r, cx + path_r, cy + path_r),
+            outline=ring + (255,), width=int(rw))
     return out.resize((size, size), Image.LANCZOS)
 
 
 def make_site_avatar(src: Path, size: int, out_path: Path):
-    """サイトのプロフィール用アバター（円形・縁なめらか・透過背景）を生成。"""
-    im = _face_crop(src, size * SS).convert("RGBA")
+    """サイトのプロフィール用アバター（円形・縁なめらか・透過背景）を生成。
+    中心(cx,cy)・半径Rの単一円で顔画像をクロップ（リングなし）。"""
     big = size * SS
+    cx = cy = big / 2.0
+    R = big / 2.0
+    im = _face_crop(src, big).convert("RGBA")
     mask = Image.new("L", (big, big), 0)
-    ImageDraw.Draw(mask).ellipse((0, 0, big - 1, big - 1), fill=255)
+    ImageDraw.Draw(mask).ellipse((cx - R, cy - R, cx + R, cy + R), fill=255)
     out = Image.new("RGBA", (big, big), (0, 0, 0, 0))
     out.paste(im, (0, 0), mask)
     out = out.resize((size, size), Image.LANCZOS)

@@ -717,7 +717,7 @@ def build_about():
         '<section class="blog-hero"><div class="container">'
         '<span class="eyebrow">About</span>'
         '<h1>AI Bloom Sisters のこと</h1>'
-        '<p class="lead">AIを相棒に、ショートアニメ・イラスト・音楽をつくる三姉妹VTuberユニット。'
+        '<p class="lead">AIを相棒に、ショートアニメ・イラストをつくる三姉妹VTuberユニット。'
         '「見てくれる方を楽しませたい」をいちばんに、ものづくりを続けています。</p>'
         '</div></section>'
 
@@ -761,8 +761,8 @@ def build_about():
         '<p>台本・演出・音・映像まで、自作の自動生成パイプラインを使って三姉妹のショートアニメを制作しています。</p>'
         '</div></div>'
         '<div class="work-card"><div class="body">'
-        '<span class="tag">Illustration &amp; Music</span><h3>イラスト・音楽</h3>'
-        '<p>キャラクターイラストやオリジナル楽曲づくりにも、AIを相棒に挑戦しています。</p>'
+        '<span class="tag">Illustration</span><h3>イラスト</h3>'
+        '<p>三姉妹のキャラクターイラストや表情差分づくりに、AIを相棒に挑戦しています。</p>'
         '</div></div>'
         '<div class="work-card"><div class="body">'
         '<span class="tag">Game Streaming</span><h3>ゲーム配信</h3>'
@@ -789,7 +789,7 @@ def build_about():
         '</div></section>'
     )
     out = page("About | Lupinus Rossetti", prefix="", active="about", body=body,
-               desc="AI Bloom Sisters（AIBS）三姉妹の紹介と活動内容。AIショートアニメ・イラスト・音楽・ゲーム配信。",
+               desc="AI Bloom Sisters（AIBS）三姉妹の紹介と活動内容。AIショートアニメ・イラスト・ゲーム配信。",
                path="about.html", og_type="profile")
     (SITE_DIR / "about.html").write_text(out, encoding="utf-8")
 

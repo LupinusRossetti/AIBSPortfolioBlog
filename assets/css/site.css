@@ -934,6 +934,49 @@ a:hover {
   color: var(--ink-soft);
 }
 
+/* YouTube動画の埋め込みグリッド（ポートフォリオの作例） */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.video-embed {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  background: #000;
+}
+
+.video-embed .frame16x9 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-embed.shorts .frame16x9 {
+  aspect-ratio: 9 / 16;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-caption {
+  background: var(--card, #fff);
+  padding: 14px 16px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
 /* 本文の途中に差し込むイラスト */
 .article-figure {
   margin: 36px 0;

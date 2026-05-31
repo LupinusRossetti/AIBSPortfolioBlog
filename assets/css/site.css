@@ -1816,3 +1816,18 @@ a.tag-chip:hover { background: var(--fiona-soft); }
   transition: transform 0.3s var(--ease), background 0.3s var(--ease);
 }
 .lightbox-close:hover { transform: rotate(90deg); background: rgba(255, 255, 255, 0.3); }
+
+/* 表情差分ギャラリー（正方形アイコン用） */
+.gallery-grid.is-faces { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+.gallery-grid.is-faces .g-btn img { aspect-ratio: 1 / 1; object-position: center; }
+.gallery-faces-group + .gallery-faces-group { margin-top: 28px; }
+.gallery-faces-label {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 14px;
+  text-align: center;
+}
+.gallery-faces-group[data-sister="lupinus"] .gallery-faces-label { color: var(--lupinus); }
+.gallery-faces-group[data-sister="iris"] .gallery-faces-label { color: #b08e3e; }
+.gallery-faces-group[data-sister="fiona"] .gallery-faces-label { color: var(--fiona); }

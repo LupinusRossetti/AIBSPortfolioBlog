@@ -332,10 +332,11 @@ a:hover {
 .hero-title {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(1.9rem, 6vw, 4.2rem);
   line-height: 1.12;
   letter-spacing: 0.02em;
   color: var(--ink);
+  overflow-wrap: anywhere;
 }
 
 .hero-title .script {
@@ -1155,6 +1156,17 @@ a:hover {
   .nav a { padding: 14px 28px; width: 100%; text-align: center; }
 
   .menu-toggle { display: block; }
+
+  .sisters { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  .sisters {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* === SNS page === */

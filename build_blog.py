@@ -365,14 +365,10 @@ def build():
     n = len(posts)
     for idx, post in enumerate(posts):
         body_html = parse_body(post["lines"], icon_prefix="../")
-        hero_html = ""
-        if post.get("hero"):
-            hero_html = (
-                '<figure class="article-hero">'
-                f'<img src="../heroes/{post["hero"]}" alt="{html_lib.escape(post["title"])}" loading="lazy">'
-                f'<figcaption>{html_lib.escape(post["title"])}</figcaption>'
-                '</figure>'
-            )
+        # 記事ヘッダーの大判画像は hero（Gemini生成イラスト）を最優先。
+        # hero が無い記事だけ thumb（三姉妹アイコン並び）を使い、画像の重複を避ける。
+        header_img_src = (f'../heroes/{post["hero"]}' if post.get("hero")
+                          else f'../thumbs/{post["thumb"]}')
         tags_html = ""
         if post.get("tags"):
             chips = "".join(
@@ -403,12 +399,13 @@ def build():
         article = (
             '<main class="article">'
             '<header class="article-header">'
-            f'<img class="article-thumb" src="../thumbs/{post["thumb"]}" alt="{html_lib.escape(post["title"])}">'
+            f'<img class="article-thumb" src="{header_img_src}" alt="{html_lib.escape(post["title"])}" '
+            f'fetchpriority="high">'
             f'<div class="date">{jp_date(post["date"])}</div>'
             f'<h1>{html_lib.escape(post["title"])}</h1>'
             f'{tags_html}'
             '</header>'
-            f'<div class="article-body">{hero_html}{body_html}</div>'
+            f'<div class="article-body">{body_html}</div>'
             '</main>'
             f'<nav class="post-prevnext">{"".join(prevnext)}</nav>'
             '<nav class="article-nav">'

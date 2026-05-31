@@ -7,5 +7,9 @@ Thumbs.db
 
 # サムネ生成キャッシュのマーカー（Gemini生成済み印）
 portfolio/blog/thumbs/*.gemini
+blog/thumbs/*.gemini
 __pycache__/
 *.pyc
+
+# Claude Code ローカル設定
+.claude/

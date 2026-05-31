@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Lupinus Rossetti</title>
   <meta name="description" content="AI Bloom Sisters・ルピナス・ロゼッティの制作実績。AIショートアニメ・イラスト・音楽・ゲーム配信・ツール開発。">
+  <link rel="canonical" href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/portfolio.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:title" content="Portfolio | Lupinus Rossetti">
+  <meta property="og:description" content="AI Bloom Sisters・ルピナス・ロゼッティの制作実績。AIショートアニメ・イラスト・音楽・ゲーム配信・ツール開発。">
+  <meta property="og:url" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/portfolio.html">
+  <meta property="og:image" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@irisfionaAIBS">
+  <meta name="twitter:title" content="Portfolio | Lupinus Rossetti">
+  <meta name="twitter:description" content="AI Bloom Sisters・ルピナス・ロゼッティの制作実績。AIショートアニメ・イラスト・音楽・ゲーム配信・ツール開発。">
+  <meta name="twitter:image" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/apple-touch-icon.png">
+  <link rel="alternate" type="application/rss+xml" title="AIBS Diary"
+    href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/feed.xml">
   <link rel="stylesheet" href="assets/css/site.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +44,7 @@
         onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
       <nav class="nav" id="nav">
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="portfolio.html" class="active">Portfolio</a>
         <a href="blog/index.html">Blog</a>
         <a href="sns.html">SNS</a>
@@ -44,7 +62,7 @@
   </section>
 
   <!-- AI Short Anime -->
-  <section class="section" id="anime">
+  <section class="section reveal" id="anime">
     <div class="container">
       <div class="works">
         <div class="work-card feature">
@@ -62,7 +80,7 @@
   </section>
 
   <!-- Illustration gallery -->
-  <section class="section veil" id="illust">
+  <section class="section veil reveal" id="illust">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Illustration</span>
@@ -102,7 +120,7 @@
   </section>
 
   <!-- Stamps -->
-  <section class="section" id="stamps">
+  <section class="section reveal" id="stamps">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Stickers</span>
@@ -126,7 +144,7 @@
   </section>
 
   <!-- Music & Dev -->
-  <section class="section veil" id="dev">
+  <section class="section veil reveal" id="dev">
     <div class="container">
       <div class="works">
         <div class="work-card">
@@ -158,7 +176,7 @@
   </section>
 
   <!-- Streaming -->
-  <section class="section" id="stream">
+  <section class="section reveal" id="stream">
     <div class="container center">
       <div class="section-head" style="margin-bottom:28px">
         <span class="eyebrow">Game Streaming</span>
@@ -196,6 +214,15 @@
       <p class="copy">&copy; 2026 AI Bloom Sisters. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>(function(){
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var els=document.querySelectorAll('.reveal');if(!els.length||!('IntersectionObserver'in window))return;
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},
+      {rootMargin:'0px 0px -10% 0px'});
+    els.forEach(function(el){io.observe(el);});
+  })();</script>
 
 </body>
 

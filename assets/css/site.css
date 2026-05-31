@@ -1246,3 +1246,79 @@ a:hover {
   .sns-timelines { grid-template-columns: 1fr; }
   .sns-cards { grid-template-columns: 1fr; }
 }
+
+/* === スクロール連動フェードイン === */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* === 記事タグチップ === */
+.article-tags, .card-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.card-tags { margin: 10px 0 0; }
+.tag-chip {
+  display: inline-block; font-size: .78rem; letter-spacing: .03em;
+  color: var(--accent-deep); background: var(--lupinus-soft);
+  padding: 3px 11px; border-radius: 999px; text-decoration: none;
+}
+a.tag-chip:hover { background: var(--fiona-soft); }
+
+/* === 記事 前後ナビ === */
+.post-prevnext {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  max-width: 760px; margin: 8px auto 0; padding: 0 20px;
+}
+.post-prevnext .pn {
+  display: flex; flex-direction: column; gap: 4px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: 14px 16px; text-decoration: none; background: var(--bg-soft);
+  transition: border-color .25s ease, background .25s ease;
+}
+.post-prevnext a.pn:hover { border-color: var(--lupinus); background: var(--lupinus-soft); }
+.post-prevnext .pn-next { text-align: right; }
+.post-prevnext .pn-label { font-size: .78rem; color: var(--accent); letter-spacing: .04em; }
+.post-prevnext .pn-title { font-size: .92rem; color: var(--ink); line-height: 1.4; }
+.post-prevnext .pn-empty { border: none; background: none; }
+
+/* === 日記 検索・タグ絞り込み === */
+.diary-controls { margin: 0 auto 36px; max-width: 760px; }
+.diary-search { margin-bottom: 18px; }
+.diary-search input {
+  width: 100%; box-sizing: border-box; padding: 12px 18px;
+  border: 1px solid var(--line-strong); border-radius: 999px;
+  font: inherit; font-size: .95rem; color: var(--ink); background: var(--bg-soft);
+}
+.diary-search input:focus { outline: none; border-color: var(--lupinus); }
+.tag-filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.tag-filter {
+  font: inherit; font-size: .85rem; cursor: pointer;
+  border: 1px solid var(--line-strong); background: var(--bg);
+  color: var(--ink-soft); padding: 6px 16px; border-radius: 999px;
+  transition: all .25s ease;
+}
+.tag-filter:hover { border-color: var(--lupinus); color: var(--accent-deep); }
+.tag-filter.active { background: var(--lupinus); border-color: var(--lupinus); color: #fff; }
+.tag-filter .cnt { opacity: .7; font-size: .78em; }
+
+/* === 配信スケジュール === */
+.sched-wrap { max-width: 680px; margin: 0 auto; }
+.sched-list { list-style: none; margin: 0; padding: 0; }
+.sched-item {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 12px;
+  padding: 16px 20px; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  margin-bottom: 12px; background: var(--bg-soft);
+}
+.sched-item .sched-date { font-weight: 600; color: var(--accent-deep); min-width: 6em; }
+.sched-item .sched-time { color: var(--ink-soft); font-size: .9rem; }
+.sched-item .sched-title { flex: 1; color: var(--ink); }
+.sched-item .sched-link {
+  font-size: .85rem; color: var(--accent-deep); text-decoration: none;
+  border: 1px solid var(--line-strong); border-radius: 999px; padding: 4px 14px;
+}
+.sched-item .sched-link:hover { background: var(--lupinus-soft); }
+
+@media (max-width: 560px) {
+  .post-prevnext { grid-template-columns: 1fr; }
+  .post-prevnext .pn-next { text-align: left; }
+}

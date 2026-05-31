@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lupinusrossetti.github.io/AIBSPortfolioBlog/sitemap.xml

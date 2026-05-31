@@ -29,6 +29,12 @@ import markdown as md
 
 import make_thumb
 
+# === サイト設定 ===
+# GitHub Pages のプロジェクトサイト。OGP/sitemap/RSS は絶対URLが必要。
+BASE_URL = "https://lupinusrossetti.github.io/AIBSPortfolioBlog"
+SITE_NAME = "Lupinus Rossetti | AI Bloom Sisters"
+DEFAULT_OG_IMAGE = "apple-touch-icon.png"   # サイト共通のOGP画像（軽量・三姉妹長女）
+
 # === パス設定 ===
 SITE_DIR = Path(__file__).resolve().parent          # リポジトリ直下
 DIARY_DIR = Path(r"C:\ClaudeCode\note-diary")
@@ -168,6 +174,14 @@ FONTS = (
 )
 
 
+def favicon_links(prefix: str) -> str:
+    return (
+        f'<link rel="icon" href="{prefix}favicon.ico" sizes="any">'
+        f'<link rel="icon" type="image/png" sizes="32x32" href="{prefix}favicon-32x32.png">'
+        f'<link rel="apple-touch-icon" href="{prefix}apple-touch-icon.png">'
+    )
+
+
 def header(prefix: str, active: str) -> str:
     def cls(name): return ' class="active"' if name == active else ""
     return (
@@ -178,6 +192,7 @@ def header(prefix: str, active: str) -> str:
         '<button class="menu-toggle" aria-label="menu" onclick="document.getElementById(\'nav\').classList.toggle(\'open\')">≡</button>'
         '<nav class="nav" id="nav">'
         f'<a href="{prefix}index.html"{cls("home")}>Home</a>'
+        f'<a href="{prefix}about.html"{cls("about")}>About</a>'
         f'<a href="{prefix}portfolio.html"{cls("portfolio")}>Portfolio</a>'
         f'<a href="{prefix}blog/index.html"{cls("blog")}>Blog</a>'
         f'<a href="{prefix}sns.html"{cls("sns")}>SNS</a>'
@@ -200,33 +215,59 @@ def footer() -> str:
     )
 
 
-def page(title: str, prefix: str, active: str, body: str, desc: str = "", og_image: str = "") -> str:
-    og = ""
-    if og_image:
-        og_url = f"{prefix}{og_image}"
-        og = (
-            '<meta property="og:type" content="article">'
-            f'<meta property="og:title" content="{html_lib.escape(title)}">'
-            f'<meta property="og:description" content="{html_lib.escape(desc)}">'
-            f'<meta property="og:image" content="{og_url}">'
-            '<meta name="twitter:card" content="summary_large_image">'
-        )
+def page(title: str, prefix: str, active: str, body: str, desc: str = "",
+         og_image: str = "", path: str = "", og_type: str = "website") -> str:
+    """1ページ分のHTMLを生成。
+    path: BASE_URL からの相対パス（例 "blog/index.html"）。canonical / og:url に使用。
+    og_image: BASE_URL からの相対パス。未指定ならサイト共通画像。
+    """
+    img_rel = og_image or DEFAULT_OG_IMAGE
+    og_image_abs = f"{BASE_URL}/{img_rel}"
+    canonical = f"{BASE_URL}/{path}" if path else BASE_URL + "/"
+    og = (
+        f'<link rel="canonical" href="{canonical}">'
+        f'<meta property="og:type" content="{og_type}">'
+        f'<meta property="og:site_name" content="{html_lib.escape(SITE_NAME)}">'
+        f'<meta property="og:title" content="{html_lib.escape(title)}">'
+        f'<meta property="og:description" content="{html_lib.escape(desc)}">'
+        f'<meta property="og:url" content="{canonical}">'
+        f'<meta property="og:image" content="{og_image_abs}">'
+        '<meta name="twitter:card" content="summary_large_image">'
+        '<meta name="twitter:site" content="@irisfionaAIBS">'
+        f'<meta name="twitter:title" content="{html_lib.escape(title)}">'
+        f'<meta name="twitter:description" content="{html_lib.escape(desc)}">'
+        f'<meta name="twitter:image" content="{og_image_abs}">'
+    )
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
         f'<title>{html_lib.escape(title)}</title>'
-        f'<meta name="description" content="{html_lib.escape(desc)}">{og}'
-        f'<link rel="stylesheet" href="{prefix}assets/css/site.css">{FONTS}'
+        f'<meta name="description" content="{html_lib.escape(desc)}">'
+        + favicon_links(prefix) + og
+        + f'<link rel="alternate" type="application/rss+xml" title="AIBS Diary" href="{BASE_URL}/feed.xml">'
+        + f'<link rel="stylesheet" href="{prefix}assets/css/site.css">{FONTS}'
         '</head><body>'
         + header(prefix, active)
         + body
         + footer()
+        + reveal_script()
         + "</body></html>"
     )
 
 
-def menu_script():
-    return ""
+def reveal_script() -> str:
+    """スクロール連動フェードイン（IntersectionObserver）。
+    prefers-reduced-motion 環境では何もしない（CSS側で常時表示）。"""
+    return (
+        "<script>(function(){"
+        "if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;"
+        "var els=document.querySelectorAll('.reveal');if(!els.length||!('IntersectionObserver'in window))return;"
+        "var io=new IntersectionObserver(function(es){es.forEach(function(e){"
+        "if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},"
+        "{rootMargin:'0px 0px -10% 0px'});"
+        "els.forEach(function(el){io.observe(el);});"
+        "})();</script>"
+    )
 
 
 # === ビルド本体 ===
@@ -242,6 +283,27 @@ def copy_article_hero(slug: str, date_iso: str) -> str | None:
             shutil.copy2(cand, dst)
             return dst.name
     return None
+
+
+# タグ自動付与の辞書（本文＋タイトルに含まれるキーワード → タグ名）。
+# frontmatter を持たない既存日記に合わせ、内容ベースで軽く分類する。
+TAG_RULES = {
+    "演出": ["演出", "エフェクト", "カメラ", "カット", "見せ場"],
+    "台本": ["台本", "脚本", "セリフ", "ストーリー", "プロット"],
+    "AI": ["AI", "LLM", "生成", "プロンプト", "モデル"],
+    "音": ["音", "BGM", "SFX", "効果音", "音楽"],
+    "映像": ["映像", "動画", "アニメ", "レンダリング", "ショート"],
+    "パイプライン": ["パイプライン", "ツール", "自動化", "ワークフロー", "総点検", "土台"],
+}
+
+
+def extract_tags(title: str, lines: list[str]) -> list[str]:
+    text = title + "\n" + "\n".join(lines)
+    tags = []
+    for tag, kws in TAG_RULES.items():
+        if any(kw in text for kw in kws):
+            tags.append(tag)
+    return tags
 
 
 def load_posts():
@@ -269,6 +331,7 @@ def load_posts():
             "title": title,
             "lines": body_lines,
             "excerpt": first_paragraph(body_lines),
+            "tags": extract_tags(title, body_lines),
         })
     posts.sort(key=lambda x: x["date"], reverse=True)
     return posts
@@ -298,8 +361,9 @@ def build():
         # 記事本文内に差し込む Gemini イラスト（あれば）をサイトへコピー
         post["hero"] = copy_article_hero(post["slug"], post["date"].isoformat())
 
-    # 各記事ページ
-    for post in posts:
+    # 各記事ページ（posts は date 降順）
+    n = len(posts)
+    for idx, post in enumerate(posts):
         body_html = parse_body(post["lines"], icon_prefix="../")
         hero_html = ""
         if post.get("hero"):
@@ -309,15 +373,44 @@ def build():
                 f'<figcaption>{html_lib.escape(post["title"])}</figcaption>'
                 '</figure>'
             )
+        tags_html = ""
+        if post.get("tags"):
+            chips = "".join(
+                f'<a class="tag-chip" href="../index.html#tag={t}">#{html_lib.escape(t)}</a>'
+                for t in post["tags"]
+            )
+            tags_html = f'<div class="article-tags">{chips}</div>'
+        # 前後ナビ（降順配列なので idx-1 が新しい記事＝「次の記事」、idx+1 が古い＝「前の記事」）
+        newer = posts[idx - 1] if idx > 0 else None
+        older = posts[idx + 1] if idx + 1 < n else None
+        prevnext = []
+        if older:
+            prevnext.append(
+                f'<a class="pn pn-prev" href="{older["slug"]}.html">'
+                f'<span class="pn-label">&larr; 前の記事</span>'
+                f'<span class="pn-title">{html_lib.escape(older["title"])}</span></a>'
+            )
+        else:
+            prevnext.append('<span class="pn pn-empty"></span>')
+        if newer:
+            prevnext.append(
+                f'<a class="pn pn-next" href="{newer["slug"]}.html">'
+                f'<span class="pn-label">次の記事 &rarr;</span>'
+                f'<span class="pn-title">{html_lib.escape(newer["title"])}</span></a>'
+            )
+        else:
+            prevnext.append('<span class="pn pn-empty"></span>')
         article = (
             '<main class="article">'
             '<header class="article-header">'
             f'<img class="article-thumb" src="../thumbs/{post["thumb"]}" alt="{html_lib.escape(post["title"])}">'
             f'<div class="date">{jp_date(post["date"])}</div>'
             f'<h1>{html_lib.escape(post["title"])}</h1>'
+            f'{tags_html}'
             '</header>'
             f'<div class="article-body">{hero_html}{body_html}</div>'
             '</main>'
+            f'<nav class="post-prevnext">{"".join(prevnext)}</nav>'
             '<nav class="article-nav">'
             '<a class="btn" href="../index.html">&larr; 日記一覧へ</a>'
             '<a class="btn" href="../../index.html">Home</a>'
@@ -328,22 +421,49 @@ def build():
             prefix="../../", active="blog", body=article,
             desc=post["excerpt"][:110],
             og_image=f'blog/thumbs/{post["thumb"]}',
+            path=f'blog/posts/{post["slug"]}.html',
+            og_type="article",
         )
         (POSTS_DIR / f'{post["slug"]}.html').write_text(out, encoding="utf-8")
 
     # 一覧ページ
     cards = []
     for post in posts:
+        search_blob = (post["title"] + " " + post["excerpt"] + " " + " ".join(post.get("tags", []))).lower()
+        tag_attr = " ".join(post.get("tags", []))
+        chips = "".join(f'<span class="tag-chip">#{html_lib.escape(t)}</span>' for t in post.get("tags", []))
         cards.append(
-            f'<a class="diary-card" href="posts/{post["slug"]}.html">'
+            f'<a class="diary-card" href="posts/{post["slug"]}.html" '
+            f'data-tags="{html_lib.escape(tag_attr)}" data-search="{html_lib.escape(search_blob)}">'
             f'<div class="cover-img"><img src="thumbs/{post["thumb"]}" alt="{html_lib.escape(post["title"])}" loading="lazy"></div>'
             '<div class="body">'
             f'<div class="date">{jp_date(post["date"])}</div>'
             f'<h3>{html_lib.escape(post["title"])}</h3>'
             f'<p class="excerpt">{html_lib.escape(post["excerpt"])}</p>'
+            f'<div class="card-tags">{chips}</div>'
             '<span class="more">つづきを読む</span>'
             '</div></a>'
         )
+
+    # 全タグを出現頻度順に
+    all_tags = {}
+    for post in posts:
+        for t in post.get("tags", []):
+            all_tags[t] = all_tags.get(t, 0) + 1
+    tag_buttons = '<button class="tag-filter active" data-tag="">すべて</button>' + "".join(
+        f'<button class="tag-filter" data-tag="{html_lib.escape(t)}">#{html_lib.escape(t)} <span class="cnt">{c}</span></button>'
+        for t, c in sorted(all_tags.items(), key=lambda kv: (-kv[1], kv[0]))
+    )
+
+    controls = (
+        '<div class="diary-controls">'
+        '<div class="diary-search">'
+        '<input type="search" id="diary-search" placeholder="日記を検索…" aria-label="日記を検索">'
+        '</div>'
+        f'<div class="tag-filters">{tag_buttons}</div>'
+        '</div>'
+    )
+
     list_body = (
         '<section class="blog-hero"><div class="container">'
         '<span class="eyebrow">AIBS Diary</span>'
@@ -352,19 +472,28 @@ def build():
         '三姉妹がわいわいお喋りしながらお届けします。むずかしい言葉は、そのつどかみ砕いて。</p>'
         '</div></section>'
         '<section class="section" style="padding-top:0"><div class="container">'
-        f'<div class="diary-list">{"".join(cards) if cards else "<p class=center>まだ日記がありません。</p>"}</div>'
+        + (controls if cards else "")
+        + f'<div class="diary-list" id="diary-list">{"".join(cards) if cards else "<p class=center>まだ日記がありません。</p>"}</div>'
+        '<p class="center diary-empty" id="diary-empty" hidden style="color:var(--ink-soft)">該当する日記が見つかりませんでした。</p>'
         '</div></section>'
+        + diary_filter_script()
     )
     out = page("Diary | Lupinus Rossetti", prefix="../", active="blog", body=list_body,
-               desc="AI Bloom Sisters 三姉妹がお届けする、AI動画づくりのものづくり日記。")
+               desc="AI Bloom Sisters 三姉妹がお届けする、AI動画づくりのものづくり日記。",
+               path="blog/index.html")
     (BLOG_DIR / "index.html").write_text(out, encoding="utf-8")
 
     inject_latest_into_home(posts)
     build_sns()
+    build_about()
+    build_schedule_into_home()
+    build_feed(posts)
+    build_sitemap_robots(posts)
 
     heroes = sum(1 for p in posts if p.get("hero"))
     print(f"[build] 記事 {len(posts)} 件 / アイコン {copied} 枚 / "
           f"一覧カード: アイコン並び統一 / 本文内イラスト {heroes} 件 / 出力: {BLOG_DIR}")
+    print(f"[build] feed.xml / sitemap.xml / robots.txt / about.html 生成")
     return posts
 
 
@@ -565,6 +694,215 @@ def build_sns():
     out = page("SNS | Lupinus Rossetti", prefix="", active="sns", body=body,
                desc="AI Bloom Sisters の各SNS（X / Threads / TikTok / Instagram / Twitch）と動画・配信まとめ。")
     (SITE_DIR / "sns.html").write_text(out, encoding="utf-8")
+
+
+def build_about():
+    """Aboutページ（活動紹介の器）。事実ベースの基本情報のみ。
+    中身の充実は別途ポートフォリオ拡充で行う前提。"""
+    body = (
+        '<section class="blog-hero"><div class="container">'
+        '<span class="eyebrow">About</span>'
+        '<h1>AI Bloom Sisters のこと</h1>'
+        '<p class="lead">AIを相棒に、ショートアニメ・イラスト・音楽をつくる三姉妹VTuberユニット。'
+        '「見てくれる方を楽しませたい」をいちばんに、ものづくりを続けています。</p>'
+        '</div></section>'
+
+        '<section class="section reveal"><div class="container">'
+        '<div class="section-head">'
+        '<span class="eyebrow">Our Trio</span>'
+        '<h2 class="section-title">三姉妹のこと<span class="jp">AIBS MEMBERS</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '</div>'
+        '<div class="sisters">'
+        '<div class="sister-card" data-sister="lupinus">'
+        '<img class="avatar" src="images/image/avatars/lupinus.png" alt="ルピナス">'
+        '<div class="s-name">Lupinus<span class="jp">ルピナス・長女</span></div>'
+        '<p class="s-role">三姉妹いちばんの常識人で、進行＆ツッコミ担当。落ち着いた優しいお姉さん。'
+        'AIBSの主人公キャラクターで、中の人も同じ「ルピナス」名義でライブ配信をしています。</p>'
+        '</div>'
+        '<div class="sister-card" data-sister="iris">'
+        '<img class="avatar" src="images/image/avatars/iris.png" alt="アイリス">'
+        '<div class="s-name">Iris<span class="jp">アイリス・次女</span></div>'
+        '<p class="s-role">天真爛漫なボケ担当。フィオナとは双子。元気で明るく、'
+        'よく考えずに突っ走るムードメーカー。</p>'
+        '</div>'
+        '<div class="sister-card" data-sister="fiona">'
+        '<img class="avatar" src="images/image/avatars/fiona.png" alt="フィオナ">'
+        '<div class="s-name">Fiona<span class="jp">フィオナ・三女</span></div>'
+        '<p class="s-role">とても優しく落ち着いた末っ子。アイリスとは双子。'
+        '頭がよくて解説役になりがちだけど、すぐ自分の世界に入っちゃう夢女子。</p>'
+        '</div>'
+        '</div>'
+        '</div></section>'
+
+        '<section class="section veil reveal"><div class="container">'
+        '<div class="section-head">'
+        '<span class="eyebrow">What We Do</span>'
+        '<h2 class="section-title">活動内容<span class="jp">ACTIVITIES</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '</div>'
+        '<div class="works">'
+        '<div class="work-card"><div class="body">'
+        '<span class="tag">AI Short Anime</span><h3>AIショートアニメ</h3>'
+        '<p>台本・演出・音・映像まで、自作の自動生成パイプラインを使って三姉妹のショートアニメを制作しています。</p>'
+        '</div></div>'
+        '<div class="work-card"><div class="body">'
+        '<span class="tag">Illustration &amp; Music</span><h3>イラスト・音楽</h3>'
+        '<p>キャラクターイラストやオリジナル楽曲づくりにも、AIを相棒に挑戦しています。</p>'
+        '</div></div>'
+        '<div class="work-card"><div class="body">'
+        '<span class="tag">Game Streaming</span><h3>ゲーム配信</h3>'
+        '<p>格闘ゲームやアクションを中心に、YouTubeでゲーム配信を行っています。</p>'
+        '</div></div>'
+        '</div>'
+        '<p class="center" style="color:var(--ink-soft);margin-top:32px;max-width:40em;margin-left:auto;margin-right:auto">'
+        '本動画はAI生成を随所に活用していますが、完全にAIだけで作るのではなく、'
+        'ルピナス本人による手動編集も多く含んでいます。台本はAIで下書きし、人の手で整えています。</p>'
+        '</div></section>'
+
+        '<section class="section reveal"><div class="container center">'
+        '<div class="section-head" style="margin-bottom:28px">'
+        '<span class="eyebrow">Connect</span>'
+        '<h2 class="section-title">つながる<span class="jp">FOLLOW &amp; SHOP</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '</div>'
+        '<div class="hero-actions" style="justify-content:center;flex-wrap:wrap">'
+        '<a class="btn btn-filled" href="sns.html">SNS一覧へ</a>'
+        '<a class="btn" href="https://lupinusrossetti.booth.pm/" target="_blank" rel="noopener">BOOTH（グッズ）</a>'
+        '<a class="btn" href="https://suzuri.jp/Lupinus_Rossetti" target="_blank" rel="noopener">SUZURI</a>'
+        '<a class="btn" href="mailto:aiirisfiona@gmail.com">お問い合わせ</a>'
+        '</div>'
+        '</div></section>'
+    )
+    out = page("About | Lupinus Rossetti", prefix="", active="about", body=body,
+               desc="AI Bloom Sisters（AIBS）三姉妹の紹介と活動内容。AIショートアニメ・イラスト・音楽・ゲーム配信。",
+               path="about.html", og_type="profile")
+    (SITE_DIR / "about.html").write_text(out, encoding="utf-8")
+
+
+def build_schedule_into_home():
+    """index.html の <!--SCHEDULE--> マーカー間に配信スケジュールを差し込む。
+    data/schedule.json が空でも崩れない（「準備中」表示）。"""
+    home = SITE_DIR / "index.html"
+    if not home.exists():
+        return
+    text = home.read_text(encoding="utf-8")
+    if "<!--SCHEDULE-->" not in text:
+        return
+    sched_path = SITE_DIR / "data" / "schedule.json"
+    items = []
+    if sched_path.exists():
+        try:
+            data = json.loads(sched_path.read_text(encoding="utf-8"))
+            items = data.get("items", [])
+        except Exception:
+            items = []
+    if items:
+        rows = "".join(
+            '<li class="sched-item">'
+            f'<span class="sched-date">{html_lib.escape(str(it.get("date", "")))}</span>'
+            f'<span class="sched-time">{html_lib.escape(str(it.get("time", "")))}</span>'
+            f'<span class="sched-title">{html_lib.escape(str(it.get("title", "")))}</span>'
+            + (f'<a class="sched-link" href="{html_lib.escape(it.get("url"))}" target="_blank" rel="noopener">詳細</a>'
+               if it.get("url") else "")
+            + '</li>'
+            for it in items
+        )
+        inner = f'<ul class="sched-list">{rows}</ul>'
+    else:
+        inner = ('<p class="center" style="color:var(--ink-soft)">'
+                 '次回の配信予定は準備中です。最新の配信告知は'
+                 '<a href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener">X</a>'
+                 'をご覧ください。</p>')
+    block = "<!--SCHEDULE-->\n        " + inner + "\n        <!--/SCHEDULE-->"
+    new_text = re.sub(r"<!--SCHEDULE-->.*?<!--/SCHEDULE-->", block, text, flags=re.S)
+    if new_text != text:
+        home.write_text(new_text, encoding="utf-8")
+
+
+def diary_filter_script() -> str:
+    """日記一覧のタグ絞り込み＋簡易検索。タグと検索語の AND で表示制御。
+    記事ページの #tag=xxx リンクからの遷移にも対応。"""
+    return (
+        "<script>(function(){"
+        "var list=document.getElementById('diary-list');if(!list)return;"
+        "var cards=Array.prototype.slice.call(list.querySelectorAll('.diary-card'));"
+        "var search=document.getElementById('diary-search');"
+        "var empty=document.getElementById('diary-empty');"
+        "var btns=Array.prototype.slice.call(document.querySelectorAll('.tag-filter'));"
+        "var curTag='';"
+        "function apply(){"
+        "var q=(search&&search.value||'').trim().toLowerCase();var shown=0;"
+        "cards.forEach(function(c){"
+        "var tags=(c.getAttribute('data-tags')||'').split(' ');"
+        "var okTag=!curTag||tags.indexOf(curTag)>=0;"
+        "var okQ=!q||(c.getAttribute('data-search')||'').indexOf(q)>=0;"
+        "var ok=okTag&&okQ;c.style.display=ok?'':'none';if(ok)shown++;});"
+        "if(empty)empty.hidden=shown>0;}"
+        "btns.forEach(function(b){b.addEventListener('click',function(){"
+        "curTag=b.getAttribute('data-tag')||'';"
+        "btns.forEach(function(x){x.classList.toggle('active',x===b);});apply();});});"
+        "if(search)search.addEventListener('input',apply);"
+        "var h=location.hash.match(/tag=([^&]+)/);"
+        "if(h){var t=decodeURIComponent(h[1]);var tb=btns.filter(function(b){return b.getAttribute('data-tag')===t;})[0];"
+        "if(tb){curTag=t;btns.forEach(function(x){x.classList.toggle('active',x===tb);});}}"
+        "apply();"
+        "})();</script>"
+    )
+
+
+def build_feed(posts):
+    """RSS 2.0 フィード（feed.xml）を生成。最新20件。"""
+    items = []
+    for post in posts[:20]:
+        url = f"{BASE_URL}/blog/posts/{post['slug']}.html"
+        pub = post["date"].strftime("%a, %d %b %Y 00:00:00 +0900")
+        items.append(
+            "<item>"
+            f"<title>{html_lib.escape(post['title'])}</title>"
+            f"<link>{html_lib.escape(url)}</link>"
+            f"<guid isPermaLink=\"true\">{html_lib.escape(url)}</guid>"
+            f"<pubDate>{pub}</pubDate>"
+            f"<description>{html_lib.escape(post['excerpt'][:200])}</description>"
+            "</item>"
+        )
+    now = date.today().strftime("%a, %d %b %Y 00:00:00 +0900")
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
+        '<title>AI Bloom Sisters Diary</title>'
+        f'<link>{BASE_URL}/blog/index.html</link>'
+        '<description>AIBS 三姉妹がお届けする、AI動画づくりのものづくり日記。</description>'
+        '<language>ja</language>'
+        f'<lastBuildDate>{now}</lastBuildDate>'
+        f'<atom:link href="{BASE_URL}/feed.xml" rel="self" type="application/rss+xml"/>'
+        + "".join(items)
+        + '</channel></rss>'
+    )
+    (SITE_DIR / "feed.xml").write_text(xml, encoding="utf-8")
+
+
+def build_sitemap_robots(posts):
+    """sitemap.xml と robots.txt を全公開ページから生成。"""
+    urls = ["index.html", "about.html", "portfolio.html", "sns.html", "blog/index.html"]
+    urls += [f"blog/posts/{p['slug']}.html" for p in posts]
+    today = date.today().isoformat()
+    entries = "".join(
+        f"<url><loc>{BASE_URL}/{u}</loc><lastmod>{today}</lastmod></url>"
+        for u in urls
+    )
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        + entries + '</urlset>'
+    )
+    (SITE_DIR / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    robots = (
+        "User-agent: *\n"
+        "Allow: /\n"
+        f"Sitemap: {BASE_URL}/sitemap.xml\n"
+    )
+    (SITE_DIR / "robots.txt").write_text(robots, encoding="utf-8")
 
 
 def inject_latest_into_home(posts, count=3):

@@ -1,5 +1,5 @@
 {
-  "_comment": "アーカイブ一覧の元データ。プラットフォーム別に items を追記すると archive.html に反映されます（python build_blog.py で再ビルド）。youtube は id だけでサムネ自動表示。tiktok/instagram/threads/twitch は profile_url と、各 item に url ＋任意の thumb（画像パス or URL）。",
+  "_comment": "アーカイブ一覧の元データ。プラットフォーム別に items を追記すると archive.html に反映されます（python build_blog.py で再ビルド）。youtube は id だけでサムネ自動表示。tiktok/instagram/threads/twitch は profile_url と、各 item に url ＋任意の thumb（画像パス or URL）。YouTube動画は RSS フィード（channel_id=UC7dZB73rrcg7btiAXO78bdw）から取得し、最新/ショート/ライブに分類。",
   "sections": [
     {
       "key": "youtube_anime",
@@ -11,17 +11,108 @@
       "items": []
     },
     {
-      "key": "youtube_stream",
+      "key": "youtube_latest",
       "platform": "youtube",
-      "label": "配信アーカイブ（YouTube）",
-      "eyebrow": "YouTube Live",
-      "desc": "ゲーム配信（格ゲー・アクション中心）のアーカイブ。",
+      "label": "最新の動画",
+      "eyebrow": "YouTube Latest",
+      "desc": "AI Bloom Sisters の新着動画。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
       "items": [
-        { "id": "npT0TlZ7un0", "title": "AIでLINEスタンプ作るよ", "date": "2024-12-21" },
-        { "id": "gvyivk7BEqk", "title": "Switchでゆる～く遊ぶよ", "date": "2024-12-20" },
-        { "id": "qnlq3SvaJGg", "title": "アプデ後ドラクエ10配信！", "date": "2024-12-19" },
-        { "id": "0GdDg-yNlGQ", "title": "リニューアル ミルドラース", "date": "2024-12-18" }
+        {
+          "id": "HJvXuZ6m3y8",
+          "title": "【祝！初動画！】AIBS三姉妹 ドタバタカオスな自己紹介！【アニメ】【AIBS】",
+          "date": "2026-05-24"
+        }
+      ]
+    },
+    {
+      "key": "youtube_shorts",
+      "platform": "youtube",
+      "label": "ショート動画",
+      "eyebrow": "YouTube Shorts",
+      "desc": "サッと楽しめる三姉妹のショート動画。",
+      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "items": [
+        {
+          "id": "sSWLEZLbmDI",
+          "title": "【IQテスト】三姉妹で農夫の川渡り問題！【アニメ】【AIBS】",
+          "date": "2026-05-28"
+        },
+        {
+          "id": "4KtBwW9gdkc",
+          "title": "【これヤバイやつ】新作スイーツで沈黙の三姉妹【アニメ】【AIBS】",
+          "date": "2026-05-28"
+        }
+      ]
+    },
+    {
+      "key": "youtube_live",
+      "platform": "youtube",
+      "label": "ライブ配信",
+      "eyebrow": "YouTube Live",
+      "desc": "ゲーム配信（ドラクエ10・FF等）のライブアーカイブ。",
+      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "items": [
+        {
+          "id": "WDvt8AfUTss",
+          "title": "【初見さん初心者さん歓迎！】ちょっとだけ✨ドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-05-28"
+        },
+        {
+          "id": "5TBcRVh04sA",
+          "title": "【初見さん初心者さん歓迎！】ちょっとだけ✨ドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-05-04"
+        },
+        {
+          "id": "4DuZ05KEbNk",
+          "title": "【初見さん歓迎】#2🔰完全初見🔰はじめてのファイナルファンタジーⅢ 配信✨【Vtuber】【FINAL FANTASY Ⅲ】",
+          "date": "2026-05-04"
+        },
+        {
+          "id": "ziTz0ueLsGg",
+          "title": "【初見さん歓迎】#1🔰完全初見🔰はじめてのファイナルファンタジーⅢ 配信✨【Vtuber】【FINAL FANTASY Ⅲ】",
+          "date": "2026-05-03"
+        },
+        {
+          "id": "kTnQ_9GH4pY",
+          "title": "【初見さん初心者さん歓迎！】土曜日やり残したことないかな？✨ドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-05-02"
+        },
+        {
+          "id": "-FJistf1PaQ",
+          "title": "【初見さん初心者さん歓迎！】ちょっとだけ✨ドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-29"
+        },
+        {
+          "id": "7dm7LZXIgp0",
+          "title": "【初見さん初心者さん歓迎！】お金がないので泣く泣く金策するドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-23"
+        },
+        {
+          "id": "3M9rB71tICk",
+          "title": "【初見さん初心者さん歓迎！】ヘルクラウダーやエンドボス討伐ツアーのドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-22"
+        },
+        {
+          "id": "1BgH3p_-6zI",
+          "title": "【初見さん初心者さん歓迎！】咎人フィーバーからエンドボス討伐ツアーのドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-17"
+        },
+        {
+          "id": "QeVLK9Vt3UU",
+          "title": "【初見さん初心者さん歓迎！】咎人フィーバーからエンドボス討伐ツアーのドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-15"
+        },
+        {
+          "id": "FoU9IKLpM8g",
+          "title": "【初見さん初心者さん歓迎！】エンドボスサポ討伐ツアーのドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-14"
+        },
+        {
+          "id": "o_1P9XXQzfI",
+          "title": "【初見さん初心者さん歓迎！】まったりストーリーか金策配信！ドラクエ10配信！🎮【Vtuber】【ドラクエ10オンライン】",
+          "date": "2026-04-11"
+        }
       ]
     },
     {

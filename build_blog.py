@@ -177,7 +177,6 @@ SNS = [
     ("X (Twitter)", "https://x.com/irisfionaAIBS"),
     ("YouTube", "https://www.youtube.com/@AIBloomSisters"),
     ("note", "https://note.com/rupi_airupi"),
-    ("Ci-en", "https://ci-en.net/creator/28203"),
     ("FANBOX", "https://lupinus-rossetti.fanbox.cc/"),
 ]
 

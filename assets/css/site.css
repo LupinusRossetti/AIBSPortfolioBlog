@@ -1831,3 +1831,32 @@ a.tag-chip:hover { background: var(--fiona-soft); }
 .gallery-faces-group[data-sister="lupinus"] .gallery-faces-label { color: var(--lupinus); }
 .gallery-faces-group[data-sister="iris"] .gallery-faces-label { color: #b08e3e; }
 .gallery-faces-group[data-sister="fiona"] .gallery-faces-label { color: var(--fiona); }
+
+/* === About：三姉妹カラーの上品な演出（第3弾） === */
+.sp-text { position: relative; padding-left: 22px; }
+.sp-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--sp-accent, var(--accent)), transparent);
+  opacity: 0.6;
+}
+.sister-profile[data-sister="lupinus"] .sp-text { --sp-accent: var(--lupinus); }
+.sister-profile[data-sister="iris"] .sp-text { --sp-accent: var(--iris); }
+.sister-profile[data-sister="fiona"] .sp-text { --sp-accent: var(--fiona); }
+.sister-profile:nth-child(even) .sp-text { padding-left: 0; padding-right: 22px; }
+.sister-profile:nth-child(even) .sp-text::before { left: auto; right: 0; }
+
+.sister-profile[data-sister="lupinus"] .sp-visual { background: linear-gradient(180deg, #f6f2fc 0%, #ece4f5 100%); }
+.sister-profile[data-sister="iris"] .sp-visual { background: linear-gradient(180deg, #fdfaf0 0%, #f5ecd6 100%); }
+.sister-profile[data-sister="fiona"] .sp-visual { background: linear-gradient(180deg, #fdf4f7 0%, #f8e4ea 100%); }
+
+@media (max-width: 720px) {
+  .sp-text,
+  .sister-profile:nth-child(even) .sp-text { padding-left: 18px; padding-right: 0; }
+  .sister-profile:nth-child(even) .sp-text::before { left: 0; right: auto; }
+}

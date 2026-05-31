@@ -146,13 +146,17 @@ def _cover_resize(img: Image.Image, w: int, h: int) -> Image.Image:
 # ---------- 3. 自動合成 ----------
 # アイコンは全キャラ共通構図（バストアップで顔が上寄り）。
 # 顔を円の中心に収めるため、顔まわりにズームしつつ上方を残して切り出す。
-FACE_ZOOM = 1.28      # 顔へのズーム率（>1で寄る＝顔が大きくなる）
+FACE_ZOOM = 1.0       # 顔へのズーム率（>1で寄る＝顔が大きくなる）。1.0で素材の自然なバランス
 FACE_CENTER_Y = 0.46  # 元画像の縦のどこを円の中心に置くか（0=上端,1=下端）
+SS = 4                # 円マスクのスーパーサンプリング倍率（縁のアンチエイリアス用）
 
 
-def _face_crop(src: Path, size: int) -> Image.Image:
-    """顔が円の中心に来るよう、顔位置基準で正方形クロップ＋リサイズ。"""
-    im = Image.open(src).convert("RGB")
+def _face_crop(src: Path, size: int, bg=(255, 255, 255)) -> Image.Image:
+    """顔が円の中心に来るよう、顔位置基準で正方形クロップ＋リサイズ。
+    背景透過素材は白地に合成してから返す（円内が透けないように）。"""
+    im = Image.open(src).convert("RGBA")
+    base = Image.new("RGBA", im.size, bg + (255,))
+    im = Image.alpha_composite(base, im).convert("RGB")
     iw, ih = im.size
     # 切り出す正方形の一辺（元画像基準）。ズームが大きいほど小さく切る。
     crop = int(min(iw, ih) / FACE_ZOOM)
@@ -167,19 +171,43 @@ def _face_crop(src: Path, size: int) -> Image.Image:
     return im.resize((size, size), Image.LANCZOS)
 
 
+def _aa_circle_mask(size: int) -> Image.Image:
+    """スーパーサンプリングでなめらかな円アルファマスクを作る（縁のギザギザ防止）。"""
+    big = size * SS
+    mask = Image.new("L", (big, big), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, big - 1, big - 1), fill=255)
+    return mask.resize((size, size), Image.LANCZOS)
+
+
 def _circle_avatar(src: Path, size: int, ring: tuple, ring_w: int = 8) -> Image.Image:
-    im = _face_crop(src, size).convert("RGBA")
-    mask = Image.new("L", (size, size), 0)
-    ImageDraw.Draw(mask).ellipse((0, 0, size, size), fill=255)
-    out = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    # 高解像度で顔をクロップ → なめらかな円マスクで抜く → 縮小（縁のアンチエイリアス）
+    im = _face_crop(src, size * SS).convert("RGBA")
+    big = size * SS
+    mask = Image.new("L", (big, big), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, big - 1, big - 1), fill=255)
+    out = Image.new("RGBA", (big, big), (0, 0, 0, 0))
     out.paste(im, (0, 0), mask)
-    # リング
-    ringed = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    d = ImageDraw.Draw(ringed)
-    d.ellipse((ring_w // 2, ring_w // 2, size - ring_w // 2, size - ring_w // 2),
-              outline=ring + (255,), width=ring_w)
-    out = Image.alpha_composite(out, ringed)
-    return out
+    # リング（高解像度で描いてから一緒に縮小＝なめらか）
+    if ring_w > 0:
+        rw = ring_w * SS
+        ImageDraw.Draw(out).ellipse(
+            (rw / 2, rw / 2, big - 1 - rw / 2, big - 1 - rw / 2),
+            outline=ring + (255,), width=rw)
+    return out.resize((size, size), Image.LANCZOS)
+
+
+def make_site_avatar(src: Path, size: int, out_path: Path):
+    """サイトのプロフィール用アバター（円形・縁なめらか・透過背景）を生成。"""
+    im = _face_crop(src, size * SS).convert("RGBA")
+    big = size * SS
+    mask = Image.new("L", (big, big), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, big - 1, big - 1), fill=255)
+    out = Image.new("RGBA", (big, big), (0, 0, 0, 0))
+    out.paste(im, (0, 0), mask)
+    out = out.resize((size, size), Image.LANCZOS)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out.save(out_path, "PNG")
+    print(f"[avatar] {out_path.name}")
 
 
 def _vertical_gradient(w, h, top, bottom):
@@ -323,3 +351,17 @@ def ensure_thumb(slug: str, date_iso: str, date_label: str, title: str,
 
     compose(title, date_iso, date_label, out_path)
     return "compose"
+
+
+def regenerate_site_avatars():
+    """サイトの三姉妹プロフィール用円形アバターを素材から再生成する。"""
+    out_dir = Path(r"C:\LupinusPrivate\images\image\avatars")
+    for c in ("lupinus", "iris", "fiona"):
+        src = ICONS_DIR / f"{c}_normal.png"
+        make_site_avatar(src, 200, out_dir / f"{c}.png")
+
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "avatars":
+        regenerate_site_avatars()

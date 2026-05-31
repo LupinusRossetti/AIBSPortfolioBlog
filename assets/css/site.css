@@ -1344,6 +1344,107 @@ a:hover {
   .sns-cards { grid-template-columns: 1fr; }
 }
 
+/* === About：三姉妹プロフィール（立ち絵つき・左右交互） === */
+.sister-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.sister-profile {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 44px;
+  align-items: center;
+}
+.sister-profile:nth-child(even) { grid-template-columns: 1fr 300px; }
+.sister-profile:nth-child(even) .sp-visual { order: 2; }
+.sister-profile:nth-child(even) .sp-text { order: 1; }
+
+.sp-visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #faf6fc 0%, #f3ecf7 100%);
+  overflow: hidden;
+}
+.sp-visual img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+}
+.sister-profile[data-sister="lupinus"] .sp-visual { box-shadow: inset 0 0 0 4px rgba(142,124,195,.10); }
+.sister-profile[data-sister="iris"] .sp-visual { box-shadow: inset 0 0 0 4px rgba(201,168,92,.12); }
+.sister-profile[data-sister="fiona"] .sp-visual { box-shadow: inset 0 0 0 4px rgba(224,128,154,.12); }
+
+.sp-name {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+.sp-name .jp {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-faint);
+  margin-top: 4px;
+}
+.sister-profile[data-sister="lupinus"] .sp-name { color: var(--lupinus); }
+.sister-profile[data-sister="iris"] .sp-name { color: var(--iris); }
+.sister-profile[data-sister="fiona"] .sp-name { color: var(--fiona); }
+
+.sp-meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 18px; }
+.sp-chip {
+  font-size: 0.8rem; letter-spacing: 0.04em;
+  padding: 4px 14px; border-radius: 999px;
+  background: var(--lupinus-soft); color: var(--accent-deep);
+}
+.sister-profile[data-sister="iris"] .sp-chip { background: var(--iris-soft); color: #b08e3e; }
+.sister-profile[data-sister="fiona"] .sp-chip { background: var(--fiona-soft); color: var(--fiona); }
+
+.sp-text p { margin: 12px 0; color: var(--ink-soft); font-size: 0.96rem; }
+.sp-text strong { color: var(--ink); font-weight: 600; }
+
+/* === About：出自の物語ボックス === */
+.story-box {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px clamp(24px, 5vw, 52px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, var(--bg-soft), var(--lupinus-soft));
+  box-shadow: var(--shadow-card);
+}
+.story-box p { margin: 16px 0; color: #45424d; font-size: 1rem; }
+.story-box p:first-child { margin-top: 0; }
+.story-box p:last-child { margin-bottom: 0; }
+.story-box strong { color: var(--lupinus); font-weight: 600; }
+.story-box em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent-deep);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 760px) {
+  .sister-profile,
+  .sister-profile:nth-child(even) { grid-template-columns: 1fr; gap: 24px; }
+  .sister-profile .sp-visual,
+  .sister-profile:nth-child(even) .sp-visual { order: 0; max-width: 280px; margin: 0 auto; width: 100%; }
+  .sister-profile:nth-child(even) .sp-text { order: 0; }
+  .sp-name, .sp-meta { text-align: center; }
+  .sp-meta { justify-content: center; }
+}
+
 /* === スクロール連動フェードイン === */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }

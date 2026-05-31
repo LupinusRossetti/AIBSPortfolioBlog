@@ -709,45 +709,108 @@ def build_sns():
     (SITE_DIR / "sns.html").write_text(out, encoding="utf-8")
 
 
+def _sister_profile(char, name_en, name_jp, hair, role_jp, body_html):
+    """About用：立ち絵つきの三姉妹プロフィール行（左右交互レイアウト）。"""
+    return (
+        f'<div class="sister-profile" data-sister="{char}">'
+        f'<div class="sp-visual"><img src="images/image/character/character_{char}_normal.png" '
+        f'alt="{html_lib.escape(name_jp)}" loading="lazy"></div>'
+        '<div class="sp-text">'
+        f'<div class="sp-name">{html_lib.escape(name_en)}<span class="jp">{html_lib.escape(name_jp)}</span></div>'
+        f'<div class="sp-meta"><span class="sp-chip">{html_lib.escape(hair)}</span>'
+        f'<span class="sp-chip">{html_lib.escape(role_jp)}</span></div>'
+        f'{body_html}'
+        '</div></div>'
+    )
+
+
 def build_about():
-    """Aboutページ（活動紹介の器）。事実ベースの基本情報のみ。
-    中身の充実は別途ポートフォリオ拡充で行う前提。"""
+    """Aboutページ。世界観バイブル（worldview_bible.md）準拠で三姉妹・活動・出自を紹介。
+    事実ベースのみ。お色気要素はサイト（全年齢）には載せない。"""
+    lupinus = _sister_profile(
+        "lupinus", "Lupinus", "ルピナス・長女", "銀髪", "進行・ツッコミ",
+        '<p>三姉妹いちばんの常識人で、進行とツッコミ担当。落ち着いていて優しい、'
+        'ちょっと恥ずかしがりなお姉さんですが、妹たちの前では強気です。'
+        '一人称は「私」。砕けた敬語まじりのお姉さん口調で、'
+        '「もう、しっかりして」と妹たちのボケに振り回されながらも、根は面倒見のいい甘えん坊。</p>'
+        '<p>AIBSの主人公キャラクターで、<strong>中の人（運営者）も同じ「ルピナス」名義で人間としてライブ配信</strong>'
+        'をしています。動画の中の三姉妹はAIという設定、配信は本人――という二層構造です。</p>'
+    )
+    iris = _sister_profile(
+        "iris", "Iris", "アイリス・次女", "金髪", "元気ボケ",
+        '<p>明るく元気なムードメーカーで、天真爛漫なボケ担当。よく考えず突っ走りますが、'
+        '失敗してもケロッとしていて、根は真面目で正直です。一人称は「あたし」。'
+        '「〜だよ！」「えへへ」と語尾が伸びがちな、元気いっぱいのタメ口。</p>'
+        '<p>フィオナとは<strong>同じ日生まれ</strong>。三姉妹のなかではアイリスのほうが姉気質で、'
+        'ぐいぐい引っ張っていきます。ルピナスを「お姉ちゃん」と呼ぶ甘えん坊。</p>'
+    )
+    fiona = _sister_profile(
+        "fiona", "Fiona", "フィオナ・三女", "桃色の髪", "やさしい解説",
+        '<p>とても優しく落ち着いた末っ子で、やさしい解説役。頭がよくて、むずかしい話も'
+        'そっとかみ砕いてくれるバランサーです。一人称は「私」。'
+        '「〜です」「〜ますね」と丁寧でやわらかい敬語で話します。</p>'
+        '<p>アイリスとは<strong>同じ日生まれ</strong>。冷静に見えて実は怖がりで、'
+        'ぬいぐるみ（特にクマ）集めや読書、甘いものが大好き。'
+        'ルピナスを「お姉ちゃん」、アイリスを「アイリスちゃん」と呼びます。</p>'
+    )
+
     body = (
         '<section class="blog-hero"><div class="container">'
         '<span class="eyebrow">About</span>'
         '<h1>AI Bloom Sisters のこと</h1>'
-        '<p class="lead">AIを相棒に、ショートアニメ・イラストをつくる三姉妹VTuberユニット。'
-        '「見てくれる方を楽しませたい」をいちばんに、ものづくりを続けています。</p>'
+        '<p class="lead">ロゼッティ家の三姉妹――ルピナス・アイリス・フィオナによる、'
+        'VTuberユニット。AIを相棒に、ゲーム配信とショートアニメで'
+        '「見てくれる方を楽しませたい」を続けています。</p>'
         '</div></section>'
 
+        # --- 三姉妹プロフィール（立ち絵つき） ---
         '<section class="section reveal"><div class="container">'
         '<div class="section-head">'
         '<span class="eyebrow">Our Trio</span>'
         '<h2 class="section-title">三姉妹のこと<span class="jp">AIBS MEMBERS</span></h2>'
         '<div class="ornament" style="margin-top:18px"><span></span></div>'
         '</div>'
-        '<div class="sisters">'
-        '<div class="sister-card" data-sister="lupinus">'
-        '<img class="avatar" src="images/image/avatars/lupinus.png" alt="ルピナス">'
-        '<div class="s-name">Lupinus<span class="jp">ルピナス・長女</span></div>'
-        '<p class="s-role">三姉妹いちばんの常識人で、進行＆ツッコミ担当。落ち着いた優しいお姉さん。'
-        'AIBSの主人公キャラクターで、中の人も同じ「ルピナス」名義でライブ配信をしています。</p>'
-        '</div>'
-        '<div class="sister-card" data-sister="iris">'
-        '<img class="avatar" src="images/image/avatars/iris.png" alt="アイリス">'
-        '<div class="s-name">Iris<span class="jp">アイリス・次女</span></div>'
-        '<p class="s-role">天真爛漫なボケ担当。フィオナとは双子。元気で明るく、'
-        'よく考えずに突っ走るムードメーカー。</p>'
-        '</div>'
-        '<div class="sister-card" data-sister="fiona">'
-        '<img class="avatar" src="images/image/avatars/fiona.png" alt="フィオナ">'
-        '<div class="s-name">Fiona<span class="jp">フィオナ・三女</span></div>'
-        '<p class="s-role">とても優しく落ち着いた末っ子。アイリスとは双子。'
-        '頭がよくて解説役になりがちだけど、すぐ自分の世界に入っちゃう夢女子。</p>'
-        '</div>'
+        '<div class="sister-profiles">'
+        + lupinus + iris + fiona +
         '</div>'
         '</div></section>'
 
+        # --- 関係性 ---
+        '<section class="section veil reveal"><div class="container">'
+        '<div class="section-head">'
+        '<span class="eyebrow">Relationship</span>'
+        '<h2 class="section-title">三姉妹の関係<span class="jp">SISTERS</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '</div>'
+        '<p class="center" style="color:var(--ink-soft);max-width:40em;margin:0 auto">'
+        'お互いが大好きな、仲良し姉妹。長女ルピナスがツッコミ、次女アイリスが暴走ボケ、'
+        '三女フィオナがその間を取り持つバランサー、という掛け合いが三姉妹のいつもの形です。'
+        'アイリスとフィオナは同じ日生まれですが、姉気質なのはアイリスのほう。'
+        '困ったことが起きても、最後は三人で力を合わせて元どおりにします。</p>'
+        '</div></section>'
+
+        # --- 出自の物語 ---
+        '<section class="section reveal"><div class="container">'
+        '<div class="section-head">'
+        '<span class="eyebrow">Our Story</span>'
+        '<h2 class="section-title">三姉妹が生まれた理由<span class="jp">WHY "BLOOM SISTERS"</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '</div>'
+        '<div class="story-box">'
+        '<p>長女のルピナスは人間で、もともとひとりでVTuber・配信活動をしていました。'
+        'けれど人見知りで気が弱く、ほかの配信者とコラボするのがどうしても苦手。'
+        '誰かと賑やかに笑い合う配信に憧れながらも、自分からはなかなか踏み出せずにいました。</p>'
+        '<p>そこでルピナスは「だったら、一緒に楽しめる相手を自分で生み出してしまおう」と考えます。'
+        'こうしてAIによって生まれたのが、明るく突っ走る<strong>アイリス</strong>と、'
+        'やさしく落ち着いた<strong>フィオナ</strong>。さらにルピナス自身も、'
+        'AIキャラクター「ルピナス」として動画の中に登場することにしました。</p>'
+        '<p>気心の知れた姉妹となら、人見知りな自分でも何の気兼ねもなく笑い合える。'
+        'ロゼッティ家の三姉妹は、そんな「ひとりじゃ寂しいから、賑やかな家族がほしかった」という'
+        'ルピナスの願いから咲いた花（Bloom）です。それが <em>AI Bloom Sisters</em> の原点になっています。</p>'
+        '</div>'
+        '</div></section>'
+
+        # --- 活動内容 ---
         '<section class="section veil reveal"><div class="container">'
         '<div class="section-head">'
         '<span class="eyebrow">What We Do</span>'
@@ -756,23 +819,33 @@ def build_about():
         '</div>'
         '<div class="works">'
         '<div class="work-card"><div class="body">'
+        '<span class="tag">Game Streaming</span><h3>ゲーム配信</h3>'
+        '<p>活動の軸のひとつ。YouTubeでのゲーム配信です。ジャンルは決めず、'
+        '格闘ゲームやアクションをはじめ、そのとき遊びたいゲームをいろいろ配信しています。</p>'
+        '</div></div>'
+        '<div class="work-card"><div class="body">'
         '<span class="tag">AI Short Anime</span><h3>AIショートアニメ</h3>'
-        '<p>台本・演出・音・映像まで、自作の自動生成パイプラインを使って三姉妹のショートアニメを制作しています。</p>'
+        '<p>もうひとつの軸。台本・演出・音・映像まで、自作の自動生成パイプラインを使って'
+        '三姉妹のショートアニメを制作しています。動画の中の三姉妹はAIという設定です。</p>'
         '</div></div>'
         '<div class="work-card"><div class="body">'
         '<span class="tag">Illustration</span><h3>イラスト</h3>'
-        '<p>三姉妹のキャラクターイラストや表情差分づくりに、AIを相棒に挑戦しています。</p>'
+        '<p>配信やショートアニメに登場する三姉妹のビジュアルを、AIを相棒に'
+        '一枚ずつ作り込んでいます。テーマは「地雷系キュート」。</p>'
         '</div></div>'
         '<div class="work-card"><div class="body">'
-        '<span class="tag">Game Streaming</span><h3>ゲーム配信</h3>'
-        '<p>格闘ゲームやアクションを中心に、YouTubeでゲーム配信を行っています。</p>'
+        '<span class="tag">Creation Tools</span><h3>制作ツール</h3>'
+        '<p>配信とアニメづくりを支える道具（配信用システムや動画制作ツール）も、'
+        'ルピナスが自分で作って活動に使っています。</p>'
         '</div></div>'
         '</div>'
         '<p class="center" style="color:var(--ink-soft);margin-top:32px;max-width:40em;margin-left:auto;margin-right:auto">'
-        '本動画はAI生成を随所に活用していますが、完全にAIだけで作るのではなく、'
-        'ルピナス本人による手動編集も多く含んでいます。台本はAIで下書きし、人の手で整えています。</p>'
+        '動画はAI生成を随所に活用していますが、完全にAIだけで作るのではなく、'
+        'ルピナス本人による手動編集も多く含んでいます。台本はAIで下書きし、最後は人の手で整えています。</p>'
+        '<div class="center" style="margin-top:36px"><a class="btn" href="portfolio.html">制作のしごとを見る</a></div>'
         '</div></section>'
 
+        # --- Connect ---
         '<section class="section reveal"><div class="container center">'
         '<div class="section-head" style="margin-bottom:28px">'
         '<span class="eyebrow">Connect</span>'
@@ -788,7 +861,7 @@ def build_about():
         '</div></section>'
     )
     out = page("About | Lupinus Rossetti", prefix="", active="about", body=body,
-               desc="AI Bloom Sisters（AIBS）三姉妹の紹介と活動内容。AIショートアニメ・イラスト・ゲーム配信。",
+               desc="AI Bloom Sisters（AIBS）三姉妹の紹介・関係性・活動内容。長女ルピナス（銀髪・人間）、次女アイリス（金髪）、三女フィオナ（桃髪）の三姉妹VTuberユニット。",
                path="about.html", og_type="profile")
     (SITE_DIR / "about.html").write_text(out, encoding="utf-8")
 

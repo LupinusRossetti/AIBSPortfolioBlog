@@ -541,8 +541,14 @@ a:hover {
 }
 
 .work-card.feature .thumb {
-  aspect-ratio: auto;
+  aspect-ratio: 1 / 1;
   height: 100%;
+  background: linear-gradient(180deg, #faf6fc 0%, #f3ecf7 100%);
+}
+
+.work-card.feature .thumb img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .work-card.feature .body {
@@ -1198,6 +1204,8 @@ a:hover {
   font-size: 1.3rem;
   color: #fff;
 }
+.sns-mark svg { fill: #fff; }
+.sns-feed-head .sns-mark svg { width: 21px; height: 21px; }
 .sns-feed-head h3 { margin: 0; font-size: 1.05rem; }
 .sns-feed-head .handle { font-size: .82rem; color: var(--ink-soft); }
 .sns-embed { min-height: 360px; }
@@ -1241,6 +1249,7 @@ a:hover {
   font-size: 1.7rem;
   color: #fff;
 }
+.sns-card .sns-mark svg { width: 28px; height: 28px; }
 .sns-card h3 { margin: 0 0 6px; font-size: 1.1rem; }
 .sns-card .handle { font-size: .82rem; color: var(--ink-faint); }
 .sns-card p { margin: 12px 0 16px; font-size: .9rem; color: var(--ink-soft); }

@@ -196,14 +196,14 @@
         <div class="ornament" style="margin-top:20px"><span></span></div>
       </div>
       <div class="stamp-strip">
-        <img src="images/image/stamps/stamp_ohayou.png" alt="おはよう">
-        <img src="images/image/stamps/stamp_arigatou.png" alt="ありがとう">
-        <img src="images/image/stamps/stamp_iine.png" alt="いいね">
-        <img src="images/image/stamps/stamp_naruhodone.png" alt="なるほど">
-        <img src="images/image/stamps/stamp_konlupi.png" alt="こんルピ">
-        <img src="images/image/stamps/stamp_tensaika.png" alt="天才か">
-        <img src="images/image/stamps/stamp_yurusenai.png" alt="許せない">
-        <img src="images/image/stamps/stamp_otulupi.png" alt="おつルピ">
+        <img src="images/image/stamps/stamp_ohayou.png" alt="おはよう" data-zoom data-caption="おはよう">
+        <img src="images/image/stamps/stamp_arigatou.png" alt="ありがとう" data-zoom data-caption="ありがとう">
+        <img src="images/image/stamps/stamp_iine.png" alt="いいね" data-zoom data-caption="いいね">
+        <img src="images/image/stamps/stamp_naruhodone.png" alt="なるほど" data-zoom data-caption="なるほど">
+        <img src="images/image/stamps/stamp_konlupi.png" alt="こんルピ" data-zoom data-caption="こんルピ">
+        <img src="images/image/stamps/stamp_tensaika.png" alt="天才か" data-zoom data-caption="天才か">
+        <img src="images/image/stamps/stamp_yurusenai.png" alt="許せない" data-zoom data-caption="許せない">
+        <img src="images/image/stamps/stamp_otulupi.png" alt="おつルピ" data-zoom data-caption="おつルピ">
       </div>
       <p class="center" style="color:var(--ink-soft); margin-top:36px">
         チャットや配信を盛り上げる、表情豊かなLINEスタンプ・Discord絵文字を制作。
@@ -287,6 +287,15 @@
     </div>
   </footer>
 
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="拡大表示">
+    <button class="lightbox-close" type="button" aria-label="閉じる">&times;</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
   <script>(function(){
     if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
     var els=document.querySelectorAll('.reveal');if(!els.length||!('IntersectionObserver'in window))return;
@@ -294,6 +303,22 @@
       if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},
       {rootMargin:'0px 0px -10% 0px'});
     els.forEach(function(el){io.observe(el);});
+  })();</script>
+
+  <script>(function(){
+    var lb=document.getElementById('lightbox');if(!lb)return;
+    var img=lb.querySelector('.lightbox-img'),cap=lb.querySelector('.lightbox-caption'),
+        close=lb.querySelector('.lightbox-close'),last=null;
+    function open(src,caption){last=document.activeElement;img.src=src;img.alt=caption||'';
+      cap.textContent=caption||'';lb.classList.add('open');lb.setAttribute('aria-hidden','false');
+      document.body.style.overflow='hidden';close.focus();}
+    function shut(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');
+      document.body.style.overflow='';img.removeAttribute('src');if(last)last.focus();}
+    document.querySelectorAll('[data-zoom]').forEach(function(el){
+      el.addEventListener('click',function(){open(el.getAttribute('src')||el.dataset.src,el.dataset.caption);});});
+    close.addEventListener('click',shut);
+    lb.addEventListener('click',function(e){if(e.target===lb)shut();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))shut();});
   })();</script>
 
 </body>

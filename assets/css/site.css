@@ -1715,3 +1715,104 @@ a.tag-chip:hover { background: var(--fiona-soft); }
   .hero-petals { display: none; }
   .hero-visual .frame { animation: none; }
 }
+
+/* === Lightbox（スタンプ・ギャラリーの拡大表示） === */
+.stamp-strip img { cursor: zoom-in; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 18px;
+  margin-top: 8px;
+}
+.gallery-cell {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, #faf6fc 0%, #f3ecf7 100%);
+  overflow: hidden;
+}
+.gallery-cell .g-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+.gallery-cell .g-btn img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  object-position: bottom center;
+  transition: transform 0.4s var(--ease);
+}
+.gallery-cell:hover .g-btn img { transform: scale(1.04); }
+.gallery-cell figcaption {
+  padding: 8px 10px 10px;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+.gallery-cell[data-sister="lupinus"] figcaption { color: var(--lupinus); }
+.gallery-cell[data-sister="iris"] figcaption { color: #b08e3e; }
+.gallery-cell[data-sister="fiona"] figcaption { color: var(--fiona); }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: rgba(58, 55, 66, 0.62);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.lightbox.open { display: flex; animation: lb-fade 0.25s var(--ease); }
+@keyframes lb-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.lightbox-figure {
+  margin: 0;
+  max-width: min(90vw, 560px);
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.lightbox-img {
+  max-width: 100%;
+  max-height: 76vh;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+.lightbox-caption {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.06em;
+  color: #fff;
+  font-size: 1.05rem;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease);
+}
+.lightbox-close:hover { transform: rotate(90deg); background: rgba(255, 255, 255, 0.3); }

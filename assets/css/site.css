@@ -560,6 +560,10 @@ a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  /* レースフレーム（::after inset:11px）の内側に立ち絵を収める余白 */
+  padding: 20px 18px 16px;
+  box-sizing: border-box;
+  overflow: hidden;
   background: linear-gradient(180deg, #faf6fc 0%, #f3ecf7 100%);
   border-bottom: 1px solid var(--line);
 }

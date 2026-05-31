@@ -36,7 +36,13 @@
       "desc": "AI Bloom Sisters の新着動画。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
       "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/videos",
-      "items": []
+      "items": [
+        {
+          "id": "HJvXuZ6m3y8",
+          "title": "【祝！初動画！】AIBS三姉妹 ドタバタカオスな自己紹介！【アニメ】【AIBS】",
+          "date": "2026-05-24"
+        }
+      ]
     },
     {
       "key": "youtube_shorts",
@@ -46,7 +52,18 @@
       "desc": "サッと楽しめる三姉妹のショート動画。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
       "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/shorts",
-      "items": []
+      "items": [
+        {
+          "id": "sSWLEZLbmDI",
+          "title": "【IQテスト】三姉妹で農夫の川渡り問題！【アニメ】【AIBS】",
+          "date": "2026-05-28"
+        },
+        {
+          "id": "4KtBwW9gdkc",
+          "title": "【これヤバイやつ】新作スイーツで沈黙の三姉妹【アニメ】【AIBS】",
+          "date": "2026-05-28"
+        }
+      ]
     },
     {
       "key": "youtube_live",

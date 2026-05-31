@@ -885,6 +885,31 @@ a:hover {
   letter-spacing: 0.02em;
 }
 
+/* 記事本文内の Gemini 生成イラスト（清楚エレガント） */
+.article-hero {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.article-hero img {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+}
+
+.article-hero figcaption {
+  margin-top: 12px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
 /* Article markdown typography */
 .article-body {
   font-size: 1.02rem;

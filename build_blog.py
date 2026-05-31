@@ -37,6 +37,8 @@ BLOG_DIR = SITE_DIR / "blog"
 POSTS_DIR = BLOG_DIR / "posts"
 BLOG_ICONS = BLOG_DIR / "icons"
 THUMBS_DIR = BLOG_DIR / "thumbs"
+HEROES_DIR = BLOG_DIR / "heroes"           # 記事本文内に置く Gemini 生成イラスト
+DIARY_THUMBS = DIARY_DIR / "thumbs"        # Gemini イラスト置き場
 
 NAME_TO_CHAR = {"ルピナス": "lupinus", "アイリス": "iris", "フィオナ": "fiona"}
 CHAR_TO_NAME = {v: k for k, v in NAME_TO_CHAR.items()}
@@ -228,6 +230,20 @@ def menu_script():
 
 
 # === ビルド本体 ===
+def copy_article_hero(slug: str, date_iso: str) -> str | None:
+    """記事本文内に置く Gemini 生成イラストを blog/heroes/ へコピー。
+    note-diary/thumbs/{slug}.png（または {date}.png / .jpg）があれば採用。
+    無ければ None（過去記事は画像なしでも崩れない）。"""
+    for cand in (DIARY_THUMBS / f"{slug}.png", DIARY_THUMBS / f"{date_iso}.png",
+                 DIARY_THUMBS / f"{slug}.jpg", DIARY_THUMBS / f"{date_iso}.jpg"):
+        if cand.exists():
+            HEROES_DIR.mkdir(parents=True, exist_ok=True)
+            dst = HEROES_DIR / f"{slug}{cand.suffix}"
+            shutil.copy2(cand, dst)
+            return dst.name
+    return None
+
+
 def load_posts():
     posts = []
     for p in sorted(DIARY_DIR.glob("*.md")):
@@ -270,20 +286,29 @@ def build():
 
     posts = load_posts()
 
-    # サムネ生成（手動/Gemini画像 ＞ 自動合成）
+    # 一覧カードのタイトルサムネは「三姉妹アイコン並び」で全記事統一（compose 固定）。
+    # 表情は日付ごとに変わる EXPR_SETS で自然なバリエーションを出す。
+    # Gemini生成イラストは一覧には使わず、記事本文内に回す（DIARY_THUMBS 参照）。
     THUMBS_DIR.mkdir(parents=True, exist_ok=True)
-    thumb_stats = {}
     for post in posts:
         out_path = THUMBS_DIR / f'{post["slug"]}.png'
-        kind = make_thumb.ensure_thumb(
-            post["slug"], post["date"].isoformat(), jp_date(post["date"]),
-            post["title"], post["excerpt"], out_path)
+        make_thumb.compose(
+            post["title"], post["date"].isoformat(), jp_date(post["date"]), out_path)
         post["thumb"] = f'{post["slug"]}.png'
-        thumb_stats[kind] = thumb_stats.get(kind, 0) + 1
+        # 記事本文内に差し込む Gemini イラスト（あれば）をサイトへコピー
+        post["hero"] = copy_article_hero(post["slug"], post["date"].isoformat())
 
     # 各記事ページ
     for post in posts:
         body_html = parse_body(post["lines"], icon_prefix="../")
+        hero_html = ""
+        if post.get("hero"):
+            hero_html = (
+                '<figure class="article-hero">'
+                f'<img src="../heroes/{post["hero"]}" alt="{html_lib.escape(post["title"])}" loading="lazy">'
+                f'<figcaption>{html_lib.escape(post["title"])}</figcaption>'
+                '</figure>'
+            )
         article = (
             '<main class="article">'
             '<header class="article-header">'
@@ -291,7 +316,7 @@ def build():
             f'<div class="date">{jp_date(post["date"])}</div>'
             f'<h1>{html_lib.escape(post["title"])}</h1>'
             '</header>'
-            f'<div class="article-body">{body_html}</div>'
+            f'<div class="article-body">{hero_html}{body_html}</div>'
             '</main>'
             '<nav class="article-nav">'
             '<a class="btn" href="../index.html">&larr; 日記一覧へ</a>'
@@ -337,8 +362,9 @@ def build():
     inject_latest_into_home(posts)
     build_archive()
 
-    tsum = " / ".join(f"{k}:{v}" for k, v in thumb_stats.items())
-    print(f"[build] 記事 {len(posts)} 件 / アイコン {copied} 枚 / サムネ（{tsum}）/ 出力: {BLOG_DIR}")
+    heroes = sum(1 for p in posts if p.get("hero"))
+    print(f"[build] 記事 {len(posts)} 件 / アイコン {copied} 枚 / "
+          f"一覧カード: アイコン並び統一 / 本文内イラスト {heroes} 件 / 出力: {BLOG_DIR}")
     return posts
 
 

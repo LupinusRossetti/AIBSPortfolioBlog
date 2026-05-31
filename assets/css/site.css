@@ -349,8 +349,19 @@ a:hover {
   margin-bottom: 4px;
 }
 
+/* ヒーローのキャッチコピー（印象的な一行） */
+.hero-catch {
+  margin: 24px 0 4px;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-deep);
+}
+
 .hero-lead {
-  margin: 26px 0 16px;
+  margin: 16px 0;
   color: var(--ink-soft);
   font-size: 1.02rem;
   max-width: 30em;
@@ -1461,6 +1472,24 @@ a:hover {
   .sister-profile:nth-child(even) .sp-text { order: 0; }
   .sp-name, .sp-meta { text-align: center; }
   .sp-meta { justify-content: center; }
+}
+
+/* === レース装飾の区切り（世界観演出・素材画像） === */
+.lace-divider {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+  padding: 4px 0;
+}
+.lace-divider img {
+  display: inline-block;
+  width: auto;
+  height: clamp(56px, 9vw, 88px);
+  max-width: 86%;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: drop-shadow(0 6px 14px rgba(142, 124, 195, 0.12));
 }
 
 /* === スクロール連動フェードイン === */

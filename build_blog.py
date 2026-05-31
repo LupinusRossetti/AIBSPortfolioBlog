@@ -377,24 +377,36 @@ def build_archive():
     if not data_path.exists():
         return
     data = json.loads(data_path.read_text(encoding="utf-8"))
+    max_cards = data.get("max_cards", 10)
     sections_html = []
     for i, sec in enumerate(data.get("sections", [])):
         plat = sec.get("platform", "")
         items = sec.get("items", [])
+        # 最新順（date降順）に並べ、最大 max_cards 件まで実カード表示
+        items_sorted = sorted(items, key=lambda it: it.get("date", ""), reverse=True)
+        shown = items_sorted[:max_cards]
+        overflow = len(items_sorted) > max_cards
         if plat == "youtube":
-            cards = "".join(_yt_card(it) for it in items)
+            cards = "".join(_yt_card(it) for it in shown)
         else:
-            cards = "".join(_generic_card(it) for it in items)
+            cards = "".join(_generic_card(it) for it in shown)
 
-        prof = sec.get("profile_url", "")
-        prof_btn = (f'<div class="center" style="margin-top:32px"><a class="btn" href="{html_lib.escape(prof)}" '
-                    f'target="_blank" rel="noopener">{html_lib.escape(sec.get("label", ""))}を見る</a></div>'
-                    if prof else "")
+        # リンク先：YouTube は各カテゴリのタブURL（channel_tab_url）を優先、なければ profile_url
+        link_url = sec.get("channel_tab_url") or sec.get("profile_url", "")
+        label = sec.get("label", "")
+        # 続きを見るボタン（10件超過時）／チャンネルへ誘導ボタン（カードなし時）
+        if link_url:
+            btn_text = "YouTubeチャンネルで続きを見る" if plat == "youtube" else f"{label}を見る"
+            link_btn = (f'<div class="center" style="margin-top:32px"><a class="btn" '
+                        f'href="{html_lib.escape(link_url)}" target="_blank" rel="noopener">{html_lib.escape(btn_text)}</a></div>')
+        else:
+            link_btn = ""
+
         if cards:
-            grid = f'<div class="works">{cards}</div>{prof_btn}'
-        elif prof:
+            grid = f'<div class="works">{cards}</div>{link_btn}'
+        elif link_url:
             grid = (f'<p class="center" style="color:var(--ink-soft)">最新の投稿は '
-                    f'{html_lib.escape(sec.get("label", ""))} でご覧いただけます。</p>{prof_btn}')
+                    f'{html_lib.escape(label)} でご覧いただけます。</p>{link_btn}')
         else:
             grid = '<p class="center" style="color:var(--ink-soft)">準備中です。</p>'
 

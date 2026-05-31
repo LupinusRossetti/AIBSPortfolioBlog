@@ -1,5 +1,6 @@
 {
-  "_comment": "アーカイブ一覧の元データ。プラットフォーム別に items を追記すると archive.html に反映されます（python build_blog.py で再ビルド）。youtube は id だけでサムネ自動表示。tiktok/instagram/threads/twitch は profile_url と、各 item に url ＋任意の thumb（画像パス or URL）。YouTube動画は RSS フィード（channel_id=UC7dZB73rrcg7btiAXO78bdw）から取得し、最新/ショート/ライブに分類。",
+  "_comment": "アーカイブ一覧の元データ。プラットフォーム別に items を追記すると archive.html に反映されます（python build_blog.py で再ビルド）。youtube は id だけでサムネ自動表示。tiktok/instagram/threads/twitch は profile_url と、各 item に url ＋任意の thumb（画像パス or URL）。YouTube動画は RSS フィード（channel_id=UC7dZB73rrcg7btiAXO78bdw）から取得し、最新/ショート/ライブ/アニメに分類。各 youtube セクションは最新から最大10件まで実カード表示し、超過分は channel_tab_url（各タブ）へのリンクボタンで誘導。RSSは最新15件しか返さないため、取得確実な動画のみ掲載（存在しないIDは推測で書かない）。",
+  "max_cards": 10,
   "sections": [
     {
       "key": "youtube_anime",
@@ -8,31 +9,13 @@
       "eyebrow": "YouTube Video",
       "desc": "三姉妹のAIショートアニメ作品。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
-      "items": []
-    },
-    {
-      "key": "youtube_latest",
-      "platform": "youtube",
-      "label": "最新の動画",
-      "eyebrow": "YouTube Latest",
-      "desc": "AI Bloom Sisters の新着動画。",
-      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/videos",
       "items": [
         {
           "id": "HJvXuZ6m3y8",
           "title": "【祝！初動画！】AIBS三姉妹 ドタバタカオスな自己紹介！【アニメ】【AIBS】",
           "date": "2026-05-24"
-        }
-      ]
-    },
-    {
-      "key": "youtube_shorts",
-      "platform": "youtube",
-      "label": "ショート動画",
-      "eyebrow": "YouTube Shorts",
-      "desc": "サッと楽しめる三姉妹のショート動画。",
-      "profile_url": "https://www.youtube.com/@AIBloomSisters",
-      "items": [
+        },
         {
           "id": "sSWLEZLbmDI",
           "title": "【IQテスト】三姉妹で農夫の川渡り問題！【アニメ】【AIBS】",
@@ -46,12 +29,33 @@
       ]
     },
     {
+      "key": "youtube_latest",
+      "platform": "youtube",
+      "label": "最新の動画",
+      "eyebrow": "YouTube Latest",
+      "desc": "AI Bloom Sisters の新着動画。",
+      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/videos",
+      "items": []
+    },
+    {
+      "key": "youtube_shorts",
+      "platform": "youtube",
+      "label": "ショート動画",
+      "eyebrow": "YouTube Shorts",
+      "desc": "サッと楽しめる三姉妹のショート動画。",
+      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/shorts",
+      "items": []
+    },
+    {
       "key": "youtube_live",
       "platform": "youtube",
       "label": "ライブ配信",
       "eyebrow": "YouTube Live",
       "desc": "ゲーム配信（ドラクエ10・FF等）のライブアーカイブ。",
       "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "channel_tab_url": "https://www.youtube.com/@AIBloomSisters/streams",
       "items": [
         {
           "id": "WDvt8AfUTss",

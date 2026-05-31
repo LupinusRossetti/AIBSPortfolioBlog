@@ -1343,3 +1343,151 @@ a.tag-chip:hover { background: var(--fiona-soft); }
   .post-prevnext { grid-template-columns: 1fr; }
   .post-prevnext .pn-next { text-align: left; }
 }
+
+/* ============================================================
+   Visual polish layer — richer, world-view (清楚エレガント)
+   すべてCSS/SVGのみ（追加画像なし・軽量）。reduced-motion尊重。
+   ============================================================ */
+
+/* --- リッチなグラデーションボタン --- */
+.btn-filled {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+  box-shadow: 0 10px 26px -16px rgba(110, 92, 168, 0.65);
+}
+.btn-filled:hover {
+  background: linear-gradient(135deg, var(--accent-deep) 0%, var(--accent) 100%);
+}
+
+/* --- セクション見出しの飾りに花グリフを添える --- */
+.ornament span {
+  position: relative;
+  border: none;
+  width: auto;
+  height: auto;
+  transform: none;
+  color: var(--accent);
+  font-size: 0.78rem;
+  line-height: 1;
+}
+.ornament span::before {
+  content: "❀";
+  display: block;
+}
+
+/* --- ヒーロー：舞い散る花びら（軽量CSSパーティクル） --- */
+.hero-petals {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-petals i {
+  position: absolute;
+  top: -8%;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(circle at 30% 30%, var(--fiona-soft), var(--fiona) 75%, transparent);
+  border-radius: 70% 0 70% 0;
+  opacity: 0.6;
+  animation: petal-fall linear infinite;
+}
+.hero-petals i:nth-child(1) { left: 8%;  animation-duration: 13s; animation-delay: 0s;   }
+.hero-petals i:nth-child(2) { left: 22%; animation-duration: 17s; animation-delay: -4s;  background: radial-gradient(circle at 30% 30%, var(--lupinus-soft), var(--lupinus) 75%, transparent); }
+.hero-petals i:nth-child(3) { left: 38%; animation-duration: 15s; animation-delay: -8s;  width: 9px; height: 9px; }
+.hero-petals i:nth-child(4) { left: 54%; animation-duration: 19s; animation-delay: -2s;  background: radial-gradient(circle at 30% 30%, var(--iris-soft), var(--iris) 75%, transparent); }
+.hero-petals i:nth-child(5) { left: 70%; animation-duration: 14s; animation-delay: -10s; width: 14px; height: 14px; }
+.hero-petals i:nth-child(6) { left: 84%; animation-duration: 18s; animation-delay: -6s;  background: radial-gradient(circle at 30% 30%, var(--lupinus-soft), var(--lupinus) 75%, transparent); }
+.hero-petals i:nth-child(7) { left: 92%; animation-duration: 16s; animation-delay: -12s; width: 8px; height: 8px; }
+
+@keyframes petal-fall {
+  0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 0.6; }
+  50%  { transform: translateY(48vh) translateX(26px) rotate(180deg); }
+  90%  { opacity: 0.55; }
+  100% { transform: translateY(96vh) translateX(-12px) rotate(360deg); opacity: 0; }
+}
+
+.hero .container { z-index: 2; }
+
+/* --- ヒーロー画像：やわらかな後光（halo）と浮遊感 --- */
+.hero-visual .frame {
+  animation: hero-float 7s ease-in-out infinite;
+}
+.hero-visual .frame::before {
+  content: "";
+  position: absolute;
+  inset: -22px;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(circle at 50% 38%, rgba(224, 128, 154, 0.22), transparent 62%);
+  filter: blur(6px);
+}
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* --- 三姉妹カード：各色のソフトな下地＋上部アクセント＋発光ホバー --- */
+.sister-card {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+}
+.sister-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  opacity: 0.85;
+}
+.sister-card[data-sister="lupinus"]::before { background: linear-gradient(90deg, transparent, var(--lupinus), transparent); }
+.sister-card[data-sister="iris"]::before    { background: linear-gradient(90deg, transparent, var(--iris), transparent); }
+.sister-card[data-sister="fiona"]::before   { background: linear-gradient(90deg, transparent, var(--fiona), transparent); }
+
+.sister-card[data-sister="lupinus"]:hover { box-shadow: 0 18px 44px -26px rgba(142, 124, 195, 0.55); }
+.sister-card[data-sister="iris"]:hover    { box-shadow: 0 18px 44px -26px rgba(201, 168, 92, 0.5); }
+.sister-card[data-sister="fiona"]:hover   { box-shadow: 0 18px 44px -26px rgba(224, 128, 154, 0.5); }
+
+.sister-card .avatar { transition: transform 0.4s var(--ease); }
+.sister-card:hover .avatar { transform: scale(1.06) rotate(-2deg); }
+
+/* --- カード共通：ホバー時にアクセント縁取りでリッチに --- */
+.work-card,
+.diary-card { transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease); }
+.work-card:hover,
+.diary-card:hover { border-color: var(--line-strong); }
+
+/* --- works タグを小さなピル状に（上品なアクセント） --- */
+.work-card .tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: var(--lupinus-soft);
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
+/* --- veil セクションにごく薄い花の気配（SVG・1点のみ・軽量） --- */
+.section.veil {
+  position: relative;
+}
+.section.veil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%238e7cc3' fill-opacity='0.035'%3E%3Cpath d='M100 86c-3.4 0-6 2.5-6 5.6 0 2.8 2.7 5.1 6 7.7 3.3-2.6 6-4.9 6-7.7 0-3.1-2.6-5.6-6-5.6zM91 95c-2.6-2.6-2.6-6.4 0-8 1.7-1 4.4-.2 6.4 1.8-1.5 2-2.4 4-2.4 6.2-1.5.4-2.8.4-4 0zM109 95c2.6-2.6 2.6-6.4 0-8-1.7-1-4.4-.2-6.4 1.8 1.5 2 2.4 4 2.4 6.2 1.5.4 2.8.4 4 0z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-position: center;
+}
+.section.veil .container { position: relative; z-index: 1; }
+
+/* --- reduced-motion時は動きを停止 --- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-petals { display: none; }
+  .hero-visual .frame { animation: none; }
+}

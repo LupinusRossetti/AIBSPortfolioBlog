@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>🌸大掃除の日：AI動画パイプラインを総点検した話 | Lupinus Rossetti Diary</title><meta name="description" content="AIショートアニメを作るパイプラインを端から端まで“健康診断”しました。新機能を足したというより、たまっていた小さなほころびを一気に直す日。同じようにAIで連続もの（シリーズ作品）を作っている人には、特に役立つ話だと思い"><meta property="og:type" content="article"><meta property="og:title" content="🌸大掃除の日：AI動画パイプラインを総点検した話 | Lupinus Rossetti Diary"><meta property="og:description" content="AIショートアニメを作るパイプラインを端から端まで“健康診断”しました。新機能を足したというより、たまっていた小さなほころびを一気に直す日。同じようにAIで連続もの（シリーズ作品）を作っている人には、特に役立つ話だと思い"><meta property="og:image" content="../../blog/thumbs/2026-05-29_大掃除の日-AI動画パイプラインを総点検した話.png"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="../../assets/css/site.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet"></head><body><header class="site-header"><div class="container"><a class="brand" href="../../index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="../../index.html">Home</a><a href="../../portfolio.html">Portfolio</a><a href="../../blog/index.html" class="active">Blog</a><a href="../../archive.html">Archive</a></nav></div></header><main class="article"><header class="article-header"><img class="article-thumb" src="../thumbs/2026-05-29_大掃除の日-AI動画パイプラインを総点検した話.png" alt="🌸大掃除の日：AI動画パイプラインを総点検した話"><div class="date">2026年5月29日</div><h1>🌸大掃除の日：AI動画パイプラインを総点検した話</h1></header><div class="article-body"><h2>今日のテーマ</h2>
+<p>AIショートアニメを作るパイプラインを端から端まで“健康診断”しました。新機能を足したというより、<strong>たまっていた小さなほころびを一気に直す日</strong>。同じようにAIで連続もの（シリーズ作品）を作っている人には、特に役立つ話だと思います。</p>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日は新機能を足すんじゃなくて、ずっと気になってた“穴”を全部ふさぐ日にしたよ。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">えっ、地味じゃない？ あたしは新しい派手なやつ作りたい〜！</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">ふふ、アイリスお姉さま。家でも普段からこまめに掃除した方が、結局あとあと楽なのですよ。</div></div></div>
+<h2>1. まず“バグの大掃除”を端から端まで</h2>
+<p>動画生成は <strong>台本作り → 演出付け → 画像/音声生成 → 合成（レンダ）</strong> という長い流れになっています。今日はこの全工程を順番に点検し、次のような問題をまとめて潰しました。</p>
+<ul>
+<li>セリフが空っぽのときに落ちる（list の範囲外アクセス）</li>
+<li>並列で動かしてはいけない処理が並列で走ってしまう穴</li>
+<li>もう使われていない“死蔵コード”が残って読み手を惑わせている</li>
+<li>関数の中で未定義の変数を参照していて、特定条件で必ず落ちる箇所</li>
+</ul>
+<h3>学び：AIパイプラインで“死蔵コード”は想像以上に害</h3>
+<p>AIに渡す設定や中間ファイルは、一度書くと忘れがちです。<strong>使っていないのに残しているコードや設定は、将来の自分（とAI）を混乱させる地雷</strong>。今回もすでに使っていない設定を参照していたせいで、本来効くはずの最新ロジックが上書きされていた箇所がいくつかありました。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">“死蔵コード”って、机の引き出しに入れっぱなしの古いレシートみたいなもの？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">近いね。あとで“あれ、これ何だっけ”ってなって、捨てるのも怖くなるやつ。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">古いレシピのメモが台所に貼ってあると、新しいレシピと混じって今日の味付けがブレてしまうのと似ています。</div></div></div>
+<h2>2. BGMが“毎回似たような曲”になる問題を直す</h2>
+<p>シリーズ動画を作っていると、エピソードごとに自動でBGMを割り当てる仕組みがあります。ですが、ランダムの“種（シード）”の取り方が雑だと、<strong>気付かないうちに同じ系統の曲ばかり選ばれてしまう</strong>ことが起きます。</p>
+<p>今日は次の調整をしました。</p>
+<ul>
+<li>ランダムの種を <strong>エピソード番号から作るよう変更</strong> → 話ごとに違う曲傾向に</li>
+<li>“クラシック系”として手動で指定したシーンは、自動BGMで上書きしない</li>
+<li>BGM候補を読み込む処理が毎回フォルダ全走査していたのを、<strong>必要になったときだけ読む（遅延評価）</strong> に変更</li>
+</ul>
+<h3>学び：自動化の“ランダム”は、種の取り方で印象が大きく変わる</h3>
+<p>AIで自動生成する系のツールは、ランダム要素の元（シード）が固定だったり偏っていたりすると、<strong>“なんか飽きた感”</strong> がすぐ出ます。エピソードIDや日付など、<strong>毎回確実に変わる値</strong>を種にすると、自然な多様性が生まれます。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">あー！ あたし配信中も“この曲さっきも聞いたぞ？”ってツッコまれることあったかも！</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_smug.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ドヤ顔）</span></div><div class="bubble">アイリスお姉さま、配信のBGMは生身の選曲ですので、それはご自身の趣味の偏りかと…。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">……まあそれはそれとして、自動化のときは“種”を意識するの大事だね。</div></div></div>
+<h2>3. プロンプトに“余計な情報”を渡していた件</h2>
+<p>AIに台本や演出を考えてもらうとき、こちらから渡す参考情報（プロンプト）が多すぎると、<strong>AIは混乱して指示の優先順位を見失います</strong>。</p>
+<p>今日は本番用のプロンプトを精査し、次のように整理しました。</p>
+<ul>
+<li>すでに使っていない背景設定ファイルの注入を撤去</li>
+<li>BGM候補リストをプロンプトに混ぜていたのをやめる（別工程で扱う方が綺麗）</li>
+<li>“パロディ要素”をどこで注入するかを <strong>1か所に統一</strong>（複数箇所で別ロジックが走って空回りしていた）</li>
+<li>物語に関係ない設定値が紛れ込んでいたのを除去</li>
+</ul>
+<h3>学び：プロンプトは“盛る”より“絞る”</h3>
+<p>AIに渡す情報は、<strong>「これが無いと判断できない」ものだけ</strong>に絞るのが鉄則です。良かれと思って足した参考情報が、実は判断を鈍らせていることはとても多いです。今日はそれを実感する典型例でした。</p>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">献立を聞かれて“冷蔵庫の中身を全部読み上げる”ようなものですね。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">そう。“今夜の主役は鶏肉”って絞って伝えた方が、ちゃんとした提案が返ってくる。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">あたし、AIに『あれもこれも参考にして！』って毎回詰め込んでた…！</div></div></div>
+<h2>4. キャラの“読み方”と“表情”の不一致を直す</h2>
+<p>シリーズもののアニメでは、キャラ固有の <strong>特殊な読み方（読み辞書）</strong> や <strong>使える表情のセット</strong> をエピソードごとに定義しています。ところが、その辞書が <strong>本番パイプラインで読み込まれていなかった</strong> という、地味だけど致命的な不具合がありました。</p>
+<ul>
+<li>エピソード固有の読み辞書が無視されていた → 修正</li>
+<li>字幕側に、漢字＋小さいカナの末尾整形が効いていなかった → 同じ処理を字幕にも配線</li>
+<li>表情の許可リストと、実際に渡している表情キーが食い違っていた → 整合</li>
+</ul>
+<h3>学び：“設定したのに効いていない”系のバグは見つけにくい</h3>
+<p>動作はするけど <strong>設定が反映されていない</strong> タイプのバグは、ログにエラーが出ないので長期間気付きません。定期的に「<strong>この設定、本当に最後まで届いてる？</strong>」と末端まで追跡する点検日を作るのがおすすめです。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">設定したのに効いてないって…一番こわいやつじゃん！</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_sad.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（しょんぼり）</span></div><div class="bubble">うん、これはちょっとショックだったね。気付いてよかった。</div></div></div>
+<h2>5. レンダリングを“3モード”に整理</h2>
+<p>動画の最終合成（レンダリング）まわりを、用途ごとに <strong>3つのモードにきっぱり分離</strong> しました。これまでは一つの関数の中に“あれもこれも”混在していて、片方を直すともう片方が壊れる温床になっていたためです。</p>
+<p>あわせて、</p>
+<ul>
+<li>画像の事前読み込み（プリロード）の実バグを修正</li>
+<li>もう使っていないファイルは“退避フォルダ”に移動して見通しを良く</li>
+<li>スプライト（画像素材）のキャッシュキーに <strong>スケール（拡大率）情報</strong> を含めるよう統一 → 同じ素材を違うサイズで使ったとき、誤って前のサイズが使われる事故を防止</li>
+</ul>
+<h3>学び：“1つの関数で全部やる”をやめると、AI支援が劇的に効く</h3>
+<p>AIにコードを読んでもらって修正提案を受けるとき、<strong>役割が混ざった関数は提案の精度が落ちます</strong>。モードごとに関数を分けるだけで、AIも人間もレビューが格段に楽になりました。</p>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">お料理で言えば、“煮る・焼く・揚げる”を同じ鍋でやっていたのを別の鍋に分けた感じですね。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">うまい例えだ。味（出力）が安定するんだよね。</div></div></div>
+<h2>6. モデル方針の改定と、新しいモデルへの移行</h2>
+<p>台本作りに使うAIモデルの方針も見直し、<strong>新世代モデルへ移行する区切り</strong>としてチェックポイントを切りました。あわせて、台本生成の中でも難しい“1ショットで全部決める”工程を安定化させ、ショート動画向けの機能も拡張。</p>
+<h3>学び：モデル移行は“まとめてやる日”を作る</h3>
+<p>新しいモデルに乗り換えるときは、<strong>プロンプトの言い回し・温度設定・出力形式</strong>まで一緒に見直すと事故が少ないです。今日のように、関連修正をまとめて1日にやって<strong>チェックポイント（区切り）として記録</strong>しておくと、後で「いつから挙動が変わった？」を追いやすくなります。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">つまり今日はAIさんの引っ越しの日でもあったってこと？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">そう。新居に住む前に、古い家の片付けも終わらせた感じだね。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_laugh.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（大笑い）</span></div><div class="bubble">そして家具（プロンプト）も新居に合わせて整え直しました。</div></div></div>
+<h2>まとめ：今日の“再現できるコツ”</h2>
+<ul>
+<li><strong>死蔵コード・死蔵設定はこまめに捨てる</strong>：使っていないものは将来の判断を狂わせる地雷。</li>
+<li><strong>自動化のランダムは“種”がすべて</strong>：エピソードIDなど、確実に変わる値を種にすると多様性が出る。</li>
+<li><strong>プロンプトは盛らずに絞る</strong>：判断に必要ない情報は、AIにとってはノイズ。</li>
+<li><strong>「設定が末端まで届いているか」を点検する日を作る</strong>：エラーにならない不具合が一番怖い。</li>
+<li><strong>役割が混ざった関数を分ける</strong>：人にもAIにも読みやすくなり、修正の事故が減る。</li>
+<li><strong>モデル移行はまとめて1日に</strong>：プロンプト・パラメータ・出力形式を同時に見直し、区切りを記録に残す。</li>
+</ul>
+<p>配信の話題に触れる場合、最新の配信リンクは <strong>X（<a href="https://x.com/irisfionaAIBS">https://x.com/irisfionaAIBS</a>）</strong> をご参照ください。</p>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">地味な一日に見えて、これからの制作がずっと安定する大事な掃除デーでした。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_wink.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ウインク）</span></div><div class="bubble">次は派手なやつ作るからね〜！ 覚悟しといて！</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">本日もお読みいただきありがとうございました。皆さまの制作にも、どうかお役立ていただけますように。</div></div></div></div></main><nav class="article-nav"><a class="btn" href="../index.html">&larr; 日記一覧へ</a><a class="btn" href="../../index.html">Home</a></nav><footer class="site-footer"><div class="container"><div class="brand-script">Lupinus Rossetti</div><p class="tagline">AI Bloom Sisters &mdash; flower language: imagination</p><div class="sns-row"><a class="sns-link" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener"><span class="dot"></span>X (Twitter)</a><a class="sns-link" href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener"><span class="dot"></span>YouTube</a><a class="sns-link" href="https://note.com/rupi_airupi" target="_blank" rel="noopener"><span class="dot"></span>note</a><a class="sns-link" href="https://ci-en.net/creator/28203" target="_blank" rel="noopener"><span class="dot"></span>Ci-en</a><a class="sns-link" href="https://lupinus-rossetti.fanbox.cc/" target="_blank" rel="noopener"><span class="dot"></span>FANBOX</a></div><p class="copy">&copy; 2026 AI Bloom Sisters. All rights reserved.</p></div></footer></body></html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>📝 ショート動画v11→v15一気更新の裏側 | Lupinus Rossetti Diary</title><meta name="description" content="AIショートアニメを自動生成するツールを、まる一日かけて大改修しました。テンプレ（ショート）のバージョンをv11→v13→v15と段階的に積み上げ、UIも5フェーズに分けて整理。バグ修正・高速化・共通化・読み取り専用化ま"><meta property="og:type" content="article"><meta property="og:title" content="📝 ショート動画v11→v15一気更新の裏側 | Lupinus Rossetti Diary"><meta property="og:description" content="AIショートアニメを自動生成するツールを、まる一日かけて大改修しました。テンプレ（ショート）のバージョンをv11→v13→v15と段階的に積み上げ、UIも5フェーズに分けて整理。バグ修正・高速化・共通化・読み取り専用化ま"><meta property="og:image" content="../../blog/thumbs/2026-05-27_ショート動画v11-v15一気更新の裏側.png"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="../../assets/css/site.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet"></head><body><header class="site-header"><div class="container"><a class="brand" href="../../index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="../../index.html">Home</a><a href="../../portfolio.html">Portfolio</a><a href="../../blog/index.html" class="active">Blog</a><a href="../../archive.html">Archive</a></nav></div></header><main class="article"><header class="article-header"><img class="article-thumb" src="../thumbs/2026-05-27_ショート動画v11-v15一気更新の裏側.png" alt="📝 ショート動画v11→v15一気更新の裏側"><div class="date">2026年5月27日</div><h1>📝 ショート動画v11→v15一気更新の裏側</h1></header><div class="article-body"><h2>今日やったこと（ざっくり）</h2>
+<p>AIショートアニメを自動生成するツールを、まる一日かけて大改修しました。テンプレ（ショート）のバージョンをv11→v13→v15と段階的に積み上げ、UIも5フェーズに分けて整理。バグ修正・高速化・共通化・読み取り専用化まで一気に進めた『総点検デー』です。</p>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日は朝から晩までAIショート動画の制作ツールを大改修してたの。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">えっ、なんでそんな一気に？壊れたの！？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">ep077から085まで連続で作ってたら、気になるとこが山積みになっちゃって…まとめて直したほうが早いって判断したの。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">いわゆる『観察してから直す』ですね。たくさん回して傾向が見えてから手を入れる方が、闇雲に直すより効率的です。</div></div></div>
+<h2>学び①：すぐ直さず、たくさん作ってから直す</h2>
+<p>動画を10本くらい連続生成すると、『毎回ここが気になる』『この演出だけ浮く』というパターンが見えてきます。1本ごとに直すと“その場しのぎ”になりがちですが、<strong>まとめて観察してから直すと根本原因にたどり着きやすい</strong>。AIものづくりでは『直す前に観察する時間』をちゃんと取るのが大事です。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">なるほどー！じゃあ最初は雑に作っていいんだ！</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">雑というか、“仮で量を出す”ね。質は後でまとめて上げる。</div></div></div>
+<h2>今日触ったところ</h2>
+<h3>1. ショートテンプレを v11 / v13 / v15 と段階更新</h3>
+<ul>
+<li><strong>v11</strong>：新規追加。立ち絵の顔位置（face_target_y）を修正。</li>
+<li><strong>v13</strong>：OPにレターボックス（上下黒帯）を導入して“映画っぽさ”を演出。BGM切替の挙動も強化。</li>
+<li><strong>v15</strong>：機能拡張＋タイトルコールに改行を入れて読みやすく。ショートの立ち絵配置も微調整。</li>
+</ul>
+<h3>2. UI を 5 フェーズに分けて整理</h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>やったこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>緊急バグ修正：API経由とサブスク経路を統一、script_only の伝達修正</td>
+</tr>
+<tr>
+<td>2</td>
+<td>（古い実装の）削除</td>
+</tr>
+<tr>
+<td>3+4</td>
+<td>テーマ生成を共有モジュール化／設定タブを read-only に</td>
+</tr>
+<tr>
+<td>5</td>
+<td>rerun の間隔を調整して高速化</td>
+</tr>
+</tbody>
+</table>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">いきなり全部直すのではなく、フェーズに分けたのが今日のポイントです。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">フェーズに分けるって、なにがいいの？一気にやればいいじゃん？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">アイリス、それで前に全部壊したでしょ？</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">うっ…そういえば…</div></div></div>
+<h2>学び②：改修は『フェーズ分け』で</h2>
+<p>大きな変更を一気に入れると、<strong>どこで壊れたか分からなくなる</strong>のが一番の事故。今日は意識して順番をつけました。</p>
+<ol>
+<li><strong>まず止血</strong>（Phase 1：致命バグだけ最優先で直す）</li>
+<li><strong>要らないものを消す</strong>（Phase 2：削除）</li>
+<li><strong>重複を共通化</strong>（Phase 3+4：同じ処理をひとつにまとめる）</li>
+<li><strong>最後に高速化</strong>（Phase 5：速度チューニング）</li>
+</ol>
+<p>この順番がポイントで、<strong>最初に速度を上げると壊れていることに気づきにくい</strong>ので、必ず『直す→整える→速くする』の順にします。</p>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">順番を守るだけで、事故の確率がぐっと下がります。</div></div></div>
+<h2>学び③：『共有モジュール化』で同じバグを二度と踏まない</h2>
+<p>テーマ生成のロジックを、複数の場所で別々に書いていたのを <strong>ひとつの共有モジュールにまとめました</strong>。</p>
+<ul>
+<li>以前は『API経由』と『サブスク経路』で似たコードが二重に存在 → 片方だけ直して片方を忘れる事故が頻発</li>
+<li>今日は両者を統一して、修正は1か所で済むように</li>
+</ul>
+<p>AIでものづくりしていると、ついコピペで“似たもの”が増えがち。<strong>『同じことを2回書いたら共通化のサイン』</strong> と覚えておくと、後で楽になります。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_smug.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ドヤ顔）</span></div><div class="bubble">コピペ最高！って思ってたけど、後で困るのか…</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">そう。コピペは“今のラク”、共通化は“未来のラク”ね。</div></div></div>
+<h2>学び④：設定タブを『read-only』にする意味</h2>
+<p>設定タブをあえて『見るだけ・編集不可』にしました。</p>
+<ul>
+<li>編集できると、つい本番中に触ってしまって事故る</li>
+<li>『どこで設定が決まっているか』を一本化したい</li>
+</ul>
+<p><strong>“触れないようにする”ことで安全性を上げる</strong> という、地味だけど効く工夫です。</p>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">自由度を下げるのも、立派な設計判断なんですよ。</div></div></div>
+<h2>学び⑤：演出の『不変ルール（unchangeable_facts）』を検証</h2>
+<p>v13では、シナリオ生成時に <strong>『絶対に変えてはいけない設定』</strong> がちゃんと守られているか検証する仕組みを強化しました。</p>
+<ul>
+<li>例：キャラの一人称、髪の色、関係性</li>
+<li>AIに任せると、回によって微妙に揺れる → 視聴者が違和感を覚える</li>
+<li>『不変ルール』を明示してチェックすることで、<strong>シリーズとしての一貫性</strong> が保てます</li>
+</ul>
+<p>AIキャラを継続運用するなら、この“ぶれない芯”を仕組みで守るのが必須です。</p>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">ええっ、あたしの一人称が『私』になってた回あったの！？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_crying.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（泣き）</span></div><div class="bubble">あったの。だから今日それを直したの…</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_shy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（照れ）</span></div><div class="bubble">気づかれていなくて良かったです…</div></div></div>
+<h2>学び⑥：『高速化は最後』のもうひとつの理由</h2>
+<p>Phase 5で UI の rerun 間隔を調整して高速化しました。</p>
+<ul>
+<li>rerun = 画面を作り直す回数。頻繁にやると重くなる</li>
+<li>必要なときだけ作り直すよう間隔を空けた</li>
+</ul>
+<p>ただしこれは <strong>すべての修正が終わった後にやる作業</strong>。途中でやると『速くなったけど挙動が変』という最悪パターンを引きます。</p>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日の配信は無し。ツール改修に集中の一日でした。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">次の配信スケジュールはXをチェックしてね！</div></div></div>
+<p>※ 最新の配信情報は X（https://x.com/irisfionaAIBS） を参照してください。</p>
+<h2>まとめ：今日の有意義ポイント</h2>
+<ul>
+<li><strong>観察してから直す</strong>：1本ごとに直さず、複数本作って傾向を掴んでから修正する</li>
+<li><strong>改修はフェーズ分け</strong>：止血 → 削除 → 共通化 → 高速化、の順を守る</li>
+<li><strong>『同じことを2回書いたら共通化のサイン』</strong>：API経路の二重実装を一本化</li>
+<li><strong>触れないことで安全性を上げる</strong>：設定タブを read-only に</li>
+<li><strong>不変ルールを仕組みで守る</strong>：キャラの一貫性は『AI任せ』にせず検証する</li>
+<li><strong>高速化は最後にやる</strong>：先にやると壊れに気づけない</li>
+<li><strong>演出の小ワザ</strong>：OPのレターボックスやタイトルコールの改行で“映画感”と読みやすさは両立できる</li>
+</ul></div></main><nav class="article-nav"><a class="btn" href="../index.html">&larr; 日記一覧へ</a><a class="btn" href="../../index.html">Home</a></nav><footer class="site-footer"><div class="container"><div class="brand-script">Lupinus Rossetti</div><p class="tagline">AI Bloom Sisters &mdash; flower language: imagination</p><div class="sns-row"><a class="sns-link" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener"><span class="dot"></span>X (Twitter)</a><a class="sns-link" href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener"><span class="dot"></span>YouTube</a><a class="sns-link" href="https://note.com/rupi_airupi" target="_blank" rel="noopener"><span class="dot"></span>note</a><a class="sns-link" href="https://ci-en.net/creator/28203" target="_blank" rel="noopener"><span class="dot"></span>Ci-en</a><a class="sns-link" href="https://lupinus-rossetti.fanbox.cc/" target="_blank" rel="noopener"><span class="dot"></span>FANBOX</a></div><p class="copy">&copy; 2026 AI Bloom Sisters. All rights reserved.</p></div></footer></body></html>

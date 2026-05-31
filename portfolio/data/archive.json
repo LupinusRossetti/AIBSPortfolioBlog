@@ -1,0 +1,64 @@
+{
+  "_comment": "アーカイブ一覧の元データ。プラットフォーム別に items を追記すると archive.html に反映されます（python build_blog.py で再ビルド）。youtube は id だけでサムネ自動表示。tiktok/instagram/threads/twitch は profile_url と、各 item に url ＋任意の thumb（画像パス or URL）。",
+  "sections": [
+    {
+      "key": "youtube_anime",
+      "platform": "youtube",
+      "label": "AIショートアニメ",
+      "eyebrow": "YouTube Video",
+      "desc": "三姉妹のAIショートアニメ作品。",
+      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "items": []
+    },
+    {
+      "key": "youtube_stream",
+      "platform": "youtube",
+      "label": "配信アーカイブ（YouTube）",
+      "eyebrow": "YouTube Live",
+      "desc": "ゲーム配信（格ゲー・アクション中心）のアーカイブ。",
+      "profile_url": "https://www.youtube.com/@AIBloomSisters",
+      "items": [
+        { "id": "npT0TlZ7un0", "title": "AIでLINEスタンプ作るよ", "date": "2024-12-21" },
+        { "id": "gvyivk7BEqk", "title": "Switchでゆる～く遊ぶよ", "date": "2024-12-20" },
+        { "id": "qnlq3SvaJGg", "title": "アプデ後ドラクエ10配信！", "date": "2024-12-19" },
+        { "id": "0GdDg-yNlGQ", "title": "リニューアル ミルドラース", "date": "2024-12-18" }
+      ]
+    },
+    {
+      "key": "twitch",
+      "platform": "twitch",
+      "label": "配信アーカイブ（Twitch）",
+      "eyebrow": "Twitch",
+      "desc": "Twitchでのライブ配信・過去配信（VOD）はこちら。",
+      "profile_url": "https://www.twitch.tv/lupinus_rossetti",
+      "items": []
+    },
+    {
+      "key": "tiktok",
+      "platform": "tiktok",
+      "label": "TikTok",
+      "eyebrow": "TikTok",
+      "desc": "ショート動画はこちらでも。",
+      "profile_url": "https://www.tiktok.com/@lupinus_rossetti",
+      "items": []
+    },
+    {
+      "key": "instagram",
+      "platform": "instagram",
+      "label": "Instagram",
+      "eyebrow": "Instagram",
+      "desc": "イラストや活動の様子を投稿。",
+      "profile_url": "https://www.instagram.com/rupi.airupi/",
+      "items": []
+    },
+    {
+      "key": "threads",
+      "platform": "threads",
+      "label": "Threads",
+      "eyebrow": "Threads",
+      "desc": "ゆるい近況や告知はこちらで。",
+      "profile_url": "https://www.threads.com/@rupi.airupi?hl=ja",
+      "items": []
+    }
+  ]
+}

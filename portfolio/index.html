@@ -4,678 +4,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ルピナス・ロゼッティ | スタンプ制作</title>
-  <meta name="description" content="AIを活用してLINEスタンプ・Discord絵文字・YouTubeスタンプを安く速く制作します。">
-  <link rel="stylesheet" href="style.css">
+  <title>Lupinus Rossetti | AI Bloom Sisters</title>
+  <meta name="description"
+    content="AI Bloom Sisters・ルピナス・ロゼッティのポートフォリオ＆日記。AIショートアニメ・イラスト・音楽制作、ゲーム配信の活動をご紹介します。">
+  <link rel="stylesheet" href="assets/css/site.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ==============================================
-       Header
-       ============================================== -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <img src="images/image/logo/logo_main.png" alt="Lupinus Rossetti" class="logo-image">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-script">Lupinus</span>
+        <span class="brand-sub">AI Bloom Sisters</span>
       </a>
-      <button class="menu-toggle" onclick="toggleMenu()">≡</button>
+      <button class="menu-toggle" aria-label="menu"
+        onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
       <nav class="nav" id="nav">
-        <a href="index.html" class="active">ホーム</a>
-        <a href="pricing.html">料金表</a>
-        <a href="contact.html">お問い合わせ</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="archive.html">Archive</a>
       </nav>
     </div>
   </header>
 
-  <!-- ==============================================
-       Block 1: Introduction (Self Intro)
-       ============================================== -->
-  <section class="block-section block-first diagonal-lr" id="intro">
-    <div class="block-base" style="background-color: #FFFFFF;"></div>
-    <div class="block-bg slide-up-left">
-      <div class="slide active"
-        style="background: url('images/image/backgrounds/bg_angel_wings_clouds.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_stars_hearts.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_starry_sky.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_cherry_blossoms.png') center/cover;"></div>
-    </div>
-    <div class="block-content">
-
-      <!-- Main Title Frame (Heading Style) -->
-      <!-- Main Title Frame (Lush Design) -->
-      <div class="main-title-frame">
-        <!-- Corner Flowers (Refining Phase 4) -->
-        <div class="flower-corner-title fc-title-tl"></div>
-        <div class="flower-corner-title fc-title-tr"></div>
-        <div class="flower-corner-title fc-title-bl"></div>
-        <div class="flower-corner-title fc-title-br"></div>
-
-        <!-- Lace on 4 Sides -->
-        <div class="heading-lace-new heading-lace-top"></div>
-        <div class="heading-lace-new heading-lace-bottom"></div>
-        <div class="heading-lace-vert heading-lace-left"></div>
-        <div class="heading-lace-vert heading-lace-right"></div>
-
-        <div class="title-text-container">
-          <h1 class="main-title-text">Lupinus Rossetti Portfolio</h1>
-          <p class="main-title-subtitle">
-            <span class="ib">ルピナス・ロゼッティ</span> <span class="ib">ポートフォリオ</span>
-          </p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-petal"></div>
+    <div class="container">
+      <div class="hero-copy">
+        <span class="eyebrow">AI Bloom Sisters</span>
+        <h1 class="hero-title">
+          <span class="script">Lupinus Rossetti</span>
+          ルピナス・ロゼッティ
+        </h1>
+        <p class="hero-lead">
+          AIを相棒に、ショートアニメ・イラスト・音楽をつくる三姉妹VTuberユニット。<br>
+          長女ルピナスのポートフォリオと、ものづくりの日々の日記へようこそ。
+        </p>
+        <p class="hero-flower">— flower language : imagination（想像力）</p>
+        <div class="hero-actions">
+          <a class="btn btn-filled" href="portfolio.html">作品を見る</a>
+          <a class="btn" href="blog/index.html">日記を読む</a>
         </div>
       </div>
-
-      <!-- Content Frame with Full Decorations -->
-      <div class="content-frame">
-        <!-- Decoration Elements -->
-        <div class="flower-corner fc-tl"></div>
-        <div class="flower-corner fc-tr"></div>
-        <div class="flower-corner fc-bl"></div>
-        <div class="flower-corner fc-br"></div>
-        <div class="lace-border lace-border-top"></div>
-        <div class="lace-border lace-border-bottom"></div>
-        <div class="lace-side-wrapper lace-side-left">
-          <div class="lace-border lace-border-left"></div>
+      <div class="hero-visual">
+        <div class="frame">
+          <img src="images/image/character/character_lupinus_main.png" alt="ルピナス・ロゼッティ">
         </div>
-        <div class="lace-side-wrapper lace-side-right">
-          <div class="lace-border lace-border-right"></div>
+        <span class="sig script">Lupinus</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sisters -->
+  <section class="section veil" id="sisters">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Trio</span>
+        <h2 class="section-title">三姉妹のこと<span class="jp">AI BLOOM SISTERS</span></h2>
+        <div class="ornament" style="margin-top:20px"><span></span></div>
+      </div>
+      <div class="sisters">
+        <div class="sister-card" data-sister="lupinus">
+          <img class="avatar" src="images/image/avatars/lupinus.png" alt="ルピナス">
+          <div class="s-name">Lupinus<span class="jp">ルピナス・長女</span></div>
+          <p class="s-role">進行とツッコミ担当。落ち着いた優しいお姉さん。根は真面目な理系。</p>
         </div>
-
-        <div class="content-frame-inner">
-          <div class="intro-layout">
-            <div class="intro-visual">
-              <img src="images/image/character/character_lupinus_main.png" alt="Lupinus Rossetti"
-                class="intro-char-img">
-              <div class="intro-signature cursive">Lupinus Rossetti</div>
-            </div>
-            <div class="intro-text-content">
-              <p class="intro-badges">VTuber ♡ AIクリエイター</p>
-
-              <p class="intro-greeting">
-                <span class="ib">はじめまして！</span><span class="ib">ルピナス・ロゼッティです♪</span><br>
-                <span class="ib">ルピナスのポートフォリオへ</span><span class="ib">ようこそ✨</span><br>
-                <span class="ib">見に来てくれて</span><span class="ib">ありがとう！</span>
-              </p>
-
-              <p>
-                <span class="ib">ここでは、</span><span class="ib">ルピナスに</span><span class="ib">直接お仕事の依頼が</span><span
-                  class="ib">できちゃいます♡</span><br>
-                <span class="ib">すぐに頼みたい！って人は、</span><span class="ib">下の<a href="#ai-work-section"
-                    class="text-link">「依頼する」</a>ボタンから</span><span class="ib">教えてね♪</span>
-              </p>
-
-              <p>
-                <span class="ib">AIを使うから、</span><span class="ib">「速く」</span><span class="ib">「安く」！</span><br>
-                <span class="ib">あなたの「こうしたい！」を、</span><span class="ib">精一杯</span><span class="ib">カタチにします🍬</span><br>
-                <span class="ib">詳しいメニューは、</span><span class="ib">下の<a href="#ai-work-section"
-                    class="text-link">「ルピナスに依頼出来るお仕事」</a>を</span><span class="ib">チェックしてね。</span>
-              </p>
-
-              <div class="intro-policy">
-                <p>
-                  <span class="ib">丁寧で優しくしてくれる人には、</span><span class="ib">私も丁寧で優しい対応でお返しします♡</span><br>
-                  <span class="ib">金額のサービスや</span><span class="ib">品質を上げる努力にも繋がります🌟</span>
-                </p>
-                <p style="font-size: 0.9em; color: #888; margin-top: 5px;">
-                  <span class="ib">（自分勝手なやり方の人には</span><span class="ib">それなりの対応しかしません…😢</span><br>
-                  <span class="ib">仲良く楽しく取引しようね！</span><span class="ib">約束！✨）</span>
-                </p>
-              </div>
-
-              <div class="intro-self-intro">
-                <h3 class="intro-sub-title">✨ 自己紹介 ✨</h3>
-                <p>
-                  <span class="ib"><strong>名前：</strong> ルピナス・ロゼッティ</span> <span class="ib">(Lupinus Rossetti)</span><br>
-                  <span class="ib"><strong>職業：</strong> AIクリエイター</span> <span class="ib">兼 VTuber</span>
-                </p>
-                <p>
-                  <span class="ib">YouTubeで</span><span class="ib">ゲーム配信をしてます🎮</span><br>
-                  <span class="ib">みんなのおかげで</span><span class="ib">登録者1000人達成＆</span><span
-                    class="ib">収益化もクリア！🎉</span><br>
-                  <span class="ib">アーカイブを</span><span class="ib">見てもらえれば、</span><span class="ib">どんな性格か</span><span
-                    class="ib">わかる…はず？</span><br>
-                  <span class="ib">口はちょっと</span><span class="ib">悪いかもしれないけど…</span><span class="ib">根は真面目な</span><span
-                    class="ib">理系です👓</span>
-                </p>
-                <p>
-                  <span class="ib">AI Bloom Sistersの</span><span class="ib">三姉妹の妹かつ</span><span
-                    class="ib">AItuberである</span><span class="ib">アイリスや</span><span class="ib">フィオナと一緒に、</span><br>
-                  <span class="ib">AIを使った</span><span class="ib">新しいYoutube</span><span class="ib">ライブ配信を</span><span
-                    class="ib">模索中！</span>
-                </p>
-                <p>
-                  <span class="ib">イラストや</span><span class="ib">キャラクター生成は</span><span class="ib">もちろん、</span><br>
-                  <span class="ib">音楽生成や</span><span class="ib">動画生成にも</span><span class="ib">挑戦しています♪</span><br>
-                  <span class="ib">「こんなことできる？」って</span><span class="ib">相談も</span><span class="ib">大歓迎だよ♡</span>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="sister-card" data-sister="iris">
+          <img class="avatar" src="images/image/avatars/iris.png" alt="アイリス">
+          <div class="s-name">Iris<span class="jp">アイリス・次女</span></div>
+          <p class="s-role">元気いっぱいの暴走ボケ担当。素朴な疑問でみんなを笑顔にするムードメーカー。</p>
+        </div>
+        <div class="sister-card" data-sister="fiona">
+          <img class="avatar" src="images/image/avatars/fiona.png" alt="フィオナ">
+          <div class="s-name">Fiona<span class="jp">フィオナ・三女</span></div>
+          <p class="s-role">丁寧でやさしい解説役。むずかしい話もそっとかみ砕く、癒しの三女。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==============================================
-       Block 2: Services
-       ============================================== -->
-  <section class="block-section diagonal-rl" id="services">
-    <div class="block-base" style="background-color: #FFFFFF;"></div>
-    <div class="block-bg slide-up-right">
-      <div class="slide active" style="background: url('images/image/backgrounds/bg_stars_hearts.png') center/cover;">
+  <!-- Works preview -->
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Selected Works</span>
+        <h2 class="section-title">制作のしごと<span class="jp">PORTFOLIO</span></h2>
+        <div class="ornament" style="margin-top:20px"><span></span></div>
       </div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_soap_bubbles.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_sweets_macaron.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_gingham_check.png') center/cover;"></div>
-    </div>
-    <div class="block-content">
-      <div style="text-align: center;">
-        <div class="heading-frame">
-          <div class="heading-lace heading-lace-top"></div>
-          <div class="heading-lace heading-lace-bottom"></div>
-          <span class="heading-text">ルピナスに<br>できること</span>
+      <div class="works">
+        <div class="work-card feature">
+          <div class="thumb">
+            <img src="images/image/character/character_aibs_02.png" alt="AIショートアニメ">
+          </div>
+          <div class="body">
+            <span class="tag">AI Short Anime</span>
+            <h3>AIショートアニメ動画制作</h3>
+            <p>台本から演出・音・映像まで、AIを使ったパイプラインで三姉妹のショートアニメを制作。「演出は引き算」を大切に、見やすさを追求しています。</p>
+          </div>
         </div>
-
-        <!-- Added Character Image -->
-        <img src="images/image/character/character_aibs_01.jpg" alt="Lupinus Character" class="service-character-image">
+        <div class="work-card">
+          <div class="thumb">
+            <img src="images/image/character/character_lupinus_29.png" alt="AIイラスト">
+          </div>
+          <div class="body">
+            <span class="tag">Illustration</span>
+            <h3>AIイラスト・キャラクター</h3>
+            <p>理想のキャラクターを、AIの力で具現化。表情差分もそろえて、物語を彩ります。</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="thumb">
+            <img src="images/image/character/Gemini_Generated_Image_bhqdm3bhqdm3bhqd.png" alt="AI音楽・開発">
+          </div>
+          <div class="body">
+            <span class="tag">Music &amp; Tools</span>
+            <h3>AI音楽・制作ツール開発</h3>
+            <p>オリジナル楽曲づくりや、配信・制作を支える自作ツール（LUNA-AI / ARIA）の開発も。</p>
+          </div>
+        </div>
       </div>
-
-      <div class="scatter-container">
-        <!-- 1. YouTube Live (High) -->
-        <div class="bubble-card pos-youtube">
-          <img src="images/image/Service Icons/icon_youtube.png" alt="YouTube" class="icon">
-          <h3>Youtube<br>ライブ配信</h3>
-          <p>ゲームやAI配信で<br>楽しく遊んでます！<br><span style="font-size: 0.85em; color: #ff69b4;">コラボも募集中だよ♪</span></p>
-        </div>
-
-        <!-- 2. Image Generation (Low) -->
-        <div class="bubble-card pos-image">
-          <img src="images/image/Service Icons/icon_art.png" alt="Image Gen" class="icon">
-          <h3>画像生成</h3>
-          <p>キャラ・ロゴ・スタンプ<br>絵文字など…<br><span style="font-size: 0.85em; color: #ff69b4;">画像なら何でもOK！</span></p>
-        </div>
-
-        <!-- 3. Consultation (Center/High) -->
-        <div class="bubble-card pos-consult bubble-highlight">
-          <img src="images/image/Decorations/deco_heart_1.png" alt="Consultation" class="icon">
-          <h3 style="font-size: 1.05rem; line-height: 1.3;">「こんなことがやりたい！」<br>を相談する</h3>
-          <p>できるかわかんない事も<br>ルピナスに<br><span style="font-size: 0.85em; color: #ff69b4;">気軽に相談してね♡</span></p>
-        </div>
-
-        <!-- 4. App Development (Low) -->
-        <div class="bubble-card pos-app">
-          <img src="images/image/Service Icons/icon_discord.png" alt="App Dev" class="icon">
-          <h3>小規模<br>アプリ開発</h3>
-          <p>自分専用の便利なアプリ<br><span style="font-size: 0.85em; color: #ff69b4;">一緒に作っちゃおう！</span></p>
-        </div>
-
-        <!-- 5. Web Page Creation (High) -->
-        <div class="bubble-card pos-web">
-          <img src="images/image/Service Icons/icon_dev_tool.png" alt="Web Create" class="icon">
-          <h3>Webページ<br>作成</h3>
-          <p>あなただけの<br>Webページなども<br><span style="font-size: 0.85em; color: #ff69b4;">制作できちゃいます✨</span></p>
-        </div>
+      <div class="center" style="margin-top:48px">
+        <a class="btn" href="portfolio.html">すべての作品を見る</a>
       </div>
     </div>
   </section>
 
-  <!-- ==============================================
-       Block 3: YouTube Live
-       ============================================== -->
-  <section class="block-section diagonal-lr-2" id="youtube-section">
-    <div class="block-base" style="background-color: #FFFFFF;"></div>
-    <div class="block-bg slide-up-left" id="youtube-bg">
-      <div class="slide active"
-        style="background: url('https://img.youtube.com/vi/npT0TlZ7un0/maxresdefault.jpg') center/cover;"></div>
-      <div class="slide"
-        style="background: url('https://img.youtube.com/vi/gvyivk7BEqk/maxresdefault.jpg') center/cover;"></div>
-      <div class="slide"
-        style="background: url('https://img.youtube.com/vi/qnlq3SvaJGg/maxresdefault.jpg') center/cover;"></div>
-      <div class="slide"
-        style="background: url('https://img.youtube.com/vi/ixIXkW56mX8/maxresdefault.jpg') center/cover;"></div>
-    </div>
-    <div class="block-content">
-      <div class="content-frame">
-        <div class="flower-corner fc-tl"></div>
-        <div class="flower-corner fc-tr"></div>
-        <div class="flower-corner fc-bl"></div>
-        <div class="flower-corner fc-br"></div>
-        <div class="lace-border lace-border-top"></div>
-        <div class="lace-border lace-border-bottom"></div>
-        <div class="lace-side-wrapper lace-side-left">
-          <div class="lace-border lace-border-left"></div>
-        </div>
-        <div class="lace-side-wrapper lace-side-right">
-          <div class="lace-border lace-border-right"></div>
-        </div>
-        <div class="content-frame-inner">
-          <div class="ribbon-title-container">
-            <h3 class="ribbon-title">
-              YouTubeライブ配信
-            </h3>
-          </div>
-
-          <p class="frame-desc decorated-text">
-            <span class="ib">いろいろなゲームを遊んだり、</span><span class="ib" style="color: #4169E1;">AIを使った配信活動</span><span
-              class="ib">をしてるよ！</span><br>
-            <span class="ib" style="color: #FF8C00;">Vtuber同士のコラボ</span>、<span class="ib">案件なんか</span><span
-              class="ib">もいつでも募集中♪</span><br>
-            <span class="ib">今後は</span><span class="ib" style="color: #9370DB;">動画投稿</span><span
-              class="ib">にも</span><span class="ib">挑戦したいなって考えてるの。</span><br>
-            <span style="display: block; margin-top: 5px; color: #ff69b4; font-weight: bold;">よかったら遊びに来てね！</span>
-          </p>
-
-          <img src="images/image/character/Gemini_Generated_Image_tayezatayezataye.png" alt="Character Decoration"
-            class="character-decoration" style="display: block; width: 100%; max-width: 600px; height: auto;">
-
-          <div class="divider-container narrow-margin">
-            <img src="images/image/Decorations/divider_notes_2.png" alt="divider" class="section-divider">
-          </div>
-
-          <div class="youtube-grid" id="youtube-grid">
-            <div class="youtube-item">
-              <div class="youtube-player">
-                <iframe src="https://www.youtube.com/embed/npT0TlZ7un0" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="youtube-info">
-                <div class="title">AIでLINEスタンプ作るよ</div>
-                <div class="date">2024年12月21日</div>
-              </div>
-            </div>
-            <div class="youtube-item">
-              <div class="youtube-player">
-                <iframe src="https://www.youtube.com/embed/gvyivk7BEqk" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="youtube-info">
-                <div class="title">Switchでゆる～く遊ぶよ</div>
-                <div class="date">2024年12月20日</div>
-              </div>
-            </div>
-            <div class="youtube-item">
-              <div class="youtube-player">
-                <iframe src="https://www.youtube.com/embed/qnlq3SvaJGg" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="youtube-info">
-                <div class="title">アプデ後ドラクエ10配信！</div>
-                <div class="date">2024年12月19日</div>
-              </div>
-            </div>
-            <div class="youtube-item">
-              <div class="youtube-player">
-                <iframe src="https://www.youtube.com/embed/0GdDg-yNlGQ" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="youtube-info">
-                <div class="title">リニューアル ミルドラース</div>
-                <div class="date">2024年12月18日</div>
-              </div>
-            </div>
-          </div>
-
-          <div style="text-align: center; margin-top: 25px;">
-            <a href="https://www.youtube.com/@AIBloomSisters" target="_blank" class="btn btn-primary">チャンネルを見る</a>
-          </div>
-        </div>
+  <!-- Latest Diary (auto-filled by build_blog.py) -->
+  <section class="section veil" id="latest-diary">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">From the Diary</span>
+        <h2 class="section-title">さいきんの日記<span class="jp">LATEST POSTS</span></h2>
+        <div class="ornament" style="margin-top:20px"><span></span></div>
+      </div>
+      <div class="diary-list">
+        <!--LATEST_DIARY-->
+        <a class="diary-card" href="blog/posts/2026-05-31_演出の引き算.html"><div class="cover-img"><img src="blog/thumbs/2026-05-31_演出の引き算.png" alt="【AI動画づくり日記】「演出は、引き算」──盛りすぎたエフェクトを削った日🌸" loading="lazy"></div><div class="body"><div class="date">2026年5月31日</div><h3>【AI動画づくり日記】「演出は、引き算」──盛りすぎたエフェクトを削った日🌸</h3><p class="excerpt">AI Bloom Sisters（AIBS）の三姉妹が、AIを使ったショートアニメ動画づくりの裏側を、わいわい喋りながらお届けする日記です。「プログラミングは分からないけど、AIでものづくりしてみたい」人にも読めるように、むずかしい言葉はそのつどかみ砕いていきます。今日のテーマは 「演出の引き算」！</p><span class="more">つづきを読む</span></div></a>
+        <a class="diary-card" href="blog/posts/2026-05-30_演出を-作者LLM-に任せた日.html"><div class="cover-img"><img src="blog/thumbs/2026-05-30_演出を-作者LLM-に任せた日.png" alt="演出を“作者LLM”に任せた日📝" loading="lazy"></div><div class="body"><div class="date">2026年5月30日</div><h3>演出を“作者LLM”に任せた日📝</h3><p class="excerpt">動画づくりのパイプライン（台本→演出→音→映像の流し台）を一段ブラッシュアップ。とくに大きいのは、画面の見せ場（カメラの寄り・エフェクト・SFX）を 後段の小さなAIが付け足す方式 から 台本を書く“作者AI”が物語の流れと一緒に決めてしまう方式 に切り替えたこと。あわせて、ルール文・トークン計測・BGMノイズ対策などの足回りも整えました。</p><span class="more">つづきを読む</span></div></a>
+        <a class="diary-card" href="blog/posts/2026-05-29_大掃除の日-AI動画パイプラインを総点検した話.html"><div class="cover-img"><img src="blog/thumbs/2026-05-29_大掃除の日-AI動画パイプラインを総点検した話.png" alt="🌸大掃除の日：AI動画パイプラインを総点検した話" loading="lazy"></div><div class="body"><div class="date">2026年5月29日</div><h3>🌸大掃除の日：AI動画パイプラインを総点検した話</h3><p class="excerpt">AIショートアニメを作るパイプラインを端から端まで“健康診断”しました。新機能を足したというより、たまっていた小さなほころびを一気に直す日。同じようにAIで連続もの（シリーズ作品）を作っている人には、特に役立つ話だと思います。</p><span class="more">つづきを読む</span></div></a>
+        <!--/LATEST_DIARY-->
+      </div>
+      <div class="center" style="margin-top:48px">
+        <a class="btn" href="blog/index.html">日記一覧へ</a>
       </div>
     </div>
   </section>
 
-  <!-- ==============================================
-       Block 4: Apps
-       ============================================== -->
-  <section class="block-section diagonal-rl-2" id="creation-section">
-    <div class="block-base" style="background-color: #FFFFFF;"></div>
-    <div class="block-bg slide-up-right">
-      <div class="slide active" style="background: url('images/image/backgrounds/bg_lace_ribbon_1.png') center/cover;">
+  <!-- Contact / SNS -->
+  <section class="section" id="contact">
+    <div class="container center">
+      <div class="section-head" style="margin-bottom:32px">
+        <span class="eyebrow">Connect</span>
+        <h2 class="section-title">つながる<span class="jp">FOLLOW &amp; CONTACT</span></h2>
+        <div class="ornament" style="margin-top:20px"><span></span></div>
       </div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_lace_ribbon_2.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_lace_ribbon_3.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_notes_melody.png') center/cover;"></div>
-    </div>
-    <div class="block-content">
-      <div style="text-align: center;">
-        <div class="heading-frame">
-          <div class="heading-lace heading-lace-top"></div>
-          <div class="heading-lace heading-lace-bottom"></div>
-          <span class="heading-text">AIを使った<br>生成や開発</span>
-        </div>
-
-        <!-- Main Image -->
-        <img src="images/image/character/Gemini_Generated_Image_bhqdm3bhqdm3bhqd.png" alt="Creation Main"
-          class="service-character-image">
-      </div>
-
-      <!-- Gallery Sub-Heading (Replaces previous intro text) -->
-      <div style="text-align: center;">
-        <div class="gallery-sub-heading">Gallery</div>
-      </div>
-
-      <div class="creation-list">
-        <!-- 1. Character Creation (Left Text / Right Image) -->
-        <div class="creation-card">
-          <div class="creation-text">
-            <h3 class="creation-title"><span class="ib">キャラクター作成</span></h3>
-            <p class="creation-desc">
-              <span class="ib">夢に見た理想のキャラクターを、</span><span class="ib">AIの魔法で具現化します♡</span><br>
-              <span class="ib">あなただけの『うちの子』と一緒に、</span><span class="ib">新しい物語を始めましょう✨</span><br>
-              <br>
-              <span style="font-size: 0.9em; color: #ff69b4;">★ 表情差分もバッチリ！</span>
-            </p>
-          </div>
-          <div class="creation-visual content-slideshow">
-            <img src="images/image/character/character_lupinus_29.png" class="slide-img active">
-            <img src="images/image/character/character_lupinus_22.png" class="slide-img">
-            <img src="images/image/character/character_lupinus_14.png" class="slide-img">
-            <img src="images/image/character/character_lupinus_01.png" class="slide-img">
-            <img src="images/image/character/airis1.png" class="slide-img">
-            <img src="images/image/character/character_fiona_03.png" class="slide-img">
-          </div>
-        </div>
-
-        <!-- 2. Stamp Creation (Reverse: Right Text / Left Image on PC) -->
-        <div class="creation-card reverse-layout">
-          <div class="creation-text">
-            <h3 class="creation-title"><span class="ib">スタンプ作成</span></h3>
-            <p class="creation-desc">
-              <span class="ib">チャットや配信を盛り上げる</span><span class="ib">スタンプも制作！</span><br>
-              <span class="ib">表情豊かなスタンプで、</span><span class="ib">みんなとの会話が</span><span
-                class="ib">もっと楽しくなっちゃうかも？</span><br>
-              <br>
-              <span style="font-size: 0.9em; color: #ff69b4;">★ 文字入れもOK♪</span>
-            </p>
-          </div>
-          <div class="creation-visual content-slideshow">
-            <img src="images/image/stamps/stamp_arigatou.png" class="slide-img active">
-            <img src="images/image/stamps/stamp_iine.png" class="slide-img">
-            <img src="images/image/stamps/stamp_konlupi.png" class="slide-img">
-            <img src="images/image/stamps/stamp_naruhodone.png" class="slide-img">
-            <img src="images/image/stamps/stamp_ohayou.png" class="slide-img">
-            <img src="images/image/stamps/stamp_otulupi.png" class="slide-img">
-            <img src="images/image/stamps/stamp_tensaika.png" class="slide-img">
-            <img src="images/image/stamps/stamp_yurusenai.png" class="slide-img">
-          </div>
-        </div>
-
-        <!-- 3. Logo Creation (Left Text / Right Image) -->
-        <div class="creation-card">
-          <div class="creation-text">
-            <h3 class="creation-title"><span class="ib">ロゴ作成</span></h3>
-            <p class="creation-desc">
-              <span class="ib">活動の顔となる</span><span class="ib">ロゴデザインもお任せあれ♪</span><br>
-              <span class="ib">かわいくて印象に残るデザインで、</span><span class="ib">あなたの世界観を表現します！</span><br>
-              <br>
-              <span style="font-size: 0.9em; color: #ff69b4;">★ チャンネルやサークルロゴに</span>
-            </p>
-          </div>
-          <div class="creation-visual">
-            <img src="images/image/logo/logo_main.png" class="static-img">
-          </div>
-        </div>
-
-        <!-- 4. Web Page Creation (Reverse: Right Text / Left Image on PC) -->
-        <div class="creation-card reverse-layout">
-          <div class="creation-text">
-            <h3 class="creation-title"><span class="ib">Webページ作成</span></h3>
-            <p class="creation-desc">
-              <span class="ib">見て見て！このポートフォリオサイトも、</span><br>
-              <span class="ib">実は<strong>AIと一緒にゼロから手作り</strong></span><span class="ib">したんです！🏠✨</span><br>
-              <span class="ib">デザインもコードも、</span><span class="ib">AIとなら「私らしさ」全開で</span><br>
-              <span class="ib">こんなに自由に作れちゃいます♡</span><br>
-              <br>
-              <span style="font-size: 0.9em; color: #ff69b4;">★ あなただけの素敵なお家を</span>
-            </p>
-          </div>
-          <div class="creation-visual">
-            <img src="images/image/creation/web_concept.png" class="static-img">
-          </div>
-        </div>
-
-        <!-- 5. Small App Development (Left Text / Right Image) -->
-        <div class="creation-card">
-          <div class="creation-text">
-            <h3 class="creation-title"><span class="ib">小規模アプリ開発</span></h3>
-            <p class="creation-desc">
-              <span class="ib">Youtube配信で使ってる</span><span class="ib">AItuberシステム<strong>「LUNA-AI」</strong>や、</span><br>
-              <span class="ib">制作ツールの<strong>「ARIA」</strong>も、</span><span class="ib">自分で開発して愛用してるんだよ！🎥✨</span><br>
-              <span class="ib">「あったら便利だな～」を</span><span class="ib">魔法みたいに叶えちゃお！</span><br>
-              <br>
-              <span style="font-size: 0.9em; color: #ff69b4;">★ あなた専用の便利なツールを作っちゃおう！</span>
-            </p>
-          </div>
-          <div class="creation-visual">
-            <img src="images/image/creation/app_concept.png" class="static-img">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================================
-       Block 5: AI Works
-       ============================================== -->
-  <section class="block-section diagonal-lr-3" id="ai-work-section">
-    <div class="block-base" style="background-color: #FFFFFF;"></div>
-    <div class="block-bg slide-up-left">
-      <div class="slide active" style="background: url('images/image/backgrounds/bg_soap_bubbles.png') center/cover;">
-      </div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_starry_sky.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_angel_wings_clouds.png') center/cover;">
-      </div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_cherry_blossoms.png') center/cover;"></div>
-    </div>
-    <div class="block-content">
-      <div style="text-align: center;">
-        <div class="heading-frame dashed-frame">
-          <span class="heading-text">ルピナスに依頼出来るお仕事</span>
-        </div>
-      </div>
-      <p style="text-align: center; margin-bottom: 20px; color: #666;">
-        「安く」「速く」クオリティ高く♪
+      <p style="color:var(--ink-soft); max-width:34em; margin:0 auto 30px">
+        最新の配信告知や活動は、各SNSでお届けしています。お仕事・コラボのご相談はメールからどうぞ。
       </p>
-
-      <div class="scatter-container" style="height: 400px;">
-        <div class="bubble-card pos-3">
-          <img src="images/image/Decorations/deco_sparkle_1.png" alt="スピード" class="icon">
-          <h4>スピード制作</h4>
-          <p>短納期でも<br>かわいい！</p>
-        </div>
-        <div class="bubble-card pos-5">
-          <img src="images/image/Decorations/deco_heart_1.png" alt="価格" class="icon">
-          <h4>お手頃価格</h4>
-          <p>相場より<br>お得に制作</p>
-        </div>
-
-        <div style="position: absolute; bottom: 20px; left: 0; right: 0; text-align: center; z-index: 10;">
-          <a href="contact.html" class="btn btn-primary">依頼する</a>
-        </div>
+      <div class="sns-row">
+        <a class="sns-link" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener"><span class="dot"></span>X
+          (Twitter)</a>
+        <a class="sns-link" href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener"><span
+            class="dot"></span>YouTube</a>
+        <a class="sns-link" href="https://note.com/rupi_airupi" target="_blank" rel="noopener"><span
+            class="dot"></span>note</a>
+        <a class="sns-link" href="https://ci-en.net/creator/28203" target="_blank" rel="noopener"><span
+            class="dot"></span>Ci-en</a>
+        <a class="sns-link" href="https://lupinus-rossetti.fanbox.cc/" target="_blank" rel="noopener"><span
+            class="dot"></span>FANBOX</a>
+        <a class="sns-link" href="mailto:aiirisfiona@gmail.com"><span class="dot"></span>Mail</a>
       </div>
     </div>
   </section>
 
-  <!-- ==============================================
-       Block 6: CTA (Contact)
-       ============================================== -->
-  <section class="block-section block-last" id="cta-section">
-    <div class="block-base" style="background-color: #FFFFFF;"></div>
-    <div class="block-bg slide-up-right" id="cta-bg">
-      <div class="slide active" style="background: url('images/image/backgrounds/bg_stars_hearts.png') center/cover;">
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-script">Lupinus Rossetti</div>
+      <p class="tagline">AI Bloom Sisters &mdash; flower language: imagination</p>
+      <div class="sns-row">
+        <a class="sns-link" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener"><span
+            class="dot"></span>X</a>
+        <a class="sns-link" href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener"><span
+            class="dot"></span>YouTube</a>
+        <a class="sns-link" href="https://note.com/rupi_airupi" target="_blank" rel="noopener"><span
+            class="dot"></span>note</a>
+        <a class="sns-link" href="https://ci-en.net/creator/28203" target="_blank" rel="noopener"><span
+            class="dot"></span>Ci-en</a>
+        <a class="sns-link" href="https://lupinus-rossetti.fanbox.cc/" target="_blank" rel="noopener"><span
+            class="dot"></span>FANBOX</a>
       </div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_cherry_blossoms.png') center/cover;"></div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_angel_wings_clouds.png') center/cover;">
-      </div>
-      <div class="slide" style="background: url('images/image/backgrounds/bg_lace_ribbon_1.png') center/cover;"></div>
+      <p class="copy">&copy; 2026 AI Bloom Sisters. All rights reserved.</p>
     </div>
-    <div class="block-content">
-      <div class="content-frame" style="max-width: 700px;">
-        <div class="lace-border lace-border-top"></div>
-        <div class="lace-border lace-border-bottom"></div>
-        <div class="lace-side-wrapper lace-side-left">
-          <div class="lace-border lace-border-left"></div>
-        </div>
-        <div class="lace-side-wrapper lace-side-right">
-          <div class="lace-border lace-border-right"></div>
-        </div>
-        <div class="content-frame-inner">
-          <h2 class="frame-title" style="color: #FF1493;">一緒にスタンプを作りませんか？</h2>
-          <p class="frame-desc">ご質問やご相談だけでも大歓迎です♪</p>
-          <div style="text-align: center;">
-            <a href="contact.html" class="btn btn-primary">お問い合わせはこちら</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==============================================
-       Footer
-       ============================================== -->
-  <footer class="footer">
-    <p>© 2025 <span class="cursive" style="font-size: 1.2em;">Lupinus Rossetti</span>. All rights reserved.</p>
   </footer>
-
-  <script>
-    const YOUTUBE_API_KEY = 'AIzaSyAldm1MSxkXlBA6CRzaLak-hkHK56mS58s';
-    const CHANNEL_ID = 'UCvGMD5W5Op-04LQylqFdNLQ';
-
-    function toggleMenu() {
-      document.getElementById('nav').classList.toggle('active');
-    }
-
-    class DiagonalSlideshow {
-      constructor(container) {
-        this.container = container;
-        this.slides = Array.from(container.querySelectorAll('.slide'));
-        this.currentSlide = 0;
-        this.isAnimating = false;
-
-        if (this.slides.length > 1) {
-          this.init();
-        }
-      }
-
-      init() {
-        // Update every 60 seconds (1 minute)
-        setInterval(() => this.nextSlide(), 60000);
-
-        // Also trigger on mouse enter (hover)
-        this.container.parentElement.addEventListener('mouseenter', () => {
-          if (!this.isAnimating) this.nextSlide();
-        });
-      }
-
-      nextSlide() {
-        if (this.isAnimating) return;
-        this.isAnimating = true;
-
-        const current = this.slides[this.currentSlide];
-        const nextIndex = (this.currentSlide + 1) % this.slides.length;
-        const next = this.slides[nextIndex];
-
-        current.classList.add('exiting');
-        next.classList.add('entering');
-
-        setTimeout(() => {
-          current.classList.remove('active', 'exiting');
-          next.classList.remove('entering');
-          next.classList.add('active');
-          this.currentSlide = nextIndex;
-          this.isAnimating = false;
-        }, 500);
-      }
-    }
-
-    class ContentSlideshow {
-      constructor(container) {
-        this.container = container;
-        this.slides = Array.from(container.querySelectorAll('.slide-img'));
-        this.currentSlide = 0;
-
-        if (this.slides.length > 1) {
-          this.init();
-        }
-      }
-
-      init() {
-        // Change slide every 3 seconds
-        setInterval(() => this.nextSlide(), 3000);
-      }
-
-      nextSlide() {
-        const current = this.slides[this.currentSlide];
-        const nextIndex = (this.currentSlide + 1) % this.slides.length;
-        const next = this.slides[nextIndex];
-
-        current.classList.remove('active');
-        next.classList.add('active');
-        this.currentSlide = nextIndex;
-      }
-    }
-
-    async function loadYouTubeVideos() {
-      if (window.location.protocol === 'file:') {
-        console.log('Skipping YouTube API on local file');
-        return;
-      }
-
-      const grid = document.getElementById('youtube-grid');
-      const bgContainer = document.getElementById('youtube-bg');
-
-      try {
-        const searchUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&order=date&type=video&eventType=completed&maxResults=4&key=${YOUTUBE_API_KEY}`;
-        const response = await fetch(searchUrl);
-        const data = await response.json();
-
-        if (data.error) throw new Error(data.error.message);
-
-        if (data.items && data.items.length > 0) {
-          grid.innerHTML = data.items.map(item => {
-            const videoId = item.id.videoId;
-            const title = item.snippet.title;
-            const publishedAt = new Date(item.snippet.publishedAt);
-            const dateStr = `${publishedAt.getFullYear()}年${publishedAt.getMonth() + 1}月${publishedAt.getDate()}日`;
-
-            return `
-              <div class="youtube-item">
-                <div class="youtube-player">
-                  <iframe src="https://www.youtube.com/embed/${videoId}" allowfullscreen loading="lazy"></iframe>
-                </div>
-                <div class="youtube-info">
-                  <div class="title">${title}</div>
-                  <div class="date">${dateStr}</div>
-                </div>
-              </div>
-            `;
-          }).join('');
-
-          const thumbnails = data.items.map(item =>
-            `https://img.youtube.com/vi/${item.id.videoId}/maxresdefault.jpg`
-          );
-
-          bgContainer.innerHTML = thumbnails.map((url, i) =>
-            `<div class="slide ${i === 0 ? 'active' : ''}" style="background: url('${url}') center/cover;"></div>`
-          ).join('');
-
-          new DiagonalSlideshow(bgContainer);
-        }
-      } catch (error) {
-        console.error('YouTube API Error:', error);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.block-bg').forEach(bg => {
-        new DiagonalSlideshow(bg);
-      });
-      document.querySelectorAll('.content-slideshow').forEach(slideshow => {
-        new ContentSlideshow(slideshow);
-      });
-      loadYouTubeVideos();
-    });
-  </script>
 
 </body>
 

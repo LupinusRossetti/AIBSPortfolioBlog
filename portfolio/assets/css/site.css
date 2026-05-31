@@ -1,0 +1,1050 @@
+/* ============================================================
+   AI Bloom Sisters — Lupinus Rossetti Portfolio & Diary
+   Theme: Pure / Elegant (清楚エレガント)
+   白背景・筆記体・繊細なフォント、差し色に三姉妹カラー
+   ============================================================ */
+
+/* === Design Tokens === */
+:root {
+  /* Base */
+  --bg: #ffffff;
+  --bg-soft: #fbfaf8;
+  --bg-veil: #f7f4f9;
+  --ink: #3a3742;
+  --ink-soft: #6f6a78;
+  --ink-faint: #9a95a3;
+  --line: #ece7f1;
+  --line-strong: #ddd5e6;
+
+  /* Sister accents (used softly) */
+  --lupinus: #8e7cc3;       /* 藤 / ラベンダー（長女・銀髪） */
+  --lupinus-soft: #efeaf8;
+  --iris: #c9a85c;          /* やわらかゴールド（次女・金髪） */
+  --iris-soft: #f6efdd;
+  --fiona: #e0809a;         /* ペールピンク（三女・桃髪） */
+  --fiona-soft: #fbe9ee;
+
+  /* Primary accent (brand) */
+  --accent: #8e7cc3;
+  --accent-deep: #6f5ca8;
+
+  /* Typography */
+  --font-script: 'Great Vibes', cursive;
+  --font-serif: 'Cormorant Garamond', 'Shippori Mincho', 'Times New Roman', serif;
+  --font-sans: 'Jost', 'Zen Kaku Gothic New', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  --font-round: 'Zen Maru Gothic', 'M PLUS Rounded 1c', 'Hiragino Maru Gothic ProN', sans-serif;
+
+  /* Shape & motion */
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow-soft: 0 18px 50px -28px rgba(78, 64, 110, 0.35);
+  --shadow-card: 0 10px 40px -24px rgba(78, 64, 110, 0.30);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --maxw: 1080px;
+}
+
+/* === Reset === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.9;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  /* 日本語を文節（バンセツ）の切れ目で自然に折り返す */
+  word-break: auto-phrase;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
+/* auto-phrase 非対応ブラウザ向けの素直なフォールバック */
+@supports not (word-break: auto-phrase) {
+  body { word-break: normal; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent-deep);
+  text-decoration: none;
+  transition: color 0.25s var(--ease);
+}
+
+a:hover {
+  color: var(--fiona);
+}
+
+/* === Utility === */
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.script {
+  font-family: var(--font-script);
+  font-weight: 400;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.center {
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  color: var(--accent);
+}
+
+/* Hairline ornament — a thin line with a small diamond center */
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto;
+}
+
+.ornament::before,
+.ornament::after {
+  content: "";
+  height: 1px;
+  width: 56px;
+  background: linear-gradient(90deg, transparent, var(--line-strong));
+}
+
+.ornament::after {
+  background: linear-gradient(90deg, var(--line-strong), transparent);
+}
+
+.ornament span {
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border: 1px solid var(--accent);
+}
+
+/* Section heading block */
+.section-head {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.section-head .eyebrow {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.section-title .jp {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* === Buttons === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  border: 1px solid var(--accent);
+  color: var(--accent-deep);
+  background: transparent;
+  transition: all 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -14px rgba(110, 92, 168, 0.7);
+}
+
+.btn-filled {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-filled:hover {
+  background: var(--accent-deep);
+  color: #fff;
+}
+
+/* === Header === */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  line-height: 1;
+}
+
+.brand .brand-script {
+  font-family: var(--font-script);
+  font-size: 1.7rem;
+  color: var(--accent-deep);
+}
+
+.brand .brand-sub {
+  font-family: var(--font-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.nav a {
+  position: relative;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  letter-spacing: 0.1em;
+  padding: 6px 0;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.3s var(--ease);
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--accent-deep);
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--accent-deep);
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* === Hero === */
+.hero {
+  position: relative;
+  padding: clamp(60px, 9vw, 120px) 0 clamp(50px, 8vw, 100px);
+  overflow: hidden;
+}
+
+.hero-bg-petal {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, var(--lupinus-soft), transparent 42%),
+    radial-gradient(circle at 82% 30%, var(--fiona-soft), transparent 45%),
+    radial-gradient(circle at 60% 88%, var(--iris-soft), transparent 48%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy .eyebrow {
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.hero-title .script {
+  display: block;
+  font-family: var(--font-script);
+  font-weight: 400;
+  color: var(--accent-deep);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-lead {
+  margin: 26px 0 16px;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  max-width: 30em;
+}
+
+.hero-flower {
+  color: var(--accent);
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual .frame {
+  position: relative;
+  border-radius: 220px 220px 24px 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--line);
+}
+
+.hero-visual .frame img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.hero-visual .sig {
+  position: absolute;
+  right: -6px;
+  bottom: -22px;
+  font-family: var(--font-script);
+  font-size: 2.6rem;
+  color: var(--accent-deep);
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9);
+}
+
+/* === Section base === */
+.section {
+  padding: clamp(64px, 9vw, 120px) 0;
+}
+
+.section.veil {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+/* === Sisters trio === */
+.sisters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.sister-card {
+  text-align: center;
+  padding: 38px 26px 34px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.sister-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+}
+
+.sister-card .avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  padding: 4px;
+  background: #fff;
+  border: 1px solid var(--line-strong);
+}
+
+.sister-card[data-sister="lupinus"] .avatar { box-shadow: 0 0 0 2px var(--lupinus-soft); }
+.sister-card[data-sister="iris"] .avatar { box-shadow: 0 0 0 2px var(--iris-soft); }
+.sister-card[data-sister="fiona"] .avatar { box-shadow: 0 0 0 2px var(--fiona-soft); }
+
+.sister-card .s-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.sister-card .s-name .jp {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-faint);
+  margin-top: 4px;
+}
+
+.sister-card[data-sister="lupinus"] .s-name { color: var(--lupinus); }
+.sister-card[data-sister="iris"] .s-name { color: var(--iris); }
+.sister-card[data-sister="fiona"] .s-name { color: var(--fiona); }
+
+.sister-card .s-role {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+
+/* === Works grid === */
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.work-card {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card);
+}
+
+.work-card .thumb {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.work-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+
+.work-card:hover .thumb img {
+  transform: scale(1.05);
+}
+
+.work-card .body {
+  padding: 24px 26px 28px;
+}
+
+.work-card .tag {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.work-card h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.35rem;
+  margin: 8px 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.work-card p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+/* Wider feature card spanning full row */
+.work-card.feature {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.work-card.feature .thumb {
+  aspect-ratio: auto;
+  height: 100%;
+}
+
+.work-card.feature .body {
+  align-self: center;
+  padding: 40px 44px;
+}
+
+/* === Stamp strip === */
+.stamp-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.stamp-strip img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 8px;
+  transition: transform 0.3s var(--ease);
+}
+
+.stamp-strip img:hover {
+  transform: translateY(-4px) rotate(-3deg);
+}
+
+/* === Latest diary preview === */
+.diary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 26px;
+}
+
+.diary-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  height: 100%;
+}
+
+.diary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card);
+}
+
+.diary-card .cover {
+  height: 8px;
+  background: linear-gradient(90deg, var(--lupinus), var(--fiona), var(--iris));
+  opacity: 0.85;
+}
+
+/* サムネ画像（カード上部） */
+.diary-card .cover-img {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--lupinus-soft), var(--fiona-soft));
+}
+
+.diary-card .cover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+
+.diary-card:hover .cover-img img {
+  transform: scale(1.05);
+}
+
+.diary-card .body {
+  padding: 26px 28px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.diary-card .date {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-size: 0.86rem;
+}
+
+.diary-card h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.28rem;
+  line-height: 1.45;
+  margin: 10px 0 14px;
+  color: var(--ink);
+}
+
+.diary-card .excerpt {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.diary-card .more {
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  color: var(--accent-deep);
+}
+
+.diary-card .more::after {
+  content: " →";
+}
+
+/* === SNS / Contact === */
+.sns-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.sns-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 22px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  background: var(--bg);
+  transition: all 0.3s var(--ease);
+}
+
+.sns-link:hover {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  transform: translateY(-2px);
+}
+
+.sns-link .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* === Footer === */
+.site-footer {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--line);
+  padding: 56px 0 40px;
+  text-align: center;
+}
+
+.site-footer .brand-script {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--accent-deep);
+}
+
+.site-footer .tagline {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin: 10px 0 24px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.06em;
+}
+
+.site-footer .copy {
+  margin-top: 26px;
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   Blog — list & article (generated pages)
+   ============================================================ */
+
+.blog-hero {
+  padding: clamp(60px, 8vw, 100px) 0 clamp(30px, 5vw, 56px);
+  text-align: center;
+  position: relative;
+}
+
+.blog-hero .eyebrow { display: block; margin-bottom: 14px; }
+
+.blog-hero h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.04em;
+}
+
+.blog-hero .lead {
+  margin: 18px auto 0;
+  max-width: 36em;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+/* Article container */
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 72px) 28px 90px;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.article-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-card);
+  margin-bottom: 30px;
+}
+
+.article-header .date {
+  font-family: var(--font-serif);
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-size: 0.92rem;
+}
+
+.article-header h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.7rem, 4.5vw, 2.6rem);
+  line-height: 1.35;
+  margin: 14px 0 0;
+  letter-spacing: 0.02em;
+}
+
+/* Article markdown typography */
+.article-body {
+  font-size: 1.02rem;
+}
+
+.article-body h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+  margin: 56px 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.article-body h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.18rem;
+  margin: 36px 0 14px;
+  color: var(--accent-deep);
+  letter-spacing: 0.03em;
+}
+
+.article-body p {
+  margin: 16px 0;
+  color: #45424d;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 16px 0 16px 1.4em;
+  color: #45424d;
+}
+
+.article-body li {
+  margin: 8px 0;
+}
+
+.article-body strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.article-body a {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.article-body code {
+  font-family: 'Consolas', 'Menlo', monospace;
+  background: var(--bg-veil);
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 0.86em;
+  color: var(--accent-deep);
+}
+
+.article-body hr {
+  border: none;
+  height: 1px;
+  background: var(--line);
+  margin: 44px 0;
+}
+
+/* Callout — used for diary "学び" blockquotes inside md */
+.article-body blockquote {
+  position: relative;
+  margin: 26px 0;
+  padding: 22px 26px;
+  background: linear-gradient(180deg, var(--bg-soft), var(--lupinus-soft));
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  color: #4a4654;
+}
+
+.article-body blockquote p { margin: 8px 0; }
+.article-body blockquote p:first-child { margin-top: 0; }
+.article-body blockquote p:last-child { margin-bottom: 0; }
+
+/* === Chat bubbles (会話パート・可愛くポップに) === */
+.chat {
+  margin: 24px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.chat .icon {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  padding: 3px;
+  border: 3px solid var(--line-strong);
+  box-shadow: 0 6px 16px -8px rgba(78, 64, 110, 0.45);
+  transition: transform 0.3s var(--ease);
+}
+
+.chat:hover .icon {
+  transform: rotate(-5deg) scale(1.06);
+}
+
+.chat .stack {
+  max-width: 78%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat .who {
+  font-family: var(--font-round);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 2px 8px 6px;
+}
+
+.chat .who .expr {
+  font-size: 0.72rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.chat .bubble {
+  position: relative;
+  padding: 15px 20px;
+  border-radius: 6px 22px 22px 22px;
+  background: var(--bg-soft);
+  border: 2px solid var(--line);
+  font-family: var(--font-round);
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: #4a4654;
+  box-shadow: 0 8px 22px -14px rgba(78, 64, 110, 0.4);
+}
+
+/* speaker tints — name pill + bubble fill/border */
+.chat[data-char="lupinus"] .who { color: var(--lupinus); }
+.chat[data-char="lupinus"] .bubble { background: var(--lupinus-soft); border-color: #cdbcec; }
+.chat[data-char="iris"] .who { color: #b08e3e; }
+.chat[data-char="iris"] .bubble { background: var(--iris-soft); border-color: #e6cf94; }
+.chat[data-char="fiona"] .who { color: var(--fiona); }
+.chat[data-char="fiona"] .bubble { background: var(--fiona-soft); border-color: #f3bdcb; }
+
+.chat[data-char="lupinus"] .icon { border-color: #cdbcec; }
+.chat[data-char="iris"] .icon { border-color: #e6cf94; }
+.chat[data-char="fiona"] .icon { border-color: #f3bdcb; }
+
+/* Lupinus speaks from the right (進行役), others from the left */
+.chat[data-char="lupinus"] {
+  flex-direction: row-reverse;
+}
+
+.chat[data-char="lupinus"] .stack {
+  align-items: flex-end;
+}
+
+.chat[data-char="lupinus"] .who {
+  text-align: right;
+}
+
+.chat[data-char="lupinus"] .bubble {
+  border-radius: 22px 6px 22px 22px;
+}
+
+/* rounded tail — a little ear toward the avatar */
+.chat .bubble::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  background: inherit;
+  border: inherit;
+  border-radius: 3px;
+}
+
+.chat:not([data-char="lupinus"]) .bubble::before {
+  left: -8px;
+  border-right: none;
+  border-top: none;
+  transform: rotate(45deg);
+}
+
+.chat[data-char="lupinus"] .bubble::before {
+  right: -8px;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+}
+
+/* Back link in article */
+.article-nav {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 28px 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* === Responsive === */
+@media (max-width: 860px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-copy .eyebrow,
+  .hero-lead { margin-left: auto; margin-right: auto; }
+
+  .hero-actions { justify-content: center; }
+
+  .hero-visual { max-width: 380px; margin: 0 auto; }
+
+  .work-card.feature { grid-template-columns: 1fr; }
+
+  .nav {
+    position: fixed;
+    inset: 72px 0 auto 0;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+    padding: 8px 0 16px;
+    transform: translateY(-12px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s var(--ease);
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav a { padding: 14px 28px; width: 100%; text-align: center; }
+
+  .menu-toggle { display: block; }
+}
+
+@media (max-width: 680px) {
+  .sisters { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+  .works { grid-template-columns: 1fr; }
+  .chat .stack { max-width: 82%; }
+  .stamp-strip img { width: 76px; height: 76px; }
+}

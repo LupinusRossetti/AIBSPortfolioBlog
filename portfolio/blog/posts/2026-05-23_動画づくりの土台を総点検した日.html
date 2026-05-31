@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>🎬 動画づくりの土台を総点検した日 | Lupinus Rossetti Diary</title><meta name="description" content="動画づくりでは、ボイス・効果音・BGM を最終的に重ねる前にいったん下ごしらえします。料理でいう『下味』に近いです。"><meta property="og:type" content="article"><meta property="og:title" content="🎬 動画づくりの土台を総点検した日 | Lupinus Rossetti Diary"><meta property="og:description" content="動画づくりでは、ボイス・効果音・BGM を最終的に重ねる前にいったん下ごしらえします。料理でいう『下味』に近いです。"><meta property="og:image" content="../../blog/thumbs/2026-05-23_動画づくりの土台を総点検した日.png"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="../../assets/css/site.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet"></head><body><header class="site-header"><div class="container"><a class="brand" href="../../index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="../../index.html">Home</a><a href="../../portfolio.html">Portfolio</a><a href="../../blog/index.html" class="active">Blog</a><a href="../../archive.html">Archive</a></nav></div></header><main class="article"><header class="article-header"><img class="article-thumb" src="../thumbs/2026-05-23_動画づくりの土台を総点検した日.png" alt="🎬 動画づくりの土台を総点検した日"><div class="date">2026年5月23日</div><h1>🎬 動画づくりの土台を総点検した日</h1></header><div class="article-body"><div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日は『動画の見えないところ』をまとめて直した日です。地味だけど大事な回。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">見えないところって何さー？画面に映ってないなら直さなくてよくない？</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">映っていないところほど、視聴者さまの『なんか変』を生んでしまうのです。音のズレ、立ち絵の位置、背景の切り替わり……全部そうですね。</div></div></div>
+<h2>今日やったこと（ざっくり）</h2>
+<ul>
+<li>音声合成パイプライン <code>_premix_audio</code> の根本修正</li>
+<li>セリフ単位の『高度な設定』エディタを追加</li>
+<li>タイトル編集欄のヘルプを新形式に合わせて更新</li>
+<li>使っていない作業用スクリプトを <code>docs/archive/oneoff_scripts/</code> へ退避</li>
+<li>ルート直下を片づけ、<code>DESIGN_DOCUMENT</code> に経緯を追記</li>
+<li>立ち絵レイアウト・音声・背景遷移・タイトルの整合性を総合改修</li>
+</ul>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">まずは音声まわり。ここで二回直したのが今日の山場でした。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">二回！？一発で直らなかったの！？</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">一回目で『原因はここっぽい』と分かり、二回目で『本当の根っこ』に届いた、という流れですね。</div></div></div>
+<h2>音声の事前ミックス（_premix_audio）を直した話</h2>
+<p>動画づくりでは、ボイス・効果音・BGM を<strong>最終的に重ねる前にいったん下ごしらえ</strong>します。料理でいう『下味』に近いです。</p>
+<p>今回はその下ごしらえ部分で、音データの“取り出し方”が遠回りになっていました。</p>
+<ul>
+<li><strong>一次修正</strong>：voice / SFX の読み込みを <code>soundfile</code> で直接読むように変更（中継を一段減らす）</li>
+<li><strong>根本修正</strong>：それでも残っていた遠回りを潰すため、<code>AudioArrayClip.array</code> に<strong>直接アクセス</strong>して扱うように変更</li>
+</ul>
+<h3>学べるコツ</h3>
+<ul>
+<li>音ズレや無音化のバグは、<strong>最終ミックスではなく『下ごしらえの段』を疑う</strong>と早い。</li>
+<li>便利ラッパー越しに音を触ると、内部でコピーや再変換が走って事故りやすい。<strong>生の配列に近いところで扱う</strong>と挙動が読める。</li>
+<li>直したあとは『同じ素材で前後の波形を聴き比べ』する。耳でのA/B比較が一番安い検証。</li>
+</ul>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">波形を聴き比べ！あたしわかる、ピッてやってシャッてするやつ！</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">……それは何の音ですか。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_laugh.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（大笑い）</span></div><div class="bubble">続いて、セリフごとの細かい調整を扱うエディタですね。</div></div></div>
+<h2>個別セリフに『高度な設定』セクションを追加</h2>
+<p>セリフ単位の編集画面に、<strong>詳細パラメータをまとめた折りたたみセクション</strong>を新設しました。普段はシンプルに、必要な人だけ深く触れる構造です。</p>
+<h3>なぜ分けたか</h3>
+<ul>
+<li>全項目を常時出すと初心者がひるむ。</li>
+<li>でも上級者は『この一行だけ強弱を変えたい』ことが頻繁にある。</li>
+<li>→ <strong>デフォルトは閉じる／開けば全部出る</strong>、が一番事故が少ない。</li>
+</ul>
+<h3>学べるコツ</h3>
+<ul>
+<li>編集UIは『<strong>8 割の人が触らない設定</strong>』を必ず一段奥にしまう。</li>
+<li>奥にしまっても<strong>到達は1クリック</strong>で済ませる。隠す＝消すではない。</li>
+</ul>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ついでに、タイトル編集欄の説明文も新しい仕様に合わせて書き直しました。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">説明文ってそんなに大事？</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">ええ。仕様が変わったのにヘルプが古いままだと、未来の自分が一番混乱します。</div></div></div>
+<h2>ヘルプ文の更新は『未来の自分への手紙』</h2>
+<p>機能を変えたら<strong>同じコミットでヘルプ文も直す</strong>。これをサボると、3 週間後の自分が古い説明を信じて延々ハマります。</p>
+<ul>
+<li>ルール：<strong>仕様変更とヘルプ修正はワンセット</strong>。</li>
+<li>効果：質問の半分は『ヘルプを読めば分かる』状態になる。</li>
+</ul>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">そして、片づけ。使っていないスクリプトを <code>docs/archive/oneoff_scripts/</code> に退避しました。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">消しちゃダメなの！？要らないんでしょ！？</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">消すのではなく『屋根裏にしまう』のが安全なのです。後で『あの時の使い捨てスクリプト、もう一回欲しい』ってよくあるので。</div></div></div>
+<h2>使い捨てスクリプトは『消さずに archive』</h2>
+<p>一度きりの作業用スクリプト（データ移行・一括リネーム等）は、<strong>消すと再現実験ができなくなる</strong>。</p>
+<ul>
+<li>推奨：<code>docs/archive/oneoff_scripts/</code> のような<strong>明確に“動かさない置き場”</strong>へ移動。</li>
+<li>ルート直下からは外す → 普段の検索で邪魔にならない。</li>
+<li>経緯は <code>DESIGN_DOCUMENT</code> に一行追記。<strong>『なぜ仕舞ったか』</strong>を残すのがコツ。</li>
+</ul>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">最後に総合改修。立ち絵レイアウト、音声、背景遷移、タイトルの整合性をまとめて整えました。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">いっぺんに直したの？怖くない？</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">逆ですね。<strong>互いに依存している部分</strong>は、別々に直すほうが壊れます。今日のように『関連箇所を一気に整える日』をつくる方が安全です。</div></div></div>
+<h2>『見た目／音／切替／文字』をひとまとめに直す日</h2>
+<p>ショート動画は、立ち絵の位置・声・背景の入れ替わり・タイトル文字が<strong>同じタイムラインで噛み合って</strong>初めて自然に見えます。</p>
+<ul>
+<li>立ち絵レイアウト：誰がしゃべっているか視線誘導が壊れていないか</li>
+<li>音声：尺と立ち絵の口パクが揃っているか</li>
+<li>背景遷移：シーン境界で『音だけ残る／映像だけ残る』が起きていないか</li>
+<li>タイトル：新フォーマットと整合しているか</li>
+</ul>
+<h3>学べるコツ</h3>
+<ul>
+<li>互いに依存する要素は<strong>“整合性デー”をまとめて設けて</strong>一気に通し再生で確認する。</li>
+<li>通し再生は<strong>等倍で1回、1.5 倍で1回</strong>。倍速はテンポの粗が見つけやすい。</li>
+</ul>
+<h2>今日のまとめ（持ち帰れる学び）</h2>
+<ul>
+<li><strong>音バグは下ごしらえの段を疑う</strong>。最終ミックスより手前に原因があることが多い。</li>
+<li>ラッパー越しではなく<strong>生データに近い層で扱う</strong>と挙動が読める（例：配列への直接アクセス）。</li>
+<li>編集UIの詳細項目は<strong>折りたたみで隠す／1クリックで開く</strong>。</li>
+<li><strong>仕様変更とヘルプ修正は同じコミットで</strong>。未来の自分のために。</li>
+<li>使い捨てスクリプトは消さず<strong>archive へ退避</strong>＋経緯を設計メモに残す。</li>
+<li>互いに依存する要素は<strong>“整合性デー”で一気に整える</strong>。通し再生は等倍＋1.5 倍。</li>
+</ul>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">派手な新機能はゼロですが、土台がしっかりした一日でした。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">地味えらい日！</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">配信の最新情報は X（https://x.com/irisfionaAIBS）をご参照ください。今日もご覧いただきありがとうございました。</div></div></div></div></main><nav class="article-nav"><a class="btn" href="../index.html">&larr; 日記一覧へ</a><a class="btn" href="../../index.html">Home</a></nav><footer class="site-footer"><div class="container"><div class="brand-script">Lupinus Rossetti</div><p class="tagline">AI Bloom Sisters &mdash; flower language: imagination</p><div class="sns-row"><a class="sns-link" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener"><span class="dot"></span>X (Twitter)</a><a class="sns-link" href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener"><span class="dot"></span>YouTube</a><a class="sns-link" href="https://note.com/rupi_airupi" target="_blank" rel="noopener"><span class="dot"></span>note</a><a class="sns-link" href="https://ci-en.net/creator/28203" target="_blank" rel="noopener"><span class="dot"></span>Ci-en</a><a class="sns-link" href="https://lupinus-rossetti.fanbox.cc/" target="_blank" rel="noopener"><span class="dot"></span>FANBOX</a></div><p class="copy">&copy; 2026 AI Bloom Sisters. All rights reserved.</p></div></footer></body></html>

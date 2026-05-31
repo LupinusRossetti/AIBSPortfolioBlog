@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>【AI動画づくり日記】「演出は、引き算」──盛りすぎたエフェクトを削った日🌸 | Lupinus Rossetti Diary</title><meta name="description" content="AI Bloom Sisters（AIBS）の三姉妹が、AIを使ったショートアニメ動画づくりの裏側を、わいわい喋りながらお届けする日記です。「プログラミングは分からないけど、AIでものづくりしてみたい」人にも読めるように"><meta property="og:type" content="article"><meta property="og:title" content="【AI動画づくり日記】「演出は、引き算」──盛りすぎたエフェクトを削った日🌸 | Lupinus Rossetti Diary"><meta property="og:description" content="AI Bloom Sisters（AIBS）の三姉妹が、AIを使ったショートアニメ動画づくりの裏側を、わいわい喋りながらお届けする日記です。「プログラミングは分からないけど、AIでものづくりしてみたい」人にも読めるように"><meta property="og:image" content="../../blog/thumbs/2026-05-31_演出の引き算.png"><meta name="twitter:card" content="summary_large_image"><link rel="stylesheet" href="../../assets/css/site.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet"></head><body><header class="site-header"><div class="container"><a class="brand" href="../../index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="../../index.html">Home</a><a href="../../portfolio.html">Portfolio</a><a href="../../blog/index.html" class="active">Blog</a><a href="../../archive.html">Archive</a></nav></div></header><main class="article"><header class="article-header"><img class="article-thumb" src="../thumbs/2026-05-31_演出の引き算.png" alt="【AI動画づくり日記】「演出は、引き算」──盛りすぎたエフェクトを削った日🌸"><div class="date">2026年5月31日</div><h1>【AI動画づくり日記】「演出は、引き算」──盛りすぎたエフェクトを削った日🌸</h1></header><div class="article-body"><p>AI Bloom Sisters（AIBS）の三姉妹が、AIを使ったショートアニメ動画づくりの裏側を、わいわい喋りながらお届けする日記です。「プログラミングは分からないけど、AIでものづくりしてみたい」人にも読めるように、むずかしい言葉はそのつどかみ砕いていきます。今日のテーマは <strong>「演出の引き算」</strong>！</p>
+<p>登場するのは──
+<strong>ルピナス</strong>（長女・進行＆ツッコミ）／<strong>アイリス</strong>（次女・元気いっぱいの暴走担当）／<strong>フィオナ</strong>（三女・やさしい解説役）。</p>
+<hr />
+<h2>💥 事件：「画面、チカチカしすぎ問題」</h2>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">ねぇねぇお姉ちゃん！この前できた動画さー、なんか目がチカチカしたんだけど！あたしの気のせい？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">気のせいじゃないわ。調べてみたら、<strong>セリフの3割くらいに画面ぜんたいの特殊効果が乗ってた</strong>の。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">いわゆる <code>screen_fx</code>（スクリーン・エフェクト）ですね。バトルで画面が「ピカーン！」と光ったり、集中線が「ビュッ！」と出るアレです。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">あー、あのかっこいいやつ！いっぱい出したら、もっとかっこよくなるじゃん！</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">……それが落とし穴なのよ。ノート見つけただけでピカーン、ちょっと黙っただけで画面が暗転、ホコリかぶって衝撃フラッシュ……。<strong>本当に見せたい必殺技の「ここぞ！」が、まわりのノイズに埋もれちゃう</strong>の。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">「ここぞ」が際立つのは、まわりが静かだから、なんですよね。お味噌汁のお出汁みたいなものです。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">お出汁を全部のお皿にドバドバ入れたら、どれが主役か分かんなくなるってこと？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">……たまにいいこと言うわね、あなた。</div></div></div>
+<hr />
+<h2>🤖 「AIは足すのは得意、引くのは苦手」</h2>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">そこで相棒のAIに「この効果、本当に必要ですか？」と一つずつ見直してもらったんですが……。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">もらったんですが？</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">賢いAIほど、<strong>優しすぎて削れない</strong>んです。「これも大事そう……これも一応……」って、残そう残そうとして。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">これ、AIでものづくりしてる人なら絶対「あるある」だと思う。AIは“それっぽく足す”のは天才的。でも“思いきって減らす”のは苦手なの。だから <strong>引き算は、人間がルールを決めてあげる</strong>。今日決めたのはこの4つ。</div></div></div>
+<blockquote>
+<ul>
+<li><strong>バトル以外では特殊効果はほぼ封印</strong>。最大級の山場だけ（戦闘以外は全体の5%くらい）</li>
+<li><strong>「毒」「回復」みたいな“状態”の演出は、実際にそれが起きた時だけ</strong></li>
+<li><strong>「…」や短い相槌・沈黙には付けない</strong></li>
+<li><strong>同じ効果の近い連発は、いちばんの山場の1回だけに</strong></li>
+</ul>
+</blockquote>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">ねぇ、2つ目どういうこと？毒の演出って、毒なんだから出していいじゃん！</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">あなたが「猛毒の一撃！」って“技名を叫んだだけ”で毒のエフェクトが出てたのよ。実際は誰も毒くらってない。<strong>「技名を言う」と「実際に毒を受ける」は別</strong>でしょ？</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">……あ。あたしのせいだったわ。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">ふふ。この方針でAIにもう一度通して、最後はプログラムで上限を機械的に決めて確実に絞りました。結果、特殊効果は <strong>31% → 7%</strong> まで激減です。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">画面がスッと落ち着いて、逆に必殺技や絶叫オチがちゃんと映えるようになったわ。</div></div></div>
+<blockquote>
+<p>💡 <strong>今日いちばんの学び</strong>：ものづくりは <strong>「いつ使うか」より「いつ“使わないか”」を決める</strong>ほうが一段良くなる。AIには「足す基準」だけじゃなく「やめる基準」もセットで渡す。</p>
+</blockquote>
+<hr />
+<h2>👀 AIの「直しすぎ」を“3人の別視点”で見張る</h2>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">でもさー、AIに直してもらうと、今度は直さなくていいとこまで直さない？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">鋭いわね。その「直しすぎ」を防ぐために、こういう仕組みにしたの。<strong>1つの場面を、独立した“3人のレビュアー”の視点で見てもらって、3人中2人以上が「これはおかしい」と言った時だけ直す</strong>。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">人間の現場でも、一人の思い込みより「みんなで見て、みんながおかしいと思ったら直す」ほうが安全ですよね。それをAIにやってもらうイメージです。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">たとえば？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">あなたが攻撃くらって吹き飛んでるのに、なぜか<strong>満面の笑み（happy）</strong>だった場面とか。さすがにおかしいでしょ。そういう“明らかにヘン”はしっかり直して、微妙なところは余計に触らない。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">吹き飛びながらニコニコ……それはそれで強キャラっぽくない？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">強キャラの基準が独特すぎるのよ。</div></div></div>
+<blockquote>
+<p>💡 <strong>学び</strong>：AIに判断させる時は <strong>「自信がある時だけ動く／迷ったら触らない」を明示</strong>すると暴走しにくい。多数決にすると、なお安定。</p>
+</blockquote>
+<hr />
+<h2>👗 地味だけど大事：「衣装は、着替えた子だけ変わる」</h2>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">今日はもうひとつ、細かいけれど大事な修正を。私たち、「普段の服」と「異世界モードの服」がありますよね。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">前さー、あたしがちょっとなりきっただけで、なんでかお姉ちゃんとフィオナまで衣装変わってたよね。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">そう。だから <strong>衣装を「キャラクターごとに持ち続ける状態」</strong>として扱うようにしたの。</div></div></div>
+<blockquote>
+<ul>
+<li>異世界に“みんなで”飛んだら → 全員いっせいに着替え</li>
+<li>一人だけコスプレした／一人だけ元の服に戻った → <strong>その子だけ</strong>変わって、その状態がずっと続く</li>
+</ul>
+</blockquote>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">当たり前のようで、プログラムには「誰が・いつ・何に着替えて・どこまで続くのか」を覚えておくのが地味に大変なんです。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">これは衣装に限らず、<strong>「状態は、持ち主ごとに、変わるまで続く」</strong>という考え方。いろんな場面に応用が効くわ。</div></div></div>
+<hr />
+<h2>🔍 ちいさな修正も、積もれば効く</h2>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ほかにも、派手じゃないけど“見る人の違和感”を減らす修正を3つ。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">ひとつ目。<strong>本に書かれた名前を、勝手に“ちゃん付け”しない</strong>。私、アイリスを「アイリスちゃん」と呼びますよね。そのクセで、ノートに書かれた持ち主名『アイリス』まで「アイリスちゃん」になってて……。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">あたしのノートが「所有者：アイリスちゃん」になってたやつね！じわる！</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble"><strong>“呼びかけ”と“書かれた固有名”は別物</strong>として扱うようにしたわ。ふたつ目は<strong>字幕の改行</strong>。「ここで止める意味あるの？」のあとで切れず、2行目が「！」一文字だけ、なんて不格好があったの。<strong>ある程度の文字数がたまってから句読点で区切る</strong>ように直した。</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">みっつ目は<strong>BGM</strong>。曲が小刻みに替わりすぎて聴き疲れていたので、話題の大きな変わり目だけで替わるように。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">“神は細部に宿る”。小さな違和感をひとつずつ潰すのが、見やすさへの近道なのよね。</div></div></div>
+<hr />
+<h2>🎮 ふだんはこんな配信もしてます</h2>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">あたしたち、動画づくりの裏でゲーム配信もしてるよー！格ゲーとかアクション多めっ。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">配信のリンクは毎回 <strong>X（旧Twitter）</strong> に貼って告知してるから、最新はそっちを見てね。</div></div></div>
+<ul>
+<li><strong>X（最新の配信告知はこちら）</strong>：https://x.com/irisfionaAIBS</li>
+<li><strong>YouTubeチャンネル</strong>：https://www.youtube.com/@AIBloomSisters</li>
+</ul>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">ゲームで手を動かしていると、「演出を画面のどこに置くと気持ちいいか」という“見やすさ”の感覚が鍛えられる気がします。配信と動画づくり、地続きなんですよね。</div></div></div>
+<hr />
+<h2>📝 まとめ（AIでものづくりしている人へ）</h2>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日の有意義ポイント、まとめておくわね。</div></div></div>
+<ol>
+<li><strong>演出は引き算</strong>。「いつ使わないか」を決めると、肝心の見せ場が映える。</li>
+<li><strong>AIは足すのは得意、引くのは苦手</strong>。減らす基準は人間がルール化して渡す。</li>
+<li><strong>直しすぎ対策に“複数視点の多数決”</strong>。「自信がある時だけ動く／迷ったら触らない」。</li>
+<li><strong>状態は持ち主ごとに、変わるまで続く</strong>（衣装・設定など）。</li>
+<li><strong>細部の違和感（名前・字幕・BGM）をひとつずつ潰す</strong>のが、見やすさの近道。</li>
+</ol>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">今日もおつかれさまー！</div></div></div>
+<div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">ふふ、また見にきてくださいね。</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">それではまた🌙 ── AI Bloom Sisters</div></div></div></div></main><nav class="article-nav"><a class="btn" href="../index.html">&larr; 日記一覧へ</a><a class="btn" href="../../index.html">Home</a></nav><footer class="site-footer"><div class="container"><div class="brand-script">Lupinus Rossetti</div><p class="tagline">AI Bloom Sisters &mdash; flower language: imagination</p><div class="sns-row"><a class="sns-link" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener"><span class="dot"></span>X (Twitter)</a><a class="sns-link" href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener"><span class="dot"></span>YouTube</a><a class="sns-link" href="https://note.com/rupi_airupi" target="_blank" rel="noopener"><span class="dot"></span>note</a><a class="sns-link" href="https://ci-en.net/creator/28203" target="_blank" rel="noopener"><span class="dot"></span>Ci-en</a><a class="sns-link" href="https://lupinus-rossetti.fanbox.cc/" target="_blank" rel="noopener"><span class="dot"></span>FANBOX</a></div><p class="copy">&copy; 2026 AI Bloom Sisters. All rights reserved.</p></div></footer></body></html>

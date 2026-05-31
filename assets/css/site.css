@@ -551,6 +551,23 @@ a:hover {
   object-position: center;
 }
 
+/* 縦長/全身の立ち絵カード：cover で頭や足が切れないよう contain で全体を表示 */
+.work-card.portrait .thumb {
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(180deg, #faf6fc 0%, #f3ecf7 100%);
+}
+
+.work-card.portrait .thumb img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
 .work-card.feature .body {
   align-self: center;
   padding: 40px 44px;

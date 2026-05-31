@@ -144,9 +144,31 @@ def _cover_resize(img: Image.Image, w: int, h: int) -> Image.Image:
 
 
 # ---------- 3. 自動合成 ----------
+# アイコンは全キャラ共通構図（バストアップで顔が上寄り）。
+# 顔を円の中心に収めるため、顔まわりにズームしつつ上方を残して切り出す。
+FACE_ZOOM = 1.28      # 顔へのズーム率（>1で寄る＝顔が大きくなる）
+FACE_CENTER_Y = 0.46  # 元画像の縦のどこを円の中心に置くか（0=上端,1=下端）
+
+
+def _face_crop(src: Path, size: int) -> Image.Image:
+    """顔が円の中心に来るよう、顔位置基準で正方形クロップ＋リサイズ。"""
+    im = Image.open(src).convert("RGB")
+    iw, ih = im.size
+    # 切り出す正方形の一辺（元画像基準）。ズームが大きいほど小さく切る。
+    crop = int(min(iw, ih) / FACE_ZOOM)
+    cx = iw / 2
+    cy = ih * FACE_CENTER_Y
+    left = int(round(cx - crop / 2))
+    top = int(round(cy - crop / 2))
+    # 画像外にはみ出さないようクランプ
+    left = max(0, min(left, iw - crop))
+    top = max(0, min(top, ih - crop))
+    im = im.crop((left, top, left + crop, top + crop))
+    return im.resize((size, size), Image.LANCZOS)
+
+
 def _circle_avatar(src: Path, size: int, ring: tuple, ring_w: int = 8) -> Image.Image:
-    im = Image.open(src).convert("RGBA")
-    im = _cover_resize(im.convert("RGB"), size, size).convert("RGBA")
+    im = _face_crop(src, size).convert("RGBA")
     mask = Image.new("L", (size, size), 0)
     ImageDraw.Draw(mask).ellipse((0, 0, size, size), fill=255)
     out = Image.new("RGBA", (size, size), (0, 0, 0, 0))

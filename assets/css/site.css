@@ -941,6 +941,24 @@ a:hover {
   gap: 28px;
 }
 
+/* 動画グループの見出し（本編／ショート／配信アーカイブ） */
+.video-group-label {
+  margin: 44px 0 0;
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  color: var(--accent-deep);
+  text-align: center;
+}
+.video-group-label::before { content: "❀ "; color: var(--accent); opacity: 0.7; font-size: 0.8em; }
+
+/* ショートは縦長カードが間延びしないよう中央に寄せる */
+.shorts-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  justify-content: center;
+}
+
 .video-embed {
   border-radius: var(--radius);
   border: 1px solid var(--line);

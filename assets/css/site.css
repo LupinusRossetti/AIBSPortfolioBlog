@@ -1322,6 +1322,66 @@ a:hover {
   color: var(--ink-soft);
 }
 
+/* Threads タイムライン風パネル */
+.threads-timeline {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  min-height: 360px;
+}
+.threads-profile {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.threads-profile .threads-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+.threads-profile .threads-at {
+  font-size: .82rem;
+  color: var(--ink-soft);
+}
+.threads-profile .threads-bio {
+  margin: 8px 0 0;
+  font-size: .9rem;
+  color: var(--ink-soft);
+}
+.threads-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+.threads-post {
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.threads-post .tp-dot {
+  flex: 0 0 auto;
+  width: 8px; height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.threads-post p {
+  margin: 0;
+  font-size: .9rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.threads-cta {
+  display: inline-block;
+  font-size: .85rem;
+  letter-spacing: .04em;
+  color: var(--accent-deep);
+}
+.threads-timeline:hover .threads-cta { text-decoration: underline; }
+
 .sns-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

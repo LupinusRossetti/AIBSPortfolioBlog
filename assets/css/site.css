@@ -1443,6 +1443,24 @@ a:hover {
 .sp-text p { margin: 12px 0; color: var(--ink-soft); font-size: 0.96rem; }
 .sp-text strong { color: var(--ink); font-weight: 600; }
 
+/* === About：各セクションのイラスト === */
+.about-figure {
+  margin: 0 auto 30px;
+  max-width: 560px;
+  text-align: center;
+}
+.about-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  box-shadow: var(--shadow-card);
+}
+@media (max-width: 600px) {
+  .about-figure { max-width: 100%; }
+}
+
 /* === About：出自の物語ボックス === */
 .story-box {
   max-width: 720px;

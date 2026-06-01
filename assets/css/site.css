@@ -1652,6 +1652,87 @@ a.tag-chip:hover { background: var(--fiona-soft); }
 
 .hero .container { z-index: 2; }
 
+/* --- 季節の小演出：6月・梅雨のあじさい（清楚・控えめ・右下にそっと） --- */
+.season-ajisai {
+  position: absolute;
+  right: 2.5%;
+  bottom: 6%;
+  width: 96px;
+  height: 96px;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.season-ajisai span {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-radius: 60% 0 60% 0;
+  background: radial-gradient(circle at 35% 30%, var(--lupinus-soft), var(--lupinus) 80%, transparent);
+  opacity: 0.85;
+}
+.season-ajisai span:nth-child(1) { top: 24px; left: 32px; }
+.season-ajisai span:nth-child(2) { top: 18px; left: 50px; background: radial-gradient(circle at 35% 30%, var(--fiona-soft), var(--fiona) 80%, transparent); }
+.season-ajisai span:nth-child(3) { top: 38px; left: 22px; background: radial-gradient(circle at 35% 30%, var(--fiona-soft), var(--fiona) 80%, transparent); }
+.season-ajisai span:nth-child(4) { top: 40px; left: 46px; }
+.season-ajisai span:nth-child(5) { top: 52px; left: 34px; }
+/* あじさいの葉（小さな菱形を一枚） */
+.season-ajisai::after {
+  content: "";
+  position: absolute;
+  top: 64px;
+  left: 18px;
+  width: 30px;
+  height: 18px;
+  border-radius: 0 80% 0 80%;
+  background: linear-gradient(135deg, #bcd2a8, #9fbf86);
+  opacity: 0.6;
+  transform: rotate(-12deg);
+}
+.season-ajisai { animation: ajisai-sway 8s ease-in-out infinite; transform-origin: 50% 100%; }
+@keyframes ajisai-sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50%      { transform: rotate(2deg); }
+}
+@media (max-width: 760px) {
+  .season-ajisai { width: 70px; height: 70px; right: 4%; bottom: 4%; opacity: 0.55; }
+}
+
+/* --- ホーム：最新動画カードの再生バッジ --- */
+.video-card .thumb { position: relative; }
+.video-card .play-badge {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--accent-deep);
+  font-size: 1.1rem;
+  box-shadow: 0 8px 24px -10px rgba(78, 64, 110, 0.5);
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease);
+}
+.video-card:hover .play-badge {
+  transform: scale(1.12);
+  background: #fff;
+}
+
+/* --- Contact：メールアドレスの強調表示 --- */
+.contact-mail { margin: 0 0 6px; }
+.contact-mail-link {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-deep);
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 2px;
+}
+.contact-mail-link:hover { color: var(--accent); }
+
 /* --- ヒーロー画像：やわらかな後光（halo）と浮遊感 --- */
 .hero-visual .frame {
   animation: hero-float 7s ease-in-out infinite;
@@ -1732,6 +1813,7 @@ a.tag-chip:hover { background: var(--fiona-soft); }
 @media (prefers-reduced-motion: reduce) {
   .hero-petals { display: none; }
   .hero-visual .frame { animation: none; }
+  .season-ajisai { animation: none; }
 }
 
 /* === Lightbox（スタンプ・ギャラリーの拡大表示） === */

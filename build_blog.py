@@ -35,6 +35,24 @@ BASE_URL = "https://lupinusrossetti.github.io/AIBSPortfolioBlog"
 SITE_NAME = "Lupinus Rossetti | AI Bloom Sisters"
 DEFAULT_OG_IMAGE = "apple-touch-icon.png"   # サイト共通のOGP画像（軽量・三姉妹長女）
 
+# === 多言語対応の枠組み（方針のみ・本格実装は未着手） ===
+# 現状は日本語(ja)単一。将来 en を足すときの設計をここに集約する。
+#   1) LANG をループ → /<lang>/ 配下に各ページを出力（ja は従来どおりルート直下）。
+#   2) UI_TEXT に画面固定文言を集約し、page()/header()/footer() から参照する
+#      （現状はテンプレ内に直書き。まずは UI_TEXT へ寄せるところから移行）。
+#   3) <html lang> と <link rel="alternate" hreflang> を言語ごとに出し分ける。
+#   ※ 記事本文(日記md)の英訳・全ページ複製は重いため、本タスクでは行わない。
+DEFAULT_LANG = "ja"
+LANGS = ["ja"]   # 将来 ["ja", "en"]
+UI_TEXT = {
+    "ja": {
+        "nav_home": "Home", "nav_about": "About", "nav_portfolio": "Portfolio",
+        "nav_blog": "Blog", "nav_sns": "SNS", "nav_contact": "Contact",
+        "read_more": "つづきを読む", "to_diary_list": "日記一覧へ",
+    },
+    # "en": { ... }  # 翻訳が用意できたら追加する
+}
+
 # === パス設定 ===
 SITE_DIR = Path(__file__).resolve().parent          # リポジトリ直下
 DIARY_DIR = Path(r"C:\ClaudeCode\note-diary")
@@ -209,6 +227,7 @@ def header(prefix: str, active: str) -> str:
         f'<a href="{prefix}portfolio.html"{cls("portfolio")}>Portfolio</a>'
         f'<a href="{prefix}blog/index.html"{cls("blog")}>Blog</a>'
         f'<a href="{prefix}sns.html"{cls("sns")}>SNS</a>'
+        f'<a href="{prefix}contact.html"{cls("contact")}>Contact</a>'
         '</nav></div></header>'
     )
 
@@ -222,7 +241,9 @@ def footer() -> str:
         '<footer class="site-footer"><div class="container">'
         '<div class="brand-script">Lupinus Rossetti</div>'
         '<p class="tagline">AI Bloom Sisters &mdash; flower language: imagination</p>'
-        f'<div class="sns-row">{sns}</div>'
+        f'<div class="sns-row">{sns}'
+        '<a class="sns-link" href="mailto:aiirisfiona@gmail.com"><span class="dot"></span>Contact</a>'
+        '</div>'
         f'<p class="copy">&copy; {date.today().year} AI Bloom Sisters. All rights reserved.</p>'
         '</div></footer>'
     )
@@ -497,8 +518,10 @@ def build():
     (BLOG_DIR / "index.html").write_text(out, encoding="utf-8")
 
     inject_latest_into_home(posts)
+    inject_latest_videos_into_home()
     build_sns()
     build_about()
+    build_contact()
     build_schedule_into_home()
     build_feed(posts)
     build_sitemap_robots(posts)
@@ -979,7 +1002,7 @@ def build_feed(posts):
 
 def build_sitemap_robots(posts):
     """sitemap.xml と robots.txt を全公開ページから生成。"""
-    urls = ["index.html", "about.html", "portfolio.html", "sns.html", "blog/index.html"]
+    urls = ["index.html", "about.html", "portfolio.html", "sns.html", "contact.html", "blog/index.html"]
     urls += [f"blog/posts/{p['slug']}.html" for p in posts]
     today = date.today().isoformat()
     entries = "".join(
@@ -1025,6 +1048,114 @@ def inject_latest_into_home(posts, count=3):
     new_text = re.sub(r"<!--LATEST_DIARY-->.*?<!--/LATEST_DIARY-->", block, text, flags=re.S)
     if new_text != text:
         home.write_text(new_text, encoding="utf-8")
+
+
+def inject_latest_videos_into_home(count=3):
+    """index.html の <!--LATEST_VIDEOS--> マーカー間に最新YouTube動画カードを差し込む。
+    data/archive.json の最新の動画(本編)＋AIショートアニメから新しい順に最大 count 件。
+    存在しなければ何もしない（崩れ防止）。"""
+    home = SITE_DIR / "index.html"
+    data_path = SITE_DIR / "data" / "archive.json"
+    if not home.exists() or not data_path.exists():
+        return
+    text = home.read_text(encoding="utf-8")
+    if "<!--LATEST_VIDEOS-->" not in text:
+        return
+    data = json.loads(data_path.read_text(encoding="utf-8"))
+    items = []
+    for sec in data.get("sections", []):
+        if sec.get("platform") != "youtube":
+            continue
+        if sec.get("key") not in ("youtube_latest", "youtube_anime"):
+            continue
+        for it in sec.get("items", []):
+            items.append(it)
+    items.sort(key=lambda it: it.get("date", ""), reverse=True)
+    shown = items[:count]
+    if not shown:
+        return
+    cards = "".join(
+        f'<a class="work-card video-card" href="https://youtu.be/{html_lib.escape(it.get("id",""))}" '
+        'target="_blank" rel="noopener">'
+        f'<div class="thumb"><img src="https://img.youtube.com/vi/{html_lib.escape(it.get("id",""))}/hqdefault.jpg" '
+        f'alt="{html_lib.escape(it.get("title",""))}" loading="lazy"><span class="play-badge" aria-hidden="true">▶</span></div>'
+        '<div class="body">'
+        f'<span class="tag">{html_lib.escape(it.get("date",""))}</span>'
+        f'<h3 style="font-size:1.05rem">{html_lib.escape(it.get("title",""))}</h3>'
+        '</div></a>'
+        for it in shown
+    )
+    block = "<!--LATEST_VIDEOS-->\n        " + cards + "\n        <!--/LATEST_VIDEOS-->"
+    new_text = re.sub(r"<!--LATEST_VIDEOS-->.*?<!--/LATEST_VIDEOS-->", block, text, flags=re.S)
+    if new_text != text:
+        home.write_text(new_text, encoding="utf-8")
+
+
+def build_contact():
+    """お仕事依頼／お問い合わせページ（contact.html）。
+    フォームは持たず、mailto＋案内で完結。スタンプ・キャラ・動画などの依頼窓口。"""
+    services = [
+        ("Stamp / Emoji", "スタンプ・絵文字制作",
+         "LINEスタンプやDiscord絵文字を、地雷系キュートのテイストでご相談に合わせて制作します。表情差分もそろえてお届けします。"),
+        ("Character", "キャラクター制作",
+         "オリジナルキャラクターのデザイン・立ち絵・表情差分を制作します。配信や創作のお供に、世界観に合った一枚をお作りします。"),
+        ("Illustration", "イラスト制作",
+         "一枚絵・アイコン・ヘッダーなど、用途に合わせたイラストを制作します。テーマや雰囲気のご希望をお聞かせください。"),
+        ("Short Anime", "AIショートアニメ・動画",
+         "三姉妹のショートアニメで培った制作パイプラインで、台本・演出・音・映像までの動画づくりをお手伝いします。"),
+    ]
+    cards = "".join(
+        '<div class="work-card"><div class="body">'
+        f'<span class="tag">{html_lib.escape(en)}</span><h3>{html_lib.escape(jp)}</h3>'
+        f'<p>{html_lib.escape(desc)}</p>'
+        '</div></div>'
+        for en, jp, desc in services
+    )
+    mail_subject = "お仕事のご相談（AIBS）"
+    body = (
+        '<section class="blog-hero"><div class="container">'
+        '<span class="eyebrow">Contact</span>'
+        '<h1>お仕事のご依頼・お問い合わせ</h1>'
+        '<p class="lead">スタンプ制作・キャラクター制作・イラスト・ショートアニメなど、'
+        '「こんなものを作ってほしい」のご相談を承っています。'
+        'お気軽にメールでご連絡ください。</p>'
+        '</div></section>'
+
+        '<section class="section reveal"><div class="container">'
+        '<div class="section-head">'
+        '<span class="eyebrow">What We Offer</span>'
+        '<h2 class="section-title">ご依頼いただけること<span class="jp">SERVICES</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '<p style="color:var(--ink-soft);max-width:38em;margin:18px auto 0">'
+        '内容・分量によってお見積りいたします。ご予算やスケジュールのご希望もあわせてお知らせください。</p>'
+        '</div>'
+        f'<div class="works">{cards}</div>'
+        '</div></section>'
+
+        '<section class="section veil reveal"><div class="container center">'
+        '<div class="section-head" style="margin-bottom:24px">'
+        '<span class="eyebrow">Get in Touch</span>'
+        '<h2 class="section-title">ご連絡先<span class="jp">CONTACT</span></h2>'
+        '<div class="ornament" style="margin-top:18px"><span></span></div>'
+        '</div>'
+        '<p style="color:var(--ink-soft);max-width:36em;margin:0 auto 12px">'
+        'ご依頼・ご相談は下記メールアドレスまでお願いします。'
+        'お名前（ハンドルネーム可）・ご依頼内容・ご希望の納期をそえていただけるとスムーズです。</p>'
+        '<p class="contact-mail">'
+        f'<a class="contact-mail-link" href="mailto:aiirisfiona@gmail.com?subject={mail_subject}">'
+        'aiirisfiona@gmail.com</a></p>'
+        '<div class="hero-actions" style="justify-content:center;flex-wrap:wrap;margin-top:8px">'
+        f'<a class="btn btn-filled" href="mailto:aiirisfiona@gmail.com?subject={mail_subject}">メールで相談する</a>'
+        '<a class="btn" href="https://x.com/irisfionaAIBS" target="_blank" rel="noopener">XのDMで相談する</a>'
+        '</div>'
+        '<p style="color:var(--ink-faint);font-size:.85rem;margin-top:26px">'
+        '内容によってはお引き受けできない場合がございます。あらかじめご了承ください。</p>'
+        '</div></section>'
+    )
+    out = page("Contact | Lupinus Rossetti", prefix="", active="contact", body=body,
+               desc="AI Bloom Sisters・ルピナス・ロゼッティへのお仕事のご依頼・お問い合わせ。スタンプ制作・キャラクター制作・イラスト・ショートアニメ動画のご相談はメールから。",
+               path="contact.html")
+    (SITE_DIR / "contact.html").write_text(out, encoding="utf-8")
 
 
 if __name__ == "__main__":

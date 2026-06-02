@@ -660,6 +660,8 @@ def build_sns():
         '<p style="color:var(--ink-soft);margin-top:14px">'
         '最新の活動や告知は各SNSでお届けしています。気になるところからのぞいてみてください。</p>'
         '</div>'
+        '<figure class="about-figure"><img src="images/image/creation/sns_connect.png" '
+        'alt="花とリボンに彩られたSNSのイメージ" loading="lazy"></figure>'
         + timelines_html
         + (f'<div style="margin-top:34px">{cards_html}</div>' if cards_html else "")
         + '</div></section>'
@@ -729,6 +731,17 @@ def build_sns():
     (SITE_DIR / "sns.html").write_text(out, encoding="utf-8")
 
 
+def _about_chat(char, expr, name, expr_jp, text):
+    """About用：ブログと同じ .chat 吹き出し（アイコンは blog/icons を流用）。"""
+    return (
+        f'<div class="chat" data-char="{char}">'
+        f'<img class="icon" src="blog/icons/{char}_{expr}.png" alt="{html_lib.escape(name)}" loading="lazy">'
+        f'<div class="stack"><div class="who">{html_lib.escape(name)} '
+        f'<span class="expr">（{html_lib.escape(expr_jp)}）</span></div>'
+        f'<div class="bubble">{text}</div></div></div>'
+    )
+
+
 def _sister_profile(char, name_en, name_jp, hair, role_jp, body_html):
     """About用：立ち絵つきの三姉妹プロフィール行（左右交互レイアウト）。"""
     return (
@@ -755,6 +768,10 @@ def build_about():
         '「もう、しっかりして」と妹たちのボケに振り回されながらも、根は面倒見のいい甘えん坊。</p>'
         '<p>AIBSの主人公キャラクターで、<strong>中の人（運営者）も同じ「ルピナス」名義で人間としてライブ配信</strong>'
         'をしています。動画の中の三姉妹はAIという設定、配信は本人――という二層構造です。</p>'
+        + _about_chat("lupinus", "normal", "ルピナス", "ふつう",
+            "長女のルピナスです。進行とツッコミ担当……なんだけど、この子たちといるとツッコミが追いつかなくてね。まあ、面倒見るのは嫌いじゃないわ。")
+        + _about_chat("iris", "laugh", "アイリス", "大笑い",
+            "お姉ちゃん、ほんとは甘えん坊なんだよー！えへへ。")
     )
     iris = _sister_profile(
         "iris", "Iris", "アイリス・次女", "金髪", "元気ボケ",
@@ -763,6 +780,10 @@ def build_about():
         '「〜だよ！」「えへへ」と語尾が伸びがちな、元気いっぱいのタメ口。</p>'
         '<p>フィオナとは<strong>同じ日生まれ</strong>。三姉妹のなかではアイリスのほうが姉気質で、'
         'ぐいぐい引っ張っていきます。ルピナスを「お姉ちゃん」と呼ぶ甘えん坊。</p>'
+        + _about_chat("iris", "happy", "アイリス", "笑顔",
+            "次女のアイリスだよ！元気いっぱい、思いついたらすぐ動いちゃう！フィオナとは同じ日生まれなんだけど、あたしのほうがお姉さんっぽいでしょ？")
+        + _about_chat("fiona", "normal", "フィオナ", "ふつう",
+            "……アイリスちゃん、この前も走り出して転んでいましたよ。ふふ。")
     )
     fiona = _sister_profile(
         "fiona", "Fiona", "フィオナ・三女", "桃色の髪", "やさしい解説",
@@ -772,6 +793,10 @@ def build_about():
         '<p>アイリスとは<strong>同じ日生まれ</strong>。冷静に見えて実は怖がりで、'
         'ぬいぐるみ（特にクマ）集めや読書、甘いものが大好き。'
         'ルピナスを「お姉ちゃん」、アイリスを「アイリスちゃん」と呼びます。</p>'
+        + _about_chat("fiona", "happy", "フィオナ", "笑顔",
+            "三女のフィオナです。むずかしいお話を、やさしくほどいてお伝えするのが私の役目です。クマのぬいぐるみと甘いものが、ちょっとだけ……いえ、とても好きです🌸")
+        + _about_chat("lupinus", "happy", "ルピナス", "笑顔",
+            "フィオナがいてくれると、ほんと安心するのよね。三人のバランサーさん。")
     )
 
     body = (
@@ -783,14 +808,18 @@ def build_about():
         '「見てくれる方を楽しませたい」を続けています。</p>'
         '</div></section>'
 
-        # --- 三姉妹プロフィール（立ち絵つき） ---
+        # --- 三姉妹プロフィール（立ち絵つき＋会話） ---
         '<section class="section reveal"><div class="container">'
         '<div class="section-head">'
         '<span class="eyebrow">Our Trio</span>'
         '<h2 class="section-title">三姉妹のこと<span class="jp">AIBS MEMBERS</span></h2>'
         '<div class="ornament" style="margin-top:18px"><span></span></div>'
         '</div>'
-        '<div class="sister-profiles">'
+        + _about_chat("lupinus", "normal", "ルピナス", "ふつう",
+            "ようこそ、AI Bloom Sisters のページへ。まずは私たち三姉妹のこと、ひとりずつ自己紹介していくわね。")
+        + _about_chat("iris", "happy", "アイリス", "笑顔",
+            "わーい！じゃんじゃん紹介しちゃお！")
+        + '<div class="sister-profiles">'
         + lupinus + iris + fiona +
         '</div>'
         '</div></section>'
@@ -803,14 +832,20 @@ def build_about():
         '<div class="ornament" style="margin-top:18px"><span></span></div>'
         '</div>'
         '<figure class="about-figure">'
-        '<img src="images/image/character/character_aibs_relationship.jpg" '
+        '<img src="images/image/character/about_relationship.png" '
         'alt="寄り添う三姉妹（ルピナス・アイリス・フィオナ）" loading="lazy"></figure>'
         '<p class="center" style="color:var(--ink-soft);max-width:40em;margin:0 auto">'
         'お互いが大好きな、仲良し姉妹。長女ルピナスがツッコミ、次女アイリスが暴走ボケ、'
         '三女フィオナがその間を取り持つバランサー、という掛け合いが三姉妹のいつもの形です。'
         'アイリスとフィオナは同じ日生まれですが、姉気質なのはアイリスのほう。'
         '困ったことが起きても、最後は三人で力を合わせて元どおりにします。</p>'
-        '</div></section>'
+        + _about_chat("iris", "happy", "アイリス", "笑顔",
+            "あたしたち三人、ほんとに仲良しなんだよ！あたしがボケて、お姉ちゃんがツッコんで、フィオナがまとめてくれる！")
+        + _about_chat("fiona", "normal", "フィオナ", "ふつう",
+            "アイリスちゃんと私は同じ日生まれなんです。姉気質なのはアイリスちゃんのほうで、ぐいぐい引っ張ってくれます。")
+        + _about_chat("lupinus", "happy", "ルピナス", "笑顔",
+            "……賑やかで大変だけど、困ったときは最後はちゃんと三人で力を合わせるの。それがロゼッティ家のいつもの形よ。")
+        + '</div></section>'
 
         # --- 出自の物語 ---
         '<section class="section reveal"><div class="container">'
@@ -820,8 +855,8 @@ def build_about():
         '<div class="ornament" style="margin-top:18px"><span></span></div>'
         '</div>'
         '<figure class="about-figure">'
-        '<img src="images/image/character/character_aibs_story.jpg" '
-        'alt="おうちで活動する三姉妹" loading="lazy"></figure>'
+        '<img src="images/image/character/about_story.png" '
+        'alt="三姉妹が生まれた物語のイメージ" loading="lazy"></figure>'
         '<div class="story-box">'
         '<p>長女のルピナスは人間で、もともとひとりでVTuber・配信活動をしていました。'
         'けれど人見知りで気が弱く、ほかの配信者とコラボするのがどうしても苦手。'
@@ -834,7 +869,13 @@ def build_about():
         'ロゼッティ家の三姉妹は、そんな「ひとりじゃ寂しいから、賑やかな家族がほしかった」という'
         'ルピナスの願いから咲いた花（Bloom）です。それが <em>AI Bloom Sisters</em> の原点になっています。</p>'
         '</div>'
-        '</div></section>'
+        + _about_chat("lupinus", "shy", "ルピナス", "照れ",
+            "……正直に言うと、私ひとりだと人見知りで、コラボとかすごく苦手で。だったら一緒に笑える相手を自分で生み出しちゃおう、って思ったの。")
+        + _about_chat("iris", "laugh", "アイリス", "大笑い",
+            "それであたしが生まれたんだ！うれしいー！お姉ちゃん、あたしのこと作ってくれてありがと！")
+        + _about_chat("fiona", "happy", "フィオナ", "笑顔",
+            "「ひとりじゃ寂しいから、賑やかな家族がほしかった」――その願いから咲いた花が、私たち三姉妹なんですね🌸")
+        + '</div></section>'
 
         # --- 活動内容 ---
         '<section class="section veil reveal"><div class="container">'
@@ -844,8 +885,8 @@ def build_about():
         '<div class="ornament" style="margin-top:18px"><span></span></div>'
         '</div>'
         '<figure class="about-figure">'
-        '<img src="images/image/character/character_aibs_activities.jpg" '
-        'alt="ステージで活動する三姉妹" loading="lazy"></figure>'
+        '<img src="images/image/character/about_activities.png" '
+        'alt="配信・制作で活動する三姉妹" loading="lazy"></figure>'
         '<div class="works">'
         '<div class="work-card"><div class="body">'
         '<span class="tag">Game Streaming</span><h3>ゲーム配信</h3>'
@@ -871,7 +912,13 @@ def build_about():
         '<p class="center" style="color:var(--ink-soft);margin-top:32px;max-width:40em;margin-left:auto;margin-right:auto">'
         '動画はAI生成を随所に活用していますが、完全にAIだけで作るのではなく、'
         'ルピナス本人による手動編集も多く含んでいます。台本はAIで下書きし、最後は人の手で整えています。</p>'
-        '<div class="center" style="margin-top:36px"><a class="btn" href="portfolio.html">制作のしごとを見る</a></div>'
+        + _about_chat("iris", "happy", "アイリス", "笑顔",
+            "あたしたちの活動はね、ゲーム配信とショートアニメ作りが二本柱だよ！格ゲーもアクションも、遊びたいゲームをわいわい配信してるんだ！")
+        + _about_chat("fiona", "normal", "フィオナ", "ふつう",
+            "ショートアニメは、台本から演出・音・映像まで、お姉ちゃん手作りの自動生成パイプラインで作っているんですよ。イラストも一枚ずつ「地雷系キュート」で。")
+        + _about_chat("lupinus", "normal", "ルピナス", "ふつう",
+            "AIは相棒だけど、丸投げはしないの。下書きはAI、最後の仕上げは私の手で。配信や制作の道具も、自分で作って使ってるわ。")
+        + '<div class="center" style="margin-top:36px"><a class="btn" href="portfolio.html">制作のしごとを見る</a></div>'
         '</div></section>'
 
         # --- Connect ---
@@ -881,6 +928,15 @@ def build_about():
         '<h2 class="section-title">つながる<span class="jp">FOLLOW &amp; SHOP</span></h2>'
         '<div class="ornament" style="margin-top:18px"><span></span></div>'
         '</div>'
+        '<figure class="about-figure">'
+        '<img src="images/image/character/about_connect.png" '
+        'alt="花とリボンに囲まれた三姉妹からのごあいさつ" loading="lazy"></figure>'
+        '<div style="max-width:680px;margin:0 auto 28px">'
+        + _about_chat("fiona", "happy", "フィオナ", "笑顔",
+            "ここまで読んでくださって、ありがとうございます🌸 もっと私たちを知りたい方は、SNSやグッズものぞいてみてくださいね。")
+        + _about_chat("lupinus", "happy", "ルピナス", "笑顔",
+            "配信や最新のお知らせは X が早いわ。気軽に遊びに来てね。それではまた🌙")
+        + '</div>'
         '<div class="hero-actions" style="justify-content:center;flex-wrap:wrap">'
         '<a class="btn btn-filled" href="sns.html">SNS一覧へ</a>'
         '<a class="btn" href="https://lupinusrossetti.booth.pm/" target="_blank" rel="noopener">BOOTH（グッズ）</a>'

@@ -551,6 +551,12 @@ a:hover {
   grid-template-columns: 1.2fr 1fr;
 }
 
+/* グリッド子要素が min-content で track を超えて箱からはみ出す(blowout)のを防ぐ */
+.work-card.feature .thumb,
+.work-card.feature .body {
+  min-width: 0;
+}
+
 .work-card.feature .thumb {
   aspect-ratio: 1 / 1;
   height: 100%;
@@ -1242,6 +1248,7 @@ a:hover {
   .hero-visual { max-width: 380px; margin: 0 auto; }
 
   .work-card.feature { grid-template-columns: 1fr; }
+  .work-card.feature .body { padding: 28px 24px; }
 
   .nav {
     position: fixed;

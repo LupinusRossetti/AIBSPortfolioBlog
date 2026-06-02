@@ -500,6 +500,8 @@ def build():
         '<section class="blog-hero"><div class="container">'
         '<span class="eyebrow">AIBS Diary</span>'
         '<h1>三姉妹のものづくり日記</h1>'
+        '<div class="blog-hero-visual"><img src="heroes/blog_index_hero.png" '
+        'alt="日記を書く三姉妹（ルピナス・アイリス・フィオナ）" fetchpriority="high"></div>'
         '<p class="lead">AIを使ったショートアニメ動画づくりの裏側を、'
         '三姉妹がわいわいお喋りしながらお届けします。むずかしい言葉は、そのつどかみ砕いて。</p>'
         '</div></section>'

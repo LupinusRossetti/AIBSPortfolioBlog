@@ -1550,6 +1550,27 @@ a:hover {
   .about-figure { max-width: 100%; }
 }
 
+/* SNSページのヒーロー画像：縦長素材を16:9に揃えて他ページとトーンを揃える */
+.sns-figure {
+  margin: 0 auto 30px;
+  max-width: 720px;
+  text-align: center;
+}
+.sns-figure img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  box-shadow: var(--shadow-card);
+}
+@media (max-width: 600px) {
+  .sns-figure { max-width: 100%; }
+}
+
 /* === About：出自の物語ボックス === */
 .story-box {
   max-width: 720px;

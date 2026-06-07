@@ -28,11 +28,74 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
     rel="stylesheet">
+  <style>
+    /* ComingSoon専用：通常時は筆記体のみ表示し、内部コンテンツは隠す */
+    body.cs-locked .site-header,
+    body.cs-locked .blog-hero,
+    body.cs-locked .section,
+    body.cs-locked .site-footer { display: none !important; }
+    .cs-fullscreen {
+      position: fixed; inset: 0;
+      display: none;
+      align-items: center; justify-content: center;
+      background: radial-gradient(ellipse at center, #fff5fa 0%, #ffe6f1 60%, #ffd1e6 100%);
+      z-index: 9999;
+      text-align: center;
+      padding: 20px;
+    }
+    body.cs-locked .cs-fullscreen { display: flex; }
+    .cs-fullscreen .cs-script {
+      font-family: 'Great Vibes', 'Dancing Script', cursive;
+      font-size: clamp(4rem, 14vw, 12rem);
+      color: #FF1493;
+      text-shadow: 0 4px 16px rgba(255, 105, 180, .35), 0 0 32px rgba(255, 255, 255, .6);
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+    .cs-fullscreen .cs-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: #c2185b;
+      font-size: clamp(1rem, 2.4vw, 1.6rem);
+      margin-top: 12px;
+      letter-spacing: 0.18em;
+    }
+    .cs-fullscreen .cs-mail {
+      margin-top: 28px;
+      font-family: 'Jost', sans-serif;
+      font-size: .9rem;
+      color: #a14b7a;
+    }
+    .cs-fullscreen .cs-mail a { color: #FF1493; text-decoration: none; border-bottom: 1px dotted #FF69B4; }
+  </style>
 </head>
 
-<body>
+<body class="cs-locked">
+  <!-- ComingSoon表示（通常はこれだけ見える） -->
+  <div class="cs-fullscreen" aria-hidden="false">
+    <div>
+      <p class="cs-script">Coming Soon</p>
+      <p class="cs-sub">PREPARING WITH CARE</p>
+      <p class="cs-mail">お急ぎのご相談は <a href="mailto:aiirisfiona@gmail.com">aiirisfiona@gmail.com</a> まで</p>
+    </div>
+  </div>
+  <script>
+    // ルピナス本人のプレビュー解除：?preview=1 で全コンテンツ表示
+    (function(){
+      try{
+        var p = new URLSearchParams(location.search);
+        if (p.get('preview') === '1') {
+          document.body.classList.remove('cs-locked');
+          sessionStorage.setItem('cs_preview','1');
+        } else if (sessionStorage.getItem('cs_preview') === '1') {
+          document.body.classList.remove('cs-locked');
+        }
+      }catch(e){}
+    })();
+  </script>
 
   <!-- Header（おしごとはナビに出さない＝非リンクのまま土台を用意） -->
   <header class="site-header">

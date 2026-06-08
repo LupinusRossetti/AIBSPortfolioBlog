@@ -270,12 +270,43 @@ def page(title: str, prefix: str, active: str, body: str, desc: str = "",
         f'<meta name="twitter:description" content="{html_lib.escape(desc)}">'
         f'<meta name="twitter:image" content="{og_image_abs}">'
     )
+    # JSON-LD 構造化データ（Google公式推奨・SEO）。
+    # 記事ページは Article、それ以外は WebSite。
+    if og_type == "article":
+        jsonld_obj = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "description": desc,
+            "image": og_image_abs,
+            "url": canonical,
+            "mainEntityOfPage": canonical,
+            "author": {"@type": "Person", "name": "Lupinus Rossetti"},
+            "publisher": {
+                "@type": "Organization",
+                "name": SITE_NAME,
+                "logo": {"@type": "ImageObject",
+                         "url": f"{BASE_URL}/{DEFAULT_OG_IMAGE}"}
+            },
+            "inLanguage": "ja-JP",
+        }
+    else:
+        jsonld_obj = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": SITE_NAME,
+            "url": BASE_URL + "/",
+            "inLanguage": "ja-JP",
+        }
+    jsonld = ('<script type="application/ld+json">' +
+              json.dumps(jsonld_obj, ensure_ascii=False) +
+              '</script>')
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
         f'<title>{html_lib.escape(title)}</title>'
         f'<meta name="description" content="{html_lib.escape(desc)}">'
-        + favicon_links(prefix) + og
+        + favicon_links(prefix) + og + jsonld
         + f'<link rel="alternate" type="application/rss+xml" title="AIBS Diary" href="{BASE_URL}/feed.xml">'
         + f'<link rel="stylesheet" href="{prefix}assets/css/site.css">{FONTS}'
         '</head><body>'

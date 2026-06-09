@@ -139,9 +139,24 @@ def parse_body(lines: list[str], icon_prefix: str) -> str:
             while j < n and lines[j].strip() == "":
                 j += 1
             quote: list[str] = []
-            while j < n and lines[j].lstrip().startswith(">"):
-                quote.append(re.sub(r"^\s*>\s?", "", lines[j]))
-                j += 1
+            # 旧方式: > で始まる引用ブロック
+            if j < n and lines[j].lstrip().startswith(">"):
+                while j < n and lines[j].lstrip().startswith(">"):
+                    quote.append(re.sub(r"^\s*>\s?", "", lines[j]))
+                    j += 1
+            else:
+                # 新方式: > なしの素直なセリフ行（次の空行・アイコン行・構造行まで）
+                while j < n:
+                    s = lines[j]
+                    stripped = s.strip()
+                    if stripped == "":
+                        break
+                    if RE_ICON_LINE.match(s) or RE_INLINE_TALK.match(s):
+                        break
+                    if stripped.startswith(("#", "---", "- ", "* ", "|", "![", "```")):
+                        break
+                    quote.append(s)
+                    j += 1
             parts.append(render_chat(char, expr, name, expr_jp, quote, icon_prefix))
             i = j
             continue

@@ -304,6 +304,7 @@ def page(title: str, prefix: str, active: str, body: str, desc: str = "",
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+        '<meta name="google-site-verification" content="vmr51R1zcK5z3btUMgFGf_4-Veo8pUE7TCdoEpaSpaI">'
         f'<title>{html_lib.escape(title)}</title>'
         f'<meta name="description" content="{html_lib.escape(desc)}">'
         + favicon_links(prefix) + og + jsonld

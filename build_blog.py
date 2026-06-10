@@ -242,6 +242,7 @@ def header(prefix: str, active: str) -> str:
         f'<a href="{prefix}portfolio.html"{cls("portfolio")}>Portfolio</a>'
         f'<a href="{prefix}blog/index.html"{cls("blog")}>Blog</a>'
         f'<a href="{prefix}sns.html"{cls("sns")}>SNS</a>'
+        f'<a href="{prefix}coming-soon.html"{cls("contact")}>Contact</a>'
         '</nav></div></header>'
     )
 

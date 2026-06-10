@@ -592,6 +592,7 @@ def build():
     inject_latest_videos_into_home()
     build_sns()
     build_about()
+    build_privacy()
     build_schedule_into_home()
     build_feed(posts)
     build_sitemap_robots(posts)
@@ -821,6 +822,137 @@ def build_sns():
     out = page("SNS | Lupinus Rossetti", prefix="", active="sns", body=body,
                desc="AI Bloom Sisters の各SNS（X / Threads / TikTok / Instagram / Twitch）と動画・配信まとめ。")
     (SITE_DIR / "sns.html").write_text(out, encoding="utf-8")
+
+
+def build_privacy():
+    """プライバシーポリシーページ。他ページと完全に同じスタイル系で生成。"""
+    body = (
+        '<section class="blog-hero"><div class="container">'
+        '<span class="eyebrow">Privacy</span>'
+        '<h1>プライバシーポリシー</h1>'
+        '<p class="lead">本サイトをご利用いただくにあたり、収集する情報・利用目的・第三者提供について明示します🌸</p>'
+        '</div></section>'
+
+        '<section class="section reveal"><div class="container" style="max-width:760px">'
+
+        # 冒頭：フィオナ吹き出し
+        + _about_chat("fiona", "normal", "フィオナ", "ふつう",
+            "ふふ、ここは大事なお話のページです。少しだけ硬めですが、ゆっくり読んでみてくださいね🌷")
+
+        # 1. 運営者情報
+        + '<div class="section-head" style="margin-top:48px"><span class="eyebrow">Operator</span>'
+        + '<h2 class="section-title">1. 運営者情報<span class="jp">OPERATOR</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>サイト名：Lupinus Rossetti | AI Bloom Sisters<br>'
+        + '運営者：ルピナス・ロゼッティ（AI Bloom Sisters）<br>'
+        + 'お問合せ：<a href="https://x.com/rupi_airupi" target="_blank" rel="noopener">X (@rupi_airupi) のDM</a> よりご連絡ください</p>'
+        + '</div>'
+
+        # 2. 収集する情報
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Data</span>'
+        + '<h2 class="section-title">2. 収集する情報<span class="jp">DATA WE COLLECT</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本サイトでは、以下の情報を自動的に収集する場合があります。</p>'
+        + '<ul>'
+        + '<li>アクセス情報（IPアドレス・ブラウザ種別・OS・参照元URL等）</li>'
+        + '<li>Cookie および類似技術によるトラッキング情報</li>'
+        + '<li>Google Analytics・Google Search Console 等を通じた利用解析データ</li>'
+        + '<li>お問合せ時にご記入いただくお名前・メールアドレス等</li>'
+        + '</ul></div>'
+
+        # 3. 情報の利用目的
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Purpose</span>'
+        + '<h2 class="section-title">3. 情報の利用目的<span class="jp">PURPOSE</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>収集した情報は以下の目的でのみ利用します。</p>'
+        + '<ul>'
+        + '<li>サイトの改善・コンテンツ品質向上</li>'
+        + '<li>アクセス解析・利用傾向の分析</li>'
+        + '<li>お問合せへの対応</li>'
+        + '<li>不正アクセスや違法行為の防止</li>'
+        + '</ul></div>'
+
+        # 4. 第三者提供
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Third Party</span>'
+        + '<h2 class="section-title">4. 第三者提供<span class="jp">THIRD PARTY</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>収集した個人情報を、ご本人の同意なしに第三者へ提供することはありません。ただし、法令に基づく開示請求があった場合はこの限りではありません。</p>'
+        + '</div>'
+
+        # 5. Cookie
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Cookie</span>'
+        + '<h2 class="section-title">5. Cookieの利用<span class="jp">COOKIES</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本サイトでは、利便性向上のためCookieを使用しています。Cookieは個人を特定するものではなく、ブラウザの設定で無効化することも可能です。</p>'
+        + '<p>また、Google Analytics 等の第三者サービスがCookieを利用してアクセス解析を行う場合があります。これらのCookieは、Google等の各社のプライバシーポリシーに従って管理されます。</p>'
+        + '</div>'
+
+        # 6. 外部サービス
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">External</span>'
+        + '<h2 class="section-title">6. 外部サービス・SNS連携<span class="jp">EXTERNAL SERVICES</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本サイトでは、以下の外部サービスへのリンクや連携を含む場合があります。各サービスのプライバシーポリシーは、各サービス提供者の定めるところに従います。</p>'
+        + '<ul>'
+        + '<li>YouTube（Google LLC）</li>'
+        + '<li>X（旧Twitter）</li>'
+        + '<li>note</li>'
+        + '<li>FANBOX（pixiv）</li>'
+        + '<li>Threads（Meta Platforms, Inc.）</li>'
+        + '<li>Google Analytics / Google Search Console（Google LLC）</li>'
+        + '</ul></div>'
+
+        # 7. アフィリエイト
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Affiliate</span>'
+        + '<h2 class="section-title">7. アフィリエイトリンクの利用<span class="jp">AFFILIATE LINKS</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本サイトでは、Amazonアソシエイト・楽天アフィリエイト・もしもアフィリエイト等のアフィリエイトプログラムを利用する場合があります。ご紹介する商品やサービスの選定は、運営者の意思に基づき行っております。</p>'
+        + '</div>'
+
+        # 8. 免責事項
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Disclaimer</span>'
+        + '<h2 class="section-title">8. 免責事項<span class="jp">DISCLAIMER</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本サイトに掲載する情報については正確性を期しておりますが、その内容を保証するものではありません。本サイトのご利用により生じたいかなる損害についても、運営者は責任を負いかねますのでご了承ください。</p>'
+        + '</div>'
+
+        # 9. 著作権
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Copyright</span>'
+        + '<h2 class="section-title">9. 著作権<span class="jp">COPYRIGHT</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本サイトに掲載されているコンテンツ（文章・画像・動画・音声・キャラクターデザイン等）の著作権は、運営者または各権利者に帰属します。無断での転載・複製・二次利用はご遠慮ください。</p>'
+        + '<p>AIを活用して制作されたコンテンツについても、運営者の創作物として扱います。</p>'
+        + '</div>'
+
+        # 10. 改定
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Update</span>'
+        + '<h2 class="section-title">10. 改定について<span class="jp">UPDATES</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>本ポリシーは予告なく変更される場合があります。変更後の内容は本ページに掲載した時点から効力を生じます。</p>'
+        + '</div>'
+
+        # 日付＆締めの吹き出し
+        + '<p class="center" style="color:var(--ink-soft);margin-top:48px">'
+        + '🌸 制定日：2026年6月10日 ／ 🌷 最終更新：2026年6月10日</p>'
+
+        + _about_chat("lupinus", "happy", "ルピナス", "笑顔",
+            "最後まで読んでくれてありがとう🌸 ご質問があれば、いつでもXのDMでね。")
+
+        + '</div></section>'
+    )
+    out = page("プライバシーポリシー | Lupinus Rossetti", prefix="", active="privacy", body=body,
+               desc="Lupinus Rossetti（AI Bloom Sisters）のプライバシーポリシー。個人情報の取り扱い・Cookie利用・連絡先について。",
+               path="privacy.html")
+    (SITE_DIR / "privacy.html").write_text(out, encoding="utf-8")
 
 
 def _about_chat(char, expr, name, expr_jp, text):

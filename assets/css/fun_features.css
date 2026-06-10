@@ -96,3 +96,63 @@
   30% { transform: scale(1.18); }
   100% { transform: scale(1); }
 }
+
+/* 訪問カウンター */
+#visit-counter-wrap {
+  margin: 22px auto;
+  text-align: center;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #fff0f8 100%);
+  border-radius: 14px;
+  max-width: 340px;
+  border: 1px solid rgba(180, 200, 250, 0.3);
+}
+#visit-counter-wrap .visit-label {
+  color: #7a6b8a;
+  font-size: 0.86em;
+  margin-bottom: 6px;
+}
+#visit-counter {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #8a7bb4;
+}
+#visit-counter-wrap .visit-note {
+  font-size: 0.78em;
+  color: #a89cb8;
+  margin-top: 6px;
+}
+
+/* 応援メッセージガチャ */
+#cheer-gacha {
+  margin: 28px auto;
+  text-align: center;
+  max-width: 480px;
+}
+.cheer-card {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #fff8e8 0%, #fef0f5 100%) !important;
+}
+.cheer-fade {
+  animation: cheerFadeIn 0.4s ease;
+}
+@keyframes cheerFadeIn {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.cheer-button {
+  background: linear-gradient(135deg, #ffd1a8 0%, #ffb088 100%);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-size: 0.96em;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 176, 136, 0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.cheer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 176, 136, 0.4);
+}

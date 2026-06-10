@@ -91,7 +91,7 @@
     }
   }
 
-  // ─── おやすみキスカウンター ───
+  // ─── 応援カウンター ───
   function initKissCounter() {
     const wrap = document.getElementById('kiss-counter');
     if (!wrap) return;
@@ -109,9 +109,53 @@
     });
   }
 
+  // ─── あなたとの出会い回数（訪問カウンター） ───
+  function initVisitCounter() {
+    const el = document.getElementById('visit-counter');
+    if (!el) return;
+    const KEY = 'aibs_visit_count';
+    const TODAY_KEY = 'aibs_visit_today_' + today();
+    let total = parseInt(localStorage.getItem(KEY) || '0');
+    // 同一日中の連続リロードはカウントしない
+    if (!sessionStorage.getItem(TODAY_KEY)) {
+      total++;
+      localStorage.setItem(KEY, String(total));
+      sessionStorage.setItem(TODAY_KEY, '1');
+    }
+    el.textContent = total;
+  }
+
+  // ─── 三姉妹からの応援メッセージ（ランダムガチャ） ───
+  function initCheerGacha() {
+    const wrap = document.getElementById('cheer-gacha');
+    if (!wrap) return;
+    const btn = document.getElementById('cheer-btn');
+    const result = document.getElementById('cheer-result');
+    btn.addEventListener('click', () => {
+      fetch('assets/data/cheer.json').then(r => r.json()).then(data => {
+        const m = data.messages[Math.floor(Math.random() * data.messages.length)];
+        const charInfo = CHAR_NAMES[m.speaker] || CHAR_NAMES.lupinus;
+        result.innerHTML = `
+          <div class="quote-card cheer-card">
+            <img class="quote-icon" src="${iconPath(m.speaker)}" alt="${charInfo.name}" loading="lazy">
+            <div class="quote-body">
+              <div class="quote-name">${charInfo.name}</div>
+              <div class="quote-text">${m.msg}</div>
+            </div>
+          </div>
+        `;
+        result.classList.remove('cheer-fade');
+        void result.offsetWidth;
+        result.classList.add('cheer-fade');
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initQuoteOfTheDay();
     initOmikuji();
     initKissCounter();
+    initVisitCounter();
+    initCheerGacha();
   });
 })();

@@ -289,12 +289,26 @@
         <div id="omikuji-result" style="display:none;margin-top:18px"></div>
       </div>
 
+      <!-- 三姉妹からの応援メッセージ（ガチャ） -->
+      <div id="cheer-gacha" style="margin-top:30px">
+        <p style="color:var(--ink-soft);font-size:0.9em;margin-bottom:12px">▼ ボタンを押すと、三姉妹のだれかが応援メッセージをくれます🌸</p>
+        <button id="cheer-btn" class="cheer-button">💐 応援メッセージをもらう</button>
+        <div id="cheer-result"></div>
+      </div>
+
       <!-- 応援カウンター -->
       <div id="kiss-counter" style="margin-top:30px">
         <div class="kiss-label">三姉妹に届いた応援、累計</div>
         <div id="kiss-count">0</div>
         <button id="kiss-btn" class="kiss-button">🌸 がんばれ！</button>
         <div style="font-size:0.82em;color:#b89aa3;margin-top:8px">押すたびに三姉妹が元気もらえます🌷</div>
+      </div>
+
+      <!-- 訪問カウンター -->
+      <div id="visit-counter-wrap" style="margin-top:30px">
+        <div class="visit-label">あなたと AIBS の出会い</div>
+        <div><span id="visit-counter">0</span> 回</div>
+        <div class="visit-note">いつもありがとう🌷</div>
       </div>
     </div>
   </section>

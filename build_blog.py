@@ -1029,7 +1029,7 @@ def build_about():
         '<a class="btn btn-filled" href="sns.html">SNS一覧へ</a>'
         '<a class="btn" href="https://lupinusrossetti.booth.pm/" target="_blank" rel="noopener">BOOTH（グッズ）</a>'
         '<a class="btn" href="https://suzuri.jp/Lupinus_Rossetti" target="_blank" rel="noopener">SUZURI</a>'
-        '<a class="btn" href="mailto:aiirisfiona@gmail.com">お問い合わせ</a>'
+        '<a class="btn" href="https://x.com/rupi_airupi" target="_blank" rel="noopener">XのDMでご連絡</a>'
         '</div>'
         '</div></section>'
     )

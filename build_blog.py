@@ -211,7 +211,6 @@ SNS = [
     ("YouTube", "https://www.youtube.com/@AIBloomSisters"),
     ("note", "https://note.com/rupi_airupi"),
     ("FANBOX", "https://lupinus-rossetti.fanbox.cc/"),
-    ("ココナラ", "https://coconala.com/"),
 ]
 
 FONTS = (
@@ -1030,7 +1029,6 @@ def build_about():
         '<a class="btn btn-filled" href="sns.html">SNS一覧へ</a>'
         '<a class="btn" href="https://lupinusrossetti.booth.pm/" target="_blank" rel="noopener">BOOTH（グッズ）</a>'
         '<a class="btn" href="https://suzuri.jp/Lupinus_Rossetti" target="_blank" rel="noopener">SUZURI</a>'
-        '<a class="btn" href="https://coconala.com/" target="_blank" rel="noopener">ココナラ</a>'
         '<a class="btn" href="mailto:aiirisfiona@gmail.com">お問い合わせ</a>'
         '</div>'
         '</div></section>'

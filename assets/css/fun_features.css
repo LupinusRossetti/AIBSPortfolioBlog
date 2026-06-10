@@ -70,11 +70,12 @@
 }
 
 #kiss-counter {
-  padding: 14px;
-  background: linear-gradient(135deg, #fef0f5 0%, #fff8f0 100%);
-  border-radius: 14px;
-  max-width: 340px;
-  border: 1px dashed rgba(255, 192, 203, 0.4);
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #fff4e8 0%, #ffeef5 50%, #f8f0ff 100%);
+  border-radius: 18px;
+  max-width: 360px;
+  border: 1px solid rgba(255, 192, 203, 0.35);
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.15);
 }
 #kiss-counter .kiss-label {
   color: #8a5d6e;

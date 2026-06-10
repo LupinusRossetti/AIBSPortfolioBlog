@@ -246,7 +246,7 @@ def header(prefix: str, active: str) -> str:
     )
 
 
-def footer() -> str:
+def footer(prefix: str = "") -> str:
     sns = "".join(
         f'<a class="sns-link" href="{url}" target="_blank" rel="noopener"><span class="dot"></span>{name}</a>'
         for name, url in SNS
@@ -331,7 +331,7 @@ def page(title: str, prefix: str, active: str, body: str, desc: str = "",
         '</head><body>'
         + header(prefix, active)
         + body
-        + footer()
+        + footer(prefix)
         + reveal_script()
         + "</body></html>"
     )

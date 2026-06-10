@@ -1,0 +1,97 @@
+/* 楽しいコーナー専用スタイル（軽量・既存CSSに依存しない最小限） */
+.quote-card, .omikuji-card {
+  background: linear-gradient(135deg, #fef7f7 0%, #fff4ec 100%);
+  border-radius: 18px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 14px rgba(255, 192, 203, 0.18);
+  border: 1px solid rgba(255, 192, 203, 0.25);
+  margin: 16px auto;
+  max-width: 480px;
+}
+
+.quote-card { display: flex; gap: 14px; align-items: flex-start; }
+.quote-icon {
+  width: 56px; height: 56px; border-radius: 50%;
+  object-fit: cover; flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(255, 192, 203, 0.3);
+}
+.quote-body { flex: 1; min-width: 0; }
+.quote-name {
+  font-weight: 600;
+  color: #8a5d6e;
+  font-size: 0.92em;
+  margin-bottom: 4px;
+}
+.quote-text {
+  color: #5a4a55;
+  font-size: 0.95em;
+  line-height: 1.7;
+}
+
+.omikuji-card { text-align: center; }
+.omikuji-luck {
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #c97b8e;
+  margin: 8px 0 14px;
+  letter-spacing: 0.05em;
+}
+.omikuji-chat {
+  display: flex; gap: 14px; align-items: flex-start;
+  text-align: left;
+  margin: 12px 0;
+}
+.omikuji-note {
+  font-size: 0.82em;
+  color: #b89aa3;
+  margin-top: 10px;
+}
+
+#omikuji-wrap, #quote-of-the-day, #kiss-counter {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.omikuji-button, .kiss-button {
+  background: linear-gradient(135deg, #f9c5cd 0%, #f5a8b8 100%);
+  border: none;
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(245, 168, 184, 0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.omikuji-button:hover, .kiss-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 168, 184, 0.4);
+}
+
+#kiss-counter {
+  padding: 14px;
+  background: linear-gradient(135deg, #fef0f5 0%, #fff8f0 100%);
+  border-radius: 14px;
+  max-width: 340px;
+  border: 1px dashed rgba(255, 192, 203, 0.4);
+}
+#kiss-counter .kiss-label {
+  color: #8a5d6e;
+  font-size: 0.88em;
+  margin-bottom: 8px;
+}
+#kiss-counter #kiss-count {
+  font-size: 2em;
+  font-weight: 700;
+  color: #c97b8e;
+  margin: 8px 0;
+}
+.kiss-pulse {
+  animation: kissPulse 0.6s ease;
+}
+@keyframes kissPulse {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}

@@ -32,6 +32,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fun_features.css">
 </head>
 
 <body>
@@ -268,6 +269,36 @@
       </div>
     </div>
   </section>
+
+  <!-- 楽しいコーナー -->
+  <section class="section reveal" id="fun-corner">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:20px">
+        <span class="eyebrow">Daily Fun</span>
+        <h2 class="section-title">今日の三姉妹<span class="jp">DAILY FUN</span></h2>
+        <div class="ornament" style="margin-top:18px"><span></span></div>
+      </div>
+
+      <!-- 今日のひとこと -->
+      <div id="quote-of-the-day"></div>
+
+      <!-- おみくじ -->
+      <div id="omikuji-wrap" style="margin-top:30px">
+        <p style="color:var(--ink-soft);font-size:0.9em;margin-bottom:12px">▼ 1日1回、三姉妹のだれかが今日のあなたを占ってくれます🌸</p>
+        <button id="omikuji-btn" class="omikuji-button">🎀 おみくじを引く</button>
+        <div id="omikuji-result" style="display:none;margin-top:18px"></div>
+      </div>
+
+      <!-- おやすみキスカウンター -->
+      <div id="kiss-counter" style="margin-top:30px">
+        <div class="kiss-label">三姉妹からのおやすみキス、累計</div>
+        <div id="kiss-count">0</div>
+        <button id="kiss-btn" class="kiss-button">💝 ぎゅっ</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/fun_features.js" defer></script>
 
   <!-- Footer -->
   <footer class="site-footer">

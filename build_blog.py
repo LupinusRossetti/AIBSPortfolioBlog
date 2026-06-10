@@ -258,6 +258,9 @@ def footer() -> str:
         f'<div class="sns-row">{sns}'
         '</div>'
         f'<p class="copy">&copy; {date.today().year} AI Bloom Sisters. All rights reserved.</p>'
+        f'<p style="font-size:.78em;color:var(--ink-faint);margin-top:8px">'
+        f'<a href="{prefix}privacy.html" style="color:var(--ink-faint)">プライバシーポリシー</a>'
+        f'</p>'
         '</div></footer>'
     )
 

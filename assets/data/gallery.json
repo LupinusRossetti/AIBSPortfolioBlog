@@ -1,0 +1,2733 @@
+{
+  "chars": [
+    {
+      "id": "lupinus",
+      "total": 200,
+      "by_cat": {
+        "seiso": 50,
+        "genki": 50,
+        "kawaii": 50,
+        "sexy": 50
+      }
+    },
+    {
+      "id": "iris",
+      "total": 0,
+      "by_cat": {
+        "seiso": 0,
+        "genki": 0,
+        "kawaii": 0,
+        "sexy": 0
+      }
+    },
+    {
+      "id": "fiona",
+      "total": 0,
+      "by_cat": {
+        "seiso": 0,
+        "genki": 0,
+        "kawaii": 0,
+        "sexy": 0
+      }
+    }
+  ],
+  "items": [
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_01_library",
+      "caption": "図書館で本に集中するルピナス",
+      "tags": [
+        "読書",
+        "集中",
+        "頑張ってる",
+        "春"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_01_library.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_01_library.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_02_engawa_tea",
+      "caption": "縁側でお茶をどうぞ",
+      "tags": [
+        "和装",
+        "愛",
+        "朝",
+        "夏"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_02_engawa_tea.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_02_engawa_tea.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_03_chapel",
+      "caption": "礼拝堂で振り向くルピナス",
+      "tags": [
+        "振り向き",
+        "微笑",
+        "静寂"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_03_chapel.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_03_chapel.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_04_lake_bench",
+      "caption": "湖畔のベンチで物思いに耽る",
+      "tags": [
+        "湖",
+        "朝",
+        "物思い",
+        "秋"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_04_lake_bench.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_04_lake_bench.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_05_greenhouse",
+      "caption": "温室でユリを活ける",
+      "tags": [
+        "花",
+        "集中",
+        "頑張ってる",
+        "朝"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_05_greenhouse.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_05_greenhouse.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_06_calligraphy",
+      "caption": "書道に打ち込むルピナス",
+      "tags": [
+        "書道",
+        "集中",
+        "頑張ってる",
+        "和装"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_06_calligraphy.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_06_calligraphy.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_07_piano_practice",
+      "caption": "ピアノの旋律に酔うルピナス",
+      "tags": [
+        "ピアノ",
+        "音楽",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_07_piano_practice.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_07_piano_practice.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_08_tea_ceremony",
+      "caption": "茶道のお稽古中のルピナス",
+      "tags": [
+        "茶道",
+        "和装",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_08_tea_ceremony.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_08_tea_ceremony.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_09_studying_night",
+      "caption": "夜遅くまで勉強するルピナス",
+      "tags": [
+        "勉強",
+        "頑張ってる",
+        "夜",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_09_studying_night.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_09_studying_night.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_10_painting",
+      "caption": "絵画を描くルピナス",
+      "tags": [
+        "絵画",
+        "創作",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_10_painting.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_10_painting.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_11_window_rain",
+      "caption": "雨の窓辺で物思うルピナス",
+      "tags": [
+        "雨",
+        "哀",
+        "物思い",
+        "秋"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_11_window_rain.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_11_window_rain.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_12_shrine_omikuji",
+      "caption": "神社でおみくじを引くルピナス",
+      "tags": [
+        "神社",
+        "和装",
+        "愛",
+        "冬"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_12_shrine_omikuji.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_12_shrine_omikuji.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_13_garden_reading",
+      "caption": "藤棚の下で読書するルピナス",
+      "tags": [
+        "読書",
+        "花",
+        "春",
+        "庭"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_13_garden_reading.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_13_garden_reading.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_14_violin_practice",
+      "caption": "バイオリンを奏でるルピナス",
+      "tags": [
+        "音楽",
+        "楽器",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_14_violin_practice.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_14_violin_practice.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_15_dawn_window",
+      "caption": "夜明けの窓辺に立つルピナス",
+      "tags": [
+        "朝",
+        "物思い",
+        "夜明け"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_15_dawn_window.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_15_dawn_window.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_16_swan_lake_walk",
+      "caption": "白いユリと湖畔を歩くルピナス",
+      "tags": [
+        "湖",
+        "花",
+        "秋",
+        "散策"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_16_swan_lake_walk.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_16_swan_lake_walk.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_17_cathedral_candle",
+      "caption": "大聖堂でロウソクを灯すルピナス",
+      "tags": [
+        "祈り",
+        "静寂",
+        "教会"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_17_cathedral_candle.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_17_cathedral_candle.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_18_letter_writing",
+      "caption": "手紙をしたためるルピナス",
+      "tags": [
+        "手紙",
+        "集中",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_18_letter_writing.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_18_letter_writing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_19_morning_yoga",
+      "caption": "朝の瞑想ヨガをするルピナス",
+      "tags": [
+        "瞑想",
+        "朝",
+        "健康"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_19_morning_yoga.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_19_morning_yoga.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_20_book_shop",
+      "caption": "古書店で本を選ぶルピナス",
+      "tags": [
+        "本",
+        "古書店",
+        "静寂"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_20_book_shop.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_20_book_shop.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_21_botanical_sketch",
+      "caption": "植物画を描くルピナス",
+      "tags": [
+        "絵画",
+        "創作",
+        "頑張ってる",
+        "庭"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_21_botanical_sketch.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_21_botanical_sketch.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_22_observatory_stars",
+      "caption": "星を観測するルピナス",
+      "tags": [
+        "星",
+        "夜",
+        "観測",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_22_observatory_stars.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_22_observatory_stars.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_23_winter_walk",
+      "caption": "雪降る公園を歩くルピナス",
+      "tags": [
+        "冬",
+        "散策",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_23_winter_walk.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_23_winter_walk.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_24_classroom_after",
+      "caption": "放課後の教室に佇むルピナス",
+      "tags": [
+        "学校",
+        "制服",
+        "物思い",
+        "放課後"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_24_classroom_after.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_24_classroom_after.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_25_reading_aloud",
+      "caption": "子供たちに読み聞かせるルピナス",
+      "tags": [
+        "読書",
+        "子供",
+        "愛",
+        "春"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_25_reading_aloud.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_25_reading_aloud.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_26_secret_garden",
+      "caption": "秘密の庭で植物を世話するルピナス",
+      "tags": [
+        "庭",
+        "集中",
+        "頑張ってる",
+        "春"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_26_secret_garden.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_26_secret_garden.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_27_misty_morning",
+      "caption": "朝霧の森を歩くルピナス",
+      "tags": [
+        "森",
+        "朝",
+        "物思い",
+        "神秘"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_27_misty_morning.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_27_misty_morning.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_28_tea_garden",
+      "caption": "茶庭を歩くルピナス",
+      "tags": [
+        "和装",
+        "庭",
+        "散策",
+        "夏"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_28_tea_garden.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_28_tea_garden.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_29_starlit_balcony",
+      "caption": "星空の下のルピナス",
+      "tags": [
+        "夜",
+        "星",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_29_starlit_balcony.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_29_starlit_balcony.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_30_autumn_leaves",
+      "caption": "紅葉とともにルピナス",
+      "tags": [
+        "秋",
+        "公園",
+        "紅葉",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_30_autumn_leaves.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_30_autumn_leaves.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_31_solo_violin",
+      "caption": "ソロバイオリンを奏でるルピナス",
+      "tags": [
+        "音楽",
+        "演奏",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_31_solo_violin.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_31_solo_violin.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_32_pottery",
+      "caption": "陶芸に挑むルピナス",
+      "tags": [
+        "陶芸",
+        "創作",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_32_pottery.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_32_pottery.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_33_flower_arranging",
+      "caption": "生け花を整えるルピナス",
+      "tags": [
+        "生け花",
+        "和装",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_33_flower_arranging.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_33_flower_arranging.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_34_train_window",
+      "caption": "旅の列車のルピナス",
+      "tags": [
+        "旅",
+        "物思い",
+        "哀"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_34_train_window.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_34_train_window.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_35_cafe_window",
+      "caption": "カフェの窓辺で読書するルピナス",
+      "tags": [
+        "読書",
+        "カフェ",
+        "物思い",
+        "冬"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_35_cafe_window.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_35_cafe_window.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_36_pre_dawn_walk",
+      "caption": "夜明け前の庭を歩くルピナス",
+      "tags": [
+        "朝",
+        "庭",
+        "静寂"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_36_pre_dawn_walk.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_36_pre_dawn_walk.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_37_orchestral_practice",
+      "caption": "チェロの練習をするルピナス",
+      "tags": [
+        "音楽",
+        "楽器",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_37_orchestral_practice.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_37_orchestral_practice.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_38_letter_reading",
+      "caption": "古い手紙を読むルピナス",
+      "tags": [
+        "手紙",
+        "哀",
+        "物思い",
+        "夏"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_38_letter_reading.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_38_letter_reading.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_39_morning_prayer",
+      "caption": "朝の祈りを捧げるルピナス",
+      "tags": [
+        "祈り",
+        "朝",
+        "教会"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_39_morning_prayer.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_39_morning_prayer.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_40_archery",
+      "caption": "弓道の練習に励むルピナス",
+      "tags": [
+        "弓道",
+        "和装",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_40_archery.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_40_archery.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_41_lavender_field",
+      "caption": "ラベンダー畑のルピナス",
+      "tags": [
+        "花",
+        "夏",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_41_lavender_field.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_41_lavender_field.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_42_winter_book",
+      "caption": "暖炉の前で読書するルピナス",
+      "tags": [
+        "読書",
+        "冬",
+        "暖炉",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_42_winter_book.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_42_winter_book.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_43_classroom_thinking",
+      "caption": "教室の窓辺で考え事するルピナス",
+      "tags": [
+        "学校",
+        "物思い",
+        "制服"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_43_classroom_thinking.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_43_classroom_thinking.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_44_choir_solo",
+      "caption": "聖歌隊でソロを歌うルピナス",
+      "tags": [
+        "合唱",
+        "集中",
+        "頑張ってる",
+        "教会"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_44_choir_solo.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_44_choir_solo.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_45_dawn_pier",
+      "caption": "桟橋で夜明けを迎えるルピナス",
+      "tags": [
+        "海",
+        "朝",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_45_dawn_pier.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_45_dawn_pier.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_46_white_horse",
+      "caption": "白い馬と触れ合うルピナス",
+      "tags": [
+        "動物",
+        "愛",
+        "触れ合い",
+        "秋"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_46_white_horse.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_46_white_horse.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_47_morning_kitchen",
+      "caption": "朝の台所でお茶を淹れるルピナス",
+      "tags": [
+        "台所",
+        "朝",
+        "集中",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_47_morning_kitchen.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_47_morning_kitchen.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_48_cherry_blossom_view",
+      "caption": "桜を見上げるルピナス",
+      "tags": [
+        "桜",
+        "春",
+        "和装",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_48_cherry_blossom_view.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_48_cherry_blossom_view.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_49_library_step_ladder",
+      "caption": "図書館の高い本に手を伸ばすルピナス",
+      "tags": [
+        "読書",
+        "図書館",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_49_library_step_ladder.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_49_library_step_ladder.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "seiso",
+      "id": "seiso_50_solo_morning_tea",
+      "caption": "朝の一人時間を過ごすルピナス",
+      "tags": [
+        "朝",
+        "静寂",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_50_solo_morning_tea.webp",
+      "full": "images/gallery/lupinus/seiso/full/seiso_50_solo_morning_tea.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_01_tennis",
+      "caption": "テニスコートで振り向くルピナス",
+      "tags": [
+        "スポーツ",
+        "テニス",
+        "笑顔",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_01_tennis.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_01_tennis.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_02_beach_jump",
+      "caption": "海辺でジャンプするルピナス",
+      "tags": [
+        "海",
+        "夏",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_02_beach_jump.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_02_beach_jump.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_03_gym_vsign",
+      "caption": "体育館でWピースのルピナス",
+      "tags": [
+        "スポーツ",
+        "笑顔",
+        "愛",
+        "学校"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_03_gym_vsign.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_03_gym_vsign.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_04_sakura_run",
+      "caption": "桜並木を駆けるルピナス",
+      "tags": [
+        "桜",
+        "春",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_04_sakura_run.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_04_sakura_run.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_05_rooftop_sunset",
+      "caption": "屋上の夕日に両手を広げるルピナス",
+      "tags": [
+        "夕日",
+        "愛",
+        "屋上",
+        "解放感"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_05_rooftop_sunset.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_05_rooftop_sunset.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_06_idol_stage_pink",
+      "caption": "ピンクの衣装でアイドルライブ中のルピナス",
+      "tags": [
+        "アイドル",
+        "ステージ",
+        "笑顔",
+        "頑張ってる",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_06_idol_stage_pink.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_06_idol_stage_pink.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_07_idol_stage_cool",
+      "caption": "モノトーンクールアイドルのルピナス",
+      "tags": [
+        "アイドル",
+        "ステージ",
+        "クール",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_07_idol_stage_cool.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_07_idol_stage_cool.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_08_idol_stage_pastel",
+      "caption": "メルヘンアイドルのルピナス",
+      "tags": [
+        "アイドル",
+        "ステージ",
+        "メルヘン",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_08_idol_stage_pastel.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_08_idol_stage_pastel.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_09_idol_stage_wafu",
+      "caption": "和風アイドルのルピナス",
+      "tags": [
+        "アイドル",
+        "ステージ",
+        "和風",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_09_idol_stage_wafu.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_09_idol_stage_wafu.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_10_soccer_kick",
+      "caption": "サッカーで本気のシュートを放つルピナス",
+      "tags": [
+        "スポーツ",
+        "サッカー",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_10_soccer_kick.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_10_soccer_kick.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_11_basketball_dunk",
+      "caption": "バスケでダンクを決めるルピナス",
+      "tags": [
+        "スポーツ",
+        "バスケ",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_11_basketball_dunk.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_11_basketball_dunk.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_12_track_finish",
+      "caption": "トラックでゴールを切るルピナス",
+      "tags": [
+        "スポーツ",
+        "陸上",
+        "達成感",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_12_track_finish.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_12_track_finish.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_13_volleyball_spike",
+      "caption": "バレーでスパイクを決めるルピナス",
+      "tags": [
+        "スポーツ",
+        "バレー",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_13_volleyball_spike.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_13_volleyball_spike.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_14_swimming_pool_dive",
+      "caption": "プールに飛び込むルピナス",
+      "tags": [
+        "スポーツ",
+        "水泳",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_14_swimming_pool_dive.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_14_swimming_pool_dive.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_15_cheerleader",
+      "caption": "チアリーダーで跳ねるルピナス",
+      "tags": [
+        "チア",
+        "笑顔",
+        "スポーツ",
+        "学校"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_15_cheerleader.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_15_cheerleader.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_16_marching_trumpet",
+      "caption": "マーチングバンドでトランペットのルピナス",
+      "tags": [
+        "音楽",
+        "パレード",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_16_marching_trumpet.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_16_marching_trumpet.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_17_gymnastics_ribbon",
+      "caption": "新体操のリボン演技中のルピナス",
+      "tags": [
+        "スポーツ",
+        "新体操",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_17_gymnastics_ribbon.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_17_gymnastics_ribbon.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_18_skateboard_ollie",
+      "caption": "スケートボードでオーリーを決めるルピナス",
+      "tags": [
+        "スポーツ",
+        "スケボー",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_18_skateboard_ollie.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_18_skateboard_ollie.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_19_summer_festival_yo",
+      "caption": "夏祭りで綿菓子を持って跳ねるルピナス",
+      "tags": [
+        "夏",
+        "祭り",
+        "和装",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_19_summer_festival_yo.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_19_summer_festival_yo.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_20_skiing_slope",
+      "caption": "ゲレンデを滑り降りるルピナス",
+      "tags": [
+        "冬",
+        "スキー",
+        "スポーツ",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_20_skiing_slope.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_20_skiing_slope.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_21_summer_kite",
+      "caption": "凧を揚げて駆けるルピナス",
+      "tags": [
+        "夏",
+        "海",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_21_summer_kite.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_21_summer_kite.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_22_baseball_swing",
+      "caption": "野球でヒットを打つルピナス",
+      "tags": [
+        "スポーツ",
+        "野球",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_22_baseball_swing.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_22_baseball_swing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_23_yoga_sun",
+      "caption": "朝の太陽礼拝するルピナス",
+      "tags": [
+        "ヨガ",
+        "朝",
+        "健康",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_23_yoga_sun.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_23_yoga_sun.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_24_zipline",
+      "caption": "ジップラインで滑走するルピナス",
+      "tags": [
+        "冒険",
+        "笑顔",
+        "自然"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_24_zipline.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_24_zipline.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_25_climbing",
+      "caption": "ボルダリングに挑むルピナス",
+      "tags": [
+        "スポーツ",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_25_climbing.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_25_climbing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_26_dance_studio",
+      "caption": "ダンススタジオで跳躍するルピナス",
+      "tags": [
+        "ダンス",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_26_dance_studio.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_26_dance_studio.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_27_park_dog_play",
+      "caption": "犬とフリスビーで遊ぶルピナス",
+      "tags": [
+        "愛",
+        "動物",
+        "公園",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_27_park_dog_play.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_27_park_dog_play.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_28_summer_water_balloon",
+      "caption": "水風船を投げて笑うルピナス",
+      "tags": [
+        "夏",
+        "笑顔",
+        "遊び"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_28_summer_water_balloon.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_28_summer_water_balloon.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_29_school_festival",
+      "caption": "文化祭で呼び込みするルピナス",
+      "tags": [
+        "学校",
+        "祭り",
+        "笑顔",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_29_school_festival.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_29_school_festival.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_30_snowball_throw",
+      "caption": "雪合戦のルピナス",
+      "tags": [
+        "冬",
+        "笑顔",
+        "遊び"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_30_snowball_throw.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_30_snowball_throw.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_31_idol_practice_studio",
+      "caption": "アイドルの練習に励むルピナス",
+      "tags": [
+        "アイドル",
+        "ダンス",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_31_idol_practice_studio.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_31_idol_practice_studio.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_32_idol_recording",
+      "caption": "レコーディングするルピナス",
+      "tags": [
+        "アイドル",
+        "音楽",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_32_idol_recording.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_32_idol_recording.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_33_concert_idol_white",
+      "caption": "ソロライブで感極まるルピナス",
+      "tags": [
+        "アイドル",
+        "ステージ",
+        "愛",
+        "頑張ってる",
+        "哀"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_33_concert_idol_white.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_33_concert_idol_white.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_34_jogging_morning",
+      "caption": "朝のジョギング中のルピナス",
+      "tags": [
+        "健康",
+        "朝",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_34_jogging_morning.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_34_jogging_morning.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_35_horse_riding",
+      "caption": "乗馬を楽しむルピナス",
+      "tags": [
+        "スポーツ",
+        "動物",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_35_horse_riding.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_35_horse_riding.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_36_high_dive",
+      "caption": "飛び込み台から飛ぶルピナス",
+      "tags": [
+        "スポーツ",
+        "水泳",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_36_high_dive.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_36_high_dive.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_37_park_bicycle",
+      "caption": "自転車で公園を走るルピナス",
+      "tags": [
+        "愛",
+        "笑顔",
+        "公園"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_37_park_bicycle.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_37_park_bicycle.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_38_jump_rope",
+      "caption": "縄跳びで跳ねるルピナス",
+      "tags": [
+        "遊び",
+        "笑顔",
+        "健康"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_38_jump_rope.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_38_jump_rope.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_39_idol_signed",
+      "caption": "ファンに笑顔でサインするルピナス",
+      "tags": [
+        "アイドル",
+        "愛",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_39_idol_signed.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_39_idol_signed.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_40_beach_volleyball",
+      "caption": "ビーチバレーのルピナス",
+      "tags": [
+        "夏",
+        "海",
+        "スポーツ",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_40_beach_volleyball.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_40_beach_volleyball.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_41_kindergarten_helper",
+      "caption": "子供たちに優しく接するルピナス",
+      "tags": [
+        "愛",
+        "笑顔",
+        "子供",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_41_kindergarten_helper.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_41_kindergarten_helper.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_42_band_drum",
+      "caption": "ドラムを叩くルピナス",
+      "tags": [
+        "音楽",
+        "ロック",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_42_band_drum.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_42_band_drum.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_43_kayaking",
+      "caption": "カヤックで川を進むルピナス",
+      "tags": [
+        "冒険",
+        "自然",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_43_kayaking.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_43_kayaking.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_44_concert_dance",
+      "caption": "ロックライブで叫ぶルピナス",
+      "tags": [
+        "音楽",
+        "ロック",
+        "ライブ",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_44_concert_dance.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_44_concert_dance.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_45_outdoor_camp",
+      "caption": "キャンプ場で焚火を楽しむルピナス",
+      "tags": [
+        "自然",
+        "笑顔",
+        "夜"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_45_outdoor_camp.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_45_outdoor_camp.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_46_ice_skating",
+      "caption": "フィギュアスケートを舞うルピナス",
+      "tags": [
+        "スポーツ",
+        "ダンス",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_46_ice_skating.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_46_ice_skating.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_47_school_relay",
+      "caption": "運動会のリレーでバトンを渡すルピナス",
+      "tags": [
+        "スポーツ",
+        "学校",
+        "愛",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_47_school_relay.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_47_school_relay.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_48_idol_backstage",
+      "caption": "ライブの合間に休憩するルピナス",
+      "tags": [
+        "アイドル",
+        "楽屋",
+        "哀",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_48_idol_backstage.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_48_idol_backstage.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_49_park_swing",
+      "caption": "ブランコで揺れるルピナス",
+      "tags": [
+        "公園",
+        "笑顔",
+        "遊び"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_49_park_swing.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_49_park_swing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "genki",
+      "id": "genki_50_fireworks_jump",
+      "caption": "花火大会で歓声を上げるルピナス",
+      "tags": [
+        "夏",
+        "祭り",
+        "花火",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/genki/thumbs/genki_50_fireworks_jump.webp",
+      "full": "images/gallery/lupinus/genki/full/genki_50_fireworks_jump.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_01_bed_morning",
+      "caption": "朝の甘えた笑顔のルピナス",
+      "tags": [
+        "朝",
+        "愛",
+        "ベッド",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_01_bed_morning.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_01_bed_morning.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_02_cafe_cheek",
+      "caption": "カフェで頬杖を突くルピナス",
+      "tags": [
+        "カフェ",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_02_cafe_cheek.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_02_cafe_cheek.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_03_kitchen_cookie",
+      "caption": "ハートのクッキーを差し出すルピナス",
+      "tags": [
+        "料理",
+        "愛",
+        "笑顔",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_03_kitchen_cookie.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_03_kitchen_cookie.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_04_festival_candy",
+      "caption": "りんご飴に目を輝かすルピナス",
+      "tags": [
+        "祭り",
+        "夏",
+        "和装",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_04_festival_candy.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_04_festival_candy.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_05_plush_hug",
+      "caption": "白うさぎを抱きしめるルピナス",
+      "tags": [
+        "愛",
+        "ぬいぐるみ",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_05_plush_hug.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_05_plush_hug.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_06_bento_smile",
+      "caption": "キャラ弁を作るルピナス",
+      "tags": [
+        "料理",
+        "頑張ってる",
+        "集中",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_06_bento_smile.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_06_bento_smile.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_07_present_open",
+      "caption": "プレゼントを開けるルピナス",
+      "tags": [
+        "愛",
+        "笑顔",
+        "プレゼント"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_07_present_open.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_07_present_open.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_08_pet_kitten",
+      "caption": "子猫を可愛がるルピナス",
+      "tags": [
+        "動物",
+        "愛",
+        "笑顔",
+        "触れ合い"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_08_pet_kitten.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_08_pet_kitten.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_09_drawing_pencil",
+      "caption": "お絵描きに夢中のルピナス",
+      "tags": [
+        "創作",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_09_drawing_pencil.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_09_drawing_pencil.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_10_baking_cake",
+      "caption": "バースデーケーキを飾るルピナス",
+      "tags": [
+        "料理",
+        "頑張ってる",
+        "集中",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_10_baking_cake.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_10_baking_cake.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_11_letter_writing_cute",
+      "caption": "想いを込めて手紙を書くルピナス",
+      "tags": [
+        "手紙",
+        "愛",
+        "物思い",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_11_letter_writing_cute.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_11_letter_writing_cute.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_12_piano_practice_cute",
+      "caption": "ピアノの練習に励む可愛いルピナス",
+      "tags": [
+        "音楽",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_12_piano_practice_cute.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_12_piano_practice_cute.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_13_dollhouse_play",
+      "caption": "ドールハウスで遊ぶルピナス",
+      "tags": [
+        "遊び",
+        "笑顔",
+        "ぬいぐるみ"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_13_dollhouse_play.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_13_dollhouse_play.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_14_ice_cream_share",
+      "caption": "アイスを分けてくれるルピナス",
+      "tags": [
+        "愛",
+        "夏",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_14_ice_cream_share.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_14_ice_cream_share.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_15_diary_writing",
+      "caption": "寝る前に日記を書くルピナス",
+      "tags": [
+        "日記",
+        "物思い",
+        "集中",
+        "夜"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_15_diary_writing.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_15_diary_writing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_16_braid_friend",
+      "caption": "髪を結う可愛いルピナス",
+      "tags": [
+        "日常",
+        "集中",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_16_braid_friend.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_16_braid_friend.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_17_picnic_basket",
+      "caption": "お弁当を広げるルピナス",
+      "tags": [
+        "春",
+        "愛",
+        "笑顔",
+        "自然"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_17_picnic_basket.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_17_picnic_basket.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_18_animal_cafe",
+      "caption": "猫カフェで猫たちと触れ合うルピナス",
+      "tags": [
+        "動物",
+        "愛",
+        "笑顔",
+        "触れ合い"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_18_animal_cafe.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_18_animal_cafe.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_19_morning_stretch",
+      "caption": "朝起きて伸びをするルピナス",
+      "tags": [
+        "朝",
+        "仕草",
+        "ベッド"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_19_morning_stretch.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_19_morning_stretch.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_20_painting_face",
+      "caption": "絵画を楽しむ可愛いルピナス",
+      "tags": [
+        "創作",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_20_painting_face.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_20_painting_face.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_21_balloon_kid",
+      "caption": "風船を持って嬉しそうなルピナス",
+      "tags": [
+        "遊び",
+        "笑顔",
+        "春"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_21_balloon_kid.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_21_balloon_kid.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_22_morning_pancake",
+      "caption": "パンケーキを焼くルピナス",
+      "tags": [
+        "料理",
+        "朝",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_22_morning_pancake.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_22_morning_pancake.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_23_dress_up",
+      "caption": "コーディネートに迷うルピナス",
+      "tags": [
+        "日常",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_23_dress_up.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_23_dress_up.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_24_origami_crane",
+      "caption": "折り紙で鶴を折るルピナス",
+      "tags": [
+        "集中",
+        "頑張ってる",
+        "和装"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_24_origami_crane.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_24_origami_crane.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_25_birthday_cake_blow",
+      "caption": "バースデーケーキの蝋燭を吹くルピナス",
+      "tags": [
+        "愛",
+        "笑顔",
+        "誕生日"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_25_birthday_cake_blow.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_25_birthday_cake_blow.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_26_grocery_shop",
+      "caption": "市場でお買い物のルピナス",
+      "tags": [
+        "日常",
+        "笑顔",
+        "市場"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_26_grocery_shop.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_26_grocery_shop.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_27_homework_focus",
+      "caption": "宿題に集中するルピナス",
+      "tags": [
+        "勉強",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_27_homework_focus.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_27_homework_focus.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_28_grocery_carry",
+      "caption": "買い物から帰ったルピナス",
+      "tags": [
+        "日常",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_28_grocery_carry.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_28_grocery_carry.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_29_strawberry_pick",
+      "caption": "いちごを摘むルピナス",
+      "tags": [
+        "夏",
+        "自然",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_29_strawberry_pick.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_29_strawberry_pick.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_30_sundress_spin",
+      "caption": "花畑でくるくる回るルピナス",
+      "tags": [
+        "春",
+        "笑顔",
+        "解放感"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_30_sundress_spin.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_30_sundress_spin.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_31_christmas_lights",
+      "caption": "クリスマスツリーを飾るルピナス",
+      "tags": [
+        "冬",
+        "クリスマス",
+        "頑張ってる",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_31_christmas_lights.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_31_christmas_lights.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_32_garden_water",
+      "caption": "お庭に水やりをするルピナス",
+      "tags": [
+        "庭",
+        "愛",
+        "朝"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_32_garden_water.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_32_garden_water.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_33_book_share",
+      "caption": "絵本を一緒に読むルピナス",
+      "tags": [
+        "読書",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_33_book_share.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_33_book_share.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_34_cherry_blossom_picnic",
+      "caption": "お花見をするルピナス",
+      "tags": [
+        "春",
+        "桜",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_34_cherry_blossom_picnic.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_34_cherry_blossom_picnic.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_35_dollhouse_focus",
+      "caption": "ドールハウスを整えるルピナス",
+      "tags": [
+        "創作",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_35_dollhouse_focus.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_35_dollhouse_focus.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_36_tea_party",
+      "caption": "ぬいぐるみとお茶会のルピナス",
+      "tags": [
+        "遊び",
+        "愛",
+        "ぬいぐるみ"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_36_tea_party.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_36_tea_party.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_37_macaron_taste",
+      "caption": "マカロンの味に幸せそうなルピナス",
+      "tags": [
+        "料理",
+        "笑顔",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_37_macaron_taste.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_37_macaron_taste.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_38_park_dog_walk",
+      "caption": "子犬とお散歩のルピナス",
+      "tags": [
+        "動物",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_38_park_dog_walk.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_38_park_dog_walk.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_39_diary_dream",
+      "caption": "寝る前の日記タイムのルピナス",
+      "tags": [
+        "日記",
+        "物思い",
+        "夜"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_39_diary_dream.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_39_diary_dream.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_40_apple_pick",
+      "caption": "リンゴ狩りのルピナス",
+      "tags": [
+        "秋",
+        "自然",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_40_apple_pick.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_40_apple_pick.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_41_yarn_kitten",
+      "caption": "子猫と毛糸で遊ぶルピナス",
+      "tags": [
+        "動物",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_41_yarn_kitten.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_41_yarn_kitten.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_42_lemon_squeeze",
+      "caption": "夏のレモネードを作るルピナス",
+      "tags": [
+        "料理",
+        "夏",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_42_lemon_squeeze.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_42_lemon_squeeze.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_43_basketball_practice_cute",
+      "caption": "体育の練習をするルピナス",
+      "tags": [
+        "スポーツ",
+        "頑張ってる",
+        "集中",
+        "学校"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_43_basketball_practice_cute.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_43_basketball_practice_cute.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_44_book_carry",
+      "caption": "本を抱えて運ぶルピナス",
+      "tags": [
+        "読書",
+        "頑張ってる",
+        "図書館"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_44_book_carry.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_44_book_carry.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_45_window_sketch",
+      "caption": "窓辺でスケッチするルピナス",
+      "tags": [
+        "創作",
+        "集中",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_45_window_sketch.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_45_window_sketch.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_46_caramel_pudding",
+      "caption": "プリンに幸せそうなルピナス",
+      "tags": [
+        "料理",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_46_caramel_pudding.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_46_caramel_pudding.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_47_morning_brushing",
+      "caption": "朝の身支度をするルピナス",
+      "tags": [
+        "朝",
+        "日常",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_47_morning_brushing.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_47_morning_brushing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_48_seasonal_souvenir",
+      "caption": "旅先でお土産を見つけたルピナス",
+      "tags": [
+        "旅",
+        "愛",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_48_seasonal_souvenir.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_48_seasonal_souvenir.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_49_picnic_sandwich",
+      "caption": "ピクニックでサンドイッチのルピナス",
+      "tags": [
+        "愛",
+        "自然",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_49_picnic_sandwich.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_49_picnic_sandwich.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "kawaii",
+      "id": "kawaii_50_thank_you",
+      "caption": "感謝の花束を渡すルピナス",
+      "tags": [
+        "愛",
+        "花",
+        "笑顔"
+      ],
+      "thumb": "images/gallery/lupinus/kawaii/thumbs/kawaii_50_thank_you.webp",
+      "full": "images/gallery/lupinus/kawaii/full/kawaii_50_thank_you.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_01_bf_shirt",
+      "caption": "朝の彼シャツのルピナス",
+      "tags": [
+        "朝",
+        "ベッド",
+        "愛",
+        "振り向き"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_01_bf_shirt.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_01_bf_shirt.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_02_balcony_night",
+      "caption": "バルコニーで夜風に当たるルピナス",
+      "tags": [
+        "夜",
+        "バルコニー",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_02_balcony_night.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_02_balcony_night.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_03_fireplace_sofa",
+      "caption": "暖炉の前のルピナス",
+      "tags": [
+        "暖炉",
+        "愛",
+        "ニット",
+        "冬"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_03_fireplace_sofa.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_03_fireplace_sofa.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_04_vanity_lip",
+      "caption": "化粧台でリップを塗るルピナス",
+      "tags": [
+        "日常",
+        "愛",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_04_vanity_lip.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_04_vanity_lip.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_05_bath_towel",
+      "caption": "お風呂上がりのルピナス",
+      "tags": [
+        "お風呂上がり",
+        "愛",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_05_bath_towel.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_05_bath_towel.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_06_morning_yawn",
+      "caption": "朝のあくびをするルピナス",
+      "tags": [
+        "朝",
+        "ベッド",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_06_morning_yawn.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_06_morning_yawn.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_07_window_coffee",
+      "caption": "朝のコーヒーで物思うルピナス",
+      "tags": [
+        "朝",
+        "物思い",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_07_window_coffee.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_07_window_coffee.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_08_kitchen_morning",
+      "caption": "朝の台所のルピナス",
+      "tags": [
+        "朝",
+        "愛",
+        "台所"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_08_kitchen_morning.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_08_kitchen_morning.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_09_sofa_book",
+      "caption": "ソファで読書するルピナス",
+      "tags": [
+        "読書",
+        "愛",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_09_sofa_book.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_09_sofa_book.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_10_window_light",
+      "caption": "窓辺で朝陽に佇むルピナス",
+      "tags": [
+        "朝",
+        "物思い",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_10_window_light.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_10_window_light.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_11_office_break",
+      "caption": "仕事の合間のルピナス",
+      "tags": [
+        "仕事",
+        "大人",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_11_office_break.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_11_office_break.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_12_night_work",
+      "caption": "夜更かしで仕事するルピナス",
+      "tags": [
+        "夜",
+        "仕事",
+        "頑張ってる",
+        "集中"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_12_night_work.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_12_night_work.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_13_garden_evening",
+      "caption": "夕暮れの庭のルピナス",
+      "tags": [
+        "庭",
+        "夕方",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_13_garden_evening.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_13_garden_evening.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_14_balcony_morning",
+      "caption": "朝のバルコニーのルピナス",
+      "tags": [
+        "朝",
+        "バルコニー",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_14_balcony_morning.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_14_balcony_morning.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_15_hair_drying",
+      "caption": "髪を乾かすルピナス",
+      "tags": [
+        "お風呂上がり",
+        "仕草",
+        "日常"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_15_hair_drying.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_15_hair_drying.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_16_silk_robe_morning",
+      "caption": "朝食のルピナス",
+      "tags": [
+        "朝",
+        "愛",
+        "日常"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_16_silk_robe_morning.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_16_silk_robe_morning.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_17_book_bed",
+      "caption": "ベッドで本を読むルピナス",
+      "tags": [
+        "読書",
+        "物思い",
+        "夜"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_17_book_bed.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_17_book_bed.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_18_dance_practice_dim",
+      "caption": "ダンスの猛練習のルピナス",
+      "tags": [
+        "ダンス",
+        "頑張ってる",
+        "集中",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_18_dance_practice_dim.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_18_dance_practice_dim.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_19_bath_edge",
+      "caption": "お風呂に浸かる前のルピナス",
+      "tags": [
+        "お風呂",
+        "愛",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_19_bath_edge.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_19_bath_edge.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_20_kitchen_apron",
+      "caption": "料理を作るルピナス",
+      "tags": [
+        "料理",
+        "頑張ってる",
+        "日常",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_20_kitchen_apron.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_20_kitchen_apron.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_21_lingerie_mirror",
+      "caption": "鏡の前で髪を梳かすルピナス",
+      "tags": [
+        "日常",
+        "物思い",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_21_lingerie_mirror.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_21_lingerie_mirror.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_22_wine_glass",
+      "caption": "ワイングラスを傾けるルピナス",
+      "tags": [
+        "大人",
+        "物思い",
+        "夜"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_22_wine_glass.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_22_wine_glass.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_23_morning_tea_balcony",
+      "caption": "バルコニーで朝のお茶のルピナス",
+      "tags": [
+        "朝",
+        "バルコニー",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_23_morning_tea_balcony.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_23_morning_tea_balcony.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_24_after_workout",
+      "caption": "トレーニング後のルピナス",
+      "tags": [
+        "スポーツ",
+        "頑張ってる",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_24_after_workout.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_24_after_workout.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_25_concert_dress_after",
+      "caption": "演奏会後のルピナス",
+      "tags": [
+        "音楽",
+        "頑張ってる",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_25_concert_dress_after.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_25_concert_dress_after.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_26_evening_window",
+      "caption": "夕日の窓辺のルピナス",
+      "tags": [
+        "夕日",
+        "物思い",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_26_evening_window.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_26_evening_window.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_27_silk_robe_open",
+      "caption": "寝る前の支度のルピナス",
+      "tags": [
+        "夜",
+        "仕草",
+        "日常"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_27_silk_robe_open.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_27_silk_robe_open.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_28_hotel_balcony",
+      "caption": "ホテルのバルコニーで夜景を見るルピナス",
+      "tags": [
+        "夜",
+        "バルコニー",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_28_hotel_balcony.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_28_hotel_balcony.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_29_mirror_makeup",
+      "caption": "メイクをするルピナス",
+      "tags": [
+        "日常",
+        "集中",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_29_mirror_makeup.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_29_mirror_makeup.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_30_blanket_sofa",
+      "caption": "ブランケットで温まるルピナス",
+      "tags": [
+        "冬",
+        "愛",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_30_blanket_sofa.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_30_blanket_sofa.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_31_lamp_book",
+      "caption": "ベッドで本を読むルピナス",
+      "tags": [
+        "夜",
+        "読書",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_31_lamp_book.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_31_lamp_book.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_32_after_bath_window",
+      "caption": "お風呂上がりの曇った窓のルピナス",
+      "tags": [
+        "お風呂",
+        "物思い",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_32_after_bath_window.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_32_after_bath_window.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_33_kitchen_baking",
+      "caption": "お菓子作りに集中するルピナス",
+      "tags": [
+        "料理",
+        "集中",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_33_kitchen_baking.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_33_kitchen_baking.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_34_garden_swing",
+      "caption": "夕暮れの庭のブランコのルピナス",
+      "tags": [
+        "夕日",
+        "庭",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_34_garden_swing.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_34_garden_swing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_35_window_writing",
+      "caption": "窓辺で日記を書くルピナス",
+      "tags": [
+        "物思い",
+        "集中",
+        "日記"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_35_window_writing.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_35_window_writing.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_36_silk_robe_morning_stretch",
+      "caption": "朝起きて伸びをするルピナス",
+      "tags": [
+        "朝",
+        "仕草",
+        "ベッド"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_36_silk_robe_morning_stretch.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_36_silk_robe_morning_stretch.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_37_bath_candle",
+      "caption": "バスタイムの準備のルピナス",
+      "tags": [
+        "お風呂",
+        "集中",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_37_bath_candle.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_37_bath_candle.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_38_concert_violin_recital",
+      "caption": "演奏会で奏でるルピナス",
+      "tags": [
+        "音楽",
+        "頑張ってる",
+        "集中",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_38_concert_violin_recital.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_38_concert_violin_recital.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_39_perfume_apply",
+      "caption": "香水をつけるルピナス",
+      "tags": [
+        "日常",
+        "仕草",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_39_perfume_apply.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_39_perfume_apply.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_40_balcony_breeze",
+      "caption": "バルコニーで風に当たるルピナス",
+      "tags": [
+        "夕方",
+        "バルコニー",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_40_balcony_breeze.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_40_balcony_breeze.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_41_letter_read",
+      "caption": "手紙を読むルピナス",
+      "tags": [
+        "手紙",
+        "物思い",
+        "哀"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_41_letter_read.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_41_letter_read.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_42_studio_dance_solo",
+      "caption": "一人でダンス練習するルピナス",
+      "tags": [
+        "ダンス",
+        "頑張ってる",
+        "集中",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_42_studio_dance_solo.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_42_studio_dance_solo.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_43_silk_sleep",
+      "caption": "安らかに眠るルピナス",
+      "tags": [
+        "夜",
+        "ベッド",
+        "物思い",
+        "愛"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_43_silk_sleep.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_43_silk_sleep.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_44_morning_yoga_silk",
+      "caption": "朝のヨガのルピナス",
+      "tags": [
+        "朝",
+        "ヨガ",
+        "健康"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_44_morning_yoga_silk.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_44_morning_yoga_silk.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_45_office_evening",
+      "caption": "残業後の窓辺のルピナス",
+      "tags": [
+        "仕事",
+        "夜",
+        "物思い",
+        "頑張ってる"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_45_office_evening.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_45_office_evening.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_46_mirror_jewelry",
+      "caption": "ネックレスをつけるルピナス",
+      "tags": [
+        "日常",
+        "仕草",
+        "大人"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_46_mirror_jewelry.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_46_mirror_jewelry.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_47_recline_lounge",
+      "caption": "ラウンジでくつろぐルピナス",
+      "tags": [
+        "大人",
+        "愛",
+        "日常"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_47_recline_lounge.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_47_recline_lounge.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_48_late_kitchen_tea",
+      "caption": "深夜のお茶のルピナス",
+      "tags": [
+        "夜",
+        "台所",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_48_late_kitchen_tea.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_48_late_kitchen_tea.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_49_mirror_ribbon",
+      "caption": "髪にリボンを結ぶルピナス",
+      "tags": [
+        "日常",
+        "集中",
+        "仕草"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_49_mirror_ribbon.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_49_mirror_ribbon.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "sexy",
+      "id": "sexy_50_window_dawn",
+      "caption": "夜明けを迎えるルピナス",
+      "tags": [
+        "朝",
+        "夜明け",
+        "物思い"
+      ],
+      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_50_window_dawn.webp",
+      "full": "images/gallery/lupinus/sexy/full/sexy_50_window_dawn.webp"
+    }
+  ]
+}

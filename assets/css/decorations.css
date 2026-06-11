@@ -1,0 +1,233 @@
+/* ============================================================
+   Page Decorations — ページ全体に流れる装飾アニメ
+   body class でパターン切替（各ページに異なる装飾）
+   ============================================================ */
+
+.page-decor {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ページ全体にアニメを行き届かせるための背景透過化 */
+html { background: linear-gradient(180deg, #fefcff 0%, #fbfaf8 100%) fixed; }
+body.decor-page {
+  background: transparent !important;
+  position: relative;
+}
+
+/* 主要セクションは半透明にしてアニメを透過させる */
+body.decor-page .site-header { background: rgba(255, 255, 255, 0.82) !important; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); position: relative; z-index: 50; }
+body.decor-page main,
+body.decor-page .gallery-page,
+body.decor-page > section { background: transparent !important; position: relative; z-index: 2; }
+body.decor-page .section,
+body.decor-page section.veil,
+body.decor-page .gallery-hero,
+body.decor-page .gallery-tabs { background-color: rgba(255, 255, 255, 0.65) !important; position: relative; z-index: 2; }
+body.decor-page .site-footer { background: rgba(255, 255, 255, 0.7) !important; position: relative; z-index: 2; }
+
+/* カードやモーダル等のz-indexは個別CSSで管理 */
+
+.decor-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* ========== Pattern: Sakura（桜が舞う）+ Twinkle ========== */
+.decor-sakura-layer i {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -30px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><g fill='%23f4d6ea'><ellipse cx='10' cy='3' rx='2.6' ry='3.5'/><ellipse cx='16.5' cy='7.5' rx='2.6' ry='3.5' transform='rotate(72 16.5 7.5)'/><ellipse cx='14' cy='15.5' rx='2.6' ry='3.5' transform='rotate(144 14 15.5)'/><ellipse cx='6' cy='15.5' rx='2.6' ry='3.5' transform='rotate(216 6 15.5)'/><ellipse cx='3.5' cy='7.5' rx='2.6' ry='3.5' transform='rotate(288 3.5 7.5)'/></g></svg>") center/contain no-repeat;
+  opacity: 0;
+  animation: drift 20s linear infinite;
+}
+@keyframes drift {
+  0%   { top: -30px;   opacity: 0;    transform: translateX(0) rotate(0deg); }
+  10%  { opacity: 0.75; }
+  90%  { opacity: 0.75; }
+  100% { top: 110vh;   opacity: 0;    transform: translateX(80px) rotate(540deg); }
+}
+.decor-sakura-layer i:nth-child(1)  { left: 5%;  animation-delay: 0s;    animation-duration: 18s; }
+.decor-sakura-layer i:nth-child(2)  { left: 14%; animation-delay: -4s;   animation-duration: 22s; transform: scale(1.3); }
+.decor-sakura-layer i:nth-child(3)  { left: 23%; animation-delay: -8s;   animation-duration: 16s; transform: scale(0.7); }
+.decor-sakura-layer i:nth-child(4)  { left: 32%; animation-delay: -12s;  animation-duration: 20s; }
+.decor-sakura-layer i:nth-child(5)  { left: 41%; animation-delay: -2s;   animation-duration: 19s; transform: scale(1.1); }
+.decor-sakura-layer i:nth-child(6)  { left: 50%; animation-delay: -6s;   animation-duration: 21s; transform: scale(0.9); }
+.decor-sakura-layer i:nth-child(7)  { left: 59%; animation-delay: -10s;  animation-duration: 17s; transform: scale(0.8); }
+.decor-sakura-layer i:nth-child(8)  { left: 68%; animation-delay: -14s;  animation-duration: 23s; transform: scale(1.2); }
+.decor-sakura-layer i:nth-child(9)  { left: 77%; animation-delay: -1s;   animation-duration: 18s; transform: scale(0.85); }
+.decor-sakura-layer i:nth-child(10) { left: 86%; animation-delay: -5s;   animation-duration: 20s; transform: scale(1.0); }
+.decor-sakura-layer i:nth-child(11) { left: 95%; animation-delay: -9s;   animation-duration: 19s; transform: scale(0.75); }
+.decor-sakura-layer i:nth-child(12) { left: 10%; animation-delay: -13s;  animation-duration: 22s; transform: scale(1.1); }
+.decor-sakura-layer i:nth-child(13) { left: 45%; animation-delay: -16s;  animation-duration: 17s; transform: scale(0.9); }
+.decor-sakura-layer i:nth-child(14) { left: 73%; animation-delay: -7s;   animation-duration: 21s; transform: scale(0.8); }
+.decor-sakura-layer i:nth-child(15) { left: 90%; animation-delay: -3s;   animation-duration: 18s; }
+
+.decor-twinkle-layer span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #fff 0%, #f4d6ea 40%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle 3.5s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50%      { opacity: 0.9; transform: scale(1.3); }
+}
+.decor-twinkle-layer span:nth-child(1)  { top: 8%;  left: 6%;   animation-delay: 0s;   }
+.decor-twinkle-layer span:nth-child(2)  { top: 18%; left: 88%;  animation-delay: 0.5s; }
+.decor-twinkle-layer span:nth-child(3)  { top: 32%; left: 22%;  animation-delay: 1.0s; }
+.decor-twinkle-layer span:nth-child(4)  { top: 48%; left: 75%;  animation-delay: 1.5s; }
+.decor-twinkle-layer span:nth-child(5)  { top: 60%; left: 12%;  animation-delay: 2.0s; }
+.decor-twinkle-layer span:nth-child(6)  { top: 70%; left: 60%;  animation-delay: 2.5s; }
+.decor-twinkle-layer span:nth-child(7)  { top: 85%; left: 30%;  animation-delay: 0.7s; }
+.decor-twinkle-layer span:nth-child(8)  { top: 92%; left: 82%;  animation-delay: 1.7s; }
+.decor-twinkle-layer span:nth-child(9)  { top: 25%; left: 50%;  animation-delay: 2.3s; }
+.decor-twinkle-layer span:nth-child(10) { top: 78%; left: 95%;  animation-delay: 1.2s; }
+
+/* ========== Pattern: Bubbles（ふわふわバブル）— blog ========== */
+.decor-bubble-layer i {
+  position: absolute;
+  bottom: -40px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(201,168,92,0.25) 65%, transparent 75%);
+  border: 1px solid rgba(201, 168, 92, 0.3);
+  opacity: 0;
+  animation: bubbleRise 14s linear infinite;
+}
+@keyframes bubbleRise {
+  0%   { bottom: -40px;   opacity: 0;    transform: translateX(0) scale(0.8); }
+  10%  { opacity: 0.7; }
+  90%  { opacity: 0.7; }
+  100% { bottom: 110vh;   opacity: 0;    transform: translateX(40px) scale(1.2); }
+}
+.decor-bubble-layer i:nth-child(1)  { left: 5%;  animation-delay: 0s;   animation-duration: 13s; }
+.decor-bubble-layer i:nth-child(2)  { left: 12%; animation-delay: -3s;  animation-duration: 16s; transform: scale(1.5); }
+.decor-bubble-layer i:nth-child(3)  { left: 22%; animation-delay: -6s;  animation-duration: 12s; }
+.decor-bubble-layer i:nth-child(4)  { left: 33%; animation-delay: -9s;  animation-duration: 15s; transform: scale(0.7); }
+.decor-bubble-layer i:nth-child(5)  { left: 42%; animation-delay: -2s;  animation-duration: 14s; }
+.decor-bubble-layer i:nth-child(6)  { left: 53%; animation-delay: -5s;  animation-duration: 17s; transform: scale(1.2); }
+.decor-bubble-layer i:nth-child(7)  { left: 62%; animation-delay: -8s;  animation-duration: 13s; transform: scale(0.9); }
+.decor-bubble-layer i:nth-child(8)  { left: 72%; animation-delay: -11s; animation-duration: 16s; }
+.decor-bubble-layer i:nth-child(9)  { left: 81%; animation-delay: -1s;  animation-duration: 15s; transform: scale(1.3); }
+.decor-bubble-layer i:nth-child(10) { left: 90%; animation-delay: -4s;  animation-duration: 13s; transform: scale(0.8); }
+.decor-bubble-layer i:nth-child(11) { left: 27%; animation-delay: -12s; animation-duration: 18s; transform: scale(1.1); }
+.decor-bubble-layer i:nth-child(12) { left: 67%; animation-delay: -7s;  animation-duration: 14s; }
+
+/* ========== Pattern: Hearts（ハート）— sns ========== */
+.decor-heart-layer i {
+  position: absolute;
+  bottom: -30px;
+  width: 14px; height: 14px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23e0809a' d='M12 21s-7-4.5-9.5-9.2C0.7 8 2 4 6 4c2 0 3.5 1 4.5 2.5C11.5 5 13 4 15 4c4 0 5.3 4 3.5 7.8C19 16.5 12 21 12 21z'/></svg>") center/contain no-repeat;
+  opacity: 0;
+  animation: heartFloat 12s ease-in infinite;
+}
+@keyframes heartFloat {
+  0%   { bottom: -30px;  opacity: 0;    transform: translateX(0) scale(0.6); }
+  15%  { opacity: 0.65; }
+  85%  { opacity: 0.65; }
+  100% { bottom: 110vh;  opacity: 0;    transform: translateX(-30px) scale(1.2); }
+}
+.decor-heart-layer i:nth-child(1)  { left: 8%;  animation-delay: 0s;   animation-duration: 12s; }
+.decor-heart-layer i:nth-child(2)  { left: 18%; animation-delay: -3s;  animation-duration: 14s; transform: scale(1.2); }
+.decor-heart-layer i:nth-child(3)  { left: 28%; animation-delay: -6s;  animation-duration: 11s; transform: scale(0.8); }
+.decor-heart-layer i:nth-child(4)  { left: 38%; animation-delay: -9s;  animation-duration: 13s; }
+.decor-heart-layer i:nth-child(5)  { left: 48%; animation-delay: -2s;  animation-duration: 15s; transform: scale(1.1); }
+.decor-heart-layer i:nth-child(6)  { left: 58%; animation-delay: -5s;  animation-duration: 12s; transform: scale(0.9); }
+.decor-heart-layer i:nth-child(7)  { left: 68%; animation-delay: -8s;  animation-duration: 14s; }
+.decor-heart-layer i:nth-child(8)  { left: 78%; animation-delay: -11s; animation-duration: 13s; transform: scale(1.0); }
+.decor-heart-layer i:nth-child(9)  { left: 88%; animation-delay: -1s;  animation-duration: 11s; transform: scale(1.3); }
+.decor-heart-layer i:nth-child(10) { left: 95%; animation-delay: -4s;  animation-duration: 15s; transform: scale(0.7); }
+
+/* ========== Pattern: Stars（金星が流れる）— portfolio/work ========== */
+.decor-star-layer i {
+  position: absolute;
+  top: -30px;
+  width: 14px; height: 14px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23c9a85c' d='M12 2l3 7h7l-5.5 4.5 2 7.5L12 17l-6.5 4 2-7.5L2 9h7z'/></svg>") center/contain no-repeat;
+  opacity: 0;
+  animation: starFall 16s linear infinite;
+}
+@keyframes starFall {
+  0%   { top: -30px;   opacity: 0;    transform: rotate(0deg); }
+  10%  { opacity: 0.7; }
+  90%  { opacity: 0.7; }
+  100% { top: 110vh;   opacity: 0;    transform: translateX(-50px) rotate(720deg); }
+}
+.decor-star-layer i:nth-child(1)  { left: 6%;  animation-delay: 0s;   animation-duration: 14s; }
+.decor-star-layer i:nth-child(2)  { left: 16%; animation-delay: -3s;  animation-duration: 17s; transform: scale(1.2); }
+.decor-star-layer i:nth-child(3)  { left: 26%; animation-delay: -6s;  animation-duration: 13s; transform: scale(0.7); }
+.decor-star-layer i:nth-child(4)  { left: 36%; animation-delay: -9s;  animation-duration: 16s; }
+.decor-star-layer i:nth-child(5)  { left: 46%; animation-delay: -12s; animation-duration: 18s; transform: scale(1.1); }
+.decor-star-layer i:nth-child(6)  { left: 56%; animation-delay: -2s;  animation-duration: 15s; }
+.decor-star-layer i:nth-child(7)  { left: 66%; animation-delay: -5s;  animation-duration: 14s; transform: scale(0.9); }
+.decor-star-layer i:nth-child(8)  { left: 76%; animation-delay: -8s;  animation-duration: 16s; transform: scale(0.8); }
+.decor-star-layer i:nth-child(9)  { left: 86%; animation-delay: -11s; animation-duration: 17s; transform: scale(1.3); }
+.decor-star-layer i:nth-child(10) { left: 95%; animation-delay: -1s;  animation-duration: 15s; }
+
+/* ========== Pattern: Leaves（葉っぱ）— about/archive ========== */
+.decor-leaf-layer i {
+  position: absolute;
+  top: -30px;
+  width: 16px; height: 16px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a9c89e' d='M12 2C8 6 4 10 4 16c0 3 2 5 5 5 3 0 6-2 7-5 1-4-1-10-4-14z'/></svg>") center/contain no-repeat;
+  opacity: 0;
+  animation: leafSway 20s ease-in-out infinite;
+}
+@keyframes leafSway {
+  0%   { top: -30px;   opacity: 0;    transform: translateX(0) rotate(0deg); }
+  10%  { opacity: 0.7; }
+  25%  { transform: translateX(40px) rotate(180deg); }
+  50%  { transform: translateX(-30px) rotate(360deg); }
+  75%  { transform: translateX(40px) rotate(540deg); }
+  90%  { opacity: 0.7; }
+  100% { top: 110vh;   opacity: 0;    transform: translateX(0) rotate(720deg); }
+}
+.decor-leaf-layer i:nth-child(1)  { left: 5%;  animation-delay: 0s;   animation-duration: 18s; }
+.decor-leaf-layer i:nth-child(2)  { left: 15%; animation-delay: -3s;  animation-duration: 22s; transform: scale(1.2); }
+.decor-leaf-layer i:nth-child(3)  { left: 25%; animation-delay: -7s;  animation-duration: 16s; transform: scale(0.8); }
+.decor-leaf-layer i:nth-child(4)  { left: 35%; animation-delay: -10s; animation-duration: 20s; }
+.decor-leaf-layer i:nth-child(5)  { left: 45%; animation-delay: -13s; animation-duration: 19s; transform: scale(1.1); }
+.decor-leaf-layer i:nth-child(6)  { left: 55%; animation-delay: -16s; animation-duration: 21s; }
+.decor-leaf-layer i:nth-child(7)  { left: 65%; animation-delay: -2s;  animation-duration: 17s; transform: scale(0.9); }
+.decor-leaf-layer i:nth-child(8)  { left: 75%; animation-delay: -5s;  animation-duration: 23s; transform: scale(1.0); }
+.decor-leaf-layer i:nth-child(9)  { left: 85%; animation-delay: -8s;  animation-duration: 18s; transform: scale(0.75); }
+.decor-leaf-layer i:nth-child(10) { left: 92%; animation-delay: -11s; animation-duration: 20s; }
+
+/* ========== Pattern: Snow（雪の結晶）— privacy ========== */
+.decor-snow-layer i {
+  position: absolute;
+  top: -30px;
+  width: 12px; height: 12px;
+  background: radial-gradient(circle, #fff 30%, rgba(255,255,255,0.4) 60%, transparent 80%);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(142,124,195,0.4);
+  opacity: 0;
+  animation: snowFall 18s linear infinite;
+}
+@keyframes snowFall {
+  0%   { top: -30px;   opacity: 0; }
+  15%  { opacity: 0.8; }
+  85%  { opacity: 0.8; }
+  100% { top: 110vh;   opacity: 0;    transform: translateX(40px); }
+}
+.decor-snow-layer i:nth-child(1)  { left: 7%;  animation-delay: 0s;    animation-duration: 16s; }
+.decor-snow-layer i:nth-child(2)  { left: 17%; animation-delay: -4s;   animation-duration: 19s; transform: scale(1.3); }
+.decor-snow-layer i:nth-child(3)  { left: 27%; animation-delay: -8s;   animation-duration: 14s; transform: scale(0.7); }
+.decor-snow-layer i:nth-child(4)  { left: 37%; animation-delay: -12s;  animation-duration: 17s; }
+.decor-snow-layer i:nth-child(5)  { left: 47%; animation-delay: -1s;   animation-duration: 18s; transform: scale(1.1); }
+.decor-snow-layer i:nth-child(6)  { left: 57%; animation-delay: -5s;   animation-duration: 16s; }
+.decor-snow-layer i:nth-child(7)  { left: 67%; animation-delay: -9s;   animation-duration: 15s; transform: scale(0.9); }
+.decor-snow-layer i:nth-child(8)  { left: 77%; animation-delay: -13s;  animation-duration: 17s; transform: scale(0.8); }
+.decor-snow-layer i:nth-child(9)  { left: 87%; animation-delay: -2s;   animation-duration: 18s; transform: scale(1.2); }
+.decor-snow-layer i:nth-child(10) { left: 95%; animation-delay: -6s;   animation-duration: 16s; }

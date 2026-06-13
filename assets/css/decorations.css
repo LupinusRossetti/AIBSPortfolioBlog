@@ -3,33 +3,75 @@
    body class でパターン切替（各ページに異なる装飾）
    ============================================================ */
 
+/* page-decor は body の背景レイヤー（z-index:-1）で全ページ・全スクロールに追従 */
 .page-decor {
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
   overflow: hidden;
 }
 
-/* ページ全体にアニメを行き届かせるための背景透過化 */
+/* html背景にグラデを置いて body を透明にしておく → body 後ろに page-decor が見える */
 html { background: linear-gradient(180deg, #fefcff 0%, #fbfaf8 100%) fixed; }
-body.decor-page {
-  background: transparent !important;
-  position: relative;
+body.decor-page { background: transparent !important; }
+
+/* セクション系（白opaque背景）を控えめに半透明化して page-decor を透過させる
+   薄め(0.42)にしてアニメをはっきり見せる */
+body.decor-page section,
+body.decor-page main > section,
+body.decor-page .section,
+body.decor-page .veil,
+body.decor-page section.veil,
+body.decor-page .hero,
+body.decor-page .gallery-hero,
+body.decor-page .gallery-tabs {
+  background-color: rgba(255, 255, 255, 0.42) !important;
 }
 
-/* 主要セクションは半透明にしてアニメを透過させる */
-body.decor-page .site-header { background: rgba(255, 255, 255, 0.82) !important; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); position: relative; z-index: 50; }
-body.decor-page main,
-body.decor-page .gallery-page,
-body.decor-page > section { background: transparent !important; position: relative; z-index: 2; }
-body.decor-page .section,
-body.decor-page section.veil,
-body.decor-page .gallery-hero,
-body.decor-page .gallery-tabs { background-color: rgba(255, 255, 255, 0.65) !important; position: relative; z-index: 2; }
-body.decor-page .site-footer { background: rgba(255, 255, 255, 0.7) !important; position: relative; z-index: 2; }
+/* about/portfolio/sns の元々透明セクションには影響少なく、page-decor くっきり */
+/* 装飾画像（hero-bg-petal/lace-divider）は元の値で表示 */
+body.decor-page .site-footer { background-color: rgba(255, 255, 255, 0.6) !important; }
 
-/* カードやモーダル等のz-indexは個別CSSで管理 */
+/* アニメ要素を濃く・はっきり見せる */
+.decor-sakura-layer i { filter: drop-shadow(0 0 4px rgba(232, 195, 232, 0.6)); }
+.decor-twinkle-layer span { width: 12px; height: 12px; }
+.decor-star-layer i { filter: drop-shadow(0 0 3px rgba(201, 168, 92, 0.7)); }
+.decor-heart-layer i { filter: drop-shadow(0 0 3px rgba(224, 128, 154, 0.7)); }
+.decor-leaf-layer i { filter: drop-shadow(0 0 3px rgba(169, 200, 158, 0.7)); }
+.decor-bubble-layer i { filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8)); }
+.decor-snow-layer i { filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9)); }
+
+/* キャプション完全削除 */
+.gallery-card .card-caption,
+.modal-caption,
+.card-frame .card-caption { display: none !important; }
+
+/* gallery-card ふわっと拡大（時間長め・滑らかカーブ） */
+.gallery-card {
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.34, 1.5, 0.5, 1),
+              box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+.gallery-card:hover {
+  transform: translateY(-6px) scale(1.08) !important;
+}
+
+/* モーダル復旧（z-index/position が他で上書きされないよう保護） */
+.modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+  background-color: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+.password-dialog {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 10000 !important;
+}
+.admin-toggle { z-index: 50 !important; }
 
 .decor-layer {
   position: absolute;
@@ -204,14 +246,14 @@ body.decor-page .site-footer { background: rgba(255, 255, 255, 0.7) !important; 
 .decor-leaf-layer i:nth-child(9)  { left: 85%; animation-delay: -8s;  animation-duration: 18s; transform: scale(0.75); }
 .decor-leaf-layer i:nth-child(10) { left: 92%; animation-delay: -11s; animation-duration: 20s; }
 
-/* ========== Pattern: Snow（雪の結晶）— privacy ========== */
+/* ========== Pattern: Snow（雪の結晶・白だと背景に同化するので薄紫に） — privacy ========== */
 .decor-snow-layer i {
   position: absolute;
   top: -30px;
   width: 12px; height: 12px;
-  background: radial-gradient(circle, #fff 30%, rgba(255,255,255,0.4) 60%, transparent 80%);
+  background: radial-gradient(circle, var(--lupinus, #8e7cc3) 35%, rgba(142,124,195,0.5) 65%, transparent 80%);
   border-radius: 50%;
-  box-shadow: 0 0 6px rgba(142,124,195,0.4);
+  box-shadow: 0 0 10px rgba(142,124,195,0.7);
   opacity: 0;
   animation: snowFall 18s linear infinite;
 }

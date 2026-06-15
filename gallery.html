@@ -72,7 +72,7 @@
           <span class="title-sub">三姉妹のイラスト集</span>
         </h1>
         <p class="gallery-lead">
-          ルピナス・アイリス・フィオナ、それぞれの「清楚」「元気」「可愛い」「セクシー」を集めました。<br>
+          ルピナス・アイリス・フィオナ、それぞれの「らしさ」を5カテゴリ250枚ずつ・合計750枚で集めました。<br>
           画像をクリックすると大きく表示されます。
         </p>
       </div>
@@ -84,17 +84,12 @@
         <!-- キャラタブ -->
         <div class="tabs tabs-char" role="tablist" aria-label="キャラ選択">
           <button class="tab tab-lupinus active" data-char="lupinus" role="tab">ルピナス</button>
-          <button class="tab tab-iris" data-char="iris" role="tab" disabled title="準備中">アイリス</button>
-          <button class="tab tab-fiona" data-char="fiona" role="tab" disabled title="準備中">フィオナ</button>
+          <button class="tab tab-iris" data-char="iris" role="tab">アイリス</button>
+          <button class="tab tab-fiona" data-char="fiona" role="tab">フィオナ</button>
         </div>
 
-        <!-- カテゴリタブ -->
-        <div class="tabs tabs-cat" role="tablist" aria-label="カテゴリ選択">
-          <button class="tab active" data-cat="seiso" role="tab">🤍 清楚</button>
-          <button class="tab" data-cat="genki" role="tab">😆 元気</button>
-          <button class="tab" data-cat="kawaii" role="tab">🌸 可愛い</button>
-          <button class="tab" data-cat="sexy" role="tab">💕 セクシー</button>
-        </div>
+        <!-- カテゴリタブ（JSがキャラに応じて動的に書き換える） -->
+        <div class="tabs tabs-cat" id="tabsCat" role="tablist" aria-label="カテゴリ選択"></div>
 
         <div class="gallery-meta" id="galleryMeta"></div>
 

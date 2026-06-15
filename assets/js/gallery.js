@@ -11,7 +11,7 @@
   const modalPrev = document.getElementById('modalPrev');
   const modalNext = document.getElementById('modalNext');
   const tabsChar = document.querySelectorAll('.tabs-char .tab');
-  const tabsCat = document.querySelectorAll('.tabs-cat .tab');
+  const tabsCatRoot = document.getElementById('tabsCat');
   // admin
   const adminToggle = document.getElementById('adminToggle');
   const adminBar = document.getElementById('adminBar');
@@ -36,8 +36,38 @@
   let adminMode = false;
   let selected = new Set(); // scene ids
 
-  const CAT_LABEL = { seiso: '清楚', genki: '元気', kawaii: '可愛い', sexy: 'セクシー' };
+  const CAT_LABEL = {
+    seiso: '🤍 清楚', elegant: '🌹 エレガント', idol: '🎤 アイドル',
+    kawaii: '🌸 可愛い', sexy: '💕 セクシー',
+    genki: '😆 元気', gakuen: '🎒 学園青春',
+    yasashii: '☕ やさしい', fantasy: '✨ ファンタジー',
+  };
   const CHAR_LABEL = { lupinus: 'ルピナス', iris: 'アイリス', fiona: 'フィオナ' };
+  const CHAR_CATS = {
+    lupinus: ['seiso','elegant','idol','kawaii','sexy'],
+    iris:    ['genki','idol','gakuen','kawaii','sexy'],
+    fiona:   ['yasashii','fantasy','idol','kawaii','sexy'],
+  };
+
+  function renderCatTabs(){
+    tabsCatRoot.innerHTML = '';
+    CHAR_CATS[curChar].forEach((cat, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'tab' + (i === 0 ? ' active' : '');
+      btn.setAttribute('role','tab');
+      btn.dataset.cat = cat;
+      btn.textContent = CAT_LABEL[cat] || cat;
+      btn.addEventListener('click', () => {
+        tabsCatRoot.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        btn.classList.add('active');
+        curCat = cat;
+        render();
+      });
+      tabsCatRoot.appendChild(btn);
+    });
+    // 初期カテゴリを現キャラの先頭に
+    curCat = CHAR_CATS[curChar][0];
+  }
 
   // データ読込
   function load() {
@@ -58,7 +88,8 @@
   function render() {
     viewItems = allItems.filter(it => it.char === curChar && it.category === curCat);
     const total = viewItems.length;
-    meta.textContent = `${CHAR_LABEL[curChar]} ／ ${CAT_LABEL[curCat]}`;
+    const catLabel = (CAT_LABEL[curCat] || curCat).replace(/^[^\s]+\s/, '');
+    meta.textContent = `${CHAR_LABEL[curChar]} ／ ${catLabel} （${total}枚）`;
     grid.innerHTML = '';
     if (!total) {
       grid.innerHTML = '<p style="text-align:center;color:#999;padding:3rem">準備中…</p>';
@@ -97,17 +128,12 @@
       tabsChar.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       curChar = tab.dataset.char;
+      renderCatTabs(); // キャラに応じて再構築
       render();
     });
   });
-  tabsCat.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabsCat.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      curCat = tab.dataset.cat;
-      render();
-    });
-  });
+  // 初期カテゴリタブ
+  renderCatTabs();
 
   // モーダル
   function openModal(i) {

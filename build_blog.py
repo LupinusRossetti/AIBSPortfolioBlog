@@ -438,8 +438,11 @@ def build():
     THUMBS_DIR.mkdir(parents=True, exist_ok=True)
     for post in posts:
         out_path = THUMBS_DIR / f'{post["slug"]}.png'
-        make_thumb.compose(
-            post["title"], post["date"].isoformat(), jp_date(post["date"]), out_path)
+        # Gemini版（note-diary/thumbs/{slug}.png or {date}.png）があれば優先採用
+        # 無ければPILで自動合成（ensure_thumb 経由で override 判定）
+        make_thumb.ensure_thumb(
+            post["slug"], post["date"].isoformat(), jp_date(post["date"]),
+            post["title"], "", out_path)
         post["thumb"] = f'{post["slug"]}.png'
         # 記事本文内に差し込む Gemini イラスト（あれば）をサイトへコピー
         post["hero"] = copy_article_hero(post["slug"], post["date"].isoformat())
@@ -1368,5 +1371,33 @@ def inject_latest_videos_into_home(count=3):
         home.write_text(new_text, encoding="utf-8")
 
 
+def _check_forbidden_before_build():
+    """ビルド直前の禁止トピック検査（強い砦）。
+    note-diary 配下の全mdをスキャンし、ヒットがあれば exit して build中断。
+    """
+    import sys
+    sys.path.insert(0, str(DIARY_DIR))
+    try:
+        from check_forbidden_topics import check_file
+    except ImportError:
+        print("[warn] check_forbidden_topics.py が見つからない → 検査スキップ", flush=True)
+        return
+    ng = []
+    for p in sorted(DIARY_DIR.glob("*.md")):
+        ok, hits = check_file(p)
+        if not ok:
+            ng.append((p.name, hits))
+    if ng:
+        print("\n========== 🛑 BUILD ABORTED: 禁止トピック検出 ==========", flush=True)
+        for name, hits in ng:
+            print(f"  [NG] {name}", flush=True)
+            for h in hits:
+                print(f"      - {h['category']}: '{h['keyword']}'", flush=True)
+        print("\n禁止トピックを除去してから再度buildしてください。", flush=True)
+        sys.exit(1)
+    print("[check] 禁止トピック検査: 全mdクリア✨", flush=True)
+
+
 if __name__ == "__main__":
+    _check_forbidden_before_build()
     build()

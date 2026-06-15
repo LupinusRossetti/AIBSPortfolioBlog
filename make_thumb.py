@@ -20,7 +20,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-DIARY_DIR = Path(r"C:\ClaudeCode\note-diary")
+DIARY_DIR = Path(r"C:\LupinusPrivate\note-diary")
 ICONS_DIR = DIARY_DIR / "icons"
 OVERRIDE_DIR = DIARY_DIR / "thumbs"        # 手動上書き置き場
 GEMINI_KEY_FILE = DIARY_DIR / ".gemini_key.txt"  # 鍵ファイル（gitignore済み・任意）

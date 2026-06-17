@@ -62,7 +62,9 @@ POSTS_DIR = BLOG_DIR / "posts"
 BLOG_ICONS = BLOG_DIR / "icons"
 THUMBS_DIR = BLOG_DIR / "thumbs"
 HEROES_DIR = BLOG_DIR / "heroes"           # 記事本文内に置く Gemini 生成イラスト
-DIARY_THUMBS = DIARY_DIR / "thumbs"        # Gemini イラスト置き場
+DIARY_THUMBS = DIARY_DIR / "thumbs"        # Gemini イラスト置き場（LupinusPrivate側・正本）
+CLAUDECODE_DIARY = Path(r"C:\ClaudeCode\note-diary")
+CLAUDECODE_DIARY_THUMBS = CLAUDECODE_DIARY / "thumbs"  # gen_blog_thumb.py の出力先（実態）
 
 NAME_TO_CHAR = {"ルピナス": "lupinus", "アイリス": "iris", "フィオナ": "fiona"}
 CHAR_TO_NAME = {v: k for k, v in NAME_TO_CHAR.items()}
@@ -436,16 +438,55 @@ def build():
     # 表情は日付ごとに変わる EXPR_SETS で自然なバリエーションを出す。
     # Gemini生成イラストは一覧には使わず、記事本文内に回す（DIARY_THUMBS 参照）。
     THUMBS_DIR.mkdir(parents=True, exist_ok=True)
+
+    # 🔄 ClaudeCode/note-diary/thumbs/ → LupinusPrivate/note-diary/thumbs/ 自動同期
+    # （2026-06-17：gen_blog_thumb.py 出力先と build_blog.py 入力先のズレを毎回ここで吸収）
+    if CLAUDECODE_DIARY_THUMBS.exists():
+        DIARY_THUMBS.mkdir(parents=True, exist_ok=True)
+        synced = 0
+        for src in CLAUDECODE_DIARY_THUMBS.glob("*.png"):
+            dst = DIARY_THUMBS / src.name
+            if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
+                shutil.copy2(src, dst)
+                synced += 1
+        if synced:
+            print(f"[sync] ClaudeCode→LupinusPrivate thumbs同期: {synced}件")
+
+    pil_only_posts = []  # Gemini版が無くPIL合成になった記事を集計
     for post in posts:
         out_path = THUMBS_DIR / f'{post["slug"]}.png'
         # Gemini版（note-diary/thumbs/{slug}.png or {date}.png）があれば優先採用
         # 無ければPILで自動合成（ensure_thumb 経由で override 判定）
+        slug = post["slug"]
+        date_iso = post["date"].isoformat()
+        gemini_candidates = [
+            DIARY_THUMBS / f"{slug}.png",
+            DIARY_THUMBS / f"{date_iso}.png",
+            DIARY_THUMBS / f"{slug}.jpg",
+            DIARY_THUMBS / f"{date_iso}.jpg",
+        ]
+        if not any(p.exists() for p in gemini_candidates):
+            pil_only_posts.append((slug, post["title"]))
         make_thumb.ensure_thumb(
-            post["slug"], post["date"].isoformat(), jp_date(post["date"]),
+            slug, date_iso, jp_date(post["date"]),
             post["title"], "", out_path)
         post["thumb"] = f'{post["slug"]}.png'
         # 記事本文内に差し込む Gemini イラスト（あれば）をサイトへコピー
         post["hero"] = copy_article_hero(post["slug"], post["date"].isoformat())
+
+    # ⚠️ PIL自動合成になった記事を最後に警告（手動でgen_blog_thumb.py再生成が必要）
+    if pil_only_posts:
+        print()
+        print(f"[WARN] ❌ Gemini版hero画像が無い記事 {len(pil_only_posts)} 件（PIL自動合成のまま）：")
+        for slug, title in pil_only_posts:
+            print(f"  - {slug}")
+        print()
+        print("  → DOCS/01_blog.md 違反。次回blog-daily-update実行時にgen_blog_thumb.pyで生成する必要あり。")
+        print("  → 手動補填コマンド例：")
+        print("    cd C:\\ClaudeCode\\note-diary && python gen_blog_thumb.py \\")
+        print('      --out "thumbs\\<slug>.png" --prompt "<記事内容に合うプロンプト>" \\')
+        print("      --chars lupinus,iris,fiona --count 1 --media-type note")
+        print()
 
     # 各記事ページ（posts は date 降順）
     n = len(posts)

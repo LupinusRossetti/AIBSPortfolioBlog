@@ -269,6 +269,30 @@ def footer(prefix: str = "") -> str:
     )
 
 
+# ページ別の背景装飾アニメ（decorations.css のパターン名・レイヤークラス・要素数）。
+# ここに載せておかないと再生成のたびに装飾が剥がれる（2026-06-14 の喪失事故の再発防止）
+DECOR_PATTERNS = {
+    "about":   ("decor-leaf",   "decor-leaf-layer",   10),
+    "sns":     ("decor-heart",  "decor-heart-layer",  10),
+    "privacy": ("decor-snow",   "decor-snow-layer",   10),
+    "blog":    ("decor-bubble", "decor-bubble-layer", 12),
+}
+
+
+def decor_parts(prefix: str, active: str) -> tuple:
+    """(headに足すlinkタグ, bodyタグ, body直後の装飾レイヤー) を返す"""
+    pat = DECOR_PATTERNS.get(active)
+    if not pat:
+        return "", "<body>", ""
+    body_cls, layer_cls, count = pat
+    link = f'<link rel="stylesheet" href="{prefix}assets/css/decorations.css">'
+    body_tag = f'<body class="decor-page {body_cls}">'
+    layer = (f'<div class="page-decor" aria-hidden="true">'
+             f'<div class="decor-layer {layer_cls}">' + "<i></i>" * count +
+             '</div></div>')
+    return link, body_tag, layer
+
+
 def page(title: str, prefix: str, active: str, body: str, desc: str = "",
          og_image: str = "", path: str = "", og_type: str = "website") -> str:
     """1ページ分のHTMLを生成。
@@ -323,6 +347,7 @@ def page(title: str, prefix: str, active: str, body: str, desc: str = "",
     jsonld = ('<script type="application/ld+json">' +
               json.dumps(jsonld_obj, ensure_ascii=False) +
               '</script>')
+    decor_link, body_tag, decor_layer = decor_parts(prefix, active)
     return (
         '<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">'
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
@@ -331,8 +356,8 @@ def page(title: str, prefix: str, active: str, body: str, desc: str = "",
         f'<meta name="description" content="{html_lib.escape(desc)}">'
         + favicon_links(prefix) + og + jsonld
         + f'<link rel="alternate" type="application/rss+xml" title="AIBS Diary" href="{BASE_URL}/feed.xml">'
-        + f'<link rel="stylesheet" href="{prefix}assets/css/site.css">{FONTS}'
-        '</head><body>'
+        + f'<link rel="stylesheet" href="{prefix}assets/css/site.css">{decor_link}{FONTS}'
+        '</head>' + body_tag + decor_layer
         + header(prefix, active)
         + body
         + footer(prefix)

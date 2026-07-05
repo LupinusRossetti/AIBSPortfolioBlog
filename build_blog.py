@@ -384,10 +384,12 @@ def reveal_script() -> str:
 # === ビルド本体 ===
 def copy_article_hero(slug: str, date_iso: str) -> str | None:
     """記事本文内に置く Gemini 生成イラストを blog/heroes/ へコピー。
-    note-diary/thumbs/{slug}.png（または {date}.png / .jpg）があれば採用。
-    無ければ None（過去記事は画像なしでも崩れない）。"""
-    for cand in (DIARY_THUMBS / f"{slug}.png", DIARY_THUMBS / f"{date_iso}.png",
-                 DIARY_THUMBS / f"{slug}.jpg", DIARY_THUMBS / f"{date_iso}.jpg"):
+    冒頭サムネ（thumbs）と同じ画像を使うとページ内に同じ絵が2枚並ぶため、
+    **本文内イラストは専用ディレクトリ note-diary/heroes/ にある時だけ**採用する
+    （2026-07-05 るぴちゃん指示：見出し画像はページに1枚）。無ければ None。"""
+    heroes_src = DIARY_DIR / "heroes"
+    for cand in (heroes_src / f"{slug}.png", heroes_src / f"{date_iso}.png",
+                 heroes_src / f"{slug}.jpg", heroes_src / f"{date_iso}.jpg"):
         if cand.exists():
             HEROES_DIR.mkdir(parents=True, exist_ok=True)
             dst = HEROES_DIR / f"{slug}{cand.suffix}"

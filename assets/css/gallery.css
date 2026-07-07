@@ -522,3 +522,53 @@ body.admin-mode .card-checkbox { display: flex; }
   color: #fff;
   border-color: var(--lupinus);
 }
+
+/* ===== 750ギャラリー 準備中ゲート ===== */
+.gallery-gate {
+  padding: 3rem 0 5rem;
+}
+.gallery-gate-box {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--lupinus-soft);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 3rem 2rem;
+}
+.gallery-gate-icon {
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.gallery-gate-box h2 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--lupinus);
+  margin-bottom: 1rem;
+}
+.gallery-gate-box p {
+  font-family: var(--font-round);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
+}
+.gallery-gate-admin-link {
+  font-family: var(--font-round);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  background: none;
+  border: none;
+  border-bottom: 1px dashed var(--ink-faint);
+  padding: 0 0 2px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+}
+.gallery-gate-admin-link:hover {
+  opacity: 1;
+  color: var(--lupinus);
+  border-color: var(--lupinus);
+}

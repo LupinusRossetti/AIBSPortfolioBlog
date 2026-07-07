@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanobanana2 Gallery | Lupinus Rossetti | AI Bloom Sisters</title>
+  <meta name="description" content="AI Bloom Sisters三姉妹のNanobanana2生成ギャラリー（LoRA学習素材QC通過分）。">
+  <link rel="canonical" href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/nanobanana2.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:title" content="Nanobanana2 Gallery | Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:description" content="三姉妹のNanobanana2生成ギャラリー。">
+  <meta property="og:url" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/nanobanana2.html">
+  <meta property="og:image" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fun_features.css">
+  <link rel="stylesheet" href="assets/css/decorations.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/nanobanana2.css">
+</head>
+
+<body class="decor-page decor-sakura-stars">
+
+  <!-- ページ全体に流れる装飾 -->
+  <div class="page-decor" aria-hidden="true">
+    <div class="decor-layer decor-sakura-layer">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="decor-layer decor-twinkle-layer">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-script">Lupinus</span>
+        <span class="brand-sub">AI Bloom Sisters</span>
+      </a>
+      <button class="menu-toggle" aria-label="menu"
+        onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="nanobanana2.html" class="active">Gallery</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="sns.html">SNS</a>
+        <a href="coming-soon.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="gallery-page nb2-page">
+    <section class="gallery-hero">
+      <div class="container">
+        <h1 class="gallery-title">
+          <span class="title-script">Nanobanana2</span>
+          <span class="title-sub">三姉妹ギャラリー</span>
+        </h1>
+        <p class="gallery-lead">
+          Gemini「Nanobanana2」で描き下ろした三姉妹のギャラリーです。<br>
+          画像をクリックすると大きく表示されます。
+        </p>
+        <p class="nb2-switch">
+          <a href="gallery.html">← 750ギャラリーはこちら</a>
+        </p>
+        <p class="nb2-credit-note">
+          クレジット表記＋本ページURLの明記で使用および引用OKです（画像の改変・再配布は禁止）。
+        </p>
+        <div class="nb2-credit-box">
+          <p>© ルピナス・ロゼッティ(Lupinus Rossetti)/AI Bloom Sisters</p>
+          <p>https://lupinusrossetti.github.io/AIBSPortfolioBlog/nanobanana2.html</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-tabs">
+      <div class="container">
+
+        <!-- キャラタブ -->
+        <div class="tabs tabs-char" role="tablist" aria-label="キャラ選択">
+          <button class="tab tab-lupinus active" data-char="lupinus" role="tab">ルピナス</button>
+          <button class="tab tab-iris" data-char="iris" role="tab">アイリス</button>
+          <button class="tab tab-fiona" data-char="fiona" role="tab">フィオナ</button>
+        </div>
+
+        <div class="gallery-meta" id="galleryMeta"></div>
+
+        <!-- グリッド -->
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- モーダル -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="閉じる">×</button>
+    <button class="modal-prev" id="modalPrev" aria-label="前へ">‹</button>
+    <button class="modal-next" id="modalNext" aria-label="次へ">›</button>
+    <div class="modal-content">
+      <div class="modal-frame">
+        <span class="modal-inner-corner-bl"></span>
+        <span class="modal-inner-corner-br"></span>
+        <div class="modal-inner">
+          <img id="modalImg" alt="">
+        </div>
+      </div>
+      <div class="modal-caption" id="modalCaption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lupinus Rossetti / AI Bloom Sisters</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/nanobanana2.js"></script>
+
+</body>
+
+</html>

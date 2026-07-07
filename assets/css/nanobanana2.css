@@ -1,0 +1,65 @@
+/* ============================================================
+   Nanobanana2 Gallery — 750ギャラリー(gallery.css)の見た目を継承しつつ、
+   LoRA素材は縦長(2:3付近)が多いため、カードの縦横比のみここで上書きする。
+   750ギャラリー側(gallery.html / .gallery-page 単体)には影響しない
+   （必ず .nb2-page 配下にスコープする）。
+   ============================================================ */
+
+.nb2-page .gallery-card .card-frame {
+  aspect-ratio: 2 / 3;
+}
+
+.nb2-page .gallery-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+@media (max-width: 720px) {
+  .nb2-page .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+.nb2-switch {
+  margin-top: 0.5rem;
+}
+.nb2-switch a {
+  font-family: var(--font-round);
+  font-size: 0.85rem;
+  color: var(--lupinus);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--lupinus);
+  padding-bottom: 1px;
+  transition: opacity 0.2s var(--ease);
+}
+.nb2-switch a:hover {
+  opacity: 0.7;
+}
+
+.nb2-credit-note {
+  margin-top: 1.4rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.nb2-credit-box {
+  display: inline-block;
+  margin: 0.6rem auto 0;
+  padding: 1rem 1.6rem;
+  background: var(--lupinus-soft);
+  border: 1px dashed var(--lupinus);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+.nb2-credit-box p {
+  margin: 0.15rem 0;
+  font-family: var(--font-round);
+  font-size: 0.88rem;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.nb2-credit-box p:last-child {
+  font-size: 0.78rem;
+  color: var(--lupinus);
+  word-break: break-all;
+}

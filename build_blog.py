@@ -472,11 +472,14 @@ def build():
     if CLAUDECODE_DIARY_THUMBS.exists():
         DIARY_THUMBS.mkdir(parents=True, exist_ok=True)
         synced = 0
-        for src in CLAUDECODE_DIARY_THUMBS.glob("*.png"):
-            dst = DIARY_THUMBS / src.name
-            if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
-                shutil.copy2(src, dst)
-                synced += 1
+        # png/jpg 両対応（precheck_thumbs・gemini_candidates が jpg も採用候補にしているのと
+        # 揃えないと「precheckはOK✨なのに実体はpngしか同期されずPIL落ち」という食い違いが起きる）
+        for pattern in ("*.png", "*.jpg"):
+            for src in CLAUDECODE_DIARY_THUMBS.glob(pattern):
+                dst = DIARY_THUMBS / src.name
+                if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
+                    shutil.copy2(src, dst)
+                    synced += 1
         if synced:
             print(f"[sync] ClaudeCode→LupinusPrivate thumbs同期: {synced}件")
 
@@ -1440,6 +1443,102 @@ def inject_latest_videos_into_home(count=3):
         home.write_text(new_text, encoding="utf-8")
 
 
+def sync_articles_from_claudecode():
+    """P2: 記事md（YYYY-MM-DD_*.md）を ClaudeCode → LupinusPrivate へ自動同期。
+
+    generate_diary.py は C:\\ClaudeCode\\note-diary に書くが build は本ディレクトリ
+    （DIARY_DIR）を読むため、従来は手動コピーが必要で事故多発だった。ビルドに内蔵する。
+    `_FAILED_*.md` マーカーや README 等、記事パターン外のmdは同期しない。
+
+    **禁止トピック検査はコピー前にここで行う**（敵対的レビュー指摘：後段の
+    `_check_forbidden_before_build` は「同期後」のLupinusPrivate側＝公開GitHub Pagesの
+    作業ツリーを見るため、検査NGでbuildをabortしても禁止語入りmdは既に公開リポ内に
+    居座ってしまう。コピーする前に弾けば作業ツリーを汚さない）。
+    """
+    if not CLAUDECODE_DIARY.exists():
+        return
+    import sys as _sys
+    _sys.path.insert(0, str(DIARY_DIR))
+    try:
+        from check_forbidden_topics import check_file
+    except ImportError:
+        check_file = None
+        print("[sync] check_forbidden_topics.py が見つからない → 禁止語チェックなしで同期します", flush=True)
+    DIARY_DIR.mkdir(parents=True, exist_ok=True)
+    synced = []
+    rejected = []
+    src_dates = set()
+    for src in sorted(CLAUDECODE_DIARY.glob("*.md")):
+        if not re.match(r"\d{4}-\d{2}-\d{2}_.+\.md$", src.name):
+            continue
+        src_dates.add(src.name[:10])
+        if check_file is not None:
+            ok, hits = check_file(src)
+            if not ok:
+                rejected.append((src.name, hits))
+                continue
+        dst = DIARY_DIR / src.name
+        if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
+            shutil.copy2(src, dst)
+            synced.append(src.name)
+    if synced:
+        print(f"[sync] ClaudeCode→LupinusPrivate 記事md同期: {len(synced)}件", flush=True)
+        for name in synced:
+            print(f"  + {name}", flush=True)
+    if rejected:
+        print(f"[sync] 🛑 禁止語ヒットのため同期拒否: {len(rejected)}件（ClaudeCode側で修正してから再build）", flush=True)
+        for name, hits in rejected:
+            print(f"  - {name}", flush=True)
+            for h in hits:
+                print(f"      - {h['category']}: '{h['keyword']}'", flush=True)
+
+    # 中1: ClaudeCode側に無い（削除/改名された）のにLupinusPrivate側に残っている記事mdを警告
+    # （片方向・追加onlyの同期なので tombstone が伝播しない＝同日重複記事の温床。自動削除はしない）
+    orphans = []
+    for dst in sorted(DIARY_DIR.glob("*.md")):
+        m = re.match(r"(\d{4}-\d{2}-\d{2})_.+\.md$", dst.name)
+        if m and m.group(1) not in src_dates:
+            orphans.append(dst.name)
+    if orphans:
+        print(f"[sync] ⚠ ClaudeCode側に無いLupinusPrivate側の記事md {len(orphans)}件"
+              "（削除/改名の可能性・同日重複記事の原因になるので要確認）:", flush=True)
+        for name in orphans:
+            print(f"  ? {name}", flush=True)
+
+
+def precheck_thumbs():
+    """P4: build前サムネ検査。記事の日付ごとに Gemini サムネ（{date}.png または
+    {slug}.png）が両thumbsディレクトリのどちらかにあるか確認し、無ければ警告
+    （PIL自動合成にフォールバックする旨）。`{date}_タイトル.png` の誤命名
+    （slug不一致でPIL落ちする事故の典型）を検出したらリネーム先を明示する。
+    警告のみでbuildは続行する。
+    """
+    thumb_dirs = [d for d in (DIARY_THUMBS, CLAUDECODE_DIARY_THUMBS) if d.exists()]
+    warned = 0
+    for p in sorted(DIARY_DIR.glob("*.md")):
+        m = re.match(r"(?P<date>\d{4}-\d{2}-\d{2})_(?P<rest>.+)\.md$", p.name)
+        if not m:
+            continue
+        d = m.group("date")
+        slug = f"{d}_{re.sub(r'[^0-9A-Za-z一-龥ぁ-んァ-ヶー]+', '-', m.group('rest')).strip('-')}"
+        names_ok = {f"{d}.png", f"{d}.jpg", f"{slug}.png", f"{slug}.jpg"}
+        if any((td / n).exists() for td in thumb_dirs for n in names_ok):
+            continue
+        warned += 1
+        print(f"[thumb-check] ⚠ {d}: Geminiサムネ（{d}.png）が無い → PIL自動合成にフォールバック予定", flush=True)
+        # 誤命名（タイトル付き等）の候補を探して案内する
+        misnamed = sorted({
+            x.name for td in thumb_dirs for x in td.glob(f"{d}*.png")
+            if x.name not in names_ok
+        })
+        for name in misnamed:
+            print(f"              誤命名の疑い: {name} → thumbs\\{d}.png にリネームすれば採用される", flush=True)
+    if warned:
+        print(f"[thumb-check] 警告 {warned}件。正しい命名は {{日付}}.png（例 2026-06-17.png）", flush=True)
+    else:
+        print("[thumb-check] 全記事のGeminiサムネOK✨", flush=True)
+
+
 def _check_forbidden_before_build():
     """ビルド直前の禁止トピック検査（強い砦）。
     note-diary 配下の全mdをスキャンし、ヒットがあれば exit して build中断。
@@ -1468,5 +1567,7 @@ def _check_forbidden_before_build():
 
 
 if __name__ == "__main__":
-    _check_forbidden_before_build()
+    sync_articles_from_claudecode()   # P2: 記事md同期（検査より先）
+    _check_forbidden_before_build()   # 同期後の全mdを禁止トピック検査
+    precheck_thumbs()                 # P4: サムネ命名の事前検査（警告のみ）
     build()

@@ -25,6 +25,7 @@
     href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/feed.xml">
   <link rel="stylesheet" href="assets/css/site.css">
   <link rel="stylesheet" href="assets/css/decorations.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -283,17 +284,97 @@
     <div class="container center">
       <div class="section-head" style="margin-bottom:28px">
         <span class="eyebrow">AI Illustration</span>
-        <h2 class="section-title">AIイラスト生成<span class="jp">NANOBANANA2 GALLERY</span></h2>
+        <h2 class="section-title">AIイラスト生成<span class="jp">AI GALLERY</span></h2>
         <div class="ornament" style="margin-top:20px"><span></span></div>
       </div>
       <p style="color:var(--ink-soft); max-width:34em; margin:0 auto 28px">
-        Nanobanana2を使ったAIイラスト生成にも挑戦中。三姉妹の新しいビジュアルを一枚ずつ試作しては、ギャラリーに追加しています。
+        AIイラスト生成にも挑戦中。三姉妹の新しいビジュアルを一枚ずつ試作しては、ギャラリーに追加しています。
       </p>
+      <div class="gallery-grid" id="aiIllustGrid" style="max-width:920px; margin:0 auto 28px"></div>
       <div class="hero-actions" style="justify-content:center">
-        <a class="btn btn-filled" href="nanobanana2.html">Nanobanana2ギャラリーを見る</a>
+        <a class="btn btn-filled" href="nanobanana2.html">ギャラリーを見る</a>
       </div>
     </div>
   </section>
+
+  <!-- AIイラストプレビュー用モーダル（gallery.htmlのモーダルとは独立） -->
+  <div class="modal" id="aiModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="modal-close" id="aiModalClose" aria-label="閉じる">×</button>
+    <button class="modal-prev" id="aiModalPrev" aria-label="前へ">‹</button>
+    <button class="modal-next" id="aiModalNext" aria-label="次へ">›</button>
+    <div class="modal-content">
+      <div class="modal-frame">
+        <span class="modal-inner-corner-bl"></span>
+        <span class="modal-inner-corner-br"></span>
+        <div class="modal-inner">
+          <img id="aiModalImg" alt="">
+        </div>
+      </div>
+      <div class="modal-caption" id="aiModalCaption"></div>
+    </div>
+  </div>
+
+  <style>
+    #ai-illust .gallery-card .card-frame { aspect-ratio: 2 / 3; }
+  </style>
+  <script>
+    (function () {
+      'use strict';
+      var ITEMS = [
+        { thumb: 'images/gallery_nanobanana2/lupinus/thumbs/lupinus_002.webp', full: 'images/gallery_nanobanana2/lupinus/full/lupinus_002.webp', caption: 'ルピナス #002' },
+        { thumb: 'images/gallery_nanobanana2/lupinus/thumbs/lupinus_016.webp', full: 'images/gallery_nanobanana2/lupinus/full/lupinus_016.webp', caption: 'ルピナス #016' },
+        { thumb: 'images/gallery_nanobanana2/lupinus/thumbs/lupinus_031.webp', full: 'images/gallery_nanobanana2/lupinus/full/lupinus_031.webp', caption: 'ルピナス #031' },
+        { thumb: 'images/gallery_nanobanana2/lupinus/thumbs/lupinus_046.webp', full: 'images/gallery_nanobanana2/lupinus/full/lupinus_046.webp', caption: 'ルピナス #046' },
+        { thumb: 'images/gallery_nanobanana2/lupinus/thumbs/lupinus_061.webp', full: 'images/gallery_nanobanana2/lupinus/full/lupinus_061.webp', caption: 'ルピナス #061' },
+        { thumb: 'images/gallery_nanobanana2/lupinus/thumbs/lupinus_081.webp', full: 'images/gallery_nanobanana2/lupinus/full/lupinus_081.webp', caption: 'ルピナス #081' }
+      ];
+      var grid = document.getElementById('aiIllustGrid');
+      var modal = document.getElementById('aiModal');
+      var modalImg = document.getElementById('aiModalImg');
+      var modalCaption = document.getElementById('aiModalCaption');
+      var idx = -1;
+
+      ITEMS.forEach(function (it, i) {
+        var card = document.createElement('div');
+        card.className = 'gallery-card';
+        card.style.animationDelay = (i * 0.03) + 's';
+        card.innerHTML = '<span class="corner-bl"></span><span class="corner-br"></span>' +
+          '<div class="card-frame"><img src="' + it.thumb + '" alt="' + it.caption + '" loading="lazy">' +
+          '<div class="card-caption">' + it.caption + '</div></div>';
+        card.addEventListener('click', function () { openModal(i); });
+        grid.appendChild(card);
+      });
+
+      function openModal(i) {
+        idx = i; update();
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        modal.setAttribute('aria-hidden', 'false');
+      }
+      function closeModal() {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+        modal.setAttribute('aria-hidden', 'true');
+        idx = -1;
+      }
+      function update() {
+        var it = ITEMS[idx];
+        modalImg.src = it.full;
+        modalImg.alt = it.caption;
+        modalCaption.textContent = it.caption;
+      }
+      document.getElementById('aiModalClose').addEventListener('click', closeModal);
+      document.getElementById('aiModalPrev').addEventListener('click', function () { idx = (idx - 1 + ITEMS.length) % ITEMS.length; update(); });
+      document.getElementById('aiModalNext').addEventListener('click', function () { idx = (idx + 1) % ITEMS.length; update(); });
+      modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', function (e) {
+        if (!modal.classList.contains('open')) return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft') { idx = (idx - 1 + ITEMS.length) % ITEMS.length; update(); }
+        if (e.key === 'ArrowRight') { idx = (idx + 1) % ITEMS.length; update(); }
+      });
+    })();
+  </script>
 
   <!-- Stamps -->
   <section class="section reveal" id="stamps">

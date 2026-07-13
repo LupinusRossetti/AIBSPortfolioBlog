@@ -32,6 +32,10 @@ import make_thumb
 # === サイト設定 ===
 # GitHub Pages のプロジェクトサイト。OGP/sitemap/RSS は絶対URLが必要。
 BASE_URL = "https://lupinusrossetti.github.io/AIBSPortfolioBlog"
+# Cusdisコメント欄（2026-07-12導入・承認制）。るぴちゃんが https://cusdis.com で
+# サイト登録して発行される App ID をここに入れると各記事にコメント欄が出る。
+# 空文字の間は「準備中」ボックスを表示する。
+CUSDIS_APP_ID = "49cc1a66-978e-440c-ada7-3f9e777bf0f2"
 SITE_NAME = "Lupinus Rossetti | AI Bloom Sisters"
 DEFAULT_OG_IMAGE = "apple-touch-icon.png"   # サイト共通のOGP画像（軽量・三姉妹長女）
 
@@ -81,6 +85,9 @@ RE_ICON_LINE = re.compile(
     r"\*\*(?P<name>[^*]+)\*\*（(?P<exprjp>[^）]*)）\s*$"
 )
 RE_INLINE_TALK = re.compile(r"^\*\*(?P<name>ルピナス|アイリス|フィオナ)\*\*[：:]\s*(?P<text>.+?)\s*$")
+# ファン主役フォーマット（2026-07-12）：スタンプ行・進捗メーター行（generate_diary.py が出力）
+RE_STAMP_LINE = re.compile(r"^\s*!\[stamp\]\(stamps/([a-z0-9_]+)\.png\)\s*$")
+RE_METER_LINE = re.compile(r"^\s*\[\[meter:([^|\]]+)\|([\d.]+)\|([\d.]+)\]\]\s*$")
 RE_H1 = re.compile(r"^#\s+(?P<t>.+?)\s*$")
 
 
@@ -173,6 +180,41 @@ def parse_body(lines: list[str], icon_prefix: str) -> str:
             i += 1
             continue
 
+        # (3) スタンプ行（会話の合間のリアクション画像）
+        m3 = RE_STAMP_LINE.match(line)
+        if m3:
+            flush_md()
+            parts.append(
+                f'<p class="stamp-line"><img class="stamp-img" '
+                f'src="{icon_prefix}stamps/{m3.group(1)}.png" alt="スタンプ" loading="lazy"></p>'
+            )
+            i += 1
+            continue
+
+        # (4) 進捗メーター行 [[meter:ラベル|value|max]] → 進捗バー
+        m4 = RE_METER_LINE.match(line)
+        if m4:
+            flush_md()
+            label = html_lib.escape(m4.group(1).strip())
+            try:
+                val, mx = float(m4.group(2)), float(m4.group(3))
+            except ValueError:
+                val, mx = 0.0, 0.0
+            pct = max(0, min(100, round(val / mx * 100))) if mx > 0 else 0
+
+            def _num(x: float) -> str:
+                return str(int(x)) if x.is_integer() else str(x)
+
+            parts.append(
+                '<div class="meter">'
+                f'<span class="meter-label">{label}</span>'
+                f'<span class="meter-track"><span class="meter-fill" style="width:{pct}%"></span></span>'
+                f'<span class="meter-value">{_num(val)} / {_num(mx)}</span>'
+                '</div>'
+            )
+            i += 1
+            continue
+
         md_buf.append(line)
         i += 1
 
@@ -180,18 +222,91 @@ def parse_body(lines: list[str], icon_prefix: str) -> str:
     return "\n".join(parts)
 
 
-def insert_body_hero(body_html: str, src: str, title: str) -> str:
-    """本文中に hero イラストを <figure> として差し込む。
-    最初の <h2> 見出しの直前に置き、無ければ本文先頭に置く。"""
-    fig = (
-        f'<figure class="article-figure">'
-        f'<img src="{src}" alt="{html_lib.escape(title)}" loading="lazy">'
-        f'</figure>'
-    )
-    m = re.search(r"<h2[ >]", body_html)
+def decorate_article_body(body_html: str) -> str:
+    """ファン主役フォーマット（2026-07-12）の後処理。
+    ①h2にアンカーid付与 ②『📌 3行まとめ』をボックス化 ③『🔧 技術ノート』を<details>折りたたみ化
+    ④h2目次を3行まとめ直後（無ければ先頭）に挿入。旧形式記事はどれも該当なしでほぼ素通り。"""
+    heads: list[tuple[str, str]] = []
+    _no = {"n": 0}
+
+    def _assign(m: re.Match) -> str:
+        anchor = f"sec-{len(heads)}"
+        plain = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+        heads.append((anchor, plain))
+        # 目次（ol）の自動番号と本文見出しの番号を一致させる（2026-07-12るぴちゃん指示）。
+        # 目次から除外する見出し（3行まとめ・技術ノート）には番号を振らない
+        num = ""
+        if "3行まとめ" not in plain and "技術ノート" not in plain:
+            _no["n"] += 1
+            num = f'{_no["n"]}. '
+        # コーナー見出し（👀🎭🌸💡🎁）は番組テロップ風の帯に格上げ。
+        # それ以外の本文h2は中身を span.hl で包む（複数行でも各行にマーカーが乗るように
+        # box-decoration-break を span 側へ適用するため）。📌3行まとめはボックス側で装飾。
+        head = m.group(1)
+        if plain[:1] in "👀🎭🌸💡🎁":
+            return f'<h2 id="{anchor}" class="corner-h2">{num}{head}</h2>'
+        if plain.startswith("📌") or plain.startswith("💐"):
+            return f'<h2 id="{anchor}">{num}{head}</h2>'
+        return f'<h2 id="{anchor}"><span class="hl">{num}{head}</span></h2>'
+
+    body_html = re.sub(r"<h2>(.*?)</h2>", _assign, body_html, flags=re.S)
+
+    # 3行まとめ（h2＋直後のul）をボックス化
+    body_html = re.sub(
+        r'(<h2 id="[^"]+">📌\s*3行まとめ</h2>\s*<ul>.*?</ul>)',
+        r'<div class="tldr-box">\1</div>', body_html, count=1, flags=re.S)
+
+    # 技術ノート：見出しから次のh2（または本文末）までを折りたたみに包む
+    m = re.search(r'<h2 id="[^"]+">🔧\s*技術ノート</h2>', body_html)
     if m:
-        return body_html[:m.start()] + fig + body_html[m.start():]
-    return fig + body_html
+        rest = body_html[m.end():]
+        nxt = re.search(r"<h2 id=", rest)
+        end = m.end() + (nxt.start() if nxt else len(rest))
+        details = (
+            '<details class="tech-note"><summary>🔧 技術ノート（今日の技術メモ・クリックで開く）</summary>'
+            + body_html[m.end():end] + "</details>"
+        )
+        body_html = body_html[:m.start()] + details + body_html[end:]
+
+    # 各トピック末の『### 📝 ポイント』を折りたたみに包む（v3フォーマット・2026-07-12。
+    # 次の h2/h3 見出しまでが1つのポイント区画）
+    result: list[str] = []
+    idx = 0
+    for m in re.finditer(r"<h3>📝[^<]*</h3>", body_html):
+        if m.start() < idx:
+            continue
+        result.append(body_html[idx:m.start()])
+        rest = body_html[m.end():]
+        nxt = re.search(r"<h[23][ >]", rest)
+        end = m.end() + (nxt.start() if nxt else len(rest))
+        inner = body_html[m.end():end]
+        # 各項目のラベルを太字化（LLM出力が素のテキストでも見やすくする）
+        inner = re.sub(r"(初心者向け解説|技術メモ|ひとことまとめ)(：|:)", r"<strong>\1</strong>\2", inner)
+        result.append(
+            '<details class="tech-note point-note">'
+            '<summary>📝 ポイント（初心者向け解説・技術メモ・まとめ）</summary>'
+            + inner + "</details>"
+        )
+        idx = end
+    if result:
+        result.append(body_html[idx:])
+        body_html = "".join(result)
+
+    # 目次：3行まとめ・技術ノート（折りたたみ内へのジャンプは開かないため）を除いた
+    # h2 が3つ以上あるときだけ挿入
+    toc_items = [(a, t) for a, t in heads
+                 if "3行まとめ" not in t and "技術ノート" not in t]
+    if len(toc_items) >= 3:
+        lis = "".join(f'<li><a href="#{a}">{html_lib.escape(t)}</a></li>' for a, t in toc_items)
+        toc = f'<nav class="toc-box"><span class="toc-title">もくじ</span><ol>{lis}</ol></nav>'
+        mbox = re.search(r'<div class="tldr-box">.*?</div>', body_html, flags=re.S)
+        if mbox:
+            body_html = body_html[:mbox.end()] + toc + body_html[mbox.end():]
+        else:
+            body_html = toc + body_html
+    return body_html
+
+
 
 
 def first_paragraph(lines: list[str]) -> str:
@@ -367,6 +482,64 @@ def page(title: str, prefix: str, active: str, body: str, desc: str = "",
     )
 
 
+def comments_section(post: dict) -> str:
+    """記事下（前後ナビの下）のコメント欄。Cusdisのオープン APIを直接使う自前UI
+    （2026-07-12るぴちゃん指示：日本語表記・Reply機能なし・全件インライン表示）。
+    投稿は承認制（Cusdisダッシュボードで承認したものだけがAPIから返る）。"""
+    if not CUSDIS_APP_ID:
+        return (
+            '<section class="comments-box comments-soon">'
+            '<h2 class="comments-title">💬 コメント</h2>'
+            '<p class="comments-note">コメント欄はただいま準備中だよ。もう少し待っててね🌸</p>'
+            '</section>'
+        )
+    slug_js = json.dumps(post["slug"], ensure_ascii=False)
+    return (
+        '<section class="comments-box">'
+        '<h2 class="comments-title">💬 コメント</h2>'
+        '<p class="comments-note">お名前とコメントだけで送れるよ（承認されるとみんなに表示されます🌸）</p>'
+        '<div id="aibs-comments"><p class="comment-empty">コメントを読み込み中…</p></div>'
+        '<form id="aibs-comment-form" class="comment-form">'
+        '<label>お名前<br><input type="text" id="c-nick" maxlength="40" placeholder="ニックネーム"></label>'
+        '<label>コメント<br><textarea id="c-body" rows="4" maxlength="1000" '
+        'placeholder="感想や、お楽しみコーナーへの回答をどうぞ！"></textarea></label>'
+        '<button type="submit" class="btn">送信する</button>'
+        '<p id="c-status" class="comment-status"></p>'
+        '</form>'
+        '<script>(function(){'
+        f'var APP="{CUSDIS_APP_ID}",PID={slug_js},HOST="https://cusdis.com";'
+        'var list=document.getElementById("aibs-comments");'
+        'function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML;}'
+        'function fmt(t){try{var d=new Date(t);return d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate();}catch(e){return "";}}'
+        'function render(items){'
+        'if(!items.length){list.innerHTML=\'<p class="comment-empty">まだコメントはないよ。一番乗りしてみる？🌸</p>\';return;}'
+        'list.innerHTML=\'<p class="comments-list-head">🌸 みんなのコメント（\'+items.length+\'件）</p>\'+'
+        'items.map(function(c){return \'<div class="comment-item"><span class="comment-nick">\'+esc(c.by_nickname||"名無しさん")+\'</span><span class="comment-date">\'+fmt(c.createdAt)+\'</span><div class="comment-body">\'+esc(c.content||"")+\'</div></div>\';}).join("");}'
+        'function load(){var all=[];'
+        'function page(n){fetch(HOST+"/api/open/comments?appId="+APP+"&pageId="+encodeURIComponent(PID)+"&page="+n)'
+        '.then(function(r){return r.json();})'
+        '.then(function(j){var d=j.data||{};all=all.concat(d.data||[]);'
+        'if(n<(d.pageCount||1)){page(n+1);}else{render(all);}})'
+        '.catch(function(){list.innerHTML=\'<p class="comment-empty">コメントの読み込みに失敗しちゃった…再読み込みしてみてね</p>\';});}'
+        'page(1);}'
+        'load();'
+        'document.getElementById("aibs-comment-form").addEventListener("submit",function(e){'
+        'e.preventDefault();var st=document.getElementById("c-status");'
+        'var nick=document.getElementById("c-nick").value.trim();'
+        'var body=document.getElementById("c-body").value.trim();'
+        'if(!nick||!body){st.textContent="お名前とコメントを入れてね";return;}'
+        'st.textContent="送信中…";'
+        'fetch(HOST+"/api/open/comments",{method:"POST",headers:{"Content-Type":"application/json"},'
+        'body:JSON.stringify({appId:APP,pageId:PID,content:body,nickname:nick,pageUrl:location.href,pageTitle:document.title})})'
+        '.then(function(r){if(!r.ok)throw 0;return r.json();})'
+        '.then(function(){st.textContent="送信できたよ！承認されるとここに表示されます🌸";'
+        'document.getElementById("aibs-comment-form").reset();})'
+        '.catch(function(){st.textContent="送信に失敗しちゃった…時間をおいてもう一度試してみてね";});});'
+        '})();</script>'
+        '</section>'
+    )
+
+
 def reveal_script() -> str:
     """スクロール連動フェードイン（IntersectionObserver）。
     prefers-reduced-motion 環境では何もしない（CSS側で常時表示）。"""
@@ -383,20 +556,56 @@ def reveal_script() -> str:
 
 
 # === ビルド本体 ===
-def copy_article_hero(slug: str, date_iso: str) -> str | None:
-    """記事本文内に置く Gemini 生成イラストを blog/heroes/ へコピー。
-    冒頭サムネ（thumbs）と同じ画像を使うとページ内に同じ絵が2枚並ぶため、
-    **本文内イラストは専用ディレクトリ note-diary/heroes/ にある時だけ**採用する
-    （2026-07-05 るぴちゃん指示：見出し画像はページに1枚）。無ければ None。"""
+def copy_article_heroes(slug: str, date_iso: str) -> int:
+    """記事のトピック挿絵（note-diary/heroes/{date}_{N}.png）を blog/heroes/{slug}_{N}.png へ
+    コピーし、連番の枚数を返す（2026-07-12：冒頭1枚方式→各トピック見出し直下方式へ変更）。
+    旧方式の単発 {date}.png が残っている場合は1枚目として扱う（後方互換）。"""
     heroes_src = DIARY_DIR / "heroes"
-    for cand in (heroes_src / f"{slug}.png", heroes_src / f"{date_iso}.png",
-                 heroes_src / f"{slug}.jpg", heroes_src / f"{date_iso}.jpg"):
-        if cand.exists():
-            HEROES_DIR.mkdir(parents=True, exist_ok=True)
-            dst = HEROES_DIR / f"{slug}{cand.suffix}"
-            shutil.copy2(cand, dst)
-            return dst.name
-    return None
+    if not heroes_src.exists():
+        return 0
+    count = 0
+    for i in range(1, 21):
+        src = None
+        for cand in (heroes_src / f"{date_iso}_{i}.png", heroes_src / f"{date_iso}_{i}.jpg"):
+            if cand.exists():
+                src = cand
+                break
+        if src is None:
+            break
+        HEROES_DIR.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, HEROES_DIR / f"{slug}_{i}{src.suffix}")
+        count = i
+    if count == 0:
+        for cand in (heroes_src / f"{date_iso}.png", heroes_src / f"{date_iso}.jpg"):
+            if cand.exists():
+                HEROES_DIR.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(cand, HEROES_DIR / f"{slug}_1{cand.suffix}")
+                count = 1
+                break
+    return count
+
+
+def insert_topic_heroes(body_html: str, slug: str, count: int, title: str) -> str:
+    """トピック見出し（番号付きh2のうち💐まとめ以外）の直下に挿絵を順番に差し込む。"""
+    if not count:
+        return body_html
+    slot = {"n": 0}
+
+    def _repl(m: re.Match) -> str:
+        plain = re.sub(r"<[^>]+>", "", m.group(0))
+        if ("3行まとめ" in plain) or ("技術ノート" in plain) or ("💐" in plain):
+            return m.group(0)
+        slot["n"] += 1
+        if slot["n"] > count:
+            return m.group(0)
+        i = slot["n"]
+        return (
+            m.group(0)
+            + f'<figure class="article-figure"><img src="../heroes/{slug}_{i}.png" '
+            + f'alt="{html_lib.escape(title)} の挿絵{i}" loading="lazy"></figure>'
+        )
+
+    return re.sub(r'<h2 id="[^"]+"[^>]*>.*?</h2>', _repl, body_html, flags=re.S)
 
 
 # タグ自動付与の辞書（本文＋タイトルに含まれるキーワード → タグ名）。
@@ -461,6 +670,14 @@ def build():
             shutil.copy2(ic, BLOG_ICONS / ic.name)
             copied += 1
 
+    # スタンプ素材を同梱コピー（記事本文の stamp 行が ../stamps/ を参照する）
+    stamps_src = SITE_DIR / "images" / "image" / "stamps"
+    if stamps_src.exists():
+        blog_stamps = BLOG_DIR / "stamps"
+        blog_stamps.mkdir(parents=True, exist_ok=True)
+        for sp in stamps_src.glob("*.png"):
+            shutil.copy2(sp, blog_stamps / sp.name)
+
     posts = load_posts()
 
     # 一覧カードのタイトルサムネは「三姉妹アイコン並び」で全記事統一（compose 固定）。
@@ -484,6 +701,22 @@ def build():
         if synced:
             print(f"[sync] ClaudeCode→LupinusPrivate thumbs同期: {synced}件")
 
+    # 🔄 ClaudeCode/note-diary/heroes/ →  LupinusPrivate/note-diary/heroes/ 自動同期
+    # （「今日の一コマ」挿絵。gen側の出力先とbuild側の入力先のズレをthumbs同様ここで吸収）
+    cc_heroes = CLAUDECODE_DIARY / "heroes"
+    if cc_heroes.exists():
+        diary_heroes = DIARY_DIR / "heroes"
+        diary_heroes.mkdir(parents=True, exist_ok=True)
+        synced_h = 0
+        for pattern in ("*.png", "*.jpg"):
+            for src in cc_heroes.glob(pattern):
+                dst = diary_heroes / src.name
+                if not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime:
+                    shutil.copy2(src, dst)
+                    synced_h += 1
+        if synced_h:
+            print(f"[sync] ClaudeCode→LupinusPrivate heroes同期: {synced_h}件")
+
     pil_only_posts = []  # Gemini版が無くPIL合成になった記事を集計
     for post in posts:
         out_path = THUMBS_DIR / f'{post["slug"]}.png'
@@ -503,8 +736,8 @@ def build():
             slug, date_iso, jp_date(post["date"]),
             post["title"], "", out_path)
         post["thumb"] = f'{post["slug"]}.png'
-        # 記事本文内に差し込む Gemini イラスト（あれば）をサイトへコピー
-        post["hero"] = copy_article_hero(post["slug"], post["date"].isoformat())
+        # 記事本文内に差し込むトピック挿絵（あれば）をサイトへコピー
+        post["hero_count"] = copy_article_heroes(post["slug"], post["date"].isoformat())
 
     # ⚠️ PIL自動合成になった記事を最後に警告（手動でgen_blog_thumb.py再生成が必要）
     if pil_only_posts:
@@ -524,13 +757,18 @@ def build():
     n = len(posts)
     for idx, post in enumerate(posts):
         body_html = parse_body(post["lines"], icon_prefix="../")
-        # ヘッダーは三姉妹アイコン並びの thumb で統一。
-        # hero（Gemini生成イラスト）がある記事は、それを本文の途中に大きく差し込む
-        # （ヘッダーと本文で別画像になり、重複せず“読み物としての絵”が増える）。
+        # ヘッダーは三姉妹アイコン並びの thumb で統一。トピック挿絵は
+        # decorate後に各トピック見出しの直下へ差し込む（2026-07-12方式変更）
         header_img_src = f'../thumbs/{post["thumb"]}'
-        if post.get("hero"):
-            body_html = insert_body_hero(
-                body_html, f'../heroes/{post["hero"]}', post["title"])
+        body_html = decorate_article_body(body_html)
+        body_html = insert_topic_heroes(
+            body_html, post["slug"], post.get("hero_count", 0), post["title"])
+        # 連載Day番号（日付昇順の通算。postsは降順配列なので末尾が Day 1）
+        day_no = n - idx
+        # 旧v2フォーマットの主役マーカーが残っていたら除去（主役制度は2026-07-12に廃止）
+        body_html = re.sub(r"<!--main:(?:lupinus|iris|fiona)-->", "", body_html)
+        main_cls = ""
+        chip_label = f"Day {day_no}"
         tags_html = ""
         if post.get("tags"):
             chips = "".join(
@@ -559,18 +797,19 @@ def build():
         else:
             prevnext.append('<span class="pn pn-empty"></span>')
         article = (
-            '<main class="article">'
+            f'<main class="article{main_cls}">'
             '<header class="article-header">'
             f'<img class="article-thumb" src="{header_img_src}" alt="{html_lib.escape(post["title"])}" '
             f'fetchpriority="high">'
-            f'<div class="date">{jp_date(post["date"])}</div>'
+            f'<div class="date">{jp_date(post["date"])}<span class="day-chip">{chip_label}</span></div>'
             f'<h1>{html_lib.escape(post["title"])}</h1>'
             f'{tags_html}'
             '</header>'
             f'<div class="article-body">{body_html}</div>'
             '</main>'
             f'<nav class="post-prevnext">{"".join(prevnext)}</nav>'
-            '<div class="follow-update" style="max-width:560px;margin:36px auto 0;padding:22px 26px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,0.5);text-align:center">'
+            + comments_section(post)
+            + '<div class="follow-update" style="max-width:560px;margin:36px auto 0;padding:22px 26px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,0.5);text-align:center">'
             '<p style="margin:0 0 10px;font-family:var(--font-serif);color:var(--accent-deep);font-size:1.05rem;letter-spacing:.04em">次の更新を逃さない</p>'
             '<p style="margin:0 0 14px;color:var(--ink-soft);font-size:.92rem">日記の更新は <strong>X</strong> でもお知らせ。<strong>RSS</strong> でも購読できます。</p>'
             '<div class="hero-actions" style="justify-content:center;gap:12px;margin-top:8px">'
@@ -673,9 +912,33 @@ def build():
     build_feed(posts)
     build_sitemap_robots(posts)
 
-    heroes = sum(1 for p in posts if p.get("hero"))
+    # 孤児クリーンアップ（2026-07-12）：リライトで記事タイトル（slug）が変わると、
+    # 旧slugのHTML/サムネがbuild対象外の孤児として残り「同日2記事」に見えてしまう。
+    # 生成物（html/カード用png）はbuildが毎回全量作り直すので、現posts集合に無いものは安全に削除できる。
+    # ※記事md本体はここでは絶対に消さない（mdの孤児は従来通り警告のみ）
+    live_slugs = {p["slug"] for p in posts}
+    cleaned = 0
+    for orphan in POSTS_DIR.glob("*.html"):
+        if orphan.stem not in live_slugs:
+            orphan.unlink()
+            print(f"[clean] 旧slugの孤児記事HTMLを削除: {orphan.name}")
+            cleaned += 1
+    for orphan in THUMBS_DIR.glob("*.png"):
+        if orphan.stem not in live_slugs:
+            orphan.unlink()
+            cleaned += 1
+    for orphan in HEROES_DIR.glob("*.*") if HEROES_DIR.exists() else []:
+        # トピック挿絵は {slug}_{N}.png 形式なので、連番を外したベース名でも照合する
+        base = re.sub(r"_\d+$", "", orphan.stem)
+        if orphan.stem not in live_slugs and base not in live_slugs:
+            orphan.unlink()
+            cleaned += 1
+    if cleaned:
+        print(f"[clean] 孤児クリーンアップ合計 {cleaned} 件")
+
+    heroes = sum(p.get("hero_count", 0) for p in posts)
     print(f"[build] 記事 {len(posts)} 件 / アイコン {copied} 枚 / "
-          f"一覧カード: アイコン並び統一 / 本文内イラスト {heroes} 件 / 出力: {BLOG_DIR}")
+          f"一覧カード: アイコン並び統一 / 本文内イラスト {heroes} 枚 / 出力: {BLOG_DIR}")
     print(f"[build] feed.xml / sitemap.xml / robots.txt / about.html 生成")
     return posts
 

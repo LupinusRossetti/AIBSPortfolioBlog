@@ -2160,3 +2160,54 @@ a.tag-chip:hover { background: var(--fiona-soft); }
   .sister-profile:nth-child(even) .sp-text { padding-left: 18px; padding-right: 0; }
   .sister-profile:nth-child(even) .sp-text::before { left: 0; right: auto; }
 }
+
+/* === 2026-07-12 ファン主役フォーマット（3行まとめ/目次/技術ノート/スタンプ/メーター/Dayチップ）
+   主役キャラ色連動：.article に --chr-* を定義し .main-{char} で上書き（旧記事＝マーカー無しは藤色） === */
+.article {
+  /* 記事内パーツの基調色（主役キャラ色連動は2026-07-12に廃止・サイト基調の藤色で統一） */
+  --chr: #8e7cc3; --chr-light: #b7a8e0; --chr-bg: #efeaf8;
+  --chr-deep: #6f5ca8; --chr-marker: #e3dbf4;
+}
+.tldr-box { border-radius: 16px; padding: 14px 18px; margin: 18px 0; background: var(--chr-bg); }
+.tldr-box h2 { margin: 0 0 8px; font-size: 1.05rem; color: var(--chr-deep); background: none; padding: 0; }
+.tldr-box ul { margin: 0; padding-left: 1.2em; }
+.toc-box { border: 1px dashed var(--chr-light); border-radius: 12px; padding: 12px 18px; margin: 14px 0; background: rgba(255,255,255,.4); font-size: .92rem; }
+.toc-title { display: block; font-weight: 600; color: var(--chr-deep); margin-bottom: 6px; }
+.toc-box ol { margin: 0; padding-left: 1.4em; }
+.toc-box a { text-decoration: none; }
+details.tech-note { border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; margin: 20px 0; background: rgba(255,255,255,.5); }
+details.tech-note summary { cursor: pointer; font-weight: 600; color: var(--chr-deep); }
+details.tech-note[open] { padding-bottom: 16px; }
+.stamp-line { text-align: center; margin: 6px 0; }
+.stamp-img { width: 110px; height: auto; display: inline-block; filter: drop-shadow(0 2px 6px rgba(0,0,0,.08)); }
+.meter { display: flex; align-items: center; gap: 10px; margin: 14px 0; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.55); }
+.meter-label { font-size: .88rem; color: var(--ink-soft); white-space: nowrap; }
+.meter-track { flex: 1; height: 12px; border-radius: 999px; background: var(--bg-veil); overflow: hidden; display: block; }
+.meter-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--chr), var(--chr-light)); }
+.meter-value { font-size: .85rem; color: var(--chr-deep); white-space: nowrap; font-weight: 600; }
+.day-chip { display: inline-block; margin-left: 10px; padding: 2px 12px; border-radius: 999px; background: var(--chr); color: #fff; font-size: .74rem; letter-spacing: .06em; vertical-align: middle; }
+/* コメント欄（Cusdisオープン API・自前UI・2026-07-12） */
+.comments-box { max-width: 720px; margin: 36px auto 0; padding: 20px 26px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.55); }
+.comments-title { margin: 0 0 6px; font-size: 1.05rem; color: var(--accent-deep); }
+.comments-note { margin: 0 0 12px; font-size: .88rem; color: var(--ink-soft); }
+.comments-soon { text-align: center; }
+.comments-list-head { margin: 4px 0 8px; font-size: .92rem; font-weight: 600; color: var(--accent-deep); }
+.comment-item { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 10px 0; }
+.comment-nick { font-weight: 600; color: var(--accent-deep); margin-right: 10px; }
+.comment-date { font-size: .8rem; color: var(--ink-soft); }
+.comment-body { margin-top: 4px; white-space: pre-wrap; line-height: 1.8; }
+.comment-empty { color: var(--ink-soft); font-size: .92rem; }
+.comment-form { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+.comment-form label { font-size: .88rem; color: var(--ink-soft); }
+.comment-form input, .comment-form textarea { width: 100%; box-sizing: border-box; margin-top: 4px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font: inherit; font-size: .95rem; color: var(--ink); }
+.comment-form input:focus, .comment-form textarea:focus { outline: none; border-color: var(--accent); }
+.comment-form .btn { align-self: flex-start; cursor: pointer; }
+.comment-status { margin: 0; font-size: .88rem; color: var(--accent-deep); min-height: 1.2em; }
+/* 本文h2＝蛍光マーカー風下線（span.hl に box-decoration-break で複数行対応）。
+   コーナー見出し（👀🎭🌸💡🎁）は番組テロップ風の帯 */
+.article-body h2 { width: fit-content; }
+.article-body h2 .hl { background: linear-gradient(transparent 62%, var(--chr-marker) 62%); padding: 0 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.article-body h2.corner-h2 { width: fit-content; background: linear-gradient(90deg, var(--chr), var(--chr-light)); color: #fff; border-radius: 22px; padding: 8px 22px; font-size: 1.05rem; }
+.article-body .tldr-box h2 { background: none; padding: 0; }
+/* 目次アンカーの着地位置（固定ヘッダーの高さぶん下げる） */
+.article-body h2, .article-body h3 { scroll-margin-top: 96px; }

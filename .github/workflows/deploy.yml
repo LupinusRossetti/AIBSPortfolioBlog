@@ -29,8 +29,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # artifact 1GB超過対策（2026-07-14）: ソース（note-diary/ 1.1GB・スクリプト類）は
+      # 公開に不要なので、サイト実体だけを _site へ集めてアップロードする。
+      # 参照実体は blog/ と images/ （note-diary の画像は build_blog.py が blog/ へコピー済み）。
+      - name: Collect public site files
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='_site' \
+            --exclude='.git*' \
+            --exclude='.github' \
+            --exclude='note-diary' \
+            --exclude='*.py' \
+            --exclude='README.md' \
+            --exclude='pilots.html' \
+            ./ _site/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4

@@ -81,20 +81,8 @@
       </div>
     </section>
 
-    <!-- 準備中プレースホルダー（本物のギャラリーは galleryReal 側） -->
-    <section class="gallery-gate" id="galleryGate">
-      <div class="container">
-        <div class="gallery-gate-box">
-          <span class="gallery-gate-icon" aria-hidden="true">🎀</span>
-          <h2>ただいま準備中です</h2>
-          <p>750枚ギャラリー、只今リボンで飾り付けの真っ最中……<br>もうしばらくお待ちくださいませ🌸</p>
-          <button type="button" id="galleryGateAdminLink" class="gallery-gate-admin-link">管理者はこちら</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- 本物の750ギャラリー（既定は非表示。管理者パスワードで解放） -->
-    <div id="galleryReal" style="display:none">
+    <!-- 750ギャラリー -->
+    <div id="galleryReal">
       <section class="gallery-tabs">
         <div class="container">
 
@@ -109,16 +97,6 @@
           <div class="tabs tabs-cat" id="tabsCat" role="tablist" aria-label="カテゴリ選択"></div>
 
           <div class="gallery-meta" id="galleryMeta"></div>
-
-          <!-- 管理者バー -->
-          <div class="admin-bar" id="adminBar">
-            <span class="admin-label">🔧 管理者モード</span>
-            <span class="admin-count" id="adminCount">選択: 0枚</span>
-            <button id="adminSelectAll">全選択</button>
-            <button id="adminClearSel">選択解除</button>
-            <button id="adminDelete" class="danger" disabled>選択を削除</button>
-            <button id="adminExit">終了</button>
-          </div>
 
           <!-- グリッド -->
           <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
@@ -143,20 +121,6 @@
         </div>
       </div>
 
-      <!-- 管理者ボタン（削除用の管理者モード） -->
-      <button class="admin-toggle" id="adminToggle" aria-label="管理者" title="管理者">🔒</button>
-
-      <!-- パスワードダイアログ -->
-      <div class="password-dialog" id="pwDialog">
-        <div class="password-box">
-          <h3>管理者パスワード</h3>
-          <input type="password" id="pwInput" autocomplete="off" placeholder="パスワードを入力">
-          <div class="pw-actions">
-            <button id="pwCancel">キャンセル</button>
-            <button id="pwOk" class="primary">OK</button>
-          </div>
-        </div>
-      </div>
     </div>
   </main>
 
@@ -169,39 +133,6 @@
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/gallery.js"></script>
-
-  <!-- 準備中ゲート：管理者パスワードで本物のギャラリーを解放 -->
-  <script>
-    (function () {
-      'use strict';
-      var GATE_KEY = 'aibs_gallery750_unlocked';
-      var ADMIN_PASS = 'puramu4078';
-      var gate = document.getElementById('galleryGate');
-      var real = document.getElementById('galleryReal');
-      var adminLink = document.getElementById('galleryGateAdminLink');
-      if (!gate || !real || !adminLink) return;
-
-      function unlock() {
-        try { localStorage.setItem(GATE_KEY, 'true'); } catch (e) { /* localStorage不可でも今回だけ表示 */ }
-        gate.style.display = 'none';
-        real.style.display = '';
-      }
-
-      var alreadyUnlocked = false;
-      try { alreadyUnlocked = localStorage.getItem(GATE_KEY) === 'true'; } catch (e) { /* noop */ }
-      if (alreadyUnlocked) unlock();
-
-      adminLink.addEventListener('click', function () {
-        var pass = window.prompt('管理者パスワードを入力してください');
-        if (pass === null) return;
-        if (pass === ADMIN_PASS) {
-          unlock();
-        } else {
-          window.alert('パスワードが違います。');
-        }
-      });
-    })();
-  </script>
 
 </body>
 

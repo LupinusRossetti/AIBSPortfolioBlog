@@ -2,13 +2,28 @@
   "chars": [
     {
       "id": "lupinus",
-      "total": 250,
+      "total": 200,
       "by_cat": {
         "elegant": 50,
-        "genki": 50,
         "kawaii": 50,
         "seiso": 50,
-        "sexy": 50
+        "idol": 50
+      }
+    },
+    {
+      "id": "iris",
+      "total": 100,
+      "by_cat": {
+        "kawaii": 50,
+        "idol": 50
+      }
+    },
+    {
+      "id": "fiona",
+      "total": 100,
+      "by_cat": {
+        "kawaii": 50,
+        "idol": 50
       }
     }
   ],
@@ -615,606 +630,6 @@
     },
     {
       "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_01",
-      "caption": "元気：tennis",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_01_tennis.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_01_tennis.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_02",
-      "caption": "元気：beach jump",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_02_beach_jump.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_02_beach_jump.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_03",
-      "caption": "元気：gym vsign",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_03_gym_vsign.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_03_gym_vsign.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_04",
-      "caption": "元気：sakura run",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_04_sakura_run.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_04_sakura_run.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_05",
-      "caption": "元気：rooftop sunset",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_05_rooftop_sunset.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_05_rooftop_sunset.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_06",
-      "caption": "元気：idol stage pink",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_06_idol_stage_pink.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_06_idol_stage_pink.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_07",
-      "caption": "元気：idol stage cool",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_07_idol_stage_cool.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_07_idol_stage_cool.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_08",
-      "caption": "元気：idol stage pastel",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_08_idol_stage_pastel.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_08_idol_stage_pastel.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_09",
-      "caption": "元気：idol stage wafu",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_09_idol_stage_wafu.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_09_idol_stage_wafu.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_10",
-      "caption": "元気：soccer kick",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_10_soccer_kick.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_10_soccer_kick.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_11",
-      "caption": "元気：basketball dunk",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_11_basketball_dunk.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_11_basketball_dunk.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_12",
-      "caption": "元気：track finish",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_12_track_finish.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_12_track_finish.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_13",
-      "caption": "元気：volleyball spike",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_13_volleyball_spike.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_13_volleyball_spike.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_14",
-      "caption": "元気：swimming pool dive",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_14_swimming_pool_dive.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_14_swimming_pool_dive.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_15",
-      "caption": "元気：cheerleader",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_15_cheerleader.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_15_cheerleader.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_16",
-      "caption": "元気：marching trumpet",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_16_marching_trumpet.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_16_marching_trumpet.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_17",
-      "caption": "元気：gymnastics ribbon",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_17_gymnastics_ribbon.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_17_gymnastics_ribbon.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_18",
-      "caption": "元気：skateboard ollie",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_18_skateboard_ollie.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_18_skateboard_ollie.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_19",
-      "caption": "元気：summer festival yo",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_19_summer_festival_yo.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_19_summer_festival_yo.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_20",
-      "caption": "元気：skiing slope",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_20_skiing_slope.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_20_skiing_slope.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_21",
-      "caption": "元気：summer kite",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_21_summer_kite.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_21_summer_kite.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_22",
-      "caption": "元気：baseball swing",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_22_baseball_swing.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_22_baseball_swing.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_23",
-      "caption": "元気：yoga sun",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_23_yoga_sun.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_23_yoga_sun.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_24",
-      "caption": "元気：zipline",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_24_zipline.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_24_zipline.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_25",
-      "caption": "元気：climbing",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_25_climbing.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_25_climbing.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_26",
-      "caption": "元気：dance studio",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_26_dance_studio.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_26_dance_studio.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_27",
-      "caption": "元気：park dog play",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_27_park_dog_play.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_27_park_dog_play.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_28",
-      "caption": "元気：summer water balloon",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_28_summer_water_balloon.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_28_summer_water_balloon.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_29",
-      "caption": "元気：school festival",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_29_school_festival.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_29_school_festival.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_30",
-      "caption": "元気：snowball throw",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_30_snowball_throw.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_30_snowball_throw.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_31",
-      "caption": "元気：idol practice studio",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_31_idol_practice_studio.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_31_idol_practice_studio.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_32",
-      "caption": "元気：idol recording",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_32_idol_recording.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_32_idol_recording.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_33",
-      "caption": "元気：concert idol white",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_33_concert_idol_white.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_33_concert_idol_white.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_34",
-      "caption": "元気：jogging morning",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_34_jogging_morning.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_34_jogging_morning.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_35",
-      "caption": "元気：horse riding",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_35_horse_riding.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_35_horse_riding.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_36",
-      "caption": "元気：high dive",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_36_high_dive.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_36_high_dive.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_37",
-      "caption": "元気：park bicycle",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_37_park_bicycle.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_37_park_bicycle.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_38",
-      "caption": "元気：jump rope",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_38_jump_rope.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_38_jump_rope.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_39",
-      "caption": "元気：idol signed",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_39_idol_signed.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_39_idol_signed.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_40",
-      "caption": "元気：beach volleyball",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_40_beach_volleyball.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_40_beach_volleyball.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_41",
-      "caption": "元気：kindergarten helper",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_41_kindergarten_helper.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_41_kindergarten_helper.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_42",
-      "caption": "元気：band drum",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_42_band_drum.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_42_band_drum.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_43",
-      "caption": "元気：kayaking",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_43_kayaking.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_43_kayaking.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_44",
-      "caption": "元気：concert dance",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_44_concert_dance.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_44_concert_dance.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_45",
-      "caption": "元気：outdoor camp",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_45_outdoor_camp.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_45_outdoor_camp.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_46",
-      "caption": "元気：ice skating",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_46_ice_skating.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_46_ice_skating.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_47",
-      "caption": "元気：school relay",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_47_school_relay.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_47_school_relay.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_48",
-      "caption": "元気：idol backstage",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_48_idol_backstage.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_48_idol_backstage.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_49",
-      "caption": "元気：park swing",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_49_park_swing.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_49_park_swing.webp"
-    },
-    {
-      "char": "lupinus",
-      "category": "genki",
-      "id": "lupinus_genki_50",
-      "caption": "元気：fireworks jump",
-      "tags": [
-        "元気",
-        "ルピナス"
-      ],
-      "thumb": "images/gallery/lupinus/genki/thumbs/genki_50_fireworks_jump.webp",
-      "full": "images/gallery/lupinus/genki/full/genki_50_fireworks_jump.webp"
-    },
-    {
-      "char": "lupinus",
       "category": "kawaii",
       "id": "lupinus_kawaii_01",
       "caption": "可愛い：moved hands clasped",
@@ -1817,9 +1232,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_01",
-      "caption": "清楚(仮)：head tilt",
+      "caption": "清楚：head tilt",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_01_head_tilt.webp",
@@ -1829,9 +1244,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_02",
-      "caption": "清楚(仮)：hand at mouth",
+      "caption": "清楚：hand at mouth",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_02_hand_at_mouth.webp",
@@ -1841,9 +1256,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_03",
-      "caption": "清楚(仮)：shy blush",
+      "caption": "清楚：shy blush",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_03_shy_blush.webp",
@@ -1853,9 +1268,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_04",
-      "caption": "清楚(仮)：wide eyed",
+      "caption": "清楚：wide eyed",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_04_wide_eyed.webp",
@@ -1865,9 +1280,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_05",
-      "caption": "清楚(仮)：hair tuck",
+      "caption": "清楚：hair tuck",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_05_hair_tuck.webp",
@@ -1877,9 +1292,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_06",
-      "caption": "清楚(仮)：waving",
+      "caption": "清楚：waving",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_06_waving.webp",
@@ -1889,9 +1304,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_07",
-      "caption": "清楚(仮)：hands clasped",
+      "caption": "清楚：hands clasped",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_07_hands_clasped.webp",
@@ -1901,9 +1316,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_08",
-      "caption": "清楚(仮)：caring gaze",
+      "caption": "清楚：caring gaze",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_08_caring_gaze.webp",
@@ -1913,9 +1328,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_09",
-      "caption": "清楚(仮)：hand reach",
+      "caption": "清楚：hand reach",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_09_hand_reach.webp",
@@ -1925,9 +1340,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_10",
-      "caption": "清楚(仮)：clap delight",
+      "caption": "清楚：clap delight",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_10_clap_delight.webp",
@@ -1937,9 +1352,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_11",
-      "caption": "清楚(仮)：stretch morning",
+      "caption": "清楚：stretch morning",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_11_stretch_morning.webp",
@@ -1949,9 +1364,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_12",
-      "caption": "清楚(仮)：arms around self",
+      "caption": "清楚：arms around self",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_12_arms_around_self.webp",
@@ -1961,9 +1376,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_13",
-      "caption": "清楚(仮)：gentle fistpump",
+      "caption": "清楚：gentle fistpump",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_13_gentle_fistpump.webp",
@@ -1973,9 +1388,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_14",
-      "caption": "清楚(仮)：worried brow",
+      "caption": "清楚：worried brow",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_14_worried_brow.webp",
@@ -1985,9 +1400,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_15",
-      "caption": "清楚(仮)：beckon",
+      "caption": "清楚：beckon",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_15_beckon.webp",
@@ -1997,9 +1412,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_16",
-      "caption": "清楚(仮)：bow greeting",
+      "caption": "清楚：bow greeting",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_16_bow_greeting.webp",
@@ -2009,9 +1424,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_17",
-      "caption": "清楚(仮)：chin rest",
+      "caption": "清楚：chin rest",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_17_chin_rest.webp",
@@ -2021,9 +1436,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_18",
-      "caption": "清楚(仮)：ticklish laugh",
+      "caption": "清楚：ticklish laugh",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_18_ticklish_laugh.webp",
@@ -2033,9 +1448,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_19",
-      "caption": "清楚(仮)：shy downcast",
+      "caption": "清楚：shy downcast",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_19_shy_downcast.webp",
@@ -2045,9 +1460,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_20",
-      "caption": "清楚(仮)：cheeks hands",
+      "caption": "清楚：cheeks hands",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_20_cheeks_hands.webp",
@@ -2057,9 +1472,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_21",
-      "caption": "清楚(仮)：yawn hide",
+      "caption": "清楚：yawn hide",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_21_yawn_hide.webp",
@@ -2069,9 +1484,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_22",
-      "caption": "清楚(仮)：dozing",
+      "caption": "清楚：dozing",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_22_dozing.webp",
@@ -2081,9 +1496,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_23",
-      "caption": "清楚(仮)：turn back smile",
+      "caption": "清楚：turn back smile",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_23_turn_back_smile.webp",
@@ -2093,9 +1508,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_24",
-      "caption": "清楚(仮)：see off wave",
+      "caption": "清楚：see off wave",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_24_see_off_wave.webp",
@@ -2105,9 +1520,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_25",
-      "caption": "清楚(仮)：offering flower",
+      "caption": "清楚：offering flower",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_25_offering_flower.webp",
@@ -2117,9 +1532,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_26",
-      "caption": "清楚(仮)：petting animal",
+      "caption": "清楚：petting animal",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_26_petting_animal.webp",
@@ -2129,9 +1544,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_27",
-      "caption": "清楚(仮)：head shake",
+      "caption": "清楚：head shake",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_27_head_shake.webp",
@@ -2141,9 +1556,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_28",
-      "caption": "清楚(仮)：welcome arms",
+      "caption": "清楚：welcome arms",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_28_welcome_arms.webp",
@@ -2153,9 +1568,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_29",
-      "caption": "清楚(仮)：hands on knees",
+      "caption": "清楚：hands on knees",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_29_hands_on_knees.webp",
@@ -2165,9 +1580,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_30",
-      "caption": "清楚(仮)：grass sitting",
+      "caption": "清楚：grass sitting",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_30_grass_sitting.webp",
@@ -2177,9 +1592,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_31",
-      "caption": "清楚(仮)：waking moment",
+      "caption": "清楚：waking moment",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_31_waking_moment.webp",
@@ -2189,9 +1604,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_32",
-      "caption": "清楚(仮)：window seat outside",
+      "caption": "清楚：window seat outside",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_32_window_seat_outside.webp",
@@ -2201,9 +1616,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_33",
-      "caption": "清楚(仮)：blush smile",
+      "caption": "清楚：blush smile",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_33_blush_smile.webp",
@@ -2213,9 +1628,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_34",
-      "caption": "清楚(仮)：wink",
+      "caption": "清楚：wink",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_34_wink.webp",
@@ -2225,9 +1640,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_35",
-      "caption": "清楚(仮)：hands together",
+      "caption": "清楚：hands together",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_35_hands_together.webp",
@@ -2237,9 +1652,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_36",
-      "caption": "清楚(仮)：reclining smile",
+      "caption": "清楚：reclining smile",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_36_reclining_smile.webp",
@@ -2249,9 +1664,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_37",
-      "caption": "清楚(仮)：reclining shy",
+      "caption": "清楚：reclining shy",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_37_reclining_shy.webp",
@@ -2261,9 +1676,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_38",
-      "caption": "清楚(仮)：reclining light",
+      "caption": "清楚：reclining light",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_38_reclining_light.webp",
@@ -2273,9 +1688,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_39",
-      "caption": "清楚(仮)：reclining pensive",
+      "caption": "清楚：reclining pensive",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_39_reclining_pensive.webp",
@@ -2285,9 +1700,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_40",
-      "caption": "清楚(仮)：offering flower2",
+      "caption": "清楚：offering flower2",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_40_offering_flower2.webp",
@@ -2297,9 +1712,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_41",
-      "caption": "清楚(仮)：hair wind",
+      "caption": "清楚：hair wind",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_41_hair_wind.webp",
@@ -2309,9 +1724,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_42",
-      "caption": "清楚(仮)：small jump",
+      "caption": "清楚：small jump",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_42_small_jump.webp",
@@ -2321,9 +1736,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_43",
-      "caption": "清楚(仮)：beckon turn",
+      "caption": "清楚：beckon turn",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_43_beckon_turn.webp",
@@ -2333,9 +1748,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_44",
-      "caption": "清楚(仮)：looked up at",
+      "caption": "清楚：looked up at",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_44_looked_up_at.webp",
@@ -2345,9 +1760,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_45",
-      "caption": "清楚(仮)：small crouch",
+      "caption": "清楚：small crouch",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_45_small_crouch.webp",
@@ -2357,9 +1772,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_46",
-      "caption": "清楚(仮)：stairs down smile",
+      "caption": "清楚：stairs down smile",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_46_stairs_down_smile.webp",
@@ -2369,9 +1784,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_47",
-      "caption": "清楚(仮)：hugging cushion",
+      "caption": "清楚：hugging cushion",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_47_hugging_cushion.webp",
@@ -2381,9 +1796,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_48",
-      "caption": "清楚(仮)：stretch bed",
+      "caption": "清楚：stretch bed",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_48_stretch_bed.webp",
@@ -2393,9 +1808,9 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_49",
-      "caption": "清楚(仮)：quiet standing",
+      "caption": "清楚：quiet standing",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_49_quiet_standing.webp",
@@ -2405,613 +1820,3013 @@
       "char": "lupinus",
       "category": "seiso",
       "id": "lupinus_seiso_50",
-      "caption": "清楚(仮)：offering treat",
+      "caption": "清楚：offering treat",
       "tags": [
-        "清楚(仮)",
+        "清楚",
         "ルピナス"
       ],
       "thumb": "images/gallery/lupinus/seiso/thumbs/seiso_50_offering_treat.webp",
       "full": "images/gallery/lupinus/seiso/full/seiso_50_offering_treat.webp"
     },
     {
-      "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_01",
-      "caption": "セクシー：bf shirt",
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_01",
+      "caption": "可愛い：gentle head tilt",
       "tags": [
-        "セクシー",
-        "ルピナス"
+        "可愛い",
+        "アイリス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_01_bf_shirt.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_01_bf_shirt.webp"
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_01_gentle_head_tilt.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_01_gentle_head_tilt.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_02",
+      "caption": "可愛い：cafe parfait",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_02_cafe_parfait.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_02_cafe_parfait.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_03",
+      "caption": "可愛い：jirai classic showcase",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_03_jirai_classic_showcase.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_03_jirai_classic_showcase.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_04",
+      "caption": "可愛い：sleepy morning yawn",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_04_sleepy_morning_yawn.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_04_sleepy_morning_yawn.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_05",
+      "caption": "可愛い：face up blush downcast",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_05_face_up_blush_downcast.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_05_face_up_blush_downcast.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_06",
+      "caption": "可愛い：library choosing book",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_06_library_choosing_book.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_06_library_choosing_book.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_07",
+      "caption": "可愛い：quiet wave gate",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_07_quiet_wave_gate.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_07_quiet_wave_gate.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_08",
+      "caption": "可愛い：run energetic park",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_08_run_energetic_park.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_08_run_energetic_park.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_09",
+      "caption": "可愛い：massproduced showcase",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_09_massproduced_showcase.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_09_massproduced_showcase.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_10",
+      "caption": "可愛い：small nod",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_10_small_nod.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_10_small_nod.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_11",
+      "caption": "可愛い：teacups amusement park",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_11_teacups_amusement_park.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_11_teacups_amusement_park.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_12",
+      "caption": "可愛い：face up giggle",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_12_face_up_giggle.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_12_face_up_giggle.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_13",
+      "caption": "可愛い：spin schoolyard",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_13_spin_schoolyard.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_13_spin_schoolyard.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_14",
+      "caption": "可愛い：bento packing",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_14_bento_packing.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_14_bento_packing.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_15",
+      "caption": "可愛い：fingertip smile",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_15_fingertip_smile.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_15_fingertip_smile.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_16",
+      "caption": "可愛い：jirai gal showcase",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_16_jirai_gal_showcase.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_16_jirai_gal_showcase.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_17",
+      "caption": "可愛い：listen quietly window",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_17_listen_quietly_window.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_17_listen_quietly_window.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_18",
+      "caption": "可愛い：tanabata tying wish",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_18_tanabata_tying_wish.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_18_tanabata_tying_wish.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_19",
+      "caption": "可愛い：mischievous grin",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_19_mischievous_grin.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_19_mischievous_grin.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_20",
+      "caption": "可愛い：face up soft smile eyes",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_20_face_up_soft_smile_eyes.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_20_face_up_soft_smile_eyes.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_21",
+      "caption": "可愛い：changing tying ribbon",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_21_changing_tying_ribbon.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_21_changing_tying_ribbon.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_22",
+      "caption": "可愛い：sit calmly veranda",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_22_sit_calmly_veranda.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_22_sit_calmly_veranda.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_23",
+      "caption": "可愛い：sweet lolita showcase",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_23_sweet_lolita_showcase.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_23_sweet_lolita_showcase.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_24",
+      "caption": "可愛い：wink playful",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_24_wink_playful.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_24_wink_playful.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_25",
+      "caption": "可愛い：gaze softly window",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_25_gaze_softly_window.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_25_gaze_softly_window.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_26",
+      "caption": "可愛い：zoo rabbit hold",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_26_zoo_rabbit_hold.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_26_zoo_rabbit_hold.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_27",
+      "caption": "可愛い：quiet sigh content",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_27_quiet_sigh_content.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_27_quiet_sigh_content.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_28",
+      "caption": "可愛い：raise hand energetic",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_28_raise_hand_energetic.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_28_raise_hand_energetic.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_29",
+      "caption": "可愛い：birthday gift surprise",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_29_birthday_gift_surprise.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_29_birthday_gift_surprise.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_30",
+      "caption": "可愛い：eyes downcast quiet",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_30_eyes_downcast_quiet.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_30_eyes_downcast_quiet.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_31",
+      "caption": "可愛い：jirai gothic showcase",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_31_jirai_gothic_showcase.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_31_jirai_gothic_showcase.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_32",
+      "caption": "可愛い：tongue out playful",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_32_tongue_out_playful.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_32_tongue_out_playful.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_33",
+      "caption": "可愛い：bed hug pillow sleep",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_33_bed_hug_pillow_sleep.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_33_bed_hug_pillow_sleep.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_34",
+      "caption": "可愛い：small fistpump",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_34_small_fistpump.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_34_small_fistpump.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_35",
+      "caption": "可愛い：halloween cat ears",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_35_halloween_cat_ears.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_35_halloween_cat_ears.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_36",
+      "caption": "可愛い：salute energetic",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_36_salute_energetic.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_36_salute_energetic.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_37",
+      "caption": "可愛い：reserved wave station",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_37_reserved_wave_station.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_37_reserved_wave_station.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_38",
+      "caption": "可愛い：massproduced ribbon",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_38_massproduced_ribbon.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_38_massproduced_ribbon.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_39",
+      "caption": "可愛い：face up head tilt small",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_39_face_up_head_tilt_small.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_39_face_up_head_tilt_small.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_40",
+      "caption": "可愛い：christmas stocking fill",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_40_christmas_stocking_fill.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_40_christmas_stocking_fill.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_41",
+      "caption": "可愛い：peace sign",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_41_peace_sign.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_41_peace_sign.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_42",
+      "caption": "可愛い：composed stand veranda",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_42_composed_stand_veranda.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_42_composed_stand_veranda.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_43",
+      "caption": "可愛い：aquarium dolphin light",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_43_aquarium_dolphin_light.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_43_aquarium_dolphin_light.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_44",
+      "caption": "可愛い：face up small smile profile",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_44_face_up_small_smile_profile.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_44_face_up_small_smile_profile.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_45",
+      "caption": "可愛い：small jump delight",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_45_small_jump_delight.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_45_small_jump_delight.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_46",
+      "caption": "可愛い：gaze flowerbed",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_46_gaze_flowerbed.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_46_gaze_flowerbed.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_47",
+      "caption": "可愛い：laundry fold yawn",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_47_laundry_fold_yawn.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_47_laundry_fold_yawn.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_48",
+      "caption": "可愛い：gothic lolita showcase",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_48_gothic_lolita_showcase.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_48_gothic_lolita_showcase.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_49",
+      "caption": "可愛い：calm smile stand",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_49_calm_smile_stand.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_49_calm_smile_stand.webp"
+    },
+    {
+      "char": "iris",
+      "category": "kawaii",
+      "id": "iris_kawaii_50",
+      "caption": "可愛い：face up cheek hand soft",
+      "tags": [
+        "可愛い",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/kawaii/thumbs/kawaii_50_face_up_cheek_hand_soft.webp",
+      "full": "images/gallery/iris/kawaii/full/kawaii_50_face_up_cheek_hand_soft.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_01",
+      "caption": "可愛い：self hug joy",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_01_self_hug_joy.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_01_self_hug_joy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_02",
+      "caption": "可愛い：cookie cutting",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_02_cookie_cutting.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_02_cookie_cutting.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_03",
+      "caption": "可愛い：massproduced clap",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_03_massproduced_clap.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_03_massproduced_clap.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_04",
+      "caption": "可愛い：arms wide greeting",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_04_arms_wide_greeting.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_04_arms_wide_greeting.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_05",
+      "caption": "可愛い：socks off stretch legs",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_05_socks_off_stretch_legs.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_05_socks_off_stretch_legs.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_06",
+      "caption": "可愛い：face up puffed cheeks",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_06_face_up_puffed_cheeks.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_06_face_up_puffed_cheeks.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_07",
+      "caption": "可愛い：sway side to side",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_07_sway_side_to_side.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_07_sway_side_to_side.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_08",
+      "caption": "可愛い：picnic basket excitement",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_08_picnic_basket_excitement.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_08_picnic_basket_excitement.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_09",
+      "caption": "可愛い：hands cheeks surprise joy",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_09_hands_cheeks_surprise_joy.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_09_hands_cheeks_surprise_joy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_10",
+      "caption": "可愛い：sweet lolita showcase",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_10_sweet_lolita_showcase.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_10_sweet_lolita_showcase.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_11",
+      "caption": "可愛い：eyes narrowed heartfelt",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_11_eyes_narrowed_heartfelt.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_11_eyes_narrowed_heartfelt.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_12",
+      "caption": "可愛い：fistpump gutspose",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_12_fistpump_gutspose.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_12_fistpump_gutspose.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_13",
+      "caption": "可愛い：hanami lying flowers",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_13_hanami_lying_flowers.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_13_hanami_lying_flowers.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_14",
+      "caption": "可愛い：jump arms up",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_14_jump_arms_up.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_14_jump_arms_up.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_15",
+      "caption": "可愛い：face up hand cheek happy",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_15_face_up_hand_cheek_happy.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_15_face_up_hand_cheek_happy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_16",
+      "caption": "可愛い：jirai classic showcase",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_16_jirai_classic_showcase.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_16_jirai_classic_showcase.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_17",
+      "caption": "可愛い：stomp feet excitement",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_17_stomp_feet_excitement.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_17_stomp_feet_excitement.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_18",
+      "caption": "可愛い：christmas tree decorating",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_18_christmas_tree_decorating.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_18_christmas_tree_decorating.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_19",
+      "caption": "可愛い：head tilt bakery counter",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_19_head_tilt_bakery_counter.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_19_head_tilt_bakery_counter.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_20",
+      "caption": "可愛い：big nod delight",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_20_big_nod_delight.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_20_big_nod_delight.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_21",
+      "caption": "可愛い：changing apron tie",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_21_changing_apron_tie.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_21_changing_apron_tie.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_22",
+      "caption": "可愛い：hand on belly laugh",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_22_hand_on_belly_laugh.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_22_hand_on_belly_laugh.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_23",
+      "caption": "可愛い：massproduced arms open",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_23_massproduced_arms_open.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_23_massproduced_arms_open.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_24",
+      "caption": "可愛い：lazy stretch veranda",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_24_lazy_stretch_veranda.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_24_lazy_stretch_veranda.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_25",
+      "caption": "可愛い：face up leaning forward joy",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_25_face_up_leaning_forward_joy.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_25_face_up_leaning_forward_joy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_26",
+      "caption": "可愛い：bread smell eyes closed",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_26_bread_smell_eyes_closed.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_26_bread_smell_eyes_closed.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_27",
+      "caption": "可愛い：hands mouth surprise",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_27_hands_mouth_surprise.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_27_hands_mouth_surprise.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_28",
+      "caption": "可愛い：warm drink hands",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_28_warm_drink_hands.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_28_warm_drink_hands.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_29",
+      "caption": "可愛い：balloon hop party",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_29_balloon_hop_party.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_29_balloon_hop_party.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_30",
+      "caption": "可愛い：big wave both arms",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_30_big_wave_both_arms.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_30_big_wave_both_arms.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_31",
+      "caption": "可愛い：gothic lolita bolero",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_31_gothic_lolita_bolero.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_31_gothic_lolita_bolero.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_32",
+      "caption": "可愛い：drowsy sofa",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_32_drowsy_sofa.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_32_drowsy_sofa.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_33",
+      "caption": "可愛い：sofa nap cardigan slip",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_33_sofa_nap_cardigan_slip.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_33_sofa_nap_cardigan_slip.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_34",
+      "caption": "可愛い：hop one foot",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_34_hop_one_foot.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_34_hop_one_foot.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_35",
+      "caption": "可愛い：cat curl up",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_35_cat_curl_up.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_35_cat_curl_up.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_36",
+      "caption": "可愛い：feet together bounce",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_36_feet_together_bounce.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_36_feet_together_bounce.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_37",
+      "caption": "可愛い：birthday cake clasped hands",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_37_birthday_cake_clasped_hands.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_37_birthday_cake_clasped_hands.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_38",
+      "caption": "可愛い：arms high joy outdoor",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_38_arms_high_joy_outdoor.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_38_arms_high_joy_outdoor.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_39",
+      "caption": "可愛い：face up gentle smile profile",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_39_face_up_gentle_smile_profile.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_39_face_up_gentle_smile_profile.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_40",
+      "caption": "可愛い：jirai gothic showcase",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_40_jirai_gothic_showcase.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_40_jirai_gothic_showcase.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_41",
+      "caption": "可愛い：bright laugh loud",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_41_bright_laugh_loud.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_41_bright_laugh_loud.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_42",
+      "caption": "可愛い：valentine chocolate melt",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_42_valentine_chocolate_melt.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_42_valentine_chocolate_melt.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_43",
+      "caption": "可愛い：rest under tree",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_43_rest_under_tree.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_43_rest_under_tree.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_44",
+      "caption": "可愛い：small jog path",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_44_small_jog_path.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_44_small_jog_path.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_45",
+      "caption": "可愛い：morning stretch pajamas",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_45_morning_stretch_pajamas.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_45_morning_stretch_pajamas.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_46",
+      "caption": "可愛い：face up stretch burst smile",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_46_face_up_stretch_burst_smile.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_46_face_up_stretch_burst_smile.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_47",
+      "caption": "可愛い：hold petals gently",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_47_hold_petals_gently.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_47_hold_petals_gently.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_48",
+      "caption": "可愛い：sweet lolita mint variant",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_48_sweet_lolita_mint_variant.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_48_sweet_lolita_mint_variant.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_49",
+      "caption": "可愛い：deep breath stretch balcony",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_49_deep_breath_stretch_balcony.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_49_deep_breath_stretch_balcony.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "kawaii",
+      "id": "fiona_kawaii_50",
+      "caption": "可愛い：calm standing veranda",
+      "tags": [
+        "可愛い",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/kawaii/thumbs/kawaii_50_calm_standing_veranda.webp",
+      "full": "images/gallery/fiona/kawaii/full/kawaii_50_calm_standing_veranda.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_02",
-      "caption": "セクシー：balcony night",
+      "category": "idol",
+      "id": "lupinus_idol_01",
+      "caption": "アイドル：spotlight ballad",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_02_balcony_night.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_02_balcony_night.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_01_spotlight_ballad.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_01_spotlight_ballad.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_03",
-      "caption": "セクシー：fireplace sofa",
+      "category": "idol",
+      "id": "lupinus_idol_02",
+      "caption": "アイドル：encore bow",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_03_fireplace_sofa.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_03_fireplace_sofa.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_02_encore_bow.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_02_encore_bow.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_04",
-      "caption": "セクシー：vanity lip",
+      "category": "idol",
+      "id": "lupinus_idol_03",
+      "caption": "アイドル：wing tension",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_04_vanity_lip.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_04_vanity_lip.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_03_wing_tension.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_03_wing_tension.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_05",
-      "caption": "セクシー：bath towel",
+      "category": "idol",
+      "id": "lupinus_idol_04",
+      "caption": "アイドル：acoustic seated",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_05_bath_towel.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_05_bath_towel.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_04_acoustic_seated.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_04_acoustic_seated.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_06",
-      "caption": "セクシー：morning yawn",
+      "category": "idol",
+      "id": "lupinus_idol_05",
+      "caption": "アイドル：uptempo spin sweat",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_06_morning_yawn.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_06_morning_yawn.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_05_uptempo_spin_sweat.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_05_uptempo_spin_sweat.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_07",
-      "caption": "セクシー：window coffee",
+      "category": "idol",
+      "id": "lupinus_idol_06",
+      "caption": "アイドル：rain outdoor stage",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_07_window_coffee.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_07_window_coffee.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_06_rain_outdoor_stage.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_06_rain_outdoor_stage.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_08",
-      "caption": "セクシー：kitchen morning",
+      "category": "idol",
+      "id": "lupinus_idol_07",
+      "caption": "アイドル：grand set landscape",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_08_kitchen_morning.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_08_kitchen_morning.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_07_grand_set_landscape.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_07_grand_set_landscape.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_09",
-      "caption": "セクシー：sofa book",
+      "category": "idol",
+      "id": "lupinus_idol_08",
+      "caption": "アイドル：high overlook crowd",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_09_sofa_book.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_09_sofa_book.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_08_high_overlook_crowd.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_08_high_overlook_crowd.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_10",
-      "caption": "セクシー：window light",
+      "category": "idol",
+      "id": "lupinus_idol_09",
+      "caption": "アイドル：mirror costume check",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_10_window_light.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_10_window_light.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_09_mirror_costume_check.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_09_mirror_costume_check.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_11",
-      "caption": "セクシー：office break",
+      "category": "idol",
+      "id": "lupinus_idol_10",
+      "caption": "アイドル：tv soundcheck",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_11_office_break.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_11_office_break.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_10_tv_soundcheck.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_10_tv_soundcheck.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_12",
-      "caption": "セクシー：night work",
+      "category": "idol",
+      "id": "lupinus_idol_11",
+      "caption": "アイドル：magazine cover pose",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_12_night_work.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_12_night_work.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_11_magazine_cover_pose.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_11_magazine_cover_pose.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_13",
-      "caption": "セクシー：garden evening",
+      "category": "idol",
+      "id": "lupinus_idol_12",
+      "caption": "アイドル：press conference",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_13_garden_evening.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_13_garden_evening.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_12_press_conference.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_12_press_conference.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_14",
-      "caption": "セクシー：balcony morning",
+      "category": "idol",
+      "id": "lupinus_idol_13",
+      "caption": "アイドル：costume fitting",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_14_balcony_morning.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_14_balcony_morning.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_13_costume_fitting.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_13_costume_fitting.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_15",
-      "caption": "セクシー：hair drying",
+      "category": "idol",
+      "id": "lupinus_idol_14",
+      "caption": "アイドル：signing event calm",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_15_hair_drying.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_15_hair_drying.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_14_signing_event_calm.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_14_signing_event_calm.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_16",
-      "caption": "セクシー：silk robe morning",
+      "category": "idol",
+      "id": "lupinus_idol_15",
+      "caption": "アイドル：poster wall shy",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_16_silk_robe_morning.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_16_silk_robe_morning.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_15_poster_wall_shy.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_15_poster_wall_shy.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_17",
-      "caption": "セクシー：book bed",
+      "category": "idol",
+      "id": "lupinus_idol_16",
+      "caption": "アイドル：earphones recording check",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_17_book_bed.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_17_book_bed.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_16_earphones_recording_check.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_16_earphones_recording_check.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_18",
-      "caption": "セクシー：dance practice dim",
+      "category": "idol",
+      "id": "lupinus_idol_17",
+      "caption": "アイドル：trophy tears",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_18_dance_practice_dim.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_18_dance_practice_dim.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_17_trophy_tears.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_17_trophy_tears.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_19",
-      "caption": "セクシー：bath edge",
+      "category": "idol",
+      "id": "lupinus_idol_18",
+      "caption": "アイドル：red carpet walk",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_19_bath_edge.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_19_bath_edge.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_18_red_carpet_walk.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_18_red_carpet_walk.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_20",
-      "caption": "セクシー：kitchen apron",
+      "category": "idol",
+      "id": "lupinus_idol_19",
+      "caption": "アイドル：waiting shadows profile",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_20_kitchen_apron.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_20_kitchen_apron.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_19_waiting_shadows_profile.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_19_waiting_shadows_profile.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_21",
-      "caption": "セクシー：lingerie mirror",
+      "category": "idol",
+      "id": "lupinus_idol_20",
+      "caption": "アイドル：mirror duet practice low",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_21_lingerie_mirror.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_21_lingerie_mirror.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_20_mirror_duet_practice_low.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_20_mirror_duet_practice_low.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_22",
-      "caption": "セクシー：wine glass",
+      "category": "idol",
+      "id": "lupinus_idol_21",
+      "caption": "アイドル：vocal booth warmup",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_22_wine_glass.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_22_wine_glass.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_21_vocal_booth_warmup.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_21_vocal_booth_warmup.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_23",
-      "caption": "セクシー：morning tea balcony",
+      "category": "idol",
+      "id": "lupinus_idol_22",
+      "caption": "アイドル：night practice alone",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_23_morning_tea_balcony.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_23_morning_tea_balcony.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_22_night_practice_alone.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_22_night_practice_alone.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_24",
-      "caption": "セクシー：after workout",
+      "category": "idol",
+      "id": "lupinus_idol_23",
+      "caption": "アイドル：car window candid",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_24_after_workout.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_24_after_workout.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_23_car_window_candid.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_23_car_window_candid.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_25",
-      "caption": "セクシー：concert dress after",
+      "category": "idol",
+      "id": "lupinus_idol_24",
+      "caption": "アイドル：hotel sofa shoes off",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_25_concert_dress_after.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_25_concert_dress_after.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_24_hotel_sofa_shoes_off.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_24_hotel_sofa_shoes_off.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_26",
-      "caption": "セクシー：evening window",
+      "category": "idol",
+      "id": "lupinus_idol_25",
+      "caption": "アイドル：hotel window tired",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_26_evening_window.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_26_evening_window.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_25_hotel_window_tired.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_25_hotel_window_tired.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_27",
-      "caption": "セクシー：silk robe open",
+      "category": "idol",
+      "id": "lupinus_idol_26",
+      "caption": "アイドル：venue lobby quiet",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_27_silk_robe_open.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_27_silk_robe_open.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_26_venue_lobby_quiet.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_26_venue_lobby_quiet.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_28",
-      "caption": "セクシー：hotel balcony",
+      "category": "idol",
+      "id": "lupinus_idol_27",
+      "caption": "アイドル：cafe terrace tea",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_28_hotel_balcony.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_28_hotel_balcony.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_27_cafe_terrace_tea.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_27_cafe_terrace_tea.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_29",
-      "caption": "セクシー：mirror makeup",
+      "category": "idol",
+      "id": "lupinus_idol_28",
+      "caption": "アイドル：tearful mirror moment",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_29_mirror_makeup.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_29_mirror_makeup.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_28_tearful_mirror_moment.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_28_tearful_mirror_moment.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_30",
-      "caption": "セクシー：blanket sofa",
+      "category": "idol",
+      "id": "lupinus_idol_29",
+      "caption": "アイドル：rehearsal floor relaxed",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_30_blanket_sofa.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_30_blanket_sofa.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_29_rehearsal_floor_relaxed.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_29_rehearsal_floor_relaxed.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_31",
-      "caption": "セクシー：lamp book",
+      "category": "idol",
+      "id": "lupinus_idol_30",
+      "caption": "アイドル：blackout silence",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_31_lamp_book.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_31_lamp_book.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_30_blackout_silence.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_30_blackout_silence.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_32",
-      "caption": "セクシー：after bath window",
+      "category": "idol",
+      "id": "lupinus_idol_31",
+      "caption": "アイドル：hairstyling session",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_32_after_bath_window.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_32_after_bath_window.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_31_hairstyling_session.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_31_hairstyling_session.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_33",
-      "caption": "セクシー：kitchen baking",
+      "category": "idol",
+      "id": "lupinus_idol_32",
+      "caption": "アイドル：fan letters quiet",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_33_kitchen_baking.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_33_kitchen_baking.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_32_fan_letters_quiet.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_32_fan_letters_quiet.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_34",
-      "caption": "セクシー：garden swing",
+      "category": "idol",
+      "id": "lupinus_idol_33",
+      "caption": "アイドル：chin hand sultry",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_34_garden_swing.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_34_garden_swing.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_33_chin_hand_sultry.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_33_chin_hand_sultry.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_35",
-      "caption": "セクシー：window writing",
+      "category": "idol",
+      "id": "lupinus_idol_34",
+      "caption": "アイドル：hair flip sultry",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_35_window_writing.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_35_window_writing.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_34_hair_flip_sultry.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_34_hair_flip_sultry.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_36",
-      "caption": "セクシー：silk robe morning stretch",
+      "category": "idol",
+      "id": "lupinus_idol_35",
+      "caption": "アイドル：sofa reclining sultry",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_36_silk_robe_morning_stretch.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_36_silk_robe_morning_stretch.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_35_sofa_reclining_sultry.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_35_sofa_reclining_sultry.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_37",
-      "caption": "セクシー：bath candle",
+      "category": "idol",
+      "id": "lupinus_idol_36",
+      "caption": "アイドル：new outfit reveal",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_37_bath_candle.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_37_bath_candle.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_36_new_outfit_reveal.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_36_new_outfit_reveal.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_38",
-      "caption": "セクシー：concert violin recital",
+      "category": "idol",
+      "id": "lupinus_idol_37",
+      "caption": "アイドル：wind machine dress",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_38_concert_violin_recital.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_38_concert_violin_recital.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_37_wind_machine_dress.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_37_wind_machine_dress.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_39",
-      "caption": "セクシー：perfume apply",
+      "category": "idol",
+      "id": "lupinus_idol_38",
+      "caption": "アイドル：ribbon touch sultry",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_39_perfume_apply.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_39_perfume_apply.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_38_ribbon_touch_sultry.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_38_ribbon_touch_sultry.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_40",
-      "caption": "セクシー：balcony breeze",
+      "category": "idol",
+      "id": "lupinus_idol_39",
+      "caption": "アイドル：kiss throw",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_40_balcony_breeze.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_40_balcony_breeze.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_39_kiss_throw.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_39_kiss_throw.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_41",
-      "caption": "セクシー：letter read",
+      "category": "idol",
+      "id": "lupinus_idol_40",
+      "caption": "アイドル：leg cross sultry",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_41_letter_read.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_41_letter_read.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_40_leg_cross_sultry.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_40_leg_cross_sultry.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_42",
-      "caption": "セクシー：studio dance solo",
+      "category": "idol",
+      "id": "lupinus_idol_41",
+      "caption": "アイドル：feather fan performance",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_42_studio_dance_solo.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_42_studio_dance_solo.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_41_feather_fan_performance.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_41_feather_fan_performance.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_43",
-      "caption": "セクシー：silk sleep",
+      "category": "idol",
+      "id": "lupinus_idol_42",
+      "caption": "アイドル：omamori prayer",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_43_silk_sleep.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_43_silk_sleep.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_42_omamori_prayer.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_42_omamori_prayer.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_44",
-      "caption": "セクシー：morning yoga silk",
+      "category": "idol",
+      "id": "lupinus_idol_43",
+      "caption": "アイドル：signed cd show",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_44_morning_yoga_silk.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_44_morning_yoga_silk.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_43_signed_cd_show.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_43_signed_cd_show.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_45",
-      "caption": "セクシー：office evening",
+      "category": "idol",
+      "id": "lupinus_idol_44",
+      "caption": "アイドル：countdown excitement",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_45_office_evening.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_45_office_evening.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_44_countdown_excitement.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_44_countdown_excitement.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_46",
-      "caption": "セクシー：mirror jewelry",
+      "category": "idol",
+      "id": "lupinus_idol_45",
+      "caption": "アイドル：empty venue soundcheck",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_46_mirror_jewelry.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_46_mirror_jewelry.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_45_empty_venue_soundcheck.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_45_empty_venue_soundcheck.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_47",
-      "caption": "セクシー：recline lounge",
+      "category": "idol",
+      "id": "lupinus_idol_46",
+      "caption": "アイドル：choreo headphones review",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_47_recline_lounge.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_47_recline_lounge.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_46_choreo_headphones_review.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_46_choreo_headphones_review.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_48",
-      "caption": "セクシー：late kitchen tea",
+      "category": "idol",
+      "id": "lupinus_idol_47",
+      "caption": "アイドル：finale deep bow",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_48_late_kitchen_tea.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_48_late_kitchen_tea.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_47_finale_deep_bow.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_47_finale_deep_bow.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_49",
-      "caption": "セクシー：mirror ribbon",
+      "category": "idol",
+      "id": "lupinus_idol_48",
+      "caption": "アイドル：gentle wink closeup",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_49_mirror_ribbon.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_49_mirror_ribbon.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_48_gentle_wink_closeup.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_48_gentle_wink_closeup.webp"
     },
     {
       "char": "lupinus",
-      "category": "sexy",
-      "id": "lupinus_sexy_50",
-      "caption": "セクシー：window dawn",
+      "category": "idol",
+      "id": "lupinus_idol_49",
+      "caption": "アイドル：backstage flowers receive",
       "tags": [
-        "セクシー",
+        "アイドル",
         "ルピナス"
       ],
-      "thumb": "images/gallery/lupinus/sexy/thumbs/sexy_50_window_dawn.webp",
-      "full": "images/gallery/lupinus/sexy/full/sexy_50_window_dawn.webp"
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_49_backstage_flowers_receive.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_49_backstage_flowers_receive.webp"
+    },
+    {
+      "char": "lupinus",
+      "category": "idol",
+      "id": "lupinus_idol_50",
+      "caption": "アイドル：dressing room calm close",
+      "tags": [
+        "アイドル",
+        "ルピナス"
+      ],
+      "thumb": "images/gallery/lupinus/idol/thumbs/idol_50_dressing_room_calm_close.webp",
+      "full": "images/gallery/lupinus/idol/full/idol_50_dressing_room_calm_close.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_01",
+      "caption": "アイドル：chorus jump wave",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_01_chorus_jump_wave.webp",
+      "full": "images/gallery/iris/idol/full/idol_01_chorus_jump_wave.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_02",
+      "caption": "アイドル：penlight sea highangle",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_02_penlight_sea_highangle.webp",
+      "full": "images/gallery/iris/idol/full/idol_02_penlight_sea_highangle.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_03",
+      "caption": "アイドル：kneel catch breath sweat",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_03_kneel_catch_breath_sweat.webp",
+      "full": "images/gallery/iris/idol/full/idol_03_kneel_catch_breath_sweat.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_04",
+      "caption": "アイドル：jump landing splash sweat",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_04_jump_landing_splash_sweat.webp",
+      "full": "images/gallery/iris/idol/full/idol_04_jump_landing_splash_sweat.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_05",
+      "caption": "アイドル：mic scream low",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_05_mic_scream_low.webp",
+      "full": "images/gallery/iris/idol/full/idol_05_mic_scream_low.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_06",
+      "caption": "アイドル：collapse sit breathless",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_06_collapse_sit_breathless.webp",
+      "full": "images/gallery/iris/idol/full/idol_06_collapse_sit_breathless.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_07",
+      "caption": "アイドル：curtain call arms up",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_07_curtain_call_arms_up.webp",
+      "full": "images/gallery/iris/idol/full/idol_07_curtain_call_arms_up.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_08",
+      "caption": "アイドル：summer festival stage sweat",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_08_summer_festival_stage_sweat.webp",
+      "full": "images/gallery/iris/idol/full/idol_08_summer_festival_stage_sweat.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_09",
+      "caption": "アイドル：final pose grin",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_09_final_pose_grin.webp",
+      "full": "images/gallery/iris/idol/full/idol_09_final_pose_grin.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_10",
+      "caption": "アイドル：rehearsal studio dance",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_10_rehearsal_studio_dance.webp",
+      "full": "images/gallery/iris/idol/full/idol_10_rehearsal_studio_dance.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_11",
+      "caption": "アイドル：dance coaching aftermath",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_11_dance_coaching_aftermath.webp",
+      "full": "images/gallery/iris/idol/full/idol_11_dance_coaching_aftermath.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_12",
+      "caption": "アイドル：tv jump choreo",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_12_tv_jump_choreo.webp",
+      "full": "images/gallery/iris/idol/full/idol_12_tv_jump_choreo.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_13",
+      "caption": "アイドル：choreographer review profile",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_13_choreographer_review_profile.webp",
+      "full": "images/gallery/iris/idol/full/idol_13_choreographer_review_profile.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_14",
+      "caption": "アイドル：water bottle chug",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_14_water_bottle_chug.webp",
+      "full": "images/gallery/iris/idol/full/idol_14_water_bottle_chug.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_15",
+      "caption": "アイドル：floor choreo review over",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_15_floor_choreo_review_over.webp",
+      "full": "images/gallery/iris/idol/full/idol_15_floor_choreo_review_over.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_16",
+      "caption": "アイドル：radio booth chat",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_16_radio_booth_chat.webp",
+      "full": "images/gallery/iris/idol/full/idol_16_radio_booth_chat.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_17",
+      "caption": "アイドル：signing event energetic",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_17_signing_event_energetic.webp",
+      "full": "images/gallery/iris/idol/full/idol_17_signing_event_energetic.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_18",
+      "caption": "アイドル：tshirt toss crowd",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_18_tshirt_toss_crowd.webp",
+      "full": "images/gallery/iris/idol/full/idol_18_tshirt_toss_crowd.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_19",
+      "caption": "アイドル：acrobatic landing low",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_19_acrobatic_landing_low.webp",
+      "full": "images/gallery/iris/idol/full/idol_19_acrobatic_landing_low.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_20",
+      "caption": "アイドル：ice pack ankle",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_20_ice_pack_ankle.webp",
+      "full": "images/gallery/iris/idol/full/idol_20_ice_pack_ankle.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_21",
+      "caption": "アイドル：photobooth silly face",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_21_photobooth_silly_face.webp",
+      "full": "images/gallery/iris/idol/full/idol_21_photobooth_silly_face.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_22",
+      "caption": "アイドル：jump rope trick",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_22_jump_rope_trick.webp",
+      "full": "images/gallery/iris/idol/full/idol_22_jump_rope_trick.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_23",
+      "caption": "アイドル：backstage energy drink alone",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_23_backstage_energy_drink_alone.webp",
+      "full": "images/gallery/iris/idol/full/idol_23_backstage_energy_drink_alone.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_24",
+      "caption": "アイドル：room floor choreo review",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_24_room_floor_choreo_review.webp",
+      "full": "images/gallery/iris/idol/full/idol_24_room_floor_choreo_review.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_25",
+      "caption": "アイドル：shoelace thoughtful high",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_25_shoelace_thoughtful_high.webp",
+      "full": "images/gallery/iris/idol/full/idol_25_shoelace_thoughtful_high.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_26",
+      "caption": "アイドル：starfish floor nap",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_26_starfish_floor_nap.webp",
+      "full": "images/gallery/iris/idol/full/idol_26_starfish_floor_nap.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_27",
+      "caption": "アイドル：night stairs wind down",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_27_night_stairs_wind_down.webp",
+      "full": "images/gallery/iris/idol/full/idol_27_night_stairs_wind_down.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_28",
+      "caption": "アイドル：morning wakeup yawn",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_28_morning_wakeup_yawn.webp",
+      "full": "images/gallery/iris/idol/full/idol_28_morning_wakeup_yawn.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_29",
+      "caption": "アイドル：family diner notebook",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_29_family_diner_notebook.webp",
+      "full": "images/gallery/iris/idol/full/idol_29_family_diner_notebook.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_30",
+      "caption": "アイドル：gamecenter claw machine",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_30_gamecenter_claw_machine.webp",
+      "full": "images/gallery/iris/idol/full/idol_30_gamecenter_claw_machine.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_31",
+      "caption": "アイドル：mirror spin check",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_31_mirror_spin_check.webp",
+      "full": "images/gallery/iris/idol/full/idol_31_mirror_spin_check.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_32",
+      "caption": "アイドル：stretch split morning",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_32_stretch_split_morning.webp",
+      "full": "images/gallery/iris/idol/full/idol_32_stretch_split_morning.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_33",
+      "caption": "アイドル：shirt hem tie playful",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_33_shirt_hem_tie_playful.webp",
+      "full": "images/gallery/iris/idol/full/idol_33_shirt_hem_tie_playful.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_34",
+      "caption": "アイドル：wink finger lip",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_34_wink_finger_lip.webp",
+      "full": "images/gallery/iris/idol/full/idol_34_wink_finger_lip.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_35",
+      "caption": "アイドル：prone legs crossed sultry",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_35_prone_legs_crossed_sultry.webp",
+      "full": "images/gallery/iris/idol/full/idol_35_prone_legs_crossed_sultry.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_36",
+      "caption": "アイドル：cheer skirt tilt",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_36_cheer_skirt_tilt.webp",
+      "full": "images/gallery/iris/idol/full/idol_36_cheer_skirt_tilt.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_37",
+      "caption": "アイドル：sweaty bangs provocative",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_37_sweaty_bangs_provocative.webp",
+      "full": "images/gallery/iris/idol/full/idol_37_sweaty_bangs_provocative.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_38",
+      "caption": "アイドル：shoelace leg line",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_38_shoelace_leg_line.webp",
+      "full": "images/gallery/iris/idol/full/idol_38_shoelace_leg_line.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_39",
+      "caption": "アイドル：water gun splash",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_39_water_gun_splash.webp",
+      "full": "images/gallery/iris/idol/full/idol_39_water_gun_splash.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_40",
+      "caption": "アイドル：cheer pompom wink",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_40_cheer_pompom_wink.webp",
+      "full": "images/gallery/iris/idol/full/idol_40_cheer_pompom_wink.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_41",
+      "caption": "アイドル：sports day headband run",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_41_sports_day_headband_run.webp",
+      "full": "images/gallery/iris/idol/full/idol_41_sports_day_headband_run.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_42",
+      "caption": "アイドル：fan wave bigfan",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_42_fan_wave_bigfan.webp",
+      "full": "images/gallery/iris/idol/full/idol_42_fan_wave_bigfan.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_43",
+      "caption": "アイドル：dance battle challenge low",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_43_dance_battle_challenge_low.webp",
+      "full": "images/gallery/iris/idol/full/idol_43_dance_battle_challenge_low.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_44",
+      "caption": "アイドル：towel sky gaze",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_44_towel_sky_gaze.webp",
+      "full": "images/gallery/iris/idol/full/idol_44_towel_sky_gaze.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_45",
+      "caption": "アイドル：bubble gum pop",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_45_bubble_gum_pop.webp",
+      "full": "images/gallery/iris/idol/full/idol_45_bubble_gum_pop.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_46",
+      "caption": "アイドル：confetti finale jump",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_46_confetti_finale_jump.webp",
+      "full": "images/gallery/iris/idol/full/idol_46_confetti_finale_jump.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_47",
+      "caption": "アイドル：wink camera point",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_47_wink_camera_point.webp",
+      "full": "images/gallery/iris/idol/full/idol_47_wink_camera_point.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_48",
+      "caption": "アイドル：headphones neck sultry",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_48_headphones_neck_sultry.webp",
+      "full": "images/gallery/iris/idol/full/idol_48_headphones_neck_sultry.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_49",
+      "caption": "アイドル：finish line ribbon",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_49_finish_line_ribbon.webp",
+      "full": "images/gallery/iris/idol/full/idol_49_finish_line_ribbon.webp"
+    },
+    {
+      "char": "iris",
+      "category": "idol",
+      "id": "iris_idol_50",
+      "caption": "アイドル：backstage thumbsup",
+      "tags": [
+        "アイドル",
+        "アイリス"
+      ],
+      "thumb": "images/gallery/iris/idol/thumbs/idol_50_backstage_thumbsup.webp",
+      "full": "images/gallery/iris/idol/full/idol_50_backstage_thumbsup.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_01",
+      "caption": "アイドル：mc letter moved",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_01_mc_letter_moved.webp",
+      "full": "images/gallery/fiona/idol/full/idol_01_mc_letter_moved.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_02",
+      "caption": "アイドル：stage sit thanks",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_02_stage_sit_thanks.webp",
+      "full": "images/gallery/fiona/idol/full/idol_02_stage_sit_thanks.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_03",
+      "caption": "アイドル：ballad prayer hands",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_03_ballad_prayer_hands.webp",
+      "full": "images/gallery/fiona/idol/full/idol_03_ballad_prayer_hands.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_04",
+      "caption": "アイドル：clap spread chorus",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_04_clap_spread_chorus.webp",
+      "full": "images/gallery/fiona/idol/full/idol_04_clap_spread_chorus.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_05",
+      "caption": "アイドル：kneel reach lowangle",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_05_kneel_reach_lowangle.webp",
+      "full": "images/gallery/fiona/idol/full/idol_05_kneel_reach_lowangle.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_06",
+      "caption": "アイドル：hand sign language",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_06_hand_sign_language.webp",
+      "full": "images/gallery/fiona/idol/full/idol_06_hand_sign_language.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_07",
+      "caption": "アイドル：flowers receive moved",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_07_flowers_receive_moved.webp",
+      "full": "images/gallery/fiona/idol/full/idol_07_flowers_receive_moved.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_08",
+      "caption": "アイドル：confetti finale lookup",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_08_confetti_finale_lookup.webp",
+      "full": "images/gallery/fiona/idol/full/idol_08_confetti_finale_lookup.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_09",
+      "caption": "アイドル：rehearsal wipe overshoulder",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_09_rehearsal_wipe_overshoulder.webp",
+      "full": "images/gallery/fiona/idol/full/idol_09_rehearsal_wipe_overshoulder.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_10",
+      "caption": "アイドル：sns baking video",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_10_sns_baking_video.webp",
+      "full": "images/gallery/fiona/idol/full/idol_10_sns_baking_video.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_11",
+      "caption": "アイドル：throat lozenge care",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_11_throat_lozenge_care.webp",
+      "full": "images/gallery/fiona/idol/full/idol_11_throat_lozenge_care.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_12",
+      "caption": "アイドル：dance teach junior profile",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_12_dance_teach_junior_profile.webp",
+      "full": "images/gallery/fiona/idol/full/idol_12_dance_teach_junior_profile.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_13",
+      "caption": "アイドル：charity flowers moved",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_13_charity_flowers_moved.webp",
+      "full": "images/gallery/fiona/idol/full/idol_13_charity_flowers_moved.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_14",
+      "caption": "アイドル：signing bow handover",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_14_signing_bow_handover.webp",
+      "full": "images/gallery/fiona/idol/full/idol_14_signing_bow_handover.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_15",
+      "caption": "アイドル：rain umbrella entrance",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_15_rain_umbrella_entrance.webp",
+      "full": "images/gallery/fiona/idol/full/idol_15_rain_umbrella_entrance.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_16",
+      "caption": "アイドル：window plant water",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_16_window_plant_water.webp",
+      "full": "images/gallery/fiona/idol/full/idol_16_window_plant_water.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_17",
+      "caption": "アイドル：lip check mirror",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_17_lip_check_mirror.webp",
+      "full": "images/gallery/fiona/idol/full/idol_17_lip_check_mirror.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_18",
+      "caption": "アイドル：stairwell script hug",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_18_stairwell_script_hug.webp",
+      "full": "images/gallery/fiona/idol/full/idol_18_stairwell_script_hug.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_19",
+      "caption": "アイドル：recording booth script",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_19_recording_booth_script.webp",
+      "full": "images/gallery/fiona/idol/full/idol_19_recording_booth_script.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_20",
+      "caption": "アイドル：hair combed drowsy",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_20_hair_combed_drowsy.webp",
+      "full": "images/gallery/fiona/idol/full/idol_20_hair_combed_drowsy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_21",
+      "caption": "アイドル：charity telethon phone",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_21_charity_telethon_phone.webp",
+      "full": "images/gallery/fiona/idol/full/idol_21_charity_telethon_phone.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_22",
+      "caption": "アイドル：sofa script read",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_22_sofa_script_read.webp",
+      "full": "images/gallery/fiona/idol/full/idol_22_sofa_script_read.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_23",
+      "caption": "アイドル：bus window wave",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_23_bus_window_wave.webp",
+      "full": "images/gallery/fiona/idol/full/idol_23_bus_window_wave.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_24",
+      "caption": "アイドル：backstage nap sofa",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_24_backstage_nap_sofa.webp",
+      "full": "images/gallery/fiona/idol/full/idol_24_backstage_nap_sofa.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_25",
+      "caption": "アイドル：letter reply pen chew",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_25_letter_reply_pen_chew.webp",
+      "full": "images/gallery/fiona/idol/full/idol_25_letter_reply_pen_chew.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_26",
+      "caption": "アイドル：shinkansen dozing",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_26_shinkansen_dozing.webp",
+      "full": "images/gallery/fiona/idol/full/idol_26_shinkansen_dozing.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_27",
+      "caption": "アイドル：mirror selfcheck high",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_27_mirror_selfcheck_high.webp",
+      "full": "images/gallery/fiona/idol/full/idol_27_mirror_selfcheck_high.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_28",
+      "caption": "アイドル：omamori shelf prayer",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_28_omamori_shelf_prayer.webp",
+      "full": "images/gallery/fiona/idol/full/idol_28_omamori_shelf_prayer.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_29",
+      "caption": "アイドル：warm drink steam",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_29_warm_drink_steam.webp",
+      "full": "images/gallery/fiona/idol/full/idol_29_warm_drink_steam.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_30",
+      "caption": "アイドル：stairwell relief exhale",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_30_stairwell_relief_exhale.webp",
+      "full": "images/gallery/fiona/idol/full/idol_30_stairwell_relief_exhale.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_31",
+      "caption": "アイドル：hairmussed stretch morning",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_31_hairmussed_stretch_morning.webp",
+      "full": "images/gallery/fiona/idol/full/idol_31_hairmussed_stretch_morning.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_32",
+      "caption": "アイドル：fan letter box sort",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_32_fan_letter_box_sort.webp",
+      "full": "images/gallery/fiona/idol/full/idol_32_fan_letter_box_sort.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_33",
+      "caption": "アイドル：strap adjust shy",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_33_strap_adjust_shy.webp",
+      "full": "images/gallery/fiona/idol/full/idol_33_strap_adjust_shy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_34",
+      "caption": "アイドル：cheek hand facecloseup",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_34_cheek_hand_facecloseup.webp",
+      "full": "images/gallery/fiona/idol/full/idol_34_cheek_hand_facecloseup.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_35",
+      "caption": "アイドル：bedroom plushie hug",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_35_bedroom_plushie_hug.webp",
+      "full": "images/gallery/fiona/idol/full/idol_35_bedroom_plushie_hug.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_36",
+      "caption": "アイドル：sweat ear tuck smile",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_36_sweat_ear_tuck_smile.webp",
+      "full": "images/gallery/fiona/idol/full/idol_36_sweat_ear_tuck_smile.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_37",
+      "caption": "アイドル：sofa recline sultry",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_37_sofa_recline_sultry.webp",
+      "full": "images/gallery/fiona/idol/full/idol_37_sofa_recline_sultry.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_38",
+      "caption": "アイドル：knit sleeve mouth shy",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_38_knit_sleeve_mouth_shy.webp",
+      "full": "images/gallery/fiona/idol/full/idol_38_knit_sleeve_mouth_shy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_39",
+      "caption": "アイドル：leg over knee sultry",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_39_leg_over_knee_sultry.webp",
+      "full": "images/gallery/fiona/idol/full/idol_39_leg_over_knee_sultry.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_40",
+      "caption": "アイドル：yukata fan cool",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_40_yukata_fan_cool.webp",
+      "full": "images/gallery/fiona/idol/full/idol_40_yukata_fan_cool.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_41",
+      "caption": "アイドル：wave bow fan event",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_41_wave_bow_fan_event.webp",
+      "full": "images/gallery/fiona/idol/full/idol_41_wave_bow_fan_event.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_42",
+      "caption": "アイドル：curled bed nap undone",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_42_curled_bed_nap_undone.webp",
+      "full": "images/gallery/fiona/idol/full/idol_42_curled_bed_nap_undone.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_43",
+      "caption": "アイドル：uchiwa cool smile",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_43_uchiwa_cool_smile.webp",
+      "full": "images/gallery/fiona/idol/full/idol_43_uchiwa_cool_smile.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_44",
+      "caption": "アイドル：gentle bite lip shy",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_44_gentle_bite_lip_shy.webp",
+      "full": "images/gallery/fiona/idol/full/idol_44_gentle_bite_lip_shy.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_45",
+      "caption": "アイドル：flower crown soft",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_45_flower_crown_soft.webp",
+      "full": "images/gallery/fiona/idol/full/idol_45_flower_crown_soft.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_46",
+      "caption": "アイドル：warm bath towel sultry",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_46_warm_bath_towel_sultry.webp",
+      "full": "images/gallery/fiona/idol/full/idol_46_warm_bath_towel_sultry.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_47",
+      "caption": "アイドル：candle glow close",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_47_candle_glow_close.webp",
+      "full": "images/gallery/fiona/idol/full/idol_47_candle_glow_close.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_48",
+      "caption": "アイドル：soft stretch awakening",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_48_soft_stretch_awakening.webp",
+      "full": "images/gallery/fiona/idol/full/idol_48_soft_stretch_awakening.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_49",
+      "caption": "アイドル：handheld bouquet thanks",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_49_handheld_bouquet_thanks.webp",
+      "full": "images/gallery/fiona/idol/full/idol_49_handheld_bouquet_thanks.webp"
+    },
+    {
+      "char": "fiona",
+      "category": "idol",
+      "id": "fiona_idol_50",
+      "caption": "アイドル：goodnight wave close",
+      "tags": [
+        "アイドル",
+        "フィオナ"
+      ],
+      "thumb": "images/gallery/fiona/idol/thumbs/idol_50_goodnight_wave_close.webp",
+      "full": "images/gallery/fiona/idol/full/idol_50_goodnight_wave_close.webp"
     }
   ]
 }

@@ -21,7 +21,7 @@
   let modalIdx = -1;
 
   const CAT_LABEL = {
-    seiso: '🤍 清楚(仮)', elegant: '🌹 エレガント', idol: '🎤 アイドル',
+    seiso: '🤍 清楚', elegant: '🌹 エレガント', idol: '🎤 アイドル',
     kawaii: '🌸 可愛い', sexy: '💕 セクシー',
     genki: '😆 元気', gakuen: '🎒 学園青春',
     yasashii: '☕ やさしい', fantasy: '✨ ファンタジー',

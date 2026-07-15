@@ -11,8 +11,8 @@
 <h2 id="sec-1"><span class="hl">1. 🎲 惜しかった3枚、seedを引き直す</span></h2><figure class="article-figure"><img src="../heroes/2026-06-30_AI画像seed引き直し整備とBBCF配信5時間超_1.png" alt="AI画像seed引き直し整備とBBCF配信5時間超🎮 の挿絵1" loading="lazy"></figure>
 <p>AIキャラ画像の量産バッチで生成した画像のうち、構図は気に入っているのに表情だけ惜しい3枚が残った。全部やり直すのはもったいないので、他の枚数はそのまま残し、この3枚だけ <strong>seed（シード）を変えて別テイクを生成し直すスクリプト</strong> を用意した。あわせて、本番量産の前に数枚だけ試し生成して方向性を確かめる「テスト用スクリプト」も追加。地味だが、大量生成のときに「全部外れ」を防ぐ足回りの整備だ。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">ここでクイズ。アイリス、seed ってなんだと思う？</div></div></div>
-<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">シード……種？じゃあ AI が絵を育てる感じ？畑みたいな？</div></div></div>
-<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_surprised.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（びっくり）</span></div><div class="bubble">植物じゃないけど、種って方向は惜しくもない。</div></div></div>
+<div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">シード……あ、大会でよく聞く「シード権」的なやつ？強い人が最初の試合を免除されるやつでしょ？</div></div></div>
+<div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_surprised.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（びっくり）</span></div><div class="bubble">スポーツの意味とは別物だけど、方向としては惜しくもない。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">AI が絵を描くとき、最初にランダムなノイズ——砂嵐みたいな模様——を用意して、そこからプロンプトに沿って絵を彫り出していくんです。この砂嵐の形を決める番号が seed です。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">え！じゃあ同じ呪文でも seed が違えば全然別の絵が出てくるってこと！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">そう。逆にプロンプトも seed も同じなら、ほぼ同じ絵が再現できる。だから当たりの seed 番号はメモが鉄則で、今回は3枚だけ別スクリプトで引き直す——気に入った子を巻き込まず、外れた子だけ狙い撃ちで再挑戦する仕組みね。</div></div></div>
@@ -57,7 +57,7 @@
 <details class="tech-note point-note"><summary>📝 ポイント（初心者向け解説・技術メモ・まとめ）</summary>
 <ul>
 <li><strong>初心者向け</strong>：格ゲーのコンボは「手に呪文の手順を覚えさせる」作業。何度やっても出なかったのにある瞬間ガクッとできるようになる感覚があるので、そこまで諦めないのがコツ😤</li>
-<li><strong>技術メモ</strong>：BBCF の空中コンボは「低空技を最速で出す」タイミングがカギで、ヒットストップ中に次のコマンドを仕込む形を意識すると安定しやすい（視聴者さんからのアドバイスで判明）</li>
+<li><strong>配信メモ</strong>：BBCF の空中コンボは「低空技を最速で出す」タイミングがカギで、ヒットストップ中に次のコマンドを仕込む形を意識すると安定しやすい（視聴者さんからのアドバイスで判明）</li>
 <li><strong>ひとことまとめ</strong>：5時間超え苦戦でも諦めない粘り——一人でなく配信の場があるからこそ壁を超えられる</li>
 </ul>
 </details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：大喜利お題〜seed珍画像選手権〜</h2><figure class="article-figure"><img src="../heroes/2026-06-30_AI画像seed引き直し整備とBBCF配信5時間超_4.png" alt="AI画像seed引き直し整備とBBCF配信5時間超🎮 の挿絵4" loading="lazy"></figure>

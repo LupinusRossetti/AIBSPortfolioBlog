@@ -22,15 +22,15 @@
 
   const CAT_LABEL = {
     seiso: '🤍 清楚', elegant: '🌹 エレガント', idol: '🎤 アイドル',
-    kawaii: '🌸 可愛い', sexy: '💕 セクシー',
+    kawaii: '🌸 可愛い', isekai: '⚔️ 異世界',
     genki: '😆 元気', gakuen: '🎒 学園青春',
-    yasashii: '☕ やさしい', fantasy: '✨ ファンタジー',
+    yasashii: '☕ やさしい', gothloli: '🖤 ゴスロリ',
   };
   const CHAR_LABEL = { lupinus: 'ルピナス', iris: 'アイリス', fiona: 'フィオナ' };
   const CHAR_CATS = {
-    lupinus: ['seiso','elegant','idol','kawaii','sexy'],
-    iris:    ['genki','idol','gakuen','kawaii','sexy'],
-    fiona:   ['yasashii','fantasy','idol','kawaii','sexy'],
+    lupinus: ['seiso','elegant','idol','kawaii','isekai'],
+    iris:    ['genki','idol','gakuen','kawaii','isekai'],
+    fiona:   ['yasashii','idol','kawaii','gothloli','isekai'],
   };
 
   function renderCatTabs(){

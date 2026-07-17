@@ -89,7 +89,6 @@
         <span class="corner-br"></span>
         <div class="card-frame">
           <img src="${it.thumb}" alt="${it.caption}" loading="lazy">
-          <div class="card-caption">${it.caption}</div>
         </div>
       `;
       card.addEventListener('click', () => openModal(i));
@@ -130,7 +129,7 @@
     const it = viewItems[modalIdx];
     modalImg.src = it.full;
     modalImg.alt = it.caption;
-    modalCaption.textContent = it.caption;
+    modalCaption.textContent = '';
   }
   function prevModal() {
     if (modalIdx > 0) modalIdx--; else modalIdx = viewItems.length - 1;

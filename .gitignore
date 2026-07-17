@@ -25,3 +25,6 @@ images/image/stream/*.png
 # ✦付き原本の内部バックアップ（inpaintやり直し用・公開不要）
 note-diary/heroes/_raw/
 note-diary/thumbs/_raw/
+
+# 秘匿情報漏洩対処(2026-07-17): note-diaryはgit管理外（履歴もfilter-repoで抹消済み）
+note-diary/

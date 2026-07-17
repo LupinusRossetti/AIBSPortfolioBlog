@@ -135,12 +135,33 @@ def gemini_generate(title: str, excerpt: str, out_path: Path) -> bool:
 
 
 def _cover_resize(img: Image.Image, w: int, h: int) -> Image.Image:
+    """1200x630へ整形。2026-07-18改修：従来の無条件センタークロップは、縦横比が
+    大きく違う原画（例 3584x1184 や 2528x1696）でタイトル文字や頭を切り落としていた。
+    比率がターゲットに近い場合のみクロップ（損失わずか）、遠い場合は縁の平均色で
+    パディングして全体を残す。"""
     iw, ih = img.size
-    scale = max(w / iw, h / ih)
-    img = img.resize((int(iw * scale), int(ih * scale)), Image.LANCZOS)
-    x = (img.width - w) // 2
-    y = (img.height - h) // 2
-    return img.crop((x, y, x + w, y + h))
+    src_ratio, dst_ratio = iw / ih, w / h
+    if 0.94 <= (src_ratio / dst_ratio) <= 1.06:
+        scale = max(w / iw, h / ih)
+        img = img.resize((int(iw * scale), int(ih * scale)), Image.LANCZOS)
+        x = (img.width - w) // 2
+        y = (img.height - h) // 2
+        return img.crop((x, y, x + w, y + h))
+    # contain + パディング（縁1%の平均色＝パステル背景に馴染む）
+    scale = min(w / iw, h / ih)
+    nw, nh = max(1, int(iw * scale)), max(1, int(ih * scale))
+    img_s = img.resize((nw, nh), Image.LANCZOS)
+    edge = max(1, min(iw, ih) // 100)
+    import numpy as _np
+    arr = _np.asarray(img.convert("RGB"), dtype=_np.float64)
+    border = _np.concatenate([
+        arr[:edge].reshape(-1, 3), arr[-edge:].reshape(-1, 3),
+        arr[:, :edge].reshape(-1, 3), arr[:, -edge:].reshape(-1, 3),
+    ])
+    pad_color = tuple(int(c) for c in border.mean(axis=0))
+    canvas = Image.new("RGB", (w, h), pad_color)
+    canvas.paste(img_s.convert("RGB"), ((w - nw) // 2, (h - nh) // 2))
+    return canvas
 
 
 # ---------- 3. 自動合成 ----------

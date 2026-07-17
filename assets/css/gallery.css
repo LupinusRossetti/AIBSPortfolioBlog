@@ -190,7 +190,8 @@
   display: block;
   background: var(--bg-veil);
   object-fit: cover;
-  object-position: center;
+  /* 縦長画像でも顔(上部)が必ず見えるよう上寄せ表示 */
+  object-position: center top;
 }
 
 .gallery-card .card-caption {

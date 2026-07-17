@@ -564,6 +564,9 @@ def copy_article_heroes(slug: str, date_iso: str) -> int:
     if not heroes_src.exists():
         return 0
     count = 0
+    missing = []
+    # 2026-07-17是正：欠番で打ち切らず全番号を走査（例:_2欠損でも_3以降をコピー）。
+    # 欠番はトピックと挿絵の対応ズレを生むため警告する。
     for i in range(1, 21):
         src = None
         for cand in (heroes_src / f"{date_iso}_{i}.png", heroes_src / f"{date_iso}_{i}.jpg"):
@@ -571,10 +574,15 @@ def copy_article_heroes(slug: str, date_iso: str) -> int:
                 src = cand
                 break
         if src is None:
-            break
+            missing.append(i)
+            continue
         HEROES_DIR.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, HEROES_DIR / f"{slug}_{i}{src.suffix}")
         count = i
+    gaps = [m for m in missing if m < count]
+    if gaps:
+        print(f"[WARN] heroes欠番あり {date_iso}: _{gaps} が無いまま _{count} まで存在。"
+              f"トピックとの対応ズレの可能性 → 欠番分の再生成を推奨")
     if count == 0:
         for cand in (heroes_src / f"{date_iso}.png", heroes_src / f"{date_iso}.jpg"):
             if cand.exists():
@@ -599,6 +607,9 @@ def insert_topic_heroes(body_html: str, slug: str, count: int, title: str) -> st
         if slot["n"] > count:
             return m.group(0)
         i = slot["n"]
+        # 欠番ガード（2026-07-17）：実体の無い番号は差し込まない（壊れimg防止）
+        if not (HEROES_DIR / f"{slug}_{i}.png").exists():
+            return m.group(0)
         return (
             m.group(0)
             + f'<figure class="article-figure"><img src="../heroes/{slug}_{i}.png" '
@@ -927,7 +938,11 @@ def build():
         if orphan.stem not in live_slugs:
             orphan.unlink()
             cleaned += 1
+    # slug由来でない常設画像（ブログ一覧ヒーロー等）は孤児扱いしない
+    _PROTECTED_HEROES = {"blog_index_hero"}
     for orphan in HEROES_DIR.glob("*.*") if HEROES_DIR.exists() else []:
+        if orphan.stem in _PROTECTED_HEROES:
+            continue
         # トピック挿絵は {slug}_{N}.png 形式なので、連番を外したベース名でも照合する
         base = re.sub(r"_\d+$", "", orphan.stem)
         if orphan.stem not in live_slugs and base not in live_slugs:
@@ -1618,11 +1633,17 @@ def build_feed(posts):
 
 def build_sitemap_robots(posts):
     """sitemap.xml と robots.txt を全公開ページから生成。"""
-    urls = ["index.html", "about.html", "portfolio.html", "sns.html", "blog/index.html"]
+    urls = [
+        "index.html", "about.html", "portfolio.html", "sns.html",
+        "gallery.html", "archive.html", "work.html", "stream-info.html",
+        "privacy.html", "blog/index.html",
+    ]
     urls += [f"blog/posts/{p['slug']}.html" for p in posts]
     today = date.today().isoformat()
+    # sitemapプロトコル準拠：日本語slug等の非ASCIIはパーセントエンコード必須
+    from urllib.parse import quote
     entries = "".join(
-        f"<url><loc>{BASE_URL}/{u}</loc><lastmod>{today}</lastmod></url>"
+        f"<url><loc>{BASE_URL}/{quote(u, safe='/')}</loc><lastmod>{today}</lastmod></url>"
         for u in urls
     )
     sitemap = (

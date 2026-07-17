@@ -137,7 +137,7 @@
   animation: fadeUp 0.6s var(--ease) forwards;
 }
 
-/* 内側の細い藤色フレーム（横長16:9 固定） */
+/* 内側の細い藤色フレーム（正方形固定・画像全体表示） */
 .gallery-card .card-frame {
   position: relative;
   border-radius: calc(var(--radius-sm) - 6px);
@@ -146,7 +146,7 @@
   box-shadow: 0 0 0 3px #fff,
               0 0 0 4px rgba(201, 168, 92, 0.32);
   background: #fff;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
 }
 
 /* 4角の桜のあしらい（カード外枠の白padding内・画像から離す） */
@@ -189,9 +189,9 @@
   height: 100%;
   display: block;
   background: var(--bg-veil);
-  object-fit: cover;
-  /* 縦長画像でも顔(上部)が必ず見えるよう上寄せ表示 */
-  object-position: center top;
+  /* 切り取らず画像全体を表示(余白は淡色背景) */
+  object-fit: contain;
+  object-position: center;
 }
 
 .gallery-card .card-caption {

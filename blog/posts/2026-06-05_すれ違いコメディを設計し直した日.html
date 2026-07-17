@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">昨日あんなに手を入れたのに、まだ続くの！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">笑いって気になり出したら止まらないのよ。今日は言葉の取り違えで誤解が生まれる、すれ違いコメディのテンプレを6点がっつり直した話をするわ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">笑いは感覚でつくるものと思われがちですが、実はとても設計の要素が多いんですよね。今日のお話、楽しみにしています。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. すれ違いコメディ、6点まとめて改修</span></h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_1.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. すれ違いコメディ、6点まとめて改修</span></h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_1.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>「二人がまったく違う話をしているのに本人たちは噛み合っていると思い込んでいて、見ているお客さんだけが真相を知っている」——そのすれ違いコメディのテンプレートを今日は6点まとめて改修した。改善の柱は「背景」「立ち位置の固定」「ツッコミ役の追加」「濃度」「つかみ」の5方向に整理できる。どれも笑いを感覚ではなく設計でつくる、という話につながる。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">まず一番効いたのが背景の変更。すれ違いコメディって二人が物理的に別の場所にいることが多いのに、同じ部屋の絵が続いてると観客が混乱するの。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">え、二人とも画面に映ってれば分かんない？</div></div></div>
@@ -30,7 +30,7 @@
 <li>ツッコミ役は立ち位置を固定して追加する。受け手がいないボケは観客が反応に困る——笑いの着地点をデザインする発想で</li>
 <li>笑いは濃度の引き算＆つかみの前倒しで効きが上がる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. タイトルカードだけ「例外」にした理由</span></h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_2.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. タイトルカードだけ「例外」にした理由</span></h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_2.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>AIショートアニメのテンプレートには、登場人物の呼び方を自動でそろえる仕組みが入っている。たとえば妹たちが長女を呼ぶときは必ず『お姉ちゃん』に統一する、といった補正だ。会話シーンには便利なこの機能だが、今日、想定外の動作に気づいた——タイトルカード（動画の題名を画面に大きく表示する場面）にまでこの補正が走っていたのだ。タイトルは会話ではなくロゴのような表示なので、呼称ルールを当てはめると意図しない書き換えが起きてしまう。今日はタイトルカードの場面だけ補正の対象から外す、という例外設定を追加した。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">機械から見ると、タイトルカードの文字も会話セリフも同じ『文字が並んでいる場所』に見えてしまうんですよね……。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">タイトルって誰も話してないじゃん。なんで会話だと思っちゃうの？</div></div></div>
@@ -45,7 +45,7 @@
 <li>タイトル・見出し・ロゴなど『会話ではない文字列』は補正対象から明示的に除外する設計が堅牢（コード的には場面の種別で条件分岐を入れるイメージ）</li>
 <li>便利な自動処理ほど例外の管理が品質の分かれ目になる</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. ジャンルの引き出しを5つ追加</span></h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_3.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. ジャンルの引き出しを5つ追加</span></h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_3.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵3" loading="lazy" width="3168" height="1344"></figure>
 <p>今日もう一つ取り組んだのが、物語のジャンル（型）を5種類まとめて追加する作業だ。追加したのは「イベント（季節行事や特別な状況が舞台になる型）」「恋愛すれ違い（気持ちの誤解が転がる型）」「シリアス和解（一度ぶつかって仲直りする型）」「メタパロディ（作り手の側に踏み込む自己言及型）」「日常ギャグ（なんでもない毎日から笑いを拾う型）」の5つ。型が増えると、同じキャラクターを使っても毎回まったく違う味の話がつくれるようになる。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">シリアス和解！あたし絶対これやりたい！お互い誤解して、最後にわかりあって泣くやつ！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_shy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（照れ）</span></div><div class="bubble">アイリスは感動的なシーンをいつも笑いに変えようとするので……今回こそちゃんと和解まで辿り着けるといいですね。</div></div></div>
@@ -61,7 +61,7 @@
 <li>シリアス和解・メタパロディなど感情のトーンが異なるジャンルを混在させると、視聴者が次の展開を予測しにくくなり飽きにくい</li>
 <li>メタパロディは効果が大きい分使いすぎると薄れる——切り札は温存する</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：すれ違いコメディ大喜利</h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_4.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：すれ違いコメディ大喜利</h2><figure class="article-figure"><img src="../heroes/2026-06-05_すれ違いコメディを設計し直した日_4.png" alt="すれ違いコメディを設計し直した日🎭 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">お楽しみコーナー！今日は大喜利やろう！あたしがお題出す！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ちゃんとしたお題にしてね。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">お題はこれ！『すれ違いコメディの二人が最後まで話が噛み合わなかった、一番ありえない理由』をどうぞ！</div></div></div>

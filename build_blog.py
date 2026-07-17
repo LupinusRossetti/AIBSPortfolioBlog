@@ -608,12 +608,22 @@ def insert_topic_heroes(body_html: str, slug: str, count: int, title: str) -> st
             return m.group(0)
         i = slot["n"]
         # 欠番ガード（2026-07-17）：実体の無い番号は差し込まない（壊れimg防止）
-        if not (HEROES_DIR / f"{slug}_{i}.png").exists():
+        hero_path = HEROES_DIR / f"{slug}_{i}.png"
+        if not hero_path.exists():
             return m.group(0)
+        # width/height属性で実寸比を事前確保（2026-07-18）：CSSをheight:autoにした
+        # ため、属性が無いと読み込み前の高さ0でlazy発火不良・レイアウトずれが起きる
+        try:
+            from PIL import Image
+            with Image.open(hero_path) as im:
+                w, h = im.size
+            size_attr = f' width="{w}" height="{h}"'
+        except Exception:
+            size_attr = ""
         return (
             m.group(0)
             + f'<figure class="article-figure"><img src="../heroes/{slug}_{i}.png" '
-            + f'alt="{html_lib.escape(title)} の挿絵{i}" loading="lazy"></figure>'
+            + f'alt="{html_lib.escape(title)} の挿絵{i}" loading="lazy"{size_attr}></figure>'
         )
 
     return re.sub(r'<h2 id="[^"]+"[^>]*>.*?</h2>', _repl, body_html, flags=re.S)

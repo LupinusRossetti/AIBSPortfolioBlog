@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">昨日の余韻がまだあるのに！あたし昨日、夢で衣装が無限に増え続けてた。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_laugh.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（大笑い）</span></div><div class="bubble">それはなかなか怖い夢ですね……。今日はスクリプトの大整理がメインで、アイリスとわたしのLoRA学習の仕込みも進めました。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">それとドラクエ10の配信もやってたよ！まったりできたかどうかは……まあXで確認してね（笑）。さっそく中身いきましょう！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 🧹 生成スクリプトの大整理</span></h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_1.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 🧹 生成スクリプトの大整理</span></h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_1.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSの動画を自動生成するシステムには、M・Y・S・Tという役割の異なる系統別スクリプトがあります。ところが「画像の読み込み方」「出力先の指定」「エラー処理」といった共通の処理が、各系統にそれぞれコピペで書かれていました。</p>
 <p>4系統 × コピペ処理 = どこかを直すたびに全系統を回らないといけない地獄。今回はその構造を丸ごと整理して、共通処理を1か所に置き、各系統はそれを呼ぶだけの形に作り直しました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">フォルダ開いたら似た名前のファイルが系統ごとにいくつもあって、あたし一瞬コピー操作を間違えたのかと思ってあわあわした！</div></div></div>
@@ -26,7 +26,7 @@
 <li><strong>技術メモ</strong>：DRY（Don't Repeat Yourself）原則。共通処理を関数やモジュールに切り出してimportして呼ぶ形にする。初期の手間はあるが、後の修正コストを大幅に削減できる</li>
 <li>コピペは動くが壊れやすい。共通化は予防メンテ</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 😂 笑いの型A〜Eを仕組みに仕込む</span></h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_2.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 😂 笑いの型A〜Eを仕組みに仕込む</span></h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_2.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSのショートアニメには、キャラが行き違いで盛大に勘違いするすれ違いコメディが定番の笑いどころです。その笑いの型が5種類（A〜E）あり、これまでは台本を作るたびに手で当てはめていました。</p>
 <p>今回、この5つのパターンを生成の仕組みそのものに恒久的に組み込みました。台本生成を流すだけで自動的にA〜Eのどれかが効くようになり、型のかかり忘れもなくなります。手作業ゼロ、品質のムラもゼロへ。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">ねえねえ、AからEのうちどれが一番好き？あたし断然、思いっきり突っ走って盛大にすっ転ぶやつ！</div></div></div>
@@ -42,7 +42,7 @@
 <li><strong>技術メモ</strong>：台本生成のプロンプトまたはテンプレートに勘違いパターン（A〜E）を定義し、1シーンにつき1パターンが必ず発火するよう条件分岐または重み付きランダム選択で組み込む</li>
 <li>型を仕組みに固定すると、構造で迷わずアイデアに全力を注げる</li>
 </ul>
-</details><h2 id="sec-3" class="corner-h2">3. 👀 今日のやらかし：キャラの瞳が赤く光りまくった話</h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_3.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3" class="corner-h2">3. 👀 今日のやらかし：キャラの瞳が赤く光りまくった話</h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_3.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>LoRA学習の準備と並行してテスト生成をしていたところ、キャラクターの瞳孔が不自然な赤い光を放つ現象が何枚も続けて発生しました。最初は学習データの問題かと途方に暮れましたが、原因はプロンプト（生成の指示文）に含まれる特定のキーワードにありました。</p>
 <p>検証の結果、瞳の質感を指定するある言葉が描写と干渉して赤い光を引き起こしていたことが判明。そのキーワードを共通の指示文から取り除き、輝き系の表情ワードも封印することで、現象を完全に封じました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">うわあああ！画面開いたらキャラの目が真っ赤に光ってて、悪霊が憑依したのかと思った！</div></div></div>
@@ -59,7 +59,7 @@
 <li><strong>技術メモ</strong>：ComfyUI等での共通品質プロンプトに含まれる <code>detailed pupils</code> 等の目の質感ワードは、モデルによっては瞳の赤みを誇張することがある。<code>sparkling eyes</code> 等の輝き系表情ワードも同様。共通設定から除外して個別指定に切り替えると現象を抑止できる</li>
 <li>プロンプトの副作用は除去実験でしか特定できない。見つかれば対処は一瞬</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 📸 アイリスとフィオナのLoRA学習、下準備完了</span></h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_4.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 📸 アイリスとフィオナのLoRA学習、下準備完了</span></h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_4.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>LoRAとは、AIイラスト生成モデルに特定のキャラの顔立ち・体型・髪色などを追加学習させる小さなデータのことです。アイリスとフィオナそれぞれの専用LoRAを作るため、今日は学習前の下準備を全部整えました。</p>
 <p>タグ付け・学習実行・出力チェックという一連の工程を3本並列で動かせる仕組みを整備し、詳細な手順書もまとめました。また、役目を終えたスクリプトが50本あまり溜まっていたのでまとめて別フォルダへ退避し、作業環境をすっきりさせました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">ちょっと待って、あたしとフィオナの学習データって、具体的に何してるの？</div></div></div>
@@ -76,7 +76,7 @@
 <li><strong>技術メモ</strong>：WD14タグ自動付与バッチ → LoRA学習バッチを系統ごとに分けて並列実行。学習完了後は顔・体型・瞳色（アイリス：金髪・琥珀色目 / フィオナ：桃色ロング・紫目）の再現性を生成テストで確認するのが定石</li>
 <li>使い終わったスクリプトは都度退避する習慣が、現役ファイルの見通しを守る</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：大喜利「もしも生成AIがリアルで大掃除したら？」</h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_5.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：大喜利「もしも生成AIがリアルで大掃除したら？」</h2><figure class="article-figure"><img src="../heroes/2026-06-14_生成スクリプト大掃除と笑いの型を自動化した日_5.png" alt="生成スクリプト大掃除と笑いの型を自動化した日🧹 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_devious.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（にやり）</span></div><div class="bubble">今日いっぱい大掃除したから、それにちなんだ大喜利をやります！お題——『もしも生成AIがリアルの部屋を大掃除したら、どうなる？』さあ1回答ずつどうぞ！</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">はい！『掃除してください』って頼んだら、なぜか床一面におしゃれな椅子の画像が貼られてた。部屋をリデコしたと思ってる。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_devious.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（にやり）</span></div><div class="bubble">わたしは……『散らかったものを整理して』とお願いしたら、ものの場所を全部ランダムに並び替えて『バリエーションを生成しました』と報告されました。</div></div></div>

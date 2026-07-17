@@ -10,7 +10,7 @@
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">『直せた！』の翌日に別の問題が顔を出してくるやつですね……。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">え、まだあったの？！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">あったの。というわけで今日は、その画像まわりを根っこから直した話。単なる差し替えじゃなくて『もう二度と同じミスをしない仕組み』まで作ったから、けっこう密度が高い回になるよ。</div></div></div>
-<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし：hero画像がずっと自動合成だった</h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_1.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし：hero画像がずっと自動合成だった</h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_1.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>ブログの記事ごとに表示されるトップ画像——いわゆるhero画像には、これまで2種類の作り方が混在していた。ひとつは「AIに絵として描いてもらう方法」、もうひとつは「Pythonの画像ライブラリ（PIL）でテキストや素材を機械的に貼り合わせる方法」だ。速く作れる後者は便利な反面、見た目がどうしても機械的になりやすい。6月16日の記事のhero画像が、うっかり後者のまま公開されていたことに今日気づき、AI生成版（フルサイズでダウンロードしたもの）に差し替えた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_sad.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（しょんぼり）</span></div><div class="bubble">まず反省タイムから。6月16日の記事、トップ画像がAI生成じゃなくてPILの自動合成のままだったの。気づいたとき、ちょっと目が点になったわ。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">え！？ あたしたちの顔ちゃんと描いてもらえてなかったの？！</div></div></div>
@@ -27,7 +27,7 @@
 <li><strong>技術メモ</strong>：PIL（Pillow）は文字合成・リサイズ・切り抜きには強いが、構図や雰囲気のある『ビジュアル』には向かない。hero画像はGemini等のAI画像生成で作りフルサイズDLしてから使う運用が品質安定</li>
 <li><strong>ひとことまとめ</strong>：hero画像は「速さ重視の自動合成」より「見栄え重視のAI生成」で品質を守る</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. ビルド工程に仕込んだ「ブザー」</span></h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_2.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. ビルド工程に仕込んだ「ブザー」</span></h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_2.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵2" loading="lazy" width="3872" height="1088"></figure>
 <p>差し替えるだけでは「また次も同じ失敗をする」可能性が残る。大事なのは、うっかり自動合成のまま公開しようとしたときに気づける仕組みだ。そこで今日は、ブログの組み立てスクリプトに「自動合成のままのhero画像が残っていたら警告を出す」チェック機能を追加した。スクリプトがブログを組み立てるたびに自動で走るため、人が覚えていなくても仕組みが教えてくれる。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">では問題です。『同じ失敗を繰り返さないための対策』として正しいのはどれでしょう。A：毎日チェックリストを手で確認する、B：『次は気をつけよう』と強く心に誓う、C：スクリプトが自動でチェックして警告を出す。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">うーん……A！ チェックリストをかわいくデコったらやる気出るじゃん？</div></div></div>
@@ -46,7 +46,7 @@
 <li><strong>技術メモ</strong>：ビルドスクリプト（Python）内でhero画像の属性やファイル名パターンをチェックし、自動合成フラグが残っていた場合に <code>warnings.warn()</code> または <code>print</code> + <code>sys.exit(1)</code> で処理を止める方法が実践的</li>
 <li><strong>ひとことまとめ</strong>：チェックは「人の記憶」ではなく「ビルド工程の中」に置く——これだけでミスが激減する</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 「手でコピー」は必ず忘れる</span></h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_3.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 「手でコピー」は必ず忘れる</span></h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_3.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>もう一つ、画像ファイルの自動同期も整えた。作業フォルダとサイト公開用フォルダは別々に存在しており、これまでは完成した画像（サムネイル）を手動でコピーしていた。手作業は必ず忘れる——「直したのにサイトに反映されない！」の原因のほとんどが、このコピー漏れだ。そこでブログ組み立てスクリプトが実行されるたびに、作業フォルダの画像を自動でサイト用フォルダにコピーする処理を追加した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_exasperated.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（呆れ）</span></div><div class="bubble">ねえ、手でコピーするのって毎回必要なの？ めんどくさくない？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">そのめんどくさいが積み重なると、コピー忘れで『直したのにサイトに出てない』が発生するんです。実はアイリスの感覚は正しくて——そもそも人の手でやらなくていい作業にするのがベストなんですよ。</div></div></div>
@@ -62,7 +62,7 @@
 <li><strong>技術メモ</strong>：<code>shutil.copy2()</code> や <code>shutil.copytree()</code> をビルドスクリプト末尾に追加するだけで実現できる。コピー先に既存ファイルがある場合の上書き可否はプロジェクト運用に合わせて明示的に設定する</li>
 <li><strong>ひとことまとめ</strong>：「手でコピー」を見つけたら即自動化——それが「直したのにサイトが変わらない」を防ぐいちばんの近道</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. キャラが「別人」になる落とし穴</span></h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_4.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. キャラが「別人」になる落とし穴</span></h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_4.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>今日はもうひとつ、6月16日の記事の内容も見直した。AIで三姉妹の画像を複数枚生成すると、回を重ねるごとに微妙に髪型や顔立ちがズレて、別人のように見えてしまう問題——いわゆる「キャラクターの一貫性が崩れる」現象だ。これは「お手本になる参照画像をきちんと渡せていない」ことが最大の原因。6月16日の記事にこの落とし穴と対策の注意点を整理した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">ちょっと待って！ あたしが別のあたしになっちゃうって、どういうこと？！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">AIに何枚も描いてもらうと、毎回ちょっとずつ顔が違う子が生まれてくるのよ。ひどいときは髪色まで変わって——</div></div></div>
@@ -78,7 +78,7 @@
 <li><strong>技術メモ</strong>：ComfyUI等でのキャラ固定にはIP-Adapter + LoRAの組み合わせが代表的。参照画像の品質（表情・角度・照明）がそのまま安定性に直結するため、参照画像セットの管理が最重要</li>
 <li><strong>ひとことまとめ</strong>：一枚ずつの出来より「前の絵と同じ人に見えるか」が品質——お手本の渡し漏れが最大の事故原因</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：AI仕組み化大喜利</h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_5.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：AI仕組み化大喜利</h2><figure class="article-figure"><img src="../heroes/2026-06-17_ブログ画像を仕組みで守り直した日_5.png" alt="ブログ画像を仕組みで守り直した日🔧 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日の作業テーマが『気をつけるを仕組みに変える』だったので、お楽しみコーナーも同じノリで行きます。大喜利！ お題はこちら——</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">【お題】「絶対忘れる人間のために、日常生活に『自動チェック』を組み込んだらどうなる？」</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">うーん……朝起きたら自動で『歯磨き・洗顔・水飲む』チェックリストが声で流れてきて、全部終わらないと玄関のドアが開かない！</div></div></div>

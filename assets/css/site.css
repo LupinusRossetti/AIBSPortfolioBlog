@@ -739,9 +739,11 @@ a:hover {
   opacity: 0.85;
 }
 
-/* サムネ画像（カード上部） */
+/* サムネ画像（カード上部）
+   2026-07-18: サムネは全数1200x630生成のため枠も同比率に（16/9だと左右約7%が
+   切り落とされタイトル文字が見切れる事故があった） */
 .diary-card .cover-img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1200 / 630;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: linear-gradient(135deg, var(--lupinus-soft), var(--fiona-soft));
@@ -923,7 +925,7 @@ a:hover {
 
 .article-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1200 / 630; /* 2026-07-18: サムネ実寸比に一致させ見切れ防止 */
   object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--line);
@@ -957,8 +959,7 @@ a:hover {
 .article-hero img {
   width: 100%;
   max-width: 720px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto; /* 2026-07-18: 見切れ防止のため枠固定を廃止 */
   border-radius: var(--radius);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
@@ -1043,8 +1044,9 @@ a:hover {
 .article-figure img {
   width: 100%;
   max-width: 760px;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  /* 2026-07-18: heroesは縦横比がまちまち（1.5〜3.0）のため枠固定を廃止。
+     固定枠+coverだと横長画像の文字・キャラが大きく切れる */
+  height: auto;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);

@@ -10,7 +10,7 @@
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">そう！AIに『私の顔と雰囲気』を覚えてもらうための素材づくり。目標は約200枚。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">にひゃくまい……お姉ちゃんが大量増殖する日だ。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">増殖じゃない！AIが描いてくれる絵だから！じゃあ今日の流れを話すね——テスト生成からスタートして、本番生成、選別まで全部やったよ。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. まず数枚のテスト——「いきなり大量は禁止」の法則</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_1.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. まず数枚のテスト——「いきなり大量は禁止」の法則</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_1.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIに画像を大量生成してもらう前に、まず数枚だけ試し生成する工程を踏んだ。AIに渡すお願い文（プロンプト）が意図どおりに機能しているかを確認するためで、ここで問題を発見しておければ大量生成後の全ボツという最悪の事態を防げる。いきなり約200枚走らせて設定ミスに気づいたときのやり直しコストを考えると、この試し生成は省略できない。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">でもさあ、数枚見て「いい感じじゃん！」ってなったらもうGoでよくない？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">『数枚がよい』と『200枚ぜんぶよい』はまったく別の話。最初の数枚が当たりでも、残りで想定外の崩れ方をすることは普通にある。</div></div></div>
@@ -27,7 +27,7 @@
 <li>本番生成前に数枚のサンプル生成でプロンプトの動作確認 → 問題があれば調整してから量産に移行する</li>
 <li>テストなしの量産は失敗コストが跳ね上がる——小さく試してから走らせるのが量産の基本</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 服装・場所・季節でバリエーションを広げる</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_2.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 服装・場所・季節でバリエーションを広げる</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_2.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>約200枚生成するにあたって、今回とくに意識したのが「服装のバリエーション」だ。フリルのある可愛い服、ワンピース、季節ごとのデザイン——さらに背景となる場所も室内・屋外・自然・お店と変えていく。同じキャラクターが毎回違う服で違う場所にいる、アルバムのような素材集を目指した。服装や背景が偏ると、AIは「このキャラはいつもこの服・この場所」という偏ったイメージを覚えてしまいかねない。多様な状況でのデータを用意するのが、後工程の精度を高める準備になる。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">ねえ正直に言うと、全部同じ衣装でよくない？管理がシンプルだし。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_exasperated.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（呆れ）</span></div><div class="bubble">アイリス、それだと素材としての多様性がなくなっちゃいます。</div></div></div>
@@ -46,7 +46,7 @@
 <li>服装・背景・季節ごとにカテゴリを分けてプロンプトを準備し、各カテゴリから均等に生成することで素材の偏りを防ぐ</li>
 <li>「どんな状況でも同じキャラ」と学習させるには、最初のデータが多様であることが前提</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 「これ描いて」を200回——お願いを自動化する仕組み</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_3.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 「これ描いて」を200回——お願いを自動化する仕組み</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_3.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>今回の生成で組んだのは、「これ描いて」というお願いをスクリプトが順番に出し続けて、できあがった画像を自動で保存していく仕組みだ。人間が用意するのは最初の指示リストだけ。あとは生成が終わるのを待てばいい。1枚ずつ手作業でお願いしてはコピーして保存して……を約200回繰り返すことを考えると、この「指示出し係の自動化」は個人クリエイターが大量素材を作る際の現実的な選択肢の一つだ。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">じゃあ実況します。スクリプトを起動して——ブラウザが自動で動き始めた。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">え！？誰も触ってないのに画像がどんどん増えてる！？</div></div></div>
@@ -64,7 +64,7 @@
 <li>約200回ぶんの「これ描いて」を自動化 → 1枚ごとの手作業（お願い→保存）が丸ごと消える</li>
 <li>量産は機械に任せて、「どれを採用するか」は人間が決める——個人クリエイターに現実的な分業</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 「これ可愛い」は人間が決める——目視選別の仕事</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_4.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 「これ可愛い」は人間が決める——目視選別の仕事</span></h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_4.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>約200枚を生成したあとは、使えるものとボツを仕分ける工程だ。顔の崩れ、体のバランスのおかしさ、服の指定が反映されていないもの——そういった「ハズレ」が一定数混じってくる。この選別作業は目視で行った。生成は自動化できても、「これ可愛い」「雰囲気がいい」という判断はまだ人間の感性に頼る部分が大きい。技術的に正確な画像を選ぶのと、「なんか好き」を選ぶのは別の能力だ。選び抜いた画像が次の工程——キャラクターの特徴を学習させる素材——へと進んでいく。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">お姉ちゃん、選別もAIに頼んじゃえばよかったんじゃない？「この中で一番いいの選んで」って。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">試したことあるんだけど、AIが選ぶ『よい画像』と私が思う『可愛い』がちょっとずれるのよね。</div></div></div>
@@ -81,7 +81,7 @@
 <li>顔崩れ・体比率・服の仕様不一致などをチェックして手動でOK/NG分類 → OK分のみを次工程の素材として使用</li>
 <li>自動化できる工程と人の感性が必要な工程を見極めることが、素材品質の鍵</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：衣装はかわいい系 vs クール系、どっちが好き？</h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_5.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：衣装はかわいい系 vs クール系、どっちが好き？</h2><figure class="article-figure"><img src="../heroes/2026-06-20_キャラ画像-約200枚つくった日_5.png" alt="キャラ画像、約200枚つくった日🎨 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>せっかくキャラ画像の衣装バリエーションをたくさん考えた日なので、今日のお楽しみは三姉妹のファッション論争。みなさんは三姉妹の衣装、ガーリー・かわいい系とシンプル・クール系、どっちが好きですか？</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">私はクール系かな。清潔感があって、どんな場面にも合わせやすいし。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">あたしは断然かわいい系！フリルとかリボンとか、ケーキみたいにデコデコした衣装が最高！</div></div></div>

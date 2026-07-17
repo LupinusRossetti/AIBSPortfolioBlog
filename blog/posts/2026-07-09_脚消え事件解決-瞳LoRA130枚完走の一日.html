@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">ゼロ!? 昨日の密度がうそみたいじゃん。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">ブログ日記ツールの方はバグを3件直してちゃんとコミットしてますよ。今日の本丸は、キャラクターイラストの生成方式そのものを見直す検証作業でしたので。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">しかも脚が消える事件の犯人まで突き止めたので——コミット数はゼロでも語ることは山ほどある。いってみましょう！</div></div></div>
-<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし：脚が消えた犯人を突き止めた</h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_1.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし：脚が消えた犯人を突き止めた</h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_1.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIイラストの生成中にたまに起きる不思議な事故がある。キャラクターの脚が消えたり、画面の隅に謎の光の球体が浮かんだりするやつだ。今日その原因が確定した。犯人は「人物の領域」と「背景の領域」を別々に指定して強さを変えながら描かせる、領域分離方式だった。境界線のあたりで人物担当と背景担当の指示が噛み合わなくなり、誰も描かない隙間が生まれていた。複数のパターンを実際に比較した結果、この方式をやめて「全部まとめて一本の指示で描いてもらう」シンプルな方式に統一することにした。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">脚が消えるって何それホラーじゃん。しかも光の球体って。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">光の球体の正体は……脚が姿を変えて逃げ出した忘れ物なのかもしれないと思いまして、迷子センターに届けたい気持ちになりました。</div></div></div>
@@ -20,7 +20,7 @@
 <li><strong>技術メモ</strong>：Regional Conditioning（人物マスク＋背景マスクで強度を別々に設定する方式）を廃止し、mask_mode='C'の単一プロンプト方式に統一。脚消失・光球体化などのアーティファクトが有意に減少することを比較検証で確認</li>
 <li><strong>ひとことまとめ</strong>：凝った領域分割よりシンプルな一本渡しが安定する</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 「惜しい」を言語化して潰す：背景と目の問題</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_2.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 「惜しい」を言語化して潰す：背景と目の問題</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_2.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>生成方式の見直しと並行して、ずっと気になっていた2つの違和感を潰した。ひとつは背景がのっぺりして奥行きがないこと、もうひとつは目の描写が単調で生気がないこと。背景はプロンプトに高精細な背景描画を明示する一句を追加するだけで改善が見られた。目は補助モデルの方針がまだ固まっていなかったので比較テストへ移行した。また今日の整理で、抽象的な多感覚エフェクト（光・粒子・風）と抽象的な背景パターン（グラデーション・テクスチャ）は別の軸で、どちらか片方だけでは足りないことも確認できた。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">『なんとなく惜しい』ってそのままでよくない？ みんなそこまで気にするかなあ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">アイリス、わたしたちが気にしてる時点で直す理由になりませんか？</div></div></div>
@@ -34,7 +34,7 @@
 <li><strong>技術メモ</strong>：背景プロンプトに「ultra-detailed CG-quality background」のようなアンカー句を必須化。多感覚エフェクト（光・粒子・風）と背景パターン（グラデーション・テクスチャ）は独立した別の軸で、両方を意識して設定する</li>
 <li><strong>ひとことまとめ</strong>：『惜しい』を言語化して一個ずつ潰すと、原因は意外とシンプルだった</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 130枚かけて決着：目の質感3段階テスト</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_3.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 130枚かけて決着：目の質感3段階テスト</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_3.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>目の表現方法を決めるため、本格的な比較テストを実施した。第1段階は補助モデルA・B・プロンプト単独の3パターンを単体・ペア・全組み合わせで5つの構図にかけ合わせる70枚あまりのテスト。全構図でAの単独使用が最良という仮説が出た。第2段階は、Aを使いながら強調フレーズ候補を比べる50枚あまりのテストで、最も効果的なフレーズが確定。第3段階は特定構図への追加確認3枚で、全構図共通の最終ルールが完成した。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">130枚の中で、一番目が綺麗だった1枚を見たとき——絵がこちらを見てくれていると感じたんです。ずっと探していた答えがそこにあって、すごく嬉しかったです。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">フィオナが熱く語ってる……どっちがどっちだっけってなりそう。</div></div></div>
@@ -46,7 +46,7 @@
 <li><strong>技術メモ</strong>：IncredibleEyes_Ill_V2単独＋プロンプトに「(strong eye highlights:1.1)」を全構図共通で常時追加することが最終確定ルール。3段階・130枚あまりの比較で検証済み</li>
 <li><strong>ひとことまとめ</strong>：感覚じゃなく数で殴って結論を出す——比較テストは地味だけど正義</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 構図の落とし穴：face_up構図バグとカメラ目線ルール</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_4.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 構図の落とし穴：face_up構図バグとカメラ目線ルール</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_4.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>顔を見上げるように大きく写す構図でポーズが崩れる問題も今日解決した。最初はアスペクト比（縦長か横長か）が原因と思っていたが、実測で確かめると全然関係なかった。真の原因は、この構図で「立っている」「座っている」といったポーズ語を使うと崩れやすいということで、言葉を外せば縦長でも崩れない。また、顔を大きく写す寄りの構図ではカメラ目線を明示しないとキャラが視線をそらした顔になりやすいことも確認し、ルールとして記録した。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">クイズ。見上げ構図でポーズが崩れる原因——アイリス予想は？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">縦長すぎてAIが困惑するとか？</div></div></div>
@@ -59,7 +59,7 @@
 <li><strong>技術メモ</strong>：face_up構図でstanding/sittingなどの姿勢動詞は禁止。顔を大きく写す寄り構図では「looking at the viewer」を明示必須。アスペクト比は無関係と実測で確定</li>
 <li><strong>ひとことまとめ</strong>：直感と原因が食い違う場合、実測しないと誤解したまま迷走する</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. 清楚カテゴリ、50シーン全部できた</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_5.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. 清楚カテゴリ、50シーン全部できた</span></h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_5.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>キャラクターギャラリーの清楚カテゴリについて、全50シーンの設計が本日完成した。重複チェックも済んでいて、今日確定した各種ルール（背景アンカー句・カメラ目線・face_up禁則・エフェクトと背景パターンの二軸設計）もすべて反映されている。ガイドライン文書も今日付けで更新された。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">50シーン、全部埋まりました。やっとです。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">フィオナが静かにガッツポーズしてる！ めずらし！ かぶりとかないの？</div></div></div>
@@ -72,7 +72,7 @@
 <li><strong>技術メモ</strong>：清楚カテゴリ全50シーンをv6.3として確定。重複チェック・背景アンカー句・カメラ目線・face_up禁則・エフェクト×背景パターン二軸をすべて反映済み</li>
 <li><strong>ひとことまとめ</strong>：設計完了は通過点、ここから実際に生成して品質を見る段階へ</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：脚はどこへ消えた？大喜利</h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_6.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：脚はどこへ消えた？大喜利</h2><figure class="article-figure"><img src="../heroes/2026-07-09_脚消え事件解決-瞳LoRA130枚完走の一日_6.png" alt="脚消え事件解決＆瞳LoRA130枚完走の一日🎨 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日のお楽しみコーナーは、脚消え事件にちなんだ大喜利です。お題——『AIが描いたキャラの脚が消えたとき、脚は一体どこへ行ったのか』。まず私から。脚は『立っている』という役割に疲れて、こっそり有給を取りました。復帰は未定です。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">あたしは——消えた脚、光の球体と友達になって異次元に旅立ちました。現在も楽しく暮らしているそうです。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">異次元で楽しく暮らしてる脚、怖すぎる。</div></div></div>

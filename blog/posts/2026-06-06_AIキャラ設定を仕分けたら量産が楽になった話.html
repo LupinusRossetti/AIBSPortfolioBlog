@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">あたしはアイリス！ ……ちょっと、今日って地味な日じゃない？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">フィオナです。地味に見えるかもしれませんが……わたし、今日から少し変わりましたよ。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">その変化、ちゃんと解説していくね。今日のメインは『フィオナをどう設計するか』の仕分け整備でした。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. ⚙️ 「口調」は共通、「テンション」はジャンル別</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_1.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. ⚙️ 「口調」は共通、「テンション」はジャンル別</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_1.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIでキャラクターを量産するとき、ジャンルごとに設定（指示書）をコピーして書いていると、「同じキャラなのに場面が変わると話し方がブレる」という問題が起きやすい。今日の最初の整備は、フィオナの口調（語尾・一人称・テンポ）を全ジャンル共通の1か所に統一し、一方でツッコミの鋭さ・量・テンションはジャンルごとに残す、という仕分けだった。</p>
 <p>「変えてはいけないもの」と「変えていいもの」を最初に線引きするだけで、台本を量産しても破綻しにくくなる。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">アイリス、フィオナってどのシーンでも同じキャラに見える？</div></div></div>
@@ -25,7 +25,7 @@
 <li>実装上は「共通設定ブロック」を1つ作り、ジャンル別ファイルはそこを継承する形にすると口調のコピペが不要になる</li>
 <li>変えてはいけないものと変えていいものを最初に分けておくのが、量産で破綻しないための鉄則</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 🔧 確認リストでコメディジャンルを作り直した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_2.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 🔧 確認リストでコメディジャンルを作り直した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_2.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵2" loading="lazy" width="1362" height="720"></figure>
 <p>すれ違い・勘違いコメディ系のジャンルは、これまで「気になった点をその場で足していく」方式で育ててきた。しかしルールが増えるほど「なぜこの仕様なのか」が分からなくなってくる問題があった。今日は過去に蓄積した確認用サンプル（判断の基準となったケース）を土台にして、満たすべき条件リストを先に定義し、条件を通ったものだけを恒久ルールとして本採用する方式に切り替えた。</p>
 <p>確認用サンプルには内部の符号を振っておくと、後日「あの修正、何を見て決めたんだっけ？」を一発で思い出せる。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">クイズ出すよ。設定ファイルが増えすぎると何が起きる？</div></div></div>
@@ -41,7 +41,7 @@
 <li>基準にしたサンプルには符号を振っておくと再現・比較が容易（例：確認用57のように内部符号をつける）</li>
 <li>思いつきはネタ出し専用、採用判断は条件リスト経由——役割を分けると量産しても品質が安定する</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 📊 フィオナの内心、数値1.4に昇格</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_3.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 📊 フィオナの内心、数値1.4に昇格</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_3.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>フィオナが持つツッコミ気質の片鱗を全ジャンルへ反映し、その強さを表す内部パラメータ「心の声の音量」を1.4に引き上げた。</p>
 <p>ここでいう「音量」は実際のサウンドではなく、内心ツッコミをどれくらい前に出すかを表す数値だ。1.0が基準で、1.4にすると心の声の主張がやや強めになる。こういうさじ加減は言葉（「ちょっと強めに」）で持つより数値で持つほうが、後から調整・比較・ジャンル別化がずっとやりやすい。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">フィオナの心の声が1.4になったってこと！？ デカくなった？</div></div></div>
@@ -58,12 +58,12 @@
 <li>今回は心の声強度を1.0→1.4へ。調整は0.1刻みで徐々に、が安定したチューニングの鉄則</li>
 <li>感覚を目盛りに置き換えると再現性とスピードが両立する</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 📡 今朝の配信、こっそりチェック</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_4.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 📡 今朝の配信、こっそりチェック</span></h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_4.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>作業と別に、今朝早くから約3時間の長尺配信が行われたことが確認できた。視聴数も3桁台を記録している。AIBSの最新配信情報はXをチェックしてみてほしい。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今朝また長めに配信してたのね……ちゃんと休めてた？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_sad.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（しょんぼり）</span></div><div class="bubble">あたし途中で気づいたけど、もう目が閉じかけてて……。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">配信してくださっているのは嬉しいですが、水分と休憩はちゃんと取ってほしいですね。最新情報はXからチェックしてみてください。</div></div></div>
-<h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：どっち派会議</h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_5.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵5" loading="lazy"></figure>
+<h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：どっち派会議</h2><figure class="article-figure"><img src="../heroes/2026-06-06_AIキャラ設定を仕分けたら量産が楽になった話_5.png" alt="AIキャラ設定を仕分けたら量産が楽になった話⚙️ の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>今日は三姉妹で小さな議題を持ち寄ってみました。テーマは——<strong>「作業中の飲み物、冷たい派 vs 温かい派、あなたはどっち？」</strong></p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">私は温かい派。集中してるとぬるくなってても気にならないんだけど、最初の一口はやっぱり温かいのがいい。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">あたしは冷たい派！ 眠気が来たときに一口飲むと目覚めるの最高。あれなしで深夜作業は無理。</div></div></div>

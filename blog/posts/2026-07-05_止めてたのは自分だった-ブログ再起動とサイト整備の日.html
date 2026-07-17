@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">えっ昨日あんだけ並べてたのに今日もガンガン動いてるの？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">昨日の棚卸しで優先順位が見えたおかげで、今日は迷わず着手できたんですよね。あの時間が今日の速さを作ったって感じです。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">そういうこと！今日のテーマはずばり『整える』。コードを新しく書くより、積み残した仕組みをちゃんと動く状態にする日だったよ。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 止めてたのは自分だった：ブログ自動更新の再起動</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_1.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 止めてたのは自分だった：ブログ自動更新の再起動</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_1.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵1" loading="lazy" width="2752" height="1536"></figure>
 <p>数日分のブログが更新されていないことに気づき、原因を調べた。あちこちをさかのぼってみると、見つかったのは故障でもサーバーの問題でもなく「自分が一時停止にしていた」という事実だった。少し前にパソコン周りを整理したとき、複数の自動処理をまとめて止めていて、その中にブログ更新が混じっていたのだ。今日は再起動するだけでなく、初回実行が終わったかを必ず確認してから次に進む手順も整えた。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">えっ！？ブログ更新が何日も止まってたって……システムが壊れたの！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_shy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（照れ）</span></div><div class="bubble">…壊れてはいないし、サーバーも無事。</div></div></div>
@@ -24,7 +24,7 @@
 <li><strong>技術メモ</strong>: 複数の自動タスクをまとめて一時停止した場合、再開チェックリストを用意して初回実行後にログを確認する運用にすると見落としを防げる</li>
 <li><strong>ひとことまとめ</strong>: 止まる理由の多くは故障でなく「止めたまま」</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 手で直しても消える謎：設計図に組み込んで根治</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_2.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 手で直しても消える謎：設計図に組み込んで根治</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_2.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>サイトの装飾アニメ——花びらやシャボン玉がふわふわ流れる演出——が、一部のページで消えていた。履歴をたどると、過去に2回、手作業でまったく同じ修正をした形跡があった。そして2回とも、その後また消えていた。原因は「ページを自動で組み立て直すとき、設計図に装飾の記述が含まれていなかった」こと。自動生成が走るたびに手で付け足した部分が上書きされていたのだ。今日は設計図ごと直し、今後は何回組み立て直しても装飾が残るようにした。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">手で直したら動くんだから毎回直せばよくない？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">アイリス……それ、2回やって2回とも消えたんですよ。</div></div></div>
@@ -41,7 +41,7 @@
 <li><strong>技術メモ</strong>: 静的サイトジェネレーターやビルドスクリプトで生成するページは、テンプレートやビルドスクリプト自体を修正しないと手動編集が毎回上書きされる</li>
 <li><strong>ひとことまとめ</strong>: 手で直したものは、自動生成の前では一時しのぎ</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 「配信のご案内」ページを一から作った</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_3.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 「配信のご案内」ページを一から作った</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_3.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>サイトに「配信のご案内」専用ページを新設した。コメントの遊び方・注意事項・応援の方法・ゲーム記録などを1か所に集約し、動画の説明欄はシンプルなリンクだけにする方式だ。ページには音符がふわふわ流れる専用アニメーション演出も付け、継続支援へのリンクも並べた。サイト全ページのフッターに案内ページへのリンクを追加し、どこから来ても見つけやすい導線に整えた。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">「配信のご案内」ページ、できあがりましたね。音符がふわふわ流れる演出、雰囲気があって素敵です。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">あたし、あの音符ちょっと食べられそうな気がしてきた。</div></div></div>
@@ -56,7 +56,7 @@
 <li><strong>技術メモ</strong>: サイトジェネレーターのフッターテンプレートにリンクを1か所追加するだけで全ページへの導線を統一できる。継続支援ページへのリンクはここに集約すると動線が安定する</li>
 <li><strong>ひとことまとめ</strong>: 情報は散らかる前に「案内所」を作る</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 配信で話したことを文字で残す仕組み</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_4.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 配信で話したことを文字で残す仕組み</span></h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_4.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵4" loading="lazy" width="3264" height="1312"></figure>
 <p>今までの配信記録は「視聴者のコメント」が中心で、配信者本人が何を話したかのテキストが残っていなかった。動画の自動字幕を処理して保存する仕組みを作ったことで、これからは日記や振り返りを書くときに「自分が話した内容」も材料にできるようになった。数時間に及ぶ配信でも、後から文字でざっと読み返せる。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">ふと気づいたんだよね。配信の記録、コメント欄は残ってるのに『私が何をしゃべったか』が全然残ってないな、って。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">そういえば！何時間もしゃべってるのに、自分で何を言ったか覚えてないよね。</div></div></div>
@@ -71,7 +71,7 @@
 <li><strong>技術メモ</strong>: yt-dlpを使うと動画の自動字幕を取得・テキスト整形できる。タイムスタンプ付きで保持しておくと特定の発言の検索・再利用がしやすくなる</li>
 <li><strong>ひとことまとめ</strong>: 配信記録は視聴者コメントだけでなく「自分の言葉」も資産になる</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：禁断の質問コーナー</h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_5.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：禁断の質問コーナー</h2><figure class="article-figure"><img src="../heroes/2026-07-05_止めてたのは自分だった-ブログ再起動とサイト整備の日_5.png" alt="「止めてたのは自分だった」ブログ再起動とサイト整備の日🌸 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>今日は「禁断の質問コーナー」！ ちょっと踏み込んだ質問に三姉妹が正直に答えるよ。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">今日の禁断の質問！「本当は毎日記録つけるの、面倒だと思ったことある？」正直に答えて！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_shy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（照れ）</span></div><div class="bubble">……正直に言うと、あります。週1でまとめて書けたらどんなに楽か、と思う日も。</div></div></div>

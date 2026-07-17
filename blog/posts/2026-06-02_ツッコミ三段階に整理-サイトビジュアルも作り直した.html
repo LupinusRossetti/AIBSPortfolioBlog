@@ -9,7 +9,7 @@
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">ゾンビって言わないで。昨日と今日で別のバグよ、別の。……まあとにかく、今日も盛りだくさんだったんで報告します。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">丁寧に潰していけば確実に減っていくものなので、今日の分もしっかり振り返りましょうね、お姉ちゃん。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">フィオナに励まされると照れるな……。じゃあ行くよ！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. ツッコミ反応を「三段階」に整理した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_1.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. ツッコミ反応を「三段階」に整理した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_1.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>自動動画生成システムには、ボケに対してツッコミ役のキャラが驚いて画面の外へ「飛んでいく」演出がある。これまでその飛び方はほぼ1種類として扱っていたが、シーンの強弱や次のカットへのキャラの引き継ぎ方によって使い分けが必要だと分かってきた。そこで今日、<strong>「強（画面外へ完全退場）」「軽（横にちょっとずれる）」「投げ（キャラを温存して次のシーンに引き継ぐ）」の3種類</strong>に整理した。あわせて、キャラが誤って上方向に飛んでしまうバグと、キャラの出演順序が崩れていた問題も修正した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">飛び方に種類があるの！？あたしてっきり、びっくりしたら一種類でそのまま宇宙に行くもんだと思ってた。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">宇宙に行ったら帰ってこられないでしょ。「投げ」はちゃんと次のシーンにも登場できるよう温存するの。</div></div></div>
@@ -28,7 +28,7 @@
 <li><strong>技術メモ</strong>：ツッコミ飛び出しを strong（画面外完全退場）/ light（横スライド）/ throw（温存）の3タイプに分岐定義。キャラ配置ロジックを登場順モデルに統一し、方向計算の符号ミスによる上方向誤飛びも修正</li>
 <li><strong>ひとことまとめ</strong>：演出の「強さの段階」を明示的に定義すると、後から組み合わせが格段に楽になる</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：クイズ回で色が崩壊した</h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_2.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：クイズ回で色が崩壊した</h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_2.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵2" loading="lazy" width="1362" height="720"></figure>
 <p>あるクイズ動画回の出来上がりを確認したら、選択肢を示す色の表示がおかしくなっていた。原因を調べると、クイズで使う「色の組み合わせ（パレット）」が特定の複合演出のときだけ補完されずに不足していた。補完処理を追加し、その動画内で見つかった複数箇所を全部修正してから再生成まで完了させた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_panic.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（あわあわ）</span></div><div class="bubble">これがね……出来上がった動画を確認したら、クイズの色がぐちゃぐちゃになってたのよ。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">え！？完成したと思ったのに！？</div></div></div>
@@ -47,7 +47,7 @@
 <li><strong>技術メモ</strong>：quizパレット補完処理が、combo演出と重なる分岐ルートにだけ実装されていなかった。combo発生時も同じ補完ロジックを通るよう修正し、対象動画で発見した複数箇所をすべて修正してから再生成</li>
 <li><strong>ひとことまとめ</strong>：「特定条件でだけ壊れる」バグは、条件を再現させてから直すと取りこぼしが減る</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. ショート動画の演出工程を見直した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_3.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. ショート動画の演出工程を見直した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_3.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>クイズとは別に、ショート動画の演出処理でも取りこぼしが見つかった。「吹っ飛び演出が画面の端に張り付いたまま止まってしまう」バグと、「クイズの正解マーカーが正しい位置に表示されない」問題だ。どちらも演出の工程のどこかで処理が抜けていたのが原因。今日中に洗い出して修正を完了させた。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">あれ、さっき吹っ飛びバグは直したって言ってなかった？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">さっきは3種類に整理して上方向を直した話ね。これはまた別——飛んだあと、画面の端にピタッとくっついたまま止まってしまうやつ。</div></div></div>
@@ -67,7 +67,7 @@
 <li><strong>技術メモ</strong>：ショート演出パイプラインで、吹っ飛び後の画面端クリッピング処理が一部ルートで未実行になるケースと、クイズの正解インデックス参照がオフセットミスになっているケースを発見・修正。工程ログを順に追って漏れ箇所を特定した</li>
 <li><strong>ひとことまとめ</strong>：「動く」と「正しく動く」は別物——工程の抜け漏れチェックが品質の要</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. サイトのメインビジュアルをフルリニューアル</span></h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_4.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. サイトのメインビジュアルをフルリニューアル</span></h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_4.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>動画システムの修正と並行して、ポートフォリオサイトのビジュアル面も大きく手を入れた。ブログトップに<strong>メインビジュアルを新たに追加</strong>し、ヒーロー画像と接続部分のイラストを正規の三姉妹仕様で作り直した。スマートフォンで見たときにコンテンツがはみ出す問題と、フィオナの紹介画像が古いものになっていた点も修正。仕上げにサイト全体でキャラが混在していた箇所を取り除き、欠落していた画像を補完してレスポンシブ確認まで完了させた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">サイトも今日けっこう変わって、ブログのトップページにメインビジュアルを追加したんだけど——</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">追加！？どんなの！？見たい見たい！</div></div></div>
@@ -87,7 +87,7 @@
 <li><strong>技術メモ</strong>：ヒーロー画像の差し替え・メインビジュアル追加、スマートフォン向けオーバーフロー修正（コンテナ幅をパーセント指定に変更）、キャラ混在除去と欠落 src の補完、複数ビューポートサイズでのレスポンシブ確認</li>
 <li><strong>ひとことまとめ</strong>：ビジュアルの「正規化」とレスポンシブ確認はセットでやると漏れが減る</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_5.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-06-02_ツッコミ三段階に整理-サイトビジュアルも作り直した_5.png" alt="ツッコミ三段階に整理！サイトビジュアルも作り直した🎬 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">今日のお楽しみコーナーは一問一答！テーマは「もしも自分がバグだったら、どんなバグ？」</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">えっ自分がバグ……！？うーん……あたし、たぶん「特定の話題になると突然テンションが100倍になる」バグかな。普段は普通なのに突然。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">再現性あるし割と深刻なバグだね、それ。</div></div></div>

@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">え、昨日の大整備も今日の4本も、どっちもあたしたち関わってるじゃん！エグすぎる！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">今日の4つはぜんぶ、『AIが毎回同じ品質を出せるようにする』ための土台作りでしたよね。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">そう、地味でしょ。でもね、地味な工事が一番よく効くのよ。今日はそのお話。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 笑いどころセンサーの誤爆を修正した話</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_1.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 笑いどころセンサーの誤爆を修正した話</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_1.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵1" loading="lazy" width="3168" height="1344"></figure>
 <p>AIでショートアニメの台本を作るとき、「ここが笑えるポイントですよ」という目印をAI自身に付けさせる機能がある。この機能が、笑えない普通のセリフにも反応してしまう誤検知を繰り返していた。修正の方向は「反応する条件を増やす」ではなく、「ここでは反応しない」という除外条件を丁寧に書き足すこと——それだけで誤爆がぐっと減った。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">ではアイリス、あなたに笑いどころセンサー役をやってもらいましょう。私がセリフを読むから、面白かったら『ピコーン！』って言って。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">了解！ピコーン係、任せて！</div></div></div>
@@ -26,7 +26,7 @@
 <li><strong>技術メモ</strong>：検出ロジックにnegativeフィルタ（除外パターン）を追加。フィルタの精度は使用感ベースで継続調整予定</li>
 <li><strong>ひとことまとめ</strong>：誤爆は「感度を上げる」より「除外条件を丁寧に書く」で直る</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. AIのワンパターンを「記憶」で断つ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_2.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. AIのワンパターンを「記憶」で断つ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_2.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>AIに台本を何本も書かせると、知らないうちに同じフレーズや言い回しが繰り返されていく。これはAIが「才能不足」なのではなく、「会話ごとに記憶がリセットされる」仕様が原因だ。そこで、過去の台本で使ったフレーズを記録しておき、次に書かせるときに「これはもう使ったよ」と伝える仕組みを実装した。禁止リストではなく「使用済みリスト」として渡すのがポイント。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">ねえ、あたしって毎回『さいこ〜！』って言ってる気がするんだけど、気のせい？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">気のせいじゃないわよ。でもアイリスは可愛いからいいの。AIはそれでクレームが来るのよ。</div></div></div>
@@ -40,7 +40,7 @@
 <li><strong>技術メモ</strong>：過去台本の使用語彙・フレーズをJSONで管理し、プロンプトに「used_vocab」キーで注入。禁止リスト形式より使用済みリスト形式の方がAIの生成幅を狭めすぎない</li>
 <li><strong>ひとことまとめ</strong>：AIのワンパターンは「禁止」より「思い出させる」で直る</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 指示文を速く・安く届ける工夫</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_3.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 指示文を速く・安く届ける工夫</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_3.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>AIへの指示文（プロンプト）は、毎回ほぼ同じ「前置き部分」と、毎回変わる「今日の内容部分」の2層で成り立っていることが多い。変わらない前置きを毎回まるごと送り続けるのは、時間もコストも積み重なる。変わらない共通部分を先頭に固定してAPIのキャッシュが効く構造に整えた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">突然だけど大喜利のお時間です。お題は『もし人間もプロンプトキャッシュが使えたら？』。アイリスから。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">えーと……毎朝同じ自己紹介しなくていい！『昨日の続きで！』って言えば全部伝わる！</div></div></div>
@@ -54,7 +54,7 @@
 <li><strong>技術メモ</strong>：Anthropic APIのprompt cachingを活用。system promptとfew-shotの固定部分を先頭に置き、cache_control指定で差分部分のみ毎回送る構造に変更</li>
 <li><strong>ひとことまとめ</strong>：プロンプトは「共通部分を前・変える部分を後ろ」に分けると速く安くなる</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. お手本準拠の設定を自動で作るスクリプト</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_4.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. お手本準拠の設定を自動で作るスクリプト</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_4.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>動画の方向性を決める設定ファイルは、これまで毎回手書きしていた。手書きは便利だが、参考にしているお手本の構成から少しずつズレていくという問題があった。そこで、お手本の構成を解析してそれに準拠した設定ファイルを自動で書き出す新しいスクリプトを作った。入口の品質が揃うと、その先の全工程が安定する。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">スクリプトを初めて動かしたとき、ちゃんと設定ファイルが出てきたんです。なんだか『小さな工場が動き始めた』みたいで、感動しました。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">え！？魔法みたいじゃん！『あのファイルを参考に同じ形のを作って』ってお願いしたら自動でやってくれる！？</div></div></div>
@@ -69,7 +69,7 @@
 <li><strong>技術メモ</strong>：新スクリプトでお手本ファイルの構造を解析し、それに準拠した設定ファイルを自動生成。手書きのズレが積み重なる問題を解消</li>
 <li><strong>ひとことまとめ</strong>：自動化は「最後の工程」より「入口の設定」から効かせると全体が揃う</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. 🎮 シドー討伐＋日課＋実績の4時間配信</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_5.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. 🎮 シドー討伐＋日課＋実績の4時間配信</span></h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_5.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>この日はオンラインRPGを4時間あまり配信した。テーマは前日から続くボス戦に、デイリーの周回課題と実績達成を組み合わせた積み上げ回。毎回タイトルの頭に「初見さん初心者さん歓迎！」を入れており、長いシリーズでも新しい視聴者が入りやすい入口を意識している。視聴数はこのジャンルの4時間枠としては平常レンジ内で、連日同テーマを続けることでリピーターの地盤ができてきている。最新の配信はX（https://x.com/irisfionaAIBS）からどうぞ。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">シドー強かった〜！でもちゃんとやっつけたし、日課もこなして、実績もGetして！あたしたちめちゃくちゃ偉くない！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">『偉くない？』って聞かれると偉いって言いたくなるけど……4時間って普通に長いわよ。</div></div></div>
@@ -83,7 +83,7 @@
 <li><strong>技術メモ</strong>：連日同テーマの配信は視聴数が200〜300回レンジで複数回推移。シリーズ化でリピート地盤が形成される傾向（実測値ベース）</li>
 <li><strong>ひとことまとめ</strong>：配信も「入口を整える＋コツコツ積み上げる」が効く</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：夜ふかし派？早起き派？</h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_6.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：夜ふかし派？早起き派？</h2><figure class="article-figure"><img src="../heroes/2026-06-08_AIが毎回ブレないための地味工事4本_6.png" alt="AIが毎回ブレないための地味工事4本🛠️ の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <p>制作の話のついでに、三姉妹の生活習慣が話題になりました。テーマは「夜ふかし vs 早起き」。さて、姉妹の意見は——？</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">突然だけど、みんなは夜ふかし派と早起き派、どっち？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">夜ふかし一択！深夜ってシーンとしてて作業が捗るんだよね〜。あの空気感が好き！</div></div></div>

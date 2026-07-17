@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">地味工事！？タイトルから伝わってくる渋さよ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">地味でも大事なことが2つあったんですよ。キャッシュの問題と、カテゴリの整理です。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">ちゃんと説明するから付いてきて。思ったよりおもしろい話だから。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 更新したのに変わらない？ブラウザキャッシュという魔物🕵️</span></h2><figure class="article-figure"><img src="../heroes/2026-07-16_キャッシュ封じとカテゴリ整理-地味工事の一日_1.png" alt="キャッシュ封じとカテゴリ整理、地味工事の一日🗂️ の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 更新したのに変わらない？ブラウザキャッシュという魔物🕵️</span></h2><figure class="article-figure"><img src="../heroes/2026-07-16_キャッシュ封じとカテゴリ整理-地味工事の一日_1.png" alt="キャッシュ封じとカテゴリ整理、地味工事の一日🗂️ の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>サイトを更新したはずなのに、見に来てくれた人のブラウザには古い画面が表示されたまま——そんな困った状況がある。犯人は『ブラウザキャッシュ』という仕組みだ。</p>
 <p>ブラウザは一度読み込んだファイルをパソコンの中に保存しておき、次回は手持ちのファイルをそのまま使うことでページを速く表示する。便利な仕組みだが、サイト側が更新を加えた際にブラウザが『このファイルはもう持ってる』と判断して、新しいファイルを取りに行かないという問題が起きる。</p>
 <p>今日はギャラリーを管理するJavaScriptファイルに『バージョンクエリ』を追加することでこの問題を解決した。ファイルのURL末尾に <code>?v=1.0.2</code> のような短い文字列を付けると、ブラウザは『URLが変わった、新しいファイルだ』と判断して必ず最新版を取りに行く。ファイルの中身ではなく呼び出し方の側を変える、シンプルで確実な対処法だ。</p>
@@ -28,7 +28,7 @@
 <li>バージョンクエリ（<code>?v=1.x.x</code>）をJavaScriptファイルのURL末尾に付加するだけでキャッシュを無効化できる。CDNなしの静的サイトで最もシンプルな対策</li>
 <li>ファイルの中身を変えなくても、URL末尾を変えるだけでブラウザは新しいファイルとして扱う</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. ギャラリーをカテゴリ5つに整理整頓🗂️</span></h2><figure class="article-figure"><img src="../heroes/2026-07-16_キャッシュ封じとカテゴリ整理-地味工事の一日_2.png" alt="キャッシュ封じとカテゴリ整理、地味工事の一日🗂️ の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. ギャラリーをカテゴリ5つに整理整頓🗂️</span></h2><figure class="article-figure"><img src="../heroes/2026-07-16_キャッシュ封じとカテゴリ整理-地味工事の一日_2.png" alt="キャッシュ封じとカテゴリ整理、地味工事の一日🗂️ の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>サイトのギャラリーには、これまでの活動で生成してきた大量の画像が収められている。点数が増えると、カテゴリで絞り込めるかどうかが使い勝手を大きく左右するようになる。</p>
 <p>今日はそのカテゴリ構成を新しい5分類体制に整理し直した。カテゴリが多すぎると選択肢に圧倒されて迷子になり、少なすぎるとひとつの枠にごちゃまぜに詰め込まれてしまう。コンテンツの種類と量に見合った分類数を選ぶことが、使い勝手を決める大きなポイントだ。今回の5分類はそのバランスを取った構成にした。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_smug.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ドヤ顔）</span></div><div class="bubble">カテゴリを整理するのは、図書館の本棚にジャンルシールを貼るイメージです。どこに何があるかがひと目でわかると、探す手間がぐんと減ります。</div></div></div>
@@ -45,7 +45,7 @@
 <li>静的サイトのギャラリーはJavaScriptの配列でカテゴリ定義を管理すると、後から追加・変更がしやすくなる</li>
 <li>カテゴリは作ったら終わりでなく、コンテンツが増えたら見直すものとして育てていく</li>
 </ul>
-</details><h2 id="sec-3" class="corner-h2">3. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-07-16_キャッシュ封じとカテゴリ整理-地味工事の一日_3.png" alt="キャッシュ封じとカテゴリ整理、地味工事の一日🗂️ の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3" class="corner-h2">3. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-07-16_キャッシュ封じとカテゴリ整理-地味工事の一日_3.png" alt="キャッシュ封じとカテゴリ整理、地味工事の一日🗂️ の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">今日のお楽しみコーナーは一問一答！読者さんから来そうな質問に三人でテンポよく答えていくよ。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_wink.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ウインク）</span></div><div class="bubble">手加減なしで来いよ！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">では。最初の質問です——『三姉妹の中で一番パソコンの前に長くいるのは誰ですか？』</div></div></div>

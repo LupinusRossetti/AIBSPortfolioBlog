@@ -10,7 +10,7 @@
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">お疲れさまでした、お姉ちゃん。1枚あたり1分半ほどかかる計算なので、全部流し終えるまで1時間以上かかりましたよね。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">1時間超！？その間ずっと画面を見守ってたの？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">まさか。それにね、実は今日、自動化にもう一仕事してもらってたの——それは後半でね。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 合格フォルダにいない子だけ「名指し補講」</span></h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_1.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 合格フォルダにいない子だけ「名指し補講」</span></h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_1.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>ギャラリー企画は、カテゴリ別にキャラクターごとに50シーンのイラストを揃えるのが目標だ。1回目の生成バッチを終えると、品質チェックを通過した画像は合格フォルダへ振り分けられる。合格フォルダに入らなかったシーン番号が「欠損」——今回の再生成ラウンド2の対象になった。</p>
 <p>今回の内訳は3カテゴリ（清楚・カワイイ・エレガント）×2キャラ（ルピナス・フィオナ）の合計で40枚あまり。重要なのは「50シーン全部をやり直す」のではなく、「合格フォルダに存在しないシーン番号だけを差分で検出して、そこだけ再生成する」設計にしてある点だ。合格済みの画像まで巻き込むと処理時間が大幅に膨らんでしまう——欠けているシーンだけを名指しで呼ぶのが正解だ。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ここで小クイズ。50シーンのうち30枚が合格フォルダ入り、残り20枚が欠損——この状況でいちばんコストが無駄になる再生成方法はどれでしょう？</div></div></div>
@@ -32,7 +32,7 @@
 <li><strong>技術メモ</strong>：欠損検出は <code>set(all_scenes) - set(ok_files)</code> の集合演算で実装。生成バッチはリアルタイムの合否ログ付きにしておくと、処理中も別作業と並行しやすい</li>
 <li><strong>ひとことまとめ</strong>：「欠けている分だけ補講」の設計で、処理コストを大幅に圧縮できる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 同じseedで再試行＝「同じ失敗の上演2回目」</span></h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_2.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 同じseedで再試行＝「同じ失敗の上演2回目」</span></h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_2.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>欠損シーンを特定して再生成するとき、もう一つ外せないルールがある。「失敗した画像をまったく同じ設定のまま再試行する」だけでは問題は何も解決しない。</p>
 <p>画像生成AIにはseed（シード）という「乱数の出発点」がある。同じseedを使うと毎回まったく同じ画像が出力されるため、失敗した画像を同じseedで再生成すると、同じ失敗画像がそのまま再現されるだけだ。今回使っている再生成スクリプトは、欠損シーンを検出する際にseedをOSの乱数源からランダムに取得して毎回新しい値を割り当てる設計にしてある。これで「同じ破綻が繰り返される呪い」を断ち切れる。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">ちょっと根本的なこと聞いていい？コンピュータって、ランダムな数を自分で作れないの？</div></div></div>
@@ -54,7 +54,7 @@
 <li><strong>技術メモ</strong>：seedのランダム化には <code>int.from_bytes(os.urandom(7), 'big')</code> 等でOSの乱数源から取得する方法が使える。欠損検出と同時にseedをランダム化するのが設計上の必須要件</li>
 <li><strong>ひとことまとめ</strong>：seedを変えないと同じ失敗が繰り返される——再生成するときは必ずランダム化</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 朝はリサーチ、昼は画像——自動化の時間帯リレー</span></h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_3.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 朝はリサーチ、昼は画像——自動化の時間帯リレー</span></h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_3.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>昼間に1時間超の画像生成バッチを流すよりも前——朝の決まった時間に、AI収益化リサーチの自動バッチがすでに一仕事終えていた。動画の字幕データを収集して要約し、リサーチファイルへ追記してgitへ自動コミットするまでを、人手ゼロで実行してくれている。今日はギャラリー再生成がメイン作業だったが、朝は自動リサーチ、昼は画像の再生成バッチ——仕組みを整えてあったことで、自動化が時間帯のリレーで働いてくれた一日になった。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">ずっと引っかかってたんだけど——冒頭の『もう一仕事』って、リサーチ自動バッチのこと？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">正解。といっても画像バッチと同時に動いてたわけじゃなくて、私が画像を流し始めるより前——朝のうちにAI収益化リサーチの自動バッチが定時に走って、字幕収集→要約→ファイル追記→gitコミットまで全部やってくれてた。</div></div></div>
@@ -75,7 +75,7 @@
 <li><strong>技術メモ</strong>：リサーチバッチは字幕収集→要約→ファイル追記→git自動コミットを1プロセスで完結。朝の定時に自動実行され、昼間の画像生成バッチとは時間帯が分かれているため干渉しない</li>
 <li><strong>ひとことまとめ</strong>：「流せる処理は流す、目で見る必要があるものは人が見る」——自動化の正直な設計が品質を守る</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：大喜利「AIに自動化してほしいこと」</h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_4.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：大喜利「AIに自動化してほしいこと」</h2><figure class="article-figure"><img src="../heroes/2026-07-11_欠損40枚あまり全部合格-狙い撃ち再生成の設計術_4.png" alt="欠損40枚あまり全部合格！狙い撃ち再生成の設計術🎨 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>1時間超のバッチを流しながら、ふと考えてしまいました。『この作業、AIに代わってもらえたらなあ……』ってやつ。三姉妹それぞれの願望をお届けします。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">お題：「AIに自動化してほしい、あなたの日常のめんどくさいこと」。私から——『朝、着替えの組み合わせをズバリ提案してくれる服コーデAI』。何年も前からほしいと思い続けてる。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">あたしは『食べたいものが思い浮かばないときにズバリ決めてくれるご飯AI』！『なんでもいい』って言いながら実はなんでもよくない人間、全員抱えてるはずでしょ。</div></div></div>

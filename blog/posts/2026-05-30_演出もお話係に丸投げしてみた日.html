@@ -10,7 +10,7 @@
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">お部屋を片付けたら、家具の配置も見直したくなる感じですね。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">それ！！掃除したら模様替えしたくなるやつ！！あたしも毎回そうなる！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">……アイリスが毎回部屋を散らかす理由が分かった気がするわ。さ、今日の話をしましょうか。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 🎬 お話と見せ場、ついに合体作戦</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_1.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 🎬 お話と見せ場、ついに合体作戦</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_1.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSの動画づくりでは「台本を書く担当」と「演出を付ける担当」がこれまで別々に動いていました。台本が完成してから、別の処理が「ここはアップで」「このシーンは暗い色調で」と後付けで演出を乗せていく仕組みです。でも、物語の感情の流れと演出が微妙にズレてしまうことがある——そこが気になっていました。今日、大きく切り替えました。台本を書く担当が、物語を書きながら同時に演出の指示も決める仕組みへ変更。さらにPhase2として、その演出指示を実際の描画まで反映させる部分も今日完成させています。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">待って！！じゃあ『あとから演出付けるあたし』の仕事は！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">クビじゃないわよ。検証・補完係に配置換え。おかしいところを外から見つける目は、引き続き必要なの。</div></div></div>
@@ -26,7 +26,7 @@
 <li>演出付与をPhase1（台本執筆と同時に作者が演出指示を付与）とPhase2（render関数が作者付与の演出を実描画）の2段構成に分離して実装</li>
 <li>お話係が演出まで持つことで、全体整合性が保ちやすくなる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 📋 指示書は整った書式で渡す</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_2.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 📋 指示書は整った書式で渡す</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_2.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>AIに「こんなお話を作ってほしい」と伝えるとき、自由な文章でざっくり渡すと、毎回受け取り方が少し違ってくる——そんな問題がありました。今日は「タイトル・ジャンル・登場人物・雰囲気・構成の流れ」という決まった見出しを持つ専用ファイルの形式を整えて、そこに書いてから渡す方式に統一しました。さらに台本づくりのルール群も、複数の場所に分散していたものを一本化。AIが受け取る情報の粒度が揃うことで、毎回のクオリティのムラが減っていきます。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">つまり……お願いの仕方を、決まった型に揃えたってこと？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">そう。型がないと毎回伝え方が少しずつ違って、出てくるものもバラバラになっちゃうのよ。</div></div></div>
@@ -42,7 +42,7 @@
 <li>指示書形式を <code>theme.txt</code> として構造化（タイトル・ジャンル・登場人物・ムード・構成フローを固定項目化）。ルールも一か所に集約し、テーマファイルの解析処理をメタ行の位置に依存しない方式へ改善</li>
 <li>指示書の形式を固定すると、品質のムラが減る</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 🔢 トークン、ちゃんと測ってみた</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_3.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 🔢 トークン、ちゃんと測ってみた</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_3.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>AIを動かすとき、どれだけの量の言葉をやりとりしているか——それを「トークン」と呼びます。これまでだいたいの規模は分かっていましたが、処理ごとに正確な数を把握できていませんでした。今日、AIへの呼び出し方をJSON形式の出力に切り替えて、実際のトークン数を計測・記録できる仕組みを実装しました。どのステージでどのくらい消費しているかが数値で見えると、節約や処理の最適化の方針が具体的に立てやすくなります。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日ちょっと地味な話をするんだけど——AIに何語話しかけてるか、ちゃんと数えられるようにしたの。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">……今まで数えてなかったの？</div></div></div>
@@ -59,7 +59,7 @@
 <li>LLM呼び出しを <code>--output-format json</code> または <code>stream-json</code> 形式に切り替え、レスポンスから input/output トークン数を取得・ログ記録できるよう実装</li>
 <li>トークン計測は最適化の第一歩</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 🧰 地味だけど大事なバグたち</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_4.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 🧰 地味だけど大事なバグたち</span></h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_4.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>大きな仕組みの変更と並行して、細かい不具合の修正も複数まとめて入れました。台本の区切り信号が音として再生されてしまう取りこぼしを根本から解決、BGMに混じる小さなクリッピングノイズを抑制（保険リミッターを追加）、前景素材が0個のときに映像生成が止まるバグを修正——どれも地味ですが、見ている人の「あれ？」をひとつずつ消す大事な仕事です。コードのコメントにモデル名が誤記されていた箇所（俗に言う『コメントバグ』）の是正や、処理構造の監査もあわせて実施しました。視聴フィードバックから起きた問題についても複数件、今日で根本から対処済みです。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">バグ退治！あたしの出番！どこどこ！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">……全部もう直したわよ。</div></div></div>
@@ -77,7 +77,7 @@
 <li>マーカー無音化処理を全LLMステージ完了後のステップへ移動して取りこぼしを根絶。BGMクリップノイズは保険リミッター追加で抑制。前景素材0個時の描画停止はNoneチェックで修正</li>
 <li>小さなバグを後回しにしない積み上げが、長期的な品質を保つ</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹格付けランキング「今日のバグ、怖さランキング」</h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_5.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹格付けランキング「今日のバグ、怖さランキング」</h2><figure class="article-figure"><img src="../heroes/2026-05-30_演出もお話係に丸投げしてみた日_5.png" alt="演出もお話係に丸投げしてみた日🎬 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日のコーナーは格付けランキング！今日退治したバグたちを「怖さ」で三人それぞれ順位づけしてみようか。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">あたしの1位は文句なしでBGMのシード固定！同じ起点だから毎回同じ曲……気づかず量産され続けてたのがじわじわ怖い！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">わたしは死蔵コードを1位にします。引き出しの奥の乾電池、放っておくと液漏れして現役の機器まで壊すあれです。気づかない間に被害が広がるのが一番こわいかと。</div></div></div>

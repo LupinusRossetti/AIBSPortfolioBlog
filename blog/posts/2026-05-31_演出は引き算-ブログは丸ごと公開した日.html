@@ -9,7 +9,7 @@
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_shy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（照れ）</span></div><div class="bubble">……そこ、あんまり得意げに言わないで。さすがに根詰めすぎたなとは思ってるから、今日はちゃんと休憩を挟みながらいくね。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">昨日は演出の組み立てをAIに任せる実験でしたよね。今日はその続きで、今度は演出を削る作業から始まって……サイトも公開して……。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">削る・直す・公開する——今日は3本立ての欲張りな日だったわ。順番に話していくね。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. ☀️ 演出は「引き算」が正解だった</span></h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_1.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. ☀️ 演出は「引き算」が正解だった</span></h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_1.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画の画面エフェクト——光ったり集中線が走ったりする演出——が増えすぎていた。バトル以外の何でもない会話シーンにもついていて、気づけばずっと画面がチカチカしている状態になっていた。今日は「本当の見せ場だけに絞る」方針に転換し、4つの制御機構とエフェクト予算の上限設定を組み込んで大幅削減。さらに同じ種類のエフェクトが短い間隔で連続しないよう間引き処理も追加した。結果として、削ったことで「ここぞ」の場面がくっきり映えるようになった。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">あたし正直さ、エフェクトって多ければ多いほどかっこいいと思ってたんだけど。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">それが罠なのよ。全部が光ってたら、どこが本当の必殺技なのか分からなくなるじゃない。</div></div></div>
@@ -27,7 +27,7 @@
 <li>screen_fxにエフェクト予算上限（budget cap）を設定。バトル以外の使用率を大幅圧縮し、連続同種エフェクトの間引き処理も追加した</li>
 <li>引き算の演出で「ここぞ」の場面が際立つ</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：バグ3兄弟、根っこから退治</h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_2.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：バグ3兄弟、根っこから退治</h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_2.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵2" loading="lazy" width="2752" height="1536"></figure>
 <p>ずっと地味に動画生成を悩ませていたバグが3種類あった。今日は全部に決着をつけた。</p>
 <p><strong>バグA：背景が切り替わらない問題</strong>　ある話数で場面が変わっても背景が前のままになる。シーンの状態が伝わる経路が途切れていたことが原因で、経路をつなぎ直したら素直に切り替わるようになった。</p>
 <p><strong>バグB：同じシーンが二重に作られる問題</strong>　動画を区間に分けて並列生成するとき、境界の1ターン分が両隣の区間に重複して入ってしまっていた。区間の番号の数え方が1ずつずれていたのが原因で、修正したら二重生成はなくなった。</p>
@@ -49,7 +49,7 @@
 <li>SFX無音バグは①幻のキー参照の浄化、②決定論的な第二パスの追加、③フォールバック経路の整備の3点セットで解決。シーン重複は区間境界インデックスの0-based/1-based混在が原因</li>
 <li>「たまに起きる」バグほど、原因が複数箇所に分散していることが多い</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 🏠 サイトがついに公開された夜</span></h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_3.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 🏠 サイトがついに公開された夜</span></h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_3.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>手元で組み立てていたポートフォリオサイトと、この日記ブログが今夜ついにインターネットに公開された。GitHubの仕組みを使ってプッシュするたびに最新版が自動で反映される体制を整え、5月23日から今日までの日記7本・ポートフォリオ・SNSリンクまとめページを一気に世に出した。全記事のサムネイル画像は画像生成AIで作った文字なしのイラストに刷新し、本文にも一枚ずつイラストを配置してぐっと読みやすくなった。ポートフォリオも事実に基づいて作り直し、一部の外部サービスへの導線は規約の都合で削除して、今後は他のプラットフォームに集中する方針に切り替えた。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">ずっと下書きのままだったおうちに、やっと表札がついて誰でも来られるようになったんです……！</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">もう眠れなくなりそう、じゃなくて、もう眠れてないじゃん！夜中まで作業してたんだから！</div></div></div>
@@ -70,7 +70,7 @@
 <li>自動デプロイはGitHub Actionsのワークフローファイル（<code>.github/workflows/</code>配下）を追加するだけで設定できる</li>
 <li>記事を書き溜めてまとめて公開する場合、日付順に並ぶ仕組みを最初に整えておくとあとが楽</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. ⚙️ 地味だけど大事、10本の仕上げ修正</span></h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_4.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. ⚙️ 地味だけど大事、10本の仕上げ修正</span></h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_4.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>バグ退治や大きな方針変更の裏で、細かいけれど積み重なると大きな差を生む修正を10本以上こなした。</p>
 <p>キャラクターの服装を一人が変えると他の全員にも反映されていた問題を、キャラクター別に独立した服装の持続管理を持つことで解決。BGMが冒頭でコロコロ切り替わりすぎないよう最低限の間隔ルールを設け、字幕の折り返しが1文字だけ次の行に落ちる孤立状態を防ぐよう改良し、人物の呼称正規化が引用符や中黒の直後で意図せず発動してしまうバグも修正した。</p>
 <p>さらに、動画生成前に「シーンの種類とBGMの区分が食い違っています」「同じセリフが連続しています」と警告が出る仕組みを追加。背景選びも番号の機械的なローテーションをやめて物語の流れに合わせる方式に変更したことで、場面の空気感に合った背景が選ばれるようになった。</p>
@@ -90,7 +90,7 @@
 <li>服装の持続管理はキャラクター別に独立した状態オブジェクトを持つことで解決。背景の物語駆動化は固定場所シーンを自動判定してひとつの場所にまとめる処理を追加して実現</li>
 <li>品質は一発の大改修より、小さな修正の積み重ねで上がっていく</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹なんでも大喜利</h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_5.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹なんでも大喜利</h2><figure class="article-figure"><img src="../heroes/2026-05-31_演出は引き算-ブログは丸ごと公開した日_5.png" alt="演出は引き算、ブログは丸ごと公開した日🌸 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>5月最終日、笑って締めましょう。今日のお題はこちら——</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">大喜利いくよ。お題は『画面エフェクトを入れすぎた動画につけるタイトルといえば？』</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">はい！『チカチカで視力検査できる動画』！</div></div></div>

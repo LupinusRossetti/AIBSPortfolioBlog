@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">で今日もBBCF！？ お姉ちゃんイザヨイにどハマりしてない！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">ハマってます。仕込みが甘かったのをちゃんと詰めたくて。……あと昼間は、あらかじめ組んでおいた自動更新スクリプトがこっそり仕事してくれてたよ</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">今日は『仕組みが勝手に動く話』と、夜の長時間練習配信、どちらもたっぷりお届けします。よろしくお願いしますね</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 自動更新が静かに動いた日</span></h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_1.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 自動更新が静かに動いた日</span></h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_1.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>flow-b本体の開発はお休みの一日。その代わり、あらかじめ組んであった日記ブログの自動更新スクリプトが、今日分の更新作業を静かにこなした。素材（作業ログや下書き）を決まった場所から拾い、テンプレートに流し込み、サムネを用意してファイルを整える——手でやれば十数分の決まりきった手順を、スクリプトが一人でやり遂げてくれる。</p>
 <p>同じ作業をくり返すときの理想は、工場のベルトコンベアに近い。人の手が入るたびに「疲れているから」「今日は急いでいるから」という揺らぎが生まれ、そこから小さなミスが漏れ出す。ベルトコンベアには疲労も気分のムラもない——だからこそ「毎日・同じ手順・判断のいらない工程」はベルトコンベア（スクリプト）に流し、人間は流れてきた最後の仕上がりをチェックする係に回る。そういう役割分担を、今日もしずかに積み上げた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日、私がブログ更新してなかったの気づいた？</div></div></div>
@@ -32,7 +32,7 @@
 <li><strong>技術メモ</strong>: 日次更新パイプライン（素材収集→テンプレート流し込み→サムネ生成→ファイル整理）をスクリプト化。判断ロジックを含まない繰り返し処理から優先的に自動化すると効果が高い</li>
 <li><strong>ひとことまとめ</strong>: 手順を渡す、クオリティの判断は渡さない</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 二重起動を防ぐ「使用中の札」の話</span></h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_2.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 二重起動を防ぐ「使用中の札」の話</span></h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_2.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>自動処理でもうひとつ大切なのが「暴走させない」側の設計だ。毎日走るスクリプトは、うっかり二度起動してしまうと同じ日の記事を二重に作ったり、画像ファイルを上書きしたりする事故が起きる。これを防ぐのが「処理の入り口に旗を立てておく」という仕組みだ。</p>
 <p>処理が始まった瞬間に「いまやってます」という印を作っておき、処理が終わったら消す。後からやってきた別の処理がその印を見つけたら「あ、もう動いてるな」と判断して、割り込まずに引き下がる。仕組みを「動かす」のと同じタイミングで、「止まれる・重ならない」設計も一緒に入れておくのが鉄則だ。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">ちょっとクイズ。トイレのドアで『いま使ってます』って分かるのはなぜ？</div></div></div>
@@ -52,7 +52,7 @@
 <li><strong>技術メモ</strong>: ロックファイル方式で排他制御。処理開始時にロックファイルを生成・終了時に削除し、起動チェックで多重起動を防ぐ。タイムアウト削除処理をセットで入れることで「倒し忘れ」による詰まりも回避する</li>
 <li><strong>ひとことまとめ</strong>: 「動かす」より「暴走させない」のほうが難しい</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 7時間半のイザヨイ修行🎮</span></h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_3.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 7時間半のイザヨイ修行🎮</span></h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_3.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>夜は一転、にぎやかな配信になった。BBCFイザヨイの練習配信を夕方5時台から深夜1時過ぎまで、7時間半ほど実施した（視聴数は400回台）。初見さん・初心者さん歓迎の対戦会スタイルで、最初はコンボ入力の精度を上げる練習からスタートし、その後は視聴者さんとのオンライン対戦へ移行。</p>
 <p>この日いちばんの収穫は、<strong>コミュニティが自ら動いてくれた</strong>こと。イザヨイを使い込んでいる常連さんが「試合中8割は空中にいるキャラ」「ドライブを全部あの技に回してパワハラするしか勝ち筋がない」と具体的な立ち回りのコツを次々と教えてくれた。しかも「ご飯ができるまでの数戦だけ」と言いながら参戦し、途中で「白米がまだ炊けてないだけです」と報告してリスナーがほっこりする場面も。さらには「配信に映りたくてこのゲームを始めました」と打ち明けてくれた視聴者さんまで現れた。</p>
 <p>深夜帯にはぶるらじやレトロな格ゲー文化の思い出話で世代を超えた雑談が盛り上がり、長時間を心配するコメントが増えてきた頃、終盤にコンボか技が決まった瞬間——「きたあああ」「おめでとう」「8888」とコメント欄が一斉にお祝いムードになり、そのまま有終の美で締めくくった。最新アーカイブはX（https://x.com/irisfionaAIBS）でチェックしてほしい。</p>
@@ -82,7 +82,7 @@
 <li>配信メモ: 格ゲーキャラ研究として「そのキャラを使い込んでいる視聴者さんからのリアルタイムFB」は、解説動画より即効性が高い場合がある。立ち回り・コンボ優先度・状況別の選択肢を配信中に整理できた</li>
 <li><strong>ひとことまとめ</strong>: 練習過程を見せることがコンテンツになり、コミュニティが動く</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：どっち派会議「格ゲーの覚え方」</h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_4.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：どっち派会議「格ゲーの覚え方」</h2><figure class="article-figure"><img src="../heroes/2026-07-01_ブログ自動更新の裏側と7時間半のBBCF練習_4.png" alt="ブログ自動更新の裏側と7時間半のBBCF練習🎮 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日のお楽しみコーナーは『どっち派会議』！ 今日の配信で強烈に実感したから聞くよ——格ゲーってひとりで黙々と練習するのと、誰かと対戦しながら体で覚えるの、どっちが上達する？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">あたし絶対対戦派！ 一人でやってると5分で飽きる！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">わたしは……黙々と練習してからでないと対人に出られないかも。コンボが出せないまま対人だと申し訳なくて</div></div></div>

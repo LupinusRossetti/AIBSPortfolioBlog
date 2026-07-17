@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">えっまた！？お姉ちゃん今週ずっと直してない！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">ははは、まあそうかもね。今日は特別で、直す前に『どこが壊れてるか全部見つける』探偵みたいな作業もあったんだよ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">お姉ちゃんが探偵で、わたしたちが助手ですね。盛りだくさんでしたので、順番にお伝えしていきましょう。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 試した跡は最初から「見なかったことリスト」に</span></h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_1.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 試した跡は最初から「見なかったことリスト」に</span></h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_1.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIでものをつくっていると、動作確認のための出力ファイルがじわじわと積み上がっていく。「これ試してみた」「さっき確認したやつ」——そういった一時的なファイルが、本当に大事な成果物と混在し始めると、後で「これ残すの？捨てていいの？」と毎回悩む羽目になる。</p>
 <p>今日やったのはその仕分けをシステム化すること。試した跡が生まれるフォルダをあらかじめ「記録しなくていい」リスト（<code>.gitignore</code>）に追加し、本番の成果物だけがきれいに管理される状態を作った。あわせて動画生成ツールのテスト出力も片づけ、スクリプトを整理してフェーズ0のスナップショットとして保存した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">ねえ、<code>.gitignore</code> って何？なんか名前かっこいいけど。</div></div></div>
@@ -24,7 +24,7 @@
 <li><strong>技術メモ</strong>：<code>.gitignore</code> にテスト出力ディレクトリを追加してgit管理対象から除外。新カテゴリが発生するたびに追記する運用が実態に合う</li>
 <li><strong>ひとことまとめ</strong>：「見なかったことリスト」を育てると、本物の成果物だけが浮かび上がる</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：点検したら十数か所まとめて直す羽目になった</h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_2.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：点検したら十数か所まとめて直す羽目になった</h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_2.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>整理作業の合間に「冷えた状態からゼロで起動して、全部ちゃんと動くか確認する」テスト（コールドスタートテスト）を走らせた。前提知識なしに全ての設定を読み直してみると、普段の作業中には気づかないズレが浮かび上がってくる。</p>
 <p>結果は——壊れたリンクが十数か所、ファイル名とURLの設計がミスマッチになっている箇所、ブログのサムネ生成に関する説明の書き方ミス。まとめてやらかしていた。全部その日のうちに修正してクリアにした。あわせて、以前のフォルダ整理で資料の置き場所を移動したとき、コード内の「この資料はここにあります」という説明書き（docstring）が古い場所のままになっていたのも、新しい場所に合わせて書き直した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">ちょっと待って！？十数か所って……そんなに！？</div></div></div>
@@ -42,7 +42,7 @@
 <li><strong>技術メモ</strong>：コールドスタートテストでブログパイプラインのサムネ設定誤り・壊れリンク十数か所・slug-filenameミスマッチを検出して一括修正。docstringの参照パスもVault移行後の新パスに追従</li>
 <li><strong>ひとことまとめ</strong>：「動くからいいや」は今の自分だけに通じる免除。未来の自分のために直す</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 2週間ぶりの記念撮影：250本あまりのドキュメントを一か所に</span></h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_3.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 2週間ぶりの記念撮影：250本あまりのドキュメントを一か所に</span></h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_3.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>裏側では毎日、創作やツールに役立つ情報が自動でコツコツと集まっている。今日の時点で累計はおよそ1万件、直近1日だけでも1000件超が新たに積み上がっていた。これだけの量になると「いつの時点でどこまで集まっていたか」がぼんやりしてくるので、2週間ぶりに区切りのスナップショット（その時点の状態をそのまま保存したもの）を残した。</p>
 <p>あわせて、各プロジェクトからバラバラに浮いていた250本あまりのドキュメントを、新しい共通拠点にまとめて収容した。「アイデア再発見プール」として整理したことで、以前作ったアイデアが埋もれずに引き出しやすくなった。SNSの実データ取得については、見ていない間にブラウザが固まって暴走するリスクを避けるため、この日も手動セッションで補完する方針を継続した。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">累計でおよそ1万件というのは……正直、わたし自身も感覚がつかみにくい量ですね。</div></div></div>
@@ -61,7 +61,7 @@
 <li><strong>技術メモ</strong>：2週間分の自動集積データをまとめてスナップショットコミット。250本あまりのloose mdをhardlink方式で共通拠点に収容し、三層メモリ設計・手動管理ファイル保護フックも整備</li>
 <li><strong>ひとことまとめ</strong>：全部自動にしない選択が、長期安定の鍵になることもある</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 配信のはなし：「ストーリーも」のひと言が増えた日</span></h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_4.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 配信のはなし：「ストーリーも」のひと言が増えた日</span></h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_4.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>今日も王道RPGのライブ配信をお届けした。配信タイトルに注目してほしいのだが、少し前は「日課をやりたい気持ちはある」だったのが、今日は「ストーリーも日課もやりたい気持ちはある」に変わった。数文字の追加で、「今日は本筋の物語を進めることが目標の回」という意思表示になっている。</p>
 <p>長尺アーカイブは投稿し終わったあとからもじわじわと再生が伸び続けるのが特徴で、ストック資産として育っていく手応えがある。最新の配信情報はX（https://x.com/irisfionaAIBS）を確認してね。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">今日の配信、タイトルに『ストーリーも』って入れたのちょっとこだわりポイントだったんだよね。</div></div></div>
@@ -79,7 +79,7 @@
 <li><strong>技術メモ</strong>：タイトルに進行目標を明示することで惰性の日課回と差別化。長尺アーカイブはストック資産として後追い再生が伸長する傾向がある</li>
 <li><strong>ひとことまとめ</strong>：「ストーリーも」のひと言が、ただの日課回を旅の続きに変えた</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：どっち派会議</h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_5.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：どっち派会議</h2><figure class="article-figure"><img src="../heroes/2026-06-18_ファイル整理と大点検で土台を固めた日_5.png" alt="ファイル整理と大点検で土台を固めた日📦 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日のどっち派会議のお題はこれ！『作業に詰まったとき——片づけて気分転換する派 vs そのまま突き続ける派』どっちですか？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">あたし絶対『片づけ派』！詰まったときって実は頭がパンパンなだけで、ちょっと掃除とかコーヒーとかすると突然答えが降ってくるじゃん！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">わたしはどちらかというと……突き続ける派です。詰まった状態で離れると、戻ってきたときに文脈を思い出すコストが意外と高くて。</div></div></div>

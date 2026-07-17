@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">大手術！？お姉ちゃん、何人入院したの！？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_laugh.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（大笑い）</span></div><div class="bubble">三姉妹の画像発注書が750枚分、入院していました（笑）。昨日は関数を9本に配り終えたところでしたが、今日はその発注書の中身そのものを整える番でした</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">発注書の精度がそのまま絵の品質になるから、ここを丁寧にやることが大事なんだよね。順番に話していきます</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 🎨 三姉妹「別物」ギャラリーの設計</span></h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_1.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 🎨 三姉妹「別物」ギャラリーの設計</span></h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_1.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIで画像を生成するとき、「どんな絵を描いて」と伝える指示書のことをプロンプトと呼ぶ。三姉妹それぞれ約250枚、合計750枚分のプロンプトを、今日は全員「別物」になるよう書き直した。同じカテゴリ名がついていても、ルピナスは清楚・エレガント系、アイリスは元気・学園青春系、フィオナはやさしい・ファンタジー系——と中身も雰囲気もまったく別の仕様だ。キャラクターの個性がそのまま絵に出るには、この発注書の書き分けが全てを決める。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">ちょっと待って待って！お姉ちゃん！あたしのカテゴリに「清楚」入ってたんだけど！？！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">……入ってた。それが今日の出発点</div></div></div>
@@ -25,7 +25,7 @@
 <li>キャラ別にプロンプトファイルを分けてカテゴリ×シーンのマトリクスを明示化すると、後から差分を確認しやすく品質管理もしやすい</li>
 <li>「キャラの個性」は発注書の中身まで落とし込んではじめて絵に出る</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：コピペが30件あまり混入してた</h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_2.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：コピペが30件あまり混入してた</h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_2.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>3人分の発注書を書き終えたあと、念のため全ファイルを突き合わせてみると、同じシーン記述が30件あまり重複していた。急いで量をこなそうとした際に、別キャラの発注書を元ネタにして内容をそのまま残してしまったのが原因だ。750枚分を目で読んで確認するのは現実的ではないため、Pythonでラベルと本文の書き出し部分を3人分突き合わせ、一致したものを自動で洗い出した。最終的に十数か所を書き直し、重複ゼロを確認した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">お姉ちゃん！！「パジャマで寝起きあくびシーン」、3人とも文章まったく同じなんだけど！！！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_shock_horror.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（衝撃）</span></div><div class="bubble">……ほんとだ。ちょっと待って</div></div></div>
@@ -42,7 +42,7 @@
 <li><code>{ラベル}:{本文先頭百数十文字}</code> をキーに辞書を作り、2つ以上のキャラファイルで同じキーが現れた行を抽出する方法が効率的</li>
 <li>件数が多くなるほど目視チェックは限界——機械的な突き合わせが信頼できる</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 🔒 「絶対NG」を文字列レベルでコードに刻む</span></h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_3.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 🔒 「絶対NG」を文字列レベルでコードに刻む</span></h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_3.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>コピペ修正をしている最中に、今度は肌の色を変えてしまう語句が発注書に混入していることも判明した。三姉妹のキャラクター設定では、肌の色を変えるような語句は発注書に書かない、というルールがある。この語句が残っていると生成時に意図せず肌の色が変わってしまうため、禁止語のリストを作り3ファイル全体を検索して一致したものを除去した。さらに今後の発注書生成にも自動チェックが走るよう仕組みを整えた。「口約束のルール」を「コードで縛るルール」に格上げした格好だ。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_shock_horror.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（衝撃）</span></div><div class="bubble">……あの、読み返していたら、夏のビーチシーンに「日焼けした肌」に相当する英語が残っていました</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_angry.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（怒り）</span></div><div class="bubble">それは絶対ダメ！肌の色は変えない、が大前提だよ！！</div></div></div>
@@ -57,7 +57,7 @@
 <li>禁止語リストをファイルで管理し、プロンプト生成の前にgrepして一致したものを警告・除去する処理を組み込むと人的ミスを防げる</li>
 <li>ルールは口頭ではなくコードで縛ってはじめて「破れないルール」になる</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 🛠️ サイトの細かい3バグを同日に退治</span></h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_4.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 🛠️ サイトの細かい3バグを同日に退治</span></h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_4.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>ギャラリープロンプトの整備が終わった後、ブログサイト側でも前日から持ち越しになっていた3つの問題を片付けた。1つ目は、前日のサムネイル画像が正しく出力されていなかったので修正。2つ目は、ブログ記事を作る際に書いてはいけないトピックが含まれていないかを自動でチェックする仕組みの追加。3つ目は、サムネ生成で画像処理ライブラリ（PIL）が出力済みのファイルを誤って上書きしてしまうバグへの対処。どれも地味だが、「出力物の信頼性」に直結する修正だった。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ギャラリー側が落ち着いたついでに、サイトのバグも3つまとめて直した</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">ついでって言うけど、3つって多くない！？</div></div></div>
@@ -76,7 +76,7 @@
 <li>PIL（Python Imaging Library）で画像を生成する前に <code>os.path.exists()</code> でチェックし、存在するファイルはスキップする処理を追加するだけで上書きバグを防げる</li>
 <li>地味な1行でも出力の信頼性を守るために入れる——これが地道な品質管理</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹の相談室</h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_5.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹の相談室</h2><figure class="article-figure"><img src="../heroes/2026-06-16_プロンプト750枚の重複をゼロにしてサイトも直した日_5.png" alt="プロンプト750枚の重複をゼロにしてサイトも直した日🎨 の挿絵5" loading="lazy" width="2752" height="1536"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">今日は相談室コーナー！届いたお便りを読むね。『発注書を書いていると、気づけば似たようなシーンばかりになってしまいます。どうしたらいいですか？』</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">それ、まさに今日あたしたちがハマってたやつじゃん！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">はい……人ごとではないですね。私からの回答は、キャラごとにカテゴリを先に決めてから書くこと、です。中身より先に『枠』を分けておくと、似た内容になりにくいと感じました。</div></div></div>

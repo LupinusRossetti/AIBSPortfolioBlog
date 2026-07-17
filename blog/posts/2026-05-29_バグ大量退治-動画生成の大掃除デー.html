@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">自分で地味って言う？！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">地味なんだもん。新機能ゼロ。ひたすらコードの大掃除。動画生成の仕組みを端から端まで見直して、ずっと気になってたほころびをまとめて直した日よ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">こういう日があるから次の動画がちゃんと動くのですね。今日のお話、楽しみです。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 🧹 動画生成の道のりを端から大掃除</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_1.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 🧹 動画生成の道のりを端から大掃除</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_1.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画はお話づくり・演出・絵と声の生成・仕上げと、たくさんの工程が積み重なってできています。今日はその工程を担うプログラムを端から端まで読み直し、「バグになりうる箇所」「使われていない古いコード」「設定が意図とずれている部分」の3種類を見つけてはつぶしていきました。操作パネルの画面まわりに始まり、自動生成・動画生成・音声処理・解説生成・BGM・AI補助の各処理を横断。影響を受けたファイルは30本を超え、修正件数も数十件に及びます。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">操作パネルのところから始めて、順番に下流の工程へ向かって確認していったの。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">古いコードって、消さないとどうなるの？</div></div></div>
@@ -24,7 +24,7 @@
 <li>工程横断監査のコツ：操作UI層→生成制御層→レンダリング層の順に進めると上流の変更が下流に波及する前提で確認できる。NameError・IndexError・リソースリークがよく出る箇所を重点的に</li>
 <li>「小さなほころびを定期的に直す日」を設けると、大きなトラブルに育つ前に防げる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 🎵 BGMが毎回似た曲になりがち問題を解消</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_2.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 🎵 BGMが毎回似た曲になりがち問題を解消</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_2.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>シリーズで動画を複数作っていると、BGMの自動割り当てが毎回「似たような曲」を選びがちという問題がありました。原因はランダムに選ぶための「起点の数字（シード）」が、回をまたいでもほぼ同じ値になっていたこと。今日の修正でシードにエピソード番号を組み込み、回ごとに自然と違う曲が選ばれるようにしました。また、しっとり系の場面に合う曲種が他のロジックに上書きされないよう保護ルールも追加しています。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">毎回同じ曲かかったら飽きるよね。あたしの配信のBGMプレイリスト、結構バラエティあるつもりなんだけど。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_devious.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（にやり）</span></div><div class="bubble">アイリスの配信は……いつも同じ曲が続いている気がしますが。</div></div></div>
@@ -44,7 +44,7 @@
 <li>BGM多様化の実装：シードをエピソード番号から生成（<code>random.seed(ep_number)</code> 相当の処理）し、しっとり系場面は優先ルールで他の割り当てロジックに上書きされないよう保護</li>
 <li>「なぜ同じ曲ばかり？」と疑ったときはシード固定をまず確認する</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. ✂️ AIへの指示は「絞る」ほど伝わる</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_3.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. ✂️ AIへの指示は「絞る」ほど伝わる</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_3.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>お話を生成してもらうとき、AIへ渡す設定情報は「多いほど良い」ではありません。今日は使われていない情報の注入を複数箇所で撤去しました。渡す情報が増えるほど、AIが「今回の主役は何か」を見失いやすくなります。必要なものだけに絞って渡すことで、生成の質と安定性が上がる——実際にやってみると実感できる話です。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ちょっと寸劇やっていい？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">急！いいよ！！</div></div></div>
@@ -62,7 +62,7 @@
 <li>不要な設定注入の撤去：使われていないデータをプロンプトに混ぜると、モデルが重要な文脈を見失う（attention の分散）。死蔵フィールドは定期的に棚卸しを</li>
 <li>「情報は絞るほど伝わる」——これはAI相手でも人間相手でも変わらない</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 👀 今日のやらかし — 直したはずが続けて穴が出た</h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_4.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 👀 今日のやらかし — 直したはずが続けて穴が出た</h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_4.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>「バグをつぶす日」のはずでしたが、修正が不完全だった箇所が後から2か所見つかりました。パロディを入れるかどうかを制御する機能では、前回の修正が中途半端に残っていて別の処理経路と衝突していました。演出を決める処理では、使ってよい表情のリストとルール設定が食い違っていて、意図しない表情が選ばれる可能性があった状態でした。どちらも今日中に対応完了しましたが、「直した」を信じすぎることの怖さを改めて実感した場面でもあります。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">大掃除してたら、掃除した場所がまた汚れてたってことでいい？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">……正確には、掃除したと思ったら実はホコリを裏側に押し込んでただけだった、って感じ。</div></div></div>
@@ -81,7 +81,7 @@
 <li>不整合の典型：「使ってよいリスト」と「実際のルール設定」が別の場所で管理されているもの。片方だけ直すともう片方が古いまま残りやすい</li>
 <li>「直した」を信じすぎない。修正の直後にもう一周確認するステップを習慣にする</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. 🚀 レンダリング3モード整理と新モデルへの移行</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_5.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. 🚀 レンダリング3モード整理と新モデルへの移行</span></h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_5.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>大掃除の締めとして、動画を最終的に仕上げる処理を3種類のモードに整理し直しました。今まで一つの処理の中に複数の分岐が混ざり合っていたものを、モードごとに独立して動作するよう分けたことで、それぞれの挙動を単独で確認・修正しやすくなります。また、お話生成で使うAIモデルを最新世代へ移行するためのチェックポイントも本日切りました。移行に際して単発生成の安定化とショート動画機能の拡張も合わせて対応しています。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日のラストが実は一番大事かも。仕上げ処理の3モード分離と、AIモデルの移行チェックポイント。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">3モードって、どういうこと？</div></div></div>
@@ -98,7 +98,7 @@
 <li>モデル移行チェックポイントの切り方：単発生成の安定性確認と機能拡張（ショート対応）をまとめてコミットすると、どの時点で何が変わったかの追跡が楽になる</li>
 <li>「改善したはず」を「確認した」に変えるまで断定しない——この姿勢が品質を守る</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：大喜利「プログラムの大掃除で出てきた謎のもの、なーんだ？」</h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_6.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：大喜利「プログラムの大掃除で出てきた謎のもの、なーんだ？」</h2><figure class="article-figure"><img src="../heroes/2026-05-29_バグ大量退治-動画生成の大掃除デー_6.png" alt="バグ大量退治！動画生成の大掃除デー🧹 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日の締めは大喜利！お題はこれ——『プログラムの大掃除をしたら出てきた謎のもの』。私から。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_devious.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（にやり）</span></div><div class="bubble">『誰も呼び出していないのに、ずっと待機し続けている処理。もしかして：ストーカー』</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">最悪すぎ！！あたしも行くよ——『コメントに「あとで直す」と書いてあって、日付が2年前』</div></div></div>

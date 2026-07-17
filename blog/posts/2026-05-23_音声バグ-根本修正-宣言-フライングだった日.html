@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">お姉ちゃん昨日の夜ごきげんで「初日うまくいった〜！」ってぴょんぴょんしてたのに、朝にはもう次のバグと戦ってたじゃん</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_shy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（照れ）</span></div><div class="bubble">今日はわたしが……少し失敗した話がメインになりそうで、先に謝っておいてもいいですか。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">謝らなくていい！失敗談の方がよっぽど読み応えあるから。今日は音声バグとの二回戦、エディタの引き出し整備、スクリプトのお片付け、4要素の整合チェックとてんこ盛りです。フィオナの「やらかし」から始めますよ〜！</div></div></div>
-<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし</h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_1.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし</h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_1.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画生成ツールには、セリフ音声と効果音をあらかじめ一本に混ぜておく処理がある。この処理が誤動作していたのをフィオナが追っていた。音声ファイルの読み込みを直接的な方法に切り替えて修正を終えた直後、フィオナは「根本修正、完了しました」と宣言した——が、実際に動かしてみると、まだ挙動がおかしかった。</p>
 <p>調べると、読み込みの部分とは別に、音データを扱う処理の内側にも古いアクセス方法が残っていた。そちらも直接アクセスに書き換えて、ようやく音が正常に流れた。コミットメッセージには自分への戒めとして「真の根本修正」と付けた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">フィオナ。今日の午前中、一番誇らしげな顔してたのいつだったか、覚えてる？</div></div></div>
@@ -34,7 +34,7 @@
 <li><strong>技術メモ</strong>：音声ミキシング処理の修正は二段階。一段目：音声ファイルを <code>soundfile.read()</code> で直接 numpy 配列として取得（中間変換を廃止）。二段目：<code>AudioArrayClip.array</code> への直接アクセスに書き換え。一段目修正後に初めて二段目の問題が顕在化した</li>
 <li><strong>ひとことまとめ</strong>：「直った」宣言は、もう一段深いところも動かして確かめてから</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. ✏️ セリフエディタに「ひきだし」ができた</span></h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_2.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. ✏️ セリフエディタに「ひきだし」ができた</span></h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_2.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>セリフを一行ずつ編集できる詳細エディタの画面を見直した。設定項目がフラットにずらっと並んでいた状態から、「よく使うもの」と「たまにしか触らないが必要なときは必要」なオプションを分け、後者を「高度な設定」としてまとめた。タイトル編集欄の説明文も古い構造のままになっていたので、現在のツールの動作に合わせて書き直している。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">「高度な設定」ってセクションができたんだけど——アイリス、何が入ってると思う？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">開いたら隠しキャラが解放される！</div></div></div>
@@ -60,7 +60,7 @@
 <li><strong>技術メモ</strong>：セリフ詳細エディタに「高度な設定」セクションを新設し、使用頻度の低いオプションを折りたたみ区画に分離。タイトル編集欄のヘルプ文言も現在のツール構造に合わせて新形式に更新</li>
 <li><strong>ひとことまとめ</strong>：ヘルプ文言の更新漏れも一種のバグ——画面の案内と動作は一致させておこう</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 🗂 スクリプトたちの「しまう」先ができた</span></h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_3.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 🗂 スクリプトたちの「しまう」先ができた</span></h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_3.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>作業ディレクトリのあちこちに「昔は使っていたが今は動かしていない」スクリプトが散らばっていた。これらを専用のアーカイブフォルダにまとめて移動した。削除ではなく保管にしたのは、後から参照が必要になる場面が意外と多いからだ。ルート直下の整理と、ツール全体の設計書への追記もあわせて行い、「今稼働中」と「過去のもの」が一目で区別できる状態になった。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">使ってないなら消しちゃえばよくない？部屋がすっきりするじゃん。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">「今使っていない」と「もう要らない」は別ですよ、アイリス。後から『あのときどう書いてたっけ』と見返すことが意外とあるので——消してしまうとそのとき困ります。</div></div></div>
@@ -86,7 +86,7 @@
 <li><strong>技術メモ</strong>：使用終了スクリプトを専用アーカイブフォルダに移動（削除ではなく保管）。変更履歴ツールが全履歴を記録していてもディレクトリ整理は有効で、「今稼働中」と「過去のもの」が一目で区別できる。設計書への追記で設計意図も現状に同期</li>
 <li><strong>ひとことまとめ</strong>：迷ったらアーカイブ——「捨てる」以外の第三の選択肢を持っておくと後悔が減る</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 🎼 四つそろえてから見ると速い</span></h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_4.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 🎼 四つそろえてから見ると速い</span></h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_4.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>実はこの日、朝イチでまず取りかかったのがこの作業——動画を構成する4要素、キャラクターの配置・声のタイミング・背景の切り替わり・タイトル表示の整合を一括で確認・修正した。一つを直した瞬間に別の要素がずれる「連鎖ずれ」が起きやすいため、個別に追うより全要素を並べて一度に見た方が効率よくまとまる。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">四つ全部同時に確認するの！？頭が混乱しない？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">一つずつ直そうとしたら……キャラクターの配置を調整したら声のタイミングがずれて、それを直したら背景との切り替わりが合わなくなって、という連鎖が起きてしまったので。</div></div></div>
@@ -106,7 +106,7 @@
 <li><strong>技術メモ</strong>：キャラクター配置・音声タイミング・背景遷移・タイトル表示の4要素を一括チェックし修正。各要素は動画の時間軸上で依存し合っており、一要素の変更が他にずれを生じさせる。個別修正より統合チェックアプローチが有効</li>
 <li><strong>ひとことまとめ</strong>：互いに依存する要素は全員そろえてから確認した方が早い</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：禁断の質問コーナー</h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_5.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：禁断の質問コーナー</h2><figure class="article-figure"><img src="../heroes/2026-05-23_音声バグ-根本修正-宣言-フライングだった日_5.png" alt="音声バグ「根本修正」宣言、フライングだった日🎵 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_devious.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（にやり）</span></div><div class="bubble">今日のお楽しみコーナーは「禁断の質問コーナー」。今日フィオナがフライング宣言した話をしたばかりだし……聞いちゃおうかな。「今まで一番、人に見られたくなかった瞬間は？」</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_panic.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（あわあわ）</span></div><div class="bubble">い、いきなりそれですか……。それはもちろん、今日の「根本修正、完了しました」からの二秒後、ですね……。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">見てた見てた！誇らしげな顔からのみるみる崩れる顔！保存したいくらい！</div></div></div>

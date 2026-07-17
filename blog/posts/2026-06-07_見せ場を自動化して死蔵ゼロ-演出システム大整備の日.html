@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">昨日の続きなの！？あたし全然別の話が来ると思ってた！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">土台を整えてから仕組みを乗せる、という順番ですよ。昨日キャラの声を揃えたから、今日の自動演出が正しく機能するんです。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">今日は盛りだくさん。『見せ場を自動で光らせる仕組み』と、地味だけど一番大事だった『死蔵機能の救出作戦』、それからサイト整備まで全部やりました。行くよ！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 見せ場を自動で光らせる！「ニヤリポイント」完成</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_1.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 見せ場を自動で光らせる！「ニヤリポイント」完成</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_1.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSでは台本テキストを入れると表情・動き・効果音・カメラワークの『絵づくり指示』を自動で組み立てるツールを育てています。今日のメインは、その中の<strong>「ニヤリポイント」機能</strong>を4段階に分けて完成させたことです。</p>
 <p>台本の中に『この場面の核心になる一言』が出てきたとき、そのコマに決まった演出が自動でかかるようにしました。ポイントは『AIに感性を求めない』こと——設計指針の文章、過去の有効なパターンの要約（ダイジェスト）、ジャンルごとの数値（見せ場が何回くらい出るか・誰が反応役になるか）を構造化して渡すことで、ブレない出力を実現しています。演出の付与はランダムではなく『この条件なら必ずこの演出』という決め打ちルールで統一しました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">実況いきます。今日の台本に、心の声が暴走してるセリフが入ってるとしましょう。そのコマ——</div></div></div>
@@ -24,7 +24,7 @@
 <li><strong>技術メモ</strong>：Phase1+3でプロンプトへ設計指針と辞書ダイジェストを注入、Phase2でジャンル属性YAML（ニヤリポイント出現回数目安・反応キャラ比率）追加、Phase4で中心ワード検出→演出を決定論的に付与する仕組みを実装</li>
 <li>「いい感じに」をAIに丸投げせず、判断材料を構造化して渡すだけで出力が安定する</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：たった1文字の順番違いが全部を不発に招いた</h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_2.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：たった1文字の順番違いが全部を不発に招いた</h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_2.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>作業中、じわじわ嫌な予感がしていた箇所がありました。『画面を揺らす』演出を呼び出すキー名が、台本を書く側では<code>shake_screen</code>、実行する側では<code>screen_shake</code>と、単語の順番だけ違う名前で書かれていたのです。機械はどちらも知らない名前として無視するため、エラーも出さず、ただ静かに演出が不発になり続けていました。気づかずに量産していたら、全部の画面揺れが消えたまま仕上がるところでした。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_sad.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（しょんぼり）</span></div><div class="bubble">これ、発見したとき地味に凹んだんだよ。エラーが出てくれれば気づけるのに、ただ何も起きないの。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_exasperated.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（呆れ）</span></div><div class="bubble">なんで怒ってくれないの機械！？不満があるなら言ってよ！</div></div></div>
@@ -39,7 +39,7 @@
 <li><strong>技術メモ</strong>：キー名ゆれはKeyError等を出さずNoneやスキップになる静かなバグ。エイリアス（別名）受け入れで双方互換にして根治し、影響範囲が絞れたタイミングで名前の統一を進める</li>
 <li>まず動かす、それから整える——この順番を守るだけで余計な壊れ方が大幅に減る</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 死蔵ゼロ大作戦：A〜Gで機能を棚卸し</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_3.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 死蔵ゼロ大作戦：A〜Gで機能を棚卸し</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_3.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSのツールには、表情・動き・効果音・カメラワークなど積み重ねてきた演出部品がたくさんあります。ところが——<strong>作ったのに一度も呼び出されていない部品</strong>が意外とたくさん眠っていました。これを『死蔵機能』と呼び、今日はA〜Gの7カテゴリに分けて全件棚卸しし、それぞれに出番を作りました。</p>
 <p>特に効いたのが効果音の偏り対策です。自動割り当てにすると一番『それらしい音』にスコアが集中して、同じ音ばかり鳴り続けます。そこで1本の動画内で使える上限回数を設けるとともに、まだ使われていない音にボーナスを付けて自然と選ばれやすくしました。また『誰に向けたアクションか』の情報が空欄でも文脈から自動補完されるようにし、不発がゼロになる体制を整えました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">では棚卸し報告会議を始めます。アイリス、担当カテゴリは？</div></div></div>
@@ -56,7 +56,7 @@
 <li><strong>技術メモ</strong>：per_sfx_capでSFXにハードリミット設定＋未使用SFX優先スコア付与。action_target自動補完でNullスキップ防止。仕上げ審査工程にanimation是正対象を追加。combo多様性ヒントを正本に統合</li>
 <li>作るより使い切る方が難しい。自動割り当て系は必ず『上限＋未使用優先』のセットで偏りを止める</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 8ジャンル新規追加とお手本準拠フレームワーク</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_4.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 8ジャンル新規追加とお手本準拠フレームワーク</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_4.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>今日のもう一つの大仕事は、演出セット（パレット）を8ジャンル分まるごと新規追加したことです。漫才風、IQクイズ風、女子トーク、異世界バトル、カオスギャグ、日常ギャグなど、それぞれの雰囲気に合った絵づくりレシピを整備しました。また既存の演出セットにもシーン別の『合わせ技』を追加して、出番の幅を広げています。</p>
 <p>あわせて<strong>お手本準拠フレームワーク</strong>も導入しました。ジャンルごとに『参考にしているテンポ感』をお手本として基準に設定し、新ジャンルを追加するときもゼロから考えるのではなく、お手本との差分だけ書けばいい体制になりました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">新ジャンルのクイズいきます。『IQクイズ風のジャンルって、どんな演出が特に多い？』</div></div></div>
@@ -72,7 +72,7 @@
 <li><strong>技術メモ</strong>：sample_based_genreフレームワーク導入。各ジャンルにニヤリポイント出現回数目安と反応役キャラ比率をYAMLで管理。既存4パレットにシーン別combo追加で死蔵率を下げる</li>
 <li>お手本基準で設計すると新ジャンルの追加がブレず速い</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. サイトの複数案整備と日記リポジトリ起ち上げ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_5.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. サイトの複数案整備と日記リポジトリ起ち上げ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_5.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵5" loading="lazy" width="2752" height="1536"></figure>
 <p>演出システムと並行して、ポートフォリオサイトの改修も進めていました。現在は複数の方向性の案を同時に試している段階で、訪問者が別のコンテンツへ移りやすいよう再訪の導線を強化したり、制作プロセスを公開するセクションを追加したり、動画を自動で最新状態に反映するスクリプトを追加したりと、地味だけど積み上がる作業をまとめて入れました。</p>
 <p>そして今日からこのブログ日記リポジトリをgitで管理する体制を整えました。既存のローカルフォルダをバージョン管理に組み込んだだけですが、記録が積み重なっていく土台ができた感じがします。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日サイトの方も、5つの方向性の案を並行して触ってたのよ。</div></div></div>
@@ -89,7 +89,7 @@
 <li><strong>技術メモ</strong>：動画自動更新スクリプト追加、SNS横長画像対応・SVGロゴ化対応。ブログ日記のローカルディレクトリをgit init でバージョン管理に組み込み</li>
 <li>コードも記録も、管理の土台を整えてからが本番</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：大喜利「死蔵機能にあだ名をつけるなら？」</h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_6.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：大喜利「死蔵機能にあだ名をつけるなら？」</h2><figure class="article-figure"><img src="../heroes/2026-06-07_見せ場を自動化して死蔵ゼロ-演出システム大整備の日_6.png" alt="見せ場を自動化して死蔵ゼロ！演出システム大整備の日🌸 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <p>今日は死蔵機能の棚卸しをしたので、せっかくだから大喜利にしてみました。お題はこちら——</p>
 <p><strong>「長い間使われずに眠っていた演出機能に、あだ名をつけるとしたら？」</strong></p>
 <p>三姉妹も一回答ずつボケてみます！</p>

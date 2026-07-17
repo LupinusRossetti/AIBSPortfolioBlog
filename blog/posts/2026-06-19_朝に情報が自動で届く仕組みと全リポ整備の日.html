@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">お姉ちゃん！朝起きたら知らないレポートが届いてた！数字がびっしり並んでて一瞬ウイルスかと思った</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">ウイルスじゃないよ！！それが今日の本題。昨日固めた土台の上で、情報を自動で集めてくれるシステムがちゃんと動いてたってこと</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">今日は『自動化でどう楽するか』と、地道だけど大事な整備作業の話をお届けします。どうぞよろしくお願いします</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 朝のレポートが自動で届いた——Claude不要の情報収集システム</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_1.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 朝のレポートが自動で届いた——Claude不要の情報収集システム</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_1.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵1" loading="lazy" width="2752" height="1536"></figure>
 <p>AIBSでは、ネット上の情報を自動収集して分類するシステムを日常的に動かしています。今朝届いたレポートによると、累計ファイル数はすでに1万件を超えており、50を超えるカテゴリに自動整理されています。直近24時間だけでも2,000件近い新規ファイルが増えていました。</p>
 <p>このシステムの一番のポイントは <strong>Claude（AI）を一切使わずに動く</strong> という点。AIへの問い合わせは使うたびにコスト（トークン）がかかりますが、このシステムは従来のプログラムだけで動くので消費ゼロです。特に多かったカテゴリは「動画制作ワークフロー改善」「動画生成UIの研究」「ComfyUIの応用テクニック」など、AIBSが取り組んでいるテーマとドンピシャのものでした。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">24時間で2,000件って……毎日そんなに増えてたら、そのうちパソコンが『もう無理〜！』って倒れない？</div></div></div>
@@ -24,7 +24,7 @@
 <li><strong>技術メモ</strong>：Claude非依存のスクレイピング＋カテゴリ分類スクリプトが自動実行。カテゴリ別ファイル数・直近24h新規件数・頻出ドメインTop10をmdレポートとして出力。NotebookLM投入判断の材料にも使える</li>
 <li><strong>ひとことまとめ</strong>：AIコストを温存しながら、毎朝インプット材料が揃う仕組みが安定稼働</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 全リポジトリに改行コードの統一設定を追加した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_2.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 全リポジトリに改行コードの統一設定を追加した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_2.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>この日、管理している全6つのリポジトリに <code>.gitattributes</code> というファイルを追加しました。これは改行コードの扱い方をOSによらず統一するための設定ファイルです。</p>
 <p>Windowsでは改行に2文字分のコード（CR+LF）、MacやLinuxでは1文字分（LF）を使います。この違いを放置したまま複数の環境でコードを触ると、何も変更していないはずのファイルが「全行変更あり」と誤検知されることがあります。<code>.gitattributes</code> を入れておくと、チェックアウト・コミット時に自動で揃えてくれます。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">では問題。改行コードが混在すると何が起きるでしょう</div></div></div>
@@ -39,7 +39,7 @@
 <li><strong>技術メモ</strong>：<code>.gitattributes</code> に <code>* text=auto eol=lf</code> を記述し、全6リポジトリ（動画生成ツール本体・運用管理・ブログサイト・ギャラリー・知識管理拠点・日記リポ）に一括適用</li>
 <li><strong>ひとことまとめ</strong>：ファイル1行の設定で「改行コードで悩む未来」を丸ごと封じ込めた</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 管理拠点の大整備——監査で問題ゼロを達成した日</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_3.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 管理拠点の大整備——監査で問題ゼロを達成した日</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_3.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSのドキュメントとメモを一元管理する「知識の倉庫」について、この日は徹底的な監査と整備を行いました。バックアップスクリプトの新設・引き継ぎメモの更新・目次ドキュメントの追加・古い参照ファイルの退避・ドキュメントへのメタ情報付与——これらを十数本のコミットに分けながら積み重ね、最終的に監査の全項目が「問題なし」になりました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">十数本のコミット！？フィオナ、そんなに細かく分けるの？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">細かく積んでおくと、後から『あのとき何を変えたっけ』が分かりやすくなるので。1本ずつ派なんです</div></div></div>
@@ -54,7 +54,7 @@
 <li><strong>技術メモ</strong>：backup_memory.ps1（日次バックアップ）新設 / MOCファイル3本追加 / frontmatter付与9本 / HANDOFF.md更新（次フェーズ：既存リポ整理用）/ orphanファイル退避 / 監査スクリプトが全項目パスを確認</li>
 <li><strong>ひとことまとめ</strong>：倉庫の掃除は地味だが、使いたいときに使えることが全ての前提</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 👀 今日のやらかし：日記スクリプトが2本分生成してきた</h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_4.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 👀 今日のやらかし：日記スクリプトが2本分生成してきた</h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_4.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>日記のmdファイルを自動生成するスクリプトに、「同じ日付で2回実行すると2本分出力してしまう」バグが発覚しました。ファイルがすでに存在するかどうかを確認する前に書き込み処理を走らせていたことが原因です。これを多重生成バグと呼び、本日修正しました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">……あの、これ。さっきお姉ちゃんが言ってた『まとめてドーン』の話？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_devious.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（にやり）</span></div><div class="bubble">そう。日記を作るスクリプトが、同じ日に何回か呼ばれると日記を何本でも作り続けちゃうというバグが出ました</div></div></div>
@@ -73,7 +73,7 @@
 <li><strong>技術メモ</strong>：generate_diary.py の実行冒頭に出力先パスの <code>os.path.exists()</code> チェックを追加。ファイルが存在する場合は早期 <code>return</code> でスキップするよう修正し、多重md生成バグを解消</li>
 <li><strong>ひとことまとめ</strong>：まず確認、それから行動——プログラムも人間も同じ</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. ブログが自動で更新されていた</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_5.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. ブログが自動で更新されていた</span></h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_5.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>AIBSのブログサイトについて、前日に書いた日記がこの日の朝にはサムネ画像の再生成を経て自動的に公開されていたことを確認しました。あわせて、自動化スクリプトの実行時にポップアップウィンドウが不必要に開く問題も解消し、バックグラウンドで静かに動くようになりました。『書いたら公開まで自動で進む』仕組みが整っていると、継続のハードルが下がります。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">実況してみようか。朝起きる</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">起きた！</div></div></div>
@@ -90,7 +90,7 @@
 <li><strong>技術メモ</strong>：ブログサイトのビルドスクリプトがサムネ生成（PIL）→mdコピー→feed/index/sitemap再生成を自動実行。サムネを再生成版に差し替え後に日次パイプラインを走らせて全反映を確認。バッチ処理のVBS化によりポップアップウィンドウを非表示化</li>
 <li><strong>ひとことまとめ</strong>：書く以外を全部自動化すると、書くことだけに集中できる</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：大喜利「自動化が行きすぎたAIBSに起きた笑えない事件」</h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_6.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：大喜利「自動化が行きすぎたAIBSに起きた笑えない事件」</h2><figure class="article-figure"><img src="../heroes/2026-06-19_朝に情報が自動で届く仕組みと全リポ整備の日_6.png" alt="朝に情報が自動で届く仕組みと全リポ整備の日🌿 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日は自動化の日ということで大喜利いきます。お題はこれ——『自動化が行きすぎてしまったAIBSに起きた笑えない事件』。私から先ね</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_devious.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（にやり）</span></div><div class="bubble">お返事も自動化したら、ファンのコメントに『ありがとうございます。このコメントの感情分析スコアは0.87です。』って返信してた</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">0.87て何！！ファンの方が去る！！</div></div></div>

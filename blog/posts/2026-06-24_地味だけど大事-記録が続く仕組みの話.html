@@ -10,7 +10,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">なんか……保護者みたい。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">夜はGBVSRの配信も久々にお届けしましたよね。確認作業とゲーム配信が1日に同居した、なかなか密度のある一日でした。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">そうそう！じゃあ今日は仕組みの話、ゆっくり聞いていってね。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 毎日更新を支える「当番さん」の正体</span></h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_1.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 毎日更新を支える「当番さん」の正体</span></h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_1.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>ブログ日記は毎日何かが投稿されていますが、その裏では「決まった時間に決まった手順で動くプログラム」が静かに稼働しています。今日はその仕組みが正しく動いているかを確認した日でした。新機能を追加したわけでも、バグを直したわけでもありません。でも「ちゃんと動いている」を確かめる作業は、継続の土台を支える地味に大切な一手間です。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">この仕組み、一言でいうなら『毎朝おなじ手順をくり返す当番さんを雇ってる』ってイメージ。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">当番さん……人じゃないよね？</div></div></div>
@@ -26,7 +26,7 @@
 <li><strong>技術メモ</strong>：cron（Linux/Mac）や Task Scheduler（Windows）などのスケジューラを使うと、ファイル保存・バックアップ・ログ生成を人手なしで定期実行できる</li>
 <li><strong>ひとことまとめ</strong>：「毎日おなじ手順」をプログラムに任せると、人間のサボりや忘れの影響がなくなる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 何もない日の記録が、日誌を完成させる</span></h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_2.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 何もない日の記録が、日誌を完成させる</span></h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_2.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵2" loading="lazy" width="3168" height="1344"></figure>
 <p>コードを管理するシステムでは、「変更した分（差分）」だけが自動で履歴に残ります。逆に言うと、何も変えていない日には記録が残りません。そのまま放置すると後から「この日は休みだったのか、記録が消えたのか」が判断できなくなります。AIBSでは今日のような日でも「今日は確認のみ・変更なし」という事実を明示的に残しています。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">でも今日みたいに何もない日も記録するの？『確認しただけ』って残して、意味ある？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">意味あるよ。記録に穴があると、後から見た人が『この日は何？』ってなる。休んだのか、忘れたのか、消えたのか——判断できなくなるんだよね。</div></div></div>
@@ -44,7 +44,7 @@
 <li><strong>技術メモ</strong>：<code>git commit --allow-empty -m "確認のみ・変更なし"</code> でメッセージだけのコミットを残す方法がある。差分がない日の記録に使える</li>
 <li><strong>ひとことまとめ</strong>：変更がない日も「変更なし」と明示して残すと、日誌に穴がなくなる</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 「正本はここ」と決めると迷子ファイルが消える</span></h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_3.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 「正本はここ」と決めると迷子ファイルが消える</span></h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_3.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>記録の置き場所があちこちに散らばると、「どれが最新か分からない」「片方だけ更新して片方が古いまま」という問題が必ず起きます。AIBSでは「正本（オリジナル）はここ」と決まった1か所に書き込み、ほかはバックアップのコピーと割り切る運用にしています。また、自動化したあとは確認するタイミングもあらかじめ決めておくことが大切です。気になるたびに覗きに行くと、それ自体が手作業になってしまうからです。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ファイルの置き場所、バラバラにしちゃって困ったことある人？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（照れ）</span></div><div class="bubble">…（そーっと手を上げる）</div></div></div>
@@ -65,7 +65,7 @@
 <li><strong>技術メモ</strong>：「正本リポジトリはここ・バックアップはここ」をドキュメントや README に明示しておくと後から誰が見ても迷わない。自動バックアップも正本→コピーの一方向に統一するとよい</li>
 <li><strong>ひとことまとめ</strong>：置き場所と確認タイミングを決めると、ファイル管理と自動化が本当に楽になる</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：三姉妹の相談室〜記録の続け方編〜</h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_4.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：三姉妹の相談室〜記録の続け方編〜</h2><figure class="article-figure"><img src="../heroes/2026-06-24_地味だけど大事-記録が続く仕組みの話_4.png" alt="地味だけど大事、記録が続く仕組みの話🗂️ の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>今日のお楽しみは「三姉妹の相談室」！ 記録・日記の続け方に関するお悩みに三姉妹が答えていくよ。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日のお悩みはこちら。「日記や作業記録を毎日つけようと決めたのに、三日坊主で終わってしまいます。どうしたらいいですか？」</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">あたしからの回答！『毎日じゃなくていい、週末にまとめて書けばいいんだよ』！完璧を目指すから続かないんだって。</div></div></div>

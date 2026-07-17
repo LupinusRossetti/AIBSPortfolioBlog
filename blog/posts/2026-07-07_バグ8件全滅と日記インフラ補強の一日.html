@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">バグが受付番号持って順番待ちしてるの怖すぎる！！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">バグ全8件の一掃、ブログ材料切れの発見と対策新設、サイト更新と、かなり盛りだくさんな一日でした。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">盛りだくさんすぎて日が暮れたけど、全部終わった。というわけで今日の回、はじめます！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 動画生成ツール直接改修フェーズ：バグ8件一掃完了</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_1.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 動画生成ツール直接改修フェーズ：バグ8件一掃完了</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_1.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画生成ツールの直接改修フェーズで、事前にリストアップしていたバグ8件を全て修正し、コミットと <code>.gitignore</code> の拡充まで完了しました。このフェーズにひとつの区切りがつきました。</p>
 <p>修正したバグの傾向は大きく3種類。ファイルのパスの解決ミス、エラー時に何も言わず静かに終了してしまう例外処理の漏れ、初期化が間に合わないまま次の処理が走り出してしまう制御フローのずれです。いずれも『普段は動く、でも特定の条件が揃うと静かに誤動作する』タイプで、通常のテストでは見つけにくいものばかりでした。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">せっかくだから今日成仏してもらったバグに名前をつけてやろうと思って。第一問。パスを正しく渡してるのに、なぜかひとつ上のフォルダを見に行くやつ。</div></div></div>
@@ -27,7 +27,7 @@
 <li><strong>技術メモ</strong>：BUGFIX_LOG #N 形式でコメント番号を振ると <code>git log</code> で『このバグがどのコミットで解消されたか』を追跡できる。パスの解決ミス・例外ハンドリングの漏れ・初期化タイミングのずれは条件依存バグの代表三型。<code>.gitignore</code> 拡充で複数環境での一時ファイル混入も防止</li>
 <li><strong>ひとことまとめ</strong>：積み残しバグは番号リストで管理し、まとめてコミットで区切りをつける</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：7/6の日記が丸ごと抜けていた</h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_2.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：7/6の日記が丸ごと抜けていた</h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_2.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>バグ修正を終えてふと確認したら、7/6分のブログ日記が空白でした。自動生成スクリプト自体は正常に動いていたのに——原因を調べると、材料として使っていた朝礼まとめが止まっていたため、生成するものが何もない状態で空振りしていました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_panic.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（あわあわ）</span></div><div class="bubble">あのさ、7/6の日記が……ないんだよね。ページが空白。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">え！？自動で書いてくれてるんじゃないの！？</div></div></div>
@@ -43,7 +43,7 @@
 <li><strong>技術メモ</strong>：今回の根本原因は生成スクリプトの材料入力源（朝礼まとめ）が止まったこと。スクリプト自体はエラーを出さず静かに空振りするため、発見が遅れた</li>
 <li><strong>ひとことまとめ</strong>：空白が出たら推測で埋めず、実際の作業の事実だけを書き起こす</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. ブログ材料の供給路を二重化：中間メモファイルを新設</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_3.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. ブログ材料の供給路を二重化：中間メモファイルを新設</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_3.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵3" loading="lazy" width="3584" height="1184"></figure>
 <p>材料切れの根本対策として、その日の公開可能な作業を都度書き留める中間メモファイルを新設しました。日記生成スクリプトがこのファイルも参照する形に変更したことで、朝礼まとめが止まっても個別メモが残っていれば日記が出力できる——二重経路の構造になっています。7/6分はその日の作業をもとに手動補完して対応済みです。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">仕組みを整理すると、これまでは朝礼まとめという一本の経路だけを日記生成の入口にしていました。今回の改修で、その日付のメモファイルがあればそちらも読み込む分岐を追加したんです。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">入口が2本になった？朝礼口と、メモ口？</div></div></div>
@@ -57,7 +57,7 @@
 <li><strong>技術メモ</strong>：<code>blog_material/{日付}.md</code>（例：<code>blog_material/2026-07-07.md</code>）を中間ファイルとして新設。セッション上で完了した公開可能な作業を都度メモする場所として機能させ、日記生成スクリプトの参照先に追加することで二重経路化した</li>
 <li><strong>ひとことまとめ</strong>：単一依存の自動化には穴が空く。バックアップ経路を用意して二重化する</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. ブログ品質基準アップデート：たとえ話＋技術ディテール両方必須ルール</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_4.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. ブログ品質基準アップデート：たとえ話＋技術ディテール両方必須ルール</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_4.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵4" loading="lazy" width="2752" height="1536"></figure>
 <p>このブログの品質基準に、今日から新しいルールを追加しました。各トピックの解説には、<strong>初心者向けのたとえ話</strong>と<strong>AIでものづくりする人向けの具体的な技術ディテール（固有名詞・数字・手法名など一般論で終わらない記述）</strong>の両方が必須。どちらか片方だけでは不合格です。あわせて文字数の上限制限も撤廃——中身が伴えば長くてよい、という方針に変わりました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">意見が割れそうな気がして聞くんだけど。アイリス、たとえ話も技術詳細も両方書けというルール、どう思う？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_exasperated.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（呆れ）</span></div><div class="bubble">正直……めんどくさい！たとえ話に詰まる日もあるし、技術詳細の言語化が難しい日もあるし！</div></div></div>
@@ -70,7 +70,7 @@
 <li><strong>技術メモ</strong>：技術ディテールの定義は『固有名詞・数値・手法名・短いコード片など読んだ人が再現できる情報』。字数制限を撤廃し、中身の密度で合否を判定する方針に変更</li>
 <li><strong>ひとことまとめ</strong>：たとえ話＋技術ディテールの両方揃って初めて合格</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. サイト更新：ギャラリー新設とポートフォリオ強化</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_5.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. サイト更新：ギャラリー新設とポートフォリオ強化</span></h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_5.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>ポートフォリオサイト側でも今日いくつかの更新が入りました。AIイラスト生成のブロックに、実際に生成したイラストのプレビューを直接埋め込む形に変更——テキスト説明だけだった部分が、見て伝わるページになりました。Nanobanana2 のギャラリーページを新設し、もうひとつのギャラリーは『準備中ゲート付き』で先に場所を確保した状態です。また、ブログの禁止トピック管理を大幅に拡充し、既存記事で内部カテゴリタグが <code>&lt;meta&gt;</code> 要素や <code>&lt;article&gt;</code> 要素の属性として意図せず露出していた箇所を発見・修正しました。7/6の記事は差し替えを終えて正式公開済みです。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">ギャラリー増えた！Nanobanana2 の！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">うん。もうひとつのギャラリーは先に場所だけ作って準備中ゲートをつけてある。建物が完成する前に看板だけ立てておく感じ。あと、既存記事で内部のカテゴリタグが外に漏れてた箇所も直してきたよ。値段タグをつけたまま外を歩いてるみたいな状態だったから。</div></div></div>
@@ -82,7 +82,7 @@
 <li><strong>技術メモ</strong>：テンプレートエンジン使用サイトはレンダリング後の最終 HTML を確認すると、<code>&lt;meta&gt;</code> 要素や <code>&lt;article&gt;</code> 要素の属性として内部変数が意図せず露出しているケースを発見できる</li>
 <li><strong>ひとことまとめ</strong>：生成後の最終 HTML を目視確認する習慣が内部設計の意図しない漏洩を防ぐ</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：どっち派会議『バグ修正は地道に一個ずつ派？まとめて一気に倒す派？』</h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_6.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：どっち派会議『バグ修正は地道に一個ずつ派？まとめて一気に倒す派？』</h2><figure class="article-figure"><img src="../heroes/2026-07-07_バグ8件全滅と日記インフラ補強の一日_6.png" alt="バグ8件全滅と日記インフラ補強の一日🐛 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <p>今日のバグ8件一掃を受けて、三姉妹の意見が割れました。あなたはどっちですか？</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日の作業を振り返って気になったんだけど、バグって出るたびに1個ずつその場で直す派と、リストに貯めてまとめて倒す派——どっちがいいと思う？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_exasperated.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（呆れ）</span></div><div class="bubble">断然1個ずつその場派！気づいたそのとき以外に直そうとすると経緯を忘れてる！バグって時間が経つと謎に難易度が上がるんだよ！</div></div></div>

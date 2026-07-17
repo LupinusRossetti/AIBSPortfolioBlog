@@ -17,6 +17,23 @@
   background: linear-gradient(180deg, #fefcff 0%, var(--bg-soft) 100%);
 }
 
+/* ギャラリー間の切り替えリンク（Palette Seedsのnb2-switchと同デザイン） */
+.gallery-switch {
+  margin-top: 0.5rem;
+}
+.gallery-switch a {
+  font-family: var(--font-round);
+  font-size: 0.85rem;
+  color: var(--lupinus);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--lupinus);
+  padding-bottom: 1px;
+  transition: opacity 0.2s var(--ease);
+}
+.gallery-switch a:hover {
+  opacity: 0.7;
+}
+
 /* クレジット表記（Palette Seedsと同デザイン） */
 .gallery-credit-note {
   margin-top: 1.4rem;

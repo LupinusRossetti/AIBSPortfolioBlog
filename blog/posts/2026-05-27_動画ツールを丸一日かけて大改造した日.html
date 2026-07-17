@@ -9,7 +9,7 @@
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">使い続けると気になるところが積み上がっていくのよ。まとめて爆発させた感じ。今日のテーマはずばり『一日で全部直し切る大改造』ね。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_thinking.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（考え中）</span></div><div class="bubble">先に観察してリストを作ってから直す、という流れが今日のポイントになりそうですね。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">じゃあ今日の回、ちょっとドキドキしながら読みます！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. なぜ今日大改造？エピソードを見返して気づいたこと</span></h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_1.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. なぜ今日大改造？エピソードを見返して気づいたこと</span></h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_1.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画をひとつひとつ作っていると、どうしても「その場での直し方」になりがちです。でも10本近くのエピソードをまとめて見返すと、「毎回ここが惜しい」というパターンがはっきり浮かび上がってきます。今日はそのリストアップを起点に、気になっていた箇所を一気に改修することにしました。一本ずつ対症療法を繰り返すより、まとめて観て根っこから直す——これが今日の作戦です。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">エピソードを続けて見ていたら、「あ、毎回このシーンでBGMの切り替えが唐突に聴こえるな」とか「ショートの立ち絵の位置がほんのちょっとズレてるな」とか、パターンが見えてきてね。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">1本だと気づかないのに、何本も続けて見ると見えてくるんだ。</div></div></div>
@@ -24,7 +24,7 @@
 <li>複数エピソードの一括観察でクセのパターンを抽出し、修正リストを作成してから着手する。「気づいたその場で直す」より根本的な問題に対処しやすい</li>
 <li>数を作って見返してからまとめて直す——これが「クセを根っこから治す」コツ</li>
 </ul>
-</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：緊急バグに朝イチを持っていかれた</h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_2.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2" class="corner-h2">2. 👀 今日のやらかし：緊急バグに朝イチを持っていかれた</h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_2.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>観察リストをもとにさあ改修スタート、と思ったら——開始早々、ツールの処理の流れに根本的な問題が発覚しました。動画を生成する経路が内部で2本に分かれていて、片方から動かすと設定がうまく後段に伝わらないのです。台本専用モードにしたはずなのに正しく動かない、という状態。まず土台を直さないと、リストの何も進められない——そんな朝のスタートになりました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_sad.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（しょんぼり）</span></div><div class="bubble">改修を始めようとしたら、いきなり緊急バグを踏んでね。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">え！？どんなバグ！？</div></div></div>
@@ -43,7 +43,7 @@
 <li>複数の生成経路が分岐している場合は経路の統一 + 設定フラグ（script_only等）が最終段まで正しく渡っているか必ず確認する</li>
 <li>緊急バグは後回しにすると全ての修正に影響する——先に潰すが正解</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. UIを5ステップで整理して速さと安定感を取り戻した</span></h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_3.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. UIを5ステップで整理して速さと安定感を取り戻した</span></h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_3.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>バグを片付けてからいよいよ本番の整理作業へ。「いっぺんに全部直そうとすると必ず壊れる」という経験則から、作業を5段階に分けて順番に進めました。不要になったコードを丸ごと削除し、テーマを生成する処理を複数箇所でバラバラに書いていたものを一か所にまとめ、設定タブは誤操作を防ぐため読み取り専用に変更。最後は再処理の間隔を最適化して、動作を軽くして締めくくりました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">バグ直したあと、今度はUI整理5ステップ？今日どんだけやること詰め込んでるの。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">これでも絞ったほうよ！一気にやると必ずどこか壊れるから、ちゃんと順番を決めて。</div></div></div>
@@ -64,7 +64,7 @@
 <li>テーマ生成処理の共通モジュール化・設定タブのread-only化・rerun間隔の最適化を5段階構成で段階的に実施。不要フェーズの削除も含む</li>
 <li>「順番を決めて1ステップずつ」だけで修正中に壊す失敗が大幅に減る</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. ショート動画の演出を一気に強化</span></h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_4.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. ショート動画の演出を一気に強化</span></h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_4.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>UI整理が一段落したら、ショート動画向けの演出まわりを集中的に手直し。立ち絵の縦位置のズレを修正し、オープニングに映画のような上下の黒帯（レターボックス）を追加。BGMの切り替わりが唐突に聴こえないよう判断ロジックを強化し、タイトルコールの改行位置も見直しました。さらに、変えてはいけない固定ルール（unchangeable_facts）が正しく機能しているかも検証し、いくつかのズレを修正。バージョンは今日だけで複数回更新し、ショート動画の完成度がひとつ上のステージに来た感覚です。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">黒帯！映画みたいなやつ！かっこいい〜！！！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">上下に帯が入るだけで、OPがぐっと締まるのよ。</div></div></div>
@@ -89,7 +89,7 @@
 <li>ショート動画は縦横比が通常動画と異なるため face_target_y（顔の縦目標位置）を個別設定する必要がある。unchangeable_factsの定期検証でルールのズレ込みを防止</li>
 <li>縦位置・黒帯・BGM切替の3点セット改善で、ショート動画の仕上がり精度がひと段階上がった</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：もし動画ツールに名前をつけるなら？大喜利</h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_5.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：もし動画ツールに名前をつけるなら？大喜利</h2><figure class="article-figure"><img src="../heroes/2026-05-27_動画ツールを丸一日かけて大改造した日_5.png" alt="動画ツールを丸一日かけて大改造した日🔧 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日のコーナーはね、大喜利！今日一日中手入れしてた動画生成ツール——これに名前をつけるとしたら？三人で考えてみたよ。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">う〜ん……あたしは『直しても直してもまだ直る機』！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">名前というより説明文じゃない……でも当たってるのが怖い。</div></div></div>

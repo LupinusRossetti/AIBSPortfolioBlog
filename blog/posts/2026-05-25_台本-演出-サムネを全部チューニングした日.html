@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">あたしは公開ボタン押した瞬間『よし！』って速攻寝たけど。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_shy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（照れ）</span></div><div class="bubble">フィオナはコメント欄をしばらく眺めてしまいました……。でも今日は気持ちを切り替えて、動画づくりの仕組みを全力でアップデートした一日です！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">三者三様ね。というわけで今日のテーマは『以前うまくいってたあの感じ、もう一回やりたい』。ということで行きましょう！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 台本を生かす「ルール」を掘り起こした話</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_1.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 台本を生かす「ルール」を掘り起こした話</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_1.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画の台本はAIが自動で組み立てています。でも、改良を重ねるうちに「以前うまくいっていた書き方のルール」がいつの間にか消えてしまっていることに気がつきました。過去に特別ツッコミのキレがよかった回を掘り起こして調べてみると、その頃だけ使っていた独自の台本生成ルールが、その後の改修でひっそり上書きされていたのです。今日はそのルールを丁寧に復元して、現在の一括生成の命令文に完全に組み込む作業から始めました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">あのね、以前作った回でなぜかとくにツッコミが気持ちよかった回があって。なんであの回だけ良かったんだろうって調べてみたら……</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">なんかあったの！？</div></div></div>
@@ -25,7 +25,7 @@
 <li>一括生成の命令文（プロンプト）に過去の好評バージョンのルールセットを統合しておくことで、改良前後の品質の揺れを防ぎやすくなる</li>
 <li>「なぜあの回だけキレがよかったか」を言語化して記録に残しておく習慣が、長期的なクオリティ維持につながる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. ツッコミの「！」は切り札に</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_2.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. ツッコミの「！」は切り札に</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_2.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>セリフの中でツッコミを入れるとき、文末に必ず「！」を付けるというルールがありました。ところがこれが全セリフに適用されていたせいで、どのセリフも同じ強さになり、逆に何も目立たない状態になっていたのです。そこで今日は、感嘆符を「強いツッコミ限定」に絞り、読点が連続するセリフには別の処理を当てる改修をしました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ちょっとクイズにしようか。次の2つのセリフ、どっちが聞いてて気持ちいい？ ①『違う！ そうじゃない！ それは困る！』　②『違う。そうじゃない。それは困る！』</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">んー……②！ 最後の『！』だけ光ってる感じがする。</div></div></div>
@@ -42,7 +42,7 @@
 <li>読点が2つ以上連続するセリフは感嘆符との相性が悪いため、その場合は別の処理ルートに分岐させる実装がおすすめ</li>
 <li>文末の強調符号は「デフォルトは抑制・条件を超えたときだけ付与」という設計が安定しやすい</li>
 </ul>
-</details><h2 id="sec-3" class="corner-h2">3. 👀 今日のやらかし</h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_3.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3" class="corner-h2">3. 👀 今日のやらかし</h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_3.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>BGMと投げる演出まわりで、じわじわ積み重なっていた問題に手を入れました。BGMの音量が曲によってバラバラだったり、キャラクターが何でもかんでも投げる演出が連発されたりで、見ているとちょっと落ち着かない仕上がりになっていたのです。改修するまで誰も「これ多すぎじゃない？」と止めていなかったのが今日の反省点です。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">えっ、投げる演出ってあたしの話！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">そう。アイリスが何かあるたびにぶん投げてたの。消しゴム、リモコン、フィオナのお菓子……</div></div></div>
@@ -61,7 +61,7 @@
 <li>投げる演出（アクション系の動き）は対象の割り当てをシステム側で自動化し、BGMは音量を正規化してそろえると安定感が出る</li>
 <li>語尾の伸ばし（「〜だよぉ」など）も同様に、多用すると間延び感が出るため閾値管理が有効</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. サムネを「番組風・事実限定」にリニューアル</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_4.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. サムネを「番組風・事実限定」にリニューアル</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_4.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>動画の表紙（サムネイル）をAIで自動生成する仕組みを刷新しました。今回のポイントはふたつ。ひとつは「バラエティ番組や配信の切り抜きのような、思わずクリックしたくなる雰囲気」を目指す方向性への転換。もうひとつは「サムネに描くのは本編に実際に出てきた要素だけ」というルールの厳格化です。また今日は、動画内のオープニングや区切り・エンディングにチャンネル登録を促すオーバーレイ表示を昼に追加してみたのですが、実際に確認してみると物語の邪魔になる気がして、夕方にやっぱり削除しました。試して、合わなければすぐ戻す——そんな試行錯誤もあった一日です。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">サムネって動画の顔でしょ。でも今まで、ちょっと盛りすぎてた部分があったのよね。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">本編に出てこない演出や表情をサムネに入れると、見てくださった方が『あれ、これと違う……』と感じてしまうことがあります。それが積み重なると信頼を損ねてしまいますよね。</div></div></div>
@@ -77,7 +77,7 @@
 <li>サムネ生成AIへの指示文（プロンプト）に「バラエティ番組風・切り抜き風」の演出方向を追加すると、事実限定ルールを守ったまま訴求力が上がる（Gemini系のプロンプトで動作確認済み）</li>
 <li>「本編に出てきた事実だけで構成する」というルールをシステム側で強制することで、人手チェックなしでも一定の品質が保たれる</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. 35本あまりのテーマを一気に書き直した</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_5.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. 35本あまりのテーマを一気に書き直した</span></h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_5.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>動画のネタ候補として蓄積していたテーマのストックリスト——これが35本あまりあったのですが、今日整備した新しいルールへの対応が全く追いついていませんでした。自動生成ツールのデータ構造（スキーマ）の新フィールド対応、追加素材のファイル名を自動で補完する機能など、関連するツール類も一気にまとめてアップデートしました。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">テーマのストックリスト、35本あまり全部新ルールで書き直しました。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">……35本あまり……全部？</div></div></div>
@@ -94,7 +94,7 @@
 <li>テーマのストックリストは定期的に最新ルールへ追従させないと、新旧のルールが混在して生成ムラの原因になります。ツールで一括更新できる設計にしておくと安心です🗂️</li>
 <li>スキーマ（データ構造の定義）は複数ツールをまたいで使う場合、変更時に全ツールへの伝播を確認することが必須</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：どっち派会議〜夏の作業スタイル〜</h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_6.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：どっち派会議〜夏の作業スタイル〜</h2><figure class="article-figure"><img src="../heroes/2026-05-25_台本-演出-サムネを全部チューニングした日_6.png" alt="台本の隠し味を掘り起こし、サムネも刷新した日🔧 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">さてお楽しみコーナー！ 今日のお題は……夏の作業スタイル、あなたはどっち派？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">おっ、なに！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">『ガンガン冷房つけてこもり部屋派』か、『窓開けてうちわでしのぐ派』！</div></div></div>

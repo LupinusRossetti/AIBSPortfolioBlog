@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">地味って自分で言っちゃうんだ。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">地味な日は地味って書く。中身のない達成感より、具体的に何をしたかを書く方がずっと価値があるでしょ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">縁の下の修正が積み重なって、大きな機能が安定して動くんですよね。地味な日、好きです。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. AI出力の上限を2倍にした話</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_1.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. AI出力の上限を2倍にした話</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_1.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画生成ツールの設定で、AIが一度に返せる文章量の上限を指定する値を従来の2倍に変更しました。以前から長いスクリプトを生成しようとすると文章が途中でぷつっと切れてしまう現象があり、その原因らしき箇所への対処です。ただしこの変更が実際に症状を解消するかどうかは次回の生成ランで確認する予定で、この時点では未検証です。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">では作業を実況するよ。生成を走らせると動画スクリプトがどんどん出てくるんだけど……長い案件のとき、途中でぷつっと終わることがあるの、知ってた？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">知らなかった！！スクリプトが半分で終わってるのに気づかず動画にしてた可能性もあるってこと？！</div></div></div>
@@ -25,7 +25,7 @@
 <li><strong>技術メモ</strong>：Claude APIのmax_tokensを環境変数で管理する場合、デフォルト値の見直しが抜けやすい。finish_reason=='length'がAPIレスポンスに含まれていれば上限打ち切りの確定証拠。今回はCLAUDE_CODE_MAX_OUTPUT_TOKENSを64000に変更（効果は次回生成ランで検証予定）</li>
 <li><strong>ひとことまとめ</strong>：長い生成物が変な場所で終わってたらmax_tokensを真っ先に疑う</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 📦 溜まっていた作業ファイルをgitにまとめた</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_2.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 📦 溜まっていた作業ファイルをgitにまとめた</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_2.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>数日分の作業ファイル——品質チェック自動化スクリプト、キャラクター外見の学習設定バッチ、SNS収集データ、セッション間の引き継ぎメモなど——を一括でgit管理に登録しました。新機能が動いた瞬間に次の作業へ走りがちで、履歴登録が後回しになっていた分を今日まとめて整理した形です。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_blank.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（無表情）</span></div><div class="bubble">ねえ、なんで溜まるの？溜めなきゃよくない？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">……アイリス、それを言ったらおしまいだよ？</div></div></div>
@@ -43,7 +43,7 @@
 <li><strong>技術メモ</strong>：AIセッション間の引き継ぎメモ（handoff/INSIGHTS等）をgit管理に含めると、次セッションのAIがgit logやgit diffで過去の判断を追跡できる。個人開発では『機能コードはこまめにコミット、ログ・メモ類はまとめてコミット』の二段構えが混乱しにくい</li>
 <li><strong>ひとことまとめ</strong>：後回しになった履歴登録は定期的なまとめコミット日で回収する</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 🔗 サイトのナビにGalleryを追加した</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_3.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 🔗 サイトのナビにGalleryを追加した</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_3.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵3" loading="lazy" width="3584" height="1184"></figure>
 <p>ポートフォリオサイトの全ページのヘッダーナビゲーションに、Galleryへのリンクが抜けていたことに気づき追加しました。サイトを自動ビルドするスクリプトのヘッダー生成関数に1行追記することで、ビルド対象の全ページに一括で反映されます。ただし1枚だけ自動生成の対象外になっているページがあり、そこだけはHTMLを直接手動で修正しました。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_sad.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（しょんぼり）</span></div><div class="bubble">……実は、Galleryページ、ずっとありました。ただしナビにリンクがなかったので、URLを直接知っている方しかたどり着けない状態でした。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">幽霊ページじゃん！存在してるのに誰も来ない！</div></div></div>
@@ -61,7 +61,7 @@
 <li><strong>技術メモ</strong>：Pythonスクリプトによる静的サイト生成でheader()関数を共通化している場合、新ナビ項目の追加は関数内1行の追記だけで全ページに波及する。自動生成対象外ページはCLAUDE.mdや設計メモに明記して修正漏れを防ぐ</li>
 <li><strong>ひとことまとめ</strong>：例外ページはドキュメントに書き残して次回の自分を救う</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 📝 昨日の記事のトークコーナー抜けを修正</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_4.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 📝 昨日の記事のトークコーナー抜けを修正</span></h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_4.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>7/9付けの記事に、システムプロンプトで必須とされているトークコーナーが丸ごと抜けていたことに気づき追加しました。また記事本文の内容が実際の作業と食い違っていた箇所も実態に合わせて書き直しています。原因は、コーナーを必須とするルールを記事生成用プロンプトに追記したあと、そのプロンプトの更新が実際の生成時に反映されていない状態が続いていたことでした。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">いいか二人とも、問題の状況を整理しよう。ルールを更新した。しかしそのルールで動かしていなかった。これは——</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">ルールを書いた人が悪いんじゃないの？</div></div></div>
@@ -77,7 +77,7 @@
 <li><strong>技術メモ</strong>：プロンプトをファイルで管理している場合、ルール変更後にサニティチェック生成を1回走らせて必須要素が出力に含まれているか確認するとズレを早期発見できる。出力後の正規表現チェックで機械的に検出する方法も有効</li>
 <li><strong>ひとことまとめ</strong>：書く→適用する→確認するの三段階をセットで回す</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹格付けランキング「今日の地味修正、地味さナンバーワンはどれ？」</h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_5.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：三姉妹格付けランキング「今日の地味修正、地味さナンバーワンはどれ？」</h2><figure class="article-figure"><img src="../heroes/2026-07-10_AI出力プツ切れ封じ-積み残し大整理の日_5.png" alt="AI出力プツ切れ封じ＆積み残し大整理の日🔧 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日は格付けコーナー！トークン上限の変更、作業ファイルのgitまとめ登録、サイトナビのGallery追加、昨日の記事の修正抜け——この4つを『地味だけど効いてる度』でそれぞれ順位をつけてみよう。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">あたしの1位はナビのGallery追加！だって『ページはあるのに誰も辿り着けない幽霊ページ』だったんでしょ？直した瞬間の効果がいちばん分かりやすい。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">わたしは記事のトークコーナー抜けの修正がいちばん効いていると思います。読者さんに古い情報のまま届き続けるところでしたから、気づいて直せたのは大きいです。</div></div></div>

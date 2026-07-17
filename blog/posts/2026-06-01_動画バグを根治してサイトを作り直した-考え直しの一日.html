@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_laugh.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（大笑い）</span></div><div class="bubble">昨日ようやく外の世界に公開できたと思ったら、翌朝もうバグ退治してるんだもん！お姉ちゃんの元気すごすぎでしょ！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">昨日ポートフォリオと日記ブログが無事公開できて、今日はそこからさらに前に進んだ日でしたね。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">公開した翌日に根治と刷新ができたなら、流れが良かったってことにしておくわ。じゃあ最初のやらかしから行くよ。</div></div></div>
-<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし：ep128が真っ暗だった件</h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_1.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1" class="corner-h2">1. 👀 今日のやらかし：ep128が真っ暗だった件</h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_1.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>ep128を再生すると、背景が一面真っ暗になっていた。しかも別の箇所では動画が途中から再生できなくなって崩れてしまっている。2つの不具合が同時に発生していたのが今日の出発点だ。どちらも「その場しのぎで隠す」のではなく、原因まで掘り返して直した。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">あたし朝に動画を確認してて、『あれ、夜の回にしたの？』って本気で思ったんだけど。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_exasperated.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（呆れ）</span></div><div class="bubble">夜じゃないから。事故だから。</div></div></div>
@@ -32,7 +32,7 @@
 <li><strong>技術メモ</strong>：黒背景→描画インデックスのオフバイワンが原因。OOM→バッチ分割処理・明示的なメモリ解放（del＋gc.collect）・書き出し後の動画整合性チェック（ffprobe等）の3点で防止</li>
 <li><strong>ひとことまとめ</strong>：壊れた動画は「その場しのぎ」より「原因に戻る」方が、最終的には修正の往復が減る</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 配信者素材、「使われる場面」から考え直す</span></h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_2.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 配信者素材、「使われる場面」から考え直す</span></h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_2.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>バグ修正と並行して、配信者向けの無料配布素材を生成するスクリプトと、ブラウザを外から自動操作する共通の仕組みを追加した。スクリプトを作る過程で「そもそも何を作るか」を根本から見直すことになった。最初に想定していたのは汎用の壁紙だった。見栄えはいい。ただ、「配信でいつ使うのか」がうまく想像できなかった。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">壁紙ってかわいかったじゃん。何がいけなかったの？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_thinking.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（考え中）</span></div><div class="bubble">かわいいのよ、確かに。でも『配信のどの場面で使うの？』って想像したとき、ピンとこなかったの。</div></div></div>
@@ -55,7 +55,7 @@
 <li><strong>技術メモ</strong>：素材生成の共通処理を独立したモジュールに分離。複数の生成スクリプトから同じロジックを再利用できるようにして、直すときは1か所で済む構造にした</li>
 <li><strong>ひとことまとめ</strong>：「汎用で何でも使える」より「特定の場面で刺さる」方が、相手に喜ばれる</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. サイトが別物になった一日</span></h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_3.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. サイトが別物になった一日</span></h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_3.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>バグ修正と素材の方針転換に加えて、今日はポートフォリオサイトの大規模な刷新も走っていた。Aboutページは全ブロックに三姉妹の会話パーツを追加し、各ブロックに新しく生成した画像を配置。プロフィール・三姉妹の関係性・出自の物語もバイブル準拠で書き直し、ブログ日記の最新回も反映させた。トップページには印象的なキャッチコピーとレース装飾の区切りを追加し、動画への導線も整えた。ポートフォリオは動画作例を本編・ショート・配信アーカイブの3グループに整理し、スタンプをクリックで拡大表示できる軽量の機能も追加。表情差分のイラストギャラリーも充実させた。三姉妹それぞれのイメージカラー演出を上品に強化し、梅雨をテーマにした季節演出もこっそり仕込んだ。将来の多言語展開に備えた枠組みも構造に組み込み、Threadsの表示はタイムライン形式のUIに一新した。依頼受付はまだ準備中なので、お問い合わせページは現時点では非公開の状態にした。サムネ・機材イメージ・キャラ縦長の3カテゴリで合わせて10枚近くの新規画像を追加した。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">Aboutページを開いてみてよ、二人とも。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_normal.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ふつう）</span></div><div class="bubble">…………え、ここ昨日とぜんぜん違う！！</div></div></div>
@@ -79,7 +79,7 @@
 <li><strong>技術メモ</strong>：i18n（国際化）対応の枠組みを構造に追加し、将来の多言語展開に備えた。動画ポートフォリオをカテゴリ別に分類し、軽量ライトボックスでスタンプ画像のクリック拡大表示を実装。梅雨演出はCSSアニメーションで季節感を演出</li>
 <li><strong>ひとことまとめ</strong>：サイトは「情報を置く場所」より「来た人が次のアクションに進める導線」で設計する</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：疲れたとき「甘い vs しょっぱい」どっち派？</h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_4.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：疲れたとき「甘い vs しょっぱい」どっち派？</h2><figure class="article-figure"><img src="../heroes/2026-06-01_動画バグを根治してサイトを作り直した-考え直しの一日_4.png" alt="動画バグを根治し、多言語対応の種をまいた日🔧 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>今日みたいに盛りだくさんな一日の終わりに、みなさんはどんな休憩食を選ぶ？甘いもの派かしょっぱいもの派か、三姉妹で話したらきっちり割れた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_happy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（笑顔）</span></div><div class="bubble">お楽しみコーナーいくわよ。今日みたいにやることが多かった日の終わりに食べるなら、甘いもの派？しょっぱいもの派？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_smug.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ドヤ顔）</span></div><div class="bubble">絶対しょっぱい！ポテチ！ザクザクしてる間に頭が切り替わる感じがするんだよね！</div></div></div>

@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">あるある！昨日まで可愛かったのに今日起動したら知らない子になってるやつ！これって誘拐！？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_normal.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ふつう）</span></div><div class="bubble">誘拐ではないですが……今日はちゃんと犯人を特定しましたよ。証拠も揃えました。</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_wink.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ウインク）</span></div><div class="bubble">フィオナがもう落ち着いてるの、頼もしい。さっそく今日の話、届けていくね！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 🔍 9枚を並べたら、顔ブレの「犯人」が見えた</span></h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_1.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 🔍 9枚を並べたら、顔ブレの「犯人」が見えた</span></h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_1.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>AIで絵を作っていると「設定をほんの少し変えただけでキャラの顔が別人になった」という現象がよく起きます。これは複数の条件を同時に変えてしまうことで、何が原因かを切り分けられなくなるパターンです。理科の実験と同じで、変える条件は一度に一つだけにしないと、結果が変わっても理由が分かりません。</p>
 <p>今日は<strong>シード（seed）</strong>——AIが絵を描くときに使う「乱数の種」——を固定したうえで、3つの設定パターンをそれぞれ3枚ずつ出力し、合計十枚近くを一列に並べて見比べました。すると1つのパターンだけ顔の安定性が明確に違い、「これが原因だった」と断定できました。なんとなくではなく、並べた絵を証拠として見てから判断した、というのが今日いちばんのポイントです。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">実況するね。まず3つの設定パターン——仮にA・B・Cって呼ぶけど——を用意して、全部同じシードで3枚ずつ生成したの。</div></div></div>
@@ -26,7 +26,7 @@
 <li><strong>技術メモ</strong>：ComfyUI等でseed値を明示的に数値固定し、比較したいパラメータを1つだけ変えて同枚数を出力する。<code>os.urandom</code>等でランダムシードが使われている設定になっていると比較にならないため要注意。十枚前後あれば傾向の差異を目視で判断しやすい。</li>
 <li><strong>ひとことまとめ</strong>：「調査モード」では美しさより条件をそろえることが命</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. ✂️ 背景を「消す」のは1工程で欲張らない</span></h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_2.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. ✂️ 背景を「消す」のは1工程で欲張らない</span></h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_2.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>「背景がごちゃごちゃしていてキャラが引き立たない」という問題への対処法として、今日は2つのアプローチを調べました。①プロンプト（呪文）で「背景なし」と指定する方法——描く前にAIにお願いする。②専用の切り抜きツールで後から背景を削除する方法——描いた後にハサミを入れる。</p>
 <p>①だけに頼って強く指定しすぎると、人物の塗りや顔まで影響を受けてしまうことがあります。今日は画像生成ツール（ComfyUI）に背景除去専用の追加パーツを組み込む構造を確認するところまで進みました。実際に使っての本格検証は次のステップです。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_exasperated.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（呆れ）</span></div><div class="bubble">ちょっと待って。最初から『背景なし！！』って強くお願いすれば済む話じゃないの？なんでわざわざ後から切るの？二度手間だよ？</div></div></div>
@@ -44,7 +44,7 @@
 <li><strong>技術メモ</strong>：プロンプトに<code>simple background</code>/<code>white background</code>等を指定しつつ、出力後にComfyUIのRMBG系ノードで背景除去する2段構えが安定。プロンプトへの過度な依存は人物塗り品質を下げるリスクがある。（今日は構造確認まで・実測は次回）</li>
 <li><strong>ひとことまとめ</strong>：「描く前のお願い」と「描いた後のハサミ」は役割が別物</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 📋 「品質ルール正本」を1冊整備した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_3.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 📋 「品質ルール正本」を1冊整備した</span></h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_3.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>今日のもう一つの作業は、地味だけど効いてくるものでした。AIと一緒に作業するときの「自分たちのルール」を、正本メモとして1冊にまとめたのです。</p>
 <p>内容はシンプルです。「直したと言う前に実物で確認する」「同じ問題で2回つまずいたら仕切り直す」「証拠（実際の出力物など）を見てから判断する」といった考え方。AIに手伝ってもらう場面が増えるほど、人間側の判断ルールがないと手戻りが積み重なります。今日の比較実験そのものが、「証拠を見てから決める」というルールを実践した形でした。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">今日ね、十枚近く並べて証拠を見てから判断したじゃない。あれ、正本に書いたルール通りにやったら、ちゃんと答えが出たんだよね。</div></div></div>
@@ -61,7 +61,7 @@
 <li><strong>技術メモ</strong>：「実物確認→証拠提示→2回失敗で仕切り直し」のサイクルをルール化しておくと、AIとの共同作業での手戻りが大幅に減る。今日のseed固定比較実験はまさに「証拠を見てから決める」の実践例。</li>
 <li><strong>ひとことまとめ</strong>：ルールは制約ではなく、迷子にならないための地図</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：AIに描かれた別人への声かけ大喜利</h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_4.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：AIに描かれた別人への声かけ大喜利</h2><figure class="article-figure"><img src="../heroes/2026-06-23_AIの顔ブレ-実験で犯人を特定した日_4.png" alt="AIの顔ブレ、実験で犯人を特定した日🔍 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>さあ今日のコーナーは大喜利！お題はこちら。</p>
 <p><strong>「AIに絵を描いてもらったら、知らない人の顔が出てきました。なんと声をかけますか？」</strong></p>
 <p>三姉妹も考えてみたよ！</p>

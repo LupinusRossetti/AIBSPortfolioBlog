@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">えっ、落ち着いてなかったの！？あたし今日もなんかドタバタしてた気がするよ！</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">落ち着いてはいましたよ。ただ、やることが多かっただけで。今日は画像を原寸で受け取れるよう整えて、サイトのサムネも総入れ替えして、夜は配信もありました</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">まとめると…普通にフル稼働だった。じゃあ今日も三姉妹でゆっくり振り返っていくよ〜！</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 📦 フルサイズ画像をください、9本まとめて仕込んだ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_1.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 📦 フルサイズ画像をください、9本まとめて仕込んだ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_1.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>動画生成の作業で画像生成AIにイラストを作ってもらうとき、実はひと手間加えないと『縮小サムネ版』が届いてしまうことがある。今日はその問題を解消する専用の関数をひとつ用意して、動画生成スクリプト9本すべてから呼び出せるよう共通化した。どのスクリプトを動かしても原寸サイズが届く状態になり、以後は画質の差がなくなった。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_exasperated.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（呆れ）</span></div><div class="bubble">お姉ちゃん！さっき生成した絵、なんか前よりシャキッとしてる気がするんだけど！あたしの目がおかしくなった！？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">おかしくないよ。今日フルサイズで受け取る関数を作ったから、ちゃんと原寸で届くようになったの</div></div></div>
@@ -26,7 +26,7 @@
 <li><strong>技術メモ</strong>：Gemini画像生成APIのレスポンスからフルサイズURL（またはバイト列）を取り出す関数を共通モジュールに定義し、全スクリプトからimportする構成。DRY（Don't Repeat Yourself）原則。修正コストがO(1)になる</li>
 <li><strong>ひとことまとめ</strong>：同じ処理は1か所に書いて呼び出す、これだけで後の自分が9倍ラクになる</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 🗃 素材はGitの外で生きていけ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_2.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 🗃 素材はGitの外で生きていけ</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_2.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>LoRA（キャラ学習）用に集めた画像素材のフォルダを、今日Gitの管理対象から外した。除外リストに一行追記するだけの作業だが、これでコードのリポジトリが大幅に身軽になる。素材そのものは消えたわけではなく、Gitが追いかけなくなっただけだ。コード（レシピ）はGitで管理し、素材（食材）は別の棚に置く——という役割分担を今日ちゃんと整えた。</p>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">突然ですが、クイズです。Gitってどんな道具でしょうか、アイリス</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">えっ急に！？えーと…作業の記録をぜんぶ残してくれるやつ！やり直しがきくタイムマシン！</div></div></div>
@@ -44,7 +44,7 @@
 <li><strong>技術メモ</strong>：<code>.gitignore</code>に素材ディレクトリのパスを追記。既に追跡中のファイルは<code>git rm --cached</code>でindex除外してから追記すると確実。素材本体は削除されない</li>
 <li><strong>ひとことまとめ</strong>：コードはGit、素材は別管理——この役割分担でリポジトリは身軽を保てる</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. 🖼 サイトのサムネも総ざらえ、20本超を更新</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_3.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. 🖼 サイトのサムネも総ざらえ、20本超を更新</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_3.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>フルサイズDL関数を作ったことで、ブログサイトのサムネ画像も一気に整理できた。これまで破綻していたサムネを再生成し直し、ある日分は記事ごとに個別のビジュアルへ差し替えた。フルサイズ取得が使えるようになったことで昨日・一昨日分のサムネも改めて高画質版で取り直し、ブログの記事HTML20本超をまとめて更新、ギャラリーページも750枚台対応で再ビルドするところまで一気に片付けた。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">あとね、今日はサイトのサムネも大量に差し替えた。フルサイズDL関数を作ったついでに、昨日・一昨日分のサムネも高画質版で取り直したの</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">ついでって…何本くらい差し替えたの？</div></div></div>
@@ -61,7 +61,7 @@
 <li><strong>技術メモ</strong>：ブログ生成スクリプトにGeminiフルサイズ取得を適用し、過去分サムネを再生成。記事20本超をまとめてHTML更新、ギャラリーページも画像枚数増加（750枚台）に合わせ再ビルド</li>
 <li><strong>ひとことまとめ</strong>：土台を直すと、芋づる式に周辺が綺麗になっていく</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 🎮 日課以外もやりたい！ドラクエ10配信ハイライト</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_4.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 🎮 日課以外もやりたい！ドラクエ10配信ハイライト</span></h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_4.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>開発の手を止めて、ルピナスはこの日も配信に立った。タイトルに『日課以外もやりたい気持ちはある！』という言葉が出たのが今回の特徴で、これまでの『シドー討伐に向けて勉強する』路線からちょっと本音がにじむトーンへの変化だ。デイリー（日課）はこなしつつ、その先のやりたいことへのムズムズを正直に出した合間回。『初見さん初心者さん歓迎！』のフレーズは今回も健在で、ふらっと来ても置いていかれない設計は維持されている。最新の配信リンクはX（https://x.com/irisfionaAIBS）からどうぞ🌸</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">お姉ちゃん！今日の配信タイトル見たんだけど、『日課以外もやりたい気持ちはある！』って何！本音だだ漏れじゃん！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_shy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（照れ）</span></div><div class="bubble">だ、だって本当にそう思ってるんだもん！日課ばっかりじゃなくて、もっといろいろやりたいじゃん？</div></div></div>
@@ -79,7 +79,7 @@
 <li>技術メモ（配信運用）：タイトルに次の目標や感情を1語入れると、リピーターには継続感、新規には何をする場所かの手がかりが伝わりやすい。『やりたいこと』を具体化するとさらに目的が明確になる</li>
 <li><strong>ひとことまとめ</strong>：本音トーンのタイトルは共感しやすい、次は『やりたいこと』を1個具体化するとさらに目的が伝わる</li>
 </ul>
-</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：禁断の質問コーナー「本当は日課だけで満足してる？」</h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_5.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5" class="corner-h2">5. 🎁 お楽しみコーナー：禁断の質問コーナー「本当は日課だけで満足してる？」</h2><figure class="article-figure"><img src="../heroes/2026-06-15_画像は原寸で-9本共通化とGit素材分離の日_5.png" alt="画像は原寸で！9本共通化とGit素材分離の日🌸 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日は禁断の質問コーナー！配信タイトルに本音がにじんだ日にちなんで、聞きにくいことを聞いていくよ。アイリス、正直、日課だけの配信って飽きてない？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_panic.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（あわあわ）</span></div><div class="bubble">ぶっ……！？ そ、それは……ちょっとだけ！ちょっとだけだよ！？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_wink.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（ウインク）</span></div><div class="bubble">正直でよろしいです。ではお姉ちゃんに聞きますね。『日課以外もやりたい気持ちはある』って、本当はどのくらいの気持ちだったんですか？</div></div></div>

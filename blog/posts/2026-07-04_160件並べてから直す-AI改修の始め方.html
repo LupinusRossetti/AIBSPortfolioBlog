@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">ちょっと待って。前の記事でBBCFを7時間半ぶっ通しで配信してたのに、その後さらに夜に作業してたの?</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_laugh.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（大笑い）</span></div><div class="bubble">元気は……まあ、あんまりなかったよ。配信の興奮でなかなか眠れなくて、気がついたら配信AIアシスタントの改修計画を立てはじめてた感じ。</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_exasperated.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（呆れ）</span></div><div class="bubble">つまり、BBCF配信の後遺症が夜ふかし作業として出てきた、ということですね……。今日の記事、最後まで読んでください。絶対に他人事では終わりませんので。</div></div></div>
-<h2 id="sec-1"><span class="hl">1. AI改修の第一歩は『全部並べる』こと</span></h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_1.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. AI改修の第一歩は『全部並べる』こと</span></h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_1.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>前々から気になっていた配信AIアシスタントの改修に、ついに着手しました。ただ、当日コードは1行も触っていません。やったのは、<strong>問題を全部書き出して一覧にすること</strong>——いわゆる「問題一覧表づくり」です。</p>
 <p>「返事に変な記号が混ざる」「会話が途中で止まる」「2人のキャラのセリフが入れ替わる」……バラバラに見えた症状を並べていくと、<strong>同じ原因から出ているグループ</strong>が自然に浮かび上がってきます。グループが見えると直す順番が決まる。順番が決まると、同じ場所を二度直す無駄がなくなる。</p>
 <p>同じ日に、ため込んでいた内部タスクの大棚卸しもしました。160件あまりの作業記録を3種類に仕分け（すぐやる・眠らせる・捨てる）して、40本あまりの古い記録をアーカイブへ。次の作業リストを全面刷新し、眠ったまま積まれていたタスクの台帳も新たに作りました。</p>
@@ -25,7 +25,7 @@
 <li>タスク整理の基本は3分類トリアージ：すぐやる・いつかやる・捨てる。160件でも並べてしまえば分類は意外に早い</li>
 <li>「調べるだけの日」は成果ゼロに見えて、翌日の精度が上がる土台づくりの日</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 4か所に散らばった『同じ処理』問題</span></h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_2.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 4か所に散らばった『同じ処理』問題</span></h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_2.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>総点検の中でいちばん大きな発見がこれでした。配信AIアシスタントの内部で、「AIの返事を整形して表示できる形にする」という<strong>まったく同じ役割の処理が、コピペで4か所に散らばって</strong>いたのです。しかも微妙に書き方が違っていた。</p>
 <p>こうなると何が起きるかというと——ある場所では余分な記号をきれいに除去できるのに、別の場所は取りこぼす。直したつもりでも直したのは4か所のうち1か所だけ。「前に直したはずなのにまた出てきた……」という<strong>ゾンビみたいな不調</strong>の正体は、ほぼこれです。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">ここで問題です。合鍵を4本作って、それぞれ別の場所に置きました。鍵を交換したとき、安全になったでしょうか。</div></div></div>
@@ -42,7 +42,7 @@
 <li>対策は同じ処理を1か所に集約すること（DRY原則）。変更・確認・テストが1点集中になり、修正コストが下がる</li>
 <li>重複コードは全体を見渡さないと気づけない——だから「並べる」工程が先に必要になる</li>
 </ul>
-</details><h2 id="sec-3" class="corner-h2">3. 👀 今日のやらかし：レポートは完璧、睡眠は赤点</h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_3.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3" class="corner-h2">3. 👀 今日のやらかし：レポートは完璧、睡眠は赤点</h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_3.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>長丁場の作業で地味に効くのが、「調べたことをその場で書き残してから区切る」という習慣です。深夜の作業は翌朝には「昨日どこまでやったっけ?」となりがちなので、自分の記憶に頼らずメモを残す。次に作業するとき（手伝ってくれるAIも含め）が、ゼロから調べ直さず続きからスタートできます。</p>
 <p>ここまでは完璧でした。問題は——書いているうちに、窓の外が白みはじめていたことです。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_shy.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（照れ）</span></div><div class="bubble">……えーっと。調査レポートは、完璧に仕上がりました。</div></div></div>
@@ -61,7 +61,7 @@
 <li>ただし「完璧なメモを書いてから寝る」は夜ふかしの罠。次からは「大項目を1つ書き終えたら区切る」という具体的なポイントを先に決めておくのが有効そう</li>
 <li>深夜作業のコスト（集中力・判断力の低下）は、レポートの完成度では取り戻せない。体を最優先に、書ききる前でも切り上げる判断を</li>
 </ul>
-</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_4.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4" class="corner-h2">4. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-07-04_160件並べてから直す-AI改修の始め方_4.png" alt="160件並べてから直す：AI改修の始め方🗂️ の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_happy.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（笑顔）</span></div><div class="bubble">じゃあここからはお楽しみコーナー！ 常連リスナーさんから集めた（想定）質問に、三人が正直に答えます！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">想定ってちゃんと書いちゃったよ。まあいいか。第一問、『三人の中で一番夜ふかしするのは誰ですか』。</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_smug.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（ドヤ顔）</span></div><div class="bubble">……全員の視線がお姉ちゃんに向いてる。</div></div></div>

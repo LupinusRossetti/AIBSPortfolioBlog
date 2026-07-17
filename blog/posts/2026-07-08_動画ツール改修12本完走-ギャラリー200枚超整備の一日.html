@@ -8,7 +8,7 @@
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_shock_horror.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（衝撃）</span></div><div class="bubble">にじゅっぽん！？お姉ちゃん今日だけで！？</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">一つひとつは地道な作業なんですが、全部積み重なって改修計画の全項目に着手完了という達成感があります。記録を見れば何が終わったか一目瞭然な状態が作れました</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">その記録が揃ったのが地味に嬉しい。今日の中身、順番に見ていこう</div></div></div>
-<h2 id="sec-1"><span class="hl">1. 🛡️ ファイル破損ゼロへ：全JSONをatomic write方式に統一</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_1.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵1" loading="lazy"></figure>
+<h2 id="sec-1"><span class="hl">1. 🛡️ ファイル破損ゼロへ：全JSONをatomic write方式に統一</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_1.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵1" loading="lazy" width="2848" height="1504"></figure>
 <p>ショートアニメ自動生成ツールは、セリフ・構成・マーカー・ロック・ステータス・メタデータと複数のファイルに常時書き込みが発生します。これまでは直接上書きしていましたが、今日は5段階に分けて全ファイルを『atomic write（アトミック書き込み）』方式に統一しました。書き終えた別ファイルを元のファイルと丸ごと入れ替える手順で、処理が途中で止まっても元ファイルは無傷のまま残ります。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">ファイルの書き込みって失敗することあるの？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">GPU処理中のクラッシュや強制終了で普通に起きるよ。重い処理を走らせてるツールほど途中でこける可能性が高い。そして問題に気づくのは次の起動時</div></div></div>
@@ -22,7 +22,7 @@
 <li><strong>技術メモ</strong>：Pythonでは <code>tempfile.NamedTemporaryFile</code> に書き込み後 <code>os.replace()</code> でターゲットパスへ置換。Windowsでも <code>os.replace()</code> はOSレベルのatomic性を保証する</li>
 <li><strong>ひとことまとめ</strong>：クラッシュ耐性のある書き込みは、重い処理が走るツールの必須インフラ</li>
 </ul>
-</details><h2 id="sec-2"><span class="hl">2. 🧹 重複コード3本を統合：DRYリファクタリング</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_2.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵2" loading="lazy"></figure>
+</details><h2 id="sec-2"><span class="hl">2. 🧹 重複コード3本を統合：DRYリファクタリング</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_2.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵2" loading="lazy" width="2848" height="1504"></figure>
 <p>ツール内に『まったく同じ処理が複数ファイルに別々に書かれている』箇所が3つ見つかり、まとめて1か所に統合しました。テーマ名の英語変換・読み方ヒントの読み込み・背景キーの時間帯サフィックス処理の3関数です。なお似た処理が2つあったキャラクター表示の確認処理については、調査の結果『意図的な二重チェック設計』と判明したため統合は見送り、その理由もドキュメントに記録しました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">ねえ今日のリファクタ、めちゃくちゃ分かりやすい例え思いついたんだけど聞いていい？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">どうぞ</div></div></div>
@@ -40,7 +40,7 @@
 <li><strong>技術メモ</strong>：DRY原則（Don't Repeat Yourself）の適用。最も完全な実装を1ファイルにまとめて他からimport参照。意図的に分けている箇所はコメントかドキュメントに理由を残す</li>
 <li><strong>ひとことまとめ</strong>：統合しなかった理由を記録することも、統合と同じくらい大事なドキュメント作業</li>
 </ul>
-</details><h2 id="sec-3"><span class="hl">3. ⚡ 描画速度の底上げ：ベクトル化とキャッシュ</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_3.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵3" loading="lazy"></figure>
+</details><h2 id="sec-3"><span class="hl">3. ⚡ 描画速度の底上げ：ベクトル化とキャッシュ</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_3.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵3" loading="lazy" width="2848" height="1504"></figure>
 <p>動画フレームに合成する虹色の枠の計算を、ピクセル単位のforループからNumPyの一括演算に変更しました。あわせて揺れ・ズームエフェクトで毎フレーム行っていた同サイズのリサイズ計算を、初回結果をキャッシュして再利用する形に変えています。30fpsの動画なら1分間で1,800フレーム以上になるため、1フレームあたりの改善が全体に乗算される形で積み上がります。</p>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">ちょっとクイズ。30fpsのショート動画、60秒分だと何フレームある？</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_thinking.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（考え中）</span></div><div class="bubble">えーと……1,800！</div></div></div>
@@ -55,7 +55,7 @@
 <li><strong>技術メモ</strong>：NumPyのbroadcasting（配列全体への一括演算）でCPUが効率よく並列処理できる形に変換。リサイズキャッシュはサイズをキーにした辞書で実装</li>
 <li><strong>ひとことまとめ</strong>：描画ループのボトルネックはまずベクトル化・キャッシュ化を疑う。フレーム数に比例して効果が累積する</li>
 </ul>
-</details><h2 id="sec-4"><span class="hl">4. 🔧 バグ修正5本＋モデル全面切り替え</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_4.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵4" loading="lazy"></figure>
+</details><h2 id="sec-4"><span class="hl">4. 🔧 バグ修正5本＋モデル全面切り替え</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_4.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵4" loading="lazy" width="2848" height="1504"></figure>
 <p>プレビューと本番で効果音タイミングがズレていた問題を解消しました。原因は尺推定の計算式が2つのファイルに別々に書かれていて片方だけ更新されていたことで、共通関数に統一して両方が同じコアを参照するようにしています。ほかに、文の途中を無理やりカットしていた処理を句読点位置で自然に切る方式に変更・GPU非搭載環境向けCPUエンコードへの自動切り替え追加・再生成のたびに話者がランダムで変わっていた問題の決定論化・テーマ別ジャンルガイドの動的抽出の4本を実施。さらにツール内の全LLM呼び出しをより軽量なモデルに全面移行しました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">LLMを重いモデルから軽いモデルに全部変えたって……品質ほんとに大丈夫？</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">テストして問題なかったから変えた。順番が大事</div></div></div>
@@ -73,7 +73,7 @@
 <li><strong>技術メモ</strong>：NVENC使用不可時は <code>try/except</code> でlibx264にフォールバック。title_card話者選択はコンテンツのハッシュ値ベースの決定論的選択に変更</li>
 <li><strong>ひとことまとめ</strong>：LLMモデル選択は定期的に見直す。テストで十分な出力が確認できたら軽いモデルへの移行はコストと速度の両方で合理的</li>
 </ul>
-</details><h2 id="sec-5"><span class="hl">5. 🖼️ ギャラリー200枚超追加</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_5.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵5" loading="lazy"></figure>
+</details><h2 id="sec-5"><span class="hl">5. 🖼️ ギャラリー200枚超追加</span></h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_5.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵5" loading="lazy" width="2848" height="1504"></figure>
 <p>ブログサイトのキャラクターギャラリーを大幅更新しました。アイリスの画像を120枚近く・フィオナの画像を100枚近く新規追加し、フィオナの既存画像を最新のクリーン版に差し替えています。7/7分のサムネイルも差し替えを実施し、文字崩れの解消と構図変更を行いました。</p>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_surprised.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（びっくり）</span></div><div class="bubble">ギャラリーにあたしの画像120枚近くも入ったの！？すごすぎ！</div></div></div>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_normal.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ふつう）</span></div><div class="bubble">フィオナのも100枚近くで合わせたら200枚超になったよ。選択肢がかなり増えた</div></div></div>
@@ -87,7 +87,7 @@
 <li><strong>技術メモ</strong>：既存差し替え時は同期先の複数コピーを同時更新すると事故が減る</li>
 <li><strong>ひとことまとめ</strong>：地道な素材整備が、後々の記事づくりの引き出しを増やす</li>
 </ul>
-</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_6.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵6" loading="lazy"></figure>
+</details><h2 id="sec-6" class="corner-h2">6. 🎁 お楽しみコーナー：三姉妹に一問一答</h2><figure class="article-figure"><img src="../heroes/2026-07-08_動画ツール改修12本完走-ギャラリー200枚超整備の一日_6.png" alt="動画ツール改修12本完走＋ギャラリー200枚超整備の一日 の挿絵6" loading="lazy" width="2848" height="1504"></figure>
 <div class="chat" data-char="lupinus"><img class="icon" src="../icons/lupinus_smug.png" alt="ルピナス" loading="lazy"><div class="stack"><div class="who">ルピナス <span class="expr">（ドヤ顔）</span></div><div class="bubble">今日のお楽しみコーナーは一問一答！ズバリ聞くよ、『がっつり作業する日のお供は何派？』</div></div></div>
 <div class="chat" data-char="iris"><img class="icon" src="../icons/iris_devious.png" alt="アイリス" loading="lazy"><div class="stack"><div class="who">アイリス <span class="expr">（にやり）</span></div><div class="bubble">あたし断然アニソン！テンション上がる曲かけながらやるのが最高</div></div></div>
 <div class="chat" data-char="fiona"><img class="icon" src="../icons/fiona_happy.png" alt="フィオナ" loading="lazy"><div class="stack"><div class="who">フィオナ <span class="expr">（笑顔）</span></div><div class="bubble">私はお茶と和菓子があれば永遠にいられます。静かな方が集中できるので、音楽より静寂派です</div></div></div>

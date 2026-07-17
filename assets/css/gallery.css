@@ -17,6 +17,35 @@
   background: linear-gradient(180deg, #fefcff 0%, var(--bg-soft) 100%);
 }
 
+/* クレジット表記（Palette Seedsと同デザイン） */
+.gallery-credit-note {
+  margin-top: 1.4rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+.gallery-credit-box {
+  display: inline-block;
+  margin: 0.6rem auto 0;
+  padding: 1rem 1.6rem;
+  background: var(--lupinus-soft);
+  border: 1px dashed var(--lupinus);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+.gallery-credit-box p {
+  margin: 0.15rem 0;
+  font-family: var(--font-round);
+  font-size: 0.88rem;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+.gallery-credit-box p:last-child {
+  font-size: 0.78rem;
+  color: var(--lupinus);
+  word-break: break-all;
+}
+
 .gallery-title {
   display: flex;
   flex-direction: column;

@@ -18,12 +18,19 @@
 .si-back{position:sticky;bottom:18px;text-align:center;margin-top:30px}
 .si-back a{display:inline-block;padding:8px 20px;border-radius:999px;background:rgba(255,255,255,.85);border:1px solid var(--line,#e9dde6);text-decoration:none;font-size:.9em;box-shadow:0 4px 14px rgba(0,0,0,.06)}
 .si-head-img{display:block;width:100%;max-width:760px;margin:4px auto 20px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.10);aspect-ratio:16/9;object-fit:cover;border:1px solid rgba(255,255,255,.6)}
+.si-emo{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px;margin:12px 0 4px}
+.si-emo b{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.72);border:1px solid var(--line,#e9dde6);border-radius:12px;padding:7px 10px;font-weight:400;font-size:.9em;line-height:1.35}
+.si-emo b i{font-style:normal;font-size:1.35em;line-height:1}
+.si-emo-h{margin:16px 0 2px;font-size:.95em;color:var(--ink-soft,#8a7a86)}
+.si-try{background:rgba(255,255,255,.72);border:1px dashed var(--line,#e9dde6);border-radius:14px;padding:14px 18px;margin:14px auto;max-width:520px;text-align:center;line-height:2}
+.si-try em{font-style:normal;background:rgba(255,255,255,.9);border-radius:8px;padding:3px 10px}
 @media (max-width:560px){.si-cmd{grid-template-columns:1fr;gap:2px 0}.si-cmd code{justify-self:start}.si-cmd span{margin-bottom:8px}}
 </style></head><body class="decor-page decor-note"><div class="page-decor" aria-hidden="true"><div class="decor-layer decor-note-layer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
 <header class="site-header"><div class="container"><a class="brand" href="index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="gallery.html">Gallery</a><a href="blog/index.html">Blog</a><a href="sns.html">SNS</a><a href="coming-soon.html">Contact</a></nav></div></header>
 
 <section class="blog-hero"><div class="container"><span class="eyebrow">Stream Guide</span><h1>配信のご案内</h1><p class="lead">ルピナスの配信をもっと楽しむためのまとめページです🌸 コメントの遊び方から注意事項まで、気になるところだけどうぞ。</p>
 <div class="si-toc">
+<a href="#emotion">🎭 コメントに気持ちをのせる</a>
 <a href="#luna-ai">🤖 LUNA-AIの遊び方</a>
 <a href="#rules">📖 注意事項（必読）</a>
 <a href="#dq10">🐉 ドラクエ10のこと</a>
@@ -33,6 +40,45 @@
 <a href="https://www.youtube.com/@AIBloomSisters" target="_blank" rel="noopener">▶ YouTubeで配信を見る</a>
 <a href="https://www.twitch.tv/lupinus_rossetti" target="_blank" rel="noopener">🎮 Twitchで配信を見る</a>
 </div></div></section>
+
+<section class="section reveal" id="emotion"><div class="container"><div class="section-head"><span class="eyebrow">Emotion</span><h2 class="section-title">コメントに気持ちをのせる<span class="jp">EMOJI VOICE</span></h2><div class="ornament" style="margin-top:18px"><span></span></div></div>
+<div class="si-card">
+<p>コメントに<strong>絵文字をひとつ</strong>入れると、その気持ちで読み上げてくれます🌸<br>いつものコメントに、ちょこんと足すだけでOK。</p>
+<div class="si-try">
+<em>がんばって😭</em> → 泣きそうな声で「がんばって」<br>
+<em>やったー😆</em> → うれしそうな声で「やったー」<br>
+<em>ないしょだよ👂</em> → ひそひそ声で「ないしょだよ」
+</div>
+<p class="si-note">・絵文字は<strong>ぜんぶ読み上げから消えます</strong>（気持ちだけが声にのります）<br>
+・いくつ入れても、効くのは<strong>いちばん最初のひとつ</strong>だけ<br>
+・下の一覧にない絵文字は、これまでどおりそのまま読まれます<br>
+・絵文字だけのコメントは読み上げられません（読む文字がなくなっちゃうので）</p>
+</div>
+
+<div class="si-card"><h3>🎨 つかえる絵文字（ぜんぶで45こ）</h3>
+<p class="si-emo-h">💗 きもち</p>
+<div class="si-emo">
+<b><i>😆</i>よろこび</b><b><i>😊</i>たのしい</b><b><i>🤭</i>くすくす</b><b><i>😭</i>なきごえ</b><b><i>😠</i>おこる</b><b><i>😲</i>おどろき</b><b><i>🥺</i>ふるえ声</b><b><i>🫣</i>てれる</b><b><i>😏</i>からかう</b><b><i>🙄</i>あきれる</b><b><i>😌</i>ほっとする</b><b><i>😰</i>あわてる</b><b><i>😟</i>しんぱい</b><b><i>😖</i>くるしそう</b><b><i>😎</i>どや顔</b><b><i>🙏</i>おねがい</b><b><i>🤔</i>ぎもん</b><b><i>🫶</i>やさしく</b><b><i>😒</i>したうち</b><b><i>😱</i>ひめい</b><b><i>💪</i>ちからづよく</b><b><i>💥</i>いきおいよく</b>
+</div>
+<p class="si-emo-h">🗣️ はなしかた・こえ</p>
+<div class="si-emo">
+<b><i>🐢</i>ゆっくり</b><b><i>⏩</i>はやくち</b><b><i>⏸️</i>ま（沈黙）</b><b><i>👂</i>ささやき</b><b><i>😪</i>ねむそう</b><b><i>🥱</i>あくび</b><b><i>😴</i>ねごと</b><b><i>🥴</i>よっぱらい</b><b><i>🤐</i>くぐもった声</b><b><i>📞</i>電話ごし</b><b><i>📢</i>エコー</b><b><i>📖</i>朗読ふう</b><b><i>🎵</i>はなうた</b><b><i>👌</i>あいづち</b>
+</div>
+<p class="si-emo-h">🔊 いろんな音</p>
+<div class="si-emo">
+<b><i>😮‍💨</i>ためいき</b><b><i>🌬️</i>いきぎれ</b><b><i>😮</i>息をのむ</b><b><i>🤧</i>せき・鼻</b><b><i>🥤</i>のみこむ</b><b><i>👃</i>においをかぐ</b><b><i>💋</i>リップ音</b><b><i>👅</i>くちの音</b><b><i>🥵</i>うめき声</b>
+</div>
+</div>
+
+<div class="si-card"><h3>💡 うまくのらないときは</h3>
+<p><strong>文章そのものに強い気持ちがこもっていると、そっちが勝つことがあります。</strong><br>
+たとえば「<em>やったー！さいこう！</em>😭」のように、うれしい文に悲しい絵文字をつけると、うれしいまま読まれることがあります。</p>
+<p class="si-note">・気持ちをのせたいときは、<strong>ふつうの言い方の文</strong>に絵文字をつけると分かりやすいです<br>
+・短すぎる言葉だと変化が伝わりにくいことがあります<br>
+・そのときの調子で効きかたが変わります。うまくいかなくても気にしないでね🌸<br>
+・機械が読み上げているので、100%思ったとおりにはなりません。そこも含めて楽しんでもらえたら嬉しいです</p>
+</div>
+</div></section>
 
 <section class="section reveal" id="luna-ai"><div class="container"><div class="section-head"><span class="eyebrow">LUNA-AI</span><h2 class="section-title">LUNA-AIの遊び方<span class="jp">AI ASSISTANT</span></h2><div class="ornament" style="margin-top:18px"><span></span></div></div>
 <img class="si-head-img" src="images/image/stream/head_luna.webp" alt="アイリスとフィオナの配信コーナー" loading="lazy">

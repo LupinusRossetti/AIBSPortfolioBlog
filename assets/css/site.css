@@ -2231,8 +2231,12 @@ details.tech-note[open] { padding-bottom: 16px; }
 /* 本文h2＝蛍光マーカー風下線（span.hl に box-decoration-break で複数行対応）。
    コーナー見出し（👀🎭🌸💡🎁）は番組テロップ風の帯 */
 /* max-width なしの fit-content は長い見出しで親幅を超えて広がり、スマホで
-   横スクロールが出ていた（375px幅で見出しが426pxまで伸びる実測）。 */
-.article-body h2 { width: fit-content; max-width: 100%; }
+   横スクロールが出ていた（375px幅で見出しが426pxまで伸びる実測）。
+   真因は word-break:auto-phrase で日本語が文節単位でしか折れず min-content が
+   親より大きくなること。max-width だけだと body の overflow-wrap:break-word に
+   暗黙依存する（消えると帯から文字がはみ出す）ため anywhere を明示する。
+   ※適用前後で見出しの幅・高さに変化がないことを12記事14見出しで実測確認済み。 */
+.article-body h2 { width: fit-content; max-width: 100%; overflow-wrap: anywhere; }
 .article-body h2 .hl { background: linear-gradient(transparent 62%, var(--chr-marker) 62%); padding: 0 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .article-body h2.corner-h2 { width: fit-content; max-width: 100%; background: linear-gradient(90deg, var(--chr), var(--chr-light)); color: #fff; border-radius: 22px; padding: 8px 22px; font-size: 1.05rem; }
 .article-body .tldr-box h2 { background: none; padding: 0; }

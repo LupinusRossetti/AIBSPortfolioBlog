@@ -1254,6 +1254,16 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  /* スマホ幅ではボタン3つが横一列に収まらず、ページ全体が横スクロールしていた
+     （375px幅で104pxはみ出し・スクロール中に左右へ揺れる）。折り返しで解消する。 */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .article-nav {
+    /* 折り返した2行が両端寄せだと不揃いに見えるため中央寄せにする */
+    justify-content: center;
+  }
 }
 
 /* === Responsive === */

@@ -2217,9 +2217,11 @@ details.tech-note[open] { padding-bottom: 16px; }
 .comment-status { margin: 0; font-size: .88rem; color: var(--accent-deep); min-height: 1.2em; }
 /* 本文h2＝蛍光マーカー風下線（span.hl に box-decoration-break で複数行対応）。
    コーナー見出し（👀🎭🌸💡🎁）は番組テロップ風の帯 */
-.article-body h2 { width: fit-content; }
+/* max-width なしの fit-content は長い見出しで親幅を超えて広がり、スマホで
+   横スクロールが出ていた（375px幅で見出しが426pxまで伸びる実測）。 */
+.article-body h2 { width: fit-content; max-width: 100%; }
 .article-body h2 .hl { background: linear-gradient(transparent 62%, var(--chr-marker) 62%); padding: 0 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-.article-body h2.corner-h2 { width: fit-content; background: linear-gradient(90deg, var(--chr), var(--chr-light)); color: #fff; border-radius: 22px; padding: 8px 22px; font-size: 1.05rem; }
+.article-body h2.corner-h2 { width: fit-content; max-width: 100%; background: linear-gradient(90deg, var(--chr), var(--chr-light)); color: #fff; border-radius: 22px; padding: 8px 22px; font-size: 1.05rem; }
 .article-body .tldr-box h2 { background: none; padding: 0; }
 /* 目次アンカーの着地位置（固定ヘッダーの高さぶん下げる） */
 .article-body h2, .article-body h3 { scroll-margin-top: 96px; }

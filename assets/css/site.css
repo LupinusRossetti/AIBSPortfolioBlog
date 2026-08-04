@@ -713,7 +713,9 @@ a:hover {
 /* === Latest diary preview === */
 .diary-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* min() で下限を画面幅にも従わせる。素の minmax(300px,…) は container の
+     内寸(320px端末で264px)より広い列を要求し、横スクロールが出ていた。 */
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   gap: 26px;
 }
 
@@ -977,7 +979,8 @@ a:hover {
 /* YouTube動画の埋め込みグリッド（ポートフォリオの作例） */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* .diary-list と同じ理由で min() を挟む（336px未満の端末で溢れる） */
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 28px;
 }
 
@@ -1607,6 +1610,9 @@ a:hover {
 @media (max-width: 760px) {
   .sister-profile,
   .sister-profile:nth-child(even) { grid-template-columns: 1fr; gap: 24px; }
+  /* 1fr の下限は min-content。名前などが文節単位でしか折れず列を押し広げるため
+     明示的に 0 まで縮めるようにする（320px端末で26pxはみ出していた） */
+  .sister-profile > * { min-width: 0; }
   .sister-profile .sp-visual,
   .sister-profile:nth-child(even) .sp-visual { order: 0; max-width: 280px; margin: 0 auto; width: 100%; }
   .sister-profile:nth-child(even) .sp-text { order: 0; }
@@ -1943,6 +1949,13 @@ a.tag-chip:hover { background: var(--fiona-soft); }
 @media (max-width: 760px) {
   .service-menu { grid-template-columns: 1fr; }
   .flow-steps { grid-template-columns: repeat(2, 1fr); row-gap: 34px; }
+  /* 2列でも padding 込みで極小幅を超えるため、中身が縮めるようにしておく */
+  .flow-step { min-width: 0; }
+}
+
+/* 320px級の端末では2列でも収まらない（左右padding込みで324px必要）ため1列にする */
+@media (max-width: 400px) {
+  .flow-steps { grid-template-columns: 1fr; }
 }
 
 /* --- ヒーロー画像：やわらかな後光（halo）と浮遊感 --- */

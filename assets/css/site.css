@@ -1183,6 +1183,11 @@ a:hover {
 
 .chat .bubble {
   position: relative;
+  /* ルピナスの吹き出しは .stack が align-items:flex-end のため stretch されず、
+     長いセリフだとコンテンツ幅(max-content)まで広がって .stack の幅を突き抜ける。
+     row-reverse で右端揃えなので、はみ出しは左＝画面外に出て読めなくなる
+     （2026-08-06 るぴちゃん報告・スマホ幅で発生）。親幅で頭打ちにする。 */
+  max-width: 100%;
   padding: 15px 20px;
   border-radius: 6px 22px 22px 22px;
   background: var(--bg-soft);

@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sisters' Palette | Lupinus Rossetti | AI Bloom Sisters</title>
-  <meta name="description" content="Sisters' Palette——AI Bloom Sisters三姉妹の750枚イラストギャラリー。自作LoRAと1枚ずつ設計したプロンプトで、三姉妹それぞれの「らしさ」を5カテゴリ×50枚、全750枚に描き上げました。">
+  <title>Gallery | Lupinus Rossetti | AI Bloom Sisters</title>
+  <meta name="description" content="AI Bloom Sisters三姉妹のギャラリー案内。はじまりの種「Palette Seeds」、750枚の作品集「Sisters' Palette」、新しい種「New Palette Seeds」、そして制作中の「New Sisters' Palette」。見たいものから選べます。">
   <link rel="canonical" href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery.html">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Lupinus Rossetti | AI Bloom Sisters">
-  <meta property="og:title" content="Sisters' Palette | Lupinus Rossetti | AI Bloom Sisters">
-  <meta property="og:description" content="自作LoRA×手づくりプロンプトで描いた、三姉妹750枚のイラストギャラリー。5カテゴリ×50枚×3人の「らしさ」のパレット。">
+  <meta property="og:title" content="Gallery | Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:description" content="種から花へ、そしてもう一度。AI Bloom Sisters三姉妹のギャラリーを4つのページでご案内します。">
   <meta property="og:url" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery.html">
   <meta property="og:image" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/apple-touch-icon.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,6 +26,99 @@
   <link rel="stylesheet" href="assets/css/fun_features.css">
   <link rel="stylesheet" href="assets/css/decorations.css">
   <link rel="stylesheet" href="assets/css/gallery.css?v=20260717d">
+  <style>
+    /* この目次ページ専用。gallery.css は旧ギャラリーと共用なので触らない */
+    .gindex-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.6rem;
+      margin: 2.2rem auto 3.5rem;
+      max-width: 1100px;
+    }
+    .gindex-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255, 255, 255, .72);
+      border: 1px solid rgba(180, 160, 210, .35);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(150, 130, 180, .12);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .gindex-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 26px rgba(150, 130, 180, .24);
+      border-color: rgba(150, 120, 200, .6);
+    }
+    .gindex-thumb {
+      aspect-ratio: 4 / 3;
+      background: linear-gradient(135deg, #efe9f7 0%, #f8eef4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .gindex-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 22%;
+      display: block;
+    }
+    .gindex-body {
+      padding: 1rem 1.1rem 1.2rem;
+    }
+    .gindex-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.32rem;
+      letter-spacing: .02em;
+      margin: 0 0 .18rem;
+      color: var(--lupinus, #7b6aa8);
+    }
+    .gindex-sub {
+      font-size: .84rem;
+      color: #8a7fa0;
+      margin: 0 0 .6rem;
+    }
+    .gindex-desc {
+      font-size: .88rem;
+      line-height: 1.7;
+      color: #5f5a68;
+      margin: 0;
+    }
+    .gindex-count {
+      display: inline-block;
+      margin-top: .7rem;
+      font-size: .78rem;
+      padding: .18rem .7rem;
+      border-radius: 999px;
+      background: rgba(150, 120, 200, .12);
+      color: #7b6aa8;
+    }
+    /* 準備中のカードはリンクにしない */
+    .gindex-card.is-soon {
+      opacity: .62;
+      cursor: default;
+    }
+    .gindex-card.is-soon:hover {
+      transform: none;
+      box-shadow: 0 3px 14px rgba(150, 130, 180, .12);
+      border-color: rgba(180, 160, 210, .35);
+    }
+    .gindex-card.is-soon .gindex-count {
+      background: rgba(140, 140, 150, .14);
+      color: #7a7a85;
+    }
+    .gindex-step {
+      font-size: .74rem;
+      letter-spacing: .14em;
+      color: #a89cc0;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: .3rem;
+    }
+  </style>
 </head>
 
 <body class="decor-page decor-sakura-stars">
@@ -68,24 +161,89 @@
     <section class="gallery-hero">
       <div class="container">
         <h1 class="gallery-title">
-          <span class="title-script">Sisters' Palette</span>
-          <span class="title-sub">三姉妹の色とらしさ、750枚</span>
+          <span class="title-script">Gallery</span>
+          <span class="title-sub">種から花へ、そしてもう一度</span>
         </h1>
         <p class="gallery-lead">
-          ルピナス・アイリス・フィオナ、それぞれの「らしさ」を5カテゴリ×50枚ずつ・合計750枚で描いた作品集です。<br>
-          画像をクリックすると大きく表示されます。
+          三姉妹のギャラリーは4つあります。<br>
+          «種» から «花» へ、そして «新しい種» からもう一度。作った順に並べました。見たいところからどうぞ🌸
         </p>
-        <p class="gallery-lead" style="margin-top:0.9rem; font-size:0.92em;">
-          この750枚は、ぜんぶルピナスの手づくり🎨<br>
-          ギャラリー「<a href="nanobanana2.html" style="color:var(--lupinus);text-decoration:none;border-bottom:1px dashed var(--lupinus);">Palette Seeds</a>」のイラストを素材に、三姉妹の顔と髪型をおぼえた専用のAIモデル（LoRA）をキャラごとに自作。<br>
-          そのモデルに、構図・衣装・光を1枚ずつ考えたプロンプトを渡して、画像生成AI（Stable Diffusion）で描き上げました。<br>
-          <em>AIまかせ、じゃなくて「AIと二人三脚」。</em>三姉妹の魅力が750通りに咲いたパレットです💐
-        </p>
-        <p class="gallery-switch">
-          <a href="nanobanana2.html">→ はじまりの種「Palette Seeds」はこちら</a>
-        </p>
+
+        <div class="gindex-grid">
+
+          <!-- 1. Palette Seeds -->
+          <a class="gindex-card" href="nanobanana2.html">
+            <div class="gindex-thumb">
+              <img src="images/gallery_nanobanana2/lupinus/thumbs/lupinus_001.webp"
+                alt="Palette Seeds のイラスト" loading="lazy">
+            </div>
+            <div class="gindex-body">
+              <span class="gindex-step">Step 1 ・ 種</span>
+              <p class="gindex-name">Palette Seeds</p>
+              <p class="gindex-sub">Sisters' Palette のはじまりの種</p>
+              <p class="gindex-desc">
+                三姉妹がこの世に生まれた、いちばん最初のイラストたち。
+                ここから全部がはじまりました。
+              </p>
+              <span class="gindex-count">見る →</span>
+            </div>
+          </a>
+
+          <!-- 2. Sisters' Palette -->
+          <a class="gindex-card" href="gallery-old.html">
+            <div class="gindex-thumb">
+              <img src="images/gallery/lupinus/seiso/thumbs/seiso_01_head_tilt.webp"
+                alt="Sisters' Palette のイラスト" loading="lazy">
+            </div>
+            <div class="gindex-body">
+              <span class="gindex-step">Step 2 ・ 花</span>
+              <p class="gindex-name">Sisters' Palette</p>
+              <p class="gindex-sub">三姉妹の色とらしさ、750枚</p>
+              <p class="gindex-desc">
+                種から生まれた専用AIモデルで、それぞれの «らしさ» を
+                5カテゴリ×50枚ずつ。1枚ずつプロンプトを考えて咲かせた作品集です。
+              </p>
+              <span class="gindex-count">750枚</span>
+            </div>
+          </a>
+
+          <!-- 3. New Palette Seeds -->
+          <a class="gindex-card" href="materials.html">
+            <div class="gindex-thumb">
+              <img src="images/gallery-materials/lupinus/standing/thumbs/standing_A01.webp"
+                alt="New Palette Seeds の学習素材" loading="lazy">
+            </div>
+            <div class="gindex-body">
+              <span class="gindex-step">Step 3 ・ 新しい種</span>
+              <p class="gindex-name">New Palette Seeds</p>
+              <p class="gindex-sub">三姉妹をおぼえさせた新しい種</p>
+              <p class="gindex-desc">
+                «この子はこういう顔で、こういう髪» と新しい専用AIモデルに
+                おぼえてもらうために作った学習素材。もう一度、ここからはじめます。
+              </p>
+              <span class="gindex-count">165枚</span>
+            </div>
+          </a>
+
+          <!-- 4. New Sisters' Palette ＝準備中 -->
+          <div class="gindex-card is-soon" aria-disabled="true">
+            <div class="gindex-thumb"></div>
+            <div class="gindex-body">
+              <span class="gindex-step">Step 4 ・ 新しい花</span>
+              <p class="gindex-name">New Sisters' Palette</p>
+              <p class="gindex-sub">新しいAIモデルで描き直す750枚</p>
+              <p class="gindex-desc">
+                新しい種から育てたAIモデルで、同じ750のコンセプトを
+                1枚ずつ描き直しています。もうしばらくお待ちください🌱
+              </p>
+              <span class="gindex-count">準備中</span>
+            </div>
+          </div>
+
+        </div>
+
         <p class="gallery-credit-note">
-          クレジット表記＋本ページURLの明記で使用および引用OKです（画像の改変・再配布は禁止）。
+          クレジット表記＋各ページURLの明記で使用および引用OKです（画像の改変・再配布は禁止）。
         </p>
         <div class="gallery-credit-box">
           <p>© ルピナス・ロゼッティ(Lupinus Rossetti)/AI Bloom Sisters</p>
@@ -93,48 +251,6 @@
         </div>
       </div>
     </section>
-
-    <!-- 750ギャラリー -->
-    <div id="galleryReal">
-      <section class="gallery-tabs">
-        <div class="container">
-
-          <!-- キャラタブ -->
-          <div class="tabs tabs-char" role="tablist" aria-label="キャラ選択">
-            <button class="tab tab-lupinus active" data-char="lupinus" role="tab">ルピナス</button>
-            <button class="tab tab-iris" data-char="iris" role="tab">アイリス</button>
-            <button class="tab tab-fiona" data-char="fiona" role="tab">フィオナ</button>
-          </div>
-
-          <!-- カテゴリタブ（JSがキャラに応じて動的に書き換える） -->
-          <div class="tabs tabs-cat" id="tabsCat" role="tablist" aria-label="カテゴリ選択"></div>
-
-          <div class="gallery-meta" id="galleryMeta"></div>
-
-          <!-- グリッド -->
-          <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
-
-        </div>
-      </section>
-
-      <!-- モーダル -->
-      <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modalClose" aria-label="閉じる">×</button>
-        <button class="modal-prev" id="modalPrev" aria-label="前へ">‹</button>
-        <button class="modal-next" id="modalNext" aria-label="次へ">›</button>
-        <div class="modal-content">
-          <div class="modal-frame">
-            <span class="modal-inner-corner-bl"></span>
-            <span class="modal-inner-corner-br"></span>
-            <div class="modal-inner">
-              <img id="modalImg" alt="">
-            </div>
-          </div>
-          <div class="modal-caption" id="modalCaption"></div>
-        </div>
-      </div>
-
-    </div>
   </main>
 
   <!-- Footer -->
@@ -145,7 +261,6 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <script src="assets/js/gallery.js?v=20260717b"></script>
 
 </body>
 

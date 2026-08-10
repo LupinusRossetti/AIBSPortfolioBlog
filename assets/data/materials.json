@@ -1,0 +1,2161 @@
+{
+ "chars": [
+  "lupinus",
+  "iris",
+  "fiona"
+ ],
+ "groups": {
+  "standing": "立ち姿（無地背景）",
+  "bust": "バストアップ（無地背景）",
+  "scene_full": "場面・全身",
+  "scene_bust": "場面・バストアップ",
+  "summer": "夏・水着"
+ },
+ "items": [
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A01",
+   "caption": "ルピナス LoRA学習素材 A01（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A01.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A01.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A02",
+   "caption": "ルピナス LoRA学習素材 A02（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A02.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A02.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A03",
+   "caption": "ルピナス LoRA学習素材 A03（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A03.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A03.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A04",
+   "caption": "ルピナス LoRA学習素材 A04（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A04.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A04.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A05",
+   "caption": "ルピナス LoRA学習素材 A05（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A05.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A05.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A06",
+   "caption": "ルピナス LoRA学習素材 A06（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A06.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A06.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A07",
+   "caption": "ルピナス LoRA学習素材 A07（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A07.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A07.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A08",
+   "caption": "ルピナス LoRA学習素材 A08（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A08.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A08.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A09",
+   "caption": "ルピナス LoRA学習素材 A09（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A09.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A09.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "standing",
+   "id": "lupinus_standing_A10",
+   "caption": "ルピナス LoRA学習素材 A10（立ち姿（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/standing/thumbs/standing_A10.webp",
+   "full": "images/gallery-materials/lupinus/standing/full/standing_A10.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B01",
+   "caption": "ルピナス LoRA学習素材 B01（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B01.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B01.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B02",
+   "caption": "ルピナス LoRA学習素材 B02（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B02.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B02.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B03",
+   "caption": "ルピナス LoRA学習素材 B03（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B03.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B03.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B04",
+   "caption": "ルピナス LoRA学習素材 B04（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B04.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B04.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B05",
+   "caption": "ルピナス LoRA学習素材 B05（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B05.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B05.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B06",
+   "caption": "ルピナス LoRA学習素材 B06（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B06.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B06.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B07",
+   "caption": "ルピナス LoRA学習素材 B07（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B07.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B07.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B08",
+   "caption": "ルピナス LoRA学習素材 B08（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B08.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B08.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B09",
+   "caption": "ルピナス LoRA学習素材 B09（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B09.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B09.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B10",
+   "caption": "ルピナス LoRA学習素材 B10（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B10.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B10.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B11",
+   "caption": "ルピナス LoRA学習素材 B11（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B11.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B11.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "bust",
+   "id": "lupinus_bust_B12",
+   "caption": "ルピナス LoRA学習素材 B12（バストアップ（無地背景））",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/lupinus/bust/thumbs/bust_B12.webp",
+   "full": "images/gallery-materials/lupinus/bust/full/bust_B12.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C01",
+   "caption": "ルピナス LoRA学習素材 C01（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C01.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C01.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C02",
+   "caption": "ルピナス LoRA学習素材 C02（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C02.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C02.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C03",
+   "caption": "ルピナス LoRA学習素材 C03（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C03.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C03.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C04",
+   "caption": "ルピナス LoRA学習素材 C04（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C04.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C04.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C05",
+   "caption": "ルピナス LoRA学習素材 C05（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C05.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C05.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C06",
+   "caption": "ルピナス LoRA学習素材 C06（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C06.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C06.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C07",
+   "caption": "ルピナス LoRA学習素材 C07（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C07.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C07.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C08",
+   "caption": "ルピナス LoRA学習素材 C08（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C08.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C08.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C09",
+   "caption": "ルピナス LoRA学習素材 C09（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C09.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C09.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C10",
+   "caption": "ルピナス LoRA学習素材 C10（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C10.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C10.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C11",
+   "caption": "ルピナス LoRA学習素材 C11（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C11.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C11.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C12",
+   "caption": "ルピナス LoRA学習素材 C12（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C12.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C12.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C13",
+   "caption": "ルピナス LoRA学習素材 C13（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C13.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C13.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C14",
+   "caption": "ルピナス LoRA学習素材 C14（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C14.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C14.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_full",
+   "id": "lupinus_scene_full_C15",
+   "caption": "ルピナス LoRA学習素材 C15（場面・全身）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_full/thumbs/scene_full_C15.webp",
+   "full": "images/gallery-materials/lupinus/scene_full/full/scene_full_C15.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D01",
+   "caption": "ルピナス LoRA学習素材 D01（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D01.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D01.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D02",
+   "caption": "ルピナス LoRA学習素材 D02（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D02.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D02.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D03",
+   "caption": "ルピナス LoRA学習素材 D03（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D03.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D03.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D04",
+   "caption": "ルピナス LoRA学習素材 D04（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D04.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D04.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D05",
+   "caption": "ルピナス LoRA学習素材 D05（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D05.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D05.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D06",
+   "caption": "ルピナス LoRA学習素材 D06（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D06.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D06.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D07",
+   "caption": "ルピナス LoRA学習素材 D07（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D07.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D07.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D08",
+   "caption": "ルピナス LoRA学習素材 D08（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D08.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D08.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D09",
+   "caption": "ルピナス LoRA学習素材 D09（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D09.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D09.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "scene_bust",
+   "id": "lupinus_scene_bust_D10",
+   "caption": "ルピナス LoRA学習素材 D10（場面・バストアップ）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/lupinus/scene_bust/thumbs/scene_bust_D10.webp",
+   "full": "images/gallery-materials/lupinus/scene_bust/full/scene_bust_D10.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E01",
+   "caption": "ルピナス LoRA学習素材 E01（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E01.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E01.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E02",
+   "caption": "ルピナス LoRA学習素材 E02（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E02.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E02.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E03",
+   "caption": "ルピナス LoRA学習素材 E03（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E03.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E03.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E04",
+   "caption": "ルピナス LoRA学習素材 E04（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E04.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E04.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E05",
+   "caption": "ルピナス LoRA学習素材 E05（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E05.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E05.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E06",
+   "caption": "ルピナス LoRA学習素材 E06（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E06.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E06.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E07",
+   "caption": "ルピナス LoRA学習素材 E07（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E07.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E07.webp"
+  },
+  {
+   "char": "lupinus",
+   "category": "summer",
+   "id": "lupinus_summer_E08",
+   "caption": "ルピナス LoRA学習素材 E08（夏・水着）",
+   "tags": [
+    "ルピナス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/lupinus/summer/thumbs/summer_E08.webp",
+   "full": "images/gallery-materials/lupinus/summer/full/summer_E08.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A01",
+   "caption": "アイリス LoRA学習素材 A01（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A01.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A01.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A02",
+   "caption": "アイリス LoRA学習素材 A02（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A02.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A02.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A03",
+   "caption": "アイリス LoRA学習素材 A03（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A03.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A03.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A04",
+   "caption": "アイリス LoRA学習素材 A04（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A04.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A04.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A05",
+   "caption": "アイリス LoRA学習素材 A05（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A05.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A05.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A06",
+   "caption": "アイリス LoRA学習素材 A06（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A06.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A06.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A07",
+   "caption": "アイリス LoRA学習素材 A07（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A07.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A07.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A08",
+   "caption": "アイリス LoRA学習素材 A08（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A08.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A08.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A09",
+   "caption": "アイリス LoRA学習素材 A09（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A09.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A09.webp"
+  },
+  {
+   "char": "iris",
+   "category": "standing",
+   "id": "iris_standing_A10",
+   "caption": "アイリス LoRA学習素材 A10（立ち姿（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/standing/thumbs/standing_A10.webp",
+   "full": "images/gallery-materials/iris/standing/full/standing_A10.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B01",
+   "caption": "アイリス LoRA学習素材 B01（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B01.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B01.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B02",
+   "caption": "アイリス LoRA学習素材 B02（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B02.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B02.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B03",
+   "caption": "アイリス LoRA学習素材 B03（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B03.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B03.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B04",
+   "caption": "アイリス LoRA学習素材 B04（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B04.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B04.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B05",
+   "caption": "アイリス LoRA学習素材 B05（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B05.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B05.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B06",
+   "caption": "アイリス LoRA学習素材 B06（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B06.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B06.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B07",
+   "caption": "アイリス LoRA学習素材 B07（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B07.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B07.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B08",
+   "caption": "アイリス LoRA学習素材 B08（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B08.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B08.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B09",
+   "caption": "アイリス LoRA学習素材 B09（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B09.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B09.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B10",
+   "caption": "アイリス LoRA学習素材 B10（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B10.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B10.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B11",
+   "caption": "アイリス LoRA学習素材 B11（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B11.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B11.webp"
+  },
+  {
+   "char": "iris",
+   "category": "bust",
+   "id": "iris_bust_B12",
+   "caption": "アイリス LoRA学習素材 B12（バストアップ（無地背景））",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/iris/bust/thumbs/bust_B12.webp",
+   "full": "images/gallery-materials/iris/bust/full/bust_B12.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C01",
+   "caption": "アイリス LoRA学習素材 C01（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C01.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C01.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C02",
+   "caption": "アイリス LoRA学習素材 C02（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C02.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C02.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C03",
+   "caption": "アイリス LoRA学習素材 C03（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C03.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C03.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C04",
+   "caption": "アイリス LoRA学習素材 C04（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C04.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C04.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C05",
+   "caption": "アイリス LoRA学習素材 C05（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C05.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C05.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C06",
+   "caption": "アイリス LoRA学習素材 C06（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C06.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C06.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C07",
+   "caption": "アイリス LoRA学習素材 C07（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C07.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C07.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C08",
+   "caption": "アイリス LoRA学習素材 C08（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C08.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C08.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C09",
+   "caption": "アイリス LoRA学習素材 C09（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C09.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C09.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C10",
+   "caption": "アイリス LoRA学習素材 C10（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C10.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C10.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C11",
+   "caption": "アイリス LoRA学習素材 C11（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C11.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C11.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C12",
+   "caption": "アイリス LoRA学習素材 C12（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C12.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C12.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C13",
+   "caption": "アイリス LoRA学習素材 C13（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C13.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C13.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C14",
+   "caption": "アイリス LoRA学習素材 C14（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C14.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C14.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_full",
+   "id": "iris_scene_full_C15",
+   "caption": "アイリス LoRA学習素材 C15（場面・全身）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_full/thumbs/scene_full_C15.webp",
+   "full": "images/gallery-materials/iris/scene_full/full/scene_full_C15.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D01",
+   "caption": "アイリス LoRA学習素材 D01（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D01.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D01.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D02",
+   "caption": "アイリス LoRA学習素材 D02（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D02.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D02.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D03",
+   "caption": "アイリス LoRA学習素材 D03（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D03.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D03.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D04",
+   "caption": "アイリス LoRA学習素材 D04（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D04.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D04.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D05",
+   "caption": "アイリス LoRA学習素材 D05（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D05.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D05.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D06",
+   "caption": "アイリス LoRA学習素材 D06（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D06.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D06.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D07",
+   "caption": "アイリス LoRA学習素材 D07（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D07.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D07.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D08",
+   "caption": "アイリス LoRA学習素材 D08（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D08.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D08.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D09",
+   "caption": "アイリス LoRA学習素材 D09（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D09.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D09.webp"
+  },
+  {
+   "char": "iris",
+   "category": "scene_bust",
+   "id": "iris_scene_bust_D10",
+   "caption": "アイリス LoRA学習素材 D10（場面・バストアップ）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/iris/scene_bust/thumbs/scene_bust_D10.webp",
+   "full": "images/gallery-materials/iris/scene_bust/full/scene_bust_D10.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E01",
+   "caption": "アイリス LoRA学習素材 E01（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E01.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E01.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E02",
+   "caption": "アイリス LoRA学習素材 E02（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E02.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E02.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E03",
+   "caption": "アイリス LoRA学習素材 E03（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E03.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E03.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E04",
+   "caption": "アイリス LoRA学習素材 E04（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E04.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E04.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E05",
+   "caption": "アイリス LoRA学習素材 E05（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E05.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E05.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E06",
+   "caption": "アイリス LoRA学習素材 E06（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E06.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E06.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E07",
+   "caption": "アイリス LoRA学習素材 E07（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E07.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E07.webp"
+  },
+  {
+   "char": "iris",
+   "category": "summer",
+   "id": "iris_summer_E08",
+   "caption": "アイリス LoRA学習素材 E08（夏・水着）",
+   "tags": [
+    "アイリス",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/iris/summer/thumbs/summer_E08.webp",
+   "full": "images/gallery-materials/iris/summer/full/summer_E08.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A01",
+   "caption": "フィオナ LoRA学習素材 A01（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A01.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A01.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A02",
+   "caption": "フィオナ LoRA学習素材 A02（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A02.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A02.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A03",
+   "caption": "フィオナ LoRA学習素材 A03（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A03.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A03.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A04",
+   "caption": "フィオナ LoRA学習素材 A04（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A04.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A04.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A05",
+   "caption": "フィオナ LoRA学習素材 A05（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A05.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A05.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A06",
+   "caption": "フィオナ LoRA学習素材 A06（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A06.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A06.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A07",
+   "caption": "フィオナ LoRA学習素材 A07（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A07.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A07.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A08",
+   "caption": "フィオナ LoRA学習素材 A08（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A08.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A08.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A09",
+   "caption": "フィオナ LoRA学習素材 A09（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A09.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A09.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "standing",
+   "id": "fiona_standing_A10",
+   "caption": "フィオナ LoRA学習素材 A10（立ち姿（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "立ち姿（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/standing/thumbs/standing_A10.webp",
+   "full": "images/gallery-materials/fiona/standing/full/standing_A10.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B01",
+   "caption": "フィオナ LoRA学習素材 B01（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B01.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B01.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B02",
+   "caption": "フィオナ LoRA学習素材 B02（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B02.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B02.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B03",
+   "caption": "フィオナ LoRA学習素材 B03（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B03.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B03.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B04",
+   "caption": "フィオナ LoRA学習素材 B04（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B04.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B04.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B05",
+   "caption": "フィオナ LoRA学習素材 B05（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B05.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B05.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B06",
+   "caption": "フィオナ LoRA学習素材 B06（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B06.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B06.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B07",
+   "caption": "フィオナ LoRA学習素材 B07（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B07.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B07.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B08",
+   "caption": "フィオナ LoRA学習素材 B08（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B08.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B08.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B09",
+   "caption": "フィオナ LoRA学習素材 B09（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B09.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B09.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B10",
+   "caption": "フィオナ LoRA学習素材 B10（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B10.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B10.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B11",
+   "caption": "フィオナ LoRA学習素材 B11（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B11.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B11.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "bust",
+   "id": "fiona_bust_B12",
+   "caption": "フィオナ LoRA学習素材 B12（バストアップ（無地背景））",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "バストアップ（無地背景）"
+   ],
+   "thumb": "images/gallery-materials/fiona/bust/thumbs/bust_B12.webp",
+   "full": "images/gallery-materials/fiona/bust/full/bust_B12.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C01",
+   "caption": "フィオナ LoRA学習素材 C01（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C01.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C01.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C02",
+   "caption": "フィオナ LoRA学習素材 C02（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C02.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C02.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C03",
+   "caption": "フィオナ LoRA学習素材 C03（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C03.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C03.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C04",
+   "caption": "フィオナ LoRA学習素材 C04（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C04.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C04.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C05",
+   "caption": "フィオナ LoRA学習素材 C05（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C05.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C05.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C06",
+   "caption": "フィオナ LoRA学習素材 C06（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C06.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C06.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C07",
+   "caption": "フィオナ LoRA学習素材 C07（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C07.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C07.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C08",
+   "caption": "フィオナ LoRA学習素材 C08（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C08.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C08.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C09",
+   "caption": "フィオナ LoRA学習素材 C09（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C09.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C09.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C10",
+   "caption": "フィオナ LoRA学習素材 C10（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C10.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C10.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C11",
+   "caption": "フィオナ LoRA学習素材 C11（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C11.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C11.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C12",
+   "caption": "フィオナ LoRA学習素材 C12（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C12.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C12.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C13",
+   "caption": "フィオナ LoRA学習素材 C13（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C13.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C13.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C14",
+   "caption": "フィオナ LoRA学習素材 C14（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C14.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C14.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_full",
+   "id": "fiona_scene_full_C15",
+   "caption": "フィオナ LoRA学習素材 C15（場面・全身）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・全身"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_full/thumbs/scene_full_C15.webp",
+   "full": "images/gallery-materials/fiona/scene_full/full/scene_full_C15.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D01",
+   "caption": "フィオナ LoRA学習素材 D01（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D01.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D01.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D02",
+   "caption": "フィオナ LoRA学習素材 D02（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D02.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D02.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D03",
+   "caption": "フィオナ LoRA学習素材 D03（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D03.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D03.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D04",
+   "caption": "フィオナ LoRA学習素材 D04（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D04.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D04.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D05",
+   "caption": "フィオナ LoRA学習素材 D05（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D05.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D05.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D06",
+   "caption": "フィオナ LoRA学習素材 D06（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D06.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D06.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D07",
+   "caption": "フィオナ LoRA学習素材 D07（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D07.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D07.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D08",
+   "caption": "フィオナ LoRA学習素材 D08（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D08.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D08.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D09",
+   "caption": "フィオナ LoRA学習素材 D09（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D09.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D09.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "scene_bust",
+   "id": "fiona_scene_bust_D10",
+   "caption": "フィオナ LoRA学習素材 D10（場面・バストアップ）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "場面・バストアップ"
+   ],
+   "thumb": "images/gallery-materials/fiona/scene_bust/thumbs/scene_bust_D10.webp",
+   "full": "images/gallery-materials/fiona/scene_bust/full/scene_bust_D10.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E01",
+   "caption": "フィオナ LoRA学習素材 E01（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E01.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E01.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E02",
+   "caption": "フィオナ LoRA学習素材 E02（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E02.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E02.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E03",
+   "caption": "フィオナ LoRA学習素材 E03（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E03.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E03.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E04",
+   "caption": "フィオナ LoRA学習素材 E04（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E04.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E04.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E05",
+   "caption": "フィオナ LoRA学習素材 E05（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E05.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E05.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E06",
+   "caption": "フィオナ LoRA学習素材 E06（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E06.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E06.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E07",
+   "caption": "フィオナ LoRA学習素材 E07（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E07.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E07.webp"
+  },
+  {
+   "char": "fiona",
+   "category": "summer",
+   "id": "fiona_summer_E08",
+   "caption": "フィオナ LoRA学習素材 E08（夏・水着）",
+   "tags": [
+    "フィオナ",
+    "LoRA学習素材",
+    "夏・水着"
+   ],
+   "thumb": "images/gallery-materials/fiona/summer/thumbs/summer_E08.webp",
+   "full": "images/gallery-materials/fiona/summer/full/summer_E08.webp"
+  }
+ ]
+}

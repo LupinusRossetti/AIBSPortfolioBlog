@@ -652,9 +652,31 @@ def extract_tags(title: str, lines: list[str]) -> list[str]:
 
 def load_posts():
     posts = []
+    # 🚨2026-08-19：**まだレビューが済んでいない日の記事はサイトに出さない**。
+    #   `prepare_daily_review.py` が置く `_pending_review_{日付}.md` が残っている日＝
+    #   るぴちゃんがまだ画像を見ていない日。`finalize_daily_review.py --approve` が
+    #   このマーカーを消すので、承認された日だけが公開される。
+    #   これが無かったため、**8/17を承認しただけで、レビュー中だった8/18も一緒に公開された**
+    #   （build_blog は note-diary の記事mdを無条件に全部読む作りだった）。
+    #   過去記事はマーカーが無いので今までどおり出る。
+    #   🚨マーカーの置き場は **`C:\ClaudeCode\note-diary`**（prepare_daily_review.py の出力先）で、
+    #     記事mdの実体 `DIARY_DIR`（C:\LupinusPrivate\note-diary）とは**別のディレクトリ**。
+    #     ここを取り違えると「実装したのに一度も効かない」＝実測で発見（緑に見えて素通りした）。
+    pending = set()
+    for base in (CLAUDECODE_DIARY, DIARY_DIR):
+        if not base.exists():
+            continue
+        for mk in base.glob("_pending_review_*.md"):
+            mm = re.match(r"_pending_review_(\d{4}-\d{2}-\d{2})\.md$", mk.name)
+            if mm:
+                pending.add(mm.group(1))
     for p in sorted(DIARY_DIR.glob("*.md")):
         m = re.match(r"(\d{4})-(\d{2})-(\d{2})_(?P<rest>.+)\.md$", p.name)
         if not m:
+            continue
+        ds = "%s-%s-%s" % (m.group(1), m.group(2), m.group(3))
+        if ds in pending:
+            print("  [レビュー待ちなので出さない] %s" % p.name)
             continue
         d = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
         raw = p.read_text(encoding="utf-8").splitlines()

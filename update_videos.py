@@ -20,6 +20,8 @@ import io
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 
 try:
@@ -52,10 +54,35 @@ SNS_ANIME_COUNT = 4
 PORTFOLIO_LIVE_COUNT = 6
 
 
-def fetch(url: str, timeout: int = 15) -> bytes:
+def fetch(url: str, timeout: int = 15, tries: int = 6, wait: float = 3.0) -> bytes:
+    """🚨2026-09-01追加＝YouTubeのRSS(`/feeds/videos.xml`)が**断続的に404を返す**。
+
+    実測（同じURLを続けて叩いた結果）＝3回連続404 → 200 → 404 → 2回目で200。
+    チャンネルIDは正しく（チャンネルHTMLの externalId と一致・79回出現）、
+    他チャンネルのRSSも同じ瞬間に200なので、**設定ではなくYouTube側の不安定**。
+    1回で諦めると `finalize_daily_review.py` がここで止まり、
+    **るぴちゃんが承認したブログが公開されない**（2026-09-01に実際に起きた）。
+
+    → 404/429/5xx と接続エラーだけやり直す。それでも駄目なら**素直に落とす**。
+      握りつぶして0件を返すと「配信なし」と誤判定する
+      （`daily_sns_collect.py` が同じ穴を持っていて、この日 0件と報告していた）。
+    """
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    last = None
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code not in (404, 429, 500, 502, 503, 504):
+                raise
+        except urllib.error.URLError as e:
+            last = e
+        if i < tries - 1:
+            print("  [retry %d/%d] %s ← %s" % (i + 1, tries - 1, url[:70], last))
+            time.sleep(wait)
+    raise last
 
 
 def resolve_channel_id() -> str:

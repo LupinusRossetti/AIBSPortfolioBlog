@@ -1667,9 +1667,11 @@ def build_sitemap_robots(posts):
     """sitemap.xml と robots.txt を全公開ページから生成。"""
     urls = [
         "index.html", "about.html", "portfolio.html", "sns.html",
-        # gallery.html は2026-08-10から「4つのギャラリーの目次」ページ。
+        # gallery.html は2026-08-10から「ギャラリーの目次」ページ（2026-09-02 時点で5つ）。
         # 旧750枚は gallery-old.html へ、LoRA学習素材は materials.html へ分けた。
         "gallery.html", "gallery-old.html", "materials.html",
+        # 2026-09-02 追加＝SNSに出した絵のギャラリー（毎日増える）
+        "gallery-sns.html",
         "archive.html", "work.html", "stream-info.html",
         "privacy.html", "blog/index.html",
     ]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- SNSに出した絵のギャラリー（2026-09-02 新設・るぴちゃん依頼）
+     「AIBS三姉妹の今までの出荷分や投稿分もルピナスのサイトに、
+       ひみつの眠り姫サイトのようなギャラリーを新規に作って並べたい」
+     🚨中身は data/sns-gallery.json（`build_sns_gallery.py` が作る）。
+     🚨JSは assets/js/sns-gallery.js＝**ひみつの眠り姫サイトと同じもの**が
+       ビルドのたびに配られる（正本＝aibs-ops/scripts/sns/gallery_assets/gallery.js）。 -->
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sisters' Daily | Lupinus Rossetti | AI Bloom Sisters</title>
+  <meta name="description"
+    content="Sisters' Daily——AI Bloom Sisters三姉妹が毎日SNSに出している絵を、ぜんぶまとめて並べたギャラリー。ルピナス・アイリス・フィオナのキャラクター別に見られます。">
+  <link rel="canonical" href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery-sns.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:title" content="Sisters' Daily | Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:description" content="三姉妹が毎日SNSに出している絵を、ぜんぶここに置いています。">
+  <meta property="og:url" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery-sns.html">
+  <meta property="og:image" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fun_features.css">
+  <link rel="stylesheet" href="assets/css/decorations.css">
+  <link rel="stylesheet" href="assets/css/gallery.css?v=20260717d">
+  <link rel="stylesheet" href="assets/css/sns-gallery.css?v=20260902a">
+</head>
+
+<body class="decor-page decor-sakura-stars">
+
+  <!-- ページ全体に流れる装飾 -->
+  <div class="page-decor" aria-hidden="true">
+    <div class="decor-layer decor-sakura-layer">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-script">Lupinus</span>
+        <span class="brand-sub">AI Bloom Sisters</span>
+      </a>
+      <button class="menu-toggle" aria-label="menu"
+        onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="sns.html">SNS</a>
+        <a href="coming-soon.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="gallery-page">
+    <section class="gallery-hero">
+      <div class="container">
+        <h1 class="gallery-title">
+          <span class="title-script">Sisters' Daily</span>
+          <span class="title-sub">毎日のSNSに出した絵、ぜんぶ</span>
+        </h1>
+        <p class="gallery-lead">
+          ルピナス・アイリス・フィオナが毎日SNSに出している絵を、ここにまとめています。<br>
+          お題に合わせて描いた企画ぶんも、いっしょに並べました。<br>
+          画像をクリックすると大きく表示されます。
+        </p>
+        <p class="gallery-switch">
+          <a href="gallery.html">← ギャラリーの目次にもどる</a>
+        </p>
+        <p class="gallery-switch">
+          <a href="sns.html">→ どのSNSに出しているかを見る</a>
+        </p>
+        <p class="gallery-credit-note">
+          クレジット表記＋本ページURLの明記で使用および引用OKです（画像の改変・再配布は禁止）。
+        </p>
+        <div class="gallery-credit-box">
+          <p>© ルピナス・ロゼッティ(Lupinus Rossetti)/AI Bloom Sisters</p>
+          <p>https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery-sns.html</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sns-gallery">
+      <div class="sg-head">
+        <p id="gcount"></p>
+        <p id="updated"></p>
+      </div>
+      <ul class="tabs" id="tabs" role="tablist"></ul>
+      <!-- 🚨data-src で目録の場所を渡す／data-limit を付けていない＝全件を出す -->
+      <div class="grid" id="grid" data-src="data/sns-gallery.json"></div>
+      <p class="empty" id="gempty" hidden>まだ絵がありません。</p>
+    </section>
+  </main>
+
+  <!-- 大きく見る（🚨id は sns-gallery.js が引いているので変えないこと） -->
+  <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="大きく見る">
+    <button class="x" id="vx" type="button" aria-label="閉じる">✕</button>
+    <button class="nav prev" id="vprev" type="button" aria-label="前へ">‹</button>
+    <button class="nav next" id="vnext" type="button" aria-label="次へ">›</button>
+    <div>
+      <img id="vimg" src="" alt="">
+      <p class="cap" id="vcap"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lupinus Rossetti / AI Bloom Sisters</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/sns-gallery.js?v=20260902a"></script>
+
+</body>
+
+</html>

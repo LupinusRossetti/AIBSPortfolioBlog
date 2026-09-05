@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <!-- Sisters' Shorts＝YouTubeショートに上げた三姉妹の漫画動画のギャラリー（2026-09-05 新設・るぴちゃん指示）
-     「YoutubeショートのURLを使ってX,Bluesky,Threadsに投稿後、サイトにも動画ギャラリーを用意して
-       動画ギャラリーに追加する想定」
+     「既存のサイトのイメージに合わせて可愛く見やすく、これからどんどん増えても見やすいように、
+       レスポンシブデザインでも問題ないように」
      🚨中身は data/video-gallery.json（aibs-ops/scripts/sns/youtube_folder.py --gallery が作る）。
-     🚨サムネは images/gallery-videos/{id}.jpg（1コマ目のナレーションだけの画面）。 -->
+     🚨サムネは images/gallery-videos/{id}.jpg（1コマ目のナレーションが出た画面）。
+     ・12本ずつ表示して「もっと見る」で増やす（本数が増えても重くならない）
+     ・サムネを押すとその場で再生（YouTube 埋め込み）。カードの見た目は gallery.html の目次カードと同じ調子 -->
 <html lang="ja">
 
 <head>
@@ -33,22 +35,41 @@
   <link rel="stylesheet" href="assets/css/decorations.css">
   <link rel="stylesheet" href="assets/css/gallery.css?v=20260717d">
   <style>
-    .vg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; padding: 8px 0 40px; }
-    .vg-card { background: rgba(255,255,255,.72); border-radius: 18px; overflow: hidden;
-               box-shadow: 0 6px 22px rgba(120, 90, 160, .12); display: flex; flex-direction: column; }
-    .vg-frame { position: relative; aspect-ratio: 9 / 16; background: #111; }
-    .vg-frame img, .vg-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
-    .vg-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-               background: linear-gradient(to top, rgba(0,0,0,.35), rgba(0,0,0,0) 45%); cursor: pointer; }
-    .vg-play span { width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,.9);
-                    display: flex; align-items: center; justify-content: center; font-size: 26px; color: #6f5ca8;
-                    box-shadow: 0 4px 16px rgba(0,0,0,.25); }
-    .vg-body { padding: 12px 14px 14px; }
-    .vg-title { font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 15px; margin: 0 0 4px; color: #4a3d6b; }
-    .vg-date { font-size: 12px; color: #8a7fa8; margin: 0 0 8px; }
-    .vg-link { font-size: 13px; color: #6f5ca8; text-decoration: none; }
-    .vg-link:hover { text-decoration: underline; }
-    .vg-head { display: flex; gap: 16px; font-size: 13px; color: #8a7fa8; padding: 6px 0 4px; }
+    /* このページ専用（目次カード gindex-* と同じ調子でそろえる） */
+    .vg-wrap { max-width: 1100px; margin: 0 auto; padding: 0 1rem 3.5rem; }
+    .vg-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem;
+               margin: 1.2rem 0 .6rem; }
+    .vg-count { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--lupinus, #7b6aa8); margin: 0; }
+    .vg-count small { font-family: 'Zen Maru Gothic', sans-serif; font-size: .8rem; color: #8a7fa0; margin-left: .5rem; }
+    .vg-updated { font-size: .78rem; color: #a89cc0; margin: 0; letter-spacing: .06em; }
+    .vg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.2rem; margin-top: 1rem; }
+    @media (min-width: 720px) { .vg-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; } }
+    @media (max-width: 420px) { .vg-grid { grid-template-columns: repeat(2, 1fr); gap: .8rem; } }
+    .vg-card { background: rgba(255, 255, 255, .72); border: 1px solid rgba(180, 160, 210, .35); border-radius: 14px;
+               overflow: hidden; box-shadow: 0 3px 14px rgba(150, 130, 180, .12);
+               transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; display: flex; flex-direction: column; }
+    .vg-card:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(150, 130, 180, .24); border-color: rgba(150, 120, 200, .6); }
+    .vg-frame { position: relative; aspect-ratio: 9 / 16; background: linear-gradient(135deg, #efe9f7 0%, #f8eef4 100%); overflow: hidden; }
+    .vg-frame img, .vg-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; object-fit: cover; }
+    .vg-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; cursor: pointer;
+               background: linear-gradient(to top, rgba(60, 40, 90, .38), rgba(0, 0, 0, 0) 40%); }
+    .vg-play span { width: 58px; height: 58px; border-radius: 50%; background: rgba(255, 255, 255, .92);
+                    display: flex; align-items: center; justify-content: center; font-size: 22px; padding-left: 4px;
+                    color: var(--lupinus, #7b6aa8); box-shadow: 0 4px 16px rgba(60, 40, 90, .28); transition: transform .2s ease; }
+    .vg-play:hover span { transform: scale(1.08); }
+    .vg-badge { position: absolute; left: .6rem; top: .6rem; font-size: .68rem; letter-spacing: .12em; padding: .18rem .55rem;
+                border-radius: 999px; background: rgba(255, 255, 255, .85); color: #7b6aa8; }
+    .vg-body { padding: .8rem .9rem 1rem; }
+    .vg-title { font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: .95rem; line-height: 1.5; margin: 0 0 .25rem; color: #4f4862; }
+    .vg-date { font-size: .74rem; color: #a89cc0; letter-spacing: .08em; margin: 0 0 .6rem; }
+    .vg-link { display: inline-block; font-size: .76rem; padding: .18rem .7rem; border-radius: 999px;
+               background: rgba(150, 120, 200, .12); color: #7b6aa8; text-decoration: none; }
+    .vg-link:hover { background: rgba(150, 120, 200, .22); }
+    .vg-more { display: none; margin: 2rem auto 0; padding: .6rem 1.8rem; border-radius: 999px; border: 1px solid rgba(150, 120, 200, .5);
+               background: rgba(255, 255, 255, .8); color: #7b6aa8; font-family: 'Zen Maru Gothic', sans-serif; font-size: .9rem; cursor: pointer; }
+    .vg-more.on { display: block; }
+    .vg-more:hover { background: rgba(150, 120, 200, .12); }
+    .vg-empty { text-align: center; color: #8a7fa0; padding: 2rem 0; }
   </style>
 </head>
 
@@ -58,6 +79,10 @@
     <div class="decor-layer decor-sakura-layer">
       <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
       <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="decor-layer decor-twinkle-layer">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
     </div>
   </div>
 
@@ -103,15 +128,14 @@
       </div>
     </section>
 
-    <section class="sns-gallery">
-      <div class="container">
-        <div class="vg-head">
-          <p id="gcount"></p>
-          <p id="updated"></p>
-        </div>
-        <div class="vg-grid" id="vgrid" data-src="data/video-gallery.json"></div>
-        <p class="empty" id="gempty" hidden>まだ動画がありません。</p>
+    <section class="vg-wrap">
+      <div class="vg-head">
+        <p class="vg-count" id="gcount"></p>
+        <p class="vg-updated" id="updated"></p>
       </div>
+      <div class="vg-grid" id="vgrid" data-src="data/video-gallery.json" data-page="12"></div>
+      <p class="vg-empty" id="gempty" hidden>まだ動画がありません。</p>
+      <button class="vg-more" id="vmore" type="button">もっと見る</button>
     </section>
   </main>
 
@@ -125,33 +149,49 @@
   <script>
     (function () {
       var grid = document.getElementById('vgrid');
+      var more = document.getElementById('vmore');
       var src = grid.getAttribute('data-src') || 'data/video-gallery.json';
-      function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+      var PAGE = parseInt(grid.getAttribute('data-page') || '12', 10);
+      var items = [], shown = 0;
+      function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+      function card(it) {
+        var el = document.createElement('article');
+        el.className = 'vg-card';
+        var frame = document.createElement('div');
+        frame.className = 'vg-frame';
+        frame.innerHTML = '<img src="' + esc(it.thumb) + '" alt="' + esc(it.title) + '" loading="lazy">' +
+          '<span class="vg-badge">SHORTS</span>' +
+          '<div class="vg-play" role="button" tabindex="0" aria-label="再生：' + esc(it.title) + '"><span>▶</span></div>';
+        function play() {
+          frame.innerHTML = '<iframe src="https://www.youtube.com/embed/' + esc(it.video_id) + '?autoplay=1&playsinline=1&rel=0" ' +
+            'title="' + esc(it.title) + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+        }
+        var p = frame.querySelector('.vg-play');
+        p.addEventListener('click', play);
+        p.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } });
+        var body = document.createElement('div');
+        body.className = 'vg-body';
+        body.innerHTML = '<p class="vg-title">' + esc(it.title) + '</p>' +
+          '<p class="vg-date">' + esc(it.date) + '</p>' +
+          '<a class="vg-link" href="' + esc(it.url) + '" target="_blank" rel="noopener">YouTubeで見る →</a>';
+        el.appendChild(frame); el.appendChild(body);
+        return el;
+      }
+      function paint() {
+        var next = items.slice(shown, shown + PAGE);
+        next.forEach(function (it) { grid.appendChild(card(it)); });
+        shown += next.length;
+        more.classList.toggle('on', shown < items.length);
+      }
+      more.addEventListener('click', paint);
       fetch(src, { cache: 'no-cache' })
         .then(function (r) { if (!r.ok) throw 0; return r.json(); })
         .then(function (d) {
-          var items = d.items || [];
+          items = (d.items || []).slice();
           document.getElementById('gcount').textContent = items.length + ' 本';
-          document.getElementById('updated').textContent = d.updated ? '更新 ' + d.updated : '';
+          document.getElementById('updated').textContent = d.updated ? 'UPDATED ' + d.updated : '';
           if (!items.length) { document.getElementById('gempty').hidden = false; return; }
-          items.forEach(function (it) {
-            var card = document.createElement('article');
-            card.className = 'vg-card';
-            var frame = document.createElement('div');
-            frame.className = 'vg-frame';
-            frame.innerHTML = '<img src="' + esc(it.thumb) + '" alt="' + esc(it.title) + '" loading="lazy">' +
-              '<div class="vg-play" role="button" aria-label="再生"><span>▶</span></div>';
-            frame.querySelector('.vg-play').addEventListener('click', function () {
-              frame.innerHTML = '<iframe src="https://www.youtube.com/embed/' + esc(it.video_id) + '?autoplay=1&playsinline=1" ' +
-                'title="' + esc(it.title) + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
-            });
-            var body = document.createElement('div');
-            body.className = 'vg-body';
-            body.innerHTML = '<p class="vg-title">' + esc(it.title) + '</p>' +
-              '<p class="vg-date">' + esc(it.date || '') + '</p>' +
-              '<a class="vg-link" href="' + esc(it.url) + '" target="_blank" rel="noopener">YouTubeで見る →</a>';
-            card.appendChild(frame); card.appendChild(body); grid.appendChild(card);
-          });
+          paint();
         })
         .catch(function () { var e = document.getElementById('gempty'); e.hidden = false; e.textContent = '動画の一覧を読み込めませんでした。'; });
     })();

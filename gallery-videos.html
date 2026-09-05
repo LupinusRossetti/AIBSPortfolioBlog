@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Sisters' Shorts＝YouTubeショートに上げた三姉妹の漫画動画のギャラリー（2026-09-05 新設・るぴちゃん指示）
+     「YoutubeショートのURLを使ってX,Bluesky,Threadsに投稿後、サイトにも動画ギャラリーを用意して
+       動画ギャラリーに追加する想定」
+     🚨中身は data/video-gallery.json（aibs-ops/scripts/sns/youtube_folder.py --gallery が作る）。
+     🚨サムネは images/gallery-videos/{id}.jpg（1コマ目のナレーションだけの画面）。 -->
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sisters' Shorts | Lupinus Rossetti | AI Bloom Sisters</title>
+  <meta name="description"
+    content="Sisters' Shorts——AI Bloom Sisters三姉妹の日常を1分ちょっとの漫画動画に。YouTubeショートに上げた動画をまとめて見られます。">
+  <link rel="canonical" href="https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery-videos.html">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:title" content="Sisters' Shorts | Lupinus Rossetti | AI Bloom Sisters">
+  <meta property="og:description" content="三姉妹の漫画動画（YouTubeショート）をここにまとめています。">
+  <meta property="og:url" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery-videos.html">
+  <meta property="og:image" content="https://lupinusrossetti.github.io/AIBSPortfolioBlog/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fun_features.css">
+  <link rel="stylesheet" href="assets/css/decorations.css">
+  <link rel="stylesheet" href="assets/css/gallery.css?v=20260717d">
+  <style>
+    .vg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px; padding: 8px 0 40px; }
+    .vg-card { background: rgba(255,255,255,.72); border-radius: 18px; overflow: hidden;
+               box-shadow: 0 6px 22px rgba(120, 90, 160, .12); display: flex; flex-direction: column; }
+    .vg-frame { position: relative; aspect-ratio: 9 / 16; background: #111; }
+    .vg-frame img, .vg-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+    .vg-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+               background: linear-gradient(to top, rgba(0,0,0,.35), rgba(0,0,0,0) 45%); cursor: pointer; }
+    .vg-play span { width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,.9);
+                    display: flex; align-items: center; justify-content: center; font-size: 26px; color: #6f5ca8;
+                    box-shadow: 0 4px 16px rgba(0,0,0,.25); }
+    .vg-body { padding: 12px 14px 14px; }
+    .vg-title { font-family: 'Zen Maru Gothic', sans-serif; font-weight: 700; font-size: 15px; margin: 0 0 4px; color: #4a3d6b; }
+    .vg-date { font-size: 12px; color: #8a7fa8; margin: 0 0 8px; }
+    .vg-link { font-size: 13px; color: #6f5ca8; text-decoration: none; }
+    .vg-link:hover { text-decoration: underline; }
+    .vg-head { display: flex; gap: 16px; font-size: 13px; color: #8a7fa8; padding: 6px 0 4px; }
+  </style>
+</head>
+
+<body class="decor-page decor-sakura-stars">
+
+  <div class="page-decor" aria-hidden="true">
+    <div class="decor-layer decor-sakura-layer">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-script">Lupinus</span>
+        <span class="brand-sub">AI Bloom Sisters</span>
+      </a>
+      <button class="menu-toggle" aria-label="menu"
+        onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="sns.html">SNS</a>
+        <a href="coming-soon.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="gallery-page">
+    <section class="gallery-hero">
+      <div class="container">
+        <h1 class="gallery-title">
+          <span class="title-script">Sisters' Shorts</span>
+          <span class="title-sub">三姉妹の漫画動画、ぜんぶ</span>
+        </h1>
+        <p class="gallery-lead">
+          ルピナス・アイリス・フィオナの日常を、1分ちょっとの漫画動画にしています。<br>
+          YouTubeショートに上げたぶんを、ここにまとめました。<br>
+          サムネイルを押すと、その場で再生できます。
+        </p>
+        <p class="gallery-switch">
+          <a href="gallery.html">← ギャラリーの目次にもどる</a>
+        </p>
+        <div class="gallery-credit-box">
+          <p>© ルピナス・ロゼッティ(Lupinus Rossetti)/AI Bloom Sisters</p>
+          <p>https://lupinusrossetti.github.io/AIBSPortfolioBlog/gallery-videos.html</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sns-gallery">
+      <div class="container">
+        <div class="vg-head">
+          <p id="gcount"></p>
+          <p id="updated"></p>
+        </div>
+        <div class="vg-grid" id="vgrid" data-src="data/video-gallery.json"></div>
+        <p class="empty" id="gempty" hidden>まだ動画がありません。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lupinus Rossetti / AI Bloom Sisters</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    (function () {
+      var grid = document.getElementById('vgrid');
+      var src = grid.getAttribute('data-src') || 'data/video-gallery.json';
+      function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+      fetch(src, { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (d) {
+          var items = d.items || [];
+          document.getElementById('gcount').textContent = items.length + ' 本';
+          document.getElementById('updated').textContent = d.updated ? '更新 ' + d.updated : '';
+          if (!items.length) { document.getElementById('gempty').hidden = false; return; }
+          items.forEach(function (it) {
+            var card = document.createElement('article');
+            card.className = 'vg-card';
+            var frame = document.createElement('div');
+            frame.className = 'vg-frame';
+            frame.innerHTML = '<img src="' + esc(it.thumb) + '" alt="' + esc(it.title) + '" loading="lazy">' +
+              '<div class="vg-play" role="button" aria-label="再生"><span>▶</span></div>';
+            frame.querySelector('.vg-play').addEventListener('click', function () {
+              frame.innerHTML = '<iframe src="https://www.youtube.com/embed/' + esc(it.video_id) + '?autoplay=1&playsinline=1" ' +
+                'title="' + esc(it.title) + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+            });
+            var body = document.createElement('div');
+            body.className = 'vg-body';
+            body.innerHTML = '<p class="vg-title">' + esc(it.title) + '</p>' +
+              '<p class="vg-date">' + esc(it.date || '') + '</p>' +
+              '<a class="vg-link" href="' + esc(it.url) + '" target="_blank" rel="noopener">YouTubeで見る →</a>';
+            card.appendChild(frame); card.appendChild(body); grid.appendChild(card);
+          });
+        })
+        .catch(function () { var e = document.getElementById('gempty'); e.hidden = false; e.textContent = '動画の一覧を読み込めませんでした。'; });
+    })();
+  </script>
+
+</body>
+
+</html>

@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:iris": 36,
-  "sfw:fiona": 38,
-  "sfw:lupinus": 60,
+  "sfw:iris": 38,
+  "sfw:fiona": 39,
+  "sfw:lupinus": 61,
   "sfw:three": 5
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "c23e0651b82a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アイドル",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/iris/c23e0651b82a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c23e0651b82a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "a8e1cf4ffdca",
    "char": "iris",
@@ -67,6 +80,45 @@
    "date": "2026-09-05",
    "src": "images/gallery-sns/sfw/lupinus/353feecb5799.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/353feecb5799_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "2fab12e7364b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ブラックホール",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/iris/2fab12e7364b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2fab12e7364b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2c9f103f0c0a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#妖怪VS巫女",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/fiona/2c9f103f0c0a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2c9f103f0c0a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1bc27f4d42df",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#喜怒哀楽",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/lupinus/1bc27f4d42df.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1bc27f4d42df_t.webp",
    "w": 1280,
    "h": 1280
   },

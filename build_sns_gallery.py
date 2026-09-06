@@ -64,7 +64,19 @@ def main():
     ap.add_argument("--keep", action="store_true", help="使わなくなったwebpを消さない")
     ap.add_argument("--dry", action="store_true", help="書かずに数える")
     a = ap.parse_args()
-    return G.build(SITE, force=a.force, keep=a.keep, dry=a.dry)
+    rc = G.build(SITE, force=a.force, keep=a.keep, dry=a.dry)
+    # 📺2026-09-05 るぴちゃん指示＝YouTubeショートに上げた漫画動画のギャラリー（gallery-videos.html）も
+    #   同じ push に乗せる。目録は aibs-ops の youtube_folder.py --gallery が作る（台帳の URL 付きだけ）
+    if not a.dry:
+        import subprocess
+        r = subprocess.run([sys.executable, r"C:\ClaudeCode\aibs-ops\scripts\sns\youtube_folder.py", "--gallery"],
+                           capture_output=True, text=True, encoding="utf-8", errors="replace")
+        sys.stdout.write(r.stdout or "")
+        if r.returncode:
+            sys.stderr.write(r.stderr or "")
+            print("[NG] 動画ギャラリーの目録を作れなかった")
+            rc = rc or 1
+    return rc
 
 
 if __name__ == "__main__":

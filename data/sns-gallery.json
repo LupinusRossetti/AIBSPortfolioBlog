@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05",
+ "updated": "2026-09-06",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,7 +23,7 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 59,
+  "sfw:lupinus": 63,
   "sfw:iris": 39,
   "sfw:fiona": 39,
   "sfw:three": 5
@@ -31,6 +31,58 @@
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "bb94bdd3c9cb",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライCM 秋葉原 縦 AIBS三姉妹 take2 三人",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/bb94bdd3c9cb.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/bb94bdd3c9cb_t.webp",
+   "w": 922,
+   "h": 1280
+  },
+  {
+   "id": "abb01e82c470",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライCM 池袋 正方形 AIBS三姉妹 take2 三人",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/abb01e82c470.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/abb01e82c470_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "31209080ca6c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライCM 秋葉原 縦 AIBS三姉妹 take1 三人",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/31209080ca6c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/31209080ca6c_t.webp",
+   "w": 922,
+   "h": 1280
+  },
+  {
+   "id": "168559c1578e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライCM 池袋 正方形 AIBS三姉妹 take1 三人",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/168559c1578e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/168559c1578e_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "f0b7237b650e",
    "char": "lupinus",

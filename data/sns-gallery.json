@@ -23,65 +23,104 @@
   }
  },
  "counts": {
-  "sfw:iris": 38,
-  "sfw:fiona": 39,
-  "sfw:lupinus": 61,
+  "sfw:lupinus": 64,
+  "sfw:iris": 41,
+  "sfw:fiona": 42,
   "sfw:three": 5
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
   {
-   "id": "c23e0651b82a",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#アイドル",
-   "date": "2026-09-05",
-   "src": "images/gallery-sns/sfw/iris/c23e0651b82a.webp",
-   "thumb": "images/gallery-sns/sfw/iris/c23e0651b82a_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "a8e1cf4ffdca",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#カラフル",
-   "date": "2026-09-05",
-   "src": "images/gallery-sns/sfw/iris/a8e1cf4ffdca.webp",
-   "thumb": "images/gallery-sns/sfw/iris/a8e1cf4ffdca_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "6afd872987fb",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#エルフ",
-   "date": "2026-09-05",
-   "src": "images/gallery-sns/sfw/fiona/6afd872987fb.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/6afd872987fb_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "353feecb5799",
+   "id": "f0b7237b650e",
    "char": "lupinus",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#食べ物",
+   "title": "（イベント用に作った絵を定時へ回した分）",
    "date": "2026-09-05",
-   "src": "images/gallery-sns/sfw/lupinus/353feecb5799.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/353feecb5799_t.webp",
+   "src": "images/gallery-sns/sfw/lupinus/f0b7237b650e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f0b7237b650e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "df2ce6dbf2c1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "影踏みで、自分の影から逃げようとする",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/iris/df2ce6dbf2c1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/df2ce6dbf2c1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cddfa880045a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の花を一輪だけ飾る",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/fiona/cddfa880045a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/cddfa880045a_t.webp",
    "w": 1280,
    "h": 1280
+  },
+  {
+   "id": "abb6ae7c3f55",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ブラックホール",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/iris/abb6ae7c3f55.webp",
+   "thumb": "images/gallery-sns/sfw/iris/abb6ae7c3f55_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7def71e2a00d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "国民栄誉賞の日にちなんで、トロフィーと花束、表彰のリボンと過ごす",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/lupinus/7def71e2a00d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7def71e2a00d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "61b0d232f955",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "（イベント用に作った絵を定時へ回した分）",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/fiona/61b0d232f955.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/61b0d232f955_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "56d305cd3af5",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ベッドで横向きになったまま本を読み続けて寝落ちしかける",
+   "date": "2026-09-05",
+   "src": "images/gallery-sns/sfw/fiona/56d305cd3af5.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/56d305cd3af5_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "2fab12e7364b",
@@ -107,19 +146,6 @@
    "src": "images/gallery-sns/sfw/fiona/2c9f103f0c0a.webp",
    "thumb": "images/gallery-sns/sfw/fiona/2c9f103f0c0a_t.webp",
    "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "1bc27f4d42df",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#喜怒哀楽",
-   "date": "2026-09-05",
-   "src": "images/gallery-sns/sfw/lupinus/1bc27f4d42df.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/1bc27f4d42df_t.webp",
-   "w": 1280,
    "h": 1280
   },
   {
@@ -396,6 +422,45 @@
    "h": 1280
   },
   {
+   "id": "c23e0651b82a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アイドル",
+   "date": "2026-09-01",
+   "src": "images/gallery-sns/sfw/iris/c23e0651b82a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c23e0651b82a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a55b13fee723",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#喜怒哀楽",
+   "date": "2026-09-01",
+   "src": "images/gallery-sns/sfw/lupinus/a55b13fee723.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a55b13fee723_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "87ef01a1cdd7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アイドル",
+   "date": "2026-09-01",
+   "src": "images/gallery-sns/sfw/iris/87ef01a1cdd7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/87ef01a1cdd7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "874e46908181",
    "char": "lupinus",
    "nsfw": false,
@@ -471,6 +536,19 @@
    "src": "images/gallery-sns/sfw/iris/20e9ffebeec4.webp",
    "thumb": "images/gallery-sns/sfw/iris/20e9ffebeec4_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1bc27f4d42df",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#喜怒哀楽",
+   "date": "2026-09-01",
+   "src": "images/gallery-sns/sfw/lupinus/1bc27f4d42df.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1bc27f4d42df_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -1631,6 +1709,19 @@
    "h": 1280
   },
   {
+   "id": "a8e1cf4ffdca",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#カラフル",
+   "date": "2026-08-14",
+   "src": "images/gallery-sns/sfw/iris/a8e1cf4ffdca.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a8e1cf4ffdca_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "7417cdb9316e",
    "char": "lupinus",
    "nsfw": false,
@@ -1640,6 +1731,19 @@
    "date": "2026-08-14",
    "src": "images/gallery-sns/sfw/lupinus/7417cdb9316e.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/7417cdb9316e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6afd872987fb",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#エルフ",
+   "date": "2026-08-14",
+   "src": "images/gallery-sns/sfw/fiona/6afd872987fb.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/6afd872987fb_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1654,6 +1758,19 @@
    "src": "images/gallery-sns/sfw/lupinus/6a2e98c6226f.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/6a2e98c6226f_t.webp",
    "w": 996,
+   "h": 1280
+  },
+  {
+   "id": "353feecb5799",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#食べ物",
+   "date": "2026-08-14",
+   "src": "images/gallery-sns/sfw/lupinus/353feecb5799.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/353feecb5799_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

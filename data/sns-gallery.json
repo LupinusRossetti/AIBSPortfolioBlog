@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 64,
-  "sfw:iris": 41,
-  "sfw:fiona": 42,
+  "sfw:lupinus": 59,
+  "sfw:iris": 39,
+  "sfw:fiona": 39,
   "sfw:three": 5
  },
  "max_nsfw_level": 0,
@@ -201,19 +201,6 @@
    "h": 1280
   },
   {
-   "id": "f87c7c4eb9eb",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "傘の骨を直そうとして、余計に曲げてしまう",
-   "date": "2026-09-03",
-   "src": "images/gallery-sns/sfw/lupinus/f87c7c4eb9eb.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/f87c7c4eb9eb_t.webp",
-   "w": 1280,
-   "h": 702
-  },
-  {
    "id": "e3608537bc4d",
    "char": "lupinus",
    "nsfw": false,
@@ -240,19 +227,6 @@
    "h": 1280
   },
   {
-   "id": "85897bd6ad5c",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "買い物リストを書き直して、指で数を数える",
-   "date": "2026-09-03",
-   "src": "images/gallery-sns/sfw/fiona/85897bd6ad5c.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/85897bd6ad5c_t.webp",
-   "w": 1280,
-   "h": 702
-  },
-  {
    "id": "69afe31c7029",
    "char": "fiona",
    "nsfw": false,
@@ -266,32 +240,6 @@
    "h": 1280
   },
   {
-   "id": "69532785c682",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "ベッドに座って膝を立て、明日の予定を書き出す",
-   "date": "2026-09-03",
-   "src": "images/gallery-sns/sfw/fiona/69532785c682.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/69532785c682_t.webp",
-   "w": 640,
-   "h": 702
-  },
-  {
-   "id": "3ea4f371e7b3",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "ホームラン記念日にちなんで、バットを振り抜いて青空を見上げる",
-   "date": "2026-09-03",
-   "src": "images/gallery-sns/sfw/iris/3ea4f371e7b3.webp",
-   "thumb": "images/gallery-sns/sfw/iris/3ea4f371e7b3_t.webp",
-   "w": 640,
-   "h": 702
-  },
-  {
    "id": "30a7a1f6d31a",
    "char": "iris",
    "nsfw": false,
@@ -303,32 +251,6 @@
    "thumb": "images/gallery-sns/sfw/iris/30a7a1f6d31a_t.webp",
    "w": 1280,
    "h": 720
-  },
-  {
-   "id": "ec99adbba6b7",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "深夜、眠れない夜にラジオ気分で静かに独り言をつぶやく",
-   "date": "2026-09-02",
-   "src": "images/gallery-sns/sfw/fiona/ec99adbba6b7.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/ec99adbba6b7_t.webp",
-   "w": 640,
-   "h": 702
-  },
-  {
-   "id": "e4e57401d4e8",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "長女と三女で夜更かし",
-   "date": "2026-09-02",
-   "src": "images/gallery-sns/sfw/lupinus/e4e57401d4e8.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/e4e57401d4e8_t.webp",
-   "w": 1280,
-   "h": 702
   },
   {
    "id": "c7df510ec840",
@@ -383,32 +305,6 @@
    "h": 1280
   },
   {
-   "id": "99bf4b0efff4",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "（イベント用に作った絵を定時へ回した分）",
-   "date": "2026-09-02",
-   "src": "images/gallery-sns/sfw/lupinus/99bf4b0efff4.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/99bf4b0efff4_t.webp",
-   "w": 1280,
-   "h": 702
-  },
-  {
-   "id": "94eaff7f63d8",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "朝ごはんを一口で頬張る",
-   "date": "2026-09-02",
-   "src": "images/gallery-sns/sfw/iris/94eaff7f63d8.webp",
-   "thumb": "images/gallery-sns/sfw/iris/94eaff7f63d8_t.webp",
-   "w": 640,
-   "h": 702
-  },
-  {
    "id": "d938bbc5a47d",
    "char": "lupinus",
    "nsfw": false,
@@ -461,19 +357,6 @@
    "h": 1280
   },
   {
-   "id": "874e46908181",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#AI和装同好会",
-   "date": "2026-09-01",
-   "src": "images/gallery-sns/sfw/lupinus/874e46908181.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/874e46908181_t.webp",
-   "w": 640,
-   "h": 702
-  },
-  {
    "id": "6d868ed8239f",
    "char": "lupinus",
    "nsfw": false,
@@ -498,19 +381,6 @@
    "thumb": "images/gallery-sns/sfw/lupinus/42e022f2854e_t.webp",
    "w": 720,
    "h": 1280
-  },
-  {
-   "id": "37b721aa25b8",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#AQUAビーチタイム",
-   "date": "2026-09-01",
-   "src": "images/gallery-sns/sfw/lupinus/37b721aa25b8.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/37b721aa25b8_t.webp",
-   "w": 1280,
-   "h": 702
   },
   {
    "id": "297ea7fd38b2",

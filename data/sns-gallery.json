@@ -23,14 +23,40 @@
   }
  },
  "counts": {
+  "sfw:iris": 45,
+  "sfw:lupinus": 64,
   "sfw:three": 9,
-  "sfw:lupinus": 59,
-  "sfw:iris": 39,
-  "sfw:fiona": 39
+  "sfw:fiona": 42
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "d719aae4c2b0",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#喜怒哀楽",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/d719aae4c2b0.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d719aae4c2b0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cfc76a9c4741",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋のはじまりの風景",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/cfc76a9c4741.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/cfc76a9c4741_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "bb94bdd3c9cb",
    "char": "three",
@@ -58,6 +84,97 @@
    "h": 1280
   },
   {
+   "id": "96abc1b6b99d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "公園でどんぐりを夢中で拾い集める",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/96abc1b6b99d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/96abc1b6b99d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "95cad1acc834",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "（イベント用に作った絵を定時へ回した分）",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/95cad1acc834.webp",
+   "thumb": "images/gallery-sns/sfw/iris/95cad1acc834_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "73e986f53b88",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "彼岸花を見つけて思わず足を止める",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/73e986f53b88.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/73e986f53b88_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6c8f3582567d",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "妹の日にちなんで、お揃いのリボンと手紙と過ごす",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/fiona/6c8f3582567d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/6c8f3582567d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "650b406c9089",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アイドル",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/650b406c9089.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/650b406c9089_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "45ee28e7225d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#生クリーム",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/45ee28e7225d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/45ee28e7225d_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "399513fae043",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "（イベント用に作った絵を定時へ回した分）",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/fiona/399513fae043.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/399513fae043_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "31209080ca6c",
    "char": "three",
    "nsfw": false,
@@ -71,6 +188,19 @@
    "h": 1280
   },
   {
+   "id": "30b554bfdcaa",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ラグに寝そべってクッションを抱えたまま動かない",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/lupinus/30b554bfdcaa.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/30b554bfdcaa_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "168559c1578e",
    "char": "three",
    "nsfw": false,
@@ -81,6 +211,19 @@
    "src": "images/gallery-sns/sfw/three/168559c1578e.webp",
    "thumb": "images/gallery-sns/sfw/three/168559c1578e_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "111853f16f46",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋風に乱れる髪",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/111853f16f46.webp",
+   "thumb": "images/gallery-sns/sfw/iris/111853f16f46_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -305,6 +448,19 @@
    "h": 720
   },
   {
+   "id": "d5f32a49c8e4",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 2",
+   "date": "2026-09-02",
+   "src": "images/gallery-sns/sfw/lupinus/d5f32a49c8e4.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d5f32a49c8e4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "c7df510ec840",
    "char": "iris",
    "nsfw": false,
@@ -354,6 +510,32 @@
    "src": "images/gallery-sns/sfw/lupinus/a5e12578ed45.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/a5e12578ed45_t.webp",
    "w": 1024,
+   "h": 1280
+  },
+  {
+   "id": "8e1792e370eb",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション",
+   "date": "2026-09-02",
+   "src": "images/gallery-sns/sfw/iris/8e1792e370eb.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8e1792e370eb_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "791f2878f2a0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 3",
+   "date": "2026-09-02",
+   "src": "images/gallery-sns/sfw/fiona/791f2878f2a0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/791f2878f2a0_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

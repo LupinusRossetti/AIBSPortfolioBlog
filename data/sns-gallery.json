@@ -25,7 +25,7 @@
  "counts": {
   "sfw:iris": 55,
   "sfw:lupinus": 72,
-  "sfw:fiona": 48,
+  "sfw:fiona": 49,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
@@ -120,6 +120,19 @@
    "src": "images/gallery-sns/sfw/iris/a17ce49dc37c.webp",
    "thumb": "images/gallery-sns/sfw/iris/a17ce49dc37c_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "9a868f191f18",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#九九の日 3",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/fiona/9a868f191f18.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/9a868f191f18_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

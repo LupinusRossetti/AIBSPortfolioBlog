@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 55,
-  "sfw:lupinus": 72,
-  "sfw:fiona": 49,
+  "sfw:iris": 57,
+  "sfw:lupinus": 74,
+  "sfw:fiona": 51,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
@@ -97,6 +97,19 @@
    "h": 1280
   },
   {
+   "id": "b2c50c48d723",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝食のトーストを焦がしかける",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/lupinus/b2c50c48d723.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b2c50c48d723_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "ae1cca0fe8f5",
    "char": "lupinus",
    "nsfw": false,
@@ -106,6 +119,19 @@
    "date": "2026-09-09",
    "src": "images/gallery-sns/sfw/lupinus/ae1cca0fe8f5.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/ae1cca0fe8f5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a8278f18cb5a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "深夜、お腹が空いて我慢比べする",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/iris/a8278f18cb5a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a8278f18cb5a_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -162,6 +188,45 @@
    "h": 1280
   },
   {
+   "id": "932b425d45c3",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "（イベント用に作った絵を定時へ回した分）",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/iris/932b425d45c3.webp",
+   "thumb": "images/gallery-sns/sfw/iris/932b425d45c3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8a848720e899",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "重陽の節句。菊の花を盃に浮かべて、縁側で香りを確かめる",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/fiona/8a848720e899.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8a848720e899_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6bc215e9c402",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "（イベント用に作った絵を定時へ回した分）",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/fiona/6bc215e9c402.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/6bc215e9c402_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "6927f22405f0",
    "char": "iris",
    "nsfw": false,
@@ -211,6 +276,19 @@
    "src": "images/gallery-sns/sfw/iris/45ee28e7225d.webp",
    "thumb": "images/gallery-sns/sfw/iris/45ee28e7225d_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "152919fd143d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夕暮れの商店街で、栗の入った紙袋を掲げて帰る",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/lupinus/152919fd143d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/152919fd143d_t.webp",
+   "w": 853,
    "h": 1280
   },
   {

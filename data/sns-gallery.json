@@ -25,7 +25,7 @@
  "counts": {
   "sfw:iris": 55,
   "sfw:lupinus": 72,
-  "sfw:fiona": 49,
+  "sfw:fiona": 50,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
@@ -119,6 +119,19 @@
    "date": "2026-09-09",
    "src": "images/gallery-sns/sfw/lupinus/998f9f8d4dbd.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/998f9f8d4dbd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "87a233cbceb3",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋を先取リレー",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/fiona/87a233cbceb3.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/87a233cbceb3_t.webp",
    "w": 720,
    "h": 1280
   },

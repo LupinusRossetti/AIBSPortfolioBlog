@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 55,
+  "sfw:iris": 53,
   "sfw:lupinus": 72,
-  "sfw:fiona": 50,
+  "sfw:fiona": 48,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
@@ -84,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "ae1cca0fe8f5",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#九九の日",
+   "date": "2026-09-09",
+   "src": "images/gallery-sns/sfw/lupinus/ae1cca0fe8f5.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ae1cca0fe8f5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "a17ce49dc37c",
    "char": "iris",
    "nsfw": false,
@@ -123,45 +136,6 @@
    "h": 1280
   },
   {
-   "id": "87a233cbceb3",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋を先取リレー",
-   "date": "2026-09-09",
-   "src": "images/gallery-sns/sfw/fiona/87a233cbceb3.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/87a233cbceb3_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "841e6d59ae2a",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#カーニバル 3",
-   "date": "2026-09-09",
-   "src": "images/gallery-sns/sfw/fiona/841e6d59ae2a.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/841e6d59ae2a_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "828be87ddfe6",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#カーニバル",
-   "date": "2026-09-09",
-   "src": "images/gallery-sns/sfw/lupinus/828be87ddfe6.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/828be87ddfe6_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "6927f22405f0",
    "char": "iris",
    "nsfw": false,
@@ -172,19 +146,6 @@
    "src": "images/gallery-sns/sfw/iris/6927f22405f0.webp",
    "thumb": "images/gallery-sns/sfw/iris/6927f22405f0_t.webp",
    "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "5eff254f632a",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#宇宙 2",
-   "date": "2026-09-09",
-   "src": "images/gallery-sns/sfw/iris/5eff254f632a.webp",
-   "thumb": "images/gallery-sns/sfw/iris/5eff254f632a_t.webp",
-   "w": 720,
    "h": 1280
   },
   {
@@ -224,19 +185,6 @@
    "src": "images/gallery-sns/sfw/iris/45ee28e7225d.webp",
    "thumb": "images/gallery-sns/sfw/iris/45ee28e7225d_t.webp",
    "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "2e7c50e5f700",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#カーニバル 2",
-   "date": "2026-09-09",
-   "src": "images/gallery-sns/sfw/iris/2e7c50e5f700.webp",
-   "thumb": "images/gallery-sns/sfw/iris/2e7c50e5f700_t.webp",
-   "w": 720,
    "h": 1280
   },
   {

@@ -23,14 +23,40 @@
   }
  },
  "counts": {
+  "sfw:fiona": 57,
   "sfw:iris": 61,
-  "sfw:fiona": 54,
-  "sfw:lupinus": 79,
+  "sfw:lupinus": 82,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "fb868ada2d1d",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の道で拾ったもみじを、光にかざして見上げる",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/fiona/fb868ada2d1d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/fb868ada2d1d_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "e16d0beb97e2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "苔玉に霧吹きで水をやり、粒が乗るのを見る",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/fiona/e16d0beb97e2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e16d0beb97e2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "d46a5e6bfd71",
    "char": "iris",
@@ -58,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "c2b7e324e668",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水族館のトンネルで同じ魚を指さす",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/lupinus/c2b7e324e668.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c2b7e324e668_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "b421ec0a7716",
    "char": "fiona",
    "nsfw": false,
@@ -68,6 +107,19 @@
    "src": "images/gallery-sns/sfw/fiona/b421ec0a7716.webp",
    "thumb": "images/gallery-sns/sfw/fiona/b421ec0a7716_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b24e3261758e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の机で、ランプの下にノートと鉛筆と消しゴムを並べて書いては消す",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/fiona/b24e3261758e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b24e3261758e_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -123,6 +175,19 @@
    "h": 1280
   },
   {
+   "id": "8f216502890b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水族館のトンネルで同じ魚を指さす",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/lupinus/8f216502890b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8f216502890b_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "822843ef7db2",
    "char": "fiona",
    "nsfw": false,
@@ -172,6 +237,19 @@
    "src": "images/gallery-sns/sfw/lupinus/56b84d18ff1f.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/56b84d18ff1f_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "5294e3cce2f1",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "十五夜。縁側に月見団子を運び、串を手に取って出ている満月を見上げる",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/lupinus/5294e3cce2f1.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5294e3cce2f1_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

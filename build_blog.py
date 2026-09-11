@@ -1318,9 +1318,38 @@ def build_privacy():
         + '<p>AIを活用して制作されたコンテンツについても、運営者の創作物として扱います。</p>'
         + '</div>'
 
-        # 10. 改定
+        # 10. Threads API（2026-09-11 追加＝Meta の App Review でキーワード検索の権限を申請するため）
+        + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Threads API</span>'
+        + '<h2 class="section-title">10. Threads API で取得する情報について<span class="jp">DATA FROM THREADS API</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>運営者は、AI イラストの参加型企画を探すために、Meta の Threads API を使って Threads 上の<strong>公開投稿</strong>を検索します。</p>'
+        + '<ul>'
+        + '<li>取得する情報：公開投稿の本文、投稿の URL、投稿者のユーザー名（企画の告知を見つけるためだけに使います）</li>'
+        + '<li>使い道：運営者が参加できる企画（お題・ハッシュタグ・開催期間・参加方法）を一覧にするため。検索結果をもとに、自動で投稿・いいね・フォロー・返信・メッセージを送ることはありません</li>'
+        + '<li>第三者への提供：しません</li>'
+        + '<li>保存期間：企画の開催期間が終わった時点、遅くとも取得から30日以内に削除します</li>'
+        + '</ul>'
+        + '<p lang="en">The site operator uses Meta\'s Threads API to search <strong>public</strong> Threads posts in order to find participatory AI-illustration events.</p>'
+        + '<ul lang="en">'
+        + '<li>Data collected: the text of public posts, post URLs and usernames — used only to identify event announcements.</li>'
+        + '<li>Purpose: to list events the operator can join (theme, hashtag, period, rules). We never automatically publish, like, follow, reply or send messages based on search results.</li>'
+        + '<li>Sharing: we do not share this data with any third party.</li>'
+        + '<li>Retention: deleted when the event ends, and in any case within 30 days of collection.</li>'
+        + '</ul></div>'
+
+        # 11. データの削除（Meta の「User data deletion」欄にこのアンカーを入れる）
+        + '<div class="section-head" id="data-deletion" style="margin-top:56px"><span class="eyebrow">Data Deletion</span>'
+        + '<h2 class="section-title">11. データの削除について<span class="jp">DATA DELETION</span></h2>'
+        + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
+        + '<div class="story-box">'
+        + '<p>ご自身の投稿について取得した情報の削除を希望される場合は、X（@rupi_airupi）の DM でお知らせください。7日以内に削除し、ご連絡します。</p>'
+        + '<p lang="en">To request deletion of data we obtained about your posts, send a direct message to @rupi_airupi on X. We will delete it within 7 days and let you know.</p>'
+        + '</div>'
+
+        # 12. 改定
         + '<div class="section-head" style="margin-top:56px"><span class="eyebrow">Update</span>'
-        + '<h2 class="section-title">10. 改定について<span class="jp">UPDATES</span></h2>'
+        + '<h2 class="section-title">12. 改定について<span class="jp">UPDATES</span></h2>'
         + '<div class="ornament" style="margin-top:18px"><span></span></div></div>'
         + '<div class="story-box">'
         + '<p>本ポリシーは予告なく変更される場合があります。変更後の内容は本ページに掲載した時点から効力を生じます。</p>'
@@ -1328,7 +1357,7 @@ def build_privacy():
 
         # 日付＆締めの吹き出し
         + '<p class="center" style="color:var(--ink-soft);margin-top:48px">'
-        + '🌸 制定日：2026年6月10日 ／ 🌷 最終更新：2026年6月10日</p>'
+        + '🌸 制定日：2026年6月10日 ／ 🌷 最終更新：2026年9月11日</p>'
 
         + _about_chat("lupinus", "happy", "ルピナス", "笑顔",
             "最後まで読んでくれてありがとう🌸 ご質問があれば、いつでもXのDMでね。")

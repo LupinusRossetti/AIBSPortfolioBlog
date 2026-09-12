@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11",
+ "updated": "2026-09-12",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 87,
-  "sfw:iris": 62,
-  "sfw:fiona": 59,
+  "sfw:fiona": 61,
+  "sfw:iris": 63,
+  "sfw:lupinus": 88,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "fbb8f8383c3a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "花屋の朝。運んできた金木犀の枝から花がこぼれて、思わず声をあげて笑う",
+   "date": "2026-09-12",
+   "src": "images/gallery-sns/sfw/fiona/fbb8f8383c3a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/fbb8f8383c3a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "964763a7272d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜更かしのおどかしごっこ。白いシーツを頭からかぶって、暗い廊下から飛び出す",
+   "date": "2026-09-12",
+   "src": "images/gallery-sns/sfw/iris/964763a7272d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/964763a7272d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5dcc6970f5ab",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "湯上がり。浴衣を肩に引っかけたまま縁側へ出て、月に照らされた庭に驚いて手すりから身を乗り出す",
+   "date": "2026-09-12",
+   "src": "images/gallery-sns/sfw/fiona/5dcc6970f5ab.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/5dcc6970f5ab_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "53d8ef4f0051",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "宇宙の日。天文台の丘で、模型のロケットを持って駆け出す",
+   "date": "2026-09-12",
+   "src": "images/gallery-sns/sfw/lupinus/53d8ef4f0051.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/53d8ef4f0051_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "ed291ed12975",
    "char": "lupinus",

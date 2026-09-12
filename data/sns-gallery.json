@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-10",
+ "updated": "2026-09-11",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:fiona": 57,
-  "sfw:iris": 61,
-  "sfw:lupinus": 82,
+  "sfw:lupinus": 87,
+  "sfw:iris": 62,
+  "sfw:fiona": 59,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "ed291ed12975",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "姉妹でゲーム対戦",
+   "date": "2026-09-11",
+   "src": "images/gallery-sns/sfw/lupinus/ed291ed12975.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ed291ed12975_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "d71af7a0da20",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "配信が終わったあとの一息",
+   "date": "2026-09-11",
+   "src": "images/gallery-sns/sfw/lupinus/d71af7a0da20.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d71af7a0da20_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5a81151b8c62",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "走ったあと、肩を回して息を整える",
+   "date": "2026-09-11",
+   "src": "images/gallery-sns/sfw/lupinus/5a81151b8c62.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5a81151b8c62_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "5929556bfcc1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "公衆電話の日。夕方の街角の電話ボックスから、受話器を持って手を振る",
+   "date": "2026-09-11",
+   "src": "images/gallery-sns/sfw/iris/5929556bfcc1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/5929556bfcc1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fb868ada2d1d",
    "char": "fiona",
@@ -58,19 +110,6 @@
    "h": 1280
   },
   {
-   "id": "d46a5e6bfd71",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#幸運シチュエーション 2",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/iris/d46a5e6bfd71.webp",
-   "thumb": "images/gallery-sns/sfw/iris/d46a5e6bfd71_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
    "id": "cb110fb257f1",
    "char": "iris",
    "nsfw": false,
@@ -93,6 +132,19 @@
    "date": "2026-09-10",
    "src": "images/gallery-sns/sfw/lupinus/c2b7e324e668.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/c2b7e324e668_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "b85f8b17a93a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水族館のトンネルで同じ魚を指さす",
+   "date": "2026-09-10",
+   "src": "images/gallery-sns/sfw/lupinus/b85f8b17a93a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b85f8b17a93a_t.webp",
    "w": 1280,
    "h": 720
   },
@@ -123,19 +175,6 @@
    "h": 1280
   },
   {
-   "id": "a17ce49dc37c",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#生クリーム",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/iris/a17ce49dc37c.webp",
-   "thumb": "images/gallery-sns/sfw/iris/a17ce49dc37c_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
    "id": "a1709785a218",
    "char": "lupinus",
    "nsfw": false,
@@ -145,32 +184,6 @@
    "date": "2026-09-10",
    "src": "images/gallery-sns/sfw/lupinus/a1709785a218.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/a1709785a218_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "999041260d71",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#幸運シチュエーション 3",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/fiona/999041260d71.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/999041260d71_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "998f9f8d4dbd",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#幸運シチュエーション",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/lupinus/998f9f8d4dbd.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/998f9f8d4dbd_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -197,32 +210,6 @@
    "date": "2026-09-10",
    "src": "images/gallery-sns/sfw/fiona/822843ef7db2.webp",
    "thumb": "images/gallery-sns/sfw/fiona/822843ef7db2_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "6927f22405f0",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#幸運シチュエーション 2",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/iris/6927f22405f0.webp",
-   "thumb": "images/gallery-sns/sfw/iris/6927f22405f0_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "5eb669456a90",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#幸運シチュエーション",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/lupinus/5eb669456a90.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/5eb669456a90_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -266,30 +253,17 @@
    "h": 1280
   },
   {
-   "id": "46039e0f968a",
-   "char": "fiona",
+   "id": "4d3617844554",
+   "char": "lupinus",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#幸運シチュエーション 3",
+   "title": "定時 2人LoRA 水族館のトンネルで同じ魚を指さす",
    "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/fiona/46039e0f968a.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/46039e0f968a_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "45ee28e7225d",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#生クリーム",
-   "date": "2026-09-10",
-   "src": "images/gallery-sns/sfw/iris/45ee28e7225d.webp",
-   "thumb": "images/gallery-sns/sfw/iris/45ee28e7225d_t.webp",
+   "src": "images/gallery-sns/sfw/lupinus/4d3617844554.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4d3617844554_t.webp",
    "w": 1280,
-   "h": 1280
+   "h": 720
   },
   {
    "id": "29d935f9146d",
@@ -578,6 +552,19 @@
    "h": 1280
   },
   {
+   "id": "d46a5e6bfd71",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 2",
+   "date": "2026-09-07",
+   "src": "images/gallery-sns/sfw/iris/d46a5e6bfd71.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d46a5e6bfd71_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "ae76e9de9f9f",
    "char": "lupinus",
    "nsfw": false,
@@ -604,6 +591,32 @@
    "h": 1280
   },
   {
+   "id": "999041260d71",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 3",
+   "date": "2026-09-07",
+   "src": "images/gallery-sns/sfw/fiona/999041260d71.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/999041260d71_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "998f9f8d4dbd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション",
+   "date": "2026-09-07",
+   "src": "images/gallery-sns/sfw/lupinus/998f9f8d4dbd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/998f9f8d4dbd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "6e40e54adf44",
    "char": "lupinus",
    "nsfw": false,
@@ -617,6 +630,19 @@
    "h": 1280
   },
   {
+   "id": "6927f22405f0",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 2",
+   "date": "2026-09-07",
+   "src": "images/gallery-sns/sfw/iris/6927f22405f0.webp",
+   "thumb": "images/gallery-sns/sfw/iris/6927f22405f0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "62ea279a5758",
    "char": "fiona",
    "nsfw": false,
@@ -626,6 +652,32 @@
    "date": "2026-09-07",
    "src": "images/gallery-sns/sfw/fiona/62ea279a5758.webp",
    "thumb": "images/gallery-sns/sfw/fiona/62ea279a5758_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5eb669456a90",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション",
+   "date": "2026-09-07",
+   "src": "images/gallery-sns/sfw/lupinus/5eb669456a90.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5eb669456a90_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "46039e0f968a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 3",
+   "date": "2026-09-07",
+   "src": "images/gallery-sns/sfw/fiona/46039e0f968a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/46039e0f968a_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -691,6 +743,19 @@
    "date": "2026-09-06",
    "src": "images/gallery-sns/sfw/three/abb01e82c470.webp",
    "thumb": "images/gallery-sns/sfw/three/abb01e82c470_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "a17ce49dc37c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#生クリーム",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/a17ce49dc37c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a17ce49dc37c_t.webp",
    "w": 1280,
    "h": 1280
   },
@@ -783,6 +848,19 @@
    "src": "images/gallery-sns/sfw/lupinus/650b406c9089.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/650b406c9089_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "45ee28e7225d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#生クリーム",
+   "date": "2026-09-06",
+   "src": "images/gallery-sns/sfw/iris/45ee28e7225d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/45ee28e7225d_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -1137,6 +1215,19 @@
    "h": 1280
   },
   {
+   "id": "947ffa3ab64e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 3",
+   "date": "2026-09-02",
+   "src": "images/gallery-sns/sfw/fiona/947ffa3ab64e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/947ffa3ab64e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "8e1792e370eb",
    "char": "iris",
    "nsfw": false,
@@ -1159,6 +1250,19 @@
    "date": "2026-09-02",
    "src": "images/gallery-sns/sfw/lupinus/7d65a5460e9c.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/7d65a5460e9c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "791f2878f2a0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション 3",
+   "date": "2026-09-02",
+   "src": "images/gallery-sns/sfw/fiona/791f2878f2a0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/791f2878f2a0_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1839,84 +1943,6 @@
    "h": 1280
   },
   {
-   "id": "f915e18d788d",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#大正ロマン",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/iris/f915e18d788d.webp",
-   "thumb": "images/gallery-sns/sfw/iris/f915e18d788d_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "f89584ac04ad",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#リゾート",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/fiona/f89584ac04ad.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/f89584ac04ad_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "da751919a160",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#大正ロマン 3",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/fiona/da751919a160.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/da751919a160_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "70b5302ed2b0",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#幸運シチュエーション",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/fiona/70b5302ed2b0.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/70b5302ed2b0_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "585ea393c99c",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#コスプレ",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/iris/585ea393c99c.webp",
-   "thumb": "images/gallery-sns/sfw/iris/585ea393c99c_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "22c02ff5dfdb",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#乗り物",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/lupinus/22c02ff5dfdb.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/22c02ff5dfdb_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "170b1d59d93c",
    "char": "fiona",
    "nsfw": false,
@@ -1939,32 +1965,6 @@
    "date": "2026-08-22",
    "src": "images/gallery-sns/sfw/lupinus/154316fb7f34.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/154316fb7f34_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "0550dc2f1958",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#リゾート",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/lupinus/0550dc2f1958.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/0550dc2f1958_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "00adca30542b",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#納涼",
-   "date": "2026-08-22",
-   "src": "images/gallery-sns/sfw/fiona/00adca30542b.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/00adca30542b_t.webp",
    "w": 1280,
    "h": 1280
   },
@@ -2005,6 +2005,19 @@
    "src": "images/gallery-sns/sfw/fiona/97000793ea01.webp",
    "thumb": "images/gallery-sns/sfw/fiona/97000793ea01_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "70b5302ed2b0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#幸運シチュエーション",
+   "date": "2026-08-21",
+   "src": "images/gallery-sns/sfw/fiona/70b5302ed2b0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/70b5302ed2b0_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -2073,6 +2086,19 @@
    "h": 1280
   },
   {
+   "id": "0550dc2f1958",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#リゾート",
+   "date": "2026-08-20",
+   "src": "images/gallery-sns/sfw/lupinus/0550dc2f1958.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0550dc2f1958_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "eb0c4ba98879",
    "char": "lupinus",
    "nsfw": false,
@@ -2125,6 +2151,19 @@
    "h": 1280
   },
   {
+   "id": "f89584ac04ad",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#リゾート",
+   "date": "2026-08-18",
+   "src": "images/gallery-sns/sfw/fiona/f89584ac04ad.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/f89584ac04ad_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "cd2af3bf57e8",
    "char": "iris",
    "nsfw": false,
@@ -2173,6 +2212,19 @@
    "date": "2026-08-18",
    "src": "images/gallery-sns/sfw/lupinus/2707f6e161a3.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/2707f6e161a3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "22c02ff5dfdb",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#乗り物",
+   "date": "2026-08-18",
+   "src": "images/gallery-sns/sfw/lupinus/22c02ff5dfdb.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/22c02ff5dfdb_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -2255,6 +2307,19 @@
    "h": 1280
   },
   {
+   "id": "585ea393c99c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#コスプレ",
+   "date": "2026-08-16",
+   "src": "images/gallery-sns/sfw/iris/585ea393c99c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/585ea393c99c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "402d05476331",
    "char": "fiona",
    "nsfw": false,
@@ -2277,6 +2342,19 @@
    "date": "2026-08-16",
    "src": "images/gallery-sns/sfw/lupinus/08adc487c446.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/08adc487c446_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "00adca30542b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#納涼",
+   "date": "2026-08-16",
+   "src": "images/gallery-sns/sfw/fiona/00adca30542b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/00adca30542b_t.webp",
    "w": 1280,
    "h": 1280
   },
@@ -2541,6 +2619,19 @@
    "h": 1280
   },
   {
+   "id": "f915e18d788d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#大正ロマン",
+   "date": "2026-08-13",
+   "src": "images/gallery-sns/sfw/iris/f915e18d788d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f915e18d788d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "ecb1c41b9a24",
    "char": "fiona",
    "nsfw": false,
@@ -2551,6 +2642,19 @@
    "src": "images/gallery-sns/sfw/fiona/ecb1c41b9a24.webp",
    "thumb": "images/gallery-sns/sfw/fiona/ecb1c41b9a24_t.webp",
    "w": 996,
+   "h": 1280
+  },
+  {
+   "id": "da751919a160",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#大正ロマン 3",
+   "date": "2026-08-13",
+   "src": "images/gallery-sns/sfw/fiona/da751919a160.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/da751919a160_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

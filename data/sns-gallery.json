@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12",
+ "updated": "2026-09-14",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,118 @@
   }
  },
  "counts": {
-  "sfw:fiona": 61,
-  "sfw:iris": 63,
-  "sfw:lupinus": 88,
+  "sfw:fiona": 63,
+  "sfw:lupinus": 92,
+  "sfw:iris": 65,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "e30ddc29cab4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "読手の一音目で全員より早く手が出て、払った札が自分の膝に当たる",
+   "date": "2026-09-14",
+   "src": "images/gallery-sns/sfw/fiona/e30ddc29cab4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e30ddc29cab4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "56b06fe34112",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "流星群の夜、ベランダで毛布にくるまって膝を抱え、流れた星を見つけて空を指さす",
+   "date": "2026-09-14",
+   "src": "images/gallery-sns/sfw/lupinus/56b06fe34112.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/56b06fe34112_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4be66040d8f7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "メンズバレンタインデーにちなんで、花屋で大きなリボンを結んだ花束を、身を乗り出してこっちへ差し出す",
+   "date": "2026-09-14",
+   "src": "images/gallery-sns/sfw/iris/4be66040d8f7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4be66040d8f7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2e14ffcba25b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "編み上がったマフラーを首に巻いて居間でくるっと回ったら、長すぎて端が床まで引きずる",
+   "date": "2026-09-14",
+   "src": "images/gallery-sns/sfw/fiona/2e14ffcba25b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2e14ffcba25b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cbeb767b0e7e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "遠出の朝、駅のホームで革のトランクを提げて電車を待つ",
+   "date": "2026-09-13",
+   "src": "images/gallery-sns/sfw/lupinus/cbeb767b0e7e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/cbeb767b0e7e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b4452300c6ca",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "お父さんの日。書き上げた感謝のカードを両手で掲げて跳ねる。万年筆とネクタイは包みの横に",
+   "date": "2026-09-13",
+   "src": "images/gallery-sns/sfw/iris/b4452300c6ca.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b4452300c6ca_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9d83bd0e3789",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のベッドでうつ伏せになり、妹たちからの手紙を封筒ごと出して読み返す",
+   "date": "2026-09-13",
+   "src": "images/gallery-sns/sfw/lupinus/9d83bd0e3789.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9d83bd0e3789_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "6745feaffbf4",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "寝る前、ベッドに仰向けで両脚を壁に上げて",
+   "date": "2026-09-13",
+   "src": "images/gallery-sns/sfw/lupinus/6745feaffbf4.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6745feaffbf4_t.webp",
+   "w": 1280,
+   "h": 720
+  },
   {
    "id": "fbb8f8383c3a",
    "char": "fiona",
@@ -2520,7 +2624,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "朝食のパンを取り合う",
+   "title": "アイリスちゃんとフィオナが朝の台所で、焼きたてのトーストを両側からつかんで引っぱり合う。アイリスは笑い、フィオナは頬をふ",
    "date": "2026-08-15",
    "src": "images/gallery-sns/sfw/three/547e49c41426.webp",
    "thumb": "images/gallery-sns/sfw/three/547e49c41426_t.webp",

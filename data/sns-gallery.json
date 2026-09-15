@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14",
+ "updated": "2026-09-15",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:fiona": 63,
-  "sfw:lupinus": 92,
-  "sfw:iris": 65,
+  "sfw:lupinus": 94,
+  "sfw:iris": 66,
+  "sfw:fiona": 64,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "79975d89817e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ナースの夜勤の休憩。詰所の椅子で靴を脱ぎ、両腕を上げて大きく伸びをしながらあくびが出る",
+   "date": "2026-09-15",
+   "src": "images/gallery-sns/sfw/lupinus/79975d89817e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/79975d89817e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2f7c3a687348",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "芋掘りで掘ったさつまいもをかごに山盛りにして、両手で頭の上まで持ち上げて笑う",
+   "date": "2026-09-15",
+   "src": "images/gallery-sns/sfw/iris/2f7c3a687348.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2f7c3a687348_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2d0018ee6814",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋祭りの夜、太鼓のばちを両手で頭上に振り上げて、提灯の下で笑う",
+   "date": "2026-09-15",
+   "src": "images/gallery-sns/sfw/lupinus/2d0018ee6814.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2d0018ee6814_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2596e5a5e44a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "老人の日にちなんで、茶屋の赤い縁台で、湯のみのお茶とお団子をお盆に載せてこっちへ差し出す",
+   "date": "2026-09-15",
+   "src": "images/gallery-sns/sfw/fiona/2596e5a5e44a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2596e5a5e44a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e30ddc29cab4",
    "char": "fiona",

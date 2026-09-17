@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15",
+ "updated": "2026-09-17",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 94,
-  "sfw:iris": 66,
-  "sfw:fiona": 64,
+  "sfw:iris": 69,
+  "sfw:lupinus": 96,
+  "sfw:fiona": 65,
   "sfw:three": 9
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "856d5dcbe9f0",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 顎を掴まれてキス寸前で止まる",
+   "date": "2026-09-17",
+   "src": "images/gallery-sns/sfw/iris/856d5dcbe9f0.webp",
+   "thumb": "images/gallery-sns/sfw/iris/856d5dcbe9f0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "e62cf8a9313f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "アイリスちゃんとフィオナが朝の台所で、焼きたてのトーストを両側からつかんで引っぱり合う。アイリスは笑い、フィオナは頬をふ",
+   "date": "2026-09-16",
+   "src": "images/gallery-sns/sfw/iris/e62cf8a9313f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e62cf8a9313f_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "85f1c2ec1334",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA すれ違いざまに頬へキス",
+   "date": "2026-09-16",
+   "src": "images/gallery-sns/sfw/iris/85f1c2ec1334.webp",
+   "thumb": "images/gallery-sns/sfw/iris/85f1c2ec1334_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "65c0c3af177d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の暗い廊下を懐中電灯を持ったルピナスが進み、腕にしがみついたアイリスと一緒に振り返る。窓から月明かり",
+   "date": "2026-09-16",
+   "src": "images/gallery-sns/sfw/lupinus/65c0c3af177d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/65c0c3af177d_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "55c158db60a3",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "マッチの日。雨の午後、雑貨屋のカウンターでランタンのろうそくに火を灯し、両手で持って嬉しそうに笑う",
+   "date": "2026-09-16",
+   "src": "images/gallery-sns/sfw/fiona/55c158db60a3.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/55c158db60a3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0411cdff1357",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜、湯上がりにバスローブ姿でドライヤーを当て、温風に髪をなびかせながら片目をつむって大きなあくびをする",
+   "date": "2026-09-16",
+   "src": "images/gallery-sns/sfw/lupinus/0411cdff1357.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0411cdff1357_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "79975d89817e",
    "char": "lupinus",

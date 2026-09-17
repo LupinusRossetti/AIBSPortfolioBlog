@@ -80,8 +80,13 @@ def fetch(url: str, timeout: int = 15, tries: int = 6, wait: float = 3.0) -> byt
         except urllib.error.URLError as e:
             last = e
         if i < tries - 1:
-            print("  [retry %d/%d] %s ← %s" % (i + 1, tries - 1, url[:70], last))
-            time.sleep(wait)
+            # 🚨2026-09-17（TASKS 0-109）＝9/16 のブログ承認が YouTube の 404/500 で止まり、`--approve` を
+            #   1分おきに十数回繰り返してやっと通った。3秒×5回では数分続く不調に届かない。
+            #   → 待ち時間は指数で伸ばす（3→6→12→24→48 秒＝合計 1.5 分）。それでも駄目なら `update_archive` が
+            #   動画の節を前回の内容のままにして記事の公開を止めない。
+            delay = wait * (2 ** i)
+            print("  [retry %d/%d] %.0f秒待つ %s ← %s" % (i + 1, tries - 1, delay, url[:70], last))
+            time.sleep(delay)
     raise last
 
 
@@ -188,7 +193,14 @@ def update_archive() -> dict:
 
     channel_id = resolve_channel_id()
     print(f"[update_videos] channel_id={channel_id}")
-    rss = fetch_rss(channel_id)
+    try:
+        rss = fetch_rss(channel_id)
+    except Exception as e:
+        # 🚨2026-09-17（TASKS 0-109）＝再試行しても RSS が取れないときは**動画の節を前回の内容のまま**にして
+        #   記事の公開（`finalize_daily_review --approve`）を止めない。0件を「配信なし」と誤判定しないよう
+        #   何も足さず、取れなかったことをはっきり出す（次回の実行で追いつく）。
+        print(f"[update_videos] 🚨 RSS が取れないので動画の節は前回のまま（記事の公開は止めない）: {e}")
+        return data
     print(f"[update_videos] RSS取得: {len(rss)}件")
 
     # 既存IDをまとめておき、新規だけ分類処理（oEmbed節約）

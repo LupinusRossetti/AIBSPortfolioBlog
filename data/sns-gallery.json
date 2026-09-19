@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17",
+ "updated": "2026-09-18",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 97,
-  "sfw:fiona": 67,
-  "sfw:three": 11,
-  "sfw:iris": 69
+  "sfw:lupinus": 100,
+  "sfw:three": 13,
+  "sfw:iris": 70,
+  "sfw:fiona": 67
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "e3c11313da71",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "銀杏並木の歩道で潰れた銀杏を踏んでしまい、片足を上げて靴底を見ながら鼻をつまむ",
+   "date": "2026-09-18",
+   "src": "images/gallery-sns/sfw/lupinus/e3c11313da71.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e3c11313da71_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "df2baed5d482",
+   "char": "three",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水のかけあいで服が透ける",
+   "date": "2026-09-18",
+   "src": "images/gallery-sns/sfw/three/df2baed5d482.webp",
+   "thumb": "images/gallery-sns/sfw/three/df2baed5d482_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "9eb6b8a53534",
+   "char": "three",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水のかけあいで服が透ける",
+   "date": "2026-09-18",
+   "src": "images/gallery-sns/sfw/three/9eb6b8a53534.webp",
+   "thumb": "images/gallery-sns/sfw/three/9eb6b8a53534_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "98c3278ae209",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "暖炉に薪を足したら火が思ったより強くて、赤いストールを握ったまま窓辺まで一歩下がる",
+   "date": "2026-09-18",
+   "src": "images/gallery-sns/sfw/lupinus/98c3278ae209.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/98c3278ae209_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7b9f665b9d1e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "焼肉屋で妹たちの分まで網を担当。トングを両手に持って煙の向こうで真剣",
+   "date": "2026-09-18",
+   "src": "images/gallery-sns/sfw/lupinus/7b9f665b9d1e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7b9f665b9d1e_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "2f22c4dea496",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "世界竹の日にちなんで、竹林と風鈴と過ごす",
+   "date": "2026-09-18",
+   "src": "images/gallery-sns/sfw/iris/2f22c4dea496.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2f22c4dea496_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f7ae208ff736",
    "char": "lupinus",

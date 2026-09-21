@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18",
+ "updated": "2026-09-19",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 100,
-  "sfw:three": 13,
-  "sfw:iris": 70,
-  "sfw:fiona": 67
+  "sfw:iris": 72,
+  "sfw:fiona": 68,
+  "sfw:lupinus": 101,
+  "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "f1986384f71d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "お城の天蓋つきベッドにうつ伏せに寝そべって、足をぱたぱたさせながらマカロンを口いっぱいに頬張る",
+   "date": "2026-09-19",
+   "src": "images/gallery-sns/sfw/iris/f1986384f71d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f1986384f71d_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "e73c4cdcdf00",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "図書館の朝、返却台の本が背より高く積み上がり、一番上を取ろうとして爪先立ちになる",
+   "date": "2026-09-19",
+   "src": "images/gallery-sns/sfw/fiona/e73c4cdcdf00.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e73c4cdcdf00_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e45c13097b6b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "国際レッサーパンダデーにちなんで、レッサ",
+   "date": "2026-09-19",
+   "src": "images/gallery-sns/sfw/lupinus/e45c13097b6b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e45c13097b6b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cc8e7d335af0",
+   "char": "three",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 本番前の楽屋で蝶ネクタイを直してもらう",
+   "date": "2026-09-19",
+   "src": "images/gallery-sns/sfw/three/cc8e7d335af0.webp",
+   "thumb": "images/gallery-sns/sfw/three/cc8e7d335af0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "497212fab57f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "真上で開いた花火の音に驚いて、誘導灯を持ったまま肩がはねる",
+   "date": "2026-09-19",
+   "src": "images/gallery-sns/sfw/iris/497212fab57f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/497212fab57f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e3c11313da71",
    "char": "lupinus",

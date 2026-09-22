@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19",
+ "updated": "2026-09-21",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:iris": 72,
-  "sfw:fiona": 68,
-  "sfw:lupinus": 101,
+  "sfw:iris": 73,
+  "sfw:lupinus": 103,
+  "sfw:fiona": 70,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "fbd15baab47e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ハロウィンの準備でかぼちゃのランタンを彫っていて、すくった中身が手からぼたっと落ちて顔をしかめつつ笑う",
+   "date": "2026-09-21",
+   "src": "images/gallery-sns/sfw/iris/fbd15baab47e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/fbd15baab47e_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "f656f1f1e502",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 自転車を押しながら並んで坂を下りる",
+   "date": "2026-09-21",
+   "src": "images/gallery-sns/sfw/lupinus/f656f1f1e502.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f656f1f1e502_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "7a5602d46467",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の朝の駅のホームで、電車を待ちながら両手で持った温かい缶を頬に当てて、ほっと目を細める",
+   "date": "2026-09-21",
+   "src": "images/gallery-sns/sfw/fiona/7a5602d46467.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7a5602d46467_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "4b157ab75a27",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "敬老の日。花屋の店先で、おばあちゃんへ贈る花束に封筒を添えてもらい、両腕で抱えてくるりと振り向いて笑う",
+   "date": "2026-09-21",
+   "src": "images/gallery-sns/sfw/lupinus/4b157ab75a27.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4b157ab75a27_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0fe65239b5c1",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ナースの衣装で夜の病室を見回る練習。聴診器を自分の胸に当てて、自分の鼓動の速さに驚く",
+   "date": "2026-09-21",
+   "src": "images/gallery-sns/sfw/fiona/0fe65239b5c1.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/0fe65239b5c1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f1986384f71d",
    "char": "iris",

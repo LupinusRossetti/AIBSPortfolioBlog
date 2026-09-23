@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21",
+ "updated": "2026-09-22",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:iris": 73,
-  "sfw:lupinus": 103,
-  "sfw:fiona": 70,
+  "sfw:iris": 74,
+  "sfw:lupinus": 106,
+  "sfw:fiona": 71,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "f73001a3e895",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA プールで抱きついて浮く",
+   "date": "2026-09-22",
+   "src": "images/gallery-sns/sfw/iris/f73001a3e895.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f73001a3e895_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "c48e957edff1",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "湯上がりの縁側に寝そべって、濡れた髪をタオルで挟んだまま夜風に当たる",
+   "date": "2026-09-22",
+   "src": "images/gallery-sns/sfw/lupinus/c48e957edff1.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c48e957edff1_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "90b957b92a37",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の窓辺で、焼きたてのクロワッサンを半分に割って、立つ湯気に目を細める",
+   "date": "2026-09-22",
+   "src": "images/gallery-sns/sfw/lupinus/90b957b92a37.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/90b957b92a37_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "72ae8511e009",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "湯気の立つカップを両手で包んで、匂いだけ先に確かめる",
+   "date": "2026-09-22",
+   "src": "images/gallery-sns/sfw/lupinus/72ae8511e009.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/72ae8511e009_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "23bb58160c72",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "フィットネスの日にちなんで、ヨガマットと",
+   "date": "2026-09-22",
+   "src": "images/gallery-sns/sfw/fiona/23bb58160c72.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/23bb58160c72_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fbd15baab47e",
    "char": "iris",

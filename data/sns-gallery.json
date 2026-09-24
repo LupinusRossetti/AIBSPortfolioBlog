@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-23",
+ "updated": "2026-09-24",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,53 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 108,
+  "sfw:lupinus": 109,
+  "sfw:iris": 77,
   "sfw:fiona": 73,
-  "sfw:iris": 75,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "c9091519023f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI瑠璃宝玉の麗人",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/lupinus/c9091519023f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c9091519023f_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "37402e4d5742",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI猫カフェ",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/iris/37402e4d5742.webp",
+   "thumb": "images/gallery-sns/sfw/iris/37402e4d5742_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "04aa34f2e658",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIロリータファッション博覧会",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/iris/04aa34f2e658.webp",
+   "thumb": "images/gallery-sns/sfw/iris/04aa34f2e658_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f0641e6656d3",
    "char": "lupinus",

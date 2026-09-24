@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22",
+ "updated": "2026-09-23",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:iris": 74,
-  "sfw:lupinus": 106,
-  "sfw:fiona": 71,
+  "sfw:lupinus": 108,
+  "sfw:fiona": 73,
+  "sfw:iris": 75,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "f0641e6656d3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA コンビニの前で最後の肉まんを取り合う",
+   "date": "2026-09-23",
+   "src": "images/gallery-sns/sfw/lupinus/f0641e6656d3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f0641e6656d3_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "e5295db04aa0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "祭りの夜店の通り。舞台衣装のまま片付けを手伝っていたら、肩の合わせが落ちて結び直している",
+   "date": "2026-09-23",
+   "src": "images/gallery-sns/sfw/fiona/e5295db04aa0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e5295db04aa0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d0520d8704aa",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "和菓子屋の台所。お椀に並んだ色とりどりの練り切りを、どれから箸でつまむか迷って固まる",
+   "date": "2026-09-23",
+   "src": "images/gallery-sns/sfw/fiona/d0520d8704aa.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d0520d8704aa_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4f4971194fe2",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "居間のソファに腹ばいになって、手も足も浮かせたままバランスを取る",
+   "date": "2026-09-23",
+   "src": "images/gallery-sns/sfw/iris/4f4971194fe2.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4f4971194fe2_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "2bfef8dea383",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋分の日。彼岸花の咲く丘で、三色のお団子をのせたお盆を持って石に腰かける",
+   "date": "2026-09-23",
+   "src": "images/gallery-sns/sfw/lupinus/2bfef8dea383.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2bfef8dea383_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f73001a3e895",
    "char": "iris",

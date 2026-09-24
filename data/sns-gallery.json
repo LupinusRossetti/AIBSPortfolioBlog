@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:fiona": 77,
-  "sfw:iris": 84,
+  "sfw:iris": 85,
   "sfw:lupinus": 116,
   "sfw:three": 14
  },
@@ -120,6 +120,19 @@
    "src": "images/gallery-sns/sfw/lupinus/c9091519023f.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/c9091519023f_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "c6fde2acb210",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 H3動画 褒められて目をそらし、頬に手を当てて上目",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/iris/c6fde2acb210.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c6fde2acb210_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

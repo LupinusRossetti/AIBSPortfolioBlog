@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:iris": 83,
-  "sfw:lupinus": 113,
-  "sfw:fiona": 76,
+  "sfw:fiona": 77,
+  "sfw:iris": 84,
+  "sfw:lupinus": 116,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "fb2c69f103ac",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "出張帰りのスーツのまま、ホテルの広いベッドに仰向けで倒れ込み、靴も脱がずに目を閉じる",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/fiona/fb2c69f103ac.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/fb2c69f103ac_t.webp",
+   "w": 1280,
+   "h": 720
+  },
   {
    "id": "eb758d86930a",
    "char": "iris",
@@ -41,6 +54,32 @@
    "date": "2026-09-24",
    "src": "images/gallery-sns/sfw/iris/eb758d86930a.webp",
    "thumb": "images/gallery-sns/sfw/iris/eb758d86930a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e2098b435de3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 背中に日焼け止めを塗る",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/lupinus/e2098b435de3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e2098b435de3_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "e08e8be37739",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "世界ゴリラの日にちなんで、ゴリラのぬいぐ",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/iris/e08e8be37739.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e08e8be37739_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -108,6 +147,19 @@
    "thumb": "images/gallery-sns/sfw/iris/94c89f96b0ad_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "8991605f29c0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "きのこ狩りの森で、籠を抱えてしゃがみ込み、図鑑を開いたまま足もとの赤いきのこと見比べて動かなくなる",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/lupinus/8991605f29c0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8991605f29c0_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "661e856ce359",
@@ -186,6 +238,19 @@
    "thumb": "images/gallery-sns/sfw/fiona/30b08a7055fd_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "2ea5e7d42c50",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "城の書庫の長椅子に足を投げ出して寝そべり、読みかけの本を片手に持ったまま、もう片手で口元を隠してあくびをしながら眠りかけ",
+   "date": "2026-09-24",
+   "src": "images/gallery-sns/sfw/lupinus/2ea5e7d42c50.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2ea5e7d42c50_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "1775b9f3fda7",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24",
+ "updated": "2026-09-25",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,27 @@
   }
  },
  "counts": {
+  "sfw:lupinus": 117,
   "sfw:fiona": 77,
   "sfw:iris": 85,
-  "sfw:lupinus": 116,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "e60eee81f078",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "銭湯の湯船の縁に頭を預けて、天井の湯気の行方を目で追う",
+   "date": "2026-09-25",
+   "src": "images/gallery-sns/sfw/lupinus/e60eee81f078.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e60eee81f078_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "fb2c69f103ac",
    "char": "fiona",

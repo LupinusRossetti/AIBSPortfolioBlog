@@ -23,14 +23,40 @@
   }
  },
  "counts": {
-  "sfw:fiona": 82,
-  "sfw:iris": 88,
-  "sfw:lupinus": 119,
+  "sfw:iris": 90,
+  "sfw:fiona": 84,
+  "sfw:lupinus": 121,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "ffd70dbc4e8f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のリビングのソファに仰向けで寝ころび、アイリスがスマホを見上げてジト目になっている",
+   "date": "2026-09-26",
+   "src": "images/gallery-sns/sfw/iris/ffd70dbc4e8f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ffd70dbc4e8f_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "f7e62495d40b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "和室の畳で、矢絣の袴のアイリスが歯を食いしばって、散らばったトランプの札へ全力で手を伸ばす",
+   "date": "2026-09-26",
+   "src": "images/gallery-sns/sfw/iris/f7e62495d40b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f7e62495d40b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f25a3e6eec15",
    "char": "fiona",
@@ -42,6 +68,32 @@
    "src": "images/gallery-sns/sfw/fiona/f25a3e6eec15.webp",
    "thumb": "images/gallery-sns/sfw/fiona/f25a3e6eec15_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "d1f49a890d78",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 撮る人と撮られる人が入れ替わる写真散歩",
+   "date": "2026-09-26",
+   "src": "images/gallery-sns/sfw/lupinus/d1f49a890d78.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d1f49a890d78_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "9392ab68229e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "寝室の窓辺の椅子に横向きに沈んで、膝に毛布を掛けたまま外の灯りを見る",
+   "date": "2026-09-26",
+   "src": "images/gallery-sns/sfw/lupinus/9392ab68229e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9392ab68229e_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -68,6 +120,32 @@
    "src": "images/gallery-sns/sfw/lupinus/5f7fefe84efe.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/5f7fefe84efe_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3f8b52ef6757",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 H3動画 人差し指を唇に当てて「内緒ですよ」とウイ",
+   "date": "2026-09-26",
+   "src": "images/gallery-sns/sfw/fiona/3f8b52ef6757.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3f8b52ef6757_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1d5ccb4d44a7",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "くつろぎの日にちなんで、ソファーと毛布、",
+   "date": "2026-09-26",
+   "src": "images/gallery-sns/sfw/fiona/1d5ccb4d44a7.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/1d5ccb4d44a7_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

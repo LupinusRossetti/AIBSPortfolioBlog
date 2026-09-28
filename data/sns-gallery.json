@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 95,
-  "sfw:lupinus": 127,
-  "sfw:fiona": 88,
+  "sfw:iris": 97,
+  "sfw:fiona": 90,
+  "sfw:lupinus": 129,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -55,6 +55,19 @@
    "src": "images/gallery-sns/sfw/iris/db5ef272c1ae.webp",
    "thumb": "images/gallery-sns/sfw/iris/db5ef272c1ae_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d41929039d9e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の夜長読書の日にちなんで、読書灯と毛布",
+   "date": "2026-09-28",
+   "src": "images/gallery-sns/sfw/fiona/d41929039d9e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d41929039d9e_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -95,6 +108,71 @@
    "thumb": "images/gallery-sns/sfw/iris/9b77647fb6e8_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "9b2fea31a6bc",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 H3動画 紅葉を一枚拾って日に透かし、葉脈を見てか",
+   "date": "2026-09-28",
+   "src": "images/gallery-sns/sfw/fiona/9b2fea31a6bc.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/9b2fea31a6bc_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5ee4b4369ccb",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "現代の市役所の窓口で、書類の綴じ方を並んだ人に見せながら説明する",
+   "date": "2026-09-28",
+   "src": "images/gallery-sns/sfw/lupinus/5ee4b4369ccb.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5ee4b4369ccb_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "33a0ca7b092f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プラネタリウムの終演後、投影機の電源を落としに来て、消える直前の星をひとりで見上げる",
+   "date": "2026-09-28",
+   "src": "images/gallery-sns/sfw/iris/33a0ca7b092f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/33a0ca7b092f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2fe9062f193a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 寝顔をつついて起こす",
+   "date": "2026-09-28",
+   "src": "images/gallery-sns/sfw/iris/2fe9062f193a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2fe9062f193a_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "0985096bbaa9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ソファにうつ伏せで漫画を読み、ページをめくるたびに足首が交差する",
+   "date": "2026-09-28",
+   "src": "images/gallery-sns/sfw/lupinus/0985096bbaa9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0985096bbaa9_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "e21508a90abf",

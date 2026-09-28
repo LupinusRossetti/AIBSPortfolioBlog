@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,105 @@
   }
  },
  "counts": {
-  "sfw:iris": 90,
-  "sfw:fiona": 84,
-  "sfw:lupinus": 121,
+  "sfw:fiona": 87,
+  "sfw:lupinus": 124,
+  "sfw:iris": 91,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "e21508a90abf",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "最後の一通を受取人に手渡し終えて、空になった鞄を抱えて背伸びをする",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/fiona/e21508a90abf.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e21508a90abf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "caf69b68a5ba",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 川べりのピクニックでバスケットを開けた瞬",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/lupinus/caf69b68a5ba.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/caf69b68a5ba_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "be6de75b5eb8",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 H3動画 「え、私？」ときょとんとして自分を指さし",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/lupinus/be6de75b5eb8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/be6de75b5eb8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b1bb74173144",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 川べりのピクニックでバスケットを開けた瞬",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/lupinus/b1bb74173144.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b1bb74173144_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "a64565e35c64",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "世界観光の日にちなんで、スーツケースと旅",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/iris/a64565e35c64.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a64565e35c64_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "84eaec220fe9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "天体観測の帰り、芝生に寝そべって双眼鏡で星を探す",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/fiona/84eaec220fe9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/84eaec220fe9_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "59ef25421170",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "洗濯物をきっちり畳む",
+   "date": "2026-09-27",
+   "src": "images/gallery-sns/sfw/fiona/59ef25421170.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/59ef25421170_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "ffd70dbc4e8f",
    "char": "iris",

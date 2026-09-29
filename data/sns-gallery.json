@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 135,
-  "sfw:fiona": 95,
-  "sfw:iris": 101,
+  "sfw:lupinus": 136,
+  "sfw:fiona": 97,
+  "sfw:iris": 104,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -123,6 +123,19 @@
    "h": 1280
   },
   {
+   "id": "bd700d200e57",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 対戦ゲームで肘がぶつかる",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/iris/bd700d200e57.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bd700d200e57_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "bca9caf422fe",
    "char": "lupinus",
    "nsfw": false,
@@ -175,6 +188,32 @@
    "h": 1280
   },
   {
+   "id": "9950747174d5",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "現代の図書館の返却カウンターで、積まれた本の背を順にそろえる",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/fiona/9950747174d5.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/9950747174d5_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "868254291e5a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "骨董市の朝。値切られて、手の中の湯のみの値段を暗算しようとして目が泳ぐ",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/fiona/868254291e5a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/868254291e5a_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "812971854ed5",
    "char": "fiona",
    "nsfw": false,
@@ -184,6 +223,19 @@
    "date": "2026-09-29",
    "src": "images/gallery-sns/sfw/fiona/812971854ed5.webp",
    "thumb": "images/gallery-sns/sfw/fiona/812971854ed5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "784a784ad705",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "招き猫の日にちなんで、招き猫の置物と小判",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/iris/784a784ad705.webp",
+   "thumb": "images/gallery-sns/sfw/iris/784a784ad705_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -223,6 +275,32 @@
    "date": "2026-09-29",
    "src": "images/gallery-sns/sfw/fiona/27b70b7c717e.webp",
    "thumb": "images/gallery-sns/sfw/fiona/27b70b7c717e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "23c7410c6cb5",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 H3動画 ベッドで目をこすり、あくびをこらえて大き",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/iris/23c7410c6cb5.webp",
+   "thumb": "images/gallery-sns/sfw/iris/23c7410c6cb5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0aec33897bff",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "終電のあとの車内で忘れ物を探して回り、座席に残ったぬいぐるみを見つけて懐中電灯で照らし、目を輝かせる",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/lupinus/0aec33897bff.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0aec33897bff_t.webp",
    "w": 720,
    "h": 1280
   },

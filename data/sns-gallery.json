@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 134,
-  "sfw:fiona": 94,
-  "sfw:iris": 100,
+  "sfw:lupinus": 135,
+  "sfw:fiona": 95,
+  "sfw:iris": 101,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -136,6 +136,32 @@
    "h": 1280
   },
   {
+   "id": "b3a7fd489d5e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#R-15盛り上げ隊",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/iris/b3a7fd489d5e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b3a7fd489d5e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b357fcf4fb69",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#R-15盛り上げ隊",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/lupinus/b357fcf4fb69.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b357fcf4fb69_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "aa10fb98d80c",
    "char": "iris",
    "nsfw": false,
@@ -184,6 +210,19 @@
    "date": "2026-09-29",
    "src": "images/gallery-sns/sfw/iris/68a8203a7747.webp",
    "thumb": "images/gallery-sns/sfw/iris/68a8203a7747_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "27b70b7c717e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#R-15盛り上げ隊",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/fiona/27b70b7c717e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/27b70b7c717e_t.webp",
    "w": 720,
    "h": 1280
   },

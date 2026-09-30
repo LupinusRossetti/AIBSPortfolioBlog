@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:iris": 106,
-  "sfw:fiona": 99,
-  "sfw:lupinus": 137,
+  "sfw:lupinus": 141,
+  "sfw:iris": 109,
+  "sfw:fiona": 101,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 0,
  "items": [
+  {
+   "id": "fcea147a7f85",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 胸元のリボンを結び直される",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/lupinus/fcea147a7f85.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/fcea147a7f85_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "f5aa0338e05e",
    "char": "iris",
@@ -58,6 +71,58 @@
    "h": 1280
   },
   {
+   "id": "baca01a8151c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋祭りの屋台の灯りの前で、りんご飴にかじりついて口のまわりを赤くしたまま笑う",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/lupinus/baca01a8151c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/baca01a8151c_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "9c994866d38a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "畳の部屋で布団に潜り込み、顔だけ出して天井の木目を数える",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/iris/9c994866d38a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9c994866d38a_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "74b6c6f23f29",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フリルに包まれるうちの子",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/iris/74b6c6f23f29.webp",
+   "thumb": "images/gallery-sns/sfw/iris/74b6c6f23f29_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "7451f903cfb9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#何が好き",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/lupinus/7451f903cfb9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7451f903cfb9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "6353e23a8629",
    "char": "lupinus",
    "nsfw": false,
@@ -71,6 +136,19 @@
    "h": 1280
   },
   {
+   "id": "36a407ee120f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#神々の旅路",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/fiona/36a407ee120f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/36a407ee120f_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "2bfc42890fbc",
    "char": "iris",
    "nsfw": false,
@@ -80,6 +158,45 @@
    "date": "2026-09-30",
    "src": "images/gallery-sns/sfw/iris/2bfc42890fbc.webp",
    "thumb": "images/gallery-sns/sfw/iris/2bfc42890fbc_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "23297c0304b8",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "衣替えで出した去年のショートパンツがきつくて、寝室でジャンプしながら引き上げようとする",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/iris/23297c0304b8.webp",
+   "thumb": "images/gallery-sns/sfw/iris/23297c0304b8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "221f1bd7101f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 胸元のリボンを結び直される",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/lupinus/221f1bd7101f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/221f1bd7101f_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "19c4b58021c2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "世界翻訳の日にちなんで、辞書と羽根ペン、",
+   "date": "2026-09-30",
+   "src": "images/gallery-sns/sfw/fiona/19c4b58021c2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/19c4b58021c2_t.webp",
    "w": 720,
    "h": 1280
   },

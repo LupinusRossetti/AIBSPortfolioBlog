@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:lupinus": 148,
-  "sfw:fiona": 109,
+  "sfw:fiona": 110,
   "sfw:iris": 115,
   "sfw:three": 14
  },
@@ -67,6 +67,19 @@
    "date": "2026-10-01",
    "src": "images/gallery-sns/sfw/fiona/d142947f40da.webp",
    "thumb": "images/gallery-sns/sfw/fiona/d142947f40da_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c1ab681423da",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 図書館で「しーっ」のシーン（ComfyU",
+   "date": "2026-10-01",
+   "src": "images/gallery-sns/sfw/fiona/c1ab681423da.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c1ab681423da_t.webp",
    "w": 720,
    "h": 1280
   },

@@ -15,6 +15,9 @@
 .ps-box{position:relative;background:#fff;border:2px solid var(--ps-soft);border-radius:16px;padding:18px 16px 16px}
 .ps-box pre{margin:0;white-space:pre-wrap;word-break:break-word;font-family:inherit;font-size:.95rem;line-height:1.9;color:#3a3742}
 .ps-box mark{background:var(--ps-soft);color:var(--ps-a);font-weight:700;border-radius:6px;padding:0 2px}
+.ps-box .ps-key{font-weight:700}
+.ps-box mark.ps-in{display:inline-block;min-width:7em;border-bottom:2px dashed var(--ps-a);border-radius:4px 4px 0 0;padding:0 4px}
+.ps-box mark.ps-in.empty::after{content:"← ここに書く";font-weight:400;opacity:.75;font-size:.85em}
 .ps-copy{display:block;width:100%;margin:0 0 12px;border:0;border-radius:14px;padding:14px 16px;background:var(--ps-a);color:#fff;cursor:pointer;font-size:1.02rem;font-weight:700;letter-spacing:.04em;box-shadow:0 4px 12px rgba(0,0,0,.12)}
 .ps-box pre{cursor:copy}
 .ps-toc{background:#fff;border:1px solid var(--ps-line);border-radius:16px;padding:14px 18px;margin:20px 0}
@@ -40,42 +43,16 @@
 .ps-r18{border:2px solid #ff7fae;background:#241832;color:#f6ecfa;border-radius:16px;padding:14px 16px;line-height:1.8}
 @media(max-width:560px){.ps-ba{grid-template-columns:1fr}.ps-ba .arr{transform:rotate(90deg);text-align:center}.ps-vars,.ps-vars tbody,.ps-vars tr,.ps-vars th,.ps-vars td{display:block;width:auto;white-space:normal}.ps-vars tr:first-child{display:none}.ps-vars tr{border-bottom:1px solid var(--ps-line);padding:4px 0}.ps-vars th,.ps-vars td{border:0;padding:6px 12px}}
 .ps{overflow-wrap:anywhere}.ps-vars td,.ps-vars th{overflow-wrap:anywhere}.ps img{max-width:100%}
-</style></head><body class="decor-page decor-bubble"><div class="page-decor" aria-hidden="true"><div class="decor-layer decor-bubble-layer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><header class="site-header"><div class="container"><a class="brand" href="../index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../portfolio.html">Portfolio</a><a href="../gallery.html">Gallery</a><a href="../blog/index.html" class="active">Blog</a><a href="../sns.html">SNS</a><a href="../coming-soon.html">Contact</a></nav></div></header><main class="article"><header class="article-header"><div class="date">2026-10-02<span class="day-chip">プロンプト配布</span></div><h1>うちの子が「高級ファッション誌の表紙」になるプロンプト</h1></header><div class="article-body"><div class="ps"><p><span class="ps-badge">GPT-image-2 用</span><span class="ps-badge">2026-10-02</span></p><p class="ps-lead">ChatGPT（GPT-image-2）に自分のキャラの絵を1枚渡して、この文を貼るだけ。キャラの名前を入れると、表紙と紹介文にその名前が入ります。誌名も見出しも紹介文も、AIがキャラの見た目や雰囲気を読み取って考えてくれます。テーマカラーとポーズは空欄でもOK。書店に並んでいそうな、文字たっぷりの美しい表紙になります。</p><nav class="ps-toc" aria-label="目次"><p>📑 目次</p><ol><li><a href="#sec1">作例</a></li><li><a href="#sec2">3人のおしゃべり（表紙になったよ）</a></li><li><a href="#sec3">使い方（3ステップ）</a></li><li><a href="#sec4">プロンプト</a></li><li><a href="#sec5">変えるところ</a></li><li><a href="#sec6">（おまけ）元絵を綺麗にしておくと、もっと綺麗に</a></li><li><a href="#sec7">メモ</a></li><li><a href="#sec8">配布ルール</a></li><li><a href="#sec9">バックナンバー</a></li></ol></nav><h2 id="sec1">作例</h2><div class="ps-ba" style="margin-bottom:14px"><figure class="ps-ex" style="display:block"><img src="img/2026-10-02-gpt-5dkgcqwn/ba1_before.webp" alt="元の画像" loading="lazy"><figcaption>元の画像</figcaption></figure><div class="arr" aria-hidden="true">&rarr;</div><figure class="ps-ex" style="display:block"><img src="img/2026-10-02-gpt-5dkgcqwn/ba1_after.webp" alt="完成" loading="lazy"><figcaption>完成｜いつものアイリスの絵をそのまま添付（元絵なし）・名前「アイリス」・テーマカラー空欄・ポーズ「ジャック・オ・ランタンのバッグを持ってウインク」</figcaption></figure></div><div class="ps-ex"><figure><img src="img/2026-10-02-gpt-5dkgcqwn/ex1.webp" alt="名前「Lupinus」（英字）・秋のモード誌・テーマカラー指定・ポーズ空欄" loading="lazy"><figcaption>名前「Lupinus」（英字）・秋のモード誌・テーマカラー指定・ポーズ空欄</figcaption></figure><figure><img src="img/2026-10-02-gpt-5dkgcqwn/ex2.webp" alt="名前「Fiona」・ナチュラル系・ポーズ「透明な傘を肩にかけて振り返る」" loading="lazy"><figcaption>名前「Fiona」・ナチュラル系・ポーズ「透明な傘を肩にかけて振り返る」</figcaption></figure><figure><img src="img/2026-10-02-gpt-5dkgcqwn/ex3.webp" alt="名前「アイリス」（カタカナ）・ポップなガーリー誌・テーマカラー空欄（おまかせ）" loading="lazy"><figcaption>名前「アイリス」（カタカナ）・ポップなガーリー誌・テーマカラー空欄（おまかせ）</figcaption></figure></div><p style="font-size:.82rem;color:var(--ps-ink)">※作例の画像の転載・保存しての再配布はご遠慮ください。</p><h2 id="sec2">3人のおしゃべり（表紙になったよ）</h2><div class="ps-chat"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_iris_surprised.webp" alt="アイリス" loading="lazy"><div><div class="who">アイリス</div><div class="bub">ちょっと待って、あたしが表紙！？ しかも表紙に、あたしの名前がおっきく入ってる！</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_lupinus_smug.webp" alt="ルピナス" loading="lazy"><div><div class="who">ルピナス</div><div class="bub">私の号は「VELVET」です。誌名は本物の雑誌みたいな英単語で、私の名前は「COVER GIRL」の下に、ひとことのセリフと一緒に入りました</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_fiona_thinking.webp" alt="フィオナ" loading="lazy"><div><div class="who">フィオナ</div><div class="bub">雨の日のコーデ特集……。小窓で耳飾りまで拡大されていて、こんなところまで見られていたんですね</div></div></div><div class="ps-chat"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_iris_devious.webp" alt="アイリス" loading="lazy"><div><div class="who">アイリス</div><div class="bub">フィオナの号、「しずく色メイク」だって！ 今度そのメイク、あたしにも教えてね？</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_fiona_panic.webp" alt="フィオナ" loading="lazy"><div><div class="who">フィオナ</div><div class="bub">わ、私が書いたわけじゃないです……！ AIさんが勝手に……！</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_lupinus_happy.webp" alt="ルピナス" loading="lazy"><div><div class="who">ルピナス</div><div class="bub">名前とジャンルと特集を入れるだけで、文字いっぱいの素敵な表紙になりますよ。テーマカラーとポーズは、空欄のままでも大丈夫です</div></div></div><h2 id="sec3">使い方（3ステップ）</h2><ol class="ps-steps"><li>ChatGPT を開いて、画像を作れるモード（GPT-image-2）にする</li><li>自分のキャラの絵を1枚だけ添付する（自分の絵・使ってよい画像だけ。いつもの絵のままでOK。下の「おまけ」で元絵を作った人は元絵を）</li><li>下のプロンプトをワンタップでコピーして、【キャラの名前】【雑誌のジャンル】【特集のテーマ】を書き換えて送信する（テーマカラー・ポーズは空欄でもOK）</li></ol><h2 id="sec4">プロンプト</h2><p style="font-size:.9rem;color:var(--ps-ink)"><mark class="ps-var" style="background:var(--ps-soft);color:var(--ps-a);font-weight:700;border-radius:6px;padding:0 3px">【色の付いたところ】</mark>を自分の内容に書き換えて使ってください。</p><div class="ps-box"><button class="ps-copy" type="button" data-target="ps-prompt">📋 ワンタップでコピー</button><p style="margin:0 0 8px;font-size:.82rem;color:var(--ps-a)">プロンプト</p><pre>添付した画像のキャラクターを読み取って、そのキャラのために作られた「架空の高級ファッション誌の表紙」を1枚のデザインとして作ってください。
+</style></head><body class="decor-page decor-bubble"><div class="page-decor" aria-hidden="true"><div class="decor-layer decor-bubble-layer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><header class="site-header"><div class="container"><a class="brand" href="../index.html"><span class="brand-script">Lupinus</span><span class="brand-sub">AI Bloom Sisters</span></a><button class="menu-toggle" aria-label="menu" onclick="document.getElementById('nav').classList.toggle('open')">≡</button><nav class="nav" id="nav"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../portfolio.html">Portfolio</a><a href="../gallery.html">Gallery</a><a href="../blog/index.html" class="active">Blog</a><a href="../sns.html">SNS</a><a href="../coming-soon.html">Contact</a></nav></div></header><main class="article"><header class="article-header"><div class="date">2026-10-02<span class="day-chip">プロンプト配布</span></div><h1>うちの子が「高級ファッション誌の表紙」になるプロンプト</h1></header><div class="article-body"><div class="ps"><p><span class="ps-badge">GPT-image-2 用</span><span class="ps-badge">2026-10-02</span></p><p class="ps-lead">ChatGPT（GPT-image-2）に自分のキャラの絵を1枚渡して、この文を貼るだけ。キャラの名前を入れると、表紙と紹介文にその名前が入ります。誌名も見出しも紹介文も、AIがキャラの見た目や雰囲気を読み取って考えてくれます。テーマカラーとポーズは空欄でもOK。書店に並んでいそうな、文字たっぷりの美しい表紙になります。</p><nav class="ps-toc" aria-label="目次"><p>📑 目次</p><ol><li><a href="#sec1">作例</a></li><li><a href="#sec2">3人のおしゃべり（表紙になったよ）</a></li><li><a href="#sec3">使い方（3ステップ）</a></li><li><a href="#sec4">プロンプト</a></li><li><a href="#sec5">書くところ</a></li><li><a href="#sec6">（おまけ）元絵を綺麗にしておくと、もっと綺麗に</a></li><li><a href="#sec7">メモ</a></li><li><a href="#sec8">配布ルール</a></li><li><a href="#sec9">バックナンバー</a></li></ol></nav><h2 id="sec1">作例</h2><div class="ps-ba" style="margin-bottom:14px"><figure class="ps-ex" style="display:block"><img src="img/2026-10-02-gpt-5dkgcqwn/ba1_before.webp" alt="元の画像" loading="lazy"><figcaption>元の画像</figcaption></figure><div class="arr" aria-hidden="true">&rarr;</div><figure class="ps-ex" style="display:block"><img src="img/2026-10-02-gpt-5dkgcqwn/ba1_after.webp" alt="完成" loading="lazy"><figcaption>完成｜いつものアイリスの絵をそのまま添付（元絵なし）・名前「アイリス」・テーマカラー空欄・ポーズ「ジャック・オ・ランタンのバッグを持ってウインク」</figcaption></figure></div><div class="ps-ex"><figure><img src="img/2026-10-02-gpt-5dkgcqwn/ex1.webp" alt="名前「Lupinus」（英字）・秋のモード誌・テーマカラー指定・ポーズ空欄" loading="lazy"><figcaption>名前「Lupinus」（英字）・秋のモード誌・テーマカラー指定・ポーズ空欄</figcaption></figure><figure><img src="img/2026-10-02-gpt-5dkgcqwn/ex2.webp" alt="名前「Fiona」・ナチュラル系・ポーズ「透明な傘を肩にかけて振り返る」" loading="lazy"><figcaption>名前「Fiona」・ナチュラル系・ポーズ「透明な傘を肩にかけて振り返る」</figcaption></figure><figure><img src="img/2026-10-02-gpt-5dkgcqwn/ex3.webp" alt="名前「アイリス」（カタカナ）・ポップなガーリー誌・テーマカラー空欄（おまかせ）" loading="lazy"><figcaption>名前「アイリス」（カタカナ）・ポップなガーリー誌・テーマカラー空欄（おまかせ）</figcaption></figure></div><p style="font-size:.82rem;color:var(--ps-ink)">※作例の画像の転載・保存しての再配布はご遠慮ください。</p><h2 id="sec2">3人のおしゃべり（表紙になったよ）</h2><div class="ps-chat"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_iris_surprised.webp" alt="アイリス" loading="lazy"><div><div class="who">アイリス</div><div class="bub">ちょっと待って、あたしが表紙！？ しかも表紙に、あたしの名前がおっきく入ってる！</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_lupinus_smug.webp" alt="ルピナス" loading="lazy"><div><div class="who">ルピナス</div><div class="bub">私の号は「VELVET」です。誌名は本物の雑誌みたいな英単語で、私の名前は「COVER GIRL」の下に、ひとことのセリフと一緒に入りました</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_fiona_thinking.webp" alt="フィオナ" loading="lazy"><div><div class="who">フィオナ</div><div class="bub">雨の日のコーデ特集……。小窓で耳飾りまで拡大されていて、こんなところまで見られていたんですね</div></div></div><div class="ps-chat"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_iris_devious.webp" alt="アイリス" loading="lazy"><div><div class="who">アイリス</div><div class="bub">フィオナの号、「しずく色メイク」だって！ 今度そのメイク、あたしにも教えてね？</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_fiona_panic.webp" alt="フィオナ" loading="lazy"><div><div class="who">フィオナ</div><div class="bub">わ、私が書いたわけじゃないです……！ AIさんが勝手に……！</div></div></div><div class="ps-chat r"><img src="img/2026-10-02-gpt-5dkgcqwn/talk_lupinus_happy.webp" alt="ルピナス" loading="lazy"><div><div class="who">ルピナス</div><div class="bub">名前とジャンルと特集を入れるだけで、文字いっぱいの素敵な表紙になりますよ。テーマカラーとポーズは、空欄のままでも大丈夫です</div></div></div><h2 id="sec3">使い方（3ステップ）</h2><ol class="ps-steps"><li>ChatGPT を開いて、画像を作れるモード（GPT-image-2）にする</li><li>自分のキャラの絵を1枚だけ添付する（自分の絵・使ってよい画像だけ。いつもの絵のままでOK。下の「おまけ」で元絵を作った人は元絵を）</li><li>下のプロンプトをワンタップでコピーして、いちばん上の「▼ ここに書く」の欄（色の付いたところ）にキャラの名前などを書いて送信する（テーマカラー・ポーズは空欄でもOK）</li></ol><h2 id="sec4">プロンプト</h2><div class="ps-note" style="margin-bottom:12px"><b>書くのは「▼ ここに書く」の欄だけ</b><ul><li><mark style="background:var(--ps-soft);color:var(--ps-a);font-weight:700;border-bottom:2px dashed var(--ps-a);padding:0 4px">色の付いたところ</mark>（「：」のうしろ）に書くだけ。【 】は消さずにそのまま残してね</li><li>下の文章に出てくる【キャラの名前】などは書き換えなくてOK（AIが上の欄を読んでくれます）</li><li>任意の欄は空のままでも大丈夫（おまかせになります）</li></ul></div><div class="ps-box"><button class="ps-copy" type="button" data-target="ps-prompt">📋 ワンタップでコピー</button><p style="margin:0 0 8px;font-size:.82rem;color:var(--ps-a)">プロンプト</p><pre>添付した画像のキャラクターを読み取って、そのキャラのために作られた「架空の高級ファッション誌の表紙」を1枚のデザインとして作ってください。
 誌名・見出し・コピー・紹介文は、キャラの見た目や雰囲気からあなたが考えて書いてください。
 
-<mark class="ps-var">【キャラの名前】</mark>（必須：例　ルピナス／Lupinus。アルファベットで書いた場合は欧文の表記もその綴りを使う）
-<mark class="ps-var">【雑誌のジャンル】</mark>（例：秋のモード誌）
-<mark class="ps-var">【特集のテーマ】</mark>（例：金木犀と紅茶の季節）
-<mark class="ps-var">【テーマカラー】</mark>（任意：空欄ならキャラの髪や服の色から、いちばん映える配色をおまかせ）
-<mark class="ps-var">【ポーズ・追加の指示】</mark>（任意：空欄ならおまかせ。例　片手で帽子を押さえる／紅茶のカップを持つ）
-
-■ 画面の作り
-・キャラ：顔立ち、髪型、髪色、目の色は添付画像のまま。服は特集のテーマに合う華やかな服にする。腰から上〜膝上、カメラ目線でやさしく微笑む（<mark class="ps-var">【ポーズ・追加の指示】</mark>があればそれを優先）
-・誌名：辞書にある英単語1語の短い誌名（3〜6文字・すべて大文字）。BLOOM／MUSE／PETAL／RIBBON／VELVET／HONEY のような語から、特集に合うものを選ぶ。キャラの名前に似た語（ROSE・IRIS・LILY・LUNA など）や、名前を崩した造語は使わない
-・誌名のロゴ：太い線と細い線の差が大きい上品なセリフ体（筆記体にしない）。表紙でいちばん大きな文字として上部いっぱいに置き、人物の頭が少しだけ重なってよい。誌名の横に小さく「AUTUMN ISSUE」のような季節の号の表示
-・表紙の人物：誌名とは別の書体で、小さな見出し「COVER GIRL」と<mark class="ps-var">【キャラの名前】</mark>、その下にキャラのひとことのセリフを入れる。紹介文の中でも名前で呼ぶ
-・特集の大見出し：細く上品な明朝体で2〜3行
-・小見出しとリード文：画面の左右に3〜4か所。短い見出し＋1〜2行の紹介文を、読める大きさの明朝体で（コーデ・メイク・香り・小物など、キャラに合わせた企画をあなたが考える）
-・詩的なひとことを縦書きで1か所。キャラの口ぐせを英語にしたような短いひとことを、小さく1か所だけ添える
-・キャラの小物やアクセサリーを、ポラロイド写真のように切り取ってマスキングテープで貼り、横に手書き風のひとことメモを添える（2〜3枚）
-・年号や日付、号数、値段は入れない
-・文字は大・中・小の段差をはっきりつけ、余白を生かした洗練されたエディトリアルデザインにする。日本語は正しく、崩れや誤字のない文字で
-・背景：テーマカラーでまとめた豪華なセット。花、金の細工、レース、光を通すガラスやクリスタルの小物、透明な香水瓶を奥行きをつけて置く
-
-■ 仕上がりの質（ここは変えない）
-・キャラは細く繊細な線で、髪は毛束と光の透けまで描き込む。瞳は宝石のように何層ものハイライトを重ねる
-・ガラスや宝石は、光にかざしたように縁がほんのり虹色に光り、向こう側の花や光がやわらかくゆがんで透けて見えるように
-・レース、刺繍、アクセサリーの金具まで細かく描き、画面の情報量を多くする
-・やわらかな逆光、光の粒、舞う花びら、手前と奥のきらめくボケで空気感を出す
-・上品で透明感のある配色。ハイエンドな広告ビジュアルの最高品質、超高精細
-・縦長 2:3</pre><textarea class="ps-copyarea" id="ps-prompt" readonly aria-hidden="true" tabindex="-1">添付した画像のキャラクターを読み取って、そのキャラのために作られた「架空の高級ファッション誌の表紙」を1枚のデザインとして作ってください。
-誌名・見出し・コピー・紹介文は、キャラの見た目や雰囲気からあなたが考えて書いてください。
-
-【キャラの名前】（必須：例　ルピナス／Lupinus。アルファベットで書いた場合は欧文の表記もその綴りを使う）
-【雑誌のジャンル】（例：秋のモード誌）
-【特集のテーマ】（例：金木犀と紅茶の季節）
-【テーマカラー】（任意：空欄ならキャラの髪や服の色から、いちばん映える配色をおまかせ）
-【ポーズ・追加の指示】（任意：空欄ならおまかせ。例　片手で帽子を押さえる／紅茶のカップを持つ）
+▼ ここに書く（「：」のうしろに書くだけ。【 】は消さずにそのまま。名前だけは必ず書く。ほかの空の欄はおまかせ）
+<span class="ps-key">【キャラの名前】：</span><mark class="ps-in empty" data-key="【キャラの名前】"></mark>
+<span class="ps-key">【雑誌のジャンル】：</span><mark class="ps-in" data-key="【雑誌のジャンル】">秋のモード誌</mark>
+<span class="ps-key">【特集のテーマ】：</span><mark class="ps-in" data-key="【特集のテーマ】">金木犀と紅茶の季節</mark>
+<span class="ps-key">【テーマカラー】：</span><mark class="ps-in empty" data-key="【テーマカラー】"></mark>
+<span class="ps-key">【ポーズ・追加の指示】：</span><mark class="ps-in empty" data-key="【ポーズ・追加の指示】"></mark>
+▲ ここまで（下の文章に出てくる【 】は、上の欄に書いた内容のこと。下は書き換えない）
 
 ■ 画面の作り
 ・キャラ：顔立ち、髪型、髪色、目の色は添付画像のまま。服は特集のテーマに合う華やかな服にする。腰から上〜膝上、カメラ目線でやさしく微笑む（【ポーズ・追加の指示】があればそれを優先）
@@ -96,7 +73,37 @@
 ・レース、刺繍、アクセサリーの金具まで細かく描き、画面の情報量を多くする
 ・やわらかな逆光、光の粒、舞う花びら、手前と奥のきらめくボケで空気感を出す
 ・上品で透明感のある配色。ハイエンドな広告ビジュアルの最高品質、超高精細
-・縦長 2:3</textarea></div><h2 id="sec5">変えるところ</h2><table class="ps-vars"><tr><th>ところ</th><th>説明</th><th>例</th></tr><tr><th>【キャラの名前】</th><td>必須。ロゴや紹介文にこの名前が入ります。アルファベットで書くと、欧文のロゴもその綴りになります（カタカナだけなら、AIが読みから綴りを考えます）</td><td>ルピナス／Lupinus／アイリス</td></tr><tr><th>【雑誌のジャンル】</th><td>どんな雑誌にするか。表紙の雰囲気と文字のテイストが変わります</td><td>秋のモード誌／ポップなガーリー誌／ナチュラル系のやさしい誌／ゴシック誌</td></tr><tr><th>【特集のテーマ】</th><td>大見出しと服・小物のテーマ。季節や行事を入れると雰囲気が出ます</td><td>金木犀と紅茶の季節／ハロウィンを全力で楽しむ／雨の日のやさしいコーデ</td></tr><tr><th>【テーマカラー】</th><td>任意。空欄なら、キャラの髪や服の色からいちばん映える配色をAIがおまかせで選びます</td><td>（空欄）／ラベンダーとミルクホワイト／オレンジとパープル</td></tr><tr><th>【ポーズ・追加の指示】</th><td>任意。空欄ならおまかせ。ポーズ・持たせたい物・入れたい小物などを自由に書けます</td><td>（空欄）／ほうきに横座りしてピース／透明な傘を肩にかけて振り返る</td></tr></table><h2 id="sec6">（おまけ）元絵を綺麗にしておくと、もっと綺麗に</h2><p style="font-size:.92rem">元絵は作っても作らなくても大丈夫です。いつものキャラの絵をそのまま添付しても、上のプロンプトで綺麗に仕上がります。もっと綺麗に・毎回ブレずに作りたい人は、先にこの手順でキャラの「元絵」を作っておくのがおすすめです。書き換えるところはないので、そのままコピーして使えます。</p><ol class="ps-steps"><li>ChatGPT を開き、新しいチャットで画像を作れる状態（GPT-image-2）にする</li><li>自分のキャラの絵を1枚だけ添付する（ラフ・小さい絵・スクショでも大丈夫。顔と服がわかる絵がいちばん）</li><li>下の「元絵を作るプロンプト」をそのままコピーして貼り、送信する（書き換えるところはありません）</li><li>できた絵を保存する。これがあなたのキャラの「元絵」です（ほかの配布プロンプトでも使い回せます）</li><li>新しいチャットを開き、保存した元絵を添付して、このページの上の「プロンプト」を貼って送信する</li></ol><div class="ps-box"><button class="ps-copy" type="button" data-target="ps-prep">📋 ワンタップでコピー</button><p style="margin:0 0 8px;font-size:.82rem;color:var(--ps-a)">元絵を作るプロンプト（そのままコピーして送るだけ）</p><pre>添付した画像のキャラクターを、ほかのプロンプトで使う「元絵」として、同じキャラのまま最高品質の繊細なアニメイラストで描き直してください。
+・縦長 2:3</pre><textarea class="ps-copyarea" id="ps-prompt" readonly aria-hidden="true" tabindex="-1">添付した画像のキャラクターを読み取って、そのキャラのために作られた「架空の高級ファッション誌の表紙」を1枚のデザインとして作ってください。
+誌名・見出し・コピー・紹介文は、キャラの見た目や雰囲気からあなたが考えて書いてください。
+
+▼ ここに書く（「：」のうしろに書くだけ。【 】は消さずにそのまま。名前だけは必ず書く。ほかの空の欄はおまかせ）
+【キャラの名前】：
+【雑誌のジャンル】：秋のモード誌
+【特集のテーマ】：金木犀と紅茶の季節
+【テーマカラー】：
+【ポーズ・追加の指示】：
+▲ ここまで（下の文章に出てくる【 】は、上の欄に書いた内容のこと。下は書き換えない）
+
+■ 画面の作り
+・キャラ：顔立ち、髪型、髪色、目の色は添付画像のまま。服は特集のテーマに合う華やかな服にする。腰から上〜膝上、カメラ目線でやさしく微笑む（【ポーズ・追加の指示】があればそれを優先）
+・誌名：辞書にある英単語1語の短い誌名（3〜6文字・すべて大文字）。BLOOM／MUSE／PETAL／RIBBON／VELVET／HONEY のような語から、特集に合うものを選ぶ。キャラの名前に似た語（ROSE・IRIS・LILY・LUNA など）や、名前を崩した造語は使わない
+・誌名のロゴ：太い線と細い線の差が大きい上品なセリフ体（筆記体にしない）。表紙でいちばん大きな文字として上部いっぱいに置き、人物の頭が少しだけ重なってよい。誌名の横に小さく「AUTUMN ISSUE」のような季節の号の表示
+・表紙の人物：誌名とは別の書体で、小さな見出し「COVER GIRL」と【キャラの名前】、その下にキャラのひとことのセリフを入れる。紹介文の中でも名前で呼ぶ
+・特集の大見出し：細く上品な明朝体で2〜3行
+・小見出しとリード文：画面の左右に3〜4か所。短い見出し＋1〜2行の紹介文を、読める大きさの明朝体で（コーデ・メイク・香り・小物など、キャラに合わせた企画をあなたが考える）
+・詩的なひとことを縦書きで1か所。キャラの口ぐせを英語にしたような短いひとことを、小さく1か所だけ添える
+・キャラの小物やアクセサリーを、ポラロイド写真のように切り取ってマスキングテープで貼り、横に手書き風のひとことメモを添える（2〜3枚）
+・年号や日付、号数、値段は入れない
+・文字は大・中・小の段差をはっきりつけ、余白を生かした洗練されたエディトリアルデザインにする。日本語は正しく、崩れや誤字のない文字で
+・背景：テーマカラーでまとめた豪華なセット。花、金の細工、レース、光を通すガラスやクリスタルの小物、透明な香水瓶を奥行きをつけて置く
+
+■ 仕上がりの質（ここは変えない）
+・キャラは細く繊細な線で、髪は毛束と光の透けまで描き込む。瞳は宝石のように何層ものハイライトを重ねる
+・ガラスや宝石は、光にかざしたように縁がほんのり虹色に光り、向こう側の花や光がやわらかくゆがんで透けて見えるように
+・レース、刺繍、アクセサリーの金具まで細かく描き、画面の情報量を多くする
+・やわらかな逆光、光の粒、舞う花びら、手前と奥のきらめくボケで空気感を出す
+・上品で透明感のある配色。ハイエンドな広告ビジュアルの最高品質、超高精細
+・縦長 2:3</textarea></div><h2 id="sec5">書くところ</h2><table class="ps-vars"><tr><th>欄</th><th>説明</th><th>例</th></tr><tr><th>【キャラの名前】</th><td>必須。ロゴや紹介文にこの名前が入ります。アルファベットで書くと、欧文のロゴもその綴りになります（カタカナだけなら、AIが読みから綴りを考えます）</td><td>ルピナス／Lupinus／アイリス</td></tr><tr><th>【雑誌のジャンル】</th><td>どんな雑誌にするか。表紙の雰囲気と文字のテイストが変わります</td><td>秋のモード誌／ポップなガーリー誌／ナチュラル系のやさしい誌／ゴシック誌</td></tr><tr><th>【特集のテーマ】</th><td>大見出しと服・小物のテーマ。季節や行事を入れると雰囲気が出ます</td><td>金木犀と紅茶の季節／ハロウィンを全力で楽しむ／雨の日のやさしいコーデ</td></tr><tr><th>【テーマカラー】</th><td>任意。空欄なら、キャラの髪や服の色からいちばん映える配色をAIがおまかせで選びます</td><td>（空欄）／ラベンダーとミルクホワイト／オレンジとパープル</td></tr><tr><th>【ポーズ・追加の指示】</th><td>任意。空欄ならおまかせ。ポーズ・持たせたい物・入れたい小物などを自由に書けます</td><td>（空欄）／ほうきに横座りしてピース／透明な傘を肩にかけて振り返る</td></tr></table><h2 id="sec6">（おまけ）元絵を綺麗にしておくと、もっと綺麗に</h2><p style="font-size:.92rem">元絵は作っても作らなくても大丈夫です。いつものキャラの絵をそのまま添付しても、上のプロンプトで綺麗に仕上がります。もっと綺麗に・毎回ブレずに作りたい人は、先にこの手順でキャラの「元絵」を作っておくのがおすすめです。書き換えるところはないので、そのままコピーして使えます。</p><ol class="ps-steps"><li>ChatGPT を開き、新しいチャットで画像を作れる状態（GPT-image-2）にする</li><li>自分のキャラの絵を1枚だけ添付する（ラフ・小さい絵・スクショでも大丈夫。顔と服がわかる絵がいちばん）</li><li>下の「元絵を作るプロンプト」をそのままコピーして貼り、送信する（書き換えるところはありません）</li><li>できた絵を保存する。これがあなたのキャラの「元絵」です（ほかの配布プロンプトでも使い回せます）</li><li>新しいチャットを開き、保存した元絵を添付して、このページの上の「プロンプト」を貼って送信する</li></ol><div class="ps-box"><button class="ps-copy" type="button" data-target="ps-prep">📋 ワンタップでコピー</button><p style="margin:0 0 8px;font-size:.82rem;color:var(--ps-a)">元絵を作るプロンプト（そのままコピーして送るだけ）</p><pre>添付した画像のキャラクターを、ほかのプロンプトで使う「元絵」として、同じキャラのまま最高品質の繊細なアニメイラストで描き直してください。
 
 ■ キャラ（ここは添付画像のまま）
 ・顔立ち、髪型、髪の長さ、髪色、目の色、髪飾り、服のデザインと色、アクセサリーは添付画像のまま変えない

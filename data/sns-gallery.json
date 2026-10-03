@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 125,
+  "sfw:iris": 126,
   "sfw:fiona": 122,
-  "sfw:lupinus": 157,
+  "sfw:lupinus": 158,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -173,6 +173,32 @@
    "thumb": "images/gallery-sns/sfw/iris/e94bc4951e40_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "e084bd1bc449",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#TEA 4 lupinus（眠り姫）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/lupinus/e084bd1bc449.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e084bd1bc449_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "d73633606a56",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#さては月のウサギだな？ 2 iris（眠り姫）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/iris/d73633606a56.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d73633606a56_t.webp",
+   "w": 1280,
+   "h": 1280
   },
   {
    "id": "d6ab9d8e98be",

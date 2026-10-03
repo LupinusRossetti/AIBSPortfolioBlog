@@ -25,7 +25,7 @@
  "counts": {
   "sfw:iris": 120,
   "sfw:lupinus": 152,
-  "sfw:fiona": 111,
+  "sfw:fiona": 112,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -730,6 +730,19 @@
    "date": "2026-09-29",
    "src": "images/gallery-sns/sfw/iris/68a8203a7747.webp",
    "thumb": "images/gallery-sns/sfw/iris/68a8203a7747_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "29742295f835",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#眼鏡 3",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/fiona/29742295f835.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/29742295f835_t.webp",
    "w": 720,
    "h": 1280
   },

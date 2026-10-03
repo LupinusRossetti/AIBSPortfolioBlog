@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-04",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,53 @@
   }
  },
  "counts": {
-  "sfw:iris": 120,
-  "sfw:lupinus": 152,
-  "sfw:fiona": 112,
+  "sfw:iris": 123,
+  "sfw:fiona": 116,
+  "sfw:lupinus": 155,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "fbde3cc12182",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 猫耳を付け合って似合うか確かめる",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/iris/fbde3cc12182.webp",
+   "thumb": "images/gallery-sns/sfw/iris/fbde3cc12182_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "07e57ef798a2",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 猫耳を付け合って似合うか確かめる",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/iris/07e57ef798a2.webp",
+   "thumb": "images/gallery-sns/sfw/iris/07e57ef798a2_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "af9ab3d31180",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIメガNee Nii",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/fiona/af9ab3d31180.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/af9ab3d31180_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "e94bc4951e40",
    "char": "iris",
@@ -45,6 +84,19 @@
    "h": 720
   },
   {
+   "id": "d6ab9d8e98be",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#さては月のウサギだな？ 3 fiona（眠り姫）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/fiona/d6ab9d8e98be.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d6ab9d8e98be_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "c02b496415f8",
    "char": "iris",
    "nsfw": false,
@@ -55,6 +107,19 @@
    "src": "images/gallery-sns/sfw/iris/c02b496415f8.webp",
    "thumb": "images/gallery-sns/sfw/iris/c02b496415f8_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "90d8deb85018",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#さては月のウサギだな？ lupinus（眠り姫）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/lupinus/90d8deb85018.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/90d8deb85018_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -71,6 +136,19 @@
    "h": 1280
   },
   {
+   "id": "770b55209c49",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#TEA 5 iris（眠り姫）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/iris/770b55209c49.webp",
+   "thumb": "images/gallery-sns/sfw/iris/770b55209c49_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "74d5b3ec5a18",
    "char": "lupinus",
    "nsfw": false,
@@ -84,6 +162,19 @@
    "h": 1280
   },
   {
+   "id": "6f152903b4b2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIartwithlockscreen",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/lupinus/6f152903b4b2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6f152903b4b2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "586110365204",
    "char": "lupinus",
    "nsfw": false,
@@ -93,6 +184,32 @@
    "date": "2026-10-02",
    "src": "images/gallery-sns/sfw/lupinus/586110365204.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/586110365204_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4cd1e0325825",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIメガNee Nii",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/fiona/4cd1e0325825.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4cd1e0325825_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "3a860e5ff640",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#TEA 6 fiona（眠り姫）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/fiona/3a860e5ff640.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3a860e5ff640_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -575,6 +692,19 @@
    "src": "images/gallery-sns/sfw/iris/bd700d200e57.webp",
    "thumb": "images/gallery-sns/sfw/iris/bd700d200e57_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "bd0dd9def22b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#眼鏡",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/lupinus/bd0dd9def22b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/bd0dd9def22b_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

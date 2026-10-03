@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:iris": 119,
-  "sfw:lupinus": 151,
+  "sfw:lupinus": 152,
   "sfw:fiona": 111,
   "sfw:three": 14
  },
@@ -511,6 +511,19 @@
    "thumb": "images/gallery-sns/sfw/fiona/eb8f6f464b8f_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "e453a3457b2d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天使",
+   "date": "2026-09-29",
+   "src": "images/gallery-sns/sfw/lupinus/e453a3457b2d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e453a3457b2d_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "d8f0e016d23c",

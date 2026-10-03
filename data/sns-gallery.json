@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:iris": 118,
-  "sfw:lupinus": 150,
+  "sfw:lupinus": 151,
   "sfw:fiona": 110,
   "sfw:three": 14
  },
@@ -94,6 +94,19 @@
    "src": "images/gallery-sns/sfw/lupinus/586110365204.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/586110365204_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "355c66cbfae2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 紅茶専門店で紅茶を注ぐ（ComfyUI）",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/lupinus/355c66cbfae2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/355c66cbfae2_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

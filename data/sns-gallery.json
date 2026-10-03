@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01",
+ "updated": "2026-10-02",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 148,
+  "sfw:iris": 118,
+  "sfw:lupinus": 150,
   "sfw:fiona": 110,
-  "sfw:iris": 115,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e94bc4951e40",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "お風呂上がり、タオルを首にかけたまま、ソファにうつ伏せで足をぱたぱたさせてゲームに夢中",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/iris/e94bc4951e40.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e94bc4951e40_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "c02b496415f8",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "待ち針を口にくわえたまま返事をしようとして声が出せない",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/iris/c02b496415f8.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c02b496415f8_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "77c2f38b7130",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "通学路の横断歩道で信号待ち。トラックの風で前髪が上がって目を細める",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/iris/77c2f38b7130.webp",
+   "thumb": "images/gallery-sns/sfw/iris/77c2f38b7130_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "74d5b3ec5a18",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 雨宿りで白いシャツが透ける",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/lupinus/74d5b3ec5a18.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/74d5b3ec5a18_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "586110365204",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "金木犀の並木道で枝を見上げ、落ちてくるオレンジの小花を両手で受けとめる",
+   "date": "2026-10-02",
+   "src": "images/gallery-sns/sfw/lupinus/586110365204.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/586110365204_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fe2bf3e342a8",
    "char": "lupinus",

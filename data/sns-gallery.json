@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 134,
+  "sfw:iris": 136,
+  "sfw:lupinus": 167,
   "sfw:fiona": 127,
-  "sfw:lupinus": 165,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -45,6 +45,97 @@
    "h": 1280
   },
   {
+   "id": "ead57159bfbe",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#せなかあわせ",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/ead57159bfbe.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ead57159bfbe_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "dda7ae9e6e0a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ユキジなんなん体育祭",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/dda7ae9e6e0a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/dda7ae9e6e0a_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "c4a171cf4a88",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#怪異に出会った私たち",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/fiona/c4a171cf4a88.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c4a171cf4a88_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "id": "a13e186ee02b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIメカサンデー",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/iris/a13e186ee02b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a13e186ee02b_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "981feac9bd49",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#プロンプト配布",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/iris/981feac9bd49.webp",
+   "thumb": "images/gallery-sns/sfw/iris/981feac9bd49_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "id": "8c0f6ed8abec",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋空のキャンバス",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/fiona/8c0f6ed8abec.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8c0f6ed8abec_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "813eb84e43f7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天使たちの宴",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/813eb84e43f7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/813eb84e43f7_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "5db2241ee450",
    "char": "iris",
    "nsfw": false,
@@ -54,6 +145,32 @@
    "date": "2026-10-04",
    "src": "images/gallery-sns/sfw/iris/5db2241ee450.webp",
    "thumb": "images/gallery-sns/sfw/iris/5db2241ee450_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "467e7077c6f2",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#召喚獣と契約しました",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/iris/467e7077c6f2.webp",
+   "thumb": "images/gallery-sns/sfw/iris/467e7077c6f2_t.webp",
+   "w": 1280,
+   "h": 853
+  },
+  {
+   "id": "0ff4b8b5de78",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋色コーデ創作祭",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/0ff4b8b5de78.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0ff4b8b5de78_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -68,6 +185,19 @@
    "src": "images/gallery-sns/sfw/iris/07e57ef798a2.webp",
    "thumb": "images/gallery-sns/sfw/iris/07e57ef798a2_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "06952de5f25a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天冥神話譚",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/06952de5f25a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/06952de5f25a_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -240,19 +370,6 @@
    "h": 1280
   },
   {
-   "id": "8c0f6ed8abec",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋空のキャンバス",
-   "date": "2026-10-03",
-   "src": "images/gallery-sns/sfw/fiona/8c0f6ed8abec.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/8c0f6ed8abec_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "803deb6d9ba3",
    "char": "lupinus",
    "nsfw": false,
@@ -275,19 +392,6 @@
    "date": "2026-10-03",
    "src": "images/gallery-sns/sfw/iris/7b6a53511d88.webp",
    "thumb": "images/gallery-sns/sfw/iris/7b6a53511d88_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "6cb4f16b3f0f",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋色コーデ創作祭",
-   "date": "2026-10-03",
-   "src": "images/gallery-sns/sfw/lupinus/6cb4f16b3f0f.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/6cb4f16b3f0f_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -357,19 +461,6 @@
    "h": 1280
   },
   {
-   "id": "2a4f468a1423",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋空のキャンバス",
-   "date": "2026-10-03",
-   "src": "images/gallery-sns/sfw/fiona/2a4f468a1423.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/2a4f468a1423_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "219735b11566",
    "char": "iris",
    "nsfw": false,
@@ -393,19 +484,6 @@
    "src": "images/gallery-sns/sfw/lupinus/139bac8ca768.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/139bac8ca768_t.webp",
    "w": 1024,
-   "h": 1280
-  },
-  {
-   "id": "0ff4b8b5de78",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋色コーデ創作祭",
-   "date": "2026-10-03",
-   "src": "images/gallery-sns/sfw/lupinus/0ff4b8b5de78.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/0ff4b8b5de78_t.webp",
-   "w": 720,
    "h": 1280
   },
   {
@@ -433,32 +511,6 @@
    "thumb": "images/gallery-sns/sfw/iris/e94bc4951e40_t.webp",
    "w": 1280,
    "h": 720
-  },
-  {
-   "id": "e084bd1bc449",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": 0,
-   "title": "#TEA 4 lupinus（眠り姫）",
-   "date": "2026-10-02",
-   "src": "images/gallery-sns/sfw/lupinus/e084bd1bc449.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/e084bd1bc449_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "d73633606a56",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": 0,
-   "title": "#さては月のウサギだな？ 2 iris（眠り姫）",
-   "date": "2026-10-02",
-   "src": "images/gallery-sns/sfw/iris/d73633606a56.webp",
-   "thumb": "images/gallery-sns/sfw/iris/d73633606a56_t.webp",
-   "w": 1280,
-   "h": 1280
   },
   {
    "id": "d6ab9d8e98be",
@@ -5068,7 +5120,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "毛布の取り合いになる",
+   "title": "毛布の取り合いになる（もこもこパジャマでベッドの上）",
    "date": "2026-08-18",
    "src": "images/gallery-sns/sfw/iris/cd2af3bf57e8.webp",
    "thumb": "images/gallery-sns/sfw/iris/cd2af3bf57e8_t.webp",

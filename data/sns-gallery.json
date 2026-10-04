@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 126,
-  "sfw:fiona": 122,
-  "sfw:lupinus": 158,
+  "sfw:iris": 129,
+  "sfw:fiona": 125,
+  "sfw:lupinus": 159,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -84,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "d302396f721f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "屋上の流星観測会。寝袋にくるまって寝転んだフィオナが赤いライトで星図を照らし、流れ星に指をさして目を丸くする",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/fiona/d302396f721f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d302396f721f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "b813cf31b666",
    "char": "lupinus",
    "nsfw": false,
@@ -110,6 +123,19 @@
    "h": 1280
   },
   {
+   "id": "a7ec3b0c71d3",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 トレカ化プロンプト（GPT-image-",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/fiona/a7ec3b0c71d3.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a7ec3b0c71d3_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "9dec206e9b77",
    "char": "fiona",
    "nsfw": false,
@@ -133,6 +159,71 @@
    "src": "images/gallery-sns/sfw/iris/8eac9c4892bb.webp",
    "thumb": "images/gallery-sns/sfw/iris/8eac9c4892bb_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "7b6a53511d88",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ハロウィンの手作り仮装を試着してみる",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/7b6a53511d88.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7b6a53511d88_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5607733d163e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "登山の日。紅葉の山道を登りきった尾根で、ルピナスが振り返ってこっちに手を振る",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/5607733d163e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5607733d163e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "47ae77946187",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "花屋の店先でバケツを並べ替えていたら、腕の中の花が多すぎて前が見えなくなる",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/fiona/47ae77946187.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/47ae77946187_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "34bcea022de7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 自撮りで顔をくっつけてピース",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/34bcea022de7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/34bcea022de7_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "219735b11566",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 花畑の丘で帽子を押さえる（ComfyUI",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/219735b11566.webp",
+   "thumb": "images/gallery-sns/sfw/iris/219735b11566_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

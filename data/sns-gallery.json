@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 129,
-  "sfw:fiona": 125,
-  "sfw:lupinus": 159,
+  "sfw:iris": 134,
+  "sfw:fiona": 127,
+  "sfw:lupinus": 165,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -42,6 +42,19 @@
    "src": "images/gallery-sns/sfw/iris/fbde3cc12182.webp",
    "thumb": "images/gallery-sns/sfw/iris/fbde3cc12182_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "5db2241ee450",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#鈴響彩祭",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/iris/5db2241ee450.webp",
+   "thumb": "images/gallery-sns/sfw/iris/5db2241ee450_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -71,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "f3f8dbbb3caa",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#HalloweenDyedPink",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/f3f8dbbb3caa.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f3f8dbbb3caa_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "e75ecb823329",
    "char": "fiona",
    "nsfw": false,
@@ -84,6 +110,19 @@
    "h": 1280
   },
   {
+   "id": "e4bdb8bd4d8f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#伝説のセーターVS彼シャツ",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/e4bdb8bd4d8f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e4bdb8bd4d8f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "d302396f721f",
    "char": "fiona",
    "nsfw": false,
@@ -93,6 +132,32 @@
    "date": "2026-10-03",
    "src": "images/gallery-sns/sfw/fiona/d302396f721f.webp",
    "thumb": "images/gallery-sns/sfw/fiona/d302396f721f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d1bb6cb52a45",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI色々な格闘技が似合うケモ耳娘さん",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/d1bb6cb52a45.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d1bb6cb52a45_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c27e6bd97c72",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#伝説のセーターVS彼シャツ",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/c27e6bd97c72.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c27e6bd97c72_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -136,6 +201,19 @@
    "h": 1280
   },
   {
+   "id": "a432479eaf29",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI色々な格闘技が似合うケモ耳娘さん",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/a432479eaf29.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a432479eaf29_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "9dec206e9b77",
    "char": "fiona",
    "nsfw": false,
@@ -162,6 +240,32 @@
    "h": 1280
   },
   {
+   "id": "8c0f6ed8abec",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋空のキャンバス",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/fiona/8c0f6ed8abec.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8c0f6ed8abec_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "803deb6d9ba3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#読書の秋 創作フェア",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/803deb6d9ba3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/803deb6d9ba3_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "7b6a53511d88",
    "char": "iris",
    "nsfw": false,
@@ -171,6 +275,19 @@
    "date": "2026-10-03",
    "src": "images/gallery-sns/sfw/iris/7b6a53511d88.webp",
    "thumb": "images/gallery-sns/sfw/iris/7b6a53511d88_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6cb4f16b3f0f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋色コーデ創作祭",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/6cb4f16b3f0f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6cb4f16b3f0f_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -188,6 +305,19 @@
    "h": 1280
   },
   {
+   "id": "55de446b1194",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#読書の秋 創作フェア",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/55de446b1194.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/55de446b1194_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "47ae77946187",
    "char": "fiona",
    "nsfw": false,
@@ -201,6 +331,19 @@
    "h": 1280
   },
   {
+   "id": "440fd72b3d47",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#HalloweenDyedPink",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/iris/440fd72b3d47.webp",
+   "thumb": "images/gallery-sns/sfw/iris/440fd72b3d47_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "34bcea022de7",
    "char": "iris",
    "nsfw": false,
@@ -211,6 +354,19 @@
    "src": "images/gallery-sns/sfw/iris/34bcea022de7.webp",
    "thumb": "images/gallery-sns/sfw/iris/34bcea022de7_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "2a4f468a1423",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋空のキャンバス",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/fiona/2a4f468a1423.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2a4f468a1423_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -237,6 +393,19 @@
    "src": "images/gallery-sns/sfw/lupinus/139bac8ca768.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/139bac8ca768_t.webp",
    "w": 1024,
+   "h": 1280
+  },
+  {
+   "id": "0ff4b8b5de78",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋色コーデ創作祭",
+   "date": "2026-10-03",
+   "src": "images/gallery-sns/sfw/lupinus/0ff4b8b5de78.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0ff4b8b5de78_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

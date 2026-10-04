@@ -24,8 +24,8 @@
  },
  "counts": {
   "sfw:iris": 136,
-  "sfw:lupinus": 167,
-  "sfw:fiona": 127,
+  "sfw:lupinus": 170,
+  "sfw:fiona": 128,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -42,6 +42,19 @@
    "src": "images/gallery-sns/sfw/iris/fbde3cc12182.webp",
    "thumb": "images/gallery-sns/sfw/iris/fbde3cc12182_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "f568b90f3240",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の支度が全員ぶつかる",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/f568b90f3240.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f568b90f3240_t.webp",
+   "w": 853,
    "h": 1280
   },
   {
@@ -160,6 +173,45 @@
    "thumb": "images/gallery-sns/sfw/iris/467e7077c6f2_t.webp",
    "w": 1280,
    "h": 853
+  },
+  {
+   "id": "465f3ab1fbbb",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "長女と三女で夜更かし",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/465f3ab1fbbb.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/465f3ab1fbbb_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "157c5ee84fe9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "世界動物の日にちなんで、動物図鑑と虫眼鏡",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/fiona/157c5ee84fe9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/157c5ee84fe9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "106c0e9690e7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "3人でベランダから星空を見上げる",
+   "date": "2026-10-04",
+   "src": "images/gallery-sns/sfw/lupinus/106c0e9690e7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/106c0e9690e7_t.webp",
+   "w": 960,
+   "h": 1280
   },
   {
    "id": "0ff4b8b5de78",

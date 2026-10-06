@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 174,
+  "sfw:lupinus": 178,
+  "sfw:fiona": 133,
   "sfw:iris": 141,
-  "sfw:fiona": 132,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "c85c352574f2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "毛布の取り合いになる（もこもこパジャマでベッドの上）",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/lupinus/c85c352574f2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c85c352574f2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "aa5f4b34dd0d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "妹たちを連れて市民プール。監視員の笛にびくっとして、浮き輪につかまったまま背中から水面へ倒れこみ、脚が跳ね上がってしぶき",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/lupinus/aa5f4b34dd0d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/aa5f4b34dd0d_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "8aca71e2b3fd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の牧場の柵のそば。乗馬服のルピナスが、片手で白馬の頭をなで、片手でにんじんを差し出しながら、外した手袋を口にくわえてこ",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/lupinus/8aca71e2b3fd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8aca71e2b3fd_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "813f80a322ca",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA ハンモックで折り重なって落ちかける",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/lupinus/813f80a322ca.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/813f80a322ca_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "72c8d329763f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "十六夜の月を眺める頃にちなんで、月を眺め",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/fiona/72c8d329763f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/72c8d329763f_t.webp",
+   "w": 1280,
+   "h": 720
+  },
   {
    "id": "fd34ce27b336",
    "char": "lupinus",

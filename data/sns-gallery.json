@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 178,
-  "sfw:fiona": 133,
-  "sfw:iris": 141,
+  "sfw:iris": 142,
+  "sfw:lupinus": 179,
+  "sfw:fiona": 134,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e29326b28dc3",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アガンプト",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/iris/e29326b28dc3.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e29326b28dc3_t.webp",
+   "w": 1024,
+   "h": 1280
+  },
   {
    "id": "c85c352574f2",
    "char": "lupinus",
@@ -84,6 +97,19 @@
    "h": 720
   },
   {
+   "id": "76ae8ecd5395",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋色大人のフェミニンコーデ",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/fiona/76ae8ecd5395.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/76ae8ecd5395_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "72c8d329763f",
    "char": "fiona",
    "nsfw": false,
@@ -93,6 +119,19 @@
    "date": "2026-10-06",
    "src": "images/gallery-sns/sfw/fiona/72c8d329763f.webp",
    "thumb": "images/gallery-sns/sfw/fiona/72c8d329763f_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "0aa1dbeb8d4b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI終末の景色",
+   "date": "2026-10-06",
+   "src": "images/gallery-sns/sfw/lupinus/0aa1dbeb8d4b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0aa1dbeb8d4b_t.webp",
    "w": 1280,
    "h": 720
   },

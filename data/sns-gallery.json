@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,7 +23,7 @@
   }
  },
  "counts": {
-  "sfw:iris": 144,
+  "sfw:iris": 146,
   "sfw:fiona": 137,
   "sfw:lupinus": 179,
   "sfw:three": 14
@@ -31,6 +31,19 @@
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "9936f2379d9d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AQUAビーチタイム",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/iris/9936f2379d9d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9936f2379d9d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "cae0fa1f4c60",
    "char": "iris",
@@ -41,6 +54,19 @@
    "date": "2026-10-07",
    "src": "images/gallery-sns/sfw/iris/cae0fa1f4c60.webp",
    "thumb": "images/gallery-sns/sfw/iris/cae0fa1f4c60_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b7e9255428cb",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AQUAビーチタイム",
+   "date": "2026-10-07",
+   "src": "images/gallery-sns/sfw/iris/b7e9255428cb.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b7e9255428cb_t.webp",
    "w": 720,
    "h": 1280
   },

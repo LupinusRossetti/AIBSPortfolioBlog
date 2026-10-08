@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:iris": 142,
+  "sfw:iris": 144,
+  "sfw:fiona": 137,
   "sfw:lupinus": 179,
-  "sfw:fiona": 134,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "cae0fa1f4c60",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "世界綿の日にちなんで、綿花とふわふわのク",
+   "date": "2026-10-07",
+   "src": "images/gallery-sns/sfw/iris/cae0fa1f4c60.webp",
+   "thumb": "images/gallery-sns/sfw/iris/cae0fa1f4c60_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "959ec806e2ea",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の竹林の小径を真上から。番傘をくるりと回して見上げ、袖と傘が円く広がる",
+   "date": "2026-10-07",
+   "src": "images/gallery-sns/sfw/fiona/959ec806e2ea.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/959ec806e2ea_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4b7f56dc5272",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA ハロウィン前夜の部屋。仮装を交換っこして",
+   "date": "2026-10-07",
+   "src": "images/gallery-sns/sfw/iris/4b7f56dc5272.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4b7f56dc5272_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3f84de9bd5a4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のプラネタリウムのリクライニングシートに身を沈め、横向きに丸くなって星の投影を見上げ、うとうとしかける",
+   "date": "2026-10-07",
+   "src": "images/gallery-sns/sfw/fiona/3f84de9bd5a4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3f84de9bd5a4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "01b2fcba6bcb",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "寝言に律儀に返事をしてしまう",
+   "date": "2026-10-07",
+   "src": "images/gallery-sns/sfw/fiona/01b2fcba6bcb.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/01b2fcba6bcb_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e29326b28dc3",
    "char": "iris",

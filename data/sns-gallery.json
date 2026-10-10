@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:iris": 146,
-  "sfw:fiona": 137,
-  "sfw:lupinus": 179,
+  "sfw:iris": 152,
+  "sfw:lupinus": 183,
+  "sfw:fiona": 138,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "bf487446eeef",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "道具の日にちなんで、木製の道具箱と金槌と",
+   "date": "2026-10-09",
+   "src": "images/gallery-sns/sfw/iris/bf487446eeef.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bf487446eeef_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bcc45fef16f2",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜ふけのキッチンで、アイリスとフィオナが一つのカップ麺を分け合う。アイリスが麺をふーふーして差し出し、フィオナが照れなが",
+   "date": "2026-10-09",
+   "src": "images/gallery-sns/sfw/iris/bcc45fef16f2.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bcc45fef16f2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a49f9932be1c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "十五夜の縁側。月見団子を一段ずつ積んでいたルピナスが、てっぺんの一個を載せた瞬間に山が傾き、両手で支えたまま満月を見上げ",
+   "date": "2026-10-09",
+   "src": "images/gallery-sns/sfw/lupinus/a49f9932be1c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a49f9932be1c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8f168a48ac88",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 雪玉を投げる側と壁の陰に隠れる側",
+   "date": "2026-10-09",
+   "src": "images/gallery-sns/sfw/iris/8f168a48ac88.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8f168a48ac88_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "0d91fd5deb74",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜長の半身浴で湯船の縁に本を置いて読んでいたら、手が滑って本を湯に落としかける",
+   "date": "2026-10-09",
+   "src": "images/gallery-sns/sfw/fiona/0d91fd5deb74.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/0d91fd5deb74_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "9971f2716f52",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "寒露にちなんで、露を含んだ紅葉の葉と過ご",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/lupinus/9971f2716f52.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9971f2716f52_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "9936f2379d9d",
    "char": "iris",
@@ -43,6 +121,71 @@
    "thumb": "images/gallery-sns/sfw/iris/9936f2379d9d_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "58a0a6e97b65",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝霧の牧場で乳しぼりの見習い。牛に頬をべろんと舐められて、目をつむって大笑いする",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/iris/58a0a6e97b65.webp",
+   "thumb": "images/gallery-sns/sfw/iris/58a0a6e97b65_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "55ef87166eaf",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#kanpAI",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/lupinus/55ef87166eaf.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/55ef87166eaf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1216ee4cc750",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "双子そろって寝坊し慌てて支度する",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/iris/1216ee4cc750.webp",
+   "thumb": "images/gallery-sns/sfw/iris/1216ee4cc750_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "09256cc8025a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "楽器を適当に鳴らして、自分が出した音に驚く",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/iris/09256cc8025a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/09256cc8025a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "033bafb7fc0e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 脚を絡めてソファで映画を見る",
+   "date": "2026-10-08",
+   "src": "images/gallery-sns/sfw/lupinus/033bafb7fc0e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/033bafb7fc0e_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "cae0fa1f4c60",

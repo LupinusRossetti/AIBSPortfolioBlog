@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "items": [
   {
    "id": "20261006_obake",
@@ -24,6 +24,14 @@
    "title": "どんぐりを、拾っていただけなのに",
    "date": "2026-10-04",
    "thumb": "images/gallery-videos/20261004_donguri.jpg"
+  },
+  {
+   "id": "20261001_houki",
+   "video_id": "_Xs9I081hGM",
+   "url": "https://youtube.com/shorts/_Xs9I081hGM",
+   "title": "ほうきより、こっちが早い",
+   "date": "2026-10-01",
+   "thumb": "images/gallery-videos/20261001_houki.jpg"
   },
   {
    "id": "20260927_ochibatsukami",

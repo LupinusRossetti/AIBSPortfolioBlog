@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:iris": 152,
-  "sfw:lupinus": 183,
+  "sfw:lupinus": 185,
+  "sfw:iris": 154,
   "sfw:fiona": 138,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "eafddbcfb659",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "目の愛護デーにちなんで、丸い眼鏡ときらめ",
+   "date": "2026-10-10",
+   "src": "images/gallery-sns/sfw/lupinus/eafddbcfb659.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/eafddbcfb659_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "805ad9f4f451",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の神社の境内。巫女装束のアイリスが、竹ぼうきで落ち葉を集めていたのに、山にしてジャンプで飛び込もうとしている",
+   "date": "2026-10-10",
+   "src": "images/gallery-sns/sfw/iris/805ad9f4f451.webp",
+   "thumb": "images/gallery-sns/sfw/iris/805ad9f4f451_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "566aa019b861",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝霧の陸上トラック。ランシャツと短パンにスパイクのアイリスがハードルを跳び越える瞬間、脚がまっすぐ伸びて髪が後ろへ流れる",
+   "date": "2026-10-10",
+   "src": "images/gallery-sns/sfw/iris/566aa019b861.webp",
+   "thumb": "images/gallery-sns/sfw/iris/566aa019b861_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4760343638ed",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "休日の午後、リビングの丸いテーブルで3人がお茶会。ルピナスが紅茶を注ぎ、アイリスはクッキーを頬張り、フィオナはカップを両",
+   "date": "2026-10-10",
+   "src": "images/gallery-sns/sfw/lupinus/4760343638ed.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4760343638ed_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "bf487446eeef",
    "char": "iris",

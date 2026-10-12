@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-12",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 185,
-  "sfw:iris": 154,
-  "sfw:fiona": 138,
+  "sfw:iris": 156,
+  "sfw:lupinus": 187,
+  "sfw:fiona": 139,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e2205aff58f7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "双子でハロウィンの手作り仮装を見せ合う",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/iris/e2205aff58f7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e2205aff58f7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a98dfc9e6711",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "暖炉の前のラグに横向きに寝そべったルピナスが、焼き栗の皮をむいて一粒こちらへ差し出す",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/a98dfc9e6711.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a98dfc9e6711_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "9e958ae48cef",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA かぼちゃの中身で片方の鼻の頭が橙色になり",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/9e958ae48cef.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9e958ae48cef_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "4fab2f6dbc8f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "駅のホームで電車を待つあいだ、舞いこんできたピンクの花びらに手をのばして笑う",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/iris/4fab2f6dbc8f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4fab2f6dbc8f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4dcad3440dbb",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "スポーツの日にちなんで、スニーカーとスト",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/fiona/4dcad3440dbb.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4dcad3440dbb_t.webp",
+   "w": 1280,
+   "h": 720
+  },
   {
    "id": "eafddbcfb659",
    "char": "lupinus",

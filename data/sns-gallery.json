@@ -23,14 +23,40 @@
   }
  },
  "counts": {
-  "sfw:iris": 156,
-  "sfw:lupinus": 187,
-  "sfw:fiona": 139,
+  "sfw:iris": 158,
+  "sfw:lupinus": 193,
+  "sfw:fiona": 140,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f95c08c64356",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハートを贈るうちの子",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/iris/f95c08c64356.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f95c08c64356_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "f5757d3e4465",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AQUA制服登校日",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/f5757d3e4465.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f5757d3e4465_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e2205aff58f7",
    "char": "iris",
@@ -41,6 +67,19 @@
    "date": "2026-10-12",
    "src": "images/gallery-sns/sfw/iris/e2205aff58f7.webp",
    "thumb": "images/gallery-sns/sfw/iris/e2205aff58f7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c2634d7d6611",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIひょっこり",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/c2634d7d6611.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c2634d7d6611_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -58,6 +97,19 @@
    "h": 720
   },
   {
+   "id": "a3fa44557b34",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#世界AIコスプレサミット",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/fiona/a3fa44557b34.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a3fa44557b34_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "9e958ae48cef",
    "char": "lupinus",
    "nsfw": false,
@@ -69,6 +121,45 @@
    "thumb": "images/gallery-sns/sfw/lupinus/9e958ae48cef_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "966bd51ec5c0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIartwithDeliveryrobot",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/966bd51ec5c0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/966bd51ec5c0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "67859169240a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月曜日の魔女っ子",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/67859169240a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/67859169240a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5ad1fd1b2c5a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木チャイナ曜日",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/5ad1fd1b2c5a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5ad1fd1b2c5a_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "4fab2f6dbc8f",
@@ -95,6 +186,32 @@
    "thumb": "images/gallery-sns/sfw/fiona/4dcad3440dbb_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "3ea53c0db72e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フェチミミ大集合",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/iris/3ea53c0db72e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/3ea53c0db72e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2cde7e6e9b58",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スポーツの秋 AI創作フェア",
+   "date": "2026-10-12",
+   "src": "images/gallery-sns/sfw/lupinus/2cde7e6e9b58.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2cde7e6e9b58_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "eafddbcfb659",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:iris": 158,
-  "sfw:lupinus": 193,
-  "sfw:fiona": 140,
+  "sfw:lupinus": 194,
+  "sfw:iris": 160,
+  "sfw:fiona": 142,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "d7565bca712d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "サツマイモの日にちなんで、焼き芋と秋の落",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/lupinus/d7565bca712d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d7565bca712d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ada03db69875",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水たまりを飛び越えるのに手を引く",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/iris/ada03db69875.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ada03db69875_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "623fc768efc8",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "縁側でアイスを半分こする双子",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/iris/623fc768efc8.webp",
+   "thumb": "images/gallery-sns/sfw/iris/623fc768efc8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "37b9032ff774",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の高原のパン焼き窯の前。パン職人のエプロンのフィオナが、木のヘラで焼きたてのパンを取り出し、香りにうっとり目を閉じる",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/fiona/37b9032ff774.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/37b9032ff774_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "35467a14d87c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "村の収穫祭の広場。紫のディアンドルを着たフィオナが、輪になったダンスに引っぱり込まれ、スカートをひるがえしながら照れ笑い",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/fiona/35467a14d87c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/35467a14d87c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f95c08c64356",
    "char": "iris",

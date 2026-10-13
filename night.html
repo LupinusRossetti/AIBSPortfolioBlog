@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 🆕2026-10-14 るぴちゃん＝ギャラリーの🌙から入る「特別な人だけの入口」。検索に出さない（noindex・sitemap に入れない）。
+       ここには絵を置かない（GitHub の規約）＝年齢確認のあと R18 の自サイト（Cloudflare Pages）へつなぐだけ -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>ひみつの入口</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: #1b1426; color: #f3e9f7; font-family: "Zen Maru Gothic", sans-serif; margin: 0; min-height: 100vh;
+           display: flex; align-items: center; justify-content: center; }
+    .night { max-width: 560px; margin: 0 16px; padding: 2.6rem 1.8rem; text-align: center;
+             border: 1px solid rgba(255, 182, 220, .25); border-radius: 18px; background: rgba(255, 255, 255, .03); }
+    .night h1 { font-family: "Cormorant Garamond", serif; font-style: italic; font-weight: 500; font-size: 2rem; margin: 0 0 .4rem; color: #ffc3de; }
+    .night p { line-height: 1.9; margin: .6rem 0; }
+    .btn { display: inline-block; margin: .5rem .3rem; padding: .75rem 1.4rem; border-radius: 999px; border: 1px solid #ff9fca;
+           background: transparent; color: #ffd6ea; font: inherit; cursor: pointer; text-decoration: none; }
+    .btn.strong { background: #ff8cbf; color: #2a1630; border-color: #ff8cbf; font-weight: 700; }
+    .note { font-size: .8rem; opacity: .7; }
+    #inside[hidden], #door[hidden] { display: none; }
+  </style>
+</head>
+
+<body>
+  <main class="night">
+    <div id="door">
+      <h1>ひみつのお部屋</h1>
+      <p>ここから先は成人向けです。<br>18歳未満の方、苦手な方は戻ってください。</p>
+      <p>
+        <button class="btn strong" id="yes" type="button">18歳以上です</button>
+        <a class="btn" href="gallery.html">戻る</a>
+      </p>
+    </div>
+    <div id="inside" hidden>
+      <h1>ようこそ</h1>
+      <p>見つけてくれて、ありがとう♡<br>この先は、ここまで来てくれた人だけのお部屋です。</p>
+      <p>
+        <a class="btn strong" href="https://himitsu-nemurihime-idol.pages.dev/" rel="noopener nofollow">Vtuberアイドル枠 R18</a>
+        <a class="btn strong" href="https://himitsu-nemurihime.pages.dev/" rel="noopener nofollow">ひみつの眠り姫 R18</a>
+      </p>
+      <p class="note">リンク先でももう一度、年齢の確認があります。</p>
+      <p><a class="btn" href="gallery.html">ギャラリーへ戻る</a></p>
+    </div>
+  </main>
+  <script>
+    document.getElementById('yes').onclick = function () {
+      document.getElementById('door').hidden = true;
+      document.getElementById('inside').hidden = false;
+    };
+  </script>
+</body>
+
+</html>

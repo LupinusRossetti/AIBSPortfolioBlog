@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 194,
-  "sfw:iris": 160,
-  "sfw:fiona": 142,
+  "sfw:lupinus": 196,
+  "sfw:fiona": 145,
+  "sfw:iris": 161,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e97a5e589f15",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#宝石のうちの子",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/lupinus/e97a5e589f15.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e97a5e589f15_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e13aa282caa3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIケモ耳曜日",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/lupinus/e13aa282caa3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e13aa282caa3_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "ddcbe8c9b290",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#水と浄化の水曜日",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/fiona/ddcbe8c9b290.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ddcbe8c9b290_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c0ae74f21c45",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋の風物詩",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/fiona/c0ae74f21c45.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c0ae74f21c45_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7f275ba8ef9f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AQUAビーチタイム",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/iris/7f275ba8ef9f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7f275ba8ef9f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "063d62bc6a72",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIさいかわ寝顔",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/fiona/063d62bc6a72.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/063d62bc6a72_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "d7565bca712d",
    "char": "lupinus",

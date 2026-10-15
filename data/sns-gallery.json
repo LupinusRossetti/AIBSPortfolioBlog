@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,40 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 199,
-  "sfw:fiona": 146,
-  "sfw:iris": 162,
+  "sfw:iris": 165,
+  "sfw:lupinus": 200,
+  "sfw:fiona": 147,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "af6ea60cb012",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#コスモ水着女子 2 iris（眠り姫）",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/iris/af6ea60cb012.webp",
+   "thumb": "images/gallery-sns/sfw/iris/af6ea60cb012_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9c52532c8427",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#コスモ水着女子 lupinus（眠り姫）",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/9c52532c8427.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9c52532c8427_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e97a5e589f15",
    "char": "lupinus",
@@ -67,6 +93,19 @@
    "date": "2026-10-14",
    "src": "images/gallery-sns/sfw/fiona/ddcbe8c9b290.webp",
    "thumb": "images/gallery-sns/sfw/fiona/ddcbe8c9b290_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d73e6cde9182",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ジャックの招待状",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/iris/d73e6cde9182.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d73e6cde9182_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -188,6 +227,19 @@
    "h": 1280
   },
   {
+   "id": "d07d922c466e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIゆめかわハロウィン",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/fiona/d07d922c466e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d07d922c466e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "ada03db69875",
    "char": "iris",
    "nsfw": false,
@@ -210,6 +262,19 @@
    "date": "2026-10-13",
    "src": "images/gallery-sns/sfw/iris/623fc768efc8.webp",
    "thumb": "images/gallery-sns/sfw/iris/623fc768efc8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4e25db41ea14",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ブーツ射出",
+   "date": "2026-10-13",
+   "src": "images/gallery-sns/sfw/iris/4e25db41ea14.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4e25db41ea14_t.webp",
    "w": 720,
    "h": 1280
   },

@@ -23,14 +23,40 @@
   }
  },
  "counts": {
-  "sfw:iris": 165,
-  "sfw:lupinus": 200,
-  "sfw:fiona": 147,
+  "sfw:fiona": 149,
+  "sfw:iris": 167,
+  "sfw:lupinus": 202,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "d53b1fdf5910",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI木曜日のRQ",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/fiona/d53b1fdf5910.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d53b1fdf5910_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c5dd7070ec5d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ゆる募ネコが主役にゃ",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/iris/c5dd7070ec5d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c5dd7070ec5d_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "af6ea60cb012",
    "char": "iris",
@@ -54,6 +80,58 @@
    "date": "2026-10-15",
    "src": "images/gallery-sns/sfw/lupinus/9c52532c8427.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/9c52532c8427_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2a47e0b4b6ca",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#SAMICO研",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/2a47e0b4b6ca.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2a47e0b4b6ca_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "256d094adcf0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋色マルシェ",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/fiona/256d094adcf0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/256d094adcf0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0beb4fca34ac",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木チャイナ曜日",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/iris/0beb4fca34ac.webp",
+   "thumb": "images/gallery-sns/sfw/iris/0beb4fca34ac_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0ab9fca07a22",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#リノの衣装工房",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/0ab9fca07a22.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0ab9fca07a22_t.webp",
    "w": 720,
    "h": 1280
   },

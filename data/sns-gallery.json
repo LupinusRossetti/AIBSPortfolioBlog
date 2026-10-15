@@ -23,14 +23,27 @@
   }
  },
  "counts": {
+  "sfw:lupinus": 206,
   "sfw:iris": 170,
   "sfw:fiona": 153,
-  "sfw:lupinus": 205,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f55080f8a1c9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木曜覚醒エンチャント",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/f55080f8a1c9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f55080f8a1c9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "d8d5f4b6a1aa",
    "char": "iris",

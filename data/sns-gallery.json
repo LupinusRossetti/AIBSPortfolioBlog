@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 196,
-  "sfw:fiona": 145,
-  "sfw:iris": 161,
+  "sfw:lupinus": 199,
+  "sfw:fiona": 146,
+  "sfw:iris": 162,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -71,6 +71,19 @@
    "h": 1280
   },
   {
+   "id": "c9d2543b82f3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ソファに横になって、膝の上の猫が寝るまで動けない",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/lupinus/c9d2543b82f3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c9d2543b82f3_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "c0ae74f21c45",
    "char": "fiona",
    "nsfw": false,
@@ -80,6 +93,19 @@
    "date": "2026-10-14",
    "src": "images/gallery-sns/sfw/fiona/c0ae74f21c45.webp",
    "thumb": "images/gallery-sns/sfw/fiona/c0ae74f21c45_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8fb534660f53",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "鉄道の日にちなんで、鉄道模型と切符、駅の",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/fiona/8fb534660f53.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8fb534660f53_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -97,6 +123,32 @@
    "h": 1280
   },
   {
+   "id": "4764a0816a7c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "縁側でお月見団子とススキを供え、月を見上げる",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/lupinus/4764a0816a7c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4764a0816a7c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "08eb7ff9f584",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 弾き終えて肩を寄せ合ったまま、二人とも汗",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/lupinus/08eb7ff9f584.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/08eb7ff9f584_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "063d62bc6a72",
    "char": "fiona",
    "nsfw": false,
@@ -106,6 +158,19 @@
    "date": "2026-10-14",
    "src": "images/gallery-sns/sfw/fiona/063d62bc6a72.webp",
    "thumb": "images/gallery-sns/sfw/fiona/063d62bc6a72_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "0441ef3517b3",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "長雨の朝、黄色いレインコートのフードを深くかぶって、フードに当たる雨音を口をぽかんと開けて聞く",
+   "date": "2026-10-14",
+   "src": "images/gallery-sns/sfw/iris/0441ef3517b3.webp",
+   "thumb": "images/gallery-sns/sfw/iris/0441ef3517b3_t.webp",
    "w": 1280,
    "h": 1280
   },

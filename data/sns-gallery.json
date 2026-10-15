@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 169,
-  "sfw:fiona": 151,
-  "sfw:lupinus": 202,
+  "sfw:iris": 170,
+  "sfw:fiona": 153,
+  "sfw:lupinus": 205,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -110,6 +110,32 @@
    "h": 1280
   },
   {
+   "id": "986f3dd2f00f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の紅葉狩り弁当プロンプト（GPT",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/fiona/986f3dd2f00f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/986f3dd2f00f_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "8aca3263ce6f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "居間のソファに仰向けで、脚を背もたれに掛けて漫画を逆さに読む",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/iris/8aca3263ce6f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8aca3263ce6f_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "82a8797a6586",
    "char": "fiona",
    "nsfw": false,
@@ -119,6 +145,32 @@
    "date": "2026-10-15",
    "src": "images/gallery-sns/sfw/fiona/82a8797a6586.webp",
    "thumb": "images/gallery-sns/sfw/fiona/82a8797a6586_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5c6e2a718556",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA プールで浮き輪を押し合って遊ぶ",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/5c6e2a718556.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5c6e2a718556_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "562febb125ee",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "3人で怖い話をして本気で怖がる",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/562febb125ee.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/562febb125ee_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -162,6 +214,19 @@
    "h": 1280
   },
   {
+   "id": "12c9b6a1bfd4",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "きのこの日。午後の紅葉の森で、落ち葉の上にしゃがんだルピナスが、籠いっぱいのきのこを抱えて、見つけたばかりの赤いきのこを",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/lupinus/12c9b6a1bfd4.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/12c9b6a1bfd4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "0beb4fca34ac",
    "char": "iris",
    "nsfw": false,
@@ -186,6 +251,19 @@
    "thumb": "images/gallery-sns/sfw/lupinus/0ab9fca07a22_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "04b34cddde53",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "寝台に仰向けで、目覚ましを止めた手をそのまま額に載せる",
+   "date": "2026-10-15",
+   "src": "images/gallery-sns/sfw/fiona/04b34cddde53.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/04b34cddde53_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "e97a5e589f15",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,105 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 208,
-  "sfw:iris": 172,
-  "sfw:fiona": 154,
+  "sfw:iris": 176,
+  "sfw:lupinus": 210,
+  "sfw:fiona": 155,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e6763b2392b7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋色マルシェ",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/e6763b2392b7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e6763b2392b7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c8cecd81acb9",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月夜のキョンシー展",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/c8cecd81acb9.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c8cecd81acb9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b1125fb12c4c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋色に染まるうちの子",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/b1125fb12c4c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b1125fb12c4c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6def520dad46",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#さばえeスポーツDAYイラコン",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/6def520dad46.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6def520dad46_t.webp",
+   "w": 1024,
+   "h": 1280
+  },
+  {
+   "id": "36065a7bf4fd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#胃痛恋愛ゲーム二択",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/36065a7bf4fd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/36065a7bf4fd_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "id": "25e78f2b159b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おしゃきゃわパーティー",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/25e78f2b159b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/25e78f2b159b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "08f48bd5e076",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#街角の土曜な衣装店",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/08f48bd5e076.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/08f48bd5e076_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "b6d707e66dd7",
    "char": "lupinus",

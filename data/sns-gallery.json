@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 176,
-  "sfw:lupinus": 210,
-  "sfw:fiona": 155,
+  "sfw:iris": 178,
+  "sfw:fiona": 157,
+  "sfw:lupinus": 212,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -43,6 +43,32 @@
    "thumb": "images/gallery-sns/sfw/iris/e6763b2392b7_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "e54dbff7bea4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "工房の作業台に頬杖をついて、乾くのを待つ焼き物を眺める",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/e54dbff7bea4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e54dbff7bea4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cdebf6815b8d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 砂浜で砂の城を作って崩す",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/cdebf6815b8d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/cdebf6815b8d_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "c8cecd81acb9",
@@ -84,6 +110,32 @@
    "h": 1280
   },
   {
+   "id": "611500de845c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "読書の秋にちなんで、積み上げた本と紅葉の",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/611500de845c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/611500de845c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "415930aefcc7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "古着屋の帽子の棚の前。ルピナスがアイリスに大きなつば広帽をかぶせると目まで隠れてしまい、アイリスが帽子を持ち上げてのぞき",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/415930aefcc7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/415930aefcc7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "36065a7bf4fd",
    "char": "lupinus",
    "nsfw": false,
@@ -110,6 +162,19 @@
    "h": 1280
   },
   {
+   "id": "0dd8afdd427e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "革のグローブに止まった鷹の胸の羽を、指の背でそっとなでる",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/0dd8afdd427e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/0dd8afdd427e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "08f48bd5e076",
    "char": "fiona",
    "nsfw": false,
@@ -120,6 +185,19 @@
    "src": "images/gallery-sns/sfw/fiona/08f48bd5e076.webp",
    "thumb": "images/gallery-sns/sfw/fiona/08f48bd5e076_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "08ea423b4c9c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の秋の読書週間しおりセットプロン",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/08ea423b4c9c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/08ea423b4c9c_t.webp",
+   "w": 853,
    "h": 1280
   },
   {

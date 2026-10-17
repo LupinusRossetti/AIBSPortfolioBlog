@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 206,
-  "sfw:iris": 170,
-  "sfw:fiona": 153,
+  "sfw:lupinus": 208,
+  "sfw:iris": 172,
+  "sfw:fiona": 154,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "b6d707e66dd7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "開演直前の舞台袖。待ち針をくわえたまま踊り子の衣装の裾上げを仕上げたルピナスが、幕の隙間から漏れるスポットライトの中で小",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/b6d707e66dd7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b6d707e66dd7_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "93def8d2afa0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA ぶどう狩り。鋏を入れた大きな一房が重くて",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/93def8d2afa0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/93def8d2afa0_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "816e9803015a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "玄関で靴を履きながら、片手でパンを咥えて時計を見る",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/iris/816e9803015a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/816e9803015a_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "7999cfaf59f1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "公園の大きな落ち葉の山。アイリスが両手を広げて背中から飛び込み、熊手を持ったフィオナが舞い上がる落ち葉の中で吹き出す",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/iris/7999cfaf59f1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7999cfaf59f1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "19673172974d",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "実りの秋にちなんで、稲穂と案山子と過ごす",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/fiona/19673172974d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/19673172974d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f55080f8a1c9",
    "char": "lupinus",

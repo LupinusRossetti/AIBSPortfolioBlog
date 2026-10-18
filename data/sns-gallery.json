@@ -23,14 +23,53 @@
   }
  },
  "counts": {
-  "sfw:iris": 178,
-  "sfw:fiona": 157,
-  "sfw:lupinus": 212,
+  "sfw:lupinus": 221,
+  "sfw:iris": 183,
+  "sfw:fiona": 163,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f32957b1399b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI可愛くピース選手権",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/f32957b1399b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f32957b1399b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f13af26bb117",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#蒼風の高原への招待状",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/f13af26bb117.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f13af26bb117_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "eb16f73ff18a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋の中華ロリータプリンセス",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/eb16f73ff18a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/eb16f73ff18a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e6763b2392b7",
    "char": "iris",
@@ -55,6 +94,19 @@
    "src": "images/gallery-sns/sfw/fiona/e54dbff7bea4.webp",
    "thumb": "images/gallery-sns/sfw/fiona/e54dbff7bea4_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d9fd480b4233",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月見夜温泉",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/d9fd480b4233.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d9fd480b4233_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -84,6 +136,19 @@
    "h": 1280
   },
   {
+   "id": "b9ddfe85ccc3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月見夜温泉",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/b9ddfe85ccc3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b9ddfe85ccc3_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "b1125fb12c4c",
    "char": "iris",
    "nsfw": false,
@@ -97,6 +162,123 @@
    "h": 1280
   },
   {
+   "id": "a52d8aae25d6",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋の中華ロリータプリンセス",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/a52d8aae25d6.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a52d8aae25d6_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a2c13dc29e63",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月夜のオパールハロウィン",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/a2c13dc29e63.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a2c13dc29e63_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a050564e800a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#あなたが見つけた秋の色",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/a050564e800a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a050564e800a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9d0cbb19c80e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#みんと企画ナースステーション",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/9d0cbb19c80e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9d0cbb19c80e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9ca29728b35c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIsleepingbeauty",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/9ca29728b35c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9ca29728b35c_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "9c118d2d93ac",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#マッドサイエンティスト大行進",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/9c118d2d93ac.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9c118d2d93ac_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "93842e1800ce",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月夜のオパールハロウィン",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/93842e1800ce.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/93842e1800ce_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "712fb43d138f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#みんと企画ナースステーション",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/712fb43d138f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/712fb43d138f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6ec033b9518e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIsleepingbeauty",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/6ec033b9518e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6ec033b9518e_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "6def520dad46",
    "char": "lupinus",
    "nsfw": false,
@@ -107,6 +289,19 @@
    "src": "images/gallery-sns/sfw/lupinus/6def520dad46.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/6def520dad46_t.webp",
    "w": 1024,
+   "h": 1280
+  },
+  {
+   "id": "682d23db16e9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI可愛くピース選手権",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/682d23db16e9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/682d23db16e9_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -136,6 +331,19 @@
    "h": 1280
   },
   {
+   "id": "37358eddb332",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIあつまれ大富豪と大貧民",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/37358eddb332.webp",
+   "thumb": "images/gallery-sns/sfw/iris/37358eddb332_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "36065a7bf4fd",
    "char": "lupinus",
    "nsfw": false,
@@ -149,6 +357,19 @@
    "h": 1280
   },
   {
+   "id": "3519a8cdb4c2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#マッドサイエンティスト大行進",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/3519a8cdb4c2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/3519a8cdb4c2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "25e78f2b159b",
    "char": "iris",
    "nsfw": false,
@@ -158,6 +379,45 @@
    "date": "2026-10-17",
    "src": "images/gallery-sns/sfw/iris/25e78f2b159b.webp",
    "thumb": "images/gallery-sns/sfw/iris/25e78f2b159b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "24e4225a0f07",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#あなたが見つけた秋の色",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/fiona/24e4225a0f07.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/24e4225a0f07_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "203acddf5337",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#神さまのわがまま",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/lupinus/203acddf5337.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/203acddf5337_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "id": "123847d65cde",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#蒼風の高原への招待状",
+   "date": "2026-10-17",
+   "src": "images/gallery-sns/sfw/iris/123847d65cde.webp",
+   "thumb": "images/gallery-sns/sfw/iris/123847d65cde_t.webp",
    "w": 720,
    "h": 1280
   },

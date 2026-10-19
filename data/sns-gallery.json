@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,27 @@
   }
  },
  "counts": {
+  "sfw:iris": 184,
   "sfw:lupinus": 221,
-  "sfw:iris": 183,
   "sfw:fiona": 163,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "19578d1299a1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 水族館の青い光のトンネル水槽の中。アイリ",
+   "date": "2026-10-18",
+   "src": "images/gallery-sns/sfw/iris/19578d1299a1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/19578d1299a1_t.webp",
+   "w": 1280,
+   "h": 720
+  },
   {
    "id": "f32957b1399b",
    "char": "lupinus",
@@ -5159,7 +5172,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "夕暮れの商店街で、栗の入った紙袋を掲げて帰る",
+   "title": "姉と次女で秋の味覚を買いに出る",
    "date": "2026-09-09",
    "src": "images/gallery-sns/sfw/lupinus/152919fd143d.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/152919fd143d_t.webp",

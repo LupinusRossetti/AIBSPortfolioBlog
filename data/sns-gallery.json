@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:iris": 184,
-  "sfw:lupinus": 221,
+  "sfw:lupinus": 224,
+  "sfw:iris": 185,
   "sfw:fiona": 163,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "df83c9c135f7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ハロウィン前の夜のキッチン。3人でかぼちゃのランタンを彫っていて、アイリスの顔がギザギザすぎてルピナスとフィオナが笑い、",
+   "date": "2026-10-18",
+   "src": "images/gallery-sns/sfw/lupinus/df83c9c135f7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/df83c9c135f7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b54d3c0388bc",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "フラフープ記念日。秋の公園の芝生で、アイリスがカラフルなフラフープを腰でくるくる回し、両手を上げて得意げに笑う。落ち葉が",
+   "date": "2026-10-18",
+   "src": "images/gallery-sns/sfw/iris/b54d3c0388bc.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b54d3c0388bc_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7d4676dc4b3c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝日の差す山の湖。ライフジャケットに花のブレスレットのルピナスがカヌーのパドルを漕ぎ、水面にきらめく光と水しぶきの中でこ",
+   "date": "2026-10-18",
+   "src": "images/gallery-sns/sfw/lupinus/7d4676dc4b3c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7d4676dc4b3c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1b8fe3551a87",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ボルダリングジムのカラフルなホールドの壁。ルピナスが次のホールドへ手を伸ばし、チョークの粉がふわっと舞う",
+   "date": "2026-10-18",
+   "src": "images/gallery-sns/sfw/lupinus/1b8fe3551a87.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1b8fe3551a87_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "19578d1299a1",
    "char": "iris",

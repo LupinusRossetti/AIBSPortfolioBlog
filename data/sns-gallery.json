@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 224,
-  "sfw:iris": 185,
-  "sfw:fiona": 164,
+  "sfw:iris": 187,
+  "sfw:lupinus": 226,
+  "sfw:fiona": 165,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "db66f9a5a687",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "灯台の上。夕日の中で大きなレンズを磨いていたアイリスが、双眼鏡で沖の船を見つけて大きく手を振る",
+   "date": "2026-10-19",
+   "src": "images/gallery-sns/sfw/iris/db66f9a5a687.webp",
+   "thumb": "images/gallery-sns/sfw/iris/db66f9a5a687_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d912d0f2c27c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "金木犀の香る秋の散歩道。マフラーを巻いたルピナスが、落ち葉を踏みながら歩いていて、ふわっと香りに気づいて振り返り、こちら",
+   "date": "2026-10-19",
+   "src": "images/gallery-sns/sfw/lupinus/d912d0f2c27c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d912d0f2c27c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a3086f4cf95f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "道場の縁で四つん這いになって、こぼれた矢を一本ずつ拾い集める",
+   "date": "2026-10-19",
+   "src": "images/gallery-sns/sfw/fiona/a3086f4cf95f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a3086f4cf95f_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "4975986eff2a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 肩に頭を預けられて身動きが取れず、片手だ",
+   "date": "2026-10-19",
+   "src": "images/gallery-sns/sfw/iris/4975986eff2a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4975986eff2a_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "25327b5cdf05",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "紅葉の山頂の展望台。フィオナが魔法瓶からココアを注ぎ、ルピナスがカップを両手で包んで、立ちのぼる湯気越しに見える紅葉の谷",
+   "date": "2026-10-19",
+   "src": "images/gallery-sns/sfw/lupinus/25327b5cdf05.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/25327b5cdf05_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "df83c9c135f7",
    "char": "lupinus",
@@ -5237,7 +5302,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "姉と次女で秋の味覚を買いに出る",
+   "title": "夕暮れの商店街で、栗の入った紙袋を掲げて帰る",
    "date": "2026-09-09",
    "src": "images/gallery-sns/sfw/lupinus/152919fd143d.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/152919fd143d_t.webp",

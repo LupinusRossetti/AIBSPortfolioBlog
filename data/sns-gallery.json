@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,27 @@
   }
  },
  "counts": {
+  "sfw:lupinus": 227,
   "sfw:iris": 188,
-  "sfw:lupinus": 226,
   "sfw:fiona": 165,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "fae9d9278442",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#使い魔のうちの子",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/lupinus/fae9d9278442.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/fae9d9278442_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "db66f9a5a687",
    "char": "iris",

@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 174,
-  "sfw:iris": 195,
-  "sfw:lupinus": 236,
+  "sfw:fiona": 176,
+  "sfw:iris": 198,
+  "sfw:lupinus": 240,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "fc0604a27917",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ゆる募ワンコとの絆だワン",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/fc0604a27917.webp",
+   "thumb": "images/gallery-sns/sfw/iris/fc0604a27917_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "f5ac5ede8532",
    "char": "iris",
    "nsfw": false,
@@ -84,6 +97,19 @@
    "h": 1280
   },
   {
+   "id": "d653ca1392b2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI相撲大会",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/d653ca1392b2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d653ca1392b2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "d5c8d68eea93",
    "char": "iris",
    "nsfw": false,
@@ -93,6 +119,19 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/iris/d5c8d68eea93.webp",
    "thumb": "images/gallery-sns/sfw/iris/d5c8d68eea93_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cdba227e2e97",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋の行楽 2",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/cdba227e2e97.webp",
+   "thumb": "images/gallery-sns/sfw/iris/cdba227e2e97_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -110,6 +149,19 @@
    "h": 1280
   },
   {
+   "id": "c8c0289f5c33",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#動物 3",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/c8c0289f5c33.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c8c0289f5c33_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "b99583f1d9ef",
    "char": "lupinus",
    "nsfw": false,
@@ -119,6 +171,19 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/lupinus/b99583f1d9ef.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/b99583f1d9ef_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b57c4657f365",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋のさくら祭り",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/b57c4657f365.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b57c4657f365_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -162,6 +227,19 @@
    "h": 1280
   },
   {
+   "id": "90c8ef1f6e46",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋の行楽",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/90c8ef1f6e46.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/90c8ef1f6e46_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "76a7e2891971",
    "char": "fiona",
    "nsfw": false,
@@ -175,6 +253,45 @@
    "h": 1280
   },
   {
+   "id": "71c822be0152",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋のさくら祭り",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/71c822be0152.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/71c822be0152_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "65d334def919",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うぇんずでーうぃんく",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/65d334def919.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/65d334def919_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "598000e9f41c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI相撲大会",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/598000e9f41c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/598000e9f41c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "5545d4c01e2b",
    "char": "lupinus",
    "nsfw": false,
@@ -184,6 +301,32 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/lupinus/5545d4c01e2b.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/5545d4c01e2b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "43fe49c3baff",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#berserkermoon",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/43fe49c3baff.webp",
+   "thumb": "images/gallery-sns/sfw/iris/43fe49c3baff_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3451fe15d141",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#berserkermoon",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/3451fe15d141.webp",
+   "thumb": "images/gallery-sns/sfw/iris/3451fe15d141_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -214,6 +357,45 @@
    "h": 1280
   },
   {
+   "id": "132aab4e17a5",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#動物",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/132aab4e17a5.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/132aab4e17a5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "132411e6314d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うぇんずでーうぃんく",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/132411e6314d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/132411e6314d_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "131407ac8375",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋の行楽 3",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/131407ac8375.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/131407ac8375_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "04af7ea7c48b",
    "char": "fiona",
    "nsfw": false,
@@ -237,32 +419,6 @@
    "src": "images/gallery-sns/sfw/lupinus/fae9d9278442.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/fae9d9278442_t.webp",
    "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "cdba227e2e97",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋の行楽 2",
-   "date": "2026-10-20",
-   "src": "images/gallery-sns/sfw/iris/cdba227e2e97.webp",
-   "thumb": "images/gallery-sns/sfw/iris/cdba227e2e97_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "c8c0289f5c33",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#動物 3",
-   "date": "2026-10-20",
-   "src": "images/gallery-sns/sfw/fiona/c8c0289f5c33.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/c8c0289f5c33_t.webp",
-   "w": 720,
    "h": 1280
   },
   {
@@ -305,19 +461,6 @@
    "h": 1280
   },
   {
-   "id": "90c8ef1f6e46",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋の行楽",
-   "date": "2026-10-20",
-   "src": "images/gallery-sns/sfw/lupinus/90c8ef1f6e46.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/90c8ef1f6e46_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "88cd5dccf830",
    "char": "fiona",
    "nsfw": false,
@@ -340,32 +483,6 @@
    "date": "2026-10-20",
    "src": "images/gallery-sns/sfw/fiona/87c0a9ce6df4.webp",
    "thumb": "images/gallery-sns/sfw/fiona/87c0a9ce6df4_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "132aab4e17a5",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#動物",
-   "date": "2026-10-20",
-   "src": "images/gallery-sns/sfw/lupinus/132aab4e17a5.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/132aab4e17a5_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "131407ac8375",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋の行楽 3",
-   "date": "2026-10-20",
-   "src": "images/gallery-sns/sfw/fiona/131407ac8375.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/131407ac8375_t.webp",
    "w": 720,
    "h": 1280
   },

@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 177,
-  "sfw:iris": 199,
-  "sfw:lupinus": 238,
+  "sfw:fiona": 178,
+  "sfw:iris": 201,
+  "sfw:lupinus": 241,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -80,6 +80,32 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/iris/f5ac5ede8532.webp",
    "thumb": "images/gallery-sns/sfw/iris/f5ac5ede8532_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f49991b03c16",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ジムのランニングマシンで速度を上げすぎて、手すりを掴んだまま息を整える",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/f49991b03c16.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f49991b03c16_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "ed1461d8d1b1",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "あかりの日にちなんで、電球とランタン、暖",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/ed1461d8d1b1.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ed1461d8d1b1_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -201,6 +227,19 @@
    "h": 1280
   },
   {
+   "id": "b11383eb180a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜明けの港の魚市場。オレンジのつなぎとゴム長靴のアイリスが、氷の上の大きな鮭を両手で抱え上げて得意げに笑う。白い息とカモ",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/b11383eb180a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b11383eb180a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "aed3477bbfa0",
    "char": "lupinus",
    "nsfw": false,
@@ -305,6 +344,19 @@
    "h": 1280
   },
   {
+   "id": "5671f4ef9709",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 夜の空港の展望デッキ。青い誘導灯が並ぶ滑",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/5671f4ef9709.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5671f4ef9709_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "5545d4c01e2b",
    "char": "lupinus",
    "nsfw": false,
@@ -353,6 +405,19 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/iris/30271f2b1b79.webp",
    "thumb": "images/gallery-sns/sfw/iris/30271f2b1b79_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1d48d3348b3f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夕暮れの遊園地のメリーゴーラウンド。ルピナスとフィオナが白い木馬に横座りで並び、後ろの金色の馬車からアイリスが身を乗り出",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/lupinus/1d48d3348b3f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1d48d3348b3f_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -419,6 +484,19 @@
    "src": "images/gallery-sns/sfw/lupinus/fae9d9278442.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/fae9d9278442_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "f7f35ad9ee4c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#動物 2",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/iris/f7f35ad9ee4c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f7f35ad9ee4c_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

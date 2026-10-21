@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:fiona": 178,
   "sfw:iris": 201,
+  "sfw:fiona": 178,
   "sfw:lupinus": 241,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f7f35ad9ee4c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#動物 2",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/f7f35ad9ee4c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f7f35ad9ee4c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "ff0b3375fbb3",
    "char": "fiona",
@@ -484,19 +497,6 @@
    "src": "images/gallery-sns/sfw/lupinus/fae9d9278442.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/fae9d9278442_t.webp",
    "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "f7f35ad9ee4c",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#動物 2",
-   "date": "2026-10-20",
-   "src": "images/gallery-sns/sfw/iris/f7f35ad9ee4c.webp",
-   "thumb": "images/gallery-sns/sfw/iris/f7f35ad9ee4c_t.webp",
-   "w": 720,
    "h": 1280
   },
   {

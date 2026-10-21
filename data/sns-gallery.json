@@ -23,8 +23,8 @@
   }
  },
  "counts": {
-  "sfw:fiona": 175,
-  "sfw:iris": 197,
+  "sfw:fiona": 177,
+  "sfw:iris": 199,
   "sfw:lupinus": 238,
   "sfw:three": 14
  },
@@ -81,6 +81,19 @@
    "src": "images/gallery-sns/sfw/iris/f5ac5ede8532.webp",
    "thumb": "images/gallery-sns/sfw/iris/f5ac5ede8532_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e19499acb484",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#水曜防具展",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/e19499acb484.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e19499acb484_t.webp",
+   "w": 960,
    "h": 1280
   },
   {
@@ -175,6 +188,19 @@
    "h": 1280
   },
   {
+   "id": "b2bf404a8383",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#水と浄化の水曜日",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/b2bf404a8383.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b2bf404a8383_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "aed3477bbfa0",
    "char": "lupinus",
    "nsfw": false,
@@ -185,6 +211,19 @@
    "src": "images/gallery-sns/sfw/lupinus/aed3477bbfa0.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/aed3477bbfa0_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ae93ef0d14c9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#神々は眠らない",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/fiona/ae93ef0d14c9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ae93ef0d14c9_t.webp",
+   "w": 960,
    "h": 1280
   },
   {
@@ -211,6 +250,19 @@
    "src": "images/gallery-sns/sfw/fiona/958fb12a2f2c.webp",
    "thumb": "images/gallery-sns/sfw/fiona/958fb12a2f2c_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "92944e144e49",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#混ぜ混ぜタイム",
+   "date": "2026-10-21",
+   "src": "images/gallery-sns/sfw/iris/92944e144e49.webp",
+   "thumb": "images/gallery-sns/sfw/iris/92944e144e49_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

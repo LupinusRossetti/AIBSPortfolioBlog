@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 176,
-  "sfw:iris": 198,
-  "sfw:lupinus": 240,
+  "sfw:fiona": 175,
+  "sfw:iris": 197,
+  "sfw:lupinus": 238,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -93,19 +93,6 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/iris/d6a1708f1eac.webp",
    "thumb": "images/gallery-sns/sfw/iris/d6a1708f1eac_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "d653ca1392b2",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#AI相撲大会",
-   "date": "2026-10-21",
-   "src": "images/gallery-sns/sfw/lupinus/d653ca1392b2.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/d653ca1392b2_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -253,32 +240,6 @@
    "h": 1280
   },
   {
-   "id": "71c822be0152",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#AI秋のさくら祭り",
-   "date": "2026-10-21",
-   "src": "images/gallery-sns/sfw/fiona/71c822be0152.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/71c822be0152_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "65d334def919",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#うぇんずでーうぃんく",
-   "date": "2026-10-21",
-   "src": "images/gallery-sns/sfw/lupinus/65d334def919.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/65d334def919_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
    "id": "598000e9f41c",
    "char": "lupinus",
    "nsfw": false,
@@ -314,19 +275,6 @@
    "date": "2026-10-21",
    "src": "images/gallery-sns/sfw/iris/43fe49c3baff.webp",
    "thumb": "images/gallery-sns/sfw/iris/43fe49c3baff_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "3451fe15d141",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#berserkermoon",
-   "date": "2026-10-21",
-   "src": "images/gallery-sns/sfw/iris/3451fe15d141.webp",
-   "thumb": "images/gallery-sns/sfw/iris/3451fe15d141_t.webp",
    "w": 720,
    "h": 1280
   },

@@ -25,7 +25,7 @@
  "counts": {
   "sfw:fiona": 174,
   "sfw:iris": 195,
-  "sfw:lupinus": 235,
+  "sfw:lupinus": 236,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -340,6 +340,19 @@
    "date": "2026-10-20",
    "src": "images/gallery-sns/sfw/fiona/87c0a9ce6df4.webp",
    "thumb": "images/gallery-sns/sfw/fiona/87c0a9ce6df4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "132aab4e17a5",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#動物",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/lupinus/132aab4e17a5.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/132aab4e17a5_t.webp",
    "w": 720,
    "h": 1280
   },

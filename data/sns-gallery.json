@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 202,
-  "sfw:fiona": 178,
-  "sfw:lupinus": 241,
+  "sfw:iris": 203,
+  "sfw:fiona": 180,
+  "sfw:lupinus": 243,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -42,6 +42,71 @@
    "src": "images/gallery-sns/sfw/iris/f7f35ad9ee4c.webp",
    "thumb": "images/gallery-sns/sfw/iris/f7f35ad9ee4c_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a7d3c95d6b22",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おおまかな想像図 3",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/a7d3c95d6b22.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a7d3c95d6b22_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "464cd0715421",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おおまかな想像図",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/464cd0715421.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/464cd0715421_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "442eafb552b0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アニメシチュエーション 3",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/442eafb552b0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/442eafb552b0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "265ac37ef159",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アニメシチュエーション",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/265ac37ef159.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/265ac37ef159_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "08aaf9a80579",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おおまかな想像図 2",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/08aaf9a80579.webp",
+   "thumb": "images/gallery-sns/sfw/iris/08aaf9a80579_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

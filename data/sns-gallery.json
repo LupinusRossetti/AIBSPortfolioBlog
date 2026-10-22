@@ -24,8 +24,8 @@
  },
  "counts": {
   "sfw:iris": 211,
-  "sfw:fiona": 185,
-  "sfw:lupinus": 248,
+  "sfw:fiona": 187,
+  "sfw:lupinus": 251,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -71,6 +71,19 @@
    "h": 1280
   },
   {
+   "id": "e37a08ac31b3",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた朝の植物園の蘭の小屋。ガラス屋根から差しこむ光の中、緑のつなぎのフィオナがしゃがんで、咲いたばかりの白い蘭に霧吹き",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/e37a08ac31b3.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e37a08ac31b3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "cd8a2169dbce",
    "char": "fiona",
    "nsfw": false,
@@ -81,6 +94,19 @@
    "src": "images/gallery-sns/sfw/fiona/cd8a2169dbce.webp",
    "thumb": "images/gallery-sns/sfw/fiona/cd8a2169dbce_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c95e989b597b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のスタンドの灯りの下、削りたての鉛筆を紙に走らせながら、こちらにウインク（焼けた絵に合わせて直した＝削る所は写っていな",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/c95e989b597b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c95e989b597b_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -227,6 +253,19 @@
    "h": 1280
   },
   {
+   "id": "423f299ccfbf",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "水族館の大きな水槽の前。ゆっくり横切るジンベエザメの影を3人で見上げ、アイリスが目をまんまるにして声をあげ、ルピナスとフ",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/423f299ccfbf.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/423f299ccfbf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "40d0e4044403",
    "char": "lupinus",
    "nsfw": false,
@@ -251,6 +290,19 @@
    "thumb": "images/gallery-sns/sfw/fiona/3a5b4a1d2ab8_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "286e41e6b393",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 木枯らしの帰り道、一本の長いマフラーを二",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/286e41e6b393.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/286e41e6b393_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "265ac37ef159",
@@ -314,6 +366,19 @@
    "date": "2026-10-22",
    "src": "images/gallery-sns/sfw/iris/22bfcb40cfba.webp",
    "thumb": "images/gallery-sns/sfw/iris/22bfcb40cfba_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0d78e2e5b555",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "キャットリボンの日。陽だまりの出窓に腰かけたルピナスが、白い子猫の首輪に赤いリボンを結んであげている最中、子猫がリボンの",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/0d78e2e5b555.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0d78e2e5b555_t.webp",
    "w": 720,
    "h": 1280
   },

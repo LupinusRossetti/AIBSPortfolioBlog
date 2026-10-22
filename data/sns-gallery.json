@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:iris": 203,
-  "sfw:fiona": 180,
-  "sfw:lupinus": 243,
+  "sfw:iris": 205,
+  "sfw:fiona": 182,
+  "sfw:lupinus": 244,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f9c9546ebb0a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#美人諜報員 2",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/f9c9546ebb0a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f9c9546ebb0a_t.webp",
+   "w": 1280,
+   "h": 720
+  },
   {
    "id": "f7f35ad9ee4c",
    "char": "iris",
@@ -41,6 +54,19 @@
    "date": "2026-10-22",
    "src": "images/gallery-sns/sfw/iris/f7f35ad9ee4c.webp",
    "thumb": "images/gallery-sns/sfw/iris/f7f35ad9ee4c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cd8a2169dbce",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI秋の味覚祭り",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/cd8a2169dbce.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/cd8a2169dbce_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -84,6 +110,32 @@
    "h": 1280
   },
   {
+   "id": "43ff4c0038a0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI和ロウィン2026",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/43ff4c0038a0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/43ff4c0038a0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "40d0e4044403",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#美人諜報員",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/40d0e4044403.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/40d0e4044403_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "265ac37ef159",
    "char": "lupinus",
    "nsfw": false,
@@ -93,6 +145,19 @@
    "date": "2026-10-22",
    "src": "images/gallery-sns/sfw/lupinus/265ac37ef159.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/265ac37ef159_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "22bfcb40cfba",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AI木曜日のRQ",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/22bfcb40cfba.webp",
+   "thumb": "images/gallery-sns/sfw/iris/22bfcb40cfba_t.webp",
    "w": 720,
    "h": 1280
   },

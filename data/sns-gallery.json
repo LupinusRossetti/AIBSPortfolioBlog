@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 210,
+  "sfw:iris": 211,
   "sfw:fiona": 185,
-  "sfw:lupinus": 246,
+  "sfw:lupinus": 248,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -149,6 +149,19 @@
    "h": 1280
   },
   {
+   "id": "79ca697c118b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木チャイナ曜日",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/79ca697c118b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/79ca697c118b_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
    "id": "794d76c08b14",
    "char": "fiona",
    "nsfw": false,
@@ -253,6 +266,19 @@
    "h": 1280
   },
   {
+   "id": "253ca8053ab7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アニメシチュエーション 2",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/253ca8053ab7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/253ca8053ab7_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "243ffae21c40",
    "char": "iris",
    "nsfw": false,
@@ -289,6 +315,19 @@
    "src": "images/gallery-sns/sfw/iris/22bfcb40cfba.webp",
    "thumb": "images/gallery-sns/sfw/iris/22bfcb40cfba_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0d17e7f05f6b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#リノの衣装工房",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/0d17e7f05f6b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0d17e7f05f6b_t.webp",
+   "w": 960,
    "h": 1280
   },
   {

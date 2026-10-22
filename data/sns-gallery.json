@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 205,
-  "sfw:fiona": 182,
-  "sfw:lupinus": 244,
+  "sfw:iris": 210,
+  "sfw:fiona": 185,
+  "sfw:lupinus": 246,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "f01cb65271e3",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#地味にハロウィン選手権2026",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/f01cb65271e3.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f01cb65271e3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "cd8a2169dbce",
    "char": "fiona",
    "nsfw": false,
@@ -71,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "c624dd784668",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#眼帯デー",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/c624dd784668.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c624dd784668_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
    "id": "a7d3c95d6b22",
    "char": "fiona",
    "nsfw": false,
@@ -81,6 +107,71 @@
    "src": "images/gallery-sns/sfw/fiona/a7d3c95d6b22.webp",
    "thumb": "images/gallery-sns/sfw/fiona/a7d3c95d6b22_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "91122bac730b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AQUAビーチタイム",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/91122bac730b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/91122bac730b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "84f6d889de88",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#白をまとううちの子",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/84f6d889de88.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/84f6d889de88_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7d13bc1881fb",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#水曜日のいやし",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/7d13bc1881fb.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7d13bc1881fb_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "794d76c08b14",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木曜は黒ミサ",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/794d76c08b14.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/794d76c08b14_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "id": "6cb321a5a351",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木曜覚醒エンチャント",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/lupinus/6cb321a5a351.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6cb321a5a351_t.webp",
+   "w": 960,
    "h": 1280
   },
   {
@@ -136,6 +227,19 @@
    "h": 1280
   },
   {
+   "id": "3a5b4a1d2ab8",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木漏れ日ガール",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/fiona/3a5b4a1d2ab8.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3a5b4a1d2ab8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "265ac37ef159",
    "char": "lupinus",
    "nsfw": false,
@@ -145,6 +249,32 @@
    "date": "2026-10-22",
    "src": "images/gallery-sns/sfw/lupinus/265ac37ef159.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/265ac37ef159_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "243ffae21c40",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#アクリル屋",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/243ffae21c40.webp",
+   "thumb": "images/gallery-sns/sfw/iris/243ffae21c40_t.webp",
+   "w": 914,
+   "h": 1280
+  },
+  {
+   "id": "2391a9f724aa",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#白夜生誕時代絵巻",
+   "date": "2026-10-22",
+   "src": "images/gallery-sns/sfw/iris/2391a9f724aa.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2391a9f724aa_t.webp",
    "w": 720,
    "h": 1280
   },

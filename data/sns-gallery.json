@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 274,
+  "sfw:lupinus": 275,
   "sfw:iris": 235,
-  "sfw:fiona": 204,
+  "sfw:fiona": 205,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -93,6 +93,19 @@
    "date": "2026-10-24",
    "src": "images/gallery-sns/sfw/iris/da0e96e8161b.webp",
    "thumb": "images/gallery-sns/sfw/iris/da0e96e8161b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d2285f3dfad5",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#メイド曜",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/fiona/d2285f3dfad5.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d2285f3dfad5_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -549,6 +562,19 @@
    "src": "images/gallery-sns/sfw/lupinus/32c3fcb7a4ca.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/32c3fcb7a4ca_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "32314f493063",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ネスカの闇闇画廊 ハロウィン 2",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/lupinus/32314f493063.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/32314f493063_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-24",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,118 @@
   }
  },
  "counts": {
-  "sfw:iris": 211,
-  "sfw:fiona": 187,
-  "sfw:lupinus": 251,
+  "sfw:iris": 215,
+  "sfw:fiona": 188,
+  "sfw:lupinus": 254,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "b8c8acc99100",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#Halloween 3",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/b8c8acc99100.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b8c8acc99100_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a2e9c5019a18",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#Halloween 4",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/fiona/a2e9c5019a18.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a2e9c5019a18_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "3d5ee7015098",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#Halloween 2",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/lupinus/3d5ee7015098.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/3d5ee7015098_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b984e9d3079f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "峠のヒルクライム。立ち漕ぎで坂を登りきったアイリスが、頂上でロードバイクを止めて、ボトルの水を頭からざぶっとかぶって笑う",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/iris/b984e9d3079f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b984e9d3079f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "acea8e20b368",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "定時 2人LoRA 回転寿司のカウンター席。レーンを流れてく",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/iris/acea8e20b368.webp",
+   "thumb": "images/gallery-sns/sfw/iris/acea8e20b368_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "7a2440e85870",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の屋台村のたこ焼き屋台。ねじりはちまきに紺の法被のアイリスが、鉄板の上のたこ焼きをくるっとまとめて返し、湯気の中でこっ",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/iris/7a2440e85870.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7a2440e85870_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "76025ea8a370",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "陶芸教室のろくろの前。ルピナスがフィオナの後ろから手を添えて、ふたりで粘土の器の形をととのえ、うまく丸くなって顔を見合わ",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/lupinus/76025ea8a370.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/76025ea8a370_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1629be92c8ee",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "霜降にちなんで、霜のついた紅葉の葉と白い",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/lupinus/1629be92c8ee.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1629be92c8ee_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
   {
    "id": "f9c9546ebb0a",
    "char": "iris",

@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 275,
-  "sfw:iris": 235,
-  "sfw:fiona": 205,
+  "sfw:lupinus": 276,
+  "sfw:iris": 236,
+  "sfw:fiona": 207,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -201,6 +201,19 @@
    "h": 1280
   },
   {
+   "id": "a72b2182d16a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "森の沢で手のひらに水を汲んで顔を洗い、冷たさに肩をすくめる",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/fiona/a72b2182d16a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a72b2182d16a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "a36df725db13",
    "char": "iris",
    "nsfw": false,
@@ -357,6 +370,19 @@
    "h": 1280
   },
   {
+   "id": "755d87a82d01",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "文鳥の日にちなんで、文鳥と鳥かご、種のお",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/755d87a82d01.webp",
+   "thumb": "images/gallery-sns/sfw/iris/755d87a82d01_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "7366caffc9ad",
    "char": "lupinus",
    "nsfw": false,
@@ -474,6 +500,19 @@
    "h": 1280
   },
   {
+   "id": "4b4b3fd4ac74",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ネオンの遊歩道を、片足を上げたまま両手を広げてローラースケートで滑る",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/fiona/4b4b3fd4ac74.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4b4b3fd4ac74_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "4b10ace95a9e",
    "char": "fiona",
    "nsfw": false,
@@ -485,6 +524,19 @@
    "thumb": "images/gallery-sns/sfw/fiona/4b10ace95a9e_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "4817f4f2d816",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のサロンのグランドピアノ。ルピナスが弾き、フィオナがピアノに寄りかかって歌い、アイリスがピアノの上に頬づえをついて聞き",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/lupinus/4817f4f2d816.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4817f4f2d816_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "45c164a96d0f",

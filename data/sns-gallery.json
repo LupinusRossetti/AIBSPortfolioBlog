@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 277,
-  "sfw:iris": 236,
-  "sfw:fiona": 207,
+  "sfw:fiona": 208,
+  "sfw:lupinus": 279,
+  "sfw:iris": 242,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "a93d816fb03c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ナイショの試着会",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/a93d816fb03c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a93d816fb03c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9ff680dd56ec",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ナイショの試着会 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/9ff680dd56ec.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9ff680dd56ec_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9128fa89f1e8",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ナイショの試着会 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/9128fa89f1e8.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9128fa89f1e8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "43476e433e72",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ファンタジー AI創作フェア",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/43476e433e72.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/43476e433e72_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f88f49f7195b",
    "char": "lupinus",
@@ -58,6 +110,19 @@
    "h": 1280
   },
   {
+   "id": "e6c003a3d97e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#楽しい折り紙の世界 3",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/e6c003a3d97e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e6c003a3d97e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "e63f7ef7e41c",
    "char": "lupinus",
    "nsfw": false,
@@ -68,6 +133,19 @@
    "src": "images/gallery-sns/sfw/lupinus/e63f7ef7e41c.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/e63f7ef7e41c_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "e469addfe822",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うるうるぷんすこ 3",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/e469addfe822.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e469addfe822_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -175,6 +253,19 @@
    "h": 1280
   },
   {
+   "id": "bf94a6d6f17f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天使or悪魔 3",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/bf94a6d6f17f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bf94a6d6f17f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "bed149b22b29",
    "char": "iris",
    "nsfw": false,
@@ -186,6 +277,19 @@
    "thumb": "images/gallery-sns/sfw/iris/bed149b22b29_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "bdd1c7b0537b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ネスカの闇闇画廊 ハロウィン 3",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/bdd1c7b0537b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bdd1c7b0537b_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "b8c8acc99100",
@@ -678,6 +782,19 @@
    "date": "2026-10-24",
    "src": "images/gallery-sns/sfw/lupinus/18dbd570ae0a.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/18dbd570ae0a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1400dbad9322",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIみちくさハロウィン2026 3",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/iris/1400dbad9322.webp",
+   "thumb": "images/gallery-sns/sfw/iris/1400dbad9322_t.webp",
    "w": 720,
    "h": 1280
   },

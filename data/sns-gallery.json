@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:fiona": 208,
-  "sfw:lupinus": 279,
+  "sfw:lupinus": 280,
   "sfw:iris": 242,
   "sfw:three": 14
  },
@@ -67,6 +67,19 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/iris/9128fa89f1e8.webp",
    "thumb": "images/gallery-sns/sfw/iris/9128fa89f1e8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6c1539938897",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#楽しい折り紙の世界 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/6c1539938897.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6c1539938897_t.webp",
    "w": 720,
    "h": 1280
   },

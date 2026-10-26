@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 224,
+  "sfw:fiona": 226,
   "sfw:iris": 262,
-  "sfw:lupinus": 305,
+  "sfw:lupinus": 307,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "ef9e03ff72c5",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ネットの向こうに夕焼けが広がるゴルフ練習場の二階の打席。白いポロシャツのフィオナが、クラブを肩まで振り抜いた姿勢のまま、",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/fiona/ef9e03ff72c5.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ef9e03ff72c5_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "e72c8feb2e2b",
    "char": "fiona",
    "nsfw": false,
@@ -71,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "c8a808524e11",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の花屋さんの店先。ルピナスがバケツに並ぶ花から1本ずつ選んで小さな花束にし、アイリスに差し出すと、アイリスが両手で受け",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/lupinus/c8a808524e11.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c8a808524e11_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "c59d2baaf4d0",
    "char": "fiona",
    "nsfw": false,
@@ -81,6 +107,19 @@
    "src": "images/gallery-sns/sfw/fiona/c59d2baaf4d0.webp",
    "thumb": "images/gallery-sns/sfw/fiona/c59d2baaf4d0_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "a92ae48fe66b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "古城の秋バラ園のアーチの下。麦わら帽とデニムの庭師エプロンのフィオナが、剪定ばさみで切ったばかりの深紅の一輪をこちらへ差",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/fiona/a92ae48fe66b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a92ae48fe66b_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -106,6 +145,19 @@
    "date": "2026-10-26",
    "src": "images/gallery-sns/sfw/iris/2a8cda5a247a.webp",
    "thumb": "images/gallery-sns/sfw/iris/2a8cda5a247a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "157568614968",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "柿の日にちなんで、熟した柿と竹かごと過ご",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/lupinus/157568614968.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/157568614968_t.webp",
    "w": 720,
    "h": 1280
   },

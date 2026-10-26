@@ -593,6 +593,34 @@ def copy_article_heroes(slug: str, date_iso: str) -> int:
     return count
 
 
+# 挿絵を付けない見出し（まとめ扱い）の印。🚨2026-10-27＝10/25 の話題の見出しに 💐 が付いていて
+# まとめ扱いで飛ばされ、挿絵が1つずつずれた → 承認の門（finalize_daily_review.hero_heading_mismatch）も
+# この判定を使う（ここを変えれば門も一緒に変わる）
+NON_TOPIC_MARKS = ("3行まとめ", "技術ノート", "💐")
+RE_H2_BLOCK = re.compile(r'<h2 id="[^"]+"[^>]*>.*?</h2>', re.S)
+
+
+def non_topic_mark(plain: str):
+    """見出しの文字がまとめ扱いなら当たった印を、話題の見出しなら None を返す"""
+    for mk in NON_TOPIC_MARKS:
+        if mk in plain:
+            return mk
+    return None
+
+
+def topic_headings(body_html: str):
+    """(話題の見出し, [(まとめ扱いの見出し, 当たった印)]) を返す（insert_topic_heroes と同じ判定）"""
+    topics, skipped = [], []
+    for m in RE_H2_BLOCK.finditer(body_html):
+        plain = re.sub(r"<[^>]+>", "", m.group(0)).strip()
+        mk = non_topic_mark(plain)
+        if mk:
+            skipped.append((plain, mk))
+        else:
+            topics.append(plain)
+    return topics, skipped
+
+
 def insert_topic_heroes(body_html: str, slug: str, count: int, title: str) -> str:
     """トピック見出し（番号付きh2のうち💐まとめ以外）の直下に挿絵を順番に差し込む。"""
     if not count:
@@ -601,7 +629,7 @@ def insert_topic_heroes(body_html: str, slug: str, count: int, title: str) -> st
 
     def _repl(m: re.Match) -> str:
         plain = re.sub(r"<[^>]+>", "", m.group(0))
-        if ("3行まとめ" in plain) or ("技術ノート" in plain) or ("💐" in plain):
+        if non_topic_mark(plain):
             return m.group(0)
         slot["n"] += 1
         if slot["n"] > count:
@@ -626,7 +654,7 @@ def insert_topic_heroes(body_html: str, slug: str, count: int, title: str) -> st
             + f'alt="{html_lib.escape(title)} の挿絵{i}" loading="lazy"{size_attr}></figure>'
         )
 
-    return re.sub(r'<h2 id="[^"]+"[^>]*>.*?</h2>', _repl, body_html, flags=re.S)
+    return RE_H2_BLOCK.sub(_repl, body_html)
 
 
 # タグ自動付与の辞書（本文＋タイトルに含まれるキーワード → タグ名）。

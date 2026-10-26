@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 324,
-  "sfw:fiona": 240,
-  "sfw:iris": 284,
+  "sfw:lupinus": 327,
+  "sfw:fiona": 244,
+  "sfw:iris": 287,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -45,15 +45,15 @@
    "h": 1280
   },
   {
-   "id": "d38c66dc2d02",
+   "id": "e157eefab15d",
    "char": "fiona",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#うちの子転生 3",
+   "title": "#月曜日討伐隊",
    "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/fiona/d38c66dc2d02.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/d38c66dc2d02_t.webp",
+   "src": "images/gallery-sns/sfw/fiona/e157eefab15d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e157eefab15d_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -84,19 +84,6 @@
    "h": 1280
   },
   {
-   "id": "c91c928a2071",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#ハロウィンパーティ 2",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/c91c928a2071.webp",
-   "thumb": "images/gallery-sns/sfw/iris/c91c928a2071_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "c78aeafdc4cc",
    "char": "iris",
    "nsfw": false,
@@ -123,45 +110,6 @@
    "h": 1280
   },
   {
-   "id": "c34e205f3fe1",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#武器デー 2",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/lupinus/c34e205f3fe1.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/c34e205f3fe1_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "c1a68adc0ef5",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#ハロウィンパーティ",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/lupinus/c1a68adc0ef5.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/c1a68adc0ef5_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "bbcac0a63fce",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#プリン 海洋生物 2",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/bbcac0a63fce.webp",
-   "thumb": "images/gallery-sns/sfw/iris/bbcac0a63fce_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "b93e4739276a",
    "char": "lupinus",
    "nsfw": false,
@@ -175,54 +123,15 @@
    "h": 1280
   },
   {
-   "id": "b4033b0a024a",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#フレネミーを教えてあげよう 3",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/fiona/b4033b0a024a.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/b4033b0a024a_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "b4011f22fe06",
+   "id": "aa984b35abd4",
    "char": "iris",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#うちの子転生 2",
+   "title": "#AIハロウィン学園祭",
    "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/b4011f22fe06.webp",
-   "thumb": "images/gallery-sns/sfw/iris/b4011f22fe06_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "b1e31f8ff867",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#フレネミーを教えてあげよう 2",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/b1e31f8ff867.webp",
-   "thumb": "images/gallery-sns/sfw/iris/b1e31f8ff867_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "af57fa642295",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#化石 2",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/af57fa642295.webp",
-   "thumb": "images/gallery-sns/sfw/iris/af57fa642295_t.webp",
+   "src": "images/gallery-sns/sfw/iris/aa984b35abd4.webp",
+   "thumb": "images/gallery-sns/sfw/iris/aa984b35abd4_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -240,15 +149,15 @@
    "h": 1280
   },
   {
-   "id": "98aefb1c9285",
+   "id": "94c62dc61b07",
    "char": "lupinus",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#うちの子転生",
+   "title": "#ハロウィン討伐戦2026",
    "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/lupinus/98aefb1c9285.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/98aefb1c9285_t.webp",
+   "src": "images/gallery-sns/sfw/lupinus/94c62dc61b07.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/94c62dc61b07_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -279,19 +188,6 @@
    "h": 1280
   },
   {
-   "id": "80d75215bc97",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#おとぎ話 3",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/fiona/80d75215bc97.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/80d75215bc97_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "75972ca09638",
    "char": "iris",
    "nsfw": false,
@@ -305,19 +201,6 @@
    "h": 1280
   },
   {
-   "id": "754e2a5db336",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#目は口ほどに 3",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/fiona/754e2a5db336.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/754e2a5db336_t.webp",
-   "w": 1280,
-   "h": 1280
-  },
-  {
    "id": "7351939966b1",
    "char": "iris",
    "nsfw": false,
@@ -327,6 +210,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/iris/7351939966b1.webp",
    "thumb": "images/gallery-sns/sfw/iris/7351939966b1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6fd0aee15b73",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#2222ネコ企画",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/6fd0aee15b73.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6fd0aee15b73_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -344,32 +240,6 @@
    "h": 1280
   },
   {
-   "id": "673dfcabb91d",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#武器デー 3",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/673dfcabb91d.webp",
-   "thumb": "images/gallery-sns/sfw/iris/673dfcabb91d_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "655b382877f4",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#ハロウィンパーティ 3",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/fiona/655b382877f4.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/655b382877f4_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "56aa9f6c4d6d",
    "char": "fiona",
    "nsfw": false,
@@ -383,15 +253,15 @@
    "h": 1280
   },
   {
-   "id": "3fb1d7fb1a90",
-   "char": "lupinus",
+   "id": "4649c3d42a02",
+   "char": "fiona",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#うちの子で七つの大罪",
+   "title": "#振り向くうちの子",
    "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/lupinus/3fb1d7fb1a90.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/3fb1d7fb1a90_t.webp",
+   "src": "images/gallery-sns/sfw/fiona/4649c3d42a02.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4649c3d42a02_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -422,19 +292,6 @@
    "h": 1280
   },
   {
-   "id": "2810b1e13227",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#おとぎ話 2",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/iris/2810b1e13227.webp",
-   "thumb": "images/gallery-sns/sfw/iris/2810b1e13227_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "24c5924da687",
    "char": "lupinus",
    "nsfw": false,
@@ -461,15 +318,15 @@
    "h": 1280
   },
   {
-   "id": "125d7343df94",
+   "id": "1019e25983f8",
    "char": "lupinus",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#化石",
+   "title": "#包帯幻想展",
    "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/lupinus/125d7343df94.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/125d7343df94_t.webp",
+   "src": "images/gallery-sns/sfw/lupinus/1019e25983f8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1019e25983f8_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -483,58 +340,6 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/iris/0d3abe5cafaf.webp",
    "thumb": "images/gallery-sns/sfw/iris/0d3abe5cafaf_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "0acf88bc4cf7",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#フレネミーを教えてあげよう",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/lupinus/0acf88bc4cf7.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/0acf88bc4cf7_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "0a9ed999dce5",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#プリン 海洋生物 3",
-   "date": "2026-10-27",
-   "src": "images/gallery-sns/sfw/fiona/0a9ed999dce5.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/0a9ed999dce5_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "fcf66f8567e6",
-   "char": "lupinus",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#4周年生成頑張ります",
-   "date": "2026-10-26",
-   "src": "images/gallery-sns/sfw/lupinus/fcf66f8567e6.webp",
-   "thumb": "images/gallery-sns/sfw/lupinus/fcf66f8567e6_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "f47ffa3aa6e2",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#4周年いいね頑張ります 2",
-   "date": "2026-10-26",
-   "src": "images/gallery-sns/sfw/iris/f47ffa3aa6e2.webp",
-   "thumb": "images/gallery-sns/sfw/iris/f47ffa3aa6e2_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -578,6 +383,19 @@
    "h": 1280
   },
   {
+   "id": "ec3511169597",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#絢爛なる偏愛",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/iris/ec3511169597.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ec3511169597_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "e72c8feb2e2b",
    "char": "fiona",
    "nsfw": false,
@@ -588,19 +406,6 @@
    "src": "images/gallery-sns/sfw/fiona/e72c8feb2e2b.webp",
    "thumb": "images/gallery-sns/sfw/fiona/e72c8feb2e2b_t.webp",
    "w": 1280,
-   "h": 1280
-  },
-  {
-   "id": "e7214f448bc9",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#4周年投稿頑張ります 2",
-   "date": "2026-10-26",
-   "src": "images/gallery-sns/sfw/iris/e7214f448bc9.webp",
-   "thumb": "images/gallery-sns/sfw/iris/e7214f448bc9_t.webp",
-   "w": 720,
    "h": 1280
   },
   {
@@ -656,6 +461,19 @@
    "h": 1280
   },
   {
+   "id": "c34e205f3fe1",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#武器デー 2",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/lupinus/c34e205f3fe1.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c34e205f3fe1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "c16b1e4fc17f",
    "char": "fiona",
    "nsfw": false,
@@ -665,6 +483,19 @@
    "date": "2026-10-26",
    "src": "images/gallery-sns/sfw/fiona/c16b1e4fc17f.webp",
    "thumb": "images/gallery-sns/sfw/fiona/c16b1e4fc17f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b911360be6b8",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#HCP",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/fiona/b911360be6b8.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b911360be6b8_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -734,6 +565,19 @@
    "h": 1280
   },
   {
+   "id": "673dfcabb91d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#武器デー 3",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/iris/673dfcabb91d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/673dfcabb91d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "5b9c2e5a5472",
    "char": "iris",
    "nsfw": false,
@@ -747,29 +591,16 @@
    "h": 1280
   },
   {
-   "id": "57ccbd802d53",
+   "id": "486a850140cb",
    "char": "iris",
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "#4周年生成頑張ります 2",
+   "title": "#晩秋の萌え袖ガール",
    "date": "2026-10-26",
-   "src": "images/gallery-sns/sfw/iris/57ccbd802d53.webp",
-   "thumb": "images/gallery-sns/sfw/iris/57ccbd802d53_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "44a42193cba8",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#4周年生成頑張ります 3",
-   "date": "2026-10-26",
-   "src": "images/gallery-sns/sfw/fiona/44a42193cba8.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/44a42193cba8_t.webp",
-   "w": 720,
+   "src": "images/gallery-sns/sfw/iris/486a850140cb.webp",
+   "thumb": "images/gallery-sns/sfw/iris/486a850140cb_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -864,6 +695,19 @@
    "h": 1280
   },
   {
+   "id": "fcf66f8567e6",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#4周年生成頑張ります",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/fcf66f8567e6.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/fcf66f8567e6_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "fb51fdabd428",
    "char": "fiona",
    "nsfw": false,
@@ -890,6 +734,19 @@
    "h": 1280
   },
   {
+   "id": "f47ffa3aa6e2",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#4周年いいね頑張ります 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/f47ffa3aa6e2.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f47ffa3aa6e2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "f3986a8ef502",
    "char": "iris",
    "nsfw": false,
@@ -899,6 +756,19 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/iris/f3986a8ef502.webp",
    "thumb": "images/gallery-sns/sfw/iris/f3986a8ef502_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e7214f448bc9",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#4周年投稿頑張ります 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/e7214f448bc9.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e7214f448bc9_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -916,6 +786,19 @@
    "h": 1280
   },
   {
+   "id": "d38c66dc2d02",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うちの子転生 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/d38c66dc2d02.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d38c66dc2d02_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "d18f0491fb2b",
    "char": "iris",
    "nsfw": false,
@@ -925,6 +808,19 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/iris/d18f0491fb2b.webp",
    "thumb": "images/gallery-sns/sfw/iris/d18f0491fb2b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c91c928a2071",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィンパーティ 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/c91c928a2071.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c91c928a2071_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -942,6 +838,19 @@
    "h": 1280
   },
   {
+   "id": "c1a68adc0ef5",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィンパーティ",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/c1a68adc0ef5.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c1a68adc0ef5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "c12bff9cb343",
    "char": "lupinus",
    "nsfw": false,
@@ -951,6 +860,45 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/lupinus/c12bff9cb343.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/c12bff9cb343_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bbcac0a63fce",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#プリン 海洋生物 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/bbcac0a63fce.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bbcac0a63fce_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b4033b0a024a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フレネミーを教えてあげよう 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/b4033b0a024a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b4033b0a024a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b4011f22fe06",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うちの子転生 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/b4011f22fe06.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b4011f22fe06_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -968,6 +916,19 @@
    "h": 1280
   },
   {
+   "id": "b1e31f8ff867",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フレネミーを教えてあげよう 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/b1e31f8ff867.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b1e31f8ff867_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "af65ead711cb",
    "char": "lupinus",
    "nsfw": false,
@@ -978,6 +939,19 @@
    "src": "images/gallery-sns/sfw/lupinus/af65ead711cb.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/af65ead711cb_t.webp",
    "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "af57fa642295",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#化石 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/af57fa642295.webp",
+   "thumb": "images/gallery-sns/sfw/iris/af57fa642295_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -1020,6 +994,19 @@
    "h": 1280
   },
   {
+   "id": "98aefb1c9285",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うちの子転生",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/98aefb1c9285.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/98aefb1c9285_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "9128fa89f1e8",
    "char": "iris",
    "nsfw": false,
@@ -1043,6 +1030,32 @@
    "src": "images/gallery-sns/sfw/iris/8eaede65b08d.webp",
    "thumb": "images/gallery-sns/sfw/iris/8eaede65b08d_t.webp",
    "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "80d75215bc97",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おとぎ話 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/80d75215bc97.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/80d75215bc97_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "754e2a5db336",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#目は口ほどに 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/754e2a5db336.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/754e2a5db336_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -1098,6 +1111,32 @@
    "h": 1280
   },
   {
+   "id": "655b382877f4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィンパーティ 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/655b382877f4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/655b382877f4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "57ccbd802d53",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#4周年生成頑張ります 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/57ccbd802d53.webp",
+   "thumb": "images/gallery-sns/sfw/iris/57ccbd802d53_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "5517225bc598",
    "char": "iris",
    "nsfw": false,
@@ -1111,6 +1150,19 @@
    "h": 1280
   },
   {
+   "id": "44a42193cba8",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#4周年生成頑張ります 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/44a42193cba8.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/44a42193cba8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "43476e433e72",
    "char": "lupinus",
    "nsfw": false,
@@ -1120,6 +1172,19 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/lupinus/43476e433e72.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/43476e433e72_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3fb1d7fb1a90",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#うちの子で七つの大罪",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/3fb1d7fb1a90.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/3fb1d7fb1a90_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1189,6 +1254,19 @@
    "h": 1280
   },
   {
+   "id": "2810b1e13227",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おとぎ話 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/2810b1e13227.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2810b1e13227_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "272f178581bf",
    "char": "fiona",
    "nsfw": false,
@@ -1237,6 +1315,45 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/lupinus/1703794c09df.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/1703794c09df_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "125d7343df94",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#化石",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/125d7343df94.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/125d7343df94_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0acf88bc4cf7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フレネミーを教えてあげよう",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/0acf88bc4cf7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0acf88bc4cf7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0a9ed999dce5",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#プリン 海洋生物 3",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/fiona/0a9ed999dce5.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/0a9ed999dce5_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1627,6 +1744,19 @@
    "date": "2026-10-24",
    "src": "images/gallery-sns/sfw/iris/8ba08430dadf.webp",
    "thumb": "images/gallery-sns/sfw/iris/8ba08430dadf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8714c46bee8d",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIみちくさハロウィン2026",
+   "date": "2026-10-24",
+   "src": "images/gallery-sns/sfw/fiona/8714c46bee8d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8714c46bee8d_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -5432,7 +5562,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "朝の支度が全員ぶつかる",
+   "title": "出かける前の朝の玄関。3人が同時に靴を履こうとしてぎゅうぎゅうに。ルピナスが片足立ちでパンプスのかかとを直し、アイリスが",
    "date": "2026-10-04",
    "src": "images/gallery-sns/sfw/lupinus/f568b90f3240.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/f568b90f3240_t.webp",
@@ -5588,7 +5718,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "3人でベランダから星空を見上げる",
+   "title": "秋の夜のベランダ。ルピナスが大きなチェックのブランケットを広げて3人の肩をいっしょにくるみ、まん中のアイリスが夜空を指さ",
    "date": "2026-10-04",
    "src": "images/gallery-sns/sfw/lupinus/106c0e9690e7.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/106c0e9690e7_t.webp",
@@ -9462,7 +9592,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "3人でベランダから星空を見上げる",
+   "title": "秋の夜のベランダ。ルピナスが大きなチェックのブランケットを広げて3人の肩をいっしょにくるみ、まん中のアイリスが夜空を指さ",
    "date": "2026-09-04",
    "src": "images/gallery-sns/sfw/lupinus/35710995665e.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/35710995665e_t.webp",
@@ -9475,7 +9605,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "朝の支度が全員ぶつかる",
+   "title": "出かける前の朝の玄関。3人が同時に靴を履こうとしてぎゅうぎゅうに。ルピナスが片足立ちでパンプスのかかとを直し、アイリスが",
    "date": "2026-09-04",
    "src": "images/gallery-sns/sfw/lupinus/01ef00d3ed2d.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/01ef00d3ed2d_t.webp",
@@ -11178,7 +11308,7 @@
    "nsfw": false,
    "r18": false,
    "level": null,
-   "title": "朝の支度が全員ぶつかる",
+   "title": "出かける前の朝の玄関。3人が同時に靴を履こうとしてぎゅうぎゅうに。ルピナスが片足立ちでパンプスのかかとを直し、アイリスが",
    "date": "2026-08-12",
    "src": "images/gallery-sns/sfw/three/cfdba8534183.webp",
    "thumb": "images/gallery-sns/sfw/three/cfdba8534183_t.webp",

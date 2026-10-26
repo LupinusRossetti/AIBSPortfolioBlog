@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 219,
-  "sfw:iris": 256,
-  "sfw:lupinus": 298,
+  "sfw:fiona": 222,
+  "sfw:iris": 261,
+  "sfw:lupinus": 305,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -41,6 +41,45 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/fiona/3d3b673181f8.webp",
    "thumb": "images/gallery-sns/sfw/fiona/3d3b673181f8_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "f22d0f6362b1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#使い魔デー 3",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/iris/f22d0f6362b1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f22d0f6362b1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c59d2baaf4d0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#使い魔デー 4",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/fiona/c59d2baaf4d0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c59d2baaf4d0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "73c2ac39dcf7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#使い魔デー 2",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/lupinus/73c2ac39dcf7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/73c2ac39dcf7_t.webp",
    "w": 1280,
    "h": 1280
   },
@@ -2177,6 +2216,58 @@
    "h": 1280
   },
   {
+   "id": "81cc1fd20652",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス 3",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/iris/81cc1fd20652.webp",
+   "thumb": "images/gallery-sns/sfw/iris/81cc1fd20652_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "648f57d644ad",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス 2",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/iris/648f57d644ad.webp",
+   "thumb": "images/gallery-sns/sfw/iris/648f57d644ad_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "59276646f0d7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/iris/59276646f0d7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/59276646f0d7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "49ae05061c8e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス 4",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/iris/49ae05061c8e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/49ae05061c8e_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "db66f9a5a687",
    "char": "iris",
    "nsfw": false,
@@ -2775,6 +2866,19 @@
    "h": 1280
   },
   {
+   "id": "f658748cf1f2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 4",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/f658748cf1f2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f658748cf1f2_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "e3c40493fa5a",
    "char": "iris",
    "nsfw": false,
@@ -2801,6 +2905,19 @@
    "h": 1280
   },
   {
+   "id": "b9b27062f3bb",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 2",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/b9b27062f3bb.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b9b27062f3bb_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "b6d707e66dd7",
    "char": "lupinus",
    "nsfw": false,
@@ -2814,6 +2931,19 @@
    "h": 1280
   },
   {
+   "id": "b601fa7bb758",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/b601fa7bb758.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b601fa7bb758_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "af268a15ab9a",
    "char": "iris",
    "nsfw": false,
@@ -2824,6 +2954,32 @@
    "src": "images/gallery-sns/sfw/iris/af268a15ab9a.webp",
    "thumb": "images/gallery-sns/sfw/iris/af268a15ab9a_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "af02f04adf0f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 8",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/af02f04adf0f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/af02f04adf0f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "96defdf8b477",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 6",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/96defdf8b477.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/96defdf8b477_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -2866,6 +3022,32 @@
    "h": 1280
   },
   {
+   "id": "7e3854159f42",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#フィオナ 9",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/fiona/7e3854159f42.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7e3854159f42_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "79c288bb92a0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 3",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/lupinus/79c288bb92a0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/79c288bb92a0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "7999cfaf59f1",
    "char": "iris",
    "nsfw": false,
@@ -2902,6 +3084,19 @@
    "src": "images/gallery-sns/sfw/fiona/7341487594aa.webp",
    "thumb": "images/gallery-sns/sfw/fiona/7341487594aa_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "51749b7b9297",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#フィオナ 7",
+   "date": "2026-10-16",
+   "src": "images/gallery-sns/sfw/fiona/51749b7b9297.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/51749b7b9297_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

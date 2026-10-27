@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 330,
-  "sfw:iris": 290,
-  "sfw:fiona": 249,
+  "sfw:lupinus": 335,
+  "sfw:iris": 293,
+  "sfw:fiona": 251,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "fc8892d3be7e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#紅葉ひとひら紅一葉",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/fc8892d3be7e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/fc8892d3be7e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f91a87344687",
    "char": "lupinus",
@@ -58,6 +71,19 @@
    "h": 1280
   },
   {
+   "id": "e8149f181221",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#振り向くうちの子 2",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/e8149f181221.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e8149f181221_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "e157eefab15d",
    "char": "fiona",
    "nsfw": false,
@@ -67,6 +93,32 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/fiona/e157eefab15d.webp",
    "thumb": "images/gallery-sns/sfw/fiona/e157eefab15d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d8989b483027",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#火曜に咲く一輪の花 2",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/d8989b483027.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d8989b483027_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d6e288515fb3",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#火曜に咲く一輪の花",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/fiona/d6e288515fb3.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d6e288515fb3_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -93,6 +145,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/fiona/d157e220d0f9.webp",
    "thumb": "images/gallery-sns/sfw/fiona/d157e220d0f9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cf7fd1220cfb",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#火曜に咲く一輪の花 3",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/cf7fd1220cfb.webp",
+   "thumb": "images/gallery-sns/sfw/iris/cf7fd1220cfb_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -132,6 +197,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/b93e4739276a.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/b93e4739276a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "affc32a1a237",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィン討伐戦2026",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/affc32a1a237.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/affc32a1a237_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -197,6 +275,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/94c62dc61b07.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/94c62dc61b07_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8b1c814e8240",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#振り向くうちの子 3",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/8b1c814e8240.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8b1c814e8240_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -318,6 +409,19 @@
    "h": 1280
   },
   {
+   "id": "4497ef44c902",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIハロウィン学園祭",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/fiona/4497ef44c902.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4497ef44c902_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "3d3b673181f8",
    "char": "fiona",
    "nsfw": false,
@@ -405,6 +509,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/iris/0d3abe5cafaf.webp",
    "thumb": "images/gallery-sns/sfw/iris/0d3abe5cafaf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "048e2c07273e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#包帯幻想展",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/048e2c07273e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/048e2c07273e_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -497,6 +614,19 @@
    "src": "images/gallery-sns/sfw/iris/df33d542277a.webp",
    "thumb": "images/gallery-sns/sfw/iris/df33d542277a_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "da51daa217ca",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#さばえeスポーツDAYイラコン",
+   "date": "2026-10-26",
+   "src": "images/gallery-sns/sfw/lupinus/da51daa217ca.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/da51daa217ca_t.webp",
+   "w": 1024,
    "h": 1280
   },
   {

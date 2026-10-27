@@ -23,8 +23,8 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 340,
-  "sfw:iris": 296,
+  "sfw:lupinus": 342,
+  "sfw:iris": 300,
   "sfw:fiona": 256,
   "sfw:three": 14
  },
@@ -71,6 +71,19 @@
    "h": 1280
   },
   {
+   "id": "ee189a14dfac",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "宇宙開発記念日の朝。レトロな橙の宇宙服のアイリスが、丸いヘルメットを小脇に抱えて発射台のロケットを指さし、朝焼けの光に目",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/ee189a14dfac.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ee189a14dfac_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "e8149f181221",
    "char": "lupinus",
    "nsfw": false,
@@ -80,6 +93,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/e8149f181221.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/e8149f181221_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e3cd5e4f37e4",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の屋外スケートリンク。滑るのが得意なアイリスが後ろ向きにすいっと滑りながら両手を広げて2人を呼び、ルピナスとフィオナは",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/e3cd5e4f37e4.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e3cd5e4f37e4_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -396,6 +422,19 @@
    "h": 1280
   },
   {
+   "id": "4c563a97aa3d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "スパの休憩室の寝椅子。白いフェイスパックを貼ったアイリスが、バスローブをゆるく羽織って寝そべり、目にきゅうりを載せたまま",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/4c563a97aa3d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4c563a97aa3d_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
    "id": "4649c3d42a02",
    "char": "fiona",
    "nsfw": false,
@@ -432,6 +471,32 @@
    "src": "images/gallery-sns/sfw/fiona/3d3b673181f8.webp",
    "thumb": "images/gallery-sns/sfw/fiona/3d3b673181f8_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "327212524521",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 夜店で景品のくまを抱えてウインク（Com",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/327212524521.webp",
+   "thumb": "images/gallery-sns/sfw/iris/327212524521_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2fa1e357681d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の手書きレシピカードプロンプト（",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/2fa1e357681d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2fa1e357681d_t.webp",
+   "w": 853,
    "h": 1280
   },
   {
@@ -496,6 +561,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/1019e25983f8.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/1019e25983f8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0ea0f7bc0bf3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "読書週間のはじまりの午後。図書館の窓辺の席で、ルピナスがしおりを挟んだ本を開いたまま紅茶のカップを手に、窓の外の紅葉へふ",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/0ea0f7bc0bf3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0ea0f7bc0bf3_t.webp",
    "w": 720,
    "h": 1280
   },

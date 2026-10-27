@@ -53,6 +53,12 @@
     .mg-info h2 { margin:0 0 .6rem; overflow-wrap:anywhere; }
     .mg-caption { white-space:pre-wrap; overflow-wrap:anywhere; }
     .mg-links { display:flex; flex-wrap:wrap; gap:.7rem; }
+    .mg-video { padding:0 1rem 1rem; }
+    .mg-video[hidden] { display:none; }
+    .mg-video-frame { width:min(100%,360px); aspect-ratio:9 / 16; margin:.6rem 0 0; border-radius:12px; overflow:hidden; background:#22152e; }
+    .mg-video-frame iframe { display:block; width:100%; height:100%; border:0; }
+    .mg-voice { display:inline-block; margin-top:.4rem; padding:.1rem .6rem; border-radius:999px; font-size:.75rem;
+      color:var(--paper, #fffcff); background:var(--rose, #7b6aa8); }
     .mg-pages img { display:block; width:100%; height:auto; margin:0 auto .7rem; }
     @media(max-width:420px) { .mg-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; }
       .mg-reader { margin:auto 0; border-radius:8px; } }
@@ -112,6 +118,7 @@
     <h2 id="mtitle"></h2><p id="mdate"></p><p class="mg-caption" id="mcaption"></p>
     <div class="mg-links" id="mlinks"></div>
   </div>
+  <div class="mg-video" id="mvideo" hidden></div>
   <div class="mg-pages" id="mpages"></div>
 </dialog>
 <footer class="site-footer"><div class="container"><p>? Lupinus Rossetti / AI Bloom Sisters</p></div></footer>
@@ -139,6 +146,23 @@
       link.className = 'mg-button'; document.getElementById('mlinks').append(link);
     } catch (_) { /* URL が無い作品はリンクを出さない。 */ }
   }
+  // 🎬10/27 声つき動画（YouTube）＝押すまで読み込まない。id は11字の英数だけ通す
+  function voiceVideo(item) {
+    const box = document.getElementById('mvideo');
+    box.replaceChildren(); box.hidden = true;
+    if (typeof item.youtube !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(item.youtube)) return;
+    const play = document.createElement('button');
+    play.type = 'button'; play.className = 'mg-button'; play.textContent = '▶ 声つき動画を見る';
+    play.addEventListener('click', function () {
+      const frame = document.createElement('div'); frame.className = 'mg-video-frame';
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + item.youtube + '?autoplay=1&playsinline=1&rel=0';
+      iframe.title = (item.title || '漫画') + '（声つき動画）';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture'; iframe.allowFullscreen = true;
+      frame.append(iframe); play.replaceWith(frame);
+    });
+    box.append(play); box.hidden = false;
+  }
   function openWork(item, button) {
     opener = button;
     document.getElementById('mtitle').textContent = item.title || '';
@@ -147,6 +171,7 @@
     document.getElementById('mlinks').replaceChildren(); pages.replaceChildren();
     externalLink(item.pixiv, 'pixiv', 'pixiv で見る');
     externalLink(item.chichipui, 'chichipui', 'ちちぷいで見る');
+    voiceVideo(item);
     (item.pages || []).forEach(function (page, index) {
       if (!localImage(page.src)) return;
       const img = document.createElement('img');
@@ -162,6 +187,7 @@
   document.getElementById('mclose').addEventListener('click', function () { reader.close(); });
   reader.addEventListener('close', function () {
     document.body.style.overflow = oldOverflow; pages.replaceChildren();
+    document.getElementById('mvideo').replaceChildren();
     if (opener) opener.focus();
   });
   function paint() {
@@ -176,7 +202,12 @@
       const title = document.createElement('strong'); title.className = 'mg-title'; title.textContent = item.title || '漫画';
       const date = document.createElement('time'); date.className = 'mg-date';
       date.dateTime = item.date || ''; date.textContent = item.date || '';
-      body.append(title, date); button.append(img, body);
+      body.append(title, date);
+      if (typeof item.youtube === 'string' && /^[A-Za-z0-9_-]{11}$/.test(item.youtube)) {
+        const voice = document.createElement('span'); voice.className = 'mg-voice'; voice.textContent = '🎬 声つき動画あり';
+        body.append(voice);
+      }
+      button.append(img, body);
       button.addEventListener('click', function () { openWork(item, button); }); grid.append(button);
     }
     more.hidden = shown >= items.length;

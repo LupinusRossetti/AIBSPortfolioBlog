@@ -25,7 +25,7 @@
  "counts": {
   "sfw:lupinus": 330,
   "sfw:iris": 290,
-  "sfw:fiona": 248,
+  "sfw:fiona": 249,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -3278,6 +3278,19 @@
    "date": "2026-10-20",
    "src": "images/gallery-sns/sfw/iris/59276646f0d7.webp",
    "thumb": "images/gallery-sns/sfw/iris/59276646f0d7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4df46dc60460",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#フィオナ 2",
+   "date": "2026-10-20",
+   "src": "images/gallery-sns/sfw/fiona/4df46dc60460.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4df46dc60460_t.webp",
    "w": 720,
    "h": 1280
   },

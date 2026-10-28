@@ -25,7 +25,7 @@
  "counts": {
   "sfw:fiona": 275,
   "sfw:iris": 320,
-  "sfw:lupinus": 361,
+  "sfw:lupinus": 362,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -354,6 +354,19 @@
    "src": "images/gallery-sns/sfw/iris/50fd5c075936.webp",
    "thumb": "images/gallery-sns/sfw/iris/50fd5c075936_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "43580cc1f0ba",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#おとぎ話",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/lupinus/43580cc1f0ba.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/43580cc1f0ba_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

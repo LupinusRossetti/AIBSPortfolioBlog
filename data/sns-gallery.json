@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 274,
-  "sfw:iris": 319,
-  "sfw:lupinus": 360,
+  "sfw:fiona": 275,
+  "sfw:iris": 320,
+  "sfw:lupinus": 361,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -760,6 +760,19 @@
    "h": 1280
   },
   {
+   "id": "801d555a6d48",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#テディベア 2",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/801d555a6d48.webp",
+   "thumb": "images/gallery-sns/sfw/iris/801d555a6d48_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "762bba795b81",
    "char": "lupinus",
    "nsfw": false,
@@ -821,6 +834,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/6fd0aee15b73.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/6fd0aee15b73_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6f93f29e2091",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#テディベア",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/6f93f29e2091.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6f93f29e2091_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -926,6 +952,19 @@
    "src": "images/gallery-sns/sfw/iris/327212524521.webp",
    "thumb": "images/gallery-sns/sfw/iris/327212524521_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "30cc60069a54",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#テディベア 3",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/fiona/30cc60069a54.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/30cc60069a54_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:fiona": 274,
-  "sfw:iris": 318,
+  "sfw:iris": 319,
   "sfw:lupinus": 360,
   "sfw:three": 14
  },
@@ -132,6 +132,19 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/fiona/df67ec6ef26f.webp",
    "thumb": "images/gallery-sns/sfw/fiona/df67ec6ef26f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "dbe3361f753d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィン討伐戦2026",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/iris/dbe3361f753d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/dbe3361f753d_t.webp",
    "w": 720,
    "h": 1280
   },

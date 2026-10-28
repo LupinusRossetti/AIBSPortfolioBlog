@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 273,
-  "sfw:iris": 316,
-  "sfw:lupinus": 356,
+  "sfw:fiona": 274,
+  "sfw:iris": 318,
+  "sfw:lupinus": 360,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -56,6 +56,32 @@
    "thumb": "images/gallery-sns/sfw/iris/fa9f3b9b324f_t.webp",
    "w": 1280,
    "h": 1280
+  },
+  {
+   "id": "f9cd0452081c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#黒猫",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/lupinus/f9cd0452081c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f9cd0452081c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ee03e7a57603",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#パンダ",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/lupinus/ee03e7a57603.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ee03e7a57603_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "ebc66257d3d5",
@@ -93,6 +119,19 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/lupinus/e391d63b00ad.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/e391d63b00ad_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "df67ec6ef26f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#パンダ 3",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/fiona/df67ec6ef26f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/df67ec6ef26f_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -253,19 +292,6 @@
    "h": 1280
   },
   {
-   "id": "7445287c3906",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#タイツ 2",
-   "date": "2026-10-28",
-   "src": "images/gallery-sns/sfw/iris/7445287c3906.webp",
-   "thumb": "images/gallery-sns/sfw/iris/7445287c3906_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "7150bc4d9bcd",
    "char": "fiona",
    "nsfw": false,
@@ -279,6 +305,19 @@
    "h": 1280
   },
   {
+   "id": "6f53af635b72",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIハロウィン学園祭",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/lupinus/6f53af635b72.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6f53af635b72_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "6207eed88b4a",
    "char": "lupinus",
    "nsfw": false,
@@ -288,19 +327,6 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/lupinus/6207eed88b4a.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/6207eed88b4a_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
-   "id": "5ea65a681eb4",
-   "char": "iris",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#秋コーデ 2",
-   "date": "2026-10-28",
-   "src": "images/gallery-sns/sfw/iris/5ea65a681eb4.webp",
-   "thumb": "images/gallery-sns/sfw/iris/5ea65a681eb4_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -331,19 +357,6 @@
    "h": 1280
   },
   {
-   "id": "2a8db6553096",
-   "char": "fiona",
-   "nsfw": false,
-   "r18": false,
-   "level": null,
-   "title": "#タイツ 3",
-   "date": "2026-10-28",
-   "src": "images/gallery-sns/sfw/fiona/2a8db6553096.webp",
-   "thumb": "images/gallery-sns/sfw/fiona/2a8db6553096_t.webp",
-   "w": 720,
-   "h": 1280
-  },
-  {
    "id": "29368037d46a",
    "char": "iris",
    "nsfw": false,
@@ -366,6 +379,19 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/lupinus/278a2beae77d.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/278a2beae77d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "25aded1b4a63",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#パンダ 2",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/iris/25aded1b4a63.webp",
+   "thumb": "images/gallery-sns/sfw/iris/25aded1b4a63_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -747,6 +773,19 @@
    "h": 1280
   },
   {
+   "id": "7445287c3906",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#タイツ 2",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/7445287c3906.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7445287c3906_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "7351939966b1",
    "char": "iris",
    "nsfw": false,
@@ -782,6 +821,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/686d78cb28c2.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/686d78cb28c2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5ea65a681eb4",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋コーデ 2",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/iris/5ea65a681eb4.webp",
+   "thumb": "images/gallery-sns/sfw/iris/5ea65a681eb4_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -886,6 +938,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/iris/2e23a8a53e2c.webp",
    "thumb": "images/gallery-sns/sfw/iris/2e23a8a53e2c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2a8db6553096",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#タイツ 3",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/fiona/2a8db6553096.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2a8db6553096_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1904,6 +1969,19 @@
    "h": 1280
   },
   {
+   "id": "673764d937e9",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#♪ 2",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/iris/673764d937e9.webp",
+   "thumb": "images/gallery-sns/sfw/iris/673764d937e9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "66f95fa2ae53",
    "char": "fiona",
    "nsfw": false,
@@ -2186,6 +2264,19 @@
    "date": "2026-10-25",
    "src": "images/gallery-sns/sfw/fiona/249904aeb604.webp",
    "thumb": "images/gallery-sns/sfw/fiona/249904aeb604_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1e0a4cf870a9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#♪",
+   "date": "2026-10-25",
+   "src": "images/gallery-sns/sfw/lupinus/1e0a4cf870a9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1e0a4cf870a9_t.webp",
    "w": 720,
    "h": 1280
   },

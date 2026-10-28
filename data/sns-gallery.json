@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 278,
-  "sfw:iris": 321,
-  "sfw:lupinus": 364,
+  "sfw:fiona": 281,
+  "sfw:iris": 322,
+  "sfw:lupinus": 366,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -149,6 +149,19 @@
    "h": 1280
   },
   {
+   "id": "dc19816b7884",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の秋冬の新作衣装スケッチ帳プロン",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/lupinus/dc19816b7884.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/dc19816b7884_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "dbe3361f753d",
    "char": "iris",
    "nsfw": false,
@@ -214,6 +227,19 @@
    "h": 1280
   },
   {
+   "id": "b0d16f277a05",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 夜の観覧車のゴンドラでほほえむ（Comf",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/fiona/b0d16f277a05.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b0d16f277a05_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "ae1120888272",
    "char": "iris",
    "nsfw": false,
@@ -223,6 +249,19 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/iris/ae1120888272.webp",
    "thumb": "images/gallery-sns/sfw/iris/ae1120888272_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a7ea3277c9c9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝焼けの砂浜。ヨガウェアのフィオナが片脚で立つ木のポーズで、目を閉じて深呼吸する",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/fiona/a7ea3277c9c9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a7ea3277c9c9_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -262,6 +301,19 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/lupinus/8ec5e0b5f191.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/8ec5e0b5f191_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8def27ac24c7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "長女と三女で夜更かし",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/lupinus/8def27ac24c7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8def27ac24c7_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -448,6 +500,19 @@
    "h": 1280
   },
   {
+   "id": "2ca7c6642a12",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の夕暮れにちなんで、夕焼け空と長く伸び",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/iris/2ca7c6642a12.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2ca7c6642a12_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "29368037d46a",
    "char": "iris",
    "nsfw": false,
@@ -535,6 +600,19 @@
    "date": "2026-10-28",
    "src": "images/gallery-sns/sfw/fiona/0d69ced82027.webp",
    "thumb": "images/gallery-sns/sfw/fiona/0d69ced82027_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "0c947f61ce41",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "銭湯の休憩所の畳に寝そべって、瓶の牛乳を飲み干したあと天井を見る",
+   "date": "2026-10-28",
+   "src": "images/gallery-sns/sfw/fiona/0c947f61ce41.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/0c947f61ce41_t.webp",
    "w": 1280,
    "h": 720
   },

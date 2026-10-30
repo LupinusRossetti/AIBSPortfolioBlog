@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,118 @@
   }
  },
  "counts": {
-  "sfw:fiona": 284,
-  "sfw:lupinus": 369,
-  "sfw:iris": 323,
+  "sfw:lupinus": 378,
+  "sfw:fiona": 289,
+  "sfw:iris": 326,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e2ad25c251c8",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#白スク水うさみみ",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/e2ad25c251c8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e2ad25c251c8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ab2c7189ef7c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#魔法陣デー 4",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/fiona/ab2c7189ef7c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ab2c7189ef7c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a72c3313c737",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#香り 2",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/iris/a72c3313c737.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a72c3313c737_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "57e29b5ab36d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#魔法陣デー 3",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/iris/57e29b5ab36d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/57e29b5ab36d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3dd296fab34c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#白スク水うさみみ 3",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/fiona/3dd296fab34c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3dd296fab34c_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "384cca246f34",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#魔法陣デー 2",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/384cca246f34.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/384cca246f34_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1d7bf32191a7",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#香り 3",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/fiona/1d7bf32191a7.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/1d7bf32191a7_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "16f526795b3a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#香り",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/16f526795b3a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/16f526795b3a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fba4a9a0f95a",
    "char": "fiona",
@@ -58,6 +162,19 @@
    "h": 1280
   },
   {
+   "id": "91a5d4542243",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#キョンシーだぞ〜！ 3",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/fiona/91a5d4542243.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/91a5d4542243_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "8a5d47c6294c",
    "char": "lupinus",
    "nsfw": false,
@@ -67,6 +184,19 @@
    "date": "2026-10-29",
    "src": "images/gallery-sns/sfw/lupinus/8a5d47c6294c.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/8a5d47c6294c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7a262d1a8904",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#キョンシーだぞ〜！ 2",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/iris/7a262d1a8904.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7a262d1a8904_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -94,6 +224,19 @@
    "src": "images/gallery-sns/sfw/iris/117ebb3f607c.webp",
    "thumb": "images/gallery-sns/sfw/iris/117ebb3f607c_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "0ff2b8075038",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#キョンシーだぞ〜！",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/lupinus/0ff2b8075038.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0ff2b8075038_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -955,6 +1098,19 @@
    "h": 1280
   },
   {
+   "id": "984e6169ab59",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋コーデ",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/984e6169ab59.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/984e6169ab59_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "94c62dc61b07",
    "char": "lupinus",
    "nsfw": false,
@@ -1003,6 +1159,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/iris/83e6d20c80d0.webp",
    "thumb": "images/gallery-sns/sfw/iris/83e6d20c80d0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "804c477cd0a4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋コーデ 3",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/fiona/804c477cd0a4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/804c477cd0a4_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1276,6 +1445,19 @@
    "date": "2026-10-27",
    "src": "images/gallery-sns/sfw/lupinus/1fa5e6c24c18.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/1fa5e6c24c18_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "181ccd3eaa75",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#タイツ",
+   "date": "2026-10-27",
+   "src": "images/gallery-sns/sfw/lupinus/181ccd3eaa75.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/181ccd3eaa75_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -3477,6 +3659,19 @@
    "h": 720
   },
   {
+   "id": "9f74a12a3671",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 2",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/lupinus/9f74a12a3671.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9f74a12a3671_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "9ad93fce060e",
    "char": "iris",
    "nsfw": false,
@@ -3542,6 +3737,19 @@
    "h": 1280
   },
   {
+   "id": "54139d0a0dc3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 4",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/lupinus/54139d0a0dc3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/54139d0a0dc3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "1629be92c8ee",
    "char": "lupinus",
    "nsfw": false,
@@ -3577,6 +3785,19 @@
    "date": "2026-10-23",
    "src": "images/gallery-sns/sfw/iris/0a6e6302a163.webp",
    "thumb": "images/gallery-sns/sfw/iris/0a6e6302a163_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "053847c624ac",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 5",
+   "date": "2026-10-23",
+   "src": "images/gallery-sns/sfw/lupinus/053847c624ac.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/053847c624ac_t.webp",
    "w": 720,
    "h": 1280
   },

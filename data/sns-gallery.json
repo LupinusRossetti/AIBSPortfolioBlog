@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:fiona": 282,
-  "sfw:iris": 322,
-  "sfw:lupinus": 366,
+  "sfw:fiona": 284,
+  "sfw:lupinus": 369,
+  "sfw:iris": 323,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "fba4a9a0f95a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子が主役のライブのチケットとセット",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/fiona/fba4a9a0f95a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/fba4a9a0f95a_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "c4b626e549a0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の夜のベランダ。ルピナスが大きなチェックのブランケットを広げて3人の肩をいっしょにくるみ、まん中のアイリスが夜空を指さ",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/lupinus/c4b626e549a0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c4b626e549a0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8a5d47c6294c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 ハロウィンのパレードで、魔女の女の子がス",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/lupinus/8a5d47c6294c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8a5d47c6294c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "76097cb56989",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝もやの渓流の岩場。胸までのウェーダーにシャツの袖をまくったルピナスが、花冠をかぶったまま釣り竿を大きくしならせ、水しぶ",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/lupinus/76097cb56989.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/76097cb56989_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "117ebb3f607c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プリクラみたいに、ハートと星のシールがきらきらの枠の中で、アイリスが片目の前でピースして、べーっと舌を出していたずらっぽ",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/iris/117ebb3f607c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/117ebb3f607c_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "03e7a25e57b2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ホームビデオ記念日にちなんで、古いビデオ",
+   "date": "2026-10-29",
+   "src": "images/gallery-sns/sfw/fiona/03e7a25e57b2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/03e7a25e57b2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fc42b8135bf4",
    "char": "fiona",

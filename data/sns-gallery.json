@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 378,
-  "sfw:fiona": 289,
-  "sfw:iris": 326,
+  "sfw:lupinus": 382,
+  "sfw:fiona": 290,
+  "sfw:iris": 327,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -71,6 +71,32 @@
    "h": 1280
   },
   {
+   "id": "8b1e18066e99",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "香りの日にちなんで、香水瓶とドライフラワ",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/8b1e18066e99.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8b1e18066e99_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "61b8a4ae7aa9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朱色の照明が床に落ちる和太鼓の舞台。ティルナみたいな若草色のアームリボンを二の腕に結んだフィオナが、白いはちまきをきりっ",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/fiona/61b8a4ae7aa9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/61b8a4ae7aa9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "57e29b5ab36d",
    "char": "iris",
    "nsfw": false,
@@ -97,6 +123,19 @@
    "h": 720
   },
   {
+   "id": "3ce2d21f0487",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 誰もいないホールで、グランドピアノを弾く",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/iris/3ce2d21f0487.webp",
+   "thumb": "images/gallery-sns/sfw/iris/3ce2d21f0487_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "384cca246f34",
    "char": "lupinus",
    "nsfw": false,
@@ -106,6 +145,32 @@
    "date": "2026-10-30",
    "src": "images/gallery-sns/sfw/lupinus/384cca246f34.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/384cca246f34_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "20d1c68da26f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝のカフェのカウンター。バリスタのルピナスが、ミルクピッチャーでラテに大きなハートを描き終え、カップをこちらへそっと差し",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/20d1c68da26f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/20d1c68da26f_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "1ed3d09422bd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "出かける前の朝の玄関。3人が同時に靴を履こうとしてぎゅうぎゅうに。ルピナスが片足立ちでパンプスのかかとを直し、アイリスが",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/1ed3d09422bd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1ed3d09422bd_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -133,6 +198,19 @@
    "src": "images/gallery-sns/sfw/lupinus/16f526795b3a.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/16f526795b3a_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "043102e62111",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子のぬいぐるみキーホルダーのプロン",
+   "date": "2026-10-30",
+   "src": "images/gallery-sns/sfw/lupinus/043102e62111.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/043102e62111_t.webp",
+   "w": 853,
    "h": 1280
   },
   {

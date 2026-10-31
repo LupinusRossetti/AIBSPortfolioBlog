@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:fiona": 304,
-  "sfw:iris": 345,
-  "sfw:lupinus": 394,
+  "sfw:lupinus": 396,
+  "sfw:iris": 347,
+  "sfw:fiona": 306,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e68390faede2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#きゅとくるハロウィン",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/e68390faede2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e68390faede2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d203ec987df4",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フォトデー 2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/d203ec987df4.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d203ec987df4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b34e2496eeac",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フォトデー",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/b34e2496eeac.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b34e2496eeac_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "ab8afb844086",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#フォトデー 3",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/ab8afb844086.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ab8afb844086_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "67418a4737f5",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィン童話夜会",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/67418a4737f5.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/67418a4737f5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "eca770f513a2",
    "char": "fiona",
@@ -405,6 +470,19 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/fiona/207fcc728977.webp",
    "thumb": "images/gallery-sns/sfw/fiona/207fcc728977_t.webp",
+   "w": 960,
+   "h": 1280
+  },
+  {
+   "id": "1fc9dbc7c77c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#異議申し立て祭",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/1fc9dbc7c77c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/1fc9dbc7c77c_t.webp",
    "w": 960,
    "h": 1280
   },

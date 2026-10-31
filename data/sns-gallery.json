@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 303,
-  "sfw:iris": 343,
-  "sfw:lupinus": 393,
+  "sfw:fiona": 304,
+  "sfw:iris": 345,
+  "sfw:lupinus": 394,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -149,6 +149,19 @@
    "h": 1280
   },
   {
+   "id": "9bf7f0c4c3af",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "風の強い朝の配達。郵便屋さんの制帽のアイリスが、ハートのシールの封筒を頬に寄せて、片目をつむってにっと笑う",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/9bf7f0c4c3af.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9bf7f0c4c3af_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "923e436450d8",
    "char": "iris",
    "nsfw": false,
@@ -198,6 +211,19 @@
    "src": "images/gallery-sns/sfw/iris/848eae51ea3c.webp",
    "thumb": "images/gallery-sns/sfw/iris/848eae51ea3c_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7f829746e678",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "色とりどりのライトが回るカラオケルーム。マイクを片手で握ったアイリスが、もう片方の手を胸の前でぎゅっと握り、目をぎゅっと",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/7f829746e678.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7f829746e678_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -357,6 +383,19 @@
    "h": 1280
   },
   {
+   "id": "2f699289d4d8",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "アイリスちゃんとフィオナが朝の台所で、焼きたてのトーストを両側からつかんで引っぱり合う。アイリスは笑い、フィオナは頬をふ",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/2f699289d4d8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2f699289d4d8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "207fcc728977",
    "char": "fiona",
    "nsfw": false,
@@ -393,6 +432,19 @@
    "src": "images/gallery-sns/sfw/lupinus/0be0bd0876d3.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/0be0bd0876d3_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "078c7f64c47b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ハロウィンにちなんで、かぼちゃのランタン",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/078c7f64c47b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/078c7f64c47b_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {

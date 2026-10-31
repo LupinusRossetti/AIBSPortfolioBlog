@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:fiona": 299,
-  "sfw:lupinus": 387,
-  "sfw:iris": 336,
+  "sfw:fiona": 302,
+  "sfw:iris": 342,
+  "sfw:lupinus": 391,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "d8fbabf618e9",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィン童話夜会 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/d8fbabf618e9.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d8fbabf618e9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "d8aedd5be692",
    "char": "lupinus",
    "nsfw": false,
@@ -67,6 +80,19 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/lupinus/d8aedd5be692.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/d8aedd5be692_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d3cc520ccd2b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#きゅとくるハロウィン",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/d3cc520ccd2b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d3cc520ccd2b_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -81,6 +107,32 @@
    "src": "images/gallery-sns/sfw/fiona/a026eaf22600.webp",
    "thumb": "images/gallery-sns/sfw/fiona/a026eaf22600_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "9fff68720016",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィンも黒ミサ",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/9fff68720016.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9fff68720016_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "923e436450d8",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ゆるこわ妖怪ハロウィン 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/923e436450d8.webp",
+   "thumb": "images/gallery-sns/sfw/iris/923e436450d8_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -119,6 +171,32 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/iris/848eae51ea3c.webp",
    "thumb": "images/gallery-sns/sfw/iris/848eae51ea3c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7a090d5267f2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ネオンちゃんハロウィンナイト",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/7a090d5267f2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7a090d5267f2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "79897711cba9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィン童話夜会",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/79897711cba9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/79897711cba9_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -162,6 +240,71 @@
    "h": 1280
   },
   {
+   "id": "57485e48e5fa",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ハロウィンも黒ミサ",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/57485e48e5fa.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/57485e48e5fa_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "53b47ee5f767",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#地味にハロウィン選手権2026",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/53b47ee5f767.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/53b47ee5f767_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4c54620d0353",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ネオンちゃんハロウィンナイト 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/4c54620d0353.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4c54620d0353_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "496b033ca272",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#きゅとくるハロウィン 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/496b033ca272.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/496b033ca272_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4118b32976c8",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ネオンちゃんハロウィンナイト 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/4118b32976c8.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4118b32976c8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "409c3b95adad",
    "char": "iris",
    "nsfw": false,
@@ -184,6 +327,32 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/lupinus/118f5935cdd9.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/118f5935cdd9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0be0bd0876d3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ゆるこわ妖怪ハロウィン",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/0be0bd0876d3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/0be0bd0876d3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "02429db2e047",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#メイド曜",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/02429db2e047.webp",
+   "thumb": "images/gallery-sns/sfw/iris/02429db2e047_t.webp",
    "w": 720,
    "h": 1280
   },

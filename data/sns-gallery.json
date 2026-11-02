@@ -25,7 +25,7 @@
  "counts": {
   "sfw:lupinus": 399,
   "sfw:iris": 349,
-  "sfw:fiona": 308,
+  "sfw:fiona": 309,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -81,6 +81,19 @@
    "src": "images/gallery-sns/sfw/lupinus/b34e2496eeac.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/b34e2496eeac_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "adf9c1a95360",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 秋晴れの河原で、シャボン玉を大きく吹いて",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/adf9c1a95360.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/adf9c1a95360_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

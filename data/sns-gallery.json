@@ -25,7 +25,7 @@
  "counts": {
   "sfw:lupinus": 399,
   "sfw:iris": 349,
-  "sfw:fiona": 307,
+  "sfw:fiona": 308,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -172,6 +172,19 @@
    "src": "images/gallery-sns/sfw/fiona/6281509865fc.webp",
    "thumb": "images/gallery-sns/sfw/fiona/6281509865fc_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3cd5cad0d5cc",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#異議申し立て祭 3",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/3cd5cad0d5cc.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3cd5cad0d5cc_t.webp",
+   "w": 960,
    "h": 1280
   },
   {

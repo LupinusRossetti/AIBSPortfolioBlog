@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 351,
-  "sfw:lupinus": 400,
-  "sfw:fiona": 309,
+  "sfw:iris": 364,
+  "sfw:lupinus": 413,
+  "sfw:fiona": 322,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,97 @@
    "h": 1280
   },
   {
+   "id": "a999cf883fe2",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "青と紫の照明が交差するライブハウスの小さなステージ。腕に赤いリボンを結んだアイリスが、最後のシンバルを鳴らしきった直後に",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/iris/a999cf883fe2.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a999cf883fe2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a6e25ba2a0c3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#初冬のAIもこもこファッション",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/lupinus/a6e25ba2a0c3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a6e25ba2a0c3_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "8fa848501fc6",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋のおうち時間のうちの子",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/fiona/8fa848501fc6.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8fa848501fc6_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6e7ed24a612e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月曜日の夜は全力ゴスロリ",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/fiona/6e7ed24a612e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/6e7ed24a612e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5ae2bc41ed13",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "書道の日。板の間いっぱいに広げた大きな和紙の上で、袴姿のルピナスが大筆をひと息にふり抜き、大きな丸をひとつ描き終えて、墨",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/lupinus/5ae2bc41ed13.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5ae2bc41ed13_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "59ccaf5dc0fa",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#小悪魔ちゃん展",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/iris/59ccaf5dc0fa.webp",
+   "thumb": "images/gallery-sns/sfw/iris/59ccaf5dc0fa_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "56b72f1b3ff9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の暗い廊下を肝試し気分で。懐中電灯を持ったルピナスがへっちゃらな顔で先を歩き、そのパジャマの袖をアイリスが指でつまんで",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/lupinus/56b72f1b3ff9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/56b72f1b3ff9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "3a098b70e56b",
    "char": "iris",
    "nsfw": false,
@@ -67,6 +158,58 @@
    "date": "2026-11-02",
    "src": "images/gallery-sns/sfw/iris/3a098b70e56b.webp",
    "thumb": "images/gallery-sns/sfw/iris/3a098b70e56b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "14e512718bf9",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#月曜日討伐隊",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/iris/14e512718bf9.webp",
+   "thumb": "images/gallery-sns/sfw/iris/14e512718bf9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f74902e6c204",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "##R-15盛り上げ隊2 3",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/f74902e6c204.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/f74902e6c204_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f37f6746d640",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#密教",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/f37f6746d640.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f37f6746d640_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f18913aa46e1",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#超古代文明あるある 3",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/f18913aa46e1.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/f18913aa46e1_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -93,6 +236,19 @@
    "date": "2026-11-01",
    "src": "images/gallery-sns/sfw/iris/d203ec987df4.webp",
    "thumb": "images/gallery-sns/sfw/iris/d203ec987df4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ce48ac3dee86",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スク水ブラックフライデー 2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/ce48ac3dee86.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ce48ac3dee86_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -188,6 +344,45 @@
    "h": 1280
   },
   {
+   "id": "75d63e95357a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#密教 3",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/75d63e95357a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/75d63e95357a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6edbb8d22c47",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#密教 2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/6edbb8d22c47.webp",
+   "thumb": "images/gallery-sns/sfw/iris/6edbb8d22c47_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6e685fd1c58c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スク水ブラックフライデー",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/6e685fd1c58c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6e685fd1c58c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "67418a4737f5",
    "char": "fiona",
    "nsfw": false,
@@ -240,6 +435,71 @@
    "h": 1280
   },
   {
+   "id": "28a0344b2dd0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#超古代文明あるある",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/28a0344b2dd0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/28a0344b2dd0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "14db7cd1f8fe",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "##R-15盛り上げ隊2 2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/14db7cd1f8fe.webp",
+   "thumb": "images/gallery-sns/sfw/iris/14db7cd1f8fe_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "083dc172a9b4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スク水ブラックフライデー 3",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/083dc172a9b4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/083dc172a9b4_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "fef51b43a8ad",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ジュース 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/fef51b43a8ad.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/fef51b43a8ad_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "fdc5a2be751d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#楽しめハロウィン！",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/fdc5a2be751d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/fdc5a2be751d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "eca770f513a2",
    "char": "fiona",
    "nsfw": false,
@@ -279,6 +539,19 @@
    "h": 1280
   },
   {
+   "id": "d9851f10119a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#サキュバスハロウィン",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/d9851f10119a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d9851f10119a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "d8fbabf618e9",
    "char": "iris",
    "nsfw": false,
@@ -305,6 +578,19 @@
    "h": 1280
   },
   {
+   "id": "d64d5b47f78e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#メイド 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/d64d5b47f78e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d64d5b47f78e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "d3cc520ccd2b",
    "char": "iris",
    "nsfw": false,
@@ -318,6 +604,45 @@
    "h": 1280
   },
   {
+   "id": "d19f8010426e",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#魔女王 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/d19f8010426e.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d19f8010426e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bad9f49efd5a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#魔女王 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/bad9f49efd5a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/bad9f49efd5a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b22f61f781e6",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#お茶 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/b22f61f781e6.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b22f61f781e6_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "ada067cb163d",
    "char": "lupinus",
    "nsfw": false,
@@ -327,6 +652,32 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/lupinus/ada067cb163d.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/ada067cb163d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ad7753b81c3a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#メイド 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/ad7753b81c3a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ad7753b81c3a_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "a2f77588dc23",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#サキュバスハロウィン 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/a2f77588dc23.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a2f77588dc23_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -353,6 +704,19 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/iris/9fff68720016.webp",
    "thumb": "images/gallery-sns/sfw/iris/9fff68720016_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9fa53f9340f4",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#犬と一緒",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/9fa53f9340f4.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9fa53f9340f4_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -396,6 +760,19 @@
    "h": 1280
   },
   {
+   "id": "8b82dfad137c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#楽しめハロウィン！ 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/8b82dfad137c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8b82dfad137c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "89d42ec7db44",
    "char": "iris",
    "nsfw": false,
@@ -409,6 +786,19 @@
    "h": 1280
   },
   {
+   "id": "88d9098f0fb1",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#魔女王",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/88d9098f0fb1.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/88d9098f0fb1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "848eae51ea3c",
    "char": "iris",
    "nsfw": false,
@@ -418,6 +808,19 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/iris/848eae51ea3c.webp",
    "thumb": "images/gallery-sns/sfw/iris/848eae51ea3c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8342b61950bc",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#お茶",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/8342b61950bc.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8342b61950bc_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -461,6 +864,19 @@
    "h": 1280
   },
   {
+   "id": "7979e41971c0",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#お茶 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/7979e41971c0.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7979e41971c0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "7080923d824c",
    "char": "iris",
    "nsfw": false,
@@ -487,6 +903,19 @@
    "h": 1280
   },
   {
+   "id": "5aec298a439a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#犬と一緒 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/5aec298a439a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/5aec298a439a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "5882fd25986d",
    "char": "fiona",
    "nsfw": false,
@@ -510,6 +939,19 @@
    "src": "images/gallery-sns/sfw/lupinus/57485e48e5fa.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/57485e48e5fa_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "544ad0e94e52",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#犬と一緒 3",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/fiona/544ad0e94e52.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/544ad0e94e52_t.webp",
+   "w": 1280,
    "h": 1280
   },
   {
@@ -604,6 +1046,19 @@
    "h": 1280
   },
   {
+   "id": "2b6b61696352",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ジュース 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/2b6b61696352.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2b6b61696352_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "207fcc728977",
    "char": "fiona",
    "nsfw": false,
@@ -630,6 +1085,19 @@
    "h": 1280
   },
   {
+   "id": "1c336bb8a967",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#メイド",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/1c336bb8a967.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1c336bb8a967_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "118f5935cdd9",
    "char": "lupinus",
    "nsfw": false,
@@ -639,6 +1107,32 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/lupinus/118f5935cdd9.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/118f5935cdd9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0fe95b5705b6",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#サキュバスハロウィン 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/0fe95b5705b6.webp",
+   "thumb": "images/gallery-sns/sfw/iris/0fe95b5705b6_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0dd96eef79e6",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#楽しめハロウィン！ 2",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/iris/0dd96eef79e6.webp",
+   "thumb": "images/gallery-sns/sfw/iris/0dd96eef79e6_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -678,6 +1172,19 @@
    "date": "2026-10-31",
    "src": "images/gallery-sns/sfw/iris/02429db2e047.webp",
    "thumb": "images/gallery-sns/sfw/iris/02429db2e047_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "017eec5bd891",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ジュース",
+   "date": "2026-10-31",
+   "src": "images/gallery-sns/sfw/lupinus/017eec5bd891.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/017eec5bd891_t.webp",
    "w": 720,
    "h": 1280
   },

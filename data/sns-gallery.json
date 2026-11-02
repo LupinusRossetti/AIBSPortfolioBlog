@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 396,
-  "sfw:iris": 347,
-  "sfw:fiona": 306,
+  "sfw:lupinus": 398,
+  "sfw:iris": 348,
+  "sfw:fiona": 307,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "bcdd44cc1fd1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "双子そろって寝坊した朝。パジャマのままのアイリスがトーストをくわえて片足立ちで靴下をはこうとし、フィオナはヘアブラシを片",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/bcdd44cc1fd1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bcdd44cc1fd1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "b34e2496eeac",
    "char": "lupinus",
    "nsfw": false,
@@ -84,6 +97,19 @@
    "h": 1280
   },
   {
+   "id": "828a297f7269",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "白い石の城の中庭。銀の鎧の騎士のルピナスが、剣を地面について両手を柄に重ね、風にマントと銀髪をなびかせながら、まっすぐこ",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/828a297f7269.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/828a297f7269_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "67418a4737f5",
    "char": "fiona",
    "nsfw": false,
@@ -93,6 +119,32 @@
    "date": "2026-11-01",
    "src": "images/gallery-sns/sfw/fiona/67418a4737f5.webp",
    "thumb": "images/gallery-sns/sfw/fiona/67418a4737f5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "63323c1b8177",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜明けのビルの屋上。ヨガウェアのルピナスが、ヨガマットに横向きに寝そべって片ひじで頭を支え、上の脚をすっと高く伸ばしたま",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/63323c1b8177.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/63323c1b8177_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "6281509865fc",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "紅茶の日の午後。ティールームのテーブルで、フィオナがティーポットを高く持ち上げてカップへ紅茶を注ぎ、こぼさないように舌先",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/fiona/6281509865fc.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/6281509865fc_t.webp",
    "w": 720,
    "h": 1280
   },

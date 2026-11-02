@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:lupinus": 398,
-  "sfw:iris": 348,
+  "sfw:iris": 349,
   "sfw:fiona": 307,
   "sfw:three": 14
  },
@@ -93,6 +93,19 @@
    "date": "2026-11-01",
    "src": "images/gallery-sns/sfw/fiona/ab8afb844086.webp",
    "thumb": "images/gallery-sns/sfw/fiona/ab8afb844086_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9f8ba7c01aa7",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#AIハロウィン学園祭",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/9f8ba7c01aa7.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9f8ba7c01aa7_t.webp",
    "w": 720,
    "h": 1280
   },

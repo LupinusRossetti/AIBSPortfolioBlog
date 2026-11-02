@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,53 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 399,
-  "sfw:iris": 349,
+  "sfw:iris": 351,
+  "sfw:lupinus": 400,
   "sfw:fiona": 309,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "eed9de4904b6",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子とめぐる駅のスタンプラリーの台紙",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/iris/eed9de4904b6.webp",
+   "thumb": "images/gallery-sns/sfw/iris/eed9de4904b6_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "ace442824879",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 秋の海辺で拾った桜色の貝殻を見せてくれる",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/lupinus/ace442824879.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ace442824879_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3a098b70e56b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "早朝の釣り堀。竿が大きくしなった瞬間に立ち上がったアイリスが、桟橋の端で両足を踏ん張り、歯を食いしばってのけぞる。水面に",
+   "date": "2026-11-02",
+   "src": "images/gallery-sns/sfw/iris/3a098b70e56b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/3a098b70e56b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e68390faede2",
    "char": "lupinus",

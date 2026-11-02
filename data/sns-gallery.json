@@ -23,7 +23,7 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 398,
+  "sfw:lupinus": 399,
   "sfw:iris": 349,
   "sfw:fiona": 307,
   "sfw:three": 14
@@ -107,6 +107,19 @@
    "src": "images/gallery-sns/sfw/iris/9f8ba7c01aa7.webp",
    "thumb": "images/gallery-sns/sfw/iris/9f8ba7c01aa7_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8b59d9904423",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#異議申し立て祭 2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/8b59d9904423.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8b59d9904423_t.webp",
+   "w": 960,
    "h": 1280
   },
   {

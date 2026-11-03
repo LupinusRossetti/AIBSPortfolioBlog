@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,40 @@
   }
  },
  "counts": {
-  "sfw:iris": 364,
-  "sfw:lupinus": 413,
+  "sfw:lupinus": 414,
+  "sfw:iris": 365,
   "sfw:fiona": 322,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f3ba8f141e11",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#水属性で火曜日を討伐",
+   "date": "2026-11-03",
+   "src": "images/gallery-sns/sfw/lupinus/f3ba8f141e11.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f3ba8f141e11_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "569d7353d7fd",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#火曜に咲く一輪の花",
+   "date": "2026-11-03",
+   "src": "images/gallery-sns/sfw/iris/569d7353d7fd.webp",
+   "thumb": "images/gallery-sns/sfw/iris/569d7353d7fd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "eed9de4904b6",
    "char": "iris",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 423,
-  "sfw:iris": 371,
-  "sfw:fiona": 327,
+  "sfw:lupinus": 427,
+  "sfw:fiona": 330,
+  "sfw:iris": 373,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "a72e8a7e8407",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ふくれっつらGO",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/lupinus/a72e8a7e8407.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a72e8a7e8407_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "498cbbfb6357",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#真・いい尻の日 3",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/fiona/498cbbfb6357.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/498cbbfb6357_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4625a9408802",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ふくれっつらGO 3",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/fiona/4625a9408802.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/4625a9408802_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "35659839dbc9",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#ふくれっつらGO 2",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/iris/35659839dbc9.webp",
+   "thumb": "images/gallery-sns/sfw/iris/35659839dbc9_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "1a88dd247fb6",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#真・いい尻の日",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/lupinus/1a88dd247fb6.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/1a88dd247fb6_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f93115b4f38b",
    "char": "lupinus",
@@ -110,6 +175,19 @@
    "h": 1280
   },
   {
+   "id": "734cf8144ed3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#クラシックカー",
+   "date": "2026-11-03",
+   "src": "images/gallery-sns/sfw/lupinus/734cf8144ed3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/734cf8144ed3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "7214ad26edf0",
    "char": "iris",
    "nsfw": false,
@@ -146,6 +224,19 @@
    "src": "images/gallery-sns/sfw/lupinus/568c7afe95cf.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/568c7afe95cf_t.webp",
    "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "50cfe7271185",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#クラシックカー 3",
+   "date": "2026-11-03",
+   "src": "images/gallery-sns/sfw/fiona/50cfe7271185.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/50cfe7271185_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -461,6 +552,19 @@
    "h": 1280
   },
   {
+   "id": "fbc841e1b5db",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#超古代文明あるある 2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/iris/fbc841e1b5db.webp",
+   "thumb": "images/gallery-sns/sfw/iris/fbc841e1b5db_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "f74902e6c204",
    "char": "fiona",
    "nsfw": false,
@@ -743,6 +847,19 @@
    "date": "2026-11-01",
    "src": "images/gallery-sns/sfw/iris/14db7cd1f8fe.webp",
    "thumb": "images/gallery-sns/sfw/iris/14db7cd1f8fe_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "13c5bbfbc94c",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "##R-15盛り上げ隊2",
+   "date": "2026-11-01",
+   "src": "images/gallery-sns/sfw/lupinus/13c5bbfbc94c.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/13c5bbfbc94c_t.webp",
    "w": 720,
    "h": 1280
   },

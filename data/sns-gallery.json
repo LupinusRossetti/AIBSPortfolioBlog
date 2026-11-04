@@ -23,8 +23,8 @@
   }
  },
  "counts": {
-  "sfw:iris": 377,
-  "sfw:lupinus": 428,
+  "sfw:iris": 381,
+  "sfw:lupinus": 430,
   "sfw:fiona": 331,
   "sfw:three": 14
  },
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "ca66bcac4198",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夕方の河川敷のグラウンド。アイリスがジャージにハーフパンツで、膝でぽんとボールを高く上げ、落ちてくるボールを見上げて",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/iris/ca66bcac4198.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ca66bcac4198_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "b90da1fa6dd7",
    "char": "iris",
    "nsfw": false,
@@ -71,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "abbb9634132d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "秋の実り収穫の頃にちなんで、栗とかぼちゃ",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/lupinus/abbb9634132d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/abbb9634132d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "a72e8a7e8407",
    "char": "lupinus",
    "nsfw": false,
@@ -80,6 +106,19 @@
    "date": "2026-11-04",
    "src": "images/gallery-sns/sfw/lupinus/a72e8a7e8407.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/a72e8a7e8407_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "973e0b49eeef",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "自転車便のお仕事で横断歩道を渡っていたら信号が点滅し、急いでこぎ出したら風で帽子が飛ぶ",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/iris/973e0b49eeef.webp",
+   "thumb": "images/gallery-sns/sfw/iris/973e0b49eeef_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -149,6 +188,32 @@
    "h": 1280
   },
   {
+   "id": "44c039e94b23",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "うさぎカフェの柵の中。床にぺたんと座ったフィオナのひざに白いうさぎが乗って鼻をひくひくさせ、アイリスが手のひらのにんじん",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/iris/44c039e94b23.webp",
+   "thumb": "images/gallery-sns/sfw/iris/44c039e94b23_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "41fe7dcf3690",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の駄菓子屋の当たりくじ棚のプロン",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/iris/41fe7dcf3690.webp",
+   "thumb": "images/gallery-sns/sfw/iris/41fe7dcf3690_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "35659839dbc9",
    "char": "iris",
    "nsfw": false,
@@ -159,6 +224,19 @@
    "src": "images/gallery-sns/sfw/iris/35659839dbc9.webp",
    "thumb": "images/gallery-sns/sfw/iris/35659839dbc9_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "2ae52763b588",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#終焉を纏うバーサーカー",
+   "date": "2026-11-04",
+   "src": "images/gallery-sns/sfw/lupinus/2ae52763b588.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2ae52763b588_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

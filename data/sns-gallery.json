@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,79 @@
   }
  },
  "counts": {
+  "sfw:fiona": 334,
+  "sfw:lupinus": 432,
   "sfw:iris": 381,
-  "sfw:lupinus": 430,
-  "sfw:fiona": 331,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "c18102e444a2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のクラブの小さなDJブース。フィオナがヘッドホンを片耳に押し当てながら、フロアへ向けて片手を大きく上げて照れたように笑",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/fiona/c18102e444a2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c18102e444a2_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9fc9aae03dbd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "いいりんごの日の昼。秋の果樹園で、腕にりんごでいっぱいのかごをかけたルピナスが、背伸びして枝の真っ赤なりんごをもぎ取り、",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/lupinus/9fc9aae03dbd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9fc9aae03dbd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "95652a54d960",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜明けの山あいの泉。白い聖女の衣装のフィオナが泉のほとりにひざまずき、両手で光る水をすくい上げる。指のあいだからこぼれる",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/fiona/95652a54d960.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/95652a54d960_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5d009b32b97a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ドーナツ屋さんの飾りつけ体験。作業台に並んだ焼きたてのドーナツに、フィオナがピンクのアイシングをとろりとかけ、アイリスが",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/lupinus/5d009b32b97a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5d009b32b97a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "458e1fa911ac",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子が主演の映画ポスターのプロンプト",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/fiona/458e1fa911ac.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/458e1fa911ac_t.webp",
+   "w": 853,
+   "h": 1280
+  },
   {
    "id": "f7b6aabac85a",
    "char": "iris",

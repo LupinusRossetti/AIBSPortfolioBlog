@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:iris": 382,
-  "sfw:fiona": 334,
-  "sfw:lupinus": 432,
+  "sfw:lupinus": 434,
+  "sfw:iris": 383,
+  "sfw:fiona": 335,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "edb5c745c81d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天使のうちの子",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/lupinus/edb5c745c81d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/edb5c745c81d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "cf4d36fcfe0b",
    "char": "iris",
@@ -41,6 +54,19 @@
    "date": "2026-11-05",
    "src": "images/gallery-sns/sfw/iris/cf4d36fcfe0b.webp",
    "thumb": "images/gallery-sns/sfw/iris/cf4d36fcfe0b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c5fa05b4fc09",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木漏れ日ガール",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/iris/c5fa05b4fc09.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c5fa05b4fc09_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -107,6 +133,32 @@
    "src": "images/gallery-sns/sfw/fiona/458e1fa911ac.webp",
    "thumb": "images/gallery-sns/sfw/fiona/458e1fa911ac_t.webp",
    "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "4581ffbb1af7",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#木曜は黒ミサ",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/lupinus/4581ffbb1af7.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4581ffbb1af7_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1b6a113f59f2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#眼帯デー",
+   "date": "2026-11-05",
+   "src": "images/gallery-sns/sfw/fiona/1b6a113f59f2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/1b6a113f59f2_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

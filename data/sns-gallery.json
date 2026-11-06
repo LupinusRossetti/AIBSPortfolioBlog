@@ -23,8 +23,8 @@
   }
  },
  "counts": {
-  "sfw:iris": 386,
-  "sfw:lupinus": 435,
+  "sfw:iris": 387,
+  "sfw:lupinus": 436,
   "sfw:fiona": 335,
   "sfw:three": 14
  },
@@ -45,6 +45,19 @@
    "h": 1280
   },
   {
+   "id": "c2efb053d900",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 秋晴れの丘の上で紙飛行機を空へ飛ばす（C",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/iris/c2efb053d900.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c2efb053d900_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "95fe90489813",
    "char": "iris",
    "nsfw": false,
@@ -55,6 +68,19 @@
    "src": "images/gallery-sns/sfw/iris/95fe90489813.webp",
    "thumb": "images/gallery-sns/sfw/iris/95fe90489813_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "93fb30859498",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の編み物キットのプロンプト（GP",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/lupinus/93fb30859498.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/93fb30859498_t.webp",
+   "w": 853,
    "h": 1280
   },
   {

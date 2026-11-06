@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 434,
-  "sfw:iris": 383,
+  "sfw:iris": 386,
+  "sfw:lupinus": 435,
   "sfw:fiona": 335,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e2f2a04949b5",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の屋根裏の部屋。魔女の衣装のアイリスが大鍋を木のへらでぐるぐるかき混ぜると、鍋から星の形の泡がぽこぽこ浮かんで、部屋じ",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/iris/e2f2a04949b5.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e2f2a04949b5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "95fe90489813",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた午後の芝生の庭。回るスプリンクラーの水の霧にかかった小さな虹に向かって、アイリスが大きな輪っかでしゃぼん玉を一気に",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/iris/95fe90489813.webp",
+   "thumb": "images/gallery-sns/sfw/iris/95fe90489813_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8f6ef57b31ad",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝もやの山寺の石の広場。オレンジのチャイナ服のアイリスが高い蹴りの型をぴたりと決め、まっすぐ伸びた脚の先で朝日がきらりと",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/iris/8f6ef57b31ad.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8f6ef57b31ad_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6f0b56d26cbd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬支度の始まりの午後。落ち葉の舞う公園の並木道で、新しい長いマフラーをぐるぐる巻きにしたルピナスが、ミトンの手を口もとに",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/lupinus/6f0b56d26cbd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6f0b56d26cbd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "edb5c745c81d",
    "char": "lupinus",

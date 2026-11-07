@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 444,
-  "sfw:iris": 395,
-  "sfw:fiona": 343,
+  "sfw:lupinus": 446,
+  "sfw:fiona": 346,
+  "sfw:iris": 396,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,32 @@
    "h": 1280
   },
   {
+   "id": "cebf69be52e4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝もやの残る蓮の池。白いアオザイのフィオナが池に渡した木の橋の上で、ノンラーを片手で押さえて振り返る。長い裾が風にふわり",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/fiona/cebf69be52e4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/cebf69be52e4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b319f1602dcd",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "雪の舞う夜の氷の城のバルコニー。雪の女王の衣装のフィオナが手すりの前で片手をそっと差し出すと、手のひらから大きな雪の結晶",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/fiona/b319f1602dcd.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b319f1602dcd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "9b330cd9efa2",
    "char": "iris",
    "nsfw": false,
@@ -80,6 +106,45 @@
    "date": "2026-11-07",
    "src": "images/gallery-sns/sfw/fiona/93960f24cbae.webp",
    "thumb": "images/gallery-sns/sfw/fiona/93960f24cbae_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "92c87cf77434",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "立冬にちなんで、湯気立つ土鍋と鍋料理の準",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/iris/92c87cf77434.webp",
+   "thumb": "images/gallery-sns/sfw/iris/92c87cf77434_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "919cefe0613d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 冬の夕方の土手で焼きたてのたい焼きを頭か",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/lupinus/919cefe0613d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/919cefe0613d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8bff66e48990",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた午後の川原。アイリスが身を低くして平たい石を横手で投げ、石が水面をぴょんぴょんと何度もはねていくのを、隣のルピナス",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/lupinus/8bff66e48990.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8bff66e48990_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -146,6 +211,19 @@
    "src": "images/gallery-sns/sfw/iris/634bd507ebb7.webp",
    "thumb": "images/gallery-sns/sfw/iris/634bd507ebb7_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5f9c68e54216",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子のお天気コーナーのプロンプト（G",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/fiona/5f9c68e54216.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/5f9c68e54216_t.webp",
+   "w": 853,
    "h": 1280
   },
   {

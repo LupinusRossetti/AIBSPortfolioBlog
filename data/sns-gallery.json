@@ -23,8 +23,8 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 449,
-  "sfw:iris": 397,
+  "sfw:lupinus": 450,
+  "sfw:iris": 398,
   "sfw:fiona": 346,
   "sfw:three": 14
  },
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "a6804ee077e3",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の駅弁の掛け紙のプロンプト（GP",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/lupinus/a6804ee077e3.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a6804ee077e3_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "a1ab44b34322",
    "char": "lupinus",
    "nsfw": false,
@@ -80,6 +93,19 @@
    "date": "2026-11-08",
    "src": "images/gallery-sns/sfw/iris/6f4749c89265.webp",
    "thumb": "images/gallery-sns/sfw/iris/6f4749c89265_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "11dbdd2c451d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 ボウリング場のレーンでストライクを決めて",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/iris/11dbdd2c451d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/11dbdd2c451d_t.webp",
    "w": 720,
    "h": 1280
   },

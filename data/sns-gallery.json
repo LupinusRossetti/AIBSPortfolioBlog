@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 450,
-  "sfw:iris": 398,
-  "sfw:fiona": 346,
+  "sfw:fiona": 349,
+  "sfw:lupinus": 452,
+  "sfw:iris": 399,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "d4f33a8809d9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 レトロな喫茶店で運ばれてきたプリンアラモ",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/d4f33a8809d9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d4f33a8809d9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bd4794a8076e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夕方のアイスホッケーのリンクのゴール前。ぶあつい防具と青いユニフォームのフィオナがゴールキーパーとして大きなグローブで飛",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/bd4794a8076e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/bd4794a8076e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8e071fa0e998",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の晴れた朝の屋外の釣り堀。白いもこもこの上着と赤いマフラーのフィオナが、折りたたみの椅子にちょこんと座って竿を構え、水",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/8e071fa0e998.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8e071fa0e998_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8a178e89a5ea",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた昼の広い芝生の公園。アイリスが大きな輪っかのシャボン玉の道具をふわっとふり上げ、人の背丈ほどの大きなシャボン玉がゆ",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/lupinus/8a178e89a5ea.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8a178e89a5ea_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7d6aec5d7ea0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "いい靴の日の午後。日の差す玄関で、ルピナスが磨き上げたばかりの茶色の革のブーツに靴べらを当てて足を入れ、片足立ちでぐらっ",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/lupinus/7d6aec5d7ea0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7d6aec5d7ea0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1acd00112c14",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の今年の表彰状のプロンプト（GP",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/iris/1acd00112c14.webp",
+   "thumb": "images/gallery-sns/sfw/iris/1acd00112c14_t.webp",
+   "w": 853,
+   "h": 1280
+  },
   {
    "id": "e73f2ea05943",
    "char": "lupinus",

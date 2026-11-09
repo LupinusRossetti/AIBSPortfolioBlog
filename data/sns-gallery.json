@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 446,
+  "sfw:lupinus": 449,
+  "sfw:iris": 397,
   "sfw:fiona": 346,
-  "sfw:iris": 396,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e73f2ea05943",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ガラス工房の吹きガラス体験。長い竿の先でオレンジに光るガラス玉に、フィオナがほっぺをふくらませて息を吹きこみ、横のルピナ",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/lupinus/e73f2ea05943.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e73f2ea05943_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cd80a93289e9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた秋の古い家の軒先。紺の半纏のルピナスが、皮をむいた柿を結んだ縄を軒にずらりと吊るし終え、橙色に並んだ柿を見上げて、",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/lupinus/cd80a93289e9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/cd80a93289e9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a1ab44b34322",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の古い映画館の狭い映写室。白いシャツの袖をまくったルピナスが大きなリールを映写機に掛けおえて、小さなのぞき窓から客席の",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/lupinus/a1ab44b34322.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a1ab44b34322_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6f4749c89265",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "刃物の日の午後。古い刃物屋の工房の研ぎ場で、アイリスが水を打った砥石に包丁を寝かせて研ぎ、刃先に窓の光がきらっと走った瞬",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/iris/6f4749c89265.webp",
+   "thumb": "images/gallery-sns/sfw/iris/6f4749c89265_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "dcef2ee1f3be",
    "char": "lupinus",

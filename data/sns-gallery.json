@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:fiona": 349,
-  "sfw:lupinus": 452,
-  "sfw:iris": 399,
+  "sfw:fiona": 355,
+  "sfw:lupinus": 457,
+  "sfw:iris": 405,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e551f622a35c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#これは対象外！ 3",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/fiona/e551f622a35c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e551f622a35c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "db23b945840b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#これは対象外！",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/lupinus/db23b945840b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/db23b945840b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "21ee2c21a51b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#これは対象外！ 2",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/iris/21ee2c21a51b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/21ee2c21a51b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f8472a04fb9b",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#恥丘",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/lupinus/f8472a04fb9b.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f8472a04fb9b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "db98dfde4f0b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#早めのサンタ 3",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/db98dfde4f0b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/db98dfde4f0b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "db1b82285186",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#恥丘 3",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/db1b82285186.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/db1b82285186_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "d4f33a8809d9",
    "char": "fiona",
@@ -45,6 +123,32 @@
    "h": 1280
   },
   {
+   "id": "c5a11cd28f11",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#持ち込み可能な異世界転移 3",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/c5a11cd28f11.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/c5a11cd28f11_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c0a95426e106",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#持ち込み可能な異世界転移 2",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/iris/c0a95426e106.webp",
+   "thumb": "images/gallery-sns/sfw/iris/c0a95426e106_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "bd4794a8076e",
    "char": "fiona",
    "nsfw": false,
@@ -54,6 +158,32 @@
    "date": "2026-11-09",
    "src": "images/gallery-sns/sfw/fiona/bd4794a8076e.webp",
    "thumb": "images/gallery-sns/sfw/fiona/bd4794a8076e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a1079dd68697",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スニーカーと靴下2",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/lupinus/a1079dd68697.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/a1079dd68697_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9d8354a22d95",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スニーカーと靴下2 2",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/iris/9d8354a22d95.webp",
+   "thumb": "images/gallery-sns/sfw/iris/9d8354a22d95_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -97,6 +227,45 @@
    "h": 1280
   },
   {
+   "id": "5e177bcc714d",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#早めのサンタ 2",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/iris/5e177bcc714d.webp",
+   "thumb": "images/gallery-sns/sfw/iris/5e177bcc714d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3d61ab5c5d7a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#恥丘 2",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/iris/3d61ab5c5d7a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/3d61ab5c5d7a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2352225d810a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#スニーカーと靴下2 3",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/fiona/2352225d810a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2352225d810a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "1acd00112c14",
    "char": "iris",
    "nsfw": false,
@@ -107,6 +276,19 @@
    "src": "images/gallery-sns/sfw/iris/1acd00112c14.webp",
    "thumb": "images/gallery-sns/sfw/iris/1acd00112c14_t.webp",
    "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "10c77e0776d9",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#早めのサンタ",
+   "date": "2026-11-09",
+   "src": "images/gallery-sns/sfw/lupinus/10c77e0776d9.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/10c77e0776d9_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -162,6 +344,19 @@
    "h": 1280
   },
   {
+   "id": "72420f5aa16a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#覗いたら 2",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/iris/72420f5aa16a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/72420f5aa16a_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "6f4749c89265",
    "char": "iris",
    "nsfw": false,
@@ -171,6 +366,32 @@
    "date": "2026-11-08",
    "src": "images/gallery-sns/sfw/iris/6f4749c89265.webp",
    "thumb": "images/gallery-sns/sfw/iris/6f4749c89265_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6e0bcbc5ccab",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#覗いたら",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/lupinus/6e0bcbc5ccab.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/6e0bcbc5ccab_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3457a83adbb2",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#覗いたら 3",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/fiona/3457a83adbb2.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/3457a83adbb2_t.webp",
    "w": 720,
    "h": 1280
   },

@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:fiona": 356,
-  "sfw:lupinus": 457,
-  "sfw:iris": 406,
+  "sfw:iris": 408,
+  "sfw:fiona": 358,
+  "sfw:lupinus": 459,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f3451fb1568b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ホテルの車寄せで、制帽を押さえながら荷物カートを押して回転扉へ走り込む",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/iris/f3451fb1568b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f3451fb1568b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e551f622a35c",
    "char": "fiona",
@@ -58,6 +71,45 @@
    "h": 1280
   },
   {
+   "id": "c3470d2a0281",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 初雪の公園でマフラーを巻き直しながら空を",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/lupinus/c3470d2a0281.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c3470d2a0281_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a1eb2870d9ae",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ハンドクリームの日の夕方。冬のはじまりの窓辺のソファで、雪の結晶もようのピンクのニットのフィオナが、ハートの印のついた白",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/fiona/a1eb2870d9ae.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a1eb2870d9ae_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7cfe94e8c992",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子のいきもの図鑑の1ページのプロン",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/fiona/7cfe94e8c992.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7cfe94e8c992_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "6bfe296d49c7",
    "char": "iris",
    "nsfw": false,
@@ -69,6 +121,32 @@
    "thumb": "images/gallery-sns/sfw/iris/6bfe296d49c7_t.webp",
    "w": 720,
    "h": 1280
+  },
+  {
+   "id": "5e95aedf2d8a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "年の暮れの晴れた朝の商店街の広場の餅つき大会。法被のアイリスが杵を高く振りあげて元気にかけ声をかけ、臼の横にしゃがんだル",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/lupinus/5e95aedf2d8a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/5e95aedf2d8a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "41f2092bb982",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "放課後の体育館の青いマット。ジャージのアイリスが前転に勢いをつけすぎて、マットの上であおむけにひっくり返り、両脚を宙に投",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/iris/41f2092bb982.webp",
+   "thumb": "images/gallery-sns/sfw/iris/41f2092bb982_t.webp",
+   "w": 1280,
+   "h": 720
   },
   {
    "id": "34085db1637d",

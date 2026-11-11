@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,53 @@
   }
  },
  "counts": {
-  "sfw:iris": 408,
-  "sfw:fiona": 358,
-  "sfw:lupinus": 459,
+  "sfw:fiona": 361,
+  "sfw:lupinus": 463,
+  "sfw:iris": 412,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "d137b3e3967f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天蝎宮 3",
+   "date": "2026-11-11",
+   "src": "images/gallery-sns/sfw/fiona/d137b3e3967f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d137b3e3967f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2720b2a058e8",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天蝎宮",
+   "date": "2026-11-11",
+   "src": "images/gallery-sns/sfw/lupinus/2720b2a058e8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/2720b2a058e8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0807dd57be8f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#天蝎宮 2",
+   "date": "2026-11-11",
+   "src": "images/gallery-sns/sfw/iris/0807dd57be8f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/0807dd57be8f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f3451fb1568b",
    "char": "iris",
@@ -93,6 +132,19 @@
    "date": "2026-11-10",
    "src": "images/gallery-sns/sfw/fiona/a1eb2870d9ae.webp",
    "thumb": "images/gallery-sns/sfw/fiona/a1eb2870d9ae_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9b67e32e5893",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#持ち込み可能な異世界転移",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/lupinus/9b67e32e5893.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9b67e32e5893_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -409,6 +461,19 @@
    "h": 1280
   },
   {
+   "id": "d7f0e7e1b836",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#フィオナ 2",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/fiona/d7f0e7e1b836.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d7f0e7e1b836_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "cd80a93289e9",
    "char": "lupinus",
    "nsfw": false,
@@ -444,6 +509,19 @@
    "date": "2026-11-08",
    "src": "images/gallery-sns/sfw/lupinus/a1ab44b34322.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/a1ab44b34322_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7405ff218817",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス 4",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/iris/7405ff218817.webp",
+   "thumb": "images/gallery-sns/sfw/iris/7405ff218817_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -500,6 +578,19 @@
    "h": 1280
   },
   {
+   "id": "1585651ff76a",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス 5",
+   "date": "2026-11-08",
+   "src": "images/gallery-sns/sfw/iris/1585651ff76a.webp",
+   "thumb": "images/gallery-sns/sfw/iris/1585651ff76a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "11dbdd2c451d",
    "char": "iris",
    "nsfw": false,
@@ -509,6 +600,19 @@
    "date": "2026-11-08",
    "src": "images/gallery-sns/sfw/iris/11dbdd2c451d.webp",
    "thumb": "images/gallery-sns/sfw/iris/11dbdd2c451d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ec4bb6967615",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 4",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/lupinus/ec4bb6967615.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ec4bb6967615_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -721,6 +825,19 @@
    "h": 1280
   },
   {
+   "id": "2b0faf2cad6f",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#フィオナ 3",
+   "date": "2026-11-07",
+   "src": "images/gallery-sns/sfw/fiona/2b0faf2cad6f.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2b0faf2cad6f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "f4021ab2b4a9",
    "char": "lupinus",
    "nsfw": false,
@@ -756,6 +873,19 @@
    "date": "2026-11-06",
    "src": "images/gallery-sns/sfw/iris/e05f20657fc0.webp",
    "thumb": "images/gallery-sns/sfw/iris/e05f20657fc0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ced3ccb0652f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#アイリス 3",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/iris/ced3ccb0652f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ced3ccb0652f_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -835,6 +965,19 @@
    "src": "images/gallery-sns/sfw/lupinus/93fb30859498.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/93fb30859498_t.webp",
    "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "9006d60c7cc8",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": 0,
+   "title": "#ルピナス 3",
+   "date": "2026-11-06",
+   "src": "images/gallery-sns/sfw/lupinus/9006d60c7cc8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9006d60c7cc8_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

@@ -26,12 +26,28 @@
    "thumb": "images/gallery-videos/20261024_orizuru.jpg"
   },
   {
+   "id": "20261018_ochiba",
+   "video_id": "O9iyAtWjma0",
+   "url": "https://youtube.com/shorts/O9iyAtWjma0",
+   "title": "落ち葉の山 集めるだけなのに",
+   "date": "2026-10-18",
+   "thumb": "images/gallery-videos/20261018_ochiba.jpg"
+  },
+  {
    "id": "20261017_ken",
    "video_id": "DKw8gCCMBhw",
    "url": "https://youtu.be/DKw8gCCMBhw",
    "title": "勇者の剣、抜くだけなのに",
    "date": "2026-10-17",
    "thumb": "images/gallery-videos/20261017_ken.jpg"
+  },
+  {
+   "id": "20261015_hotcake",
+   "video_id": "oYoLicvLcYw",
+   "url": "https://youtube.com/shorts/oYoLicvLcYw",
+   "title": "ホットケーキ ひっくり返すだけなのに",
+   "date": "2026-10-15",
+   "thumb": "images/gallery-videos/20261015_hotcake.jpg"
   },
   {
    "id": "20261010_megane",

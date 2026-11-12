@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:fiona": 362,
-  "sfw:iris": 413,
+  "sfw:iris": 417,
+  "sfw:fiona": 364,
   "sfw:lupinus": 467,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "dcdffed9d9da",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#洋服 2",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/dcdffed9d9da.webp",
+   "thumb": "images/gallery-sns/sfw/iris/dcdffed9d9da_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bbd9f79d76d1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#平成ギャル 2",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/bbd9f79d76d1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bbd9f79d76d1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ab772d0da64c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#平成ギャル 3",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/fiona/ab772d0da64c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ab772d0da64c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a43371d87c6c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#洋服 2",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/a43371d87c6c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a43371d87c6c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "a000cfba2bcc",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#平成ギャル 2",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/a000cfba2bcc.webp",
+   "thumb": "images/gallery-sns/sfw/iris/a000cfba2bcc_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "319cc249e408",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#平成ギャル 3",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/fiona/319cc249e408.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/319cc249e408_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "d137b3e3967f",
    "char": "fiona",

@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 419,
-  "sfw:fiona": 368,
-  "sfw:lupinus": 471,
+  "sfw:iris": 421,
+  "sfw:fiona": 370,
+  "sfw:lupinus": 473,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -58,6 +58,19 @@
    "h": 1280
   },
   {
+   "id": "d452ebc34e10",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 冬の植物園の温室でポインセチアの鉢を抱え",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/fiona/d452ebc34e10.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d452ebc34e10_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "bbd9f79d76d1",
    "char": "iris",
    "nsfw": false,
@@ -81,6 +94,32 @@
    "src": "images/gallery-sns/sfw/fiona/b7918fab9dd6.webp",
    "thumb": "images/gallery-sns/sfw/fiona/b7918fab9dd6_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "b5d58af93852",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "放課後の体育館の床に敷いた青いマットの上。仰向けに寝転んだアイリスが、両脚を高く上げて手で支えるストレッチのとちゅうで、",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/b5d58af93852.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b5d58af93852_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "ac8e44b2fa8e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "洋服記念日の昼。日の差す自分の部屋で、開けたクローゼットの前のルピナスが、出したばかりのファーの襟のキャメルのコートを着",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/lupinus/ac8e44b2fa8e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ac8e44b2fa8e_t.webp",
+   "w": 720,
    "h": 1280
   },
   {
@@ -136,6 +175,19 @@
    "h": 1280
   },
   {
+   "id": "7272f5246ca4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の朝の小さなパン屋の帰り道。茶色のベレー帽のフィオナが、焼きたてのメロンパンをがまんできずにひと口かじって、立ちのぼる",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/fiona/7272f5246ca4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7272f5246ca4_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "5e7e07f65fdd",
    "char": "fiona",
    "nsfw": false,
@@ -149,6 +201,19 @@
    "h": 1280
   },
   {
+   "id": "447476e7a0ac",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子がモデルの冬の通販カタログのプロ",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/447476e7a0ac.webp",
+   "thumb": "images/gallery-sns/sfw/iris/447476e7a0ac_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "319cc249e408",
    "char": "fiona",
    "nsfw": false,
@@ -158,6 +223,19 @@
    "date": "2026-11-12",
    "src": "images/gallery-sns/sfw/fiona/319cc249e408.webp",
    "thumb": "images/gallery-sns/sfw/fiona/319cc249e408_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "01339260be96",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "リビングの床いっぱいの鉄道模型のジオラマ。ミニチュアの町と山のあいだを小さな汽車が走り抜け、腹ばいになったアイリスが目の",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/lupinus/01339260be96.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/01339260be96_t.webp",
    "w": 720,
    "h": 1280
   },

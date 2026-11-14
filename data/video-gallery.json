@@ -35,6 +35,14 @@
    "thumb": "images/gallery-videos/20261024_orizuru.jpg"
   },
   {
+   "id": "20261019_kinen",
+   "video_id": "cqNWe1t9h2o",
+   "url": "https://youtube.com/shorts/cqNWe1t9h2o",
+   "title": "紅葉の記念写真 撮るだけなのに",
+   "date": "2026-10-19",
+   "thumb": "images/gallery-videos/20261019_kinen.jpg"
+  },
+  {
    "id": "20261018_ochiba",
    "video_id": "O9iyAtWjma0",
    "url": "https://youtube.com/shorts/O9iyAtWjma0",
@@ -51,12 +59,28 @@
    "thumb": "images/gallery-videos/20261017_ken.jpg"
   },
   {
+   "id": "20261016_pudding",
+   "video_id": "azUIYWJ_Frw",
+   "url": "https://youtube.com/shorts/azUIYWJ_Frw",
+   "title": "冷蔵庫のプリン 名前を書いたのに",
+   "date": "2026-10-16",
+   "thumb": "images/gallery-videos/20261016_pudding.jpg"
+  },
+  {
    "id": "20261015_hotcake",
    "video_id": "oYoLicvLcYw",
    "url": "https://youtube.com/shorts/oYoLicvLcYw",
    "title": "ホットケーキ ひっくり返すだけなのに",
    "date": "2026-10-15",
    "thumb": "images/gallery-videos/20261015_hotcake.jpg"
+  },
+  {
+   "id": "20261013_makura",
+   "video_id": "9sOZPTSuL1s",
+   "url": "https://youtube.com/shorts/9sOZPTSuL1s",
+   "title": "枕投げ ちょっと本気を出したら",
+   "date": "2026-10-13",
+   "thumb": "images/gallery-videos/20261013_makura.jpg"
   },
   {
    "id": "20261010_megane",
@@ -105,6 +129,14 @@
    "title": "どんぐりを、拾っていただけなのに",
    "date": "2026-10-04",
    "thumb": "images/gallery-videos/20261004_donguri.jpg"
+  },
+  {
+   "id": "20261003_pancake",
+   "video_id": "LIbLnppZhdU",
+   "url": "https://youtube.com/shorts/LIbLnppZhdU",
+   "title": "ホットケーキを返すだけなのに",
+   "date": "2026-10-03",
+   "thumb": "images/gallery-videos/20261003_pancake.jpg"
   },
   {
    "id": "20261002_parfait",

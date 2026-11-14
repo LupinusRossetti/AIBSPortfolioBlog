@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:iris": 421,
-  "sfw:fiona": 370,
-  "sfw:lupinus": 473,
+  "sfw:lupinus": 476,
+  "sfw:iris": 422,
+  "sfw:fiona": 372,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e21daaee3630",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "うるしの日の午後のおやつ。紅葉が舞う日ざしの中で、ルピナスがうるしのお椀を両手で包むように持ち、湯気の立つかぼちゃのおし",
+   "date": "2026-11-13",
+   "src": "images/gallery-sns/sfw/lupinus/e21daaee3630.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e21daaee3630_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "bdbbe830c83f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた冬の昼の海ぞいのゴーカート場。赤いレーシングスーツのアイリスがカートのハンドルをにぎって海ぞいのコースを走り、長い",
+   "date": "2026-11-13",
+   "src": "images/gallery-sns/sfw/iris/bdbbe830c83f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/bdbbe830c83f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bce92502faba",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の手袋さがしの貼り紙のプロンプト",
+   "date": "2026-11-13",
+   "src": "images/gallery-sns/sfw/fiona/bce92502faba.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/bce92502faba_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "517a268aadcd",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "街の写真館のスタジオ。白い背景紙の前で、まん中のいすに座ったルピナスの両側から、アイリスとフィオナがほっぺをくっつけるよ",
+   "date": "2026-11-13",
+   "src": "images/gallery-sns/sfw/lupinus/517a268aadcd.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/517a268aadcd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "450005b88eb8",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の昼下がりの花屋の奥の作業台。フィオナが苔と小さな芽を植えたガラスの瓶を手のひらにのせ、瓶の中に森ができたのを見て、息",
+   "date": "2026-11-13",
+   "src": "images/gallery-sns/sfw/fiona/450005b88eb8.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/450005b88eb8_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "08fa3ff85452",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 雪の朝に窓辺でカーテンをめくって手をふる",
+   "date": "2026-11-13",
+   "src": "images/gallery-sns/sfw/lupinus/08fa3ff85452.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/08fa3ff85452_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "dd366d59674a",
    "char": "iris",

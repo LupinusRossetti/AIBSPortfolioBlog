@@ -24,7 +24,7 @@
  },
  "counts": {
   "sfw:fiona": 385,
-  "sfw:lupinus": 490,
+  "sfw:lupinus": 491,
   "sfw:iris": 437,
   "sfw:three": 14
  },
@@ -899,6 +899,19 @@
    "date": "2026-11-11",
    "src": "images/gallery-sns/sfw/iris/0807dd57be8f.webp",
    "thumb": "images/gallery-sns/sfw/iris/0807dd57be8f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "f90363acce7a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#和装",
+   "date": "2026-11-10",
+   "src": "images/gallery-sns/sfw/lupinus/f90363acce7a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f90363acce7a_t.webp",
    "w": 720,
    "h": 1280
   },

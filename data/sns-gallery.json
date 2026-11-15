@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,131 @@
   }
  },
  "counts": {
-  "sfw:fiona": 385,
-  "sfw:lupinus": 491,
-  "sfw:iris": 437,
+  "sfw:fiona": 389,
+  "sfw:lupinus": 494,
+  "sfw:iris": 439,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e3667d4a2f05",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 こたつでみかんをひと切れ差し出す（Com",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/fiona/e3667d4a2f05.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e3667d4a2f05_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "ca2da4062ee3",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜明けの石畳の通りで、焼きたてのクロワッサンを並べた天板を胸の前で差し出すフィオナ（朝焼けの光）",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/fiona/ca2da4062ee3.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ca2da4062ee3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c041e1c33250",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の昼の屋内のボルダリングジムの、色とりどりのホールドが散らばる大きな斜めの壁。いちばん上の大きな黄色いホールドに片手を",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/lupinus/c041e1c33250.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c041e1c33250_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "93e0615e6f19",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 秋の運動会のリレーでバトンを受け取って走",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/lupinus/93e0615e6f19.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/93e0615e6f19_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "60757e5545b8",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜の寝室の大きなベッド。1枚の毛布を左右から引っぱり合いになり、ルピナスがむっと頬をふくらませて毛布のはしを胸に抱えこみ",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/lupinus/60757e5545b8.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/60757e5545b8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2ce2a5ea0937",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "七五三の日の夕方。提灯がともりはじめた神社の石段の途中で、赤い振袖に金の帯のアイリスが、千歳飴の長い袋を肩にかついでふり",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/iris/2ce2a5ea0937.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2ce2a5ea0937_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2a6f7cdee153",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子から届いた封蝋つきの手紙のプロン",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/fiona/2a6f7cdee153.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2a6f7cdee153_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "1cfb1434a1ae",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 プラネタリウムのシートで星空を指さして笑",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/fiona/1cfb1434a1ae.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/1cfb1434a1ae_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "045f20ec5a14",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子のクリスマスケーキ予約チラシのプ",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/iris/045f20ec5a14.webp",
+   "thumb": "images/gallery-sns/sfw/iris/045f20ec5a14_t.webp",
+   "w": 853,
+   "h": 1280
+  },
   {
    "id": "ff492d57679b",
    "char": "fiona",

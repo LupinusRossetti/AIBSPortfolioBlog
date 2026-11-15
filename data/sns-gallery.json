@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:fiona": 389,
-  "sfw:lupinus": 494,
-  "sfw:iris": 439,
+  "sfw:lupinus": 495,
+  "sfw:fiona": 390,
+  "sfw:iris": 440,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e3fb01170ce5",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋のミラパンツ祭",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/lupinus/e3fb01170ce5.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e3fb01170ce5_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e3667d4a2f05",
    "char": "fiona",
@@ -71,6 +84,19 @@
    "h": 1280
   },
   {
+   "id": "a8cc7df6c7d4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋のミラパンツ祭 3",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/fiona/a8cc7df6c7d4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/a8cc7df6c7d4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "93e0615e6f19",
    "char": "lupinus",
    "nsfw": false,
@@ -80,6 +106,19 @@
    "date": "2026-11-15",
    "src": "images/gallery-sns/sfw/lupinus/93e0615e6f19.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/93e0615e6f19_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "61a7db1d5aea",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#秋のミラパンツ祭 2",
+   "date": "2026-11-15",
+   "src": "images/gallery-sns/sfw/iris/61a7db1d5aea.webp",
+   "thumb": "images/gallery-sns/sfw/iris/61a7db1d5aea_t.webp",
    "w": 720,
    "h": 1280
   },

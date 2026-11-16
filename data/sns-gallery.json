@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 495,
-  "sfw:fiona": 390,
-  "sfw:iris": 440,
+  "sfw:lupinus": 498,
+  "sfw:fiona": 392,
+  "sfw:iris": 441,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "d62fa37a2233",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 雪合戦で雪玉をこちらへねらう（Comfy",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/lupinus/d62fa37a2233.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d62fa37a2233_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d6175d3a3380",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "雨の朝の駅のホーム。この町では傘の代わりに大きな蓮の葉を差すのが当たり前で、ルピナスが葉っぱの柄をくるっと回して縁から雫",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/lupinus/d6175d3a3380.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d6175d3a3380_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cc2be89fe281",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "いいいろの日（11月16日）の夕方。窓の大きな美術室の机で、フィオナが絵の具のパレットを片手にのせ、もう片方の手で色鉛筆",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/fiona/cc2be89fe281.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/cc2be89fe281_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b2d7e7f6d0fc",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の昼の屋内の大きなトランポリンパーク。となり合ったトランポリンでアイリスとフィオナが同時に高く跳ね、空中でアイリスは両",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/iris/b2d7e7f6d0fc.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b2d7e7f6d0fc_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "810116b7a4cf",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夜の小さなライブハウスのステージ。スポットライトの下でルピナスが背の高いウッドベースを抱くように立ち、目を閉じて指で",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/lupinus/810116b7a4cf.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/810116b7a4cf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "5c5932fab958",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子スターターパックのプロンプト（G",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/fiona/5c5932fab958.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/5c5932fab958_t.webp",
+   "w": 853,
+   "h": 1280
+  },
   {
    "id": "e3fb01170ce5",
    "char": "lupinus",

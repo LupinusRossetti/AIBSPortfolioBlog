@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 501,
-  "sfw:iris": 445,
+  "sfw:lupinus": 504,
+  "sfw:iris": 448,
   "sfw:fiona": 395,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "fb7f158721df",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の昼の神社の境内の餅まきの舞台の下。高い舞台からまかれた紅白の小さな餅に向かって、アイリスが両手を高く伸ばしてジャンプ",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/fb7f158721df.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/fb7f158721df_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "ea9ab4eeb5a0",
    "char": "lupinus",
@@ -41,6 +54,19 @@
    "date": "2026-11-17",
    "src": "images/gallery-sns/sfw/lupinus/ea9ab4eeb5a0.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/ea9ab4eeb5a0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d83ebd1cfecd",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の窓辺。歯ブラシをくわえたままのアイリスが、片足立ちで白い靴下を引っぱり上げる。もう片方の足は紺の靴下で、左右の色がち",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/d83ebd1cfecd.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d83ebd1cfecd_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -97,6 +123,32 @@
    "h": 1280
   },
   {
+   "id": "8d4e6341a5e3",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "宇宙ステーションの窓辺。宇宙服のアイリスがヘルメットを小脇に抱え、窓の外の地球を指さしてはしゃぐ",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/8d4e6341a5e3.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8d4e6341a5e3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "67c1c18d704e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "将棋の日（11月17日）の朝。紅葉の庭に面した縁側に将棋盤を出して正座したルピナスが、身をのり出して駒をひとつ盤へのばし",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/67c1c18d704e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/67c1c18d704e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "6072d438e887",
    "char": "iris",
    "nsfw": false,
@@ -123,6 +175,19 @@
    "h": 1280
   },
   {
+   "id": "36bb77c3e784",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の年賀状のプロンプト（GPT-i",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/36bb77c3e784.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/36bb77c3e784_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "2ae3bc6847e1",
    "char": "fiona",
    "nsfw": false,
@@ -132,6 +197,19 @@
    "date": "2026-11-17",
    "src": "images/gallery-sns/sfw/fiona/2ae3bc6847e1.webp",
    "thumb": "images/gallery-sns/sfw/fiona/2ae3bc6847e1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2ac428eeb7d3",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 木枯らしの並木道でベレー帽の頭を両手で押",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/2ac428eeb7d3.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2ac428eeb7d3_t.webp",
    "w": 720,
    "h": 1280
   },

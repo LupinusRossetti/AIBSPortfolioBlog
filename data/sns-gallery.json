@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,131 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 498,
-  "sfw:fiona": 392,
-  "sfw:iris": 441,
+  "sfw:lupinus": 501,
+  "sfw:iris": 445,
+  "sfw:fiona": 395,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "ea9ab4eeb5a0",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#照れてる表情",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/ea9ab4eeb5a0.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/ea9ab4eeb5a0_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d3ca4ae93f20",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライ学園祭 2",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/d3ca4ae93f20.webp",
+   "thumb": "images/gallery-sns/sfw/iris/d3ca4ae93f20_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "cb83c6a17b76",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#照れてる表情 2",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/cb83c6a17b76.webp",
+   "thumb": "images/gallery-sns/sfw/iris/cb83c6a17b76_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c3ad561b43c4",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライ学園祭",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/c3ad561b43c4.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c3ad561b43c4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9fc492a63ca4",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#照れてる表情 3",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/fiona/9fc492a63ca4.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/9fc492a63ca4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "6072d438e887",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#学生 2",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/6072d438e887.webp",
+   "thumb": "images/gallery-sns/sfw/iris/6072d438e887_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "47805120d1c0",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#イロミライ学園祭 3",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/fiona/47805120d1c0.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/47805120d1c0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "2ae3bc6847e1",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#学生 3",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/fiona/2ae3bc6847e1.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/2ae3bc6847e1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e80f9dea0061",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#まんすじ",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/lupinus/e80f9dea0061.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/e80f9dea0061_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "d62fa37a2233",
    "char": "lupinus",
@@ -93,6 +210,19 @@
    "date": "2026-11-16",
    "src": "images/gallery-sns/sfw/lupinus/810116b7a4cf.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/810116b7a4cf_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "75e70fc0883f",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#まんすじ 2",
+   "date": "2026-11-16",
+   "src": "images/gallery-sns/sfw/iris/75e70fc0883f.webp",
+   "thumb": "images/gallery-sns/sfw/iris/75e70fc0883f_t.webp",
    "w": 720,
    "h": 1280
   },

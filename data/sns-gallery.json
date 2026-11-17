@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 504,
-  "sfw:iris": 448,
-  "sfw:fiona": 395,
+  "sfw:lupinus": 508,
+  "sfw:iris": 450,
+  "sfw:fiona": 397,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -123,6 +123,19 @@
    "h": 1280
   },
   {
+   "id": "90cda3c9177e",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#!Aipictors4周年前夜祭",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/90cda3c9177e.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/90cda3c9177e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "8d4e6341a5e3",
    "char": "iris",
    "nsfw": false,
@@ -132,6 +145,32 @@
    "date": "2026-11-17",
    "src": "images/gallery-sns/sfw/iris/8d4e6341a5e3.webp",
    "thumb": "images/gallery-sns/sfw/iris/8d4e6341a5e3_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8c74199c32c9",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#!Aipictors4周年前夜祭 3",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/fiona/8c74199c32c9.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8c74199c32c9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7dd7872072a2",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#学生",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/lupinus/7dd7872072a2.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7dd7872072a2_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -171,6 +210,19 @@
    "date": "2026-11-17",
    "src": "images/gallery-sns/sfw/fiona/47805120d1c0.webp",
    "thumb": "images/gallery-sns/sfw/fiona/47805120d1c0_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "42dbb42044dc",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#!Aipictors4周年前夜祭 2",
+   "date": "2026-11-17",
+   "src": "images/gallery-sns/sfw/iris/42dbb42044dc.webp",
+   "thumb": "images/gallery-sns/sfw/iris/42dbb42044dc_t.webp",
    "w": 1280,
    "h": 1280
   },
@@ -1020,6 +1072,19 @@
    "h": 1280
   },
   {
+   "id": "e8f5f8e10900",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#onhead 2",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/iris/e8f5f8e10900.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e8f5f8e10900_t.webp",
+   "w": 1280,
+   "h": 1280
+  },
+  {
    "id": "dd366d59674a",
    "char": "iris",
    "nsfw": false,
@@ -1042,6 +1107,19 @@
    "date": "2026-11-12",
    "src": "images/gallery-sns/sfw/iris/dcdffed9d9da.webp",
    "thumb": "images/gallery-sns/sfw/iris/dcdffed9d9da_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "d4724e49d8ac",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#momijgari",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/lupinus/d4724e49d8ac.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/d4724e49d8ac_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -1150,6 +1228,19 @@
    "h": 1280
   },
   {
+   "id": "9922852b515f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#onhead",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/lupinus/9922852b515f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9922852b515f_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "831608c48b83",
    "char": "lupinus",
    "nsfw": false,
@@ -1211,6 +1302,19 @@
    "date": "2026-11-12",
    "src": "images/gallery-sns/sfw/fiona/319cc249e408.webp",
    "thumb": "images/gallery-sns/sfw/fiona/319cc249e408_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "050fc4a5ee29",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "#onhead 3",
+   "date": "2026-11-12",
+   "src": "images/gallery-sns/sfw/fiona/050fc4a5ee29.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/050fc4a5ee29_t.webp",
    "w": 720,
    "h": 1280
   },

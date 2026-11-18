@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 508,
-  "sfw:iris": 450,
-  "sfw:fiona": 397,
+  "sfw:iris": 452,
+  "sfw:fiona": 400,
+  "sfw:lupinus": 509,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f11643bb36a0",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子のおでん屋台のお品書きのプロンプ",
+   "date": "2026-11-18",
+   "src": "images/gallery-sns/sfw/iris/f11643bb36a0.webp",
+   "thumb": "images/gallery-sns/sfw/iris/f11643bb36a0_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "d65861c58735",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夜の学校の屋上の天体観測会。フィオナが制服の上から青い寝袋にすっぽりくるまってあおむけに寝ころび、顔だけ出して夜空を",
+   "date": "2026-11-18",
+   "src": "images/gallery-sns/sfw/fiona/d65861c58735.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/d65861c58735_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "80a999e3db43",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夜のあたたかい部屋の低いテーブルの、小さなチーズフォンデュの鍋。ルピナスが長いフォークでパンをくぐらせて持ち上げると",
+   "date": "2026-11-18",
+   "src": "images/gallery-sns/sfw/lupinus/80a999e3db43.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/80a999e3db43_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "2da35dd1fc12",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "木枯らしが吹く頃の、晴れた昼の並木道。キャメル色のウールのロングコートのアイリスが、ぴゅうっと吹いた冷たい風に舞い上がる",
+   "date": "2026-11-18",
+   "src": "images/gallery-sns/sfw/iris/2da35dd1fc12.webp",
+   "thumb": "images/gallery-sns/sfw/iris/2da35dd1fc12_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "10d20d27fa6a",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 年末の大掃除ではたきを手にくしゃみをこら",
+   "date": "2026-11-18",
+   "src": "images/gallery-sns/sfw/fiona/10d20d27fa6a.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/10d20d27fa6a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "0fedad28d93d",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜明けの雲の上。熱気球で空へのぼった飛行帽にゴーグルをのせたフィオナが、身を乗り出して、眼下にひろがる雲の海とのぼる朝日",
+   "date": "2026-11-18",
+   "src": "images/gallery-sns/sfw/fiona/0fedad28d93d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/0fedad28d93d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fb7f158721df",
    "char": "lupinus",

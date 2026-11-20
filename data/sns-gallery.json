@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
+  "sfw:lupinus": 512,
+  "sfw:fiona": 401,
   "sfw:iris": 452,
-  "sfw:fiona": 400,
-  "sfw:lupinus": 509,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "c72ebd4d3cc1",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "白い蛍光灯の夜のコインランドリー。丸い窓の洗濯機の前のベンチに、パーカーにショートパンツのルピナスが腰かけて、片手で口を",
+   "date": "2026-11-19",
+   "src": "images/gallery-sns/sfw/lupinus/c72ebd4d3cc1.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c72ebd4d3cc1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b08a094ac988",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "キャンドルの灯る夜のバスルーム。泡でいっぱいのバスタブの縁に腕をかけたルピナスが、白いフリルのビキニで泡の中から片脚を高",
+   "date": "2026-11-19",
+   "src": "images/gallery-sns/sfw/lupinus/b08a094ac988.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b08a094ac988_t.webp",
+   "w": 1280,
+   "h": 720
+  },
+  {
+   "id": "98b6c698c751",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬晴れの昼、雪の残る屋上の手すりのそば。紙コップを糸でつないだ糸電話で、アイリスが紙コップを口に当てて内緒話をささやき、",
+   "date": "2026-11-19",
+   "src": "images/gallery-sns/sfw/lupinus/98b6c698c751.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/98b6c698c751_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "648fa60aeba8",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ボジョレーヌーヴォー解禁日の夕暮れのぶどう畑のテラス。紫のサテンのワンピースのフィオナが、ぶどうジュースを注いだワイング",
+   "date": "2026-11-19",
+   "src": "images/gallery-sns/sfw/fiona/648fa60aeba8.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/648fa60aeba8_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f11643bb36a0",
    "char": "iris",

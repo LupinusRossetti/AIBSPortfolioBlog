@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 512,
-  "sfw:fiona": 401,
+  "sfw:lupinus": 513,
+  "sfw:fiona": 402,
   "sfw:iris": 452,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "cbc60a86e26a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 暖炉の前で編みかけのマフラーを編みながら",
+   "date": "2026-11-19",
+   "src": "images/gallery-sns/sfw/lupinus/cbc60a86e26a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/cbc60a86e26a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "c72ebd4d3cc1",
    "char": "lupinus",
@@ -56,6 +69,19 @@
    "thumb": "images/gallery-sns/sfw/lupinus/b08a094ac988_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "ad76c3f28235",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の名刺のプロンプト（GPT-im",
+   "date": "2026-11-19",
+   "src": "images/gallery-sns/sfw/fiona/ad76c3f28235.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/ad76c3f28235_t.webp",
+   "w": 853,
+   "h": 1280
   },
   {
    "id": "98b6c698c751",

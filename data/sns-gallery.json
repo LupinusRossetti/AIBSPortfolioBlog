@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 521,
-  "sfw:iris": 459,
-  "sfw:fiona": 411,
+  "sfw:fiona": 412,
+  "sfw:lupinus": 524,
+  "sfw:iris": 461,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e353fe77f56c",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "昼の静かな和室。藤色の着物のフィオナが長い琴の前に座り、右手で弦をはじき、左手で弦を押して音をゆらし、その余韻に目を細め",
+   "date": "2026-11-20",
+   "src": "images/gallery-sns/sfw/fiona/e353fe77f56c.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e353fe77f56c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "bc1b41c10b1a",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬晴れの昼の公園の芝生。大きな虹色のパラバルーンのふちを3人で持って、アイリスが勢いよく両腕を振り上げて波をつくり、まん",
+   "date": "2026-11-20",
+   "src": "images/gallery-sns/sfw/lupinus/bc1b41c10b1a.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/bc1b41c10b1a_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8ce8094cbbef",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の冬の写真集のプロンプト（GPT",
+   "date": "2026-11-20",
+   "src": "images/gallery-sns/sfw/lupinus/8ce8094cbbef.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8ce8094cbbef_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "774d29334137",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "放水の勢いに負けてホースごとよろける",
+   "date": "2026-11-20",
+   "src": "images/gallery-sns/sfw/iris/774d29334137.webp",
+   "thumb": "images/gallery-sns/sfw/iris/774d29334137_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "53842a40c206",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "毛布の日の夕方。窓辺のソファで、ふかふかの白い毛布を肩からすっぽり羽織ったルピナスが、両手で包んだマグのホットミルクの湯",
+   "date": "2026-11-20",
+   "src": "images/gallery-sns/sfw/lupinus/53842a40c206.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/53842a40c206_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "09e978e540cd",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 初詣の帰りに振袖で湯気の立つ甘酒を両手で",
+   "date": "2026-11-20",
+   "src": "images/gallery-sns/sfw/iris/09e978e540cd.webp",
+   "thumb": "images/gallery-sns/sfw/iris/09e978e540cd_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f86b450bd7d1",
    "char": "lupinus",

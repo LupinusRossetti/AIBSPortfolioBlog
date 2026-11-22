@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:fiona": 412,
-  "sfw:lupinus": 524,
-  "sfw:iris": 461,
+  "sfw:iris": 462,
+  "sfw:lupinus": 527,
+  "sfw:fiona": 414,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "ca55e68148bd",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の宝石図鑑の1ページのプロンプト",
+   "date": "2026-11-21",
+   "src": "images/gallery-sns/sfw/iris/ca55e68148bd.webp",
+   "thumb": "images/gallery-sns/sfw/iris/ca55e68148bd_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "b2724dd23925",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の朝の湖のほとり。雪の積もった桟橋にしゃがんだルピナスが手のひらのパンくずを差し出し、白鳥が首をのばしてついばむと、隣",
+   "date": "2026-11-21",
+   "src": "images/gallery-sns/sfw/lupinus/b2724dd23925.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b2724dd23925_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9bf3af98ea6d",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 雪の庭で作ったばかりの雪だるまのとなりに",
+   "date": "2026-11-21",
+   "src": "images/gallery-sns/sfw/fiona/9bf3af98ea6d.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/9bf3af98ea6d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "9347e06729c1",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬のはじめの晴れた朝、年の暮れの支度をする古いお寺の本堂。頭に白い手ぬぐいをかぶったルピナスが、背丈の三倍もある長い笹ぼ",
+   "date": "2026-11-21",
+   "src": "images/gallery-sns/sfw/lupinus/9347e06729c1.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/9347e06729c1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7f88d7d83124",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夕方の屋内のパターゴルフのコースの、小さな橋と人工の小川がある最後のホール。アイリスが打ったボールがカップのふちでく",
+   "date": "2026-11-21",
+   "src": "images/gallery-sns/sfw/lupinus/7f88d7d83124.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/7f88d7d83124_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "1d4769b2161e",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の星座が見え始める頃の夜。町はずれの丘の芝生にシートを敷いて座ったフィオナが、両手で双眼鏡をのぞいて東の空にのぼってき",
+   "date": "2026-11-21",
+   "src": "images/gallery-sns/sfw/fiona/1d4769b2161e.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/1d4769b2161e_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "e353fe77f56c",
    "char": "fiona",

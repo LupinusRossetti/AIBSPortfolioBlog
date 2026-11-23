@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,66 @@
   }
  },
  "counts": {
-  "sfw:iris": 462,
-  "sfw:lupinus": 527,
+  "sfw:iris": 464,
+  "sfw:lupinus": 529,
   "sfw:fiona": 414,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "e0acdca75b09",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬晴れの昼の公園の石だたみの広場。赤いショートパンツに黒いレギンスのアイリスが赤い一輪車にまたがり、両腕を大きく広げてペ",
+   "date": "2026-11-22",
+   "src": "images/gallery-sns/sfw/iris/e0acdca75b09.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e0acdca75b09_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "db723dac0eb1",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "夜のコンビニのレジ横。ジャージのアイリスが肉まんの蒸し器のガラスにおでこがつきそうなほど身を乗り出して、ほっぺをふくらま",
+   "date": "2026-11-22",
+   "src": "images/gallery-sns/sfw/iris/db723dac0eb1.webp",
+   "thumb": "images/gallery-sns/sfw/iris/db723dac0eb1_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "c172640c3449",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の昼の商店街の催しの、わたあめ機の屋台。アイリスが割りばしを機械のまん中でくるくる回して顔より大きなわたあめをふくらま",
+   "date": "2026-11-22",
+   "src": "images/gallery-sns/sfw/lupinus/c172640c3449.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/c172640c3449_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "632713efbf51",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "いい夫婦の日の夕方。古い喫茶店のカウンターで、エプロン姿のルピナスがティーポットをかたむけて、並べた二つのおそろいのティ",
+   "date": "2026-11-22",
+   "src": "images/gallery-sns/sfw/lupinus/632713efbf51.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/632713efbf51_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "ca55e68148bd",
    "char": "iris",

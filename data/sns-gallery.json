@@ -23,14 +23,27 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 546,
-  "sfw:iris": 482,
-  "sfw:fiona": 430,
+  "sfw:lupinus": 549,
+  "sfw:fiona": 433,
+  "sfw:iris": 484,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f7369b427c57",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "いいえがおの日にちなんで、手鏡と口紅、笑",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/lupinus/f7369b427c57.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/f7369b427c57_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f60cc543b309",
    "char": "lupinus",
@@ -41,6 +54,19 @@
    "date": "2026-11-25",
    "src": "images/gallery-sns/sfw/lupinus/f60cc543b309.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/f60cc543b309_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e7574038bf06",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の午後の暖炉の前。ロッキングチェアに座ったフィオナが、編み上げたばかりの毛糸の帽子をさっそく自分の頭にかぶせ、片手を上",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/fiona/e7574038bf06.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/e7574038bf06_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -84,6 +110,32 @@
    "h": 1280
   },
   {
+   "id": "b8eae36dcf52",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子が絵札のトランプになるプロンプト",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/fiona/b8eae36dcf52.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/b8eae36dcf52_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "b7157c956b9b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "晴れた冬の昼の動物園。よちよち歩くペンギンのお散歩の列が柵のすぐ前を通り、しゃがんだアイリスが目をきらきらさせて身を乗り",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/iris/b7157c956b9b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b7157c956b9b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
    "id": "b36567da84c6",
    "char": "iris",
    "nsfw": false,
@@ -95,6 +147,19 @@
    "thumb": "images/gallery-sns/sfw/iris/b36567da84c6_t.webp",
    "w": 1280,
    "h": 720
+  },
+  {
+   "id": "afa002d4027f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 冬の晴れた丘で高く上がった凧を見上げて白",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/lupinus/afa002d4027f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/afa002d4027f_t.webp",
+   "w": 720,
+   "h": 1280
   },
   {
    "id": "a845685a8698",
@@ -120,6 +185,32 @@
    "src": "images/gallery-sns/sfw/iris/a76bac7a6a57.webp",
    "thumb": "images/gallery-sns/sfw/iris/a76bac7a6a57_t.webp",
    "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8eacf09e7a33",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "ホームの端に立って、白手袋の指で前方をまっすぐ差して確認する",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/iris/8eacf09e7a33.webp",
+   "thumb": "images/gallery-sns/sfw/iris/8eacf09e7a33_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "7c5d5c8a6b1b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の色のインク瓶を作るプロンプト（",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/fiona/7c5d5c8a6b1b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/7c5d5c8a6b1b_t.webp",
+   "w": 853,
    "h": 1280
   },
   {
@@ -171,6 +262,19 @@
    "date": "2026-11-25",
    "src": "images/gallery-sns/sfw/fiona/3eb7d01acb4c.webp",
    "thumb": "images/gallery-sns/sfw/fiona/3eb7d01acb4c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "3b86c72a4d6f",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 冬の朝の和室で灯油ストーブの前に正座して",
+   "date": "2026-11-25",
+   "src": "images/gallery-sns/sfw/lupinus/3b86c72a4d6f.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/3b86c72a4d6f_t.webp",
    "w": 720,
    "h": 1280
   },

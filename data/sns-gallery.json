@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:lupinus": 550,
-  "sfw:fiona": 435,
-  "sfw:iris": 484,
+  "sfw:iris": 486,
+  "sfw:lupinus": 553,
+  "sfw:fiona": 436,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "dd99075c88d4",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "いい風呂の日にちなんで、入浴剤と湯気立つ",
+   "date": "2026-11-26",
+   "src": "images/gallery-sns/sfw/iris/dd99075c88d4.webp",
+   "thumb": "images/gallery-sns/sfw/iris/dd99075c88d4_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b905bb9c5173",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子が机の上の17フィギュアになる",
+   "date": "2026-11-26",
+   "src": "images/gallery-sns/sfw/lupinus/b905bb9c5173.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b905bb9c5173_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "8408c117c65d",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "街のパン屋の朝一番に並び、焼き上がりの合図で列ごと前のめりになる",
+   "date": "2026-11-26",
+   "src": "images/gallery-sns/sfw/lupinus/8408c117c65d.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/8408c117c65d_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4526af91b04c",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 冬の夕方の街角で赤い郵便ポストの前で手紙",
+   "date": "2026-11-26",
+   "src": "images/gallery-sns/sfw/iris/4526af91b04c.webp",
+   "thumb": "images/gallery-sns/sfw/iris/4526af91b04c_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "26fb21c41881",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の朝のホテルの前の石畳の広場。木の台の上の透きとおった大きな氷の塊に、防寒の作業着に手袋のフィオナがのみを当て、白鳥の",
+   "date": "2026-11-26",
+   "src": "images/gallery-sns/sfw/fiona/26fb21c41881.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/26fb21c41881_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "097b29557e30",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の昼の屋内のミニゴルフ場。アイリスが打った球が人工芝のでこぼこをくねくね転がり、穴のふちでくるくる回ってぽとんと落ちる",
+   "date": "2026-11-26",
+   "src": "images/gallery-sns/sfw/lupinus/097b29557e30.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/097b29557e30_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "f7369b427c57",
    "char": "lupinus",

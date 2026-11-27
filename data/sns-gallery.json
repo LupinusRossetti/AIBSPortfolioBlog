@@ -23,9 +23,9 @@
   }
  },
  "counts": {
-  "sfw:iris": 494,
-  "sfw:fiona": 443,
-  "sfw:lupinus": 561,
+  "sfw:iris": 497,
+  "sfw:fiona": 444,
+  "sfw:lupinus": 563,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
@@ -41,6 +41,19 @@
    "date": "2026-11-27",
    "src": "images/gallery-sns/sfw/iris/fa2f079861b9.webp",
    "thumb": "images/gallery-sns/sfw/iris/fa2f079861b9_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "e81841356a97",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬晴れの昼の BMX パーク。コンクリートの坂がうねる中、ヘルメットとひじ当てのアイリスが坂のふちから小さな自転車ごと高",
+   "date": "2026-11-27",
+   "src": "images/gallery-sns/sfw/iris/e81841356a97.webp",
+   "thumb": "images/gallery-sns/sfw/iris/e81841356a97_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -80,6 +93,19 @@
    "date": "2026-11-27",
    "src": "images/gallery-sns/sfw/lupinus/c13f8c0d7905.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/c13f8c0d7905_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "b28d712b75ab",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "師走を前にした買い物日和にちなんで、紙袋",
+   "date": "2026-11-27",
+   "src": "images/gallery-sns/sfw/lupinus/b28d712b75ab.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/b28d712b75ab_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -214,6 +240,19 @@
    "h": 1280
   },
   {
+   "id": "43b069151f41",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子が黒い紙の切り絵になるプロンプト",
+   "date": "2026-11-27",
+   "src": "images/gallery-sns/sfw/iris/43b069151f41.webp",
+   "thumb": "images/gallery-sns/sfw/iris/43b069151f41_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
    "id": "2cd462f953fa",
    "char": "lupinus",
    "nsfw": false,
@@ -223,6 +262,32 @@
    "date": "2026-11-27",
    "src": "images/gallery-sns/sfw/lupinus/2cd462f953fa.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/2cd462f953fa_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "276d3be1c48b",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 雪の朝まっさらな雪に長靴で足跡をつけて振",
+   "date": "2026-11-27",
+   "src": "images/gallery-sns/sfw/fiona/276d3be1c48b.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/276d3be1c48b_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "22642e1d15e6",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夜のゲームセンターのエアホッケー台。アイリスが身を乗り出してマレットを思いきり振り抜き、光る円盤がすべって向かいのフ",
+   "date": "2026-11-27",
+   "src": "images/gallery-sns/sfw/lupinus/22642e1d15e6.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/22642e1d15e6_t.webp",
    "w": 720,
    "h": 1280
   },
@@ -250,6 +315,19 @@
    "src": "images/gallery-sns/sfw/lupinus/1be897fd07be.webp",
    "thumb": "images/gallery-sns/sfw/lupinus/1be897fd07be_t.webp",
    "w": 1280,
+   "h": 1280
+  },
+  {
+   "id": "1763a47e026b",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "朝の台所。エプロンのアイリスが、目玉焼きをひっくり返そうとフライ返しを差しこんだまま、湯気の向こうで息を止めてじっと固ま",
+   "date": "2026-11-27",
+   "src": "images/gallery-sns/sfw/iris/1763a47e026b.webp",
+   "thumb": "images/gallery-sns/sfw/iris/1763a47e026b_t.webp",
+   "w": 720,
    "h": 1280
   },
   {

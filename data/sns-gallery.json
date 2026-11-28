@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "chars": {
   "lupinus": {
    "name": "ルピナス",
@@ -23,14 +23,92 @@
   }
  },
  "counts": {
-  "sfw:iris": 497,
-  "sfw:fiona": 444,
-  "sfw:lupinus": 563,
+  "sfw:fiona": 446,
+  "sfw:iris": 498,
+  "sfw:lupinus": 566,
   "sfw:three": 14
  },
  "max_nsfw_level": 0,
  "held": 3,
  "items": [
+  {
+   "id": "f68a33ed2202",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 うちの子の冬の帽子コレクション図鑑を作る",
+   "date": "2026-11-28",
+   "src": "images/gallery-sns/sfw/fiona/f68a33ed2202.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/f68a33ed2202_t.webp",
+   "w": 853,
+   "h": 1280
+  },
+  {
+   "id": "b7047f2efdad",
+   "char": "iris",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "猫と人の日にちなんで、猫と毛糸玉、暖かい",
+   "date": "2026-11-28",
+   "src": "images/gallery-sns/sfw/iris/b7047f2efdad.webp",
+   "thumb": "images/gallery-sns/sfw/iris/b7047f2efdad_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "8298e9b41710",
+   "char": "fiona",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "森の湖のほとり。エルフの狩人の衣装のフィオナが、弓を背負ったまましゃがんで、湖の水をすくって鹿に飲ませている",
+   "date": "2026-11-28",
+   "src": "images/gallery-sns/sfw/fiona/8298e9b41710.webp",
+   "thumb": "images/gallery-sns/sfw/fiona/8298e9b41710_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "788814357b07",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "プロンプト配布 冬の街角のクレープ屋さんでクレープにかぶ",
+   "date": "2026-11-28",
+   "src": "images/gallery-sns/sfw/lupinus/788814357b07.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/788814357b07_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "4e6ff2aaec29",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の朝の公園の霜のおりた芝生の広場。白い絹の太極拳の服のルピナスが、片脚をゆっくり上げて両腕で大きな円をえがく。吐く息が",
+   "date": "2026-11-28",
+   "src": "images/gallery-sns/sfw/lupinus/4e6ff2aaec29.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/4e6ff2aaec29_t.webp",
+   "w": 720,
+   "h": 1280
+  },
+  {
+   "id": "44bf100c3b70",
+   "char": "lupinus",
+   "nsfw": false,
+   "r18": false,
+   "level": null,
+   "title": "冬の夜の三姉妹の家の居間のローテーブル。手巻き寿司の夜、アイリスが海苔からはみ出すほどネタを山盛りにした太い一本を両手で",
+   "date": "2026-11-28",
+   "src": "images/gallery-sns/sfw/lupinus/44bf100c3b70.webp",
+   "thumb": "images/gallery-sns/sfw/lupinus/44bf100c3b70_t.webp",
+   "w": 720,
+   "h": 1280
+  },
   {
    "id": "fa2f079861b9",
    "char": "iris",
